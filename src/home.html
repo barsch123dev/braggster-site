@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_description}}">
+<link rel="canonical" href="{{canonical}}">
+{{hreflang_html}}
+<link rel="icon" sizes="32x32" href="{{root}}assets/web/favicon-32.png">
+<link rel="icon" sizes="16x16" href="{{root}}assets/web/favicon-16.png">
+<link rel="apple-touch-icon" href="{{root}}assets/web/apple-touch-icon-180.png">
+<link rel="stylesheet" href="{{root}}styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">{{skip_link}}</a>
+
+<div class="announce">
+  <span class="announce__new">{{announce_new}}</span>
+  <span>{{announce_text}}</span>
+  <a href="#">{{announce_link}}</a>
+</div>
+
+<div class="wrap">
+  <nav class="nav" aria-label="{{nav_label}}">
+    <a class="nav__logo" href="{{root}}" aria-label="braggster">
+      <img src="{{root}}assets/logo/lockup-color.png" alt="braggster" width="220" height="44">
+    </a>
+    <div class="nav__links">
+      <a href="{{root}}" aria-current="page">{{nav_home}}</a>
+      <a href="#features">{{nav_features}}</a>
+      <a href="#games">{{nav_games}}</a>
+      <a href="#about">{{nav_about}}</a>
+      <a class="btn btn--brag" href="#">{{nav_cta}}</a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero__col">
+        <p class="eyebrow">{{hero_eyebrow}}</p>
+        <h1>{{hero_h1_html}}</h1>
+        <p class="hero__sub">{{hero_sub}}</p>
+        <div class="hero__actions">
+          <a class="btn btn--ink" href="#">{{hero_cta}}</a>
+          <a class="link" href="#features">{{hero_link}}</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <div class="phone" role="img" aria-label="{{phone_alt}}">
+          <span>{{phone_label}}</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" id="features">
+      <div class="section__head">
+        <p class="eyebrow">{{features_eyebrow}}</p>
+        <h2>{{features_h2}}</h2>
+      </div>
+      <div class="cards">
+{{features_html}}
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section__head">
+        <p class="eyebrow">{{games_eyebrow}}</p>
+        <h2>{{games_h2}}</h2>
+      </div>
+      <div class="well">
+{{chips_html}}
+      </div>
+      <p class="disclaimer">{{disclaimer}}</p>
+    </section>
+
+    <section class="banner">
+      <div class="banner__card">
+        <div class="banner__left">
+          <img src="{{root}}assets/logo/symbol-on-dark.png" alt="" width="84" height="84">
+          <div class="banner__text">
+            <h2>{{banner_h2}}</h2>
+            <p>{{banner_sub}}</p>
+          </div>
+        </div>
+        <a class="btn btn--glow" href="#">{{banner_cta}}</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer" id="about">
+  <div class="wrap">
+    <div class="footer__row">
+      <div class="footer__brand">
+        <img src="{{root}}assets/logo/symbol-color.png" alt="" width="30" height="30">
+        <span>{{footer_copy}}</span>
+      </div>
+      <div class="footer__links">
+        <a href="{{privacy_href}}">{{footer_privacy}}</a>
+        <a href="mailto:{{contact_email}}">{{footer_contact}}</a>
+      </div>
+    </div>
+    <nav class="footer__langs" aria-label="{{lang_nav_label}}">
+{{lang_links_html}}
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

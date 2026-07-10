@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{privacy_meta_title}}</title>
+<meta name="description" content="{{privacy_meta_description}}">
+<link rel="canonical" href="{{privacy_canonical}}">
+{{privacy_hreflang_html}}
+<link rel="icon" sizes="32x32" href="{{root}}assets/web/favicon-32.png">
+<link rel="icon" sizes="16x16" href="{{root}}assets/web/favicon-16.png">
+<link rel="apple-touch-icon" href="{{root}}assets/web/apple-touch-icon-180.png">
+<link rel="stylesheet" href="{{root}}styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">{{skip_link}}</a>
+
+<div class="wrap">
+  <nav class="nav" aria-label="{{nav_label}}">
+    <a class="nav__logo" href="{{home_href}}" aria-label="braggster">
+      <img src="{{root}}assets/logo/lockup-color.png" alt="braggster" width="220" height="44">
+    </a>
+    <div class="nav__links">
+      <a href="{{home_href}}">{{nav_home}}</a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <article class="prose">
+      <h1>{{privacy_h1}}</h1>
+      <p class="prose__updated">{{privacy_updated}}</p>
+
+      <p>{{privacy_intro}}</p>
+
+      <h2>{{privacy_collect_h}}</h2>
+      <p>{{privacy_collect_p}}</p>
+
+      <h2>{{privacy_stored_h}}</h2>
+      <p>{{privacy_stored_p}}</p>
+
+      <h2>{{privacy_share_h}}</h2>
+      <p>{{privacy_share_p}}</p>
+
+      <h2>{{privacy_website_h}}</h2>
+      <p>{{privacy_website_p}}</p>
+
+      <h2>{{privacy_children_h}}</h2>
+      <p>{{privacy_children_p}}</p>
+
+      <h2>{{privacy_rights_h}}</h2>
+      <p>{{privacy_rights_p}}</p>
+
+      <h2>{{privacy_changes_h}}</h2>
+      <p>{{privacy_changes_p}}</p>
+
+      <h2>{{privacy_contact_h}}</h2>
+      <p>{{privacy_contact_p}} <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__row">
+      <div class="footer__brand">
+        <img src="{{root}}assets/logo/symbol-color.png" alt="" width="30" height="30">
+        <span>{{footer_copy}}</span>
+      </div>
+      <div class="footer__links">
+        <a href="{{home_href}}">{{nav_home}}</a>
+        <a href="mailto:{{contact_email}}">{{footer_contact}}</a>
+      </div>
+    </div>
+    <nav class="footer__langs" aria-label="{{lang_nav_label}}">
+{{privacy_lang_links_html}}
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
