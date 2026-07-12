@@ -26,8 +26,23 @@ CONTACT_EMAIL = "hello@braggster.com"
 LOCALES = ["en", "nl", "es", "fr", "de", "pt-BR", "it"]
 DEFAULT_LOCALE = "en"
 
-# Games the app actually ships. Proper nouns, so they are not translated.
-GAME_NAMES = ["Yahtzee", "Klaverjassen"]
+# A representative slice of the games the app ships, spread across categories
+# (card, dice, board, sports) and countries. Proper nouns, so they are not
+# translated. The "any board game" and "more" chips carry the rest.
+GAME_NAMES = [
+    "Klaverjassen",
+    "Poker",
+    "Bridge",
+    "Hearts",
+    "Briscola",
+    "Belote",
+    "Skat",
+    "Truco",
+    "Yahtzee",
+    "Dudo",
+    "Darts",
+    "Rummikub",
+]
 
 TOKEN = re.compile(r"\{\{(\w+)\}\}")
 
