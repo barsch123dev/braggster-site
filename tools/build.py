@@ -27,20 +27,21 @@ LOCALES = ["en", "nl", "es", "fr", "de", "pt-BR", "it"]
 DEFAULT_LOCALE = "en"
 
 # A representative slice of the games the app ships, spread across categories
-# (card, dice, board, sports) and countries. Proper nouns, so they are not
-# translated. The "any board game" and "more" chips carry the rest.
+# (card, dice, board, sports, puzzle) and countries. Proper nouns, so they are
+# not translated. The "any board game" and "more" chips carry the rest.
+# Chess, Backgammon and Sudoku are also playable in the app, not just scored.
 GAME_NAMES = [
     "Klaverjassen",
     "Poker",
-    "Bridge",
-    "Hearts",
+    "Chess",
     "Briscola",
-    "Belote",
-    "Skat",
-    "Truco",
     "Yahtzee",
-    "Dudo",
+    "Belote",
+    "Backgammon",
+    "Skat",
     "Darts",
+    "Truco",
+    "Sudoku",
     "Rummikub",
 ]
 
