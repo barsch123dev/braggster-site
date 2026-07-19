@@ -48,7 +48,7 @@
   "footer_contact": "Contacto",
 
   "privacy_meta_title": "Política de privacidad: braggster",
-  "privacy_meta_description": "Braggster guarda tus puntuaciones en tu dispositivo. Sin cuentas, sin rastreadores, sin analíticas. Lo único que recogemos son informes de fallos, y puedes desactivarlos.",
+  "privacy_meta_description": "Braggster guarda tus puntuaciones en tu dispositivo. Sin cuentas, sin anuncios, sin cookies. Lo único que recoge la app son informes de fallos, y puedes desactivarlos.",
   "privacy_h1": "Política de privacidad",
   "privacy_updated": "Última actualización: 18 de julio de 2026",
   "privacy_intro": "Braggster guarda tus puntuaciones en tu móvil. No hay servidor ni cuentas. Recogemos una sola cosa, los informes de fallos, y puedes desactivarlos en Ajustes. Esto es lo que significa en la práctica.",
@@ -59,7 +59,7 @@
   "privacy_share_h": "Con quién compartimos datos",
   "privacy_share_p": "No vendemos nada a nadie. Los informes de fallos van a Firebase Crashlytics, un servicio de Google, y solo los usamos para corregir errores. Si compras un juego, Apple o Google gestiona el pago; nunca vemos los datos de tu tarjeta y no tenemos ningún servidor que registre lo que has comprado. Nada más sale de tu dispositivo, así que no hay nada más que compartir.",
   "privacy_website_h": "Esta web",
-  "privacy_website_p": "braggster.com es un sitio estático alojado en GitHub Pages. No usa cookies ni analíticas. GitHub guarda registros de servidor habituales, incluida tu dirección IP, para servir la página y protegerse frente a abusos.",
+  "privacy_website_p": "braggster.com es un sitio estático alojado en GitHub Pages. Usa Microsoft Clarity para ver qué partes de la página lee la gente y dónde se atasca. Aquí Clarity funciona en modo sin cookies: no guarda ninguna cookie, no puede reconocerte entre visitas y recibe un identificador anónimo nuevo en cada visita a la página. Clarity recibe tu dirección IP, tu navegador, tu tipo de dispositivo y los clics y el desplazamiento que haces en la página. Solo usamos esto para mejorar el sitio y nunca lo combinamos con nada de la app. GitHub además guarda registros de servidor habituales, incluida tu dirección IP, para servir la página y protegerse frente a abusos.",
   "privacy_children_h": "Menores",
   "privacy_children_p": "Braggster es apta para todas las edades. Los informes de fallos descritos arriba son lo único que recogemos de cualquier persona, menor o adulta. No se vinculan a ninguna identidad, nunca se usan para rastrear y puedes desactivarlos en Ajustes.",
   "privacy_rights_h": "Tus derechos",

@@ -48,7 +48,7 @@
   "footer_contact": "Contatti",
 
   "privacy_meta_title": "Informativa sulla privacy: braggster",
-  "privacy_meta_description": "Braggster tiene i tuoi punteggi sul tuo dispositivo. Nessun account, nessun tracciatore, nessuna statistica d'uso. L'unica cosa che raccogliamo sono le segnalazioni di crash, e puoi disattivarle.",
+  "privacy_meta_description": "Braggster tiene i tuoi punteggi sul tuo dispositivo. Nessun account, nessuna pubblicità, nessun cookie. L'unica cosa che l'app raccoglie sono le segnalazioni di crash, e puoi disattivarle.",
   "privacy_h1": "Informativa sulla privacy",
   "privacy_updated": "Ultimo aggiornamento: 18 luglio 2026",
   "privacy_intro": "Braggster tiene i tuoi punteggi sul tuo telefono. Non c'è un server e non ci sono account. Raccogliamo una cosa sola, le segnalazioni di crash, e puoi disattivarle nelle Impostazioni. Ecco che cosa significa in pratica.",
@@ -59,7 +59,7 @@
   "privacy_share_h": "Con chi condividiamo i dati",
   "privacy_share_p": "Non vendiamo niente a nessuno. Le segnalazioni di crash vanno a Firebase Crashlytics, un servizio di Google, e le usiamo solo per correggere errori. Se compri un gioco, il pagamento lo gestisce Apple o Google; non vediamo mai i dati della tua carta e non abbiamo nessun server che registri cosa hai comprato. Nient'altro lascia il tuo dispositivo, quindi non c'è altro da condividere.",
   "privacy_website_h": "Questo sito",
-  "privacy_website_p": "braggster.com è un sito statico ospitato su GitHub Pages. Non usa cookie né statistiche d'uso. GitHub conserva i normali registri del server, incluso il tuo indirizzo IP, per servire la pagina e difendersi dagli abusi.",
+  "privacy_website_p": "braggster.com è un sito statico ospitato su GitHub Pages. Usa Microsoft Clarity per capire quali parti della pagina vengono lette e dove i visitatori si bloccano. Qui Clarity funziona in modalità senza cookie: non salva alcun cookie, non può riconoscerti tra una visita e l'altra e riceve un identificativo anonimo nuovo a ogni visualizzazione di pagina. Clarity riceve il tuo indirizzo IP, il tuo browser, il tipo di dispositivo e i clic e lo scorrimento che fai sulla pagina. Usiamo questi dati solo per migliorare il sito e non li combiniamo mai con nulla che venga dall'app. GitHub conserva inoltre i normali registri del server, incluso il tuo indirizzo IP, per servire la pagina e difendersi dagli abusi.",
   "privacy_children_h": "Bambini",
   "privacy_children_p": "Braggster va bene per tutte le età. Le segnalazioni di crash descritte sopra sono l'unica cosa che raccogliamo da chiunque, bambino o adulto. Non sono collegate a nessuna identità, non servono mai a tracciare e puoi disattivarle nelle Impostazioni.",
   "privacy_rights_h": "I tuoi diritti",

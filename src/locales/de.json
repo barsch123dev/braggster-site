@@ -48,7 +48,7 @@
   "footer_contact": "Kontakt",
 
   "privacy_meta_title": "Datenschutzerklärung: braggster",
-  "privacy_meta_description": "Braggster behält deine Punkte auf deinem Gerät. Keine Konten, keine Tracker, keine Analyse. Das Einzige, was wir erheben, sind Absturzberichte, und die kannst du ausschalten.",
+  "privacy_meta_description": "Braggster behält deine Punkte auf deinem Gerät. Keine Konten, keine Werbung, keine Cookies. Das Einzige, was die App erhebt, sind Absturzberichte, und die kannst du ausschalten.",
   "privacy_h1": "Datenschutzerklärung",
   "privacy_updated": "Zuletzt aktualisiert: 18. Juli 2026",
   "privacy_intro": "Braggster behält deine Punkte auf deinem Handy. Es gibt keinen Server und keine Konten. Wir erheben genau eine Sache, Absturzberichte, und die kannst du in den Einstellungen ausschalten. Das bedeutet es in der Praxis.",
@@ -59,7 +59,7 @@
   "privacy_share_h": "Mit wem wir Daten teilen",
   "privacy_share_p": "Wir verkaufen nichts an irgendwen. Absturzberichte gehen an Firebase Crashlytics, einen Dienst von Google, und wir nutzen sie nur, um Fehler zu beheben. Wenn du ein Spiel kaufst, wickelt Apple oder Google die Zahlung ab; deine Kartendaten sehen wir nie, und wir haben keinen Server, der festhält, was du gekauft hast. Sonst verlässt nichts dein Gerät, also gibt es auch sonst nichts zu teilen.",
   "privacy_website_h": "Diese Website",
-  "privacy_website_p": "braggster.com ist eine statische Seite auf GitHub Pages. Sie setzt keine Cookies und nutzt keine Analyse. GitHub führt übliche Serverprotokolle, darunter deine IP-Adresse, um die Seite auszuliefern und Missbrauch abzuwehren.",
+  "privacy_website_p": "braggster.com ist eine statische Seite auf GitHub Pages. Sie nutzt Microsoft Clarity, um zu sehen, welche Teile der Seite gelesen werden und wo Besucher hängen bleiben. Clarity läuft hier im cookielosen Modus: Es setzt keine Cookies, es kann dich nicht über mehrere Besuche hinweg wiedererkennen, und es erhält bei jedem Seitenaufruf eine neue anonyme Kennung. Clarity erhält deine IP-Adresse, deinen Browser, deinen Gerätetyp sowie deine Klicks und dein Scrollen auf der Seite. Wir nutzen das nur, um die Seite zu verbessern, und führen es nie mit Daten aus der App zusammen. GitHub führt außerdem übliche Serverprotokolle, darunter deine IP-Adresse, um die Seite auszuliefern und Missbrauch abzuwehren.",
   "privacy_children_h": "Kinder",
   "privacy_children_p": "Braggster ist für jedes Alter geeignet. Die Absturzberichte oben sind das Einzige, was wir überhaupt von jemandem erheben, ob Kind oder erwachsen. Sie werden mit keiner Identität verknüpft, nie zum Tracking genutzt, und du kannst sie in den Einstellungen ausschalten.",
   "privacy_rights_h": "Deine Rechte",

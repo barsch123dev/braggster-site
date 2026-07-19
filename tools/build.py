@@ -22,6 +22,30 @@ DIST = ROOT / "dist"
 SITE_URL = "https://braggster.com"
 CONTACT_EMAIL = "hello@braggster.com"
 
+# Microsoft Clarity, pinned to cookieless mode.
+#
+# The consentv2 call is queued by the tag shim before the remote script loads, so
+# Clarity sees "denied" before it can write anything: no _clck, no _clsk, no
+# third-party cookie, and no cross-visit id. It gets a fresh id per page view
+# instead, which is enough for heatmaps and scroll depth but deliberately gives up
+# returning-visitor stitching. Because the signal is hard-coded rather than read
+# from a banner, this does not depend on the project's dashboard cookie setting.
+#
+# This is still a third party receiving visitor data, so it is disclosed in the
+# privacy policy under privacy_website_p in every locale. Do not add Clarity to a
+# page without that disclosure.
+CLARITY_ID = "xm8qnymj92"
+CLARITY_HTML = (
+    "<script>\n"
+    "(function(c,l,a,r,i,t,y){\n"
+    "    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n"
+    "    t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\n"
+    "    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n"
+    f'}})(window, document, "clarity", "script", "{CLARITY_ID}");\n'
+    "window.clarity('consentv2', {ad_Storage: 'denied', analytics_Storage: 'denied'});\n"
+    "</script>"
+)
+
 # English is canonical and sits at the root. Order drives the footer language nav.
 LOCALES = ["en", "nl", "es", "fr", "de", "pt-BR", "it"]
 DEFAULT_LOCALE = "en"
@@ -223,6 +247,7 @@ def build() -> None:
             lang_links_html=lang_links_html(code, locales, root, ""),
             privacy_href=f"{root}{ldir}privacy/",
             contact_email=CONTACT_EMAIL,
+            clarity_html=CLARITY_HTML,
         )
         out = DIST / ldir / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
@@ -246,6 +271,7 @@ def build() -> None:
             privacy_lang_links_html=lang_links_html(code, locales, proot, "privacy/"),
             home_href=f"{proot}{ldir}",
             contact_email=CONTACT_EMAIL,
+            clarity_html=CLARITY_HTML,
         )
         pout = DIST / ldir / "privacy" / "index.html"
         pout.parent.mkdir(parents=True, exist_ok=True)
