@@ -26,12 +26,30 @@ CONTACT_EMAIL = "hello@braggster.com"
 LOCALES = ["en", "nl", "es", "fr", "de", "pt-BR", "it"]
 DEFAULT_LOCALE = "en"
 
+# Open Graph wants language_TERRITORY, which is not the same shape as our locale
+# codes or as the BCP 47 tags hreflang uses.
+OG_LOCALES = {
+    "en": "en_US",
+    "nl": "nl_NL",
+    "es": "es_ES",
+    "fr": "fr_FR",
+    "de": "de_DE",
+    "pt-BR": "pt_BR",
+    "it": "it_IT",
+}
+
+# The share card is text-free and locale-independent: the headline a reader sees
+# in WhatsApp comes from og:title below, not from the image. See tools/build_og.py.
+OG_IMAGE = f"{SITE_URL}/assets/web/og-card.png"
+OG_IMAGE_SIZE = (1200, 630)
+
 # A representative slice of the games the app ships, spread across categories
 # (card, dice, board, sports, puzzle) and countries. Proper nouns, so they are
 # not translated. The "any board game" and "more" chips carry the rest.
 # Chess, Backgammon and Sudoku are also playable in the app, not just scored.
 GAME_NAMES = [
     "Klaverjassen",
+    "Pesten",
     "Poker",
     "Chess",
     "Briscola",
@@ -123,6 +141,42 @@ def lang_links_html(current: str, locales: dict[str, dict], root: str, suffix: s
     return "\n".join(links)
 
 
+def social_html(current: str, title: str, description: str, url: str) -> str:
+    """Open Graph and Twitter card tags.
+
+    Title and description are escaped here rather than by render(), because the
+    whole block is substituted as raw _html.
+    """
+    title = html.escape(title, quote=True)
+    description = html.escape(description, quote=True)
+    width, height = OG_IMAGE_SIZE
+
+    tags = [
+        '<meta property="og:type" content="website">',
+        '<meta property="og:site_name" content="braggster">',
+        f'<meta property="og:title" content="{title}">',
+        f'<meta property="og:description" content="{description}">',
+        f'<meta property="og:url" content="{url}">',
+        f'<meta property="og:image" content="{OG_IMAGE}">',
+        f'<meta property="og:image:width" content="{width}">',
+        f'<meta property="og:image:height" content="{height}">',
+        '<meta property="og:image:alt" content="braggster">',
+        f'<meta property="og:locale" content="{OG_LOCALES[current]}">',
+    ]
+    for code in LOCALES:
+        if code != current:
+            tags.append(f'<meta property="og:locale:alternate" content="{OG_LOCALES[code]}">')
+
+    tags += [
+        '<meta name="twitter:card" content="summary_large_image">',
+        f'<meta name="twitter:title" content="{title}">',
+        f'<meta name="twitter:description" content="{description}">',
+        f'<meta name="twitter:image" content="{OG_IMAGE}">',
+        '<meta name="twitter:image:alt" content="braggster">',
+    ]
+    return "\n".join(tags)
+
+
 def hreflang_html(suffix: str) -> str:
     tags = []
     for code in LOCALES:
@@ -141,7 +195,10 @@ def build() -> None:
         shutil.rmtree(DIST)
     DIST.mkdir(parents=True)
 
-    shutil.copytree(ROOT / "assets", DIST / "assets")
+    # The .ttf sources stay in the repo but are never served: styles.css asks for
+    # the subset .woff2 that tools/build_fonts.py generates beside them. The OFL
+    # ships, because the licence has to travel with the fonts.
+    shutil.copytree(ROOT / "assets", DIST / "assets", ignore=shutil.ignore_patterns("*.ttf"))
     shutil.copy2(SRC / "styles.css", DIST / "styles.css")
     shutil.copy2(ROOT / "CNAME", DIST / "CNAME")
     (DIST / ".nojekyll").write_text("")
@@ -160,6 +217,7 @@ def build() -> None:
             root=root,
             canonical=f"{SITE_URL}/{ldir}",
             hreflang_html=hreflang_html(""),
+            social_html=social_html(code, loc["meta_title"], loc["meta_description"], f"{SITE_URL}/{ldir}"),
             features_html=features_html(loc),
             chips_html=chips_html(loc),
             lang_links_html=lang_links_html(code, locales, root, ""),
@@ -179,6 +237,12 @@ def build() -> None:
             root=proot,
             privacy_canonical=f"{SITE_URL}/{ldir}privacy/",
             privacy_hreflang_html=hreflang_html("privacy/"),
+            privacy_social_html=social_html(
+                code,
+                loc["privacy_meta_title"],
+                loc["privacy_meta_description"],
+                f"{SITE_URL}/{ldir}privacy/",
+            ),
             privacy_lang_links_html=lang_links_html(code, locales, proot, "privacy/"),
             home_href=f"{proot}{ldir}",
             contact_email=CONTACT_EMAIL,
