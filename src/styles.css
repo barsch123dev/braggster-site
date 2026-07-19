@@ -85,10 +85,8 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 4px;
-  /* Block padding moved onto the link below so the bar's own height absorbs the
-     larger target instead of stacking on top of it. */
-  padding: 2px 20px;
+  gap: 8px;
+  padding: 10px 20px;
   line-height: 1.3;
   text-align: center;
 }
@@ -97,16 +95,6 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   font-family: 'Baloo 2', system-ui, sans-serif;
 }
-.announce a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding-inline: 8px;
-  color: var(--felt);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.announce a:hover { color: var(--brag); }
 
 /* Nav */
 .nav {
