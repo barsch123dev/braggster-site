@@ -12,20 +12,44 @@ public website.
 
 ```
 src/home.html          page template
+src/games.html         games catalogue template
 src/privacy.html       privacy policy template
+src/games.json         the game catalogue: 53 entries, extracted from the app
 src/styles.css         all styling; brand tokens live in :root
 src/locales/*.json     one file per language, all copy
 assets/                logos, favicons, self-hosted fonts, share card
 tools/build.py         renders src/ into dist/
 tools/build_fonts.py   subsets the font TTFs to Latin woff2 (rarely needed)
 tools/build_og.py      regenerates the Open Graph share card (rarely needed)
-tools/check_copy.py    no em dashes, locale key parity, no unrendered tokens
+tools/check_copy.py    no em dashes, locale key parity, no unrendered tokens, games.json shape
 tools/check_contrast.py WCAG AA contrast gate for the palette
 ```
 
 English is canonical and served from `/`. The other six languages live under `/nl/`, `/es/`,
 `/fr/`, `/de/`, `/pt-br/` and `/it/`, matching the app's seven launch languages. Links between
 pages are relative, so the output works from a subpath as well as from the apex domain.
+
+## The games catalogue
+
+`src/games.json` is the one home for the game list. It was extracted from the app repo's game
+definitions (`app/lib/games/*/*_game_definition.dart`), and the counts it encodes are the app's:
+53 games, 33 card / 2 dice / 10 board / 7 sports / 1 blank scorecard, 11 playable in the app,
+7 that rank lowest-wins, 6 that carry a publisher disclaimer. `/games/` renders from it, and the
+home page teaser chips take their names from it too, so nothing here is hand-kept twice.
+
+Game names are proper nouns and are never translated. Neither is `functionality`, which is
+reference data in English that the page deliberately does not render as prose: doing so would put
+untranslated English paragraphs on six of the seven locales. What the page shows is the name, the
+player count, the category, the badges and the tag words, all of which are either language-neutral
+or come from `src/locales/`. The tag words are other names, regional names and translations, and
+they are rendered as real text because they exist to be found.
+
+The category filter and the play-in-app toggle are plain radio and checkbox inputs with **no
+JavaScript**. `build.py` generates `:has(:checked)` rules from `games.json` into a `<style>` block
+on the page, including the rules that show the empty state for the three filter pairs that
+genuinely match nothing. A browser without `:has()` shows all 53, which is the right fallback for
+a page whose job is to list them. If you add a category, the CSS follows automatically; there is
+no hand-written selector to keep in sync.
 
 ## Build and check
 

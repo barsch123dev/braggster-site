@@ -22,6 +22,9 @@ SURFACE = "#FFFFFF"
 MUTED = "#5B6B85"
 MUTED_ON_DARK = "#93A2BD"
 WHITE = "#FFFFFF"
+# Badge and tile tints, used behind ink labels on the games page.
+TINT_BLUE = "#E3ECFC"
+TINT_ORANGE = "#FDEBD6"
 
 AA_NORMAL = 4.5
 AA_LARGE = 3.0
@@ -40,6 +43,14 @@ PAIRS = [
     ("announcement 'New' on ink", BRAG, INK, AA_LARGE),
     ("banner sub on ink", MUTED_ON_DARK, INK, AA_NORMAL),
     ("banner heading on ink", FELT, INK, AA_NORMAL),
+    # Games page.
+    ("game meta on surface", MUTED, SURFACE, AA_NORMAL),
+    ("game tag words on surface", MUTED, SURFACE, AA_NORMAL),
+    ("'Play in app' badge on blue tint", INK, TINT_BLUE, AA_NORMAL),
+    ("'Lowest wins' badge on orange tint", INK, TINT_ORANGE, AA_NORMAL),
+    ("unselected filter label on surface", INK, SURFACE, AA_NORMAL),
+    ("selected filter label on ink", FELT, INK, AA_NORMAL),
+    ("games page intro on felt", MUTED, FELT, AA_NORMAL),
 ]
 
 # Pairings the design shipped that must never come back.

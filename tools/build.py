@@ -67,24 +67,33 @@ OG_LOCALES = {
 OG_IMAGE = f"{SITE_URL}/assets/web/og-card.png"
 OG_IMAGE_SIZE = (1200, 630)
 
-# A representative slice of the games the app ships, spread across categories
-# (card, dice, board, sports, puzzle) and countries. Proper nouns, so they are
-# not translated. The "any board game" and "more" chips carry the rest.
-# Chess, Backgammon and Sudoku are also playable in the app, not just scored.
-GAME_NAMES = [
-    "Klaverjassen",
-    "Pesten",
-    "Poker",
-    "Chess",
-    "Briscola",
-    "Yahtzee",
-    "Belote",
-    "Backgammon",
-    "Skat",
-    "Darts",
-    "Truco",
-    "Sudoku",
-    "Rummikub",
+# The catalogue has one home: src/games.json, extracted from the app's game
+# definitions. Everything the games page and the home chips render is derived
+# from it, so the site cannot drift from the app the way a hand-kept list did.
+GAMES = json.loads((SRC / "games.json").read_text("utf-8"))["games"]
+
+# Category order on the games page. Mirrors the app's GameCategory, except that
+# the blank scorecard is split out of "other" into its own "free" bucket: it is
+# the one game that is always free, which is worth saying plainly.
+CATEGORIES = ["card", "dice", "board", "sports", "free"]
+
+# The home page keeps a short teaser rather than all 53 names. This is a
+# curated slice, spread across categories and countries, but the names
+# themselves still come from games.json, so a rename in the app travels here.
+HOME_CHIP_IDS = [
+    "klaverjassen",
+    "pesten",
+    "poker",
+    "chess",
+    "briscola",
+    "yahtzee",
+    "belote",
+    "backgammon",
+    "skat",
+    "darts",
+    "truco",
+    "sudoku",
+    "rummikub",
 ]
 
 TOKEN = re.compile(r"\{\{(\w+)\}\}")
@@ -148,11 +157,116 @@ def features_html(loc: dict[str, str]) -> str:
     return "\n".join(cards)
 
 
-def chips_html(loc: dict[str, str]) -> str:
-    chips = [f'        <span class="chip">{html.escape(g)}</span>' for g in GAME_NAMES]
+def chips_html(loc: dict[str, str], games_href: str) -> str:
+    """The home teaser. The last chip is a link through to the full catalogue,
+    which is where the "more" chip used to sit before there was a page to send
+    people to."""
+    by_id = {g["id"]: g for g in GAMES}
+    names = [by_id[i]["name"] for i in HOME_CHIP_IDS]
+    chips = [f'        <span class="chip">{html.escape(n)}</span>' for n in names]
     chips.append(f'        <span class="chip">{html.escape(loc["chip_generic"])}</span>')
-    chips.append(f'        <span class="chip chip--soon">{html.escape(loc["chip_soon"])}</span>')
+    more = loc["games_more_link"].replace("{n}", str(len(GAMES)))
+    chips.append(f'        <a class="chip chip--more" href="{games_href}">{html.escape(more)}</a>')
     return "\n".join(chips)
+
+
+def players_label(loc: dict[str, str], players: dict[str, int]) -> str:
+    """Human player count for one game, from the app's sideStructure numbers."""
+    lo, hi, per_side = players["min"], players["max"], players["perSide"]
+    if per_side > 1:
+        # Every partnership game in the catalogue is exactly two teams of two.
+        # If that ever stops being true, this needs a real plural rule.
+        assert lo == hi == 2 and per_side == 2, f"unexpected team shape: {players}"
+        return loc["games_players_teams"]
+    if lo == hi == 1:
+        return loc["games_players_solo"]
+    if lo == hi:
+        return loc["games_players_exact"].replace("{n}", str(lo))
+    return loc["games_players_range"].replace("{min}", str(lo)).replace("{max}", str(hi))
+
+
+def games_filters_html(loc: dict[str, str]) -> str:
+    """Radio group for the category filter, plus the play-in-app checkbox.
+
+    The controls are plain form inputs with no JavaScript behind them: the
+    filtering is done by the CSS in games_css(), which reads their :checked
+    state through :has(). Where :has() is unsupported the inputs simply do
+    nothing and every game stays visible, which is the right fallback.
+    """
+    rows = [
+        '        <fieldset class="filters">',
+        f'          <legend class="filters__legend">{html.escape(loc["games_filter_category"])}</legend>',
+        '          <input type="radio" name="cat" id="f-all" class="filters__input" checked>',
+        f'          <label for="f-all" class="filters__chip">{html.escape(loc["games_cat_all"])}</label>',
+    ]
+    for cat in CATEGORIES:
+        label = html.escape(loc[f"games_cat_{cat}"])
+        rows.append(f'          <input type="radio" name="cat" id="f-{cat}" class="filters__input">')
+        rows.append(f'          <label for="f-{cat}" class="filters__chip">{label}</label>')
+    rows.append("        </fieldset>")
+    rows.append('        <div class="filters filters--toggle">')
+    rows.append('          <input type="checkbox" id="f-app" class="filters__input">')
+    rows.append(
+        f'          <label for="f-app" class="filters__chip">{html.escape(loc["games_badge_app"])}</label>'
+    )
+    rows.append("        </div>")
+    return "\n".join(rows)
+
+
+def games_grid_html(loc: dict[str, str]) -> str:
+    """One card per game. Tag words are rendered as real text, not attributes,
+    because they exist to be found: by a search engine, and by a reader looking
+    for the name their family uses."""
+    items = []
+    for game in GAMES:
+        badges = []
+        if game["playInApp"]:
+            badges.append(("game__badge game__badge--app", loc["games_badge_app"]))
+        if game["lowestWins"]:
+            badges.append(("game__badge game__badge--low", loc["games_badge_lowest"]))
+        badge_html = "".join(
+            f'<span class="{cls}">{html.escape(text)}</span>' for cls, text in badges
+        )
+        app_attr = " data-app" if game["playInApp"] else ""
+        category_label = loc["games_cat_" + game["category"]]
+        meta = f"{players_label(loc, game['players'])} · {category_label}"
+        items.append(
+            f'          <li class="game" data-cat="{game["category"]}"{app_attr}>\n'
+            f'            <h2 class="game__name">{html.escape(game["name"])}</h2>\n'
+            f'            <p class="game__meta">{html.escape(meta)}</p>\n'
+            + (f'            <p class="game__badges">{badge_html}</p>\n' if badge_html else "")
+            + f'            <p class="game__tags"><span class="sr-only">{html.escape(loc["games_tags_label"])} </span>'
+            f'{html.escape(", ".join(game["tags"]))}</p>\n'
+            f"          </li>"
+        )
+    return "\n".join(items)
+
+
+def games_css() -> str:
+    """The filter behaviour, generated from the data rather than hand-written.
+
+    Two kinds of rule. The first hides everything outside the chosen category,
+    or everything without in-app play. The second turns on the empty state, and
+    it only fires for combinations that genuinely have no games: asking for
+    dice, sports or the blank scorecard *and* play-in-app matches nothing. Both
+    are derived here so they cannot drift from games.json.
+    """
+    lines = [
+        "  .games:has(#f-app:checked) .game:not([data-app]) { display: none; }",
+    ]
+    for cat in CATEGORIES:
+        lines.append(
+            f'  .games:has(#f-{cat}:checked) .game:not([data-cat="{cat}"]) {{ display: none; }}'
+        )
+
+    empty = [
+        f"  .games:has(#f-app:checked):has(#f-{cat}:checked) .games__empty"
+        for cat in CATEGORIES
+        if not any(g["category"] == cat and g["playInApp"] for g in GAMES)
+    ]
+    if empty:
+        lines.append(",\n".join(empty) + " { display: block; }")
+    return "\n".join(lines)
 
 
 def lang_links_html(current: str, locales: dict[str, dict], root: str, suffix: str) -> str:
@@ -214,6 +328,7 @@ def build() -> None:
     locales = {c: json.loads((SRC / "locales" / f"{c}.json").read_text("utf-8")) for c in LOCALES}
     home_tpl = (SRC / "home.html").read_text("utf-8")
     privacy_tpl = (SRC / "privacy.html").read_text("utf-8")
+    games_tpl = (SRC / "games.html").read_text("utf-8")
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -243,8 +358,9 @@ def build() -> None:
             hreflang_html=hreflang_html(""),
             social_html=social_html(code, loc["meta_title"], loc["meta_description"], f"{SITE_URL}/{ldir}"),
             features_html=features_html(loc),
-            chips_html=chips_html(loc),
+            chips_html=chips_html(loc, f"{root}{ldir}games/"),
             lang_links_html=lang_links_html(code, locales, root, ""),
+            games_href=f"{root}{ldir}games/",
             privacy_href=f"{root}{ldir}privacy/",
             contact_email=CONTACT_EMAIL,
             clarity_html=CLARITY_HTML,
@@ -278,7 +394,35 @@ def build() -> None:
         pout.write_text(render(privacy_tpl, pvalues), "utf-8")
         written.append(str(pout.relative_to(DIST)))
 
-    urls = [f"{SITE_URL}/{locale_dir(c)}{s}" for s in ("", "privacy/") for c in LOCALES]
+        # ---- Games: <root>/<ldir>games/index.html
+        groot = "../" * (depth + 1)
+        gvalues = dict(loc)
+        gvalues.update(
+            root=groot,
+            games_canonical=f"{SITE_URL}/{ldir}games/",
+            games_hreflang_html=hreflang_html("games/"),
+            games_social_html=social_html(
+                code,
+                loc["games_meta_title"],
+                loc["games_meta_description"],
+                f"{SITE_URL}/{ldir}games/",
+            ),
+            games_lang_links_html=lang_links_html(code, locales, groot, "games/"),
+            games_filters_html=games_filters_html(loc),
+            games_grid_html=games_grid_html(loc),
+            games_css_html=games_css(),
+            home_href=f"{groot}{ldir}",
+            games_href=f"{groot}{ldir}games/",
+            privacy_href=f"{groot}{ldir}privacy/",
+            contact_email=CONTACT_EMAIL,
+            clarity_html=CLARITY_HTML,
+        )
+        gout = DIST / ldir / "games" / "index.html"
+        gout.parent.mkdir(parents=True, exist_ok=True)
+        gout.write_text(render(games_tpl, gvalues), "utf-8")
+        written.append(str(gout.relative_to(DIST)))
+
+    urls = [f"{SITE_URL}/{locale_dir(c)}{s}" for s in ("", "games/", "privacy/") for c in LOCALES]
     sitemap = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     (DIST / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'

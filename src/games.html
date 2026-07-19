@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{games_meta_title}}</title>
+<meta name="description" content="{{games_meta_description}}">
+<link rel="canonical" href="{{games_canonical}}">
+{{games_hreflang_html}}
+{{games_social_html}}
+<link rel="icon" sizes="32x32" href="{{root}}assets/web/favicon-32.png">
+<link rel="icon" sizes="16x16" href="{{root}}assets/web/favicon-16.png">
+<link rel="apple-touch-icon" href="{{root}}assets/web/apple-touch-icon-180.png">
+<link rel="stylesheet" href="{{root}}styles.css">
+<link rel="preload" href="{{root}}assets/fonts/Baloo2.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{root}}assets/fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+{{games_css_html}}
+</style>
+{{clarity_html}}
+</head>
+<body>
+<a class="skip-link" href="#main">{{skip_link}}</a>
+
+<div class="wrap">
+  <nav class="nav" aria-label="{{nav_label}}">
+    <a class="nav__logo" href="{{home_href}}" aria-label="braggster">
+      <img src="{{root}}assets/logo/lockup-color.png" alt="braggster" width="220" height="44">
+    </a>
+    <div class="nav__links">
+      <a href="{{home_href}}">{{nav_home}}</a>
+      <a href="{{games_href}}" aria-current="page">{{nav_games}}</a>
+      <a class="btn btn--brag" href="{{home_href}}">{{nav_cta}}</a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <section class="section games-page">
+      <div class="section__head">
+        <p class="eyebrow">{{games_eyebrow}}</p>
+        <h1>{{games_h1}}</h1>
+        <p class="games-page__intro">{{games_intro}}</p>
+      </div>
+
+      <div class="games">
+{{games_filters_html}}
+
+        <ul class="games__grid">
+{{games_grid_html}}
+        </ul>
+
+        <p class="games__empty">{{games_none}}</p>
+      </div>
+
+      <p class="disclaimer">{{games_free_note}}</p>
+      <p class="disclaimer">{{disclaimer}}</p>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__row">
+      <div class="footer__brand">
+        <img src="{{root}}assets/logo/symbol-color.png" alt="" width="30" height="30">
+        <span>{{footer_copy}}</span>
+      </div>
+      <div class="footer__links">
+        <a href="{{home_href}}">{{nav_home}}</a>
+        <a href="{{privacy_href}}">{{footer_privacy}}</a>
+        <a href="mailto:{{contact_email}}">{{footer_contact}}</a>
+      </div>
+    </div>
+    <nav class="footer__langs" aria-label="{{lang_nav_label}}">
+{{games_lang_links_html}}
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
