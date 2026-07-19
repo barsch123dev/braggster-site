@@ -22,15 +22,18 @@
   --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
+/* Latin subsets of the variable TTFs, built by tools/build_fonts.py. The full
+   faces carry scripts this site cannot render (Baloo 2 ships Devanagari), which
+   was 726KB of the page weight. Both keep their weight axis. */
 @font-face {
   font-family: 'Baloo 2';
-  src: url('assets/fonts/Baloo2.ttf') format('truetype-variations');
+  src: url('assets/fonts/Baloo2.woff2') format('woff2');
   font-weight: 400 800;
   font-display: swap;
 }
 @font-face {
   font-family: 'Outfit';
-  src: url('assets/fonts/Outfit.ttf') format('truetype-variations');
+  src: url('assets/fonts/Outfit.woff2') format('woff2');
   font-weight: 100 900;
   font-display: swap;
 }
@@ -84,6 +87,7 @@ img { max-width: 100%; display: block; }
   flex-wrap: wrap;
   gap: 8px;
   padding: 10px 20px;
+  line-height: 1.3;
   text-align: center;
 }
 .announce__new {
@@ -91,8 +95,6 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   font-family: 'Baloo 2', system-ui, sans-serif;
 }
-.announce a { color: var(--felt); text-decoration: underline; text-underline-offset: 3px; }
-.announce a:hover { color: var(--brag); }
 
 /* Nav */
 .nav {
@@ -107,16 +109,32 @@ img { max-width: 100%; display: block; }
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  /* Was 28px against zero-padding links. The links now carry their own 12px
+     inline padding to reach the touch floor, so the gap drops to keep the
+     visual rhythm at roughly the same 28px. */
+  gap: 8px;
   font-size: 15px;
   font-weight: 600;
   flex-wrap: wrap;
 }
+/* Text links in the nav were ~19px tall. Padding gets them to 48dp without
+   changing how they look. */
+.nav__links a:not(.btn) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: 12px;
+}
 .nav__links a[aria-current='page'] { color: var(--ink); }
 
-/* Buttons: full pill, Baloo 2 700, spring press */
+/* Buttons: full pill, Baloo 2 700, spring press.
+   min-height is the 48dp touch floor; the padding below still sets the visual
+   weight, and only .btn--brag was previously under it. */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
   font-family: 'Baloo 2', system-ui, sans-serif;
   font-weight: 700;
   border-radius: 999px;
@@ -176,8 +194,15 @@ img { max-width: 100%; display: block; }
   max-width: 480px;
   text-wrap: pretty;
 }
-.hero__actions { display: flex; align-items: center; gap: 20px; margin-top: 6px; flex-wrap: wrap; }
-.hero__actions .link { font-weight: 600; font-size: 15px; }
+.hero__actions { display: flex; align-items: center; gap: 12px; margin-top: 6px; flex-wrap: wrap; }
+.hero__actions .link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: 8px;
+  font-weight: 600;
+  font-size: 15px;
+}
 .hero__art { display: flex; justify-content: center; }
 
 /* Phone placeholder: real screenshot pending */
@@ -283,13 +308,23 @@ img { max-width: 100%; display: block; }
 .footer__brand { display: flex; align-items: center; gap: 12px; }
 .footer__brand img { width: 30px; height: 30px; }
 .footer__brand span { font-size: 13.5px; color: var(--muted); }
-.footer__links { display: flex; gap: 24px; font-size: 13.5px; font-weight: 600; }
+.footer__links { display: flex; gap: 8px; font-size: 13.5px; font-weight: 600; }
 .footer__langs {
-  padding-bottom: 32px;
+  padding-bottom: 24px;
   display: flex;
-  gap: 16px;
+  gap: 4px;
   flex-wrap: wrap;
   font-size: 13.5px;
+}
+/* The footer links and the seven-language switcher were the smallest targets on
+   the page at ~17px tall. Same treatment as the nav: pad to 48dp, keep a gap so
+   neighbouring targets cannot be hit by accident. */
+.footer__links a,
+.footer__langs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: 10px;
 }
 .footer__langs a[aria-current='true'] { color: var(--ink); font-weight: 600; }
 
@@ -322,9 +357,14 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 620px) {
   .wrap { padding-inline: 20px; }
-  .nav { justify-content: center; gap: 16px; }
-  .nav__links { gap: 18px; justify-content: center; }
+  .nav { justify-content: center; gap: 8px; }
+  /* Four links plus a CTA cannot share one row at 48dp on a 375px screen, so
+     give the CTA its own full-width row rather than letting it strand whichever
+     link wraps next to it. The links' own padding carries the spacing. */
+  .nav__links { gap: 0; justify-content: center; }
+  .nav__links .btn { flex: 1 1 100%; margin-top: 6px; }
   .footer__row { justify-content: center; text-align: center; }
+  .footer__langs { justify-content: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -14,8 +14,10 @@ src/home.html          page template
 src/privacy.html       privacy policy template
 src/styles.css         all styling; brand tokens live in :root
 src/locales/*.json     one file per language, all copy
-assets/                logos, favicons, self-hosted fonts
+assets/                logos, favicons, self-hosted fonts, share card
 tools/build.py         renders src/ into dist/
+tools/build_fonts.py   subsets the font TTFs to Latin woff2 (rarely needed)
+tools/build_og.py      regenerates the Open Graph share card (rarely needed)
 tools/check_copy.py    no em dashes, locale key parity, no unrendered tokens
 tools/check_contrast.py WCAG AA contrast gate for the palette
 ```
@@ -34,6 +36,10 @@ python3 -m http.server -d dist  # preview at localhost:8000
 ```
 
 No dependencies beyond the Python standard library. CI runs the same three commands.
+
+The two asset builders are **not** part of that loop and do not run in CI. Their output is committed,
+so you only run them when the input changes: `build_fonts.py` after replacing a source `.ttf`
+(needs `fonttools` and `brotli`), `build_og.py` after changing the lockup (needs `Pillow`).
 
 ## Adding or changing copy
 
@@ -57,3 +63,8 @@ user-text rule.
 Baloo 2 and Outfit are self-hosted under the SIL Open Font License 1.1. See
 [`assets/fonts/OFL.txt`](assets/fonts/OFL.txt). They are not hot-linked from Google Fonts, so no
 visitor IP addresses are shared with a third party.
+
+The upstream `.ttf` files stay in `assets/fonts/` as sources but are never served: `build.py`
+excludes them from `dist/`. The site loads the Latin `.woff2` subsets that `build_fonts.py`
+generates beside them. Baloo 2 ships a full Devanagari set that no locale here can render, and
+dropping it took the two faces from 794KB to 68KB. Both keep their variable weight axis.
