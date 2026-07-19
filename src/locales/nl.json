@@ -48,7 +48,7 @@
   "footer_contact": "Contact",
 
   "privacy_meta_title": "Privacybeleid: braggster",
-  "privacy_meta_description": "Braggster bewaart je scores op je toestel. Geen accounts, geen trackers, geen analytics. Het enige wat we verzamelen zijn crashgegevens, en die kun je uitzetten.",
+  "privacy_meta_description": "Braggster bewaart je scores op je toestel. Geen accounts, geen advertenties, geen cookies. Het enige wat de app verzamelt zijn crashgegevens, en die kun je uitzetten.",
   "privacy_h1": "Privacybeleid",
   "privacy_updated": "Laatst bijgewerkt: 18 juli 2026",
   "privacy_intro": "Braggster bewaart je scores op je telefoon. Er is geen server en er zijn geen accounts. We verzamelen één ding, crashgegevens, en die kun je uitzetten in Instellingen. Dit is wat dat in de praktijk betekent.",
@@ -59,7 +59,7 @@
   "privacy_share_h": "Met wie we gegevens delen",
   "privacy_share_p": "We verkopen niets aan wie dan ook. Crashgegevens gaan naar Firebase Crashlytics, een dienst van Google, en we gebruiken ze alleen om fouten op te lossen. Koop je een spel, dan handelt Apple of Google de betaling af; wij zien je kaartgegevens nooit en we hebben geen server die bijhoudt wat je hebt gekocht. Verder verlaat er niets je toestel, dus er valt verder niets te delen.",
   "privacy_website_h": "Deze website",
-  "privacy_website_p": "braggster.com is een statische site die op GitHub Pages draait. De site plaatst geen cookies en gebruikt geen analytics. GitHub bewaart gewone serverlogs, waaronder je IP-adres, om de pagina te leveren en misbruik tegen te gaan.",
+  "privacy_website_p": "braggster.com is een statische site die op GitHub Pages draait. De site gebruikt Microsoft Clarity om te zien welke delen van de pagina mensen lezen en waar ze vastlopen. Clarity draait hier in cookieloze modus: de site plaatst geen cookies, kan je niet herkennen tussen bezoeken, en krijgt bij elke paginaweergave een nieuwe anonieme id. Clarity ontvangt je IP-adres, je browser, je apparaattype en de klikken en het scrollen die je op de pagina doet. We gebruiken dit alleen om de site te verbeteren en combineren het nooit met iets uit de app. GitHub bewaart daarnaast gewone serverlogs, waaronder je IP-adres, om de pagina te leveren en misbruik tegen te gaan.",
   "privacy_children_h": "Kinderen",
   "privacy_children_p": "Braggster is geschikt voor alle leeftijden. De crashgegevens hierboven zijn het enige wat we van wie dan ook verzamelen, kind of volwassene. Ze worden niet aan een identiteit gekoppeld, nooit gebruikt om te volgen, en je kunt ze uitzetten in Instellingen.",
   "privacy_rights_h": "Je rechten",

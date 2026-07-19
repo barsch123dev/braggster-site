@@ -1,8 +1,9 @@
 # braggster.com
 
 The marketing site for [Braggster](https://braggster.com), the score-keeping companion for
-real-life game nights. Static HTML, no framework, no client-side JavaScript. Deployed to GitHub
-Pages on every push to `main`.
+real-life game nights. Static HTML, no framework, and the only script on the page is the
+Microsoft Clarity tag (see [Analytics](#analytics)). Deployed to GitHub Pages on every push to
+`main`.
 
 The Braggster app itself lives in a separate, private repository. This repo contains only the
 public website.
@@ -46,6 +47,31 @@ so you only run them when the input changes: `build_fonts.py` after replacing a 
 Every user-facing string lives in `src/locales/`. Add the key to `en.json` first, then to all six
 other locales; `check_copy.py` fails the build if a locale is missing a key. Em dashes are banned
 in every language, as they are in the app.
+
+## Analytics
+
+The site runs [Microsoft Clarity](https://clarity.microsoft.com) for heatmaps and scroll depth,
+pinned to cookieless mode. `build.py` emits the tag followed immediately by
+
+```js
+window.clarity('consentv2', {ad_Storage: 'denied', analytics_Storage: 'denied'});
+```
+
+The tag shim queues that call before the remote script loads, so Clarity sees a denied signal
+before it can write anything: no `_clck`, no `_clsk`, no third-party cookie, and no id that
+survives a page view. That is what keeps the site free of a cookie banner. The cost is deliberate:
+returning visitors are not stitched together, so session counts and recordings are weaker than a
+consented setup would give.
+
+Cookies are switched off in the Clarity project settings as well (Settings, then Setup). The two
+controls are independent on purpose and neither one is redundant. The dashboard setting is the
+account-level default and can be flipped by anyone with access to the project; the `consentv2`
+call is the one that lives in version control, ships with the page, and is reviewable in a diff.
+Keep both.
+
+Clarity is still a third party receiving visitor IP addresses and interaction data, so it is
+disclosed in `privacy_website_p` in all seven locales. **If you remove the `consentv2` call, add a
+consent banner, or point the tag at a different project, the privacy copy has to change with it.**
 
 ## Two deliberate deviations from the design handover
 

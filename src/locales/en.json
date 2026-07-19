@@ -48,7 +48,7 @@
   "footer_contact": "Contact",
 
   "privacy_meta_title": "Privacy policy: braggster",
-  "privacy_meta_description": "Braggster keeps your scores on your device. No accounts, no trackers, no analytics. The only thing we collect is crash diagnostics, and you can switch it off.",
+  "privacy_meta_description": "Braggster keeps your scores on your device. No accounts, no ads, no cookies. The only thing the app collects is crash diagnostics, and you can switch it off.",
   "privacy_h1": "Privacy policy",
   "privacy_updated": "Last updated: 18 July 2026",
   "privacy_intro": "Braggster keeps your scores on your phone. There is no server and there are no accounts. We collect one thing, crash diagnostics, and you can switch it off in Settings. Here is what that means in practice.",
@@ -59,7 +59,7 @@
   "privacy_share_h": "Who we share data with",
   "privacy_share_p": "We sell nothing to anyone. Crash diagnostics go to Firebase Crashlytics, a Google service, and we use them only to fix bugs. If you buy a game, Apple or Google handles the payment; we never see your card details and we have no server that records what you bought. Nothing else leaves your device, so there is nothing else to share.",
   "privacy_website_h": "This website",
-  "privacy_website_p": "braggster.com is a static site hosted on GitHub Pages. It sets no cookies and runs no analytics. GitHub keeps standard server logs, including your IP address, to serve the page and guard against abuse.",
+  "privacy_website_p": "braggster.com is a static site hosted on GitHub Pages. It uses Microsoft Clarity to see which parts of the page people read and where they get stuck. Clarity runs in cookieless mode here: it sets no cookies, it cannot recognise you across visits, and it gets a fresh anonymous id on every page view. It receives your IP address, your browser, your device type, and the clicks and scrolling you do on the page. We use this only to improve the site, and we never combine it with anything from the app. GitHub also keeps standard server logs, including your IP address, to serve the page and guard against abuse.",
   "privacy_children_h": "Children",
   "privacy_children_p": "Braggster is suitable for all ages. The crash diagnostics above are the only thing we collect from anyone, child or adult. They are not linked to identity, never used for tracking, and you can switch them off in Settings.",
   "privacy_rights_h": "Your rights",
