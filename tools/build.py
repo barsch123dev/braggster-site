@@ -21,6 +21,7 @@ DIST = ROOT / "dist"
 
 SITE_URL = "https://braggster.com"
 CONTACT_EMAIL = "hello@braggster.com"
+SUPPORT_EMAIL = "support@braggster.com"
 
 # Microsoft Clarity, pinned to cookieless mode.
 #
@@ -329,6 +330,7 @@ def build() -> None:
     home_tpl = (SRC / "home.html").read_text("utf-8")
     privacy_tpl = (SRC / "privacy.html").read_text("utf-8")
     games_tpl = (SRC / "games.html").read_text("utf-8")
+    support_tpl = (SRC / "support.html").read_text("utf-8")
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -362,7 +364,9 @@ def build() -> None:
             lang_links_html=lang_links_html(code, locales, root, ""),
             games_href=f"{root}{ldir}games/",
             privacy_href=f"{root}{ldir}privacy/",
+            support_href=f"{root}{ldir}support/",
             contact_email=CONTACT_EMAIL,
+            support_email=SUPPORT_EMAIL,
             clarity_html=CLARITY_HTML,
         )
         out = DIST / ldir / "index.html"
@@ -386,7 +390,10 @@ def build() -> None:
             ),
             privacy_lang_links_html=lang_links_html(code, locales, proot, "privacy/"),
             home_href=f"{proot}{ldir}",
+            privacy_href=f"{proot}{ldir}privacy/",
+            support_href=f"{proot}{ldir}support/",
             contact_email=CONTACT_EMAIL,
+            support_email=SUPPORT_EMAIL,
             clarity_html=CLARITY_HTML,
         )
         pout = DIST / ldir / "privacy" / "index.html"
@@ -414,7 +421,9 @@ def build() -> None:
             home_href=f"{groot}{ldir}",
             games_href=f"{groot}{ldir}games/",
             privacy_href=f"{groot}{ldir}privacy/",
+            support_href=f"{groot}{ldir}support/",
             contact_email=CONTACT_EMAIL,
+            support_email=SUPPORT_EMAIL,
             clarity_html=CLARITY_HTML,
         )
         gout = DIST / ldir / "games" / "index.html"
@@ -422,7 +431,34 @@ def build() -> None:
         gout.write_text(render(games_tpl, gvalues), "utf-8")
         written.append(str(gout.relative_to(DIST)))
 
-    urls = [f"{SITE_URL}/{locale_dir(c)}{s}" for s in ("", "games/", "privacy/") for c in LOCALES]
+        # ---- Support: <root>/<ldir>support/index.html
+        sdepth = depth + 1
+        sroot = "../" * sdepth
+        svalues = dict(loc)
+        svalues.update(
+            root=sroot,
+            support_canonical=f"{SITE_URL}/{ldir}support/",
+            support_hreflang_html=hreflang_html("support/"),
+            support_social_html=social_html(
+                code,
+                loc["support_meta_title"],
+                loc["support_meta_description"],
+                f"{SITE_URL}/{ldir}support/",
+            ),
+            support_lang_links_html=lang_links_html(code, locales, sroot, "support/"),
+            home_href=f"{sroot}{ldir}",
+            privacy_href=f"{sroot}{ldir}privacy/",
+            support_href=f"{sroot}{ldir}support/",
+            contact_email=CONTACT_EMAIL,
+            support_email=SUPPORT_EMAIL,
+            clarity_html=CLARITY_HTML,
+        )
+        sout = DIST / ldir / "support" / "index.html"
+        sout.parent.mkdir(parents=True, exist_ok=True)
+        sout.write_text(render(support_tpl, svalues), "utf-8")
+        written.append(str(sout.relative_to(DIST)))
+
+    urls = [f"{SITE_URL}/{locale_dir(c)}{s}" for s in ("", "games/", "privacy/", "support/") for c in LOCALES]
     sitemap = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     (DIST / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
