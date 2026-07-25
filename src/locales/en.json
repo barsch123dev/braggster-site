@@ -88,5 +88,17 @@
   "privacy_changes_h": "Changes",
   "privacy_changes_p": "If this policy changes, we will update this page and the date above.",
   "privacy_contact_h": "Contact",
-  "privacy_contact_p": "Questions about privacy? Mail us at"
+  "privacy_contact_p": "Questions about privacy? Mail us at",
+
+  "footer_support": "Support",
+  "support_meta_title": "Support: braggster",
+  "support_meta_description": "Need a hand with Braggster? Email support@braggster.com and we will help you get back to game night.",
+  "support_h1": "Support",
+  "support_intro": "Something not working, or just have a question? We are glad to help. Braggster keeps everything on your device, so there is no account to recover: nearly everything can be sorted out over email.",
+  "support_email_h": "Email us",
+  "support_email_p": "The fastest way to reach us is email. Write to us at",
+  "support_include_h": "What to include",
+  "support_include_p": "To help us help you quickly, tell us your device and its OS version, the game you were scoring, and what you expected to happen against what actually did. A screenshot goes a long way.",
+  "support_response_h": "When you will hear back",
+  "support_response_p": "We are a small team and we read every message. You can expect a reply within a few working days."
 }

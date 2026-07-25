@@ -88,5 +88,17 @@
   "privacy_changes_h": "Cambios",
   "privacy_changes_p": "Si esta política cambia, actualizaremos esta página y la fecha de arriba.",
   "privacy_contact_h": "Contacto",
-  "privacy_contact_p": "¿Dudas sobre privacidad? Escríbenos a"
+  "privacy_contact_p": "¿Dudas sobre privacidad? Escríbenos a",
+
+  "footer_support": "Soporte",
+  "support_meta_title": "Soporte: braggster",
+  "support_meta_description": "¿Necesitas ayuda con Braggster? Escribe a support@braggster.com y te ayudamos a volver a la noche de juegos.",
+  "support_h1": "Soporte",
+  "support_intro": "¿Algo no funciona o simplemente tienes una duda? Estamos encantados de ayudar. Braggster guarda todo en tu dispositivo, así que no hay ninguna cuenta que recuperar: casi todo se resuelve por correo.",
+  "support_email_h": "Escríbenos",
+  "support_email_p": "La forma más rápida de contactarnos es por correo. Escríbenos a",
+  "support_include_h": "Qué incluir",
+  "support_include_p": "Para ayudarte rápido, cuéntanos tu dispositivo y su versión del sistema operativo, el juego que estabas puntuando y qué esperabas frente a lo que ocurrió en realidad. Una captura de pantalla ayuda mucho.",
+  "support_response_h": "Cuándo tendrás respuesta",
+  "support_response_p": "Somos un equipo pequeño y leemos cada mensaje. Puedes esperar una respuesta en unos pocos días laborables."
 }
