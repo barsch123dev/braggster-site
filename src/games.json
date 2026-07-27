@@ -6,8 +6,22 @@
       "id": "klaverjassen",
       "name": "Klaverjassen",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["klaverjas", "klaverjassen", "jassen", "kaartspel", "Dutch card game", "roem", "NL", "BE", "SR"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "klaverjas",
+        "klaverjassen",
+        "jassen",
+        "kaartspel",
+        "Dutch card game",
+        "roem",
+        "NL",
+        "BE",
+        "SR"
+      ],
       "functionality": "Full calculating scorecard, roem and march handling, Amsterdam and Rotterdam variants, visual card rank and points chart in the rules",
       "playInApp": false,
       "lowestWins": false,
@@ -17,8 +31,20 @@
       "id": "jass",
       "name": "Jass",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["Schieber", "Schieberjass", "Coiffeur", "Swiss card game", "Weis", "CH", "LI"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "Schieber",
+        "Schieberjass",
+        "Coiffeur",
+        "Swiss card game",
+        "Weis",
+        "CH",
+        "LI"
+      ],
       "functionality": "Calculating scorecard to 2500, Weis melds and trump multipliers, Schieber and Coiffeur variants",
       "playInApp": false,
       "lowestWins": false,
@@ -28,8 +54,19 @@
       "id": "belote",
       "name": "Belote",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["belote coinchee", "coinche", "French card game", "FR", "BE", "MC"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "belote coinchee",
+        "coinche",
+        "French card game",
+        "FR",
+        "BE",
+        "MC"
+      ],
       "functionality": "Bidding and trick scoring, Classic and Coinche variants",
       "playInApp": false,
       "lowestWins": false,
@@ -39,8 +76,21 @@
       "id": "whist",
       "name": "Whist",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["wiezen", "bid whist", "colour whist", "partnership whist", "GB", "IE", "BE", "Caribbean"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "wiezen",
+        "bid whist",
+        "colour whist",
+        "partnership whist",
+        "GB",
+        "IE",
+        "BE",
+        "Caribbean"
+      ],
       "functionality": "Tricks above the book of six, race to 5, Classic and Wiezen variants",
       "playInApp": false,
       "lowestWins": false,
@@ -50,8 +100,17 @@
       "id": "bridge",
       "name": "Bridge",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["contract bridge", "rubber bridge", "duplicate bridge", "bridgen"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "contract bridge",
+        "rubber bridge",
+        "duplicate bridge",
+        "bridgen"
+      ],
       "functionality": "Contract scoring, Rubber and Duplicate variants",
       "playInApp": false,
       "lowestWins": false,
@@ -61,8 +120,19 @@
       "id": "euchre",
       "name": "Euchre",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["euchre", "stick the dealer", "US", "CA", "AU", "NZ"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "euchre",
+        "stick the dealer",
+        "US",
+        "CA",
+        "AU",
+        "NZ"
+      ],
       "functionality": "Trump trick scoring, Classic and Stick-the-dealer variants",
       "playInApp": false,
       "lowestWins": false,
@@ -72,8 +142,17 @@
       "id": "fivehundred",
       "name": "500",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["five hundred", "500 card game", "AU", "NZ"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "five hundred",
+        "500 card game",
+        "AU",
+        "NZ"
+      ],
       "functionality": "Contract bidding, race to 500 (lose at -500), Partnership and Three-handed variants",
       "playInApp": false,
       "lowestWins": false,
@@ -83,8 +162,20 @@
       "id": "spades",
       "name": "Spades",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["spades", "nil bid", "bags", "partnership spades", "BS", "BB", "BZ"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "spades",
+        "nil bid",
+        "bags",
+        "partnership spades",
+        "BS",
+        "BB",
+        "BZ"
+      ],
       "functionality": "Bid and bag tracking, Nil bids, bag penalty every 10, Partnership and Solo variants",
       "playInApp": false,
       "lowestWins": false,
@@ -94,8 +185,20 @@
       "id": "cuarenta",
       "name": "Cuarenta",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["cuarenta", "Ecuador card game", "caida", "limpia", "CO", "EC", "BO"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "cuarenta",
+        "Ecuador card game",
+        "caida",
+        "limpia",
+        "CO",
+        "EC",
+        "BO"
+      ],
       "functionality": "Race to 40 with caidas, limpias and captures beyond 19",
       "playInApp": false,
       "lowestWins": false,
@@ -105,8 +208,18 @@
       "id": "mus",
       "name": "Mus",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["mus", "Spanish card game", "envite", "ES", "AR"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "mus",
+        "Spanish card game",
+        "envite",
+        "ES",
+        "AR"
+      ],
       "functionality": "Four betting phases, Long (to 40) and Short (to 30) variants",
       "playInApp": false,
       "lowestWins": false,
@@ -116,8 +229,17 @@
       "id": "hearts",
       "name": "Hearts",
       "category": "card",
-      "players": { "min": 3, "max": 6, "perSide": 1 },
-      "tags": ["hearts", "black lady", "harten jagen", "shooting the moon"],
+      "players": {
+        "min": 3,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "hearts",
+        "black lady",
+        "harten jagen",
+        "shooting the moon"
+      ],
       "functionality": "Standard, Omnibus, Spot and Cancellation hearts variants",
       "playInApp": false,
       "lowestWins": true,
@@ -127,8 +249,19 @@
       "id": "poker",
       "name": "Poker",
       "category": "card",
-      "players": { "min": 2, "max": 10, "perSide": 1 },
-      "tags": ["poker", "Texas Hold'em", "Omaha", "seven-card stud", "five-card draw", "home game"],
+      "players": {
+        "min": 2,
+        "max": 10,
+        "perSide": 1
+      },
+      "tags": [
+        "poker",
+        "Texas Hold'em",
+        "Omaha",
+        "seven-card stud",
+        "five-card draw",
+        "home game"
+      ],
       "functionality": "Chip and pot tracking, four format variants",
       "playInApp": false,
       "lowestWins": false,
@@ -138,8 +271,19 @@
       "id": "blackjack",
       "name": "Blackjack",
       "category": "card",
-      "players": { "min": 1, "max": 7, "perSide": 1 },
-      "tags": ["blackjack", "21", "eenentwintig", "twenty-one", "pontoon", "casino card game"],
+      "players": {
+        "min": 1,
+        "max": 7,
+        "perSide": 1
+      },
+      "tags": [
+        "blackjack",
+        "21",
+        "eenentwintig",
+        "twenty-one",
+        "pontoon",
+        "casino card game"
+      ],
       "functionality": "Chip ledger by default, plus a real dealer that deals and plays hands against you. Classic (Vegas), European, Atlantic City and Spanish 21 variants",
       "playInApp": true,
       "lowestWins": false,
@@ -149,8 +293,20 @@
       "id": "solitaire",
       "name": "Patience (Solitaire)",
       "category": "card",
-      "players": { "min": 1, "max": 1, "perSide": 1 },
-      "tags": ["solitaire", "patience", "klondike", "freecell", "spider", "pyramid", "patiencen"],
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "solitaire",
+        "patience",
+        "klondike",
+        "freecell",
+        "spider",
+        "pyramid",
+        "patiencen"
+      ],
       "functionality": "Full tap-to-move Klondike board, or score a physical deal. Klondike (1 and 3 card), Spider, FreeCell and Pyramid variants",
       "playInApp": true,
       "lowestWins": false,
@@ -160,8 +316,20 @@
       "id": "rummy",
       "name": "Rummy",
       "category": "card",
-      "players": { "min": 2, "max": 6, "perSide": 1 },
-      "tags": ["rummy", "gin rummy", "rummy 500", "chinchon", "carioca", "conquian", "romme"],
+      "players": {
+        "min": 2,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "rummy",
+        "gin rummy",
+        "rummy 500",
+        "chinchon",
+        "carioca",
+        "conquian",
+        "romme"
+      ],
       "functionality": "Meld and deadwood scoring, four family variants",
       "playInApp": false,
       "lowestWins": false,
@@ -171,8 +339,21 @@
       "id": "canasta",
       "name": "Canasta",
       "category": "card",
-      "players": { "min": 2, "max": 6, "perSide": 1 },
-      "tags": ["canasta", "buraco", "burraco", "meld game", "BR", "IT", "AR", "CL"],
+      "players": {
+        "min": 2,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "canasta",
+        "buraco",
+        "burraco",
+        "meld game",
+        "BR",
+        "IT",
+        "AR",
+        "CL"
+      ],
       "functionality": "Race to 5000, Classic and Buraco variants on one engine",
       "playInApp": false,
       "lowestWins": false,
@@ -182,8 +363,17 @@
       "id": "jokeren",
       "name": "Jokeren",
       "category": "card",
-      "players": { "min": 2, "max": 8, "perSide": 1 },
-      "tags": ["jokeren", "joker", "Dutch rummy", "dubbel spel kaarten"],
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "jokeren",
+        "joker",
+        "Dutch rummy",
+        "dubbel spel kaarten"
+      ],
       "functionality": "Double deck plus jokers, per-round penalty totals",
       "playInApp": false,
       "lowestWins": true,
@@ -193,8 +383,17 @@
       "id": "pesten",
       "name": "Pesten",
       "category": "card",
-      "players": { "min": 2, "max": 8, "perSide": 1 },
-      "tags": ["pesten", "crazy eights", "mau mau", "Dutch card game"],
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "pesten",
+        "crazy eights",
+        "mau mau",
+        "Dutch card game"
+      ],
       "functionality": "Round penalty scorecard",
       "playInApp": false,
       "lowestWins": true,
@@ -204,8 +403,17 @@
       "id": "toepen",
       "name": "Toepen",
       "category": "card",
-      "players": { "min": 2, "max": 8, "perSide": 1 },
-      "tags": ["toepen", "toep", "Dutch bluffing game", "brabants kaartspel"],
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "toepen",
+        "toep",
+        "Dutch bluffing game",
+        "brabants kaartspel"
+      ],
       "functionality": "To 15 and To 10 variants",
       "playInApp": false,
       "lowestWins": true,
@@ -215,8 +423,18 @@
       "id": "bollen",
       "name": "Bollen",
       "category": "card",
-      "players": { "min": 2, "max": 8, "perSide": 1 },
-      "tags": ["bollen", "bolformulier", "boerenbridge", "prediction game", "NL"],
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "bollen",
+        "bolformulier",
+        "boerenbridge",
+        "prediction game",
+        "NL"
+      ],
       "functionality": "Prediction sheet where the card count climbs to a table-sized peak and back to 1. Base and +10 bonus variants",
       "playInApp": false,
       "lowestWins": false,
@@ -226,8 +444,16 @@
       "id": "uno",
       "name": "Uno",
       "category": "card",
-      "players": { "min": 2, "max": 10, "perSide": 1 },
-      "tags": ["uno", "colour matching card game", "family card game"],
+      "players": {
+        "min": 2,
+        "max": 10,
+        "perSide": 1
+      },
+      "tags": [
+        "uno",
+        "colour matching card game",
+        "family card game"
+      ],
       "functionality": "Race to 500, Classic, One round, Stacking and Seven-zero variants",
       "playInApp": false,
       "lowestWins": false,
@@ -237,8 +463,16 @@
       "id": "unoflip",
       "name": "Uno Flip",
       "category": "card",
-      "players": { "min": 2, "max": 8, "perSide": 1 },
-      "tags": ["uno flip", "double sided deck", "light side dark side"],
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "uno flip",
+        "double sided deck",
+        "light side dark side"
+      ],
       "functionality": "Own scorecard for the flipped deck, Classic and One-round variants",
       "playInApp": false,
       "lowestWins": false,
@@ -248,8 +482,22 @@
       "id": "briscola",
       "name": "Briscola",
       "category": "card",
-      "players": { "min": 2, "max": 4, "perSide": 1 },
-      "tags": ["briscola", "brisca", "bisca", "sueca", "Italian card game", "IT", "ES", "PT", "BR"],
+      "players": {
+        "min": 2,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "briscola",
+        "brisca",
+        "bisca",
+        "sueca",
+        "Italian card game",
+        "IT",
+        "ES",
+        "PT",
+        "BR"
+      ],
       "functionality": "Point capture on a 40-card deck, Classic and Cinque carte variants",
       "playInApp": false,
       "lowestWins": false,
@@ -259,8 +507,20 @@
       "id": "scopa",
       "name": "Scopa",
       "category": "card",
-      "players": { "min": 2, "max": 4, "perSide": 1 },
-      "tags": ["scopa", "escoba", "scopone", "Italian capture game", "IT", "SM", "AR"],
+      "players": {
+        "min": 2,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "scopa",
+        "escoba",
+        "scopone",
+        "Italian capture game",
+        "IT",
+        "SM",
+        "AR"
+      ],
       "functionality": "First to 11, Classic and Asso piglia tutto variants",
       "playInApp": false,
       "lowestWins": false,
@@ -270,8 +530,20 @@
       "id": "truco",
       "name": "Truco",
       "category": "card",
-      "players": { "min": 2, "max": 4, "perSide": 1 },
-      "tags": ["truco", "truco paulista", "truco mineiro", "Brazilian card game", "BR", "AR", "CL"],
+      "players": {
+        "min": 2,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "truco",
+        "truco paulista",
+        "truco mineiro",
+        "Brazilian card game",
+        "BR",
+        "AR",
+        "CL"
+      ],
       "functionality": "Race to 12 with the bluffing ladder, Paulista and Mineiro variants",
       "playInApp": false,
       "lowestWins": false,
@@ -281,8 +553,19 @@
       "id": "skat",
       "name": "Skat",
       "category": "card",
-      "players": { "min": 3, "max": 3, "perSide": 1 },
-      "tags": ["skat", "German card game", "Bock", "Ramsch", "DE", "LU"],
+      "players": {
+        "min": 3,
+        "max": 3,
+        "perSide": 1
+      },
+      "tags": [
+        "skat",
+        "German card game",
+        "Bock",
+        "Ramsch",
+        "DE",
+        "LU"
+      ],
       "functionality": "Bidding and 120-point declarer scoring, Standard and Bock variants",
       "playInApp": false,
       "lowestWins": false,
@@ -292,8 +575,18 @@
       "id": "doppelkopf",
       "name": "Doppelkopf",
       "category": "card",
-      "players": { "min": 4, "max": 4, "perSide": 1 },
-      "tags": ["doppelkopf", "doko", "German card game", "hidden partners", "DE"],
+      "players": {
+        "min": 4,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "doppelkopf",
+        "doko",
+        "German card game",
+        "hidden partners",
+        "DE"
+      ],
       "functionality": "48-card double deck scoring, Classic and Hochzeit variants",
       "playInApp": false,
       "lowestWins": false,
@@ -303,8 +596,19 @@
       "id": "schnapsen",
       "name": "Schnapsen",
       "category": "card",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["schnapsen", "66", "sechsundsechzig", "Austrian card game", "AT", "LI"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "schnapsen",
+        "66",
+        "sechsundsechzig",
+        "Austrian card game",
+        "AT",
+        "LI"
+      ],
       "functionality": "66-point race, Classic and Bela variants",
       "playInApp": false,
       "lowestWins": false,
@@ -314,8 +618,20 @@
       "id": "tarot",
       "name": "Koenigrufen",
       "category": "card",
-      "players": { "min": 4, "max": 4, "perSide": 1 },
-      "tags": ["koenigrufen", "tarock", "tarot", "called king", "AT", "FR", "CH"],
+      "players": {
+        "min": 4,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "koenigrufen",
+        "tarock",
+        "tarot",
+        "called king",
+        "AT",
+        "FR",
+        "CH"
+      ],
       "functionality": "54-card tarock scoring, classic Koenigrufen and a simplified solo variant",
       "playInApp": false,
       "lowestWins": false,
@@ -325,8 +641,19 @@
       "id": "twentyfive",
       "name": "Twenty-Five",
       "category": "card",
-      "players": { "min": 2, "max": 10, "perSide": 1 },
-      "tags": ["twenty-five", "forty-five", "one hundred and ten", "spoil five", "Irish card game", "IE"],
+      "players": {
+        "min": 2,
+        "max": 10,
+        "perSide": 1
+      },
+      "tags": [
+        "twenty-five",
+        "forty-five",
+        "one hundred and ten",
+        "spoil five",
+        "Irish card game",
+        "IE"
+      ],
       "functionality": "5 points a trick, Twenty-Five, Forty-Five and 110 variants",
       "playInApp": false,
       "lowestWins": false,
@@ -336,8 +663,20 @@
       "id": "allfours",
       "name": "All Fours",
       "category": "card",
-      "players": { "min": 2, "max": 4, "perSide": 1 },
-      "tags": ["all fours", "seven up", "Caribbean all fours", "high low jack", "JM", "TT", "GY"],
+      "players": {
+        "min": 2,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "all fours",
+        "seven up",
+        "Caribbean all fours",
+        "high low jack",
+        "JM",
+        "TT",
+        "GY"
+      ],
       "functionality": "Scores High, Low, Jack and Game to 14. Seven Up and Caribbean variants",
       "playInApp": false,
       "lowestWins": false,
@@ -347,8 +686,21 @@
       "id": "burro",
       "name": "Burro",
       "category": "card",
-      "players": { "min": 3, "max": 8, "perSide": 1 },
-      "tags": ["burro", "donkey", "pig", "cerdo", "elimination card game", "MX", "PE", "CU"],
+      "players": {
+        "min": 3,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "burro",
+        "donkey",
+        "pig",
+        "cerdo",
+        "elimination card game",
+        "MX",
+        "PE",
+        "CU"
+      ],
       "functionality": "Letter tally: five letters eliminates a player, last one standing wins",
       "playInApp": false,
       "lowestWins": true,
@@ -358,8 +710,19 @@
       "id": "loteria",
       "name": "Loteria",
       "category": "card",
-      "players": { "min": 2, "max": 16, "perSide": 1 },
-      "tags": ["loteria", "loteria mexicana", "Mexican bingo", "tabla", "cantor", "MX"],
+      "players": {
+        "min": 2,
+        "max": 16,
+        "perSide": 1
+      },
+      "tags": [
+        "loteria",
+        "loteria mexicana",
+        "Mexican bingo",
+        "tabla",
+        "cantor",
+        "MX"
+      ],
       "functionality": "Built-in caller that reveals all 54 tiles by name, plus a win tally. Full tabla, Line, Four corners and Center square variants",
       "playInApp": true,
       "lowestWins": false,
@@ -369,8 +732,20 @@
       "id": "yahtzee",
       "name": "Yahtzee",
       "category": "dice",
-      "players": { "min": 2, "max": 6, "perSide": 1 },
-      "tags": ["yahtzee", "kniffel", "yams", "generala", "yatzy", "dice game", "five dice"],
+      "players": {
+        "min": 2,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "yahtzee",
+        "kniffel",
+        "yams",
+        "generala",
+        "yatzy",
+        "dice game",
+        "five dice"
+      ],
       "functionality": "Full calculating sheet with the 63+ upper bonus and extra-Yahtzee bonuses (100 each, Joker rule). Optional animated on-screen dice roller",
       "playInApp": false,
       "lowestWins": false,
@@ -380,8 +755,23 @@
       "id": "dudo",
       "name": "Dudo",
       "category": "dice",
-      "players": { "min": 2, "max": 6, "perSide": 1 },
-      "tags": ["dudo", "perudo", "liar's dice", "cacho", "mexican dice", "BR", "AR", "CL", "GB", "US"],
+      "players": {
+        "min": 2,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "dudo",
+        "perudo",
+        "liar's dice",
+        "cacho",
+        "mexican dice",
+        "BR",
+        "AR",
+        "CL",
+        "GB",
+        "US"
+      ],
       "functionality": "Elimination tracking, Classic (aces wild) and No-wild-aces variants",
       "playInApp": false,
       "lowestWins": false,
@@ -391,8 +781,19 @@
       "id": "chess",
       "name": "Chess",
       "category": "board",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["chess", "schaken", "ajedrez", "echecs", "Schach", "scacchi"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "chess",
+        "schaken",
+        "ajedrez",
+        "echecs",
+        "Schach",
+        "scacchi"
+      ],
       "functionality": "Live 8x8 board with full legal-move enforcement (check, mate, stalemate, castling, en passant, promotion), Resign and Draw, plus a three-level computer opponent on a practice screen. Session tally of games won",
       "playInApp": true,
       "lowestWins": false,
@@ -402,8 +803,18 @@
       "id": "checkers",
       "name": "Checkers",
       "category": "board",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["checkers", "draughts", "English draughts", "Engels dammen", "damas"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "checkers",
+        "draughts",
+        "English draughts",
+        "Engels dammen",
+        "damas"
+      ],
       "functionality": "Live 8x8 board, forced and multi-jump captures, king promotion, three-level computer opponent. Captures-forced and Captures-optional variants",
       "playInApp": true,
       "lowestWins": false,
@@ -413,8 +824,18 @@
       "id": "dammen",
       "name": "International draughts",
       "category": "board",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["dammen", "international draughts", "FMJD", "10x10 damspel", "damas internacionales"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "dammen",
+        "international draughts",
+        "FMJD",
+        "10x10 damspel",
+        "damas internacionales"
+      ],
       "functionality": "Live 10x10 board, flying kings, compulsory maximum capture, tap-out capture sequences with a step-back control",
       "playInApp": true,
       "lowestWins": false,
@@ -424,8 +845,18 @@
       "id": "connectfour",
       "name": "Connect Four",
       "category": "board",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["connect four", "vier op een rij", "four in a row", "vier gewinnt", "puissance 4"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "connect four",
+        "vier op een rij",
+        "four in a row",
+        "vier gewinnt",
+        "puissance 4"
+      ],
       "functionality": "Live 7x6 board where a tap drops a disc and gravity picks the row. Discs differ by shape, not colour alone",
       "playInApp": true,
       "lowestWins": false,
@@ -435,8 +866,18 @@
       "id": "tictactoe",
       "name": "Tic Tac Toe",
       "category": "board",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["tic tac toe", "boter kaas en eieren", "noughts and crosses", "tres en raya", "three in a row"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "tic tac toe",
+        "boter kaas en eieren",
+        "noughts and crosses",
+        "tres en raya",
+        "three in a row"
+      ],
       "functionality": "Live tappable 3x3 board with auto win and draw detection, session tally of games won",
       "playInApp": true,
       "lowestWins": false,
@@ -446,8 +887,17 @@
       "id": "sudoku",
       "name": "Sudoku",
       "category": "board",
-      "players": { "min": 1, "max": 1, "perSide": 1 },
-      "tags": ["sudoku", "number puzzle", "logic puzzle", "daily sudoku"],
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "sudoku",
+        "number puzzle",
+        "logic puzzle",
+        "daily sudoku"
+      ],
       "functionality": "Live 9x9 board with a seeded generator that guarantees a unique solution, five difficulty tiers (Beginner to Evil), pencil notes and hints, scored on solve time plus penalties",
       "playInApp": true,
       "lowestWins": true,
@@ -457,8 +907,19 @@
       "id": "backgammon",
       "name": "Backgammon",
       "category": "board",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["backgammon", "tavla", "gamao", "trictrac", "nackgammon", "doubling cube"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "backgammon",
+        "tavla",
+        "gamao",
+        "trictrac",
+        "nackgammon",
+        "doubling cube"
+      ],
       "functionality": "Hotseat board with dice, hits, bar re-entry and bearing off. Wins score 1, gammon 2, backgammon 3. Standard and Nackgammon openings",
       "playInApp": true,
       "lowestWins": false,
@@ -468,8 +929,19 @@
       "id": "dominoes",
       "name": "Dominoes",
       "category": "board",
-      "players": { "min": 2, "max": 4, "perSide": 1 },
-      "tags": ["dominoes", "domino", "double six", "all fives", "block", "draw"],
+      "players": {
+        "min": 2,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "dominoes",
+        "domino",
+        "double six",
+        "all fives",
+        "block",
+        "draw"
+      ],
       "functionality": "Hotseat pass-and-play board with matching open ends, draw and pass. Block, Draw and All Fives variants",
       "playInApp": true,
       "lowestWins": false,
@@ -479,8 +951,16 @@
       "id": "rummikub",
       "name": "Rummikub",
       "category": "board",
-      "players": { "min": 2, "max": 4, "perSide": 1 },
-      "tags": ["rummikub", "tile rummy", "joker tiles"],
+      "players": {
+        "min": 2,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "rummikub",
+        "tile rummy",
+        "joker tiles"
+      ],
       "functionality": "Per-round tile scoring for the physical set",
       "playInApp": false,
       "lowestWins": false,
@@ -490,8 +970,18 @@
       "id": "cluedo",
       "name": "Cluedo",
       "category": "board",
-      "players": { "min": 1, "max": 1, "perSide": 1 },
-      "tags": ["cluedo", "clue", "deduction game", "detective notepad", "whodunnit"],
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "cluedo",
+        "clue",
+        "deduction game",
+        "detective notepad",
+        "whodunnit"
+      ],
       "functionality": "Private detective notepad on your own device: 21 rows (6 suspects, 6 weapons, 9 rooms), an envelope column that cycles blank / ruled out / has it, and a free notes column",
       "playInApp": false,
       "lowestWins": false,
@@ -501,8 +991,19 @@
       "id": "darts",
       "name": "Darts",
       "category": "sports",
-      "players": { "min": 2, "max": 8, "perSide": 1 },
-      "tags": ["darts", "501", "301", "checkout", "dartbord", "oche"],
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "darts",
+        "501",
+        "301",
+        "checkout",
+        "dartbord",
+        "oche"
+      ],
       "functionality": "Leg scoring with an on-screen dartboard for entering the throws you made. 501 and 301 variants",
       "playInApp": false,
       "lowestWins": false,
@@ -512,8 +1013,19 @@
       "id": "bowling",
       "name": "Bowling",
       "category": "sports",
-      "players": { "min": 1, "max": 6, "perSide": 1 },
-      "tags": ["bowling", "ten-pin", "strike", "spare", "bowlen", "boliche"],
+      "players": {
+        "min": 1,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "bowling",
+        "ten-pin",
+        "strike",
+        "spare",
+        "bowlen",
+        "boliche"
+      ],
       "functionality": "Real ten-frame scoring: strikes carry the next two balls, spares the next one, tenth frame gets a third ball. Frames pending a bonus stay blank, like a paper sheet",
       "playInApp": false,
       "lowestWins": false,
@@ -523,8 +1035,21 @@
       "id": "kegelen",
       "name": "Kegelen",
       "category": "sports",
-      "players": { "min": 1, "max": 8, "perSide": 1 },
-      "tags": ["kegelen", "kegeln", "nine-pin", "quilles", "NL", "BE", "DE", "AT"],
+      "players": {
+        "min": 1,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "kegelen",
+        "kegeln",
+        "nine-pin",
+        "quilles",
+        "NL",
+        "BE",
+        "DE",
+        "AT"
+      ],
       "functionality": "Nine-pin scoring where every felled pin is one point and the throw count is open-ended. Volle bos and Afruimen variants",
       "playInApp": false,
       "lowestWins": false,
@@ -534,8 +1059,19 @@
       "id": "midgetgolf",
       "name": "Midgetgolf",
       "category": "sports",
-      "players": { "min": 1, "max": 6, "perSide": 1 },
-      "tags": ["midgetgolf", "minigolf", "mini golf", "adventure golf", "crazy golf", "putt putt"],
+      "players": {
+        "min": 1,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "midgetgolf",
+        "minigolf",
+        "mini golf",
+        "adventure golf",
+        "crazy golf",
+        "putt putt"
+      ],
       "functionality": "Strokes per hole on a 9 or 18 hole course",
       "playInApp": false,
       "lowestWins": true,
@@ -545,8 +1081,17 @@
       "id": "tennis",
       "name": "Tennis",
       "category": "sports",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["tennis", "set", "tiebreak", "match score"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "tennis",
+        "set",
+        "tiebreak",
+        "match score"
+      ],
       "functionality": "Games, sets and match scoring. Best of 3 and Best of 5 sets",
       "playInApp": false,
       "lowestWins": false,
@@ -556,8 +1101,17 @@
       "id": "padel",
       "name": "Padel",
       "category": "sports",
-      "players": { "min": 2, "max": 2, "perSide": 2 },
-      "tags": ["padel", "padel tennis", "golden point", "americano"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 2
+      },
+      "tags": [
+        "padel",
+        "padel tennis",
+        "golden point",
+        "americano"
+      ],
       "functionality": "Golden point and With-advantage variants",
       "playInApp": false,
       "lowestWins": false,
@@ -567,8 +1121,18 @@
       "id": "tabletennis",
       "name": "Table tennis",
       "category": "sports",
-      "players": { "min": 2, "max": 2, "perSide": 1 },
-      "tags": ["table tennis", "ping pong", "tafeltennis", "pingpong", "11 points"],
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "table tennis",
+        "ping pong",
+        "tafeltennis",
+        "pingpong",
+        "11 points"
+      ],
       "functionality": "Best of 3, 5 and 7 variants",
       "playInApp": false,
       "lowestWins": false,
@@ -578,10 +1142,42 @@
       "id": "generic",
       "name": "Blank scorecard",
       "category": "free",
-      "players": { "min": 2, "max": 8, "perSide": 1 },
-      "tags": ["blank scorecard", "any game", "custom score sheet", "generic scoreboard", "free scorekeeper"],
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "blank scorecard",
+        "any game",
+        "custom score sheet",
+        "generic scoreboard",
+        "free scorekeeper"
+      ],
       "functionality": "Always free, no purchase. Score any game at all: name the players, add rounds, pick Highest total wins or Lowest total wins",
       "playInApp": false,
+      "lowestWins": false,
+      "trademark": false
+    },
+    {
+      "id": "freestyle",
+      "name": "Freestyle",
+      "category": "free",
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "freestyle",
+        "card and dice table",
+        "deal cards",
+        "roll dice",
+        "any game",
+        "free scorekeeper"
+      ],
+      "functionality": "Always free, no purchase. An in-app card and dice table for a game you brought yourself: pick how many cards and dice to deal, deal them per player or to a shared table, and keep score by hand",
+      "playInApp": true,
       "lowestWins": false,
       "trademark": false
     }

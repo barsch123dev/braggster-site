@@ -14,13 +14,14 @@ public website.
 src/home.html          page template
 src/games.html         games catalogue template
 src/privacy.html       privacy policy template
-src/games.json         the game catalogue: 53 entries, extracted from the app
+src/games.json         the game catalogue: 54 entries, extracted from the app
 src/styles.css         all styling; brand tokens live in :root
 src/locales/*.json     one file per language, all copy
-assets/                logos, favicons, self-hosted fonts, share card
+assets/                logos, favicons, self-hosted fonts, share card, app screenshots
 tools/build.py         renders src/ into dist/
 tools/build_fonts.py   subsets the font TTFs to Latin woff2 (rarely needed)
 tools/build_og.py      regenerates the Open Graph share card (rarely needed)
+tools/build_screenshots.py  resizes the app's store captures into web WebP (per app release)
 tools/check_copy.py    no em dashes, locale key parity, no unrendered tokens, games.json shape
 tools/check_contrast.py WCAG AA contrast gate for the palette
 ```
@@ -33,8 +34,11 @@ pages are relative, so the output works from a subpath as well as from the apex 
 
 `src/games.json` is the one home for the game list. It was extracted from the app repo's game
 definitions (`app/lib/games/*/*_game_definition.dart`), and the counts it encodes are the app's:
-53 games, 33 card / 2 dice / 10 board / 7 sports / 1 blank scorecard, 11 playable in the app,
-7 that rank lowest-wins, 6 that carry a publisher disclaimer. `/games/` renders from it, and the
+54 games, 33 card / 2 dice / 10 board / 7 sports / 2 always free, 12 playable in the app,
+7 that rank lowest-wins, 6 that carry a publisher disclaimer. Those numbers are not written into
+the copy: the locales spell them `{n}`, `{play}` and `{low}`, and `build.py` counts games.json and
+substitutes. They were spelled out until the app shipped its 54th game and all seven locales had
+to be chased, and `check_copy.py` now fails on a placeholder that survives into the HTML. `/games/` renders from it, and the
 home page teaser chips take their names from it too, so nothing here is hand-kept twice.
 
 Game names are proper nouns and are never translated. Neither is `functionality`, which is
@@ -47,7 +51,7 @@ they are rendered as real text because they exist to be found.
 The category filter and the play-in-app toggle are plain radio and checkbox inputs with **no
 JavaScript**. `build.py` generates `:has(:checked)` rules from `games.json` into a `<style>` block
 on the page, including the rules that show the empty state for the three filter pairs that
-genuinely match nothing. A browser without `:has()` shows all 53, which is the right fallback for
+genuinely match nothing. A browser without `:has()` shows all 54, which is the right fallback for
 a page whose job is to list them. If you add a category, the CSS follows automatically; there is
 no hand-written selector to keep in sync.
 
@@ -107,6 +111,29 @@ unchanged. `tools/check_contrast.py` pins these and guards against the old pairi
 
 Three em dashes in the prototype copy were rewritten as colons and commas, per the project's
 user-text rule.
+
+## Screenshots
+
+The phone screenshots are real captures of the app, one set per language. They are not made here:
+the app repo has a harness that renders the four listing screens in all seven languages on a 6.9"
+simulator, and it is the same set the App Store listing uses.
+
+```bash
+# in the app repo
+fvm flutter drive \
+  --driver=integration_test/store_screenshot_driver.dart \
+  --target=integration_test/store_screenshots_test.dart \
+  --dart-define=SCREENSHOT_DEVICE=iphone69 \
+  -d <simulator udid>
+
+# back here, pointing at build/screenshots/iphone69/
+python3 tools/build_screenshots.py --src <that folder>
+```
+
+`build_screenshots.py` only resizes and re-encodes: 1320x2868 PNGs of about 450KB become WebP at
+320 and 640 CSS pixels, 1.2MB for all 56 files. If a screenshot is wrong, fix it in the harness and
+capture again rather than editing pixels here. The hero image loads eagerly and the three gallery
+shots lazily, so a first view pulls one 21KB image rather than four.
 
 ## Fonts
 
