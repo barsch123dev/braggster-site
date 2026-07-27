@@ -195,6 +195,7 @@ img { max-width: 100%; display: block; }
   text-wrap: pretty;
 }
 .hero__actions { display: flex; align-items: center; gap: 12px; margin-top: 6px; flex-wrap: wrap; }
+.hero__more { margin: 0; }
 .hero__actions .link {
   display: inline-flex;
   align-items: center;
@@ -205,20 +206,49 @@ img { max-width: 100%; display: block; }
 }
 .hero__art { display: flex; justify-content: center; }
 
-/* Phone placeholder: real screenshot pending */
+/* Phone frame. Drawn here rather than shipped as artwork: a rounded rectangle
+   costs nothing, and any device-shaped image would be a picture of somebody
+   else's hardware. The screenshot inside is a real 6.9" capture, so the frame
+   only has to clip it and cast a shadow. */
 .phone {
-  width: 300px;
-  height: 560px;
+  width: 320px;
   max-width: 100%;
-  border-radius: 44px;
-  background: repeating-linear-gradient(-45deg, rgba(22,36,61,.05), rgba(22,36,61,.05) 10px, rgba(22,36,61,.02) 10px, rgba(22,36,61,.02) 20px);
-  border: 1.5px dashed rgba(22, 36, 61, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(3deg);
+  border-radius: 40px;
+  overflow: hidden;
+  background: var(--felt);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 40px rgba(22, 36, 61, 0.13);
+  line-height: 0;
 }
-.phone span { font-family: ui-monospace, monospace; font-size: 13px; color: var(--muted); }
+.phone img { width: 100%; height: auto; }
+.phone--hero { transform: rotate(3deg); }
+
+/* Screenshot gallery */
+.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.shot { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.shot figcaption {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--muted);
+  text-align: center;
+  max-width: 320px;
+  text-wrap: pretty;
+}
+
+/* Static "coming soon" marker. Dashed, never greyed out, and not a link:
+   there is nothing to click yet, so it must not look like there is. */
+.pill--soon {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1.5px dashed rgba(22, 36, 61, 0.25);
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--muted);
+}
 
 /* Sections */
 .section { padding-bottom: 80px; display: flex; flex-direction: column; gap: 28px; }
@@ -456,8 +486,22 @@ img { max-width: 100%; display: block; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 40px; padding-block: 40px 64px; }
   .hero__art { order: -1; }
-  .phone { width: 240px; height: 440px; }
+  .phone { width: 260px; border-radius: 34px; }
   .cards { grid-template-columns: 1fr; }
+
+  /* Three phones stacked would be a mile of scrolling, so below the desktop
+     layout the gallery becomes one swipeable row. The scrolling happens inside
+     this element, never on the page. */
+  .shots {
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    margin-inline: -20px;
+    padding-inline: 20px;
+  }
+  .shot { flex: 0 0 auto; width: 260px; scroll-snap-align: center; }
   .banner__card { padding: 40px; }
   .banner__left { flex-direction: column; align-items: flex-start; gap: 20px; }
 }
@@ -477,5 +521,5 @@ img { max-width: 100%; display: block; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
   .btn:hover, .btn:active, .card:hover { transform: none; }
-  .phone { transform: none; }
+  .phone--hero { transform: none; }
 }

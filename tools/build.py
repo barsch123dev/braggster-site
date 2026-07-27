@@ -20,6 +20,11 @@ SRC = ROOT / "src"
 DIST = ROOT / "dist"
 
 SITE_URL = "https://braggster.com"
+
+# No country code in the path: Apple routes a visitor to their own storefront,
+# and this page is served in seven languages to whoever turns up. A /nl/ link
+# would send everyone through the Dutch store.
+APP_STORE_URL = "https://apps.apple.com/app/id6789661787"
 CONTACT_EMAIL = "hello@braggster.com"
 SUPPORT_EMAIL = "support@braggster.com"
 
@@ -99,6 +104,20 @@ HOME_CHIP_IDS = [
 
 TOKEN = re.compile(r"\{\{(\w+)\}\}")
 
+# The catalogue's own numbers, substituted into the copy rather than written out
+# in seven languages. They were spelled out until the app shipped its 54th game
+# and every locale had to be chased; now they cannot go stale.
+COUNTS = {
+    "{n}": str(len(GAMES)),
+    "{play}": str(sum(1 for g in GAMES if g["playInApp"])),
+    "{low}": str(sum(1 for g in GAMES if g["lowestWins"])),
+}
+
+# The screenshots tools/build_screenshots.py writes, in the order the gallery
+# shows them. The hero takes the first; the rest are the gallery.
+SHOTS = ["home", "games", "yahtzee", "sudoku"]
+SHOT_WIDTH, SHOT_HEIGHT = 320, 695
+
 # Feature glyphs, rebuilt as inline SVG from the prototype's div geometry.
 GLYPH_DICE = (
     '<svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true" focusable="false">'
@@ -132,6 +151,41 @@ def locale_dir(code: str) -> str:
     return "" if code == DEFAULT_LOCALE else f"{code.lower()}/"
 
 
+def counted(text: str) -> str:
+    """Fill in the catalogue's own numbers."""
+    for token, value in COUNTS.items():
+        text = text.replace(token, value)
+    return text
+
+
+def screenshot_html(root: str, locale: str, shot: str, *, hero: bool) -> str:
+    """One phone screenshot, at 1x and 2x. The hero's is eager and the gallery's
+    is lazy: the hero is the largest thing above the fold, and the gallery is
+    three more of it that nobody has scrolled to yet."""
+    base = f"{root}assets/screenshots/{locale}/{shot}"
+    loading = 'fetchpriority="high"' if hero else 'loading="lazy"'
+    return (
+        f'<img src="{base}.webp" srcset="{base}.webp 1x, {base}@2x.webp 2x" '
+        f'alt="{{alt}}" width="{SHOT_WIDTH}" height="{SHOT_HEIGHT}" {loading} decoding="async">'
+    )
+
+
+def shots_html(loc: dict[str, str], root: str, locale: str) -> str:
+    """The gallery: every shot but the one already in the hero."""
+    figures = []
+    for shot in SHOTS[1:]:
+        image = screenshot_html(root, locale, shot, hero=False).replace(
+            "{alt}", html.escape(loc[f"shot_{shot}_alt"], quote=True)
+        )
+        figures.append(
+            f'        <figure class="shot">\n'
+            f'          <div class="phone">{image}</div>\n'
+            f"          <figcaption>{html.escape(loc[f'shot_{shot}_cap'])}</figcaption>\n"
+            f"        </figure>"
+        )
+    return "\n".join(figures)
+
+
 def render(template: str, values: dict[str, str]) -> str:
     """Substitute {{key}}. Keys ending in _html are raw; everything else is escaped."""
 
@@ -139,7 +193,7 @@ def render(template: str, values: dict[str, str]) -> str:
         key = match.group(1)
         if key not in values:
             raise KeyError(f"template key not provided: {key}")
-        value = values[key]
+        value = counted(values[key])
         return value if key.endswith("_html") else html.escape(value, quote=True)
 
     return TOKEN.sub(sub, template)
@@ -166,7 +220,7 @@ def chips_html(loc: dict[str, str], games_href: str) -> str:
     names = [by_id[i]["name"] for i in HOME_CHIP_IDS]
     chips = [f'        <span class="chip">{html.escape(n)}</span>' for n in names]
     chips.append(f'        <span class="chip">{html.escape(loc["chip_generic"])}</span>')
-    more = loc["games_more_link"].replace("{n}", str(len(GAMES)))
+    more = counted(loc["games_more_link"])
     chips.append(f'        <a class="chip chip--more" href="{games_href}">{html.escape(more)}</a>')
     return "\n".join(chips)
 
@@ -358,13 +412,20 @@ def build() -> None:
             root=root,
             canonical=f"{SITE_URL}/{ldir}",
             hreflang_html=hreflang_html(""),
-            social_html=social_html(code, loc["meta_title"], loc["meta_description"], f"{SITE_URL}/{ldir}"),
+            social_html=social_html(
+                code, counted(loc["meta_title"]), counted(loc["meta_description"]), f"{SITE_URL}/{ldir}"
+            ),
             features_html=features_html(loc),
+            hero_shot_html=screenshot_html(root, code, SHOTS[0], hero=True).replace(
+                "{alt}", html.escape(loc["phone_alt"], quote=True)
+            ),
+            shots_html=shots_html(loc, root, code),
             chips_html=chips_html(loc, f"{root}{ldir}games/"),
             lang_links_html=lang_links_html(code, locales, root, ""),
             games_href=f"{root}{ldir}games/",
             privacy_href=f"{root}{ldir}privacy/",
             support_href=f"{root}{ldir}support/",
+            store_href=APP_STORE_URL,
             contact_email=CONTACT_EMAIL,
             support_email=SUPPORT_EMAIL,
             clarity_html=CLARITY_HTML,
@@ -384,8 +445,8 @@ def build() -> None:
             privacy_hreflang_html=hreflang_html("privacy/"),
             privacy_social_html=social_html(
                 code,
-                loc["privacy_meta_title"],
-                loc["privacy_meta_description"],
+                counted(loc["privacy_meta_title"]),
+                counted(loc["privacy_meta_description"]),
                 f"{SITE_URL}/{ldir}privacy/",
             ),
             privacy_lang_links_html=lang_links_html(code, locales, proot, "privacy/"),
@@ -410,8 +471,8 @@ def build() -> None:
             games_hreflang_html=hreflang_html("games/"),
             games_social_html=social_html(
                 code,
-                loc["games_meta_title"],
-                loc["games_meta_description"],
+                counted(loc["games_meta_title"]),
+                counted(loc["games_meta_description"]),
                 f"{SITE_URL}/{ldir}games/",
             ),
             games_lang_links_html=lang_links_html(code, locales, groot, "games/"),
@@ -422,6 +483,7 @@ def build() -> None:
             games_href=f"{groot}{ldir}games/",
             privacy_href=f"{groot}{ldir}privacy/",
             support_href=f"{groot}{ldir}support/",
+            store_href=APP_STORE_URL,
             contact_email=CONTACT_EMAIL,
             support_email=SUPPORT_EMAIL,
             clarity_html=CLARITY_HTML,
@@ -441,8 +503,8 @@ def build() -> None:
             support_hreflang_html=hreflang_html("support/"),
             support_social_html=social_html(
                 code,
-                loc["support_meta_title"],
-                loc["support_meta_description"],
+                counted(loc["support_meta_title"]),
+                counted(loc["support_meta_description"]),
                 f"{SITE_URL}/{ldir}support/",
             ),
             support_lang_links_html=lang_links_html(code, locales, sroot, "support/"),

@@ -34,7 +34,7 @@
       <a href="#features">{{nav_features}}</a>
       <a href="{{games_href}}">{{nav_games}}</a>
       <a href="#about">{{nav_about}}</a>
-      <a class="btn btn--brag" href="#">{{nav_cta}}</a>
+      <a class="btn btn--brag" href="{{store_href}}">{{nav_cta}}</a>
     </div>
   </nav>
 </div>
@@ -47,13 +47,14 @@
         <h1>{{hero_h1_html}}</h1>
         <p class="hero__sub">{{hero_sub}}</p>
         <div class="hero__actions">
-          <a class="btn btn--ink" href="#">{{hero_cta}}</a>
-          <a class="link" href="#features">{{hero_link}}</a>
+          <a class="btn btn--ink" href="{{store_href}}">{{store_ios}}</a>
+          <span class="pill pill--soon">{{store_android}}</span>
         </div>
+        <p class="hero__more"><a class="link" href="#features">{{hero_link}}</a></p>
       </div>
       <div class="hero__art">
-        <div class="phone" role="img" aria-label="{{phone_alt}}">
-          <span>{{phone_label}}</span>
+        <div class="phone phone--hero">
+{{hero_shot_html}}
         </div>
       </div>
     </header>
@@ -65,6 +66,16 @@
       </div>
       <div class="cards">
 {{features_html}}
+      </div>
+    </section>
+
+    <section class="section" id="screens">
+      <div class="section__head">
+        <p class="eyebrow">{{shots_eyebrow}}</p>
+        <h2>{{shots_h2}}</h2>
+      </div>
+      <div class="shots">
+{{shots_html}}
       </div>
     </section>
 
@@ -88,7 +99,7 @@
             <p>{{banner_sub}}</p>
           </div>
         </div>
-        <a class="btn btn--glow" href="#">{{banner_cta}}</a>
+        <a class="btn btn--glow" href="{{store_href}}">{{banner_cta}}</a>
       </div>
     </section>
   </div>

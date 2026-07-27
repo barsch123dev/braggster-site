@@ -123,11 +123,17 @@ def main() -> int:
     # 4. The catalogue.
     check_games(failures)
 
-    # 3. No unrendered tokens in the build output.
+    # 3. No unrendered tokens in the build output. Two kinds: the {{key}} the
+    # templates use, and the {n} / {play} / {low} the catalogue's counts are
+    # written as. The second only reaches HTML through a locale string, so a
+    # leftover one means a locale spelled a count the build does not substitute.
     if DIST.exists():
         for page in sorted(DIST.rglob("*.html")):
-            for token in re.findall(r"\{\{\w+\}\}", page.read_text("utf-8")):
+            text = page.read_text("utf-8")
+            for token in re.findall(r"\{\{\w+\}\}", text):
                 failures.append(f"{page.relative_to(DIST)}: unrendered token {token}")
+            for token in re.findall(r"\{(?:n|play|low|min|max)\}", text):
+                failures.append(f"{page.relative_to(DIST)}: unsubstituted count {token}")
 
     if failures:
         print(f"copy check failed ({len(failures)} problems):", file=sys.stderr)
