@@ -484,9 +484,26 @@ img { max-width: 100%; display: block; }
 
 /* Responsive. The design is desktop-first at 1100px; these are the obvious stacks. */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; gap: 40px; padding-block: 40px 64px; }
-  .hero__art { order: -1; }
-  .phone { width: 260px; border-radius: 34px; }
+  .hero { grid-template-columns: 1fr; gap: 32px; padding-block: 32px 64px; }
+
+  /* The art used to come first here, which was right when it was a dashed
+     placeholder box and wrong now that it is a screenshot: the headline, the
+     sentence explaining what this is and the store button are the reason the
+     page exists, and a 1:2.17 image above them fills a phone screen on its own.
+     The screenshot follows as the evidence for the claim, not in place of it. */
+
+  /* Sized by height, not width. A phone screenshot is more than twice as tall
+     as it is wide, so a width alone derives a height that overruns the screen:
+     260px across came out 565px down, taller than most of the viewport. Height
+     in svh keeps it a fraction of the screen it is actually being read on, and
+     the clamp stops it collapsing in landscape or ballooning on a tall tablet. */
+  .phone {
+    width: auto;
+    height: clamp(300px, 46svh, 440px);
+    aspect-ratio: 1320 / 2868;
+    border-radius: 34px;
+  }
+  .phone img { width: 100%; height: 100%; }
   .cards { grid-template-columns: 1fr; }
 
   /* Three phones stacked would be a mile of scrolling, so below the desktop
@@ -501,7 +518,9 @@ img { max-width: 100%; display: block; }
     margin-inline: -20px;
     padding-inline: 20px;
   }
-  .shot { flex: 0 0 auto; width: 260px; scroll-snap-align: center; }
+  /* Width comes from the frame, so the row still shows a peek of the next card
+     whatever height the viewport gives it. */
+  .shot { flex: 0 0 auto; scroll-snap-align: center; }
   .banner__card { padding: 40px; }
   .banner__left { flex-direction: column; align-items: flex-start; gap: 20px; }
 }
@@ -513,7 +532,17 @@ img { max-width: 100%; display: block; }
      give the CTA its own full-width row rather than letting it strand whichever
      link wraps next to it. The links' own padding carries the spacing. */
   .nav__links { gap: 0; justify-content: center; }
-  .nav__links .btn { flex: 1 1 100%; margin-top: 6px; }
+  /* No nav CTA on a phone. Full width in brag orange, it was the heaviest thing
+     above the fold, and it says the same as the store button in the hero just
+     below it. It stays from tablet up, where it costs nothing. */
+  .nav__links .btn { display: none; }
+
+  /* One column of buttons, both the same width, so the stack reads as a choice
+     rather than as two things that failed to fit on a line. */
+  .hero__actions { gap: 10px; }
+  .hero__actions .btn,
+  .hero__actions .pill--soon { flex: 1 1 100%; }
+  .hero__more { margin-top: -6px; }
   .footer__row { justify-content: center; text-align: center; }
   .footer__langs { justify-content: center; }
 }
