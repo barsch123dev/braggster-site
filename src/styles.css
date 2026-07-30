@@ -150,6 +150,9 @@ img { max-width: 100%; display: block; }
 .btn--ink { background: var(--ink); color: var(--felt); font-size: 17px; padding: 14px 30px; }
 .btn--ink:hover { color: var(--felt); }
 
+.btn--outline { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); font-size: 17px; padding: 14px 30px; }
+.btn--outline:hover { background: rgba(22, 36, 61, 0.05); color: var(--ink); }
+
 .btn--glow {
   background: var(--brag);
   color: var(--on-brag);
@@ -233,21 +236,6 @@ img { max-width: 100%; display: block; }
   text-align: center;
   max-width: 320px;
   text-wrap: pretty;
-}
-
-/* Static "coming soon" marker. Dashed, never greyed out, and not a link:
-   there is nothing to click yet, so it must not look like there is. */
-.pill--soon {
-  display: inline-flex;
-  align-items: center;
-  min-height: 48px;
-  padding: 0 22px;
-  border-radius: 999px;
-  border: 1.5px dashed rgba(22, 36, 61, 0.25);
-  font-family: 'Baloo 2', system-ui, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--muted);
 }
 
 /* Sections */
@@ -540,8 +528,7 @@ img { max-width: 100%; display: block; }
   /* One column of buttons, both the same width, so the stack reads as a choice
      rather than as two things that failed to fit on a line. */
   .hero__actions { gap: 10px; }
-  .hero__actions .btn,
-  .hero__actions .pill--soon { flex: 1 1 100%; }
+  .hero__actions .btn { flex: 1 1 100%; }
   .hero__more { margin-top: -6px; }
   .footer__row { justify-content: center; text-align: center; }
   .footer__langs { justify-content: center; }
