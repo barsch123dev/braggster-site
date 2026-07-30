@@ -25,6 +25,11 @@ SITE_URL = "https://braggster.com"
 # and this page is served in seven languages to whoever turns up. A /nl/ link
 # would send everyone through the Dutch store.
 APP_STORE_URL = "https://apps.apple.com/app/id6789661787"
+
+# Google Play has no per-storefront routing concern to match the comment above:
+# the listing id is the same for every visitor regardless of language or country.
+PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.braggster.app"
+
 CONTACT_EMAIL = "hello@braggster.com"
 SUPPORT_EMAIL = "support@braggster.com"
 
@@ -426,6 +431,7 @@ def build() -> None:
             privacy_href=f"{root}{ldir}privacy/",
             support_href=f"{root}{ldir}support/",
             store_href=APP_STORE_URL,
+            play_store_href=PLAY_STORE_URL,
             contact_email=CONTACT_EMAIL,
             support_email=SUPPORT_EMAIL,
             clarity_html=CLARITY_HTML,
