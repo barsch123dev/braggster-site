@@ -11,6 +11,7 @@
   "nav_home": "Accueil",
   "nav_features": "Fonctions",
   "nav_games": "Jeux",
+  "nav_blog": "Guides",
   "nav_about": "À propos",
   "nav_cta": "Télécharge l'app",
   "hero_eyebrow": "Le marqueur de ta soirée jeux",
@@ -44,7 +45,7 @@
   "games_meta_title": "Les {n} jeux : braggster",
   "games_meta_description": "Tous les jeux que braggster compte : {n} feuilles de score pour les cartes, les dés, les jeux de plateau et le sport, plus {play} jouables directement dans l'app. Filtrez par catégorie ou par jeu dans l'app.",
   "games_h1": "{n} feuilles de score, une seule app",
-  "games_intro": "Cartes, dés, plateau et sport, plus une feuille vierge pour tout le reste. De vraies règles de score, pas un simple carnet : le bowling reporte les bonus de strike et de spare, le Yahtzee a le bonus supérieur et la règle du joker, et {low} jeux comptent à l'envers. Vous en jouez {play} directement dans l'app, sans matériel.",
+  "games_intro": "Cartes, dés, plateau, casse-tête et sport, plus une feuille vierge pour tout le reste. De vraies règles de score, pas un simple carnet : le bowling reporte les bonus de strike et de spare, le Yahtzee a le bonus supérieur et la règle du joker, et {low} jeux comptent à l'envers. Vous en jouez {play} directement dans l'app, sans matériel.",
   "games_players_solo": "1 joueur",
   "games_players_exact": "{n} joueurs",
   "games_players_range": "De {min} à {max} joueurs",
@@ -55,6 +56,7 @@
   "games_cat_card": "Jeux de cartes",
   "games_cat_dice": "Jeux de dés",
   "games_cat_board": "Jeux de plateau",
+  "games_cat_puzzle": "Casse-tête",
   "games_cat_sports": "Sport et activité",
   "games_cat_free": "Toujours gratuit",
   "games_filter_category": "Filtrer par catégorie",
@@ -99,5 +101,11 @@
   "support_include_h": "Ce qu'il faut préciser",
   "support_include_p": "Pour t'aider vite, indique-nous ton appareil et sa version du système, le jeu que tu comptais, et ce que tu attendais face à ce qui s'est vraiment passé. Une capture d'écran aide beaucoup.",
   "support_response_h": "Quand tu auras une réponse",
-  "support_response_p": "Nous sommes une petite équipe et nous lisons chaque message. Tu peux compter sur une réponse sous quelques jours ouvrés."
+  "support_response_p": "Nous sommes une petite équipe et nous lisons chaque message. Tu peux compter sur une réponse sous quelques jours ouvrés.",
+  "blog_meta_title": "Guides de score et règles du jeu : braggster",
+  "blog_meta_description": "Comment compter les points aux jeux de cartes, de plateau, de dés et aux casse-tête. Les vraies règles expliquées, et ce que fait chaque jeu dans braggster.",
+  "blog_h1": "Guides de score et règles du jeu",
+  "blog_intro": "Comment le score fonctionne vraiment, jeu par jeu. Écrit à partir des règles que l'app applique, donc ce que tu lis ici est ce que fait la feuille.",
+  "blog_back": "Tous les guides",
+  "blog_badge_guide": "Guide de catégorie"
 }

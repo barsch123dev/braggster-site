@@ -11,6 +11,7 @@
   "nav_home": "Início",
   "nav_features": "Recursos",
   "nav_games": "Jogos",
+  "nav_blog": "Guias",
   "nav_about": "Sobre",
   "nav_cta": "Baixe o app",
   "hero_eyebrow": "O marcador da sua noite de jogos",
@@ -44,7 +45,7 @@
   "games_meta_title": "Todos os {n} jogos: braggster",
   "games_meta_description": "Todo jogo que o braggster pontua: {n} planilhas de pontuação entre cartas, dados, tabuleiro e esporte, mais {play} para jogar dentro do app. Filtre por categoria ou por jogo no app.",
   "games_h1": "{n} planilhas de pontuação, um app",
-  "games_intro": "Cartas, dados, tabuleiro e esporte, mais uma planilha em branco para todo o resto. Regras de pontuação de verdade, não um bloco de notas: o boliche carrega os bônus de strike e spare, o Yahtzee tem o bônus superior e a regra do coringa, e {low} jogos pontuam ao contrário. Desses, {play} você joga direto no app, sem precisar do jogo físico.",
+  "games_intro": "Cartas, dados, tabuleiro, quebra-cabeças e esporte, mais uma planilha em branco para todo o resto. Regras de pontuação de verdade, não um bloco de notas: o boliche carrega os bônus de strike e spare, o Yahtzee tem o bônus superior e a regra do coringa, e {low} jogos pontuam ao contrário. Desses, {play} você joga direto no app, sem precisar do jogo físico.",
   "games_players_solo": "1 jogador",
   "games_players_exact": "{n} jogadores",
   "games_players_range": "De {min} a {max} jogadores",
@@ -55,6 +56,7 @@
   "games_cat_card": "Jogos de cartas",
   "games_cat_dice": "Jogos de dados",
   "games_cat_board": "Jogos de tabuleiro",
+  "games_cat_puzzle": "Quebra-cabeças",
   "games_cat_sports": "Esporte e atividade",
   "games_cat_free": "Sempre grátis",
   "games_filter_category": "Filtrar por categoria",
@@ -99,5 +101,11 @@
   "support_include_h": "O que incluir",
   "support_include_p": "Para ajudar você rápido, conte o seu aparelho e a versão do sistema, o jogo que você estava pontuando e o que você esperava contra o que de fato aconteceu. Uma captura de tela ajuda bastante.",
   "support_response_h": "Quando você terá resposta",
-  "support_response_p": "Somos uma equipe pequena e lemos cada mensagem. Você pode esperar uma resposta em poucos dias úteis."
+  "support_response_p": "Somos uma equipe pequena e lemos cada mensagem. Você pode esperar uma resposta em poucos dias úteis.",
+  "blog_meta_title": "Guias de pontuação e regras: braggster",
+  "blog_meta_description": "Como marcar pontos em jogos de cartas, de tabuleiro, de dados e quebra-cabeças. Regras de verdade explicadas, e o que cada jogo faz no braggster.",
+  "blog_h1": "Guias de pontuação e regras",
+  "blog_intro": "Como a pontuação funciona de verdade, jogo a jogo. Escrito a partir das mesmas regras que o app usa, então o que você lê aqui é o que a planilha faz.",
+  "blog_back": "Todos os guias",
+  "blog_badge_guide": "Guia da categoria"
 }

@@ -539,3 +539,143 @@ img { max-width: 100%; display: block; }
   .btn:hover, .btn:active, .card:hover { transform: none; }
   .phone--hero { transform: none; }
 }
+
+/* ---------------------------------------------------------------------------
+   The blog: an index of guides, and the article pages themselves.
+
+   Articles reuse .prose, which already sets the 720px reading measure and the
+   h1/h2 scale for the privacy and support pages. What they add is everything a
+   markdown article has and a hand-written page does not: h3, tables, lists and
+   rules. The scoring tables are the reason .table-wrap exists; a nine column
+   bridge table cannot reflow, so it scrolls inside its own box rather than
+   pushing the page sideways.
+   --------------------------------------------------------------------------- */
+
+.posts__head { padding-block: 48px 8px; max-width: 720px; }
+.posts__head h1 {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(30px, 5vw, 44px);
+  margin: 8px 0 12px;
+}
+.posts__intro { font-size: 17px; line-height: 1.6; color: var(--muted); margin: 0; }
+
+.posts__group { padding-block: 32px 0; }
+.posts__group h2 {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+.posts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.post {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 250ms var(--spring);
+}
+.post:hover { transform: translateY(-3px); }
+.post h3 {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--ink);
+  margin: 0;
+}
+.post p { font-size: 14.5px; line-height: 1.55; color: var(--muted); margin: 0; }
+/* The category guides head their section, so they carry a badge as well as
+   position: on a phone the sections stack and position alone stops reading as
+   a hierarchy. */
+.post__badge {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--tint-orange);
+  border-radius: 999px;
+  padding: 4px 10px;
+  margin: 0;
+}
+.posts__note {
+  max-width: 720px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--faint);
+  padding-block: 48px 80px;
+}
+
+.prose--article { padding-block: 24px 48px; }
+.prose--article h3 {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--ink);
+  margin: 24px 0 6px;
+}
+.prose--article strong { color: var(--ink); font-weight: 700; }
+.prose--article ul, .prose--article ol { padding-left: 22px; margin: 8px 0 16px; }
+.prose--article li { margin-bottom: 6px; }
+.prose--article a { color: var(--link); }
+.prose--article hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0 24px; }
+.prose--article code {
+  font-size: 14px;
+  background: var(--well);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+/* A scoring table is content, not decoration, so it gets the full surface
+   treatment and its own scroll container rather than a squeeze. */
+.table-wrap { overflow-x: auto; margin: 16px 0 24px; }
+.table-wrap table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 340px;
+  background: var(--surface);
+  border-radius: 14px;
+  overflow: hidden;
+  font-size: 15px;
+}
+.table-wrap th, .table-wrap td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  line-height: 1.5;
+}
+.table-wrap th { font-weight: 700; color: var(--ink); background: var(--well); }
+.table-wrap td { color: var(--muted); }
+.table-wrap tr:last-child td { border-bottom: 0; }
+
+.article__crumb { font-size: 13.5px; font-weight: 600; margin: 0 0 16px; }
+.article__crumb a { color: var(--link); }
+.article__note {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--faint);
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  margin-top: 32px;
+}
+.article__cta {
+  max-width: 720px;
+  background: var(--tint-blue);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+.article__cta p { font-size: 16px; font-weight: 600; color: var(--ink); margin: 0; }
+
+@media (max-width: 900px) {
+  .posts { grid-template-columns: 1fr; }
+}

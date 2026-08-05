@@ -11,6 +11,7 @@
   "nav_home": "Home",
   "nav_features": "Funzioni",
   "nav_games": "Giochi",
+  "nav_blog": "Guide",
   "nav_about": "Chi siamo",
   "nav_cta": "Scarica l'app",
   "hero_eyebrow": "Il segnapunti della tua serata di giochi",
@@ -44,7 +45,7 @@
   "games_meta_title": "Tutti i {n} giochi: braggster",
   "games_meta_description": "Ogni gioco che braggster segna: {n} segnapunti tra carte, dadi, tavolo e sport, più {play} giocabili dentro l'app. Filtra per categoria o per gioco nell'app.",
   "games_h1": "{n} segnapunti, una sola app",
-  "games_intro": "Carte, dadi, tavolo e sport, più un segnapunti vuoto per tutto il resto. Regole di punteggio vere, non un semplice blocco note: il bowling riporta i bonus di strike e spare, lo Yahtzee ha il bonus superiore e la regola del jolly, e {low} giochi contano al contrario. Di questi ne giochi {play} direttamente nell'app, senza bisogno del gioco fisico.",
+  "games_intro": "Carte, dadi, tavolo, rompicapo e sport, più un segnapunti vuoto per tutto il resto. Regole di punteggio vere, non un semplice blocco note: il bowling riporta i bonus di strike e spare, lo Yahtzee ha il bonus superiore e la regola del jolly, e {low} giochi contano al contrario. Di questi ne giochi {play} direttamente nell'app, senza bisogno del gioco fisico.",
   "games_players_solo": "1 giocatore",
   "games_players_exact": "{n} giocatori",
   "games_players_range": "Da {min} a {max} giocatori",
@@ -55,6 +56,7 @@
   "games_cat_card": "Giochi di carte",
   "games_cat_dice": "Giochi di dadi",
   "games_cat_board": "Giochi da tavolo",
+  "games_cat_puzzle": "Rompicapo",
   "games_cat_sports": "Sport e attività",
   "games_cat_free": "Sempre gratis",
   "games_filter_category": "Filtra per categoria",
@@ -99,5 +101,11 @@
   "support_include_h": "Cosa indicare",
   "support_include_p": "Per aiutarti in fretta, dicci il tuo dispositivo e la versione del sistema, il gioco di cui tenevi il punteggio e cosa ti aspettavi rispetto a ciò che è successo davvero. Uno screenshot aiuta molto.",
   "support_response_h": "Quando avrai risposta",
-  "support_response_p": "Siamo un piccolo team e leggiamo ogni messaggio. Puoi aspettarti una risposta entro pochi giorni lavorativi."
+  "support_response_p": "Siamo un piccolo team e leggiamo ogni messaggio. Puoi aspettarti una risposta entro pochi giorni lavorativi.",
+  "blog_meta_title": "Guide al punteggio e regole: braggster",
+  "blog_meta_description": "Come tenere il punteggio nei giochi di carte, da tavolo, di dadi e nei rompicapo. Regole vere spiegate, e cosa fa ogni gioco dentro braggster.",
+  "blog_h1": "Guide al punteggio e regole",
+  "blog_intro": "Come funziona davvero il punteggio, gioco per gioco. Scritto dalle stesse regole che usa l'app, quindi quello che leggi qui è quello che fa il segnapunti.",
+  "blog_back": "Tutte le guide",
+  "blog_badge_guide": "Guida di categoria"
 }

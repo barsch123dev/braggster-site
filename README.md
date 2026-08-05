@@ -14,7 +14,10 @@ public website.
 src/home.html          page template
 src/games.html         games catalogue template
 src/privacy.html       privacy policy template
-src/games.json         the game catalogue: 54 entries, extracted from the app
+src/blog.html          blog index template
+src/article.html       one blog article
+src/blog/<locale>/*.md the articles themselves; see src/blog/README.md
+src/games.json         the game catalogue: 66 entries, extracted from the app
 src/styles.css         all styling; brand tokens live in :root
 src/locales/*.json     one file per language, all copy
 assets/                logos, favicons, self-hosted fonts, share card, app screenshots
@@ -34,8 +37,8 @@ pages are relative, so the output works from a subpath as well as from the apex 
 
 `src/games.json` is the one home for the game list. It was extracted from the app repo's game
 definitions (`app/lib/games/*/*_game_definition.dart`), and the counts it encodes are the app's:
-54 games, 33 card / 2 dice / 10 board / 7 sports / 2 always free, 12 playable in the app,
-7 that rank lowest-wins, 6 that carry a publisher disclaimer. Those numbers are not written into
+66 games, 33 card / 2 dice / 9 board / 13 puzzle / 7 sports / 2 always free, 24 playable in the
+app, 19 that rank lowest-wins, 7 that carry a publisher disclaimer. Those numbers are not written into
 the copy: the locales spell them `{n}`, `{play}` and `{low}`, and `build.py` counts games.json and
 substitutes. They were spelled out until the app shipped its 54th game and all seven locales had
 to be chased, and `check_copy.py` now fails on a placeholder that survives into the HTML. `/games/` renders from it, and the
@@ -51,9 +54,24 @@ they are rendered as real text because they exist to be found.
 The category filter and the play-in-app toggle are plain radio and checkbox inputs with **no
 JavaScript**. `build.py` generates `:has(:checked)` rules from `games.json` into a `<style>` block
 on the page, including the rules that show the empty state for the three filter pairs that
-genuinely match nothing. A browser without `:has()` shows all 54, which is the right fallback for
+genuinely match nothing. A browser without `:has()` shows all 66, which is the right fallback for
 a page whose job is to list them. If you add a category, the CSS follows automatically; there is
 no hand-written selector to keep in sync.
+
+## The blog
+
+`/blog/` and `/blog/<slug>/`, in all seven languages, from markdown under `src/blog/<locale>/`.
+Eighteen articles: four category pillars and fourteen per-game guides, written to give the site
+something to rank for besides the home page and `/games/`.
+
+`build.py` renders the markdown itself, in a deliberately small closed subset rather than through a
+library, because the no-dependency rule above matters more here than generality. It raises on any
+construct it does not recognise, so an unsupported one fails the build rather than reaching a page
+as literal text. Each article emits `Article`, `BreadcrumbList` and `FAQPage` JSON-LD, the last
+lifted out of the article's own FAQ section.
+
+Front matter shape, the copy rules, the translation brief and the backlog all live in
+[`src/blog/README.md`](src/blog/README.md). Read that before writing or editing an article.
 
 ## Build and check
 

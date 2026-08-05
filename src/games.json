@@ -1,6 +1,6 @@
 {
-  "_comment": "The game catalogue, extracted 2026-07-19 from the app repo's game definitions (app/lib/games/*/*_game_definition.dart, registered in game_registry.dart). Game names are proper nouns and are never translated; only the surrounding UI copy in src/locales/ is. 'functionality' is reference data in English: the page does not render it as prose, because that would put untranslated English paragraphs on six of the seven locales. players.perSide 2 means partnership play (2 teams of 2). Categories mirror the app's GameCategory, except that the blank scorecard is broken out of 'other' into 'free' because it is the one game that is always free.",
-  "generated": "2026-07-19",
+  "_comment": "The game catalogue, extracted 2026-08-05 from the app repo's game definitions (app/lib/games/*/*_game_definition.dart, registered in game_registry.dart). Game names are proper nouns and are never translated; only the surrounding UI copy in src/locales/ is. 'functionality' is reference data in English: the page does not render it as prose, because that would put untranslated English paragraphs on six of the seven locales. players.perSide 2 means partnership play (2 teams of 2). Categories mirror the app's GameCategory, except that the blank scorecard is broken out of 'other' into 'free' because it is the one game that is always free.",
+  "generated": "2026-08-05",
   "games": [
     {
       "id": "klaverjassen",
@@ -886,7 +886,7 @@
     {
       "id": "sudoku",
       "name": "Sudoku",
-      "category": "board",
+      "category": "puzzle",
       "players": {
         "min": 1,
         "max": 1,
@@ -899,6 +899,259 @@
         "daily sudoku"
       ],
       "functionality": "Live 9x9 board with a seeded generator that guarantees a unique solution, five difficulty tiers (Beginner to Evil), pencil notes and hints, scored on solve time plus penalties",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "killersudoku",
+      "name": "Killer Sudoku",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "killer sudoku",
+        "sum sudoku",
+        "cage sudoku",
+        "sudoku variant",
+        "samunamupure"
+      ],
+      "functionality": "Sudoku's grid plus sum cages, five difficulty tiers, uniqueness verified under the combined sudoku and cage constraint, pencil notes and hints, scored on solve time plus penalties",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "kakuro",
+      "name": "Kakuro",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "kakuro",
+        "cross sums",
+        "cross sum puzzle",
+        "kakro",
+        "number puzzle"
+      ],
+      "functionality": "Live cross-sum grid from 6x6 to 10x10, five difficulty tiers, every puzzle proven uniquely solvable, pencil notes and hints, scored on solve time plus penalties",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "futoshiki",
+      "name": "Futoshiki",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "futoshiki",
+        "inequality puzzle",
+        "more or less puzzle",
+        "latin square",
+        "unequal"
+      ],
+      "functionality": "Live 4x4 to 7x7 latin-square grid with inequality signs between cells, five difficulty tiers, uniqueness verified by an MRV solver, pencil notes and hints",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "binairo",
+      "name": "Binairo",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "binairo",
+        "takuzu",
+        "binary puzzle",
+        "binaire puzzel",
+        "tohu wa vohu"
+      ],
+      "functionality": "Live 6x6 to 12x12 two-symbol grid, no three alike in a line, balanced rows and columns, no repeated lines, five difficulty tiers, tap a cell to cycle it",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "calcudoku",
+      "name": "Calcudoku",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "calcudoku",
+        "mathdoku",
+        "arithmetic puzzle",
+        "latin square",
+        "sudoku with sums"
+      ],
+      "functionality": "Live 4x4 to 7x7 latin-square grid partitioned into arithmetic cages, five difficulty tiers, uniqueness proven by a cage-aware solver, pencil notes and hints",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "nonogram",
+      "name": "Nonogram",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "nonogram",
+        "picture logic",
+        "griddler",
+        "hanjie",
+        "japanese crossword",
+        "japanse puzzel"
+      ],
+      "functionality": "Live picture-logic board from 5x5 to 15x15, row and column run-length clues reveal a titled picture, 32 hand-authored bitmaps each verified to have a unique solution, hints only",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "minesweeper",
+      "name": "Minesweeper",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "minesweeper",
+        "mijnenveger",
+        "no guess minesweeper",
+        "buscaminas",
+        "demineur"
+      ],
+      "functionality": "Five tiers from 9x9 with 10 mines to 16x30 with 99, every field proven solvable by pure logic before it is dealt, so there is never a guess; revealing a mine costs a mistake, not the game",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "murdoku",
+      "name": "Murder Sudoku",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "murder sudoku",
+        "murder mystery puzzle",
+        "whodunnit",
+        "deduction puzzle",
+        "detective grid"
+      ],
+      "functionality": "5x5 room grid: place four suspects and the victim one per row and column, satisfy every clue, and the killer is whoever shares the victim's room. Generated cases with a full story, five tiers",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "logikwis",
+      "name": "Logikwis",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "logic grid puzzle",
+        "logigram",
+        "logic puzzle",
+        "elimination grid",
+        "logische puzzel"
+      ],
+      "functionality": "Classic logic-grid deduction on a cross-reference elimination grid, random subject themes and categories per case, five tiers from 3x3 to 5x4, generated cases verified unique",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": true
+    },
+    {
+      "id": "wordle",
+      "name": "Woordkraker",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "word guess",
+        "woordkraker",
+        "word puzzle",
+        "five letter word game",
+        "woordspel"
+      ],
+      "functionality": "Guess the hidden word in six tries on a live board with an on-screen keyboard, four word-length tiers from 4 to 7 letters, letter states shown by shape as well as colour",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "crossword",
+      "name": "Crossword",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "crossword",
+        "kruiswoordpuzzel",
+        "crossword puzzle",
+        "cruciverba",
+        "mots croises"
+      ],
+      "functionality": "Crossword generated at runtime from a large clued dictionary, so puzzles are unlimited. Mini 5x5, Midi 7x7 and Standard 15x15, with a fold-out clue list and across/down toggle",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false
+    },
+    {
+      "id": "woordzoeker",
+      "name": "Woordzoeker",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "word search",
+        "woordzoeker",
+        "sopa de letras",
+        "wordsearch",
+        "buscar palabras"
+      ],
+      "functionality": "Live letter grid from 8x8 with 5 words to 14x14 with 12, words run in any of eight directions, tap-drag from first letter to last to find one",
       "playInApp": true,
       "lowestWins": true,
       "trademark": false
