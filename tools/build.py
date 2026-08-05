@@ -86,9 +86,9 @@ GAMES = json.loads((SRC / "games.json").read_text("utf-8"))["games"]
 # Category order on the games page. Mirrors the app's GameCategory, except that
 # the blank scorecard is split out of "other" into its own "free" bucket: it is
 # the one game that is always free, which is worth saying plainly.
-CATEGORIES = ["card", "dice", "board", "sports", "free"]
+CATEGORIES = ["card", "dice", "board", "puzzle", "sports", "free"]
 
-# The home page keeps a short teaser rather than all 53 names. This is a
+# The home page keeps a short teaser rather than the whole catalogue. This is a
 # curated slice, spread across categories and countries, but the names
 # themselves still come from games.json, so a rename in the app travels here.
 HOME_CHIP_IDS = [
@@ -104,6 +104,7 @@ HOME_CHIP_IDS = [
     "darts",
     "truco",
     "sudoku",
+    "minesweeper",
     "rummikub",
 ]
 
@@ -329,9 +330,11 @@ def games_css() -> str:
     return "\n".join(lines)
 
 
-def lang_links_html(current: str, locales: dict[str, dict], root: str, suffix: str) -> str:
+def lang_links_html(
+    current: str, locales: dict[str, dict], root: str, suffix: str, codes: list[str] | None = None
+) -> str:
     links = []
-    for code in LOCALES:
+    for code in codes or LOCALES:
         href = f"{root}{locale_dir(code)}{suffix}" or "./"
         current_attr = ' aria-current="true"' if code == current else ""
         name = html.escape(locales[code]["name"])
@@ -375,13 +378,332 @@ def social_html(current: str, title: str, description: str, url: str) -> str:
     return "\n".join(tags)
 
 
-def hreflang_html(suffix: str) -> str:
+def hreflang_html(suffix: str, codes: list[str] | None = None) -> str:
+    """Alternates for a page that exists in every locale, or in `codes` only.
+
+    The four original pages are built for all seven locales unconditionally, so
+    they can assume LOCALES. A blog article cannot: an article that has not been
+    translated yet must not advertise an alternate that would 404. x-default
+    still points at the English root, which is where the canonical copy lives.
+    """
     tags = []
-    for code in LOCALES:
+    for code in codes or LOCALES:
         url = f"{SITE_URL}/{locale_dir(code)}{suffix}"
         tags.append(f'<link rel="alternate" hreflang="{code}" href="{url}">')
     tags.append(f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}/{suffix}">')
     return "\n".join(tags)
+
+
+# ---------------------------------------------------------------------------
+# The blog.
+#
+# Articles are markdown with a front matter block, under src/blog/<locale>/. The
+# renderer below is deliberately a small, closed subset rather than a markdown
+# library: this site has no dependencies and adding one for eighteen articles
+# would be the largest thing in the repo. It handles exactly the constructs the
+# articles use, and raises on anything it does not recognise, so an unsupported
+# construct fails the build instead of silently rendering as literal text.
+# ---------------------------------------------------------------------------
+
+BLOG_SRC = SRC / "blog"
+
+# Section order on the blog index. Pillars head their own section; the per-game
+# articles follow underneath the pillar they belong to.
+BLOG_CATEGORY_ORDER = ["card", "board", "dice", "puzzle"]
+
+# The articles were written on this date. Schema.org wants a datePublished and
+# there is nothing per-file to derive one from, so it is a constant rather than
+# a fake per-article date.
+BLOG_PUBLISHED = "2026-08-05"
+
+FM_SCALAR = re.compile(r"^([a-z_]+):\s*(.*)$")
+FM_ITEM = re.compile(r"^\s+-\s+(.*)$")
+MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+MD_BOLD = re.compile(r"\*\*([^*]+)\*\*")
+MD_CODE = re.compile(r"`([^`]+)`")
+MD_ORDERED = re.compile(r"^(\d+)\.\s+(.*)$")
+FAQ_QUESTION = re.compile(r"^\*\*(.+\?)\*\*$")
+
+
+def _front_matter_value(raw: str):
+    raw = raw.strip()
+    if raw in ("null", "~"):
+        return None
+    if len(raw) >= 2 and raw[0] == raw[-1] and raw[0] in "\"'":
+        return raw[1:-1]
+    if raw.isdigit():
+        return int(raw)
+    return raw
+
+
+def parse_front_matter(text: str, where: str) -> tuple[dict, str]:
+    """The YAML subset the articles use: scalars, quoted strings, and `- ` lists."""
+    if not text.startswith("---\n"):
+        raise ValueError(f"{where}: no front matter block")
+    try:
+        end = text.index("\n---\n", 3)
+    except ValueError:
+        raise ValueError(f"{where}: front matter is not closed") from None
+
+    meta: dict = {}
+    key: str | None = None
+    for line in text[4:end].split("\n"):
+        if not line.strip():
+            continue
+        item = FM_ITEM.match(line)
+        if item:
+            if key is None or not isinstance(meta.get(key), list):
+                raise ValueError(f"{where}: list item outside a list: {line!r}")
+            meta[key].append(_front_matter_value(item.group(1)))
+            continue
+        scalar = FM_SCALAR.match(line)
+        if not scalar:
+            raise ValueError(f"{where}: unparsable front matter line: {line!r}")
+        key = scalar.group(1)
+        meta[key] = [] if not scalar.group(2).strip() else _front_matter_value(scalar.group(2))
+    return meta, text[end + 5 :]
+
+
+def site_href(root: str, ldir: str):
+    """Rewrite the articles' absolute site paths to this page's relative prefix.
+
+    Articles are written with `/games/` and `/blog/<slug>/` because that is what
+    reads well in markdown and what an author can check by eye. Every link the
+    site emits is relative, so the output works from a subpath as well as from
+    the apex domain, and locale pages need the locale directory injected.
+    """
+
+    def resolve(path: str) -> str:
+        if not path.startswith("/"):
+            return path
+        return f"{root}{ldir}{path.lstrip('/')}"
+
+    return resolve
+
+
+def _inline(text: str, href) -> str:
+    out = html.escape(text, quote=False)
+    out = MD_CODE.sub(lambda m: f"<code>{m.group(1)}</code>", out)
+    out = MD_BOLD.sub(lambda m: f"<strong>{m.group(1)}</strong>", out)
+    out = MD_LINK.sub(lambda m: f'<a href="{html.escape(href(m.group(2)), quote=True)}">{m.group(1)}</a>', out)
+    return out
+
+
+def _table_html(lines: list[str], start: int, href) -> tuple[str, int]:
+    rows: list[list[str]] = []
+    i = start
+    while i < len(lines) and lines[i].strip().startswith("|"):
+        rows.append([cell.strip() for cell in lines[i].strip().strip("|").split("|")])
+        i += 1
+
+    separator = len(rows) > 1 and all(set(c) <= set("-: ") and "-" in c for c in rows[1])
+    header = rows[0] if separator else None
+    body = rows[2:] if separator else rows
+
+    out = ['<div class="table-wrap">', "<table>"]
+    if header:
+        cells = "".join(f"<th>{_inline(c, href)}</th>" for c in header)
+        out.append(f"<thead><tr>{cells}</tr></thead>")
+    out.append("<tbody>")
+    for row in body:
+        cells = "".join(f"<td>{_inline(c, href)}</td>" for c in row)
+        out.append(f"<tr>{cells}</tr>")
+    out += ["</tbody>", "</table>", "</div>"]
+    return "\n".join(out), i
+
+
+def markdown_html(body: str, href) -> str:
+    lines = body.split("\n")
+    out: list[str] = []
+    paragraph: list[str] = []
+    open_list: str | None = None
+    i = 0
+
+    def flush_paragraph() -> None:
+        nonlocal paragraph
+        if paragraph:
+            out.append(f"<p>{_inline(' '.join(paragraph), href)}</p>")
+            paragraph = []
+
+    def close_list() -> None:
+        nonlocal open_list
+        if open_list:
+            out.append(f"</{open_list}>")
+            open_list = None
+
+    while i < len(lines):
+        line = lines[i].strip()
+
+        if not line:
+            flush_paragraph()
+            close_list()
+            i += 1
+            continue
+
+        if line.startswith("#"):
+            flush_paragraph()
+            close_list()
+            level = len(line) - len(line.lstrip("#"))
+            if level > 6:
+                raise ValueError(f"heading deeper than h6: {line!r}")
+            out.append(f"<h{level}>{_inline(line[level:].strip(), href)}</h{level}>")
+            i += 1
+            continue
+
+        if line == "---":
+            flush_paragraph()
+            close_list()
+            out.append("<hr>")
+            i += 1
+            continue
+
+        if line.startswith("|"):
+            flush_paragraph()
+            close_list()
+            table, i = _table_html(lines, i, href)
+            out.append(table)
+            continue
+
+        ordered = MD_ORDERED.match(line)
+        if ordered:
+            flush_paragraph()
+            if open_list != "ol":
+                close_list()
+                out.append("<ol>")
+                open_list = "ol"
+            out.append(f"<li>{_inline(ordered.group(2), href)}</li>")
+            i += 1
+            continue
+
+        if line.startswith("- "):
+            flush_paragraph()
+            if open_list != "ul":
+                close_list()
+                out.append("<ul>")
+                open_list = "ul"
+            out.append(f"<li>{_inline(line[2:], href)}</li>")
+            i += 1
+            continue
+
+        close_list()
+        paragraph.append(line)
+        i += 1
+
+    flush_paragraph()
+    close_list()
+    return "\n".join(out)
+
+
+def faq_pairs(body: str) -> list[tuple[str, str]]:
+    """Question and answer pairs for FAQPage schema.
+
+    A question is a line that is entirely bold and ends in a question mark; the
+    answer is the lines that follow it up to the next blank line. Matching on
+    the shape rather than on the section heading is what makes this work in all
+    seven languages without a per-locale marker.
+    """
+    lines = body.rsplit("\n---\n", 1)[0].split("\n")
+    pairs: list[tuple[str, str]] = []
+    for index, line in enumerate(lines):
+        question = FAQ_QUESTION.match(line.strip())
+        if not question:
+            continue
+        answer: list[str] = []
+        for follow in lines[index + 1 :]:
+            if not follow.strip():
+                break
+            answer.append(follow.strip())
+        if answer:
+            pairs.append((question.group(1), " ".join(answer)))
+    return pairs
+
+
+def json_ld(blocks: list[dict]) -> str:
+    payload = blocks[0] if len(blocks) == 1 else {"@graph": blocks}
+    body = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    # A closing tag inside a JSON string would end the script element early.
+    body = body.replace("</", "<\\/")
+    return f'<script type="application/ld+json">{body}</script>'
+
+
+def article_schema(meta: dict, body: str, url: str, code: str, blog_url: str, home_url: str, loc: dict) -> str:
+    blocks: list[dict] = [
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": meta["title"],
+            "description": meta["meta_description"],
+            "inLanguage": code,
+            "datePublished": BLOG_PUBLISHED,
+            "dateModified": BLOG_PUBLISHED,
+            "mainEntityOfPage": url,
+            "author": {"@type": "Organization", "name": "braggster"},
+            "publisher": {"@type": "Organization", "name": "braggster"},
+            "image": OG_IMAGE,
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": loc["nav_home"], "item": home_url},
+                {"@type": "ListItem", "position": 2, "name": loc["nav_blog"], "item": blog_url},
+                {"@type": "ListItem", "position": 3, "name": meta["title"], "item": url},
+            ],
+        },
+    ]
+
+    pairs = faq_pairs(body)
+    if pairs:
+        blocks.append(
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": question,
+                        "acceptedAnswer": {"@type": "Answer", "text": answer},
+                    }
+                    for question, answer in pairs
+                ],
+            }
+        )
+    return json_ld(blocks)
+
+
+def blog_index_html(loc: dict, entries: dict[str, dict], href) -> str:
+    """The index, grouped by category with each pillar heading its own section."""
+    sections: list[str] = []
+    for category in BLOG_CATEGORY_ORDER:
+        in_category = [m for m in entries.values() if m.get("category") == category]
+        if not in_category:
+            continue
+        pillars = [m for m in in_category if m.get("type") == "pillar"]
+        games = sorted(
+            (m for m in in_category if m.get("type") != "pillar"),
+            key=lambda m: (m.get("priority", 9), m["title"]),
+        )
+
+        heading = html.escape(loc[f"games_cat_{category}"])
+        cards: list[str] = []
+        for meta in pillars + games:
+            link = html.escape(href(f"/blog/{meta['slug']}/"), quote=True)
+            badge = ""
+            if meta.get("type") == "pillar":
+                badge = f'<p class="post__badge">{html.escape(loc["blog_badge_guide"])}</p>'
+            cards.append(
+                f'      <a class="post" href="{link}">\n'
+                f"{badge}"
+                f'        <h3>{html.escape(meta["title"])}</h3>\n'
+                f"        <p>{html.escape(meta['meta_description'])}</p>\n"
+                f"      </a>"
+            )
+        sections.append(
+            f'    <section class="posts__group">\n'
+            f"      <h2>{heading}</h2>\n"
+            f'      <div class="posts">\n' + "\n".join(cards) + "\n      </div>\n    </section>"
+        )
+    return "\n".join(sections)
 
 
 def build() -> None:
@@ -390,6 +712,40 @@ def build() -> None:
     privacy_tpl = (SRC / "privacy.html").read_text("utf-8")
     games_tpl = (SRC / "games.html").read_text("utf-8")
     support_tpl = (SRC / "support.html").read_text("utf-8")
+    blog_tpl = (SRC / "blog.html").read_text("utf-8")
+    article_tpl = (SRC / "article.html").read_text("utf-8")
+
+    # Every article is parsed up front, keyed by locale then slug, so hreflang
+    # and the language switcher can ask which locales actually hold a given
+    # slug. An article that ships in fewer languages than the site then cannot
+    # advertise an alternate that 404s.
+    articles: dict[str, dict[str, tuple[dict, str]]] = {}
+    for code in LOCALES:
+        folder = BLOG_SRC / code
+        entries: dict[str, tuple[dict, str]] = {}
+        for path in sorted(folder.glob("*.md")) if folder.is_dir() else []:
+            where = str(path.relative_to(ROOT))
+            meta, body = parse_front_matter(path.read_text("utf-8"), where)
+            if meta.get("slug") != path.stem:
+                raise ValueError(f"{where}: slug {meta.get('slug')!r} does not match the filename")
+            for field in ("title", "meta_title", "meta_description", "category", "type"):
+                if not meta.get(field):
+                    raise ValueError(f"{where}: front matter is missing {field!r}")
+            # The H1 is rendered from the body, so a mismatch would give the tab
+            # and the page two different titles without anything failing.
+            first_heading = next((l[2:].strip() for l in body.split("\n") if l.startswith("# ")), None)
+            if first_heading != meta["title"]:
+                raise ValueError(f"{where}: title {meta['title']!r} does not match the H1 {first_heading!r}")
+            entries[path.stem] = (meta, body)
+        articles[code] = entries
+
+    if not articles[DEFAULT_LOCALE]:
+        raise ValueError("no English articles found under src/blog/en/")
+
+    # Which locales hold each slug, in LOCALES order.
+    slug_locales = {
+        slug: [c for c in LOCALES if slug in articles[c]] for slug in articles[DEFAULT_LOCALE]
+    }
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -428,6 +784,7 @@ def build() -> None:
             chips_html=chips_html(loc, f"{root}{ldir}games/"),
             lang_links_html=lang_links_html(code, locales, root, ""),
             games_href=f"{root}{ldir}games/",
+            blog_href=f"{root}{ldir}blog/",
             privacy_href=f"{root}{ldir}privacy/",
             support_href=f"{root}{ldir}support/",
             store_href=APP_STORE_URL,
@@ -457,6 +814,7 @@ def build() -> None:
             ),
             privacy_lang_links_html=lang_links_html(code, locales, proot, "privacy/"),
             home_href=f"{proot}{ldir}",
+            blog_href=f"{proot}{ldir}blog/",
             privacy_href=f"{proot}{ldir}privacy/",
             support_href=f"{proot}{ldir}support/",
             contact_email=CONTACT_EMAIL,
@@ -487,6 +845,7 @@ def build() -> None:
             games_css_html=games_css(),
             home_href=f"{groot}{ldir}",
             games_href=f"{groot}{ldir}games/",
+            blog_href=f"{groot}{ldir}blog/",
             privacy_href=f"{groot}{ldir}privacy/",
             support_href=f"{groot}{ldir}support/",
             store_href=APP_STORE_URL,
@@ -515,6 +874,7 @@ def build() -> None:
             ),
             support_lang_links_html=lang_links_html(code, locales, sroot, "support/"),
             home_href=f"{sroot}{ldir}",
+            blog_href=f"{sroot}{ldir}blog/",
             privacy_href=f"{sroot}{ldir}privacy/",
             support_href=f"{sroot}{ldir}support/",
             contact_email=CONTACT_EMAIL,
@@ -526,7 +886,107 @@ def build() -> None:
         sout.write_text(render(support_tpl, svalues), "utf-8")
         written.append(str(sout.relative_to(DIST)))
 
+        # ---- Blog index: <root>/<ldir>blog/index.html
+        entries = articles[code]
+        if not entries:
+            continue
+
+        broot = "../" * (depth + 1)
+        bhref = site_href(broot, ldir)
+        metas = {slug: meta for slug, (meta, _) in entries.items()}
+        blog_url = f"{SITE_URL}/{ldir}blog/"
+
+        bvalues = dict(loc)
+        bvalues.update(
+            root=broot,
+            blog_canonical=blog_url,
+            blog_hreflang_html=hreflang_html("blog/", [c for c in LOCALES if articles[c]]),
+            blog_social_html=social_html(
+                code, counted(loc["blog_meta_title"]), counted(loc["blog_meta_description"]), blog_url
+            ),
+            blog_schema_html=json_ld(
+                [
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "ItemList",
+                        "name": loc["blog_h1"],
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": position,
+                                "name": meta["title"],
+                                "url": f"{SITE_URL}/{ldir}blog/{slug}/",
+                            }
+                            for position, (slug, meta) in enumerate(sorted(metas.items()), start=1)
+                        ],
+                    }
+                ]
+            ),
+            blog_index_html=blog_index_html(loc, metas, bhref),
+            blog_lang_links_html=lang_links_html(
+                code, locales, broot, "blog/", [c for c in LOCALES if articles[c]]
+            ),
+            home_href=f"{broot}{ldir}",
+            games_href=f"{broot}{ldir}games/",
+            blog_href=f"{broot}{ldir}blog/",
+            privacy_href=f"{broot}{ldir}privacy/",
+            support_href=f"{broot}{ldir}support/",
+            contact_email=CONTACT_EMAIL,
+            support_email=SUPPORT_EMAIL,
+            clarity_html=CLARITY_HTML,
+        )
+        bout = DIST / ldir / "blog" / "index.html"
+        bout.parent.mkdir(parents=True, exist_ok=True)
+        bout.write_text(render(blog_tpl, bvalues), "utf-8")
+        written.append(str(bout.relative_to(DIST)))
+
+        # ---- Articles: <root>/<ldir>blog/<slug>/index.html
+        aroot = "../" * (depth + 2)
+        ahref = site_href(aroot, ldir)
+        for slug, (meta, body) in sorted(entries.items()):
+            url = f"{SITE_URL}/{ldir}blog/{slug}/"
+            alternates = slug_locales.get(slug, [code])
+            note = meta.get("trademark_note")
+            avalues = dict(loc)
+            avalues.update(
+                root=aroot,
+                article_meta_title=meta["meta_title"],
+                article_meta_description=meta["meta_description"],
+                article_canonical=url,
+                article_hreflang_html=hreflang_html(f"blog/{slug}/", alternates),
+                article_social_html=social_html(code, meta["meta_title"], meta["meta_description"], url),
+                article_schema_html=article_schema(
+                    meta, body, url, code, f"{SITE_URL}/{ldir}blog/", f"{SITE_URL}/{ldir}", loc
+                ),
+                article_html=markdown_html(body, ahref),
+                article_trademark_html=(
+                    f'<p class="article__note">{html.escape(note)}</p>' if note else ""
+                ),
+                article_lang_links_html=lang_links_html(
+                    code, locales, aroot, f"blog/{slug}/", alternates
+                ),
+                blog_back=loc["blog_back"],
+                home_href=f"{aroot}{ldir}",
+                games_href=f"{aroot}{ldir}games/",
+                blog_href=f"{aroot}{ldir}blog/",
+                privacy_href=f"{aroot}{ldir}privacy/",
+                support_href=f"{aroot}{ldir}support/",
+                contact_email=CONTACT_EMAIL,
+                support_email=SUPPORT_EMAIL,
+                clarity_html=CLARITY_HTML,
+            )
+            aout = DIST / ldir / "blog" / slug / "index.html"
+            aout.parent.mkdir(parents=True, exist_ok=True)
+            aout.write_text(render(article_tpl, avalues), "utf-8")
+            written.append(str(aout.relative_to(DIST)))
+
     urls = [f"{SITE_URL}/{locale_dir(c)}{s}" for s in ("", "games/", "privacy/", "support/") for c in LOCALES]
+    urls += [
+        f"{SITE_URL}/{locale_dir(c)}blog/{s}"
+        for c in LOCALES
+        if articles[c]
+        for s in [""] + [f"{slug}/" for slug in sorted(articles[c])]
+    ]
     sitemap = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     (DIST / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'

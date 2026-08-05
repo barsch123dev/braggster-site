@@ -11,6 +11,7 @@
   "nav_home": "Start",
   "nav_features": "Funktionen",
   "nav_games": "Spiele",
+  "nav_blog": "Ratgeber",
   "nav_about": "Über uns",
   "nav_cta": "App holen",
   "hero_eyebrow": "Der Punktezähler für deinen Spieleabend",
@@ -44,7 +45,7 @@
   "games_meta_title": "Alle {n} Spiele: braggster",
   "games_meta_description": "Jedes Spiel, das braggster zählt: {n} Punktezettel für Karten, Würfel, Brett und Sport, dazu {play} zum Spielen direkt in der App. Filtere nach Kategorie oder nach Spielen in der App.",
   "games_h1": "{n} Punktezettel, eine App",
-  "games_intro": "Karten, Würfel, Brett und Sport, dazu ein leerer Punktezettel für alles andere. Echte Zählregeln, kein bloßer Notizblock: Bowling rechnet Strike- und Spare-Boni weiter, Yahtzee hat den oberen Bonus und die Joker-Regel, und {low} Spiele werten umgekehrt. Davon spielst du {play} direkt in der App, ganz ohne Spielmaterial.",
+  "games_intro": "Karten, Würfel, Brett, Rätsel und Sport, dazu ein leerer Punktezettel für alles andere. Echte Zählregeln, kein bloßer Notizblock: Bowling rechnet Strike- und Spare-Boni weiter, Yahtzee hat den oberen Bonus und die Joker-Regel, und {low} Spiele werten umgekehrt. Davon spielst du {play} direkt in der App, ganz ohne Spielmaterial.",
   "games_players_solo": "1 Spieler",
   "games_players_exact": "{n} Spieler",
   "games_players_range": "{min} bis {max} Spieler",
@@ -55,6 +56,7 @@
   "games_cat_card": "Kartenspiele",
   "games_cat_dice": "Würfelspiele",
   "games_cat_board": "Brettspiele",
+  "games_cat_puzzle": "Rätsel",
   "games_cat_sports": "Sport und Bewegung",
   "games_cat_free": "Immer kostenlos",
   "games_filter_category": "Nach Kategorie filtern",
@@ -99,5 +101,11 @@
   "support_include_h": "Was du angeben solltest",
   "support_include_p": "Damit wir dir schnell helfen können: nenne uns dein Gerät und dessen Systemversion, das Spiel, das du gezählt hast, und was du erwartet hast gegenüber dem, was wirklich passiert ist. Ein Screenshot hilft sehr.",
   "support_response_h": "Wann du hörst",
-  "support_response_p": "Wir sind ein kleines Team und lesen jede Nachricht. Mit einer Antwort kannst du innerhalb weniger Werktage rechnen."
+  "support_response_p": "Wir sind ein kleines Team und lesen jede Nachricht. Mit einer Antwort kannst du innerhalb weniger Werktage rechnen.",
+  "blog_meta_title": "Zählregeln und Spielregeln: braggster",
+  "blog_meta_description": "Wie du bei Karten-, Brett- und Würfelspielen und Rätseln zählst. Echte Zählregeln erklärt, und was jedes Spiel in braggster tatsächlich macht.",
+  "blog_h1": "Zählregeln und Spielregeln",
+  "blog_intro": "Wie das Zählen wirklich funktioniert, Spiel für Spiel. Geschrieben aus denselben Regeln, die die App nutzt, also macht der Punktezettel genau das.",
+  "blog_back": "Alle Ratgeber",
+  "blog_badge_guide": "Kategorie-Ratgeber"
 }

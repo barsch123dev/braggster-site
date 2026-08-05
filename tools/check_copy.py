@@ -30,7 +30,7 @@ BANNED = {"—": "em dash", "–": "en dash"}
 
 # Mirrors CATEGORIES in tools/build.py, which needs a games_cat_<name> key per
 # category to render the filter.
-GAME_CATEGORIES = {"card", "dice", "board", "sports", "free"}
+GAME_CATEGORIES = {"card", "dice", "board", "puzzle", "sports", "free"}
 GAME_FIELDS = {
     "id": str,
     "name": str,
