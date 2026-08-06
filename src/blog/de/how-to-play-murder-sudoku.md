@@ -135,8 +135,8 @@ Nein. Jeder Fall wird auf Abruf generiert und auf genau eine Lösung geprüft, d
 unbegrenzt.
 
 **In welchen Sprachen ist es verfügbar?**
-Niederländisch und Englisch. Der Story-Text wird pro Sprache geschrieben statt maschinell übersetzt,
-weshalb es in weniger Sprachen erscheint als die Zahlenrätsel.
+In allen sieben App-Sprachen. Der Story-Text wird pro Sprache geschrieben statt maschinell
+übersetzt, sodass sich der Kriminalfall in jeder Sprache natürlich liest.
 
 **Ist es an ein bestehendes Brettspiel angelehnt?**
 Nein. Jeder Verdächtige, jeder Raum und jedes Objekt ist original für dieses Spiel.

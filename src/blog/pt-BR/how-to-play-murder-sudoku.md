@@ -132,8 +132,8 @@ Não. Cada caso é gerado sob demanda e verificado para ter exatamente uma solu�
 é ilimitado.
 
 **Em quais idiomas está disponível?**
-Holandês e inglês. O texto da história é escrito por idioma em vez de traduzido por máquina, o que
-é o motivo de ele estar disponível em menos idiomas que os quebra-cabeças de grade numérica.
+Em todos os sete idiomas do app. O texto da história é escrito por idioma em vez de traduzido por
+máquina, de modo que o mistério é lido com naturalidade em cada um.
 
 **Tem relação com algum jogo de tabuleiro existente?**
 Não. Todo nome de suspeito, cômodo e objeto é original do jogo.

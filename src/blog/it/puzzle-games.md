@@ -156,7 +156,7 @@ nulla interrompe.
 
 **Quali puzzle sono disponibili nella mia lingua?**
 Sudoku e Logikwis sono in tutte e sette le lingue dell'app. I puzzle di parole sono specifici per
-lingua per loro natura e al momento sono disponibili in olandese e inglese.
+lingua per loro natura, e ora ognuno porta le proprie liste di parole e indizi in tutte e sette.
 
 **Posso giocare con gli appunti a matita?**
 Si, sui puzzle numerici a griglia. Binairo e Nonogram usano invece una grammatica a due stati per

@@ -130,8 +130,8 @@ No. Each case is generated on demand and verified to have exactly one solution, 
 unlimited.
 
 **What languages is it available in?**
-Dutch and English. The story text is written per language rather than machine translated, which is
-why it ships in fewer languages than the number grid puzzles.
+All seven app languages. The story text is written per language rather than machine translated, so
+the mystery reads naturally in each one.
 
 **Is it related to any existing board game?**
 No. Every suspect, room and object name is original to the game.

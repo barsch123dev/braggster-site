@@ -133,8 +133,8 @@ No. Cada caso se genera al momento y se verifica que tenga exactamente una soluc
 suministro es ilimitado.
 
 **¿En qué idiomas está disponible?**
-Neerlandés e inglés. El texto de la historia se escribe idioma por idioma en lugar de traducirse a
-máquina, que es la razón de que llegue a menos idiomas que los puzles numéricos.
+En los siete idiomas de la app. El texto de la historia se escribe idioma por idioma en lugar de
+traducirse a máquina, de modo que el misterio se lee con naturalidad en cada uno.
 
 **¿Está relacionado con algún juego de mesa existente?**
 No. Cada sospechoso, habitación y objeto es original del juego.

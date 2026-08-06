@@ -138,9 +138,8 @@ Non. Chaque affaire est générée à la demande et vérifiée pour n'avoir qu'u
 réserve est illimitée.
 
 **Dans quelles langues est-il disponible ?**
-Néerlandais et anglais. Le texte de l'histoire est rédigé pour chaque langue plutôt que traduit
-automatiquement, ce qui explique qu'il soit proposé dans moins de langues que les casse-têtes à
-grille de chiffres.
+Les sept langues de l'application. Le texte de l'histoire est rédigé pour chaque langue plutôt que
+traduit automatiquement, de sorte que l'énigme se lit naturellement dans chacune.
 
 **Est-ce lié à un jeu de société existant ?**
 Non. Chaque suspect, chaque pièce et chaque objet est original au jeu.

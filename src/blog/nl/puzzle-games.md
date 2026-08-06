@@ -157,7 +157,7 @@ onderbreekt niets.
 
 **Welke puzzels zijn beschikbaar in mijn taal?**
 Sudoku en Logikwis zijn er in alle zeven talen van de app. De woordpuzzels zijn van nature
-taalspecifiek en verschijnen op dit moment in het Nederlands en het Engels.
+taalspecifiek en hebben nu elk hun eigen woord- en aanwijzingslijsten in alle zeven.
 
 **Kan ik met potloodnotities spelen?**
 Ja, bij de cijferroosterpuzzels. Binairo en Nonogram gebruiken in plaats daarvan een grammatica met

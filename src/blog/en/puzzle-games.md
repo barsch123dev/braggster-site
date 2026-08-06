@@ -148,7 +148,7 @@ No ads anywhere in the app. The timer feeds your score, but nothing expires and 
 
 **Which puzzles are available in my language?**
 Sudoku and Logikwis are in all seven app languages. The word puzzles are language specific by
-nature and currently ship in Dutch and English.
+nature, and each now ships its own word and clue lists in all seven.
 
 **Can I play with pencil notes?**
 Yes, on the number grid puzzles. Binairo and Nonogram use a two state cell grammar instead, which is

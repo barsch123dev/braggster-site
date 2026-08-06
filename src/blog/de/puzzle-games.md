@@ -159,7 +159,7 @@ nichts unterbricht dich.
 
 **Welche Rätsel gibt es in meiner Sprache?**
 Sudoku und Logikwis sind in allen sieben Sprachen der App verfügbar. Die Worträtsel sind naturgemäß
-sprachspezifisch und erscheinen derzeit auf Niederländisch und Englisch.
+sprachspezifisch und bringen jetzt jeweils eigene Wort- und Hinweislisten in allen sieben mit.
 
 **Kann ich mit Notizen spielen?**
 Ja, bei den Zahlengitter-Rätseln. Binairo und Nonogram nutzen stattdessen eine Zwei-Zustands-Zellenlogik,
