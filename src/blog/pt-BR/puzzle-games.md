@@ -158,7 +158,7 @@ nada interrompe.
 
 **Quais quebra-cabeças estão no meu idioma?**
 Sudoku e Logikwis estão nos sete idiomas do app. Os quebra-cabeças de palavras são específicos de
-cada idioma por natureza, e hoje estão disponíveis em holandês e inglês.
+cada idioma por natureza, e agora cada um traz suas próprias listas de palavras e pistas nos sete.
 
 **Dá para jogar com anotações a lápis?**
 Sim, nos quebra-cabeças de grade numérica. Binairo e Nonogram usam uma gramática de célula de

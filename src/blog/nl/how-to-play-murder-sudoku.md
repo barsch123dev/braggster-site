@@ -133,8 +133,8 @@ Nee. Elke zaak wordt op aanvraag gegenereerd en geverifieerd op precies één op
 is onbeperkt.
 
 **In welke talen is het beschikbaar?**
-Nederlands en Engels. De verhaaltekst is per taal geschreven in plaats van machinaal vertaald, wat de
-reden is dat het in minder talen verschijnt dan de cijferroosterpuzzels.
+Alle zeven app-talen. De verhaaltekst is per taal geschreven in plaats van machinaal vertaald, zodat
+het mysterie in elke taal natuurlijk leest.
 
 **Is het gebaseerd op een bestaand bordspel?**
 Nee. Elke verdachte, kamer en objectnaam is origineel voor dit spel.

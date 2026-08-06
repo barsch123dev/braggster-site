@@ -132,9 +132,8 @@ No. Ogni caso viene generato al momento e verificato con esattamente una soluzio
 disponibilita e illimitata.
 
 **In quali lingue e disponibile?**
-Olandese e inglese. Il testo della storia e scritto per ogni lingua invece di essere tradotto in
-modo automatico, ed e per questo che e disponibile in meno lingue rispetto ai puzzle numerici a
-griglia.
+In tutte e sette le lingue dell'app. Il testo della storia e scritto per ogni lingua invece di
+essere tradotto in modo automatico, cosi che si legge in modo naturale in ognuna.
 
 **E collegato a qualche gioco da tavolo esistente?**
 No. Ogni sospettato, stanza e oggetto e originale del gioco.

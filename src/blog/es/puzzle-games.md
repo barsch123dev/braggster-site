@@ -158,7 +158,7 @@ nada interrumpe.
 
 **¿Qué puzles están disponibles en mi idioma?**
 Sudoku y Logikwis están en los siete idiomas de la app. Los puzles de palabras son específicos de
-cada idioma por naturaleza y por ahora llegan en neerlandés e inglés.
+cada idioma por naturaleza, y ahora cada uno trae sus propias listas de palabras y pistas en los siete.
 
 **¿Puedo jugar con notas a lápiz?**
 Sí, en los puzles de cuadrícula numérica. Binairo y Nonogram usan en su lugar una gramática de celda
