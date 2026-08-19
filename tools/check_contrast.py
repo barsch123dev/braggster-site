@@ -25,6 +25,7 @@ WHITE = "#FFFFFF"
 # Badge and tile tints, used behind ink labels on the games page.
 TINT_BLUE = "#E3ECFC"
 TINT_ORANGE = "#FDEBD6"
+TINT_VIOLET = "#E8E4F7"
 
 AA_NORMAL = 4.5
 AA_LARGE = 3.0
@@ -47,6 +48,7 @@ PAIRS = [
     ("game meta on surface", MUTED, SURFACE, AA_NORMAL),
     ("game tag words on surface", MUTED, SURFACE, AA_NORMAL),
     ("'Play in app' badge on blue tint", INK, TINT_BLUE, AA_NORMAL),
+    ("'Play the computer' badge on violet tint", INK, TINT_VIOLET, AA_NORMAL),
     ("'Lowest wins' badge on orange tint", INK, TINT_ORANGE, AA_NORMAL),
     ("unselected filter label on surface", INK, SURFACE, AA_NORMAL),
     ("selected filter label on ink", FELT, INK, AA_NORMAL),

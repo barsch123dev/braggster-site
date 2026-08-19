@@ -38,6 +38,7 @@ GAME_FIELDS = {
     "tags": list,
     "functionality": str,
     "playInApp": bool,
+    "vsComputer": bool,
     "lowestWins": bool,
     "trademark": bool,
 }
