@@ -133,8 +133,9 @@ user-text rule.
 ## Screenshots
 
 The phone screenshots are real captures of the app, one set per language. They are not made here:
-the app repo has a harness that renders the four listing screens in all seven languages on a 6.9"
-simulator, and it is the same set the App Store listing uses.
+the app repo has a harness that renders the nine listing screens in all seven languages on a 6.9"
+simulator, the same captures the App Store listing draws from. The site serves the handful named in
+the `SHOTS` map in `tools/build_screenshots.py` (home, games, yahtzee, chess and sudoku).
 
 ```bash
 # in the app repo
@@ -149,9 +150,9 @@ python3 tools/build_screenshots.py --src <that folder>
 ```
 
 `build_screenshots.py` only resizes and re-encodes: 1320x2868 PNGs of about 450KB become WebP at
-320 and 640 CSS pixels, 1.2MB for all 56 files. If a screenshot is wrong, fix it in the harness and
-capture again rather than editing pixels here. The hero image loads eagerly and the three gallery
-shots lazily, so a first view pulls one 21KB image rather than four.
+320 and 640 CSS pixels, 1.5MB for all 70 files. If a screenshot is wrong, fix it in the harness and
+capture again rather than editing pixels here. The hero image loads eagerly and the four gallery
+shots lazily, so a first view pulls one 21KB image rather than five.
 
 ## Fonts
 

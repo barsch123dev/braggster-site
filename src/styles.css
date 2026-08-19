@@ -16,6 +16,7 @@
   --muted-on-dark: #93A2BD;
   --tint-blue: #E3ECFC;
   --tint-orange: #FDEBD6;
+  --tint-violet: #E8E4F7;
   --line: rgba(22, 36, 61, 0.12);
   /* Prototype used #FFFFFF on --brag (2.51:1). Ink navy gives 6.26:1. */
   --on-brag: #16243D;
@@ -395,6 +396,7 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
 }
 .game__badge--app { background: var(--tint-blue); }
+.game__badge--ai { background: var(--tint-violet); }
 .game__badge--low { background: var(--tint-orange); }
 .game__tags { font-size: 12.5px; line-height: 1.5; color: var(--muted); margin: 0; }
 

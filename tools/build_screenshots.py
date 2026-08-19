@@ -8,8 +8,9 @@ on the standard library.
 
     python3 tools/build_screenshots.py --src <dir>
 
-The captures come from the app repo's own harness, which renders the four
-listing screens in all seven languages on a 6.9" simulator:
+The captures come from the app repo's own harness, which renders the nine
+listing screens in all seven languages on a 6.9" simulator; the site serves the
+handful named in SHOTS below:
 
     fvm flutter drive \\
       --driver=integration_test/store_screenshot_driver.dart \\
@@ -54,7 +55,8 @@ SHOTS = {
     "01-home": "home",
     "02-games": "games",
     "03-yahtzee": "yahtzee",
-    "04-sudoku": "sudoku",
+    "05-chess": "chess",
+    "08-sudoku": "sudoku",
 }
 
 #: The phone frame is 320 CSS pixels wide on the site, and the srcset offers the

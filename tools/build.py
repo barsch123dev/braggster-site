@@ -116,12 +116,13 @@ TOKEN = re.compile(r"\{\{(\w+)\}\}")
 COUNTS = {
     "{n}": str(len(GAMES)),
     "{play}": str(sum(1 for g in GAMES if g["playInApp"])),
+    "{ai}": str(sum(1 for g in GAMES if g["vsComputer"])),
     "{low}": str(sum(1 for g in GAMES if g["lowestWins"])),
 }
 
 # The screenshots tools/build_screenshots.py writes, in the order the gallery
 # shows them. The hero takes the first; the rest are the gallery.
-SHOTS = ["home", "games", "yahtzee", "sudoku"]
+SHOTS = ["home", "games", "yahtzee", "chess", "sudoku"]
 SHOT_WIDTH, SHOT_HEIGHT = 320, 695
 
 # Feature glyphs, rebuilt as inline SVG from the prototype's div geometry.
@@ -270,6 +271,10 @@ def games_filters_html(loc: dict[str, str]) -> str:
     rows.append(
         f'          <label for="f-app" class="filters__chip">{html.escape(loc["games_badge_app"])}</label>'
     )
+    rows.append('          <input type="checkbox" id="f-ai" class="filters__input">')
+    rows.append(
+        f'          <label for="f-ai" class="filters__chip">{html.escape(loc["games_badge_ai"])}</label>'
+    )
     rows.append("        </div>")
     return "\n".join(rows)
 
@@ -283,16 +288,19 @@ def games_grid_html(loc: dict[str, str]) -> str:
         badges = []
         if game["playInApp"]:
             badges.append(("game__badge game__badge--app", loc["games_badge_app"]))
+        if game["vsComputer"]:
+            badges.append(("game__badge game__badge--ai", loc["games_badge_ai"]))
         if game["lowestWins"]:
             badges.append(("game__badge game__badge--low", loc["games_badge_lowest"]))
         badge_html = "".join(
             f'<span class="{cls}">{html.escape(text)}</span>' for cls, text in badges
         )
         app_attr = " data-app" if game["playInApp"] else ""
+        ai_attr = " data-ai" if game["vsComputer"] else ""
         category_label = loc["games_cat_" + game["category"]]
         meta = f"{players_label(loc, game['players'])} · {category_label}"
         items.append(
-            f'          <li class="game" data-cat="{game["category"]}"{app_attr}>\n'
+            f'          <li class="game" data-cat="{game["category"]}"{app_attr}{ai_attr}>\n'
             f'            <h2 class="game__name">{html.escape(game["name"])}</h2>\n'
             f'            <p class="game__meta">{html.escape(meta)}</p>\n'
             + (f'            <p class="game__badges">{badge_html}</p>\n' if badge_html else "")
@@ -307,24 +315,50 @@ def games_css() -> str:
     """The filter behaviour, generated from the data rather than hand-written.
 
     Two kinds of rule. The first hides everything outside the chosen category,
-    or everything without in-app play. The second turns on the empty state, and
-    it only fires for combinations that genuinely have no games: asking for
-    dice, sports or the blank scorecard *and* play-in-app matches nothing. Both
-    are derived here so they cannot drift from games.json.
+    everything without in-app play, or everything a computer cannot play. The
+    second turns on the empty state, and it only fires for combinations that
+    genuinely have no games: asking for dice and play-in-app, or for puzzles
+    played against the computer, matches nothing. Both are derived here so they
+    cannot drift from games.json.
     """
     lines = [
         "  .games:has(#f-app:checked) .game:not([data-app]) { display: none; }",
+        "  .games:has(#f-ai:checked) .game:not([data-ai]) { display: none; }",
     ]
     for cat in CATEGORIES:
         lines.append(
             f'  .games:has(#f-{cat}:checked) .game:not([data-cat="{cat}"]) {{ display: none; }}'
         )
 
-    empty = [
-        f"  .games:has(#f-app:checked):has(#f-{cat}:checked) .games__empty"
-        for cat in CATEGORIES
-        if not any(g["category"] == cat and g["playInApp"] for g in GAMES)
-    ]
+    def matches(cat: str, app_on: bool, ai_on: bool) -> int:
+        return sum(
+            1
+            for g in GAMES
+            if (cat == "all" or g["category"] == cat)
+            and (not app_on or g["playInApp"])
+            and (not ai_on or g["vsComputer"])
+        )
+
+    # Each active toggle only removes games, so a combination that is already
+    # empty stays empty when another toggle is added: emitting the minimal empty
+    # combination (fewest toggles) is enough, its selector matching the fuller
+    # states too. Category is a radio, not a toggle (picking one unchecks All),
+    # so All and each category are considered on their own.
+    empty = []
+    for cat in ["all", *CATEGORIES]:
+        for app_on, ai_on in ((True, False), (False, True), (True, True)):
+            if matches(cat, app_on, ai_on) != 0:
+                continue
+            if app_on and ai_on and (
+                matches(cat, True, False) == 0 or matches(cat, False, True) == 0
+            ):
+                continue  # a single-toggle rule for this category already covers it
+            parts = [f":has(#f-{cat}:checked)"]
+            if app_on:
+                parts.append(":has(#f-app:checked)")
+            if ai_on:
+                parts.append(":has(#f-ai:checked)")
+            empty.append("  .games" + "".join(parts) + " .games__empty")
     if empty:
         lines.append(",\n".join(empty) + " { display: block; }")
     return "\n".join(lines)
