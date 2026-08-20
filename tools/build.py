@@ -744,6 +744,7 @@ def build() -> None:
     locales = {c: json.loads((SRC / "locales" / f"{c}.json").read_text("utf-8")) for c in LOCALES}
     home_tpl = (SRC / "home.html").read_text("utf-8")
     privacy_tpl = (SRC / "privacy.html").read_text("utf-8")
+    terms_tpl = (SRC / "terms.html").read_text("utf-8")
     games_tpl = (SRC / "games.html").read_text("utf-8")
     support_tpl = (SRC / "support.html").read_text("utf-8")
     blog_tpl = (SRC / "blog.html").read_text("utf-8")
@@ -859,6 +860,33 @@ def build() -> None:
         pout.parent.mkdir(parents=True, exist_ok=True)
         pout.write_text(render(privacy_tpl, pvalues), "utf-8")
         written.append(str(pout.relative_to(DIST)))
+
+        # ---- Terms: <root>/<ldir>terms/index.html
+        troot = "../" * (depth + 1)
+        tvalues = dict(loc)
+        tvalues.update(
+            root=troot,
+            terms_canonical=f"{SITE_URL}/{ldir}terms/",
+            terms_hreflang_html=hreflang_html("terms/"),
+            terms_social_html=social_html(
+                code,
+                counted(loc["terms_meta_title"]),
+                counted(loc["terms_meta_description"]),
+                f"{SITE_URL}/{ldir}terms/",
+            ),
+            terms_lang_links_html=lang_links_html(code, locales, troot, "terms/"),
+            home_href=f"{troot}{ldir}",
+            blog_href=f"{troot}{ldir}blog/",
+            privacy_href=f"{troot}{ldir}privacy/",
+            support_href=f"{troot}{ldir}support/",
+            contact_email=CONTACT_EMAIL,
+            support_email=SUPPORT_EMAIL,
+            clarity_html=CLARITY_HTML,
+        )
+        tout = DIST / ldir / "terms" / "index.html"
+        tout.parent.mkdir(parents=True, exist_ok=True)
+        tout.write_text(render(terms_tpl, tvalues), "utf-8")
+        written.append(str(tout.relative_to(DIST)))
 
         # ---- Games: <root>/<ldir>games/index.html
         groot = "../" * (depth + 1)
