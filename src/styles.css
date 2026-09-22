@@ -455,6 +455,20 @@ img { max-width: 100%; display: block; }
 }
 .footer__langs a[aria-current='true'] { color: var(--ink); font-weight: 600; }
 
+/* The PeerPush directory badge. A real, crawlable link, deliberately the quietest
+   thing in the footer: it sits below the language switcher, at reduced opacity
+   until hovered or focused, so it reads as an attribution mark rather than a
+   promotion. Not hidden, which would be cloaking. */
+.footer__badge { margin: 0; padding-bottom: 24px; }
+.footer__badge a {
+  display: inline-block;
+  opacity: 0.35;
+  transition: opacity 0.2s ease;
+}
+.footer__badge a:hover,
+.footer__badge a:focus-visible { opacity: 1; }
+.footer__badge img { width: 230px; height: auto; }
+
 /* Legal / privacy pages */
 .prose { padding-block: 48px 80px; max-width: 720px; }
 .prose h1 {
