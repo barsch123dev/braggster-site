@@ -16,6 +16,7 @@ secondary_keywords:
   - "sudoku notizen"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -103,7 +104,7 @@ offline.
 
 Braggster lässt eine Ziffer nicht rot aufblitzen, wenn du sie falsch platzierst.
 
-Das ist eine bewusste Designentscheidung, und sie gilt für alle dreizehn Rätsel in der App. Sofortige
+Das ist eine bewusste Designentscheidung, und sie gilt für alle achtzehn Rätsel in der App. Sofortige
 Fehlerrückmeldung macht aus einem Logikrätsel ein Validierungsspiel: Du hörst auf zu deduzieren und
 fängst an zu tasten, weil die App dir sagt, ob du falsch liegst. Nimmst du das weg, musst du wirklich
 sicher sein.
@@ -148,6 +149,6 @@ der meisten Spiele in der App.
 
 ---
 
-**Mehr:** sieh dir alle dreizehn [Logikrätsel](/blog/puzzle-games/) an, probier
+**Mehr:** sieh dir alle achtzehn [Logikrätsel](/blog/puzzle-games/) an, probier
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), oder durchstöbere den Katalog auf
 [braggster.com/games](/games/).

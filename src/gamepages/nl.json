@@ -1,0 +1,294 @@
+{
+  "klaverjassen": {
+    "lead": "Klaverjassen is het Nederlandse kaartspel voor twee koppels van twee, met 32 kaarten over 16 rondes, waar roem en nathouden de meeste avonden beslissen.",
+    "scoring": "Voer per ronde de kaartpunten en de roem in en het formulier doet de rest: een ronde is 162 plus roem waard, pit levert de bonus van 100 op, en bij nathouden gaat alles naar de tegenpartij. Amsterdamse en Rotterdamse regels zijn allebei ingebouwd, en het regelscherm toont een tabel met kaartwaarden voor troef en de andere kleuren. Na ronde 16 wint het koppel met de meeste punten."
+  },
+  "jass": {
+    "lead": "Jass is het nationale kaartspel van Zwitserland: twee koppels van twee, 36 kaarten, en een race naar 2500 met Weis en troefvermenigvuldigers.",
+    "scoring": "Elke ronde voer je de kaartpunten in, eventuele Weis en de vermenigvuldiger die je tafel afsprak voor dat contract, of het nu een kleur, Obenabe of Undenufe is. Het formulier houdt de lopende totalen naar 2500 bij. Schieber is de standaardvariant, en bij Coiffeur speelt elk van de zes contracttypes precies één keer."
+  },
+  "belote": {
+    "lead": "Belote is het Franse kaartspel voor twee koppels van twee: bied op troef, verover de 162 punten die in het spel zitten, en meld belote-rebelote.",
+    "scoring": "Elke gift scoort het formulier het contract rechtstreeks tegen elkaar. Het koppel dat troef aanwees houdt zijn punten alleen als het meer haalt dan de tegenpartij; anders is de gift dans en krijgt de tegenpartij alle 162 plus de belote-bonus. Capot levert er 90 extra op, en bij de Coinche-variant wordt het resultaat verdubbeld of verviervoudigd. Spelen tot het afgesproken totaal, meestal 501 of 1000."
+  },
+  "whist": {
+    "lead": "Whist is het klassieke koppelspel met slagen: twee koppels van twee, de eerste zes slagen zijn het boek, en elke slag daarboven levert een punt op.",
+    "scoring": "Voer de slagen in die elke kant haalde en het formulier telt alleen wat boven het boek van zes uitkomt, dus een kant met acht slagen scoort er twee. De eerste kant met vijf punten wint het spel. Bij de Wiezen-variant wordt er geboden op een contract en troef bepaald door het hoogste bod."
+  },
+  "bridge": {
+    "lead": "Bridge is het grote koppelkaartspel: bied een contract met je partner, maak het met de dummy open op tafel, en scoor boven en onder de streep.",
+    "scoring": "Voer het contract in, wie het speelde, of er gedoubleerd werd en de gehaalde slagen, en het scoreformulier rekent de rest uit: de biedwaarde onder de streep, overslagen en het spel, slem- en robberbonussen erboven, en strafpunten voor de tegenpartij bij een misgelopen contract. Robber houdt de kwetsbaarheid bij tijdens het spel; Duplicate legt die per bord vast."
+  },
+  "euchre": {
+    "lead": "Euchre is het snelle troefspel voor twee koppels van twee, met vijf kaarten per speler uit een klein pakket, waarbij het eerste koppel met tien punten wint.",
+    "scoring": "Voer in wie troef aanwees en hoeveel slagen dat koppel haalde. Drie of vier slagen levert 1 punt op, alle vijf (een march) levert 2 op, een alleenspeler die alle vijf haalt levert 4 op, en een koppel dat het niet haalt is euchred, wat de tegenpartij 2 punten oplevert. Bij de variant Stick the dealer moet de deler troef aanwijzen."
+  },
+  "fivehundred": {
+    "lead": "500 is Australië's favoriete biedspel: win de veiling om troef, haal minstens zoveel slagen als je bood, en race naar 500 punten.",
+    "scoring": "Het formulier bevat de volledige biedtabel, van 40 voor zes schoppen tot 520 voor tien zonder troef, plus misère op 250 en open misère op 500. Haal je je bod, dan scoor je de waarde ervan; haal je het niet, dan verlies je die waarde, terwijl de tegenpartij 10 per slag scoort. Het eerste koppel met 500 punten wint, en een koppel dat op min 500 uitkomt verliest."
+  },
+  "spades": {
+    "lead": "Spades is het Amerikaanse koppelspel waarbij schoppen altijd troef is, elke speler zijn slagen biedt, en overslagen als bags achteraf tegen je werken.",
+    "scoring": "Voer elk bod en de gehaalde slagen in. Een gehaald bod levert 10 per geboden slag op plus 1 per extra slag, een gemist bod kost 10 per slag, en elke tiende bag kost het koppel 100 punten. Een nulbod levert zelfstandig 100 punten op of kost 100 punten. Het eerste koppel met 500 punten wint, in Koppel- of Solospel."
+  },
+  "cuarenta": {
+    "lead": "Cuarenta is het nationale kaartspel van Ecuador: verover kaarten van tafel in paren en reeksen, haal caidas en limpias binnen, en race met je kant naar 40.",
+    "scoring": "Elke ronde voer je in hoeveel van de 40 kaarten jouw kant veroverde, plus de caidas en limpias die elke kant maakte. Caidas en limpias zijn elk 2 punten waard, en veroverde kaarten boven de 19 leveren elk 1 punt op, tot maximaal 6. De totalen tellen op en de eerste kant met 40 punten wint."
+  },
+  "mus": {
+    "lead": "Mus is het Spaanse blufspel voor twee koppels met een pakket van 40 kaarten, waarbij elke hand door vier fases wordt geboden: grande, chica, pares en juego.",
+    "scoring": "Voor elke hand voer je in welk koppel grande, chica, pares en juego haalde, plus alles wat tijdens het bieden werd opgehoogd. Grande, chica en pares leveren een basis van 1 punt op, juego levert 2 op, en een fase die niemand heeft wordt overgeslagen. Het eerste koppel met 40 punten wint, of met 30 in het korte spel."
+  },
+  "hearts": {
+    "lead": "Hartenjagen is het slagenspel dat je wint door slagen te vermijden: elk hart kost een punt, de schoppenvrouw kost 13, en de maan schieten draait alles om.",
+    "scoring": "Voer per ronde de strafpunten in die elke speler pakte, die samen optellen tot 26. Bij het schieten van de maan, waarbij één speler alle harten en de schoppenvrouw pakt, draait de ronde helemaal om. Het spel eindigt zodra iemand 100 punten bereikt en het laagste totaal wint. Omnibus, Spot en Cancellation zijn ingebouwd, en je speelt een volledig spel in de app tegen drie computertegenstanders."
+  },
+  "poker": {
+    "lead": "Poker omvat Texas Hold'em, Omaha, Seven card stud en Five card draw. Braggster scoort wie waar eindigde bij elke sessie, nooit wat iemand inlegde.",
+    "scoring": "Na elke sessie sleep je de spelers naar hun eindpositie. De eerste plek scoort één punt per speler aan tafel, de tweede plek één minder, en de laatste plek scoort één punt. De punten tellen op over de avond en het hoogste totaal wint. Het regelscherm toont de volledige rangorde van handen, van royal flush tot high card."
+  },
+  "blackjack": {
+    "lead": "Eenentwintig is de race naar 21 tegen de dealer. Speel handen tegen een dealer op het scherm, of houd de score bij met een fysiek pakket kaarten.",
+    "scoring": "Elke hand scoort zijn resultaat: een blackjack is 3 punten, een winst 2, een push 1 en een verlies 0, en het hoogste totaal wint. Aan de tafel in de app deelt de dealer zelf en speelt hij zijn hand, en het resultaat wordt automatisch gescoord. Classic, European, Atlantic City en Spanish 21 zitten er allemaal in."
+  },
+  "solitaire": {
+    "lead": "Patience, ook solitaire genoemd, is één speler tegen de deling. Speel Klondike in de app, of scoor een deling die je met echte kaarten legde.",
+    "scoring": "Het Klondike-bord in de app werkt met tikken om te verplaatsen, deelt één of drie kaarten tegelijk, en scoort de afgeronde deling automatisch. Voor een fysieke deling voer je het resultaat zelf in, Vegas-stijl op kaarten op de fundamenten of standaard op punten. Spider, FreeCell en Pyramid zijn er ook bij, en je totaal groeit deling na deling."
+  },
+  "rummy": {
+    "lead": "Rummy is de familie pak- en afleg-spellen waarbij je sets en reeksen legt en als eerste probeert uit te gaan: van gewoon Rummy tot Gin en Rummy 500.",
+    "scoring": "Bij gewoon Rummy int de speler die uitgaat de waarde van alle kaarten die de anderen nog in hun hand hebben, met plaatjes op 10 en azen op 1. Gin scoort het verschil in deadwood met bonussen voor gin en undercuts, Rummy 500 scoort legs min kaarten in de hand, en Indian Rummy scoort strafpunten. Het formulier past zich aan de gekozen variant aan."
+  },
+  "canasta": {
+    "lead": "Canasta is het legspel met twee pakketten kaarten: zeven gelijke kaarten vormen een canasta, jokers en tweeën zijn wild, en een spel loopt door tot 5000 punten.",
+    "scoring": "Het scoreformulier is een telraster per hand: waarde van de gelegde kaarten, 500 voor een natuurlijke canasta, 300 voor een gemengde, 100 voor uitgaan, min wat er nog in je hand ligt. Het houdt ook het stijgende minimum voor een eerste leg bij naarmate je score oploopt. De Buraco-variant deelt dezelfde motor met zijn eigen canastaregels."
+  },
+  "jokeren": {
+    "lead": "Jokeren is het Nederlandse rummyspel met twee pakketten en jokers: leg reeksen en groepen neer, ga als eerste uit, en houd je strafpunten laag.",
+    "scoring": "Zodra iemand uitgaat, voert elke andere speler de strafwaarde in van de kaarten die nog in zijn hand liggen, en de winnaar voert 0 in. Jullie tafel spreekt af hoeveel een joker waard is. Na een aantal gifts wint het laagste totaal, en de stand houdt daar rekening mee."
+  },
+  "pesten": {
+    "lead": "Pesten is het Nederlandse afleg-spel uit de Crazy Eights-familie, vol kaarten die de volgende speler laten pakken, een beurt overslaan of de kleur veranderen.",
+    "scoring": "Zodra één speler zonder kaarten zit, voert iedereen de strafpunten in die nog in zijn hand liggen, en de winnaar voert 0 in. De totalen tellen op, gift na gift, en het laagste totaal wint. Het regelscherm noemt de speciale kaarten die de meeste tafels gebruiken, want huisregels verschillen per streek."
+  },
+  "toepen": {
+    "lead": "Toepen is het Nederlandse afgangspel met vier kaarten en veel lef: toep om te verhogen wat een hand waard is, en wie als laatste overblijft wint.",
+    "scoring": "Wie een hand verliest, krijgt strafpunten gelijk aan de waarde na elke toep, en een speler die paste krijgt de lagere waarde van daarvoor. Het formulier houdt elke speler bij tot de limiet en laat hem afvallen bij 15, of bij 10 in de kortere variant. De laatste speler die overblijft wint."
+  },
+  "bollen": {
+    "lead": "Bollen is het Nederlandse voorspellingsspel: zeg hoeveel slagen je haalt, een misser levert een bol op, en het aantal kaarten loopt op en weer af.",
+    "scoring": "Elke ronde markeer je voor elke speler of hij zijn bod haalde of een bol kreeg. Een exacte voorspelling scoort het bod, of het bod plus 10 in de +10-variant, en een misser scoort niets. Het formulier loopt het aantal kaarten op tot een piek die bij je tafel past en weer terug naar één. De meeste punten wint, en de meeste bollen verliest."
+  },
+  "beverbende": {
+    "lead": "Beverbende is het Nederlandse geheugenkaartspel: je houdt vier kaarten met de rug boven, bekijkt er twee, en probeert elke ronde het laagst te eindigen.",
+    "scoring": "Het scoreformulier lijkt op het scoreblok uit de doos: een kolom per speler, een genummerde rij per ronde en een eindtotaal onderaan. Voer in wat de vier kaarten van elke speler optellen zodra de ronde eindigt, en de score van de klopper wordt omcirkeld. De totalen tellen op en het laagste wint."
+  },
+  "uno": {
+    "lead": "Uno is het kaartspel met kleuren en cijfers matchen: speel als eerste al je kaarten weg, roep je laatste kaart, en verzamel punten uit de handen van de anderen.",
+    "scoring": "De winnaar van de ronde int de punten die in elke andere hand liggen: cijferkaarten op hun eigen waarde, Skip, Reverse en Pakken Twee op 20, jokers op 50. De eerste speler met 500 punten wint de partij. Classic, Eén ronde, Stapelen en Seven-zero zitten er allemaal in."
+  },
+  "unoflip": {
+    "lead": "Uno Flip is Uno met een tweezijdig pakket: een Flip-kaart draait elke hand en stapel om naar de donkere kant, waar de actiekaarten veel harder toeslaan.",
+    "scoring": "Uno Flip heeft zijn eigen scoreformulier omdat de kaarten hun eigen waarden hebben, van Pak Eén op 10 tot Wild Pak Kleur op 60. De winnaar van de ronde int de punten in elke andere hand, en de eerste met 500 wint. Er is een Eén ronde-variant."
+  },
+  "briscola": {
+    "lead": "Briscola is het favoriete kaartspel van Italië, gespeeld met 40 kaarten: verover azen en drieën, houd troef in de gaten, en haal 61 van de 120 punten.",
+    "scoring": "Na elke hand voert elke speler de kaartpunten in die hij veroverde, die samen optellen tot 120: aas 11, drie 10, koning 4, cavalier 3 en boer 2. De totalen tellen op over zoveel handen als jullie afspreken. De Cinque carte-variant deelt vijf kaarten uit zonder trekken."
+  },
+  "scopa": {
+    "lead": "Scopa is het Italiaanse verzamelspel waarbij je tafelkaarten pakt door hun waarde te matchen en de hele tafel leeg veegt voor een scopa, eerste bij 11 punten.",
+    "scoring": "Na elke hand voer je de punten van elke speler in: één voor de meeste kaarten, één voor de meeste munten, de settebello en de beste primiera, plus één voor elke scopa tijdens het spel. Het formulier loopt de totalen door tot 11. Asso piglia tutto, waarbij een aas de tafel leegveegt, zit erbij."
+  },
+  "truco": {
+    "lead": "Truco is het Braziliaanse blufspel van drie speelronden per hand, waarbij truco roepen de waarde van de hand verhoogt en de eerste kant bij 12 wint.",
+    "scoring": "Voer in welke kant de hand won en wat die waard was na de roepen: 1, dan truco voor 3, seis voor 6, nove voor 9 en doze voor 12. De winnende kant scoort die waarde en de eerste bij 12 wint. Paulista- en Mineiro-varianten zitten erbij."
+  },
+  "skat": {
+    "lead": "Skat is het Duitse klassieke spel voor drie spelers: bied om solospeler te worden, neem de skat op, en versla de andere twee met minstens 61 van de 120 punten.",
+    "scoring": "Het scoreformulier is een echte Skatliste. Voer het spel, de matadors, de kaartpunten en een eventuele schneider of schwarz in, en het berekent de spelwaarde, telt die op bij winst en trekt het dubbele af bij verlies. Null-spellen scoren hun vaste waarde, en de Bock-variant verdubbelt de volgende hand."
+  },
+  "doppelkopf": {
+    "lead": "Doppelkopf is het Duitse spel voor vier spelers met een dubbel pakket van 48 kaarten, waarbij wie de klaverenvrouwen heeft in het geheim het Re-team vormt.",
+    "scoring": "Voer in wie Re speelde en de kaartpunten die dat team haalde van de 240 in het spel. Het formulier scoort de winst tegen de drempels van 90, 60 en 30 en schwarz, telt het extra punt op voor het verslaan van de klaverenvrouwen, en boekt een soloist drie keer wat elke tegenstander wint of verliest. Elke hand telt op tot nul over de hele tafel. Hochzeit is een eigen variant."
+  },
+  "schnapsen": {
+    "lead": "Schnapsen is de Oostenrijkse race voor twee spelers naar 66 kaartpunten met 20 kaarten, huwelijken waard 20 of 40, en de optie de stok te sluiten.",
+    "scoring": "Elke hand noteer je wie hem won en hoeveel spelpunten dat opleverde, van 1 tot 3 afhankelijk van hoe ver de verliezer achterliep, of 2 als de sluiter het niet haalt. De eerste speler met zeven spelpunten wint de partij. De Bela-variant voegt zijn extra punt toe, en het regelscherm toont de kaarten."
+  },
+  "tarot": {
+    "lead": "Königrufen is het Oostenrijkse tarockspel voor vier spelers: de aanzegger roept een koning, en wie die heeft wordt in het geheim zijn partner.",
+    "scoring": "Voer het contract in, de aanzegger en de partner, en de kaartpunten die het spelende team veroverde. Het formulier meet de marge boven 36, telt er een vast punt bij op, verdubbelt dat bij een solo, en boekt het voor het spelende team en tegen de tegenpartij. Een vereenvoudigde variant speelt elke hand als solo."
+  },
+  "twentyfive": {
+    "lead": "Twenty-Five is het Ierse slagenspel waarbij de vijf van troef alles overtreft, elke slag 5 punten waard is, en de eerste bij 25 wint.",
+    "scoring": "Na elke hand voer je in hoeveel slagen elke speler haalde en wie de hoogste troef speelde. Elke slag scoort 5 en de hoogste troef levert nog eens 5 op. Het formulier loopt tot 25, of tot 45 voor koppels bij Forty-Five, of tot 110 in de langere variant."
+  },
+  "allfours": {
+    "lead": "All Fours is het oude slagenspel, nog altijd geliefd in het Caribisch gebied: elke hand levert vier punten op (High, Low, Jack, Game), eerste bij 14.",
+    "scoring": "Voer de punten van elke speler per hand in: High voor de hoogste gedeelde troef, Low voor de laagste, Jack voor het winnen van de troefboer, en Game voor de meeste kaartpunten in slagen. De eerste bij 14 wint, of bij 7 in Seven Up. Een Caribische variant voegt de joker toe."
+  },
+  "burro": {
+    "lead": "Burro is het Latijns-Amerikaanse snelheidsspel: geef kaarten door tot iemand vier gelijke heeft, en wie het laatst doorheeft krijgt een letter van BURRO.",
+    "scoring": "Elke ronde markeer je wie het langzaamst was, en het formulier geeft hem de volgende letter: B, U, R, R, O. Vijf letters en je ligt eruit. Minder letters is beter, en de laatste speler die overblijft wint."
+  },
+  "loteria": {
+    "lead": "Lotería is de Mexicaanse beeldbingo: een roeper trekt kaarten, iedereen dekt ze af op zijn tabla, en wie als eerste het patroon voltooit roept Lotería.",
+    "scoring": "Braggster heeft een ingebouwde roeper die de 54 kaarten schudt en ze één voor één bij naam onthult, zodat niemand een pakket kaarten nodig heeft om te roepen. Elke gewonnen ronde scoort een punt op de telling, en de meeste overwinningen gaan voorop. Volle tabla, Lijn, Vier hoeken en Middenvakje zitten er allemaal in."
+  },
+  "yahtzee": {
+    "lead": "Yahtzee is het dobbelspel met vijf dobbelstenen en dertien vakjes: drie worpen per beurt, één vakje per beurt, en 35 bonuspunten voor 63 in het bovenste blok.",
+    "scoring": "Het formulier berekent elk vakje, de bovenbonus, en extra Yahtzees van elk 100 punten met de jokerregel, allemaal in het Yahtzee-vakje zelf. Kolommen krimpen zodat elke speler op het scherm past. Zet digitale dobbelstenen aan en elke worp toont wat hij zou scoren, en met Samen spelen gooien tot zes spelers op hun eigen telefoon terwijl iedereen de dobbelstenen ziet landen."
+  },
+  "dudo": {
+    "lead": "Dudo, ook Perudo of liegen met dobbelstenen genoemd, is het blufspel: verberg vijf dobbelstenen onder een bekertje en bied op wat de hele tafel gooide.",
+    "scoring": "Elke ronde noteer je wie een dobbelsteen verliest, of wie er eentje terugwint met een exacte calza, en het formulier houdt het aantal dobbelstenen van elke speler bij. Een speler zonder dobbelstenen ligt eruit, en de laatste met dobbelstenen wint. Azen zijn standaard wild; de variant zonder wilde azen zet dat uit."
+  },
+  "chess": {
+    "lead": "Schaken op een houten bord in je zak: elke geldige zet wordt gecontroleerd, inclusief rokade, en passant en promotie, met een lopende telling van wie wint.",
+    "scoring": "Elke afgeronde partij scoort een punt voor de winnaar en niets bij remise, zodat een avond een sessietelling wordt zoals 5 tegen 3. Speel op één telefoon, tegen de computer op makkelijk, gemiddeld of moeilijk, of met Samen spelen op twee telefoons, waar de laatste zet op beide borden wordt gemarkeerd."
+  },
+  "checkers": {
+    "lead": "Engels dammen (checkers) op een 8x8-bord met verplicht slaan, meervoudige sprongen en dammen, klaar om op je telefoon te spelen.",
+    "scoring": "Elke afgeronde partij scoort een punt voor de winnaar en remise levert niets op, zodat je een lopende telling bijhoudt. Speel op één telefoon, tegen de computer op drie niveaus, of met Samen spelen op twee telefoons. De varianten met verplicht en optioneel slaan zitten er allebei in."
+  },
+  "dammen": {
+    "lead": "Dammen is hier het internationale 10x10-spel met twintig stukken per kant, vliegende dammen en verplicht maximaal slaan, zoals op Nederlandse damclubs.",
+    "scoring": "Het bord dwingt de regel van maximaal slaan af en laat je een lange slagzet stap voor stap uittikken, met een stap terug als je je vergist. Elke afgeronde partij scoort een punt voor de winnaar. Speel op één telefoon, tegen de computer op drie niveaus, of met Samen spelen op twee telefoons."
+  },
+  "connectfour": {
+    "lead": "Vier op een rij is het verticale spel waarin je een schijf laat vallen: de zwaartekracht kiest de rij, en jij zet er vier op een rij voor je tegenstander.",
+    "scoring": "Tik op een kolom en de schijf valt op zijn plek op het 7 bij 6-bord. Elke afgeronde partij scoort een punt voor de winnaar en een vol bord is remise. De schijven verschillen ook in vorm, niet alleen in kleur, zodat niemand twee kleuren uit elkaar hoeft te houden."
+  },
+  "reversi": {
+    "lead": "Othello is het schijfjes-omdraaispel op een 8x8-bord: sluit een rij schijven van je tegenstander in en ze draaien allemaal om naar jouw kleur.",
+    "scoring": "Het bord toont waar je mag spelen, draait elke ingesloten rij om en past voor je als je geen zet hebt. Wie aan het eind de meeste schijven heeft wint de partij en scoort een punt in de telling. Speel op één telefoon, tegen de computer op drie niveaus, of met Samen spelen op twee telefoons. Vaste en vrije openingsvarianten zitten erbij."
+  },
+  "tictactoe": {
+    "lead": "Boter-kaas-en-eieren, het drie-op-een-rij-spel op een 3x3-raster, speelbaar op één telefoon met winst en remise automatisch herkend.",
+    "scoring": "Tik op een vakje om je teken te plaatsen. Het bord herkent zelf een winst of een vol raster, scoort een punt voor de winnaar en niets bij remise, en houdt een lopende telling bij zodat een best-of-tien de discussie beslecht."
+  },
+  "sudoku": {
+    "lead": "Sudoku, de 9x9-cijferpuzzel: vul elke rij, kolom en 3x3-vak met 1 tot 9, van Beginner tot Duivels, met elke keer een nieuw rooster.",
+    "scoring": "Elk rooster wordt op je telefoon gegenereerd en gecontroleerd op precies één oplossing. Je score is je oplostijd plus een strafpunt per fout en per hint, dus lager is beter, en fouten worden stilletjes geteld in plaats van je om de oren geslagen. Potloodnotities zijn er voor kandidaten."
+  },
+  "killersudoku": {
+    "lead": "Killer Sudoku voegt kooien toe aan het 9x9-rooster: de cijfers in elke kooi tellen op tot de afgedrukte som en komen nooit dubbel voor.",
+    "scoring": "Elke puzzel wordt vers gegenereerd en gecontroleerd op uniciteit onder de Sudoku- en kooiregels samen, over vijf moeilijkheidsniveaus. De som van een kooi wordt pen zodra de cijfers kloppen. Je score is oplostijd plus strafpunten voor fouten en hints, laagste wint."
+  },
+  "kakuro": {
+    "lead": "Kakuro is de sompuzzel: vul elke reeks witte vakjes met unieke cijfers van 1 tot 9 die optellen tot de aanwijzing aan het begin.",
+    "scoring": "Roosters lopen van 6x6 tot 10x10 over vijf niveaus, elk gegenereerd op je telefoon en bewezen met één oplossing. Gebruik potloodnotities en hints wanneer je ze nodig hebt. Oplostijd plus strafpunten voor fouten en hints vormen je score, en lager is beter."
+  },
+  "futoshiki": {
+    "lead": "Futoshiki is de ongelijkheidspuzzel: elke rij en kolom bevat elk cijfer precies één keer, en de groter-dan-tekens tussen vakjes moeten allemaal kloppen.",
+    "scoring": "Roosters lopen van 4x4 tot 7x7 over vijf niveaus, telkens vers gegenereerd en gecontroleerd op een unieke oplossing. Potloodnotities en hints helpen je verder. Je score is de oplostijd plus een strafpunt per fout en hint, laagste wint."
+  },
+  "binairo": {
+    "lead": "Binairo, ook Takuzu genoemd, vult een rooster met nullen en enen: nooit drie gelijk op een rij, gebalanceerde lijnen, en geen twee rijen of kolommen hetzelfde.",
+    "scoring": "Tik op een vakje om het te laten wisselen tussen leeg, 0 en 1, op roosters van 6x6 tot 12x12. Een fout telt pas als je verdergaat met een verkeerde waarde nog op zijn plek, dus voorbij een waarde tikken is gratis. Oplostijd plus strafpunten is je score, en lager wint."
+  },
+  "calcudoku": {
+    "lead": "Calcudoku is het rekenkundige Latijnse vierkant: elk cijfer één keer per rij en kolom, en elke omkaderde groep moet zijn doel halen met het afgedrukte teken.",
+    "scoring": "Roosters lopen van 4x4 tot 7x7 over vijf niveaus, gegenereerd op je telefoon en bewezen uniek door een kooibewuste solver. Potloodnotities en hints zijn er wanneer je ze nodig hebt. Je score is oplostijd plus strafpunten voor fouten en hints, laagste wint."
+  },
+  "tectonic": {
+    "lead": "Tectonic is de regiopuzzel: elk gebied bevat 1 tot zijn grootte precies één keer, en geen twee aangrenzende vakjes, ook diagonaal niet, delen een cijfer.",
+    "scoring": "Roosters groeien van 5x5 bij Beginner tot 8x8 bij Duivels, en elk exemplaar wordt vers gegenereerd en bewezen met precies één oplossing. Potloodnotities en hints zijn er als je vastzit. Je score is oplostijd plus strafpunten voor fouten en hints, laagste wint."
+  },
+  "nonogram": {
+    "lead": "Nonogram is beeldlogica: de cijfers naast elke rij en boven elke kolom geven de reeksen gevulde vakjes aan, en het opgeloste rooster onthult een plaatje.",
+    "scoring": "Roosters lopen van 5x5 tot 15x15, uit een bank handgemaakte plaatjes die elk zijn geverifieerd op één oplossing. Tik om een vakje te vullen en houd vast om er een door te strepen. Oplostijd plus strafpunten voor fouten en hints vormen je score, lager is beter."
+  },
+  "minesweeper": {
+    "lead": "Mijnenveger zonder giswerk: elk veld is bewezen op te lossen met pure logica voordat je het ziet, van 9x9 met 10 mijnen tot 16x30 met 99.",
+    "scoring": "Je begint altijd met een veilige opening, en een mijn onthullen kost je een fout in plaats van het spel, zodat je het veld kunt afmaken. Vlaggen en vraagtekens markeren wat je vermoedt. Je score is de opruimtijd plus strafpunten voor geraakte mijnen en gebruikte hints, laagste wint."
+  },
+  "murdoku": {
+    "lead": "Murder Sudoku is een moordmysterie op een plattegrond: plaats elke verdachte en het slachtoffer, één per rij en kolom; de dader was alleen met het slachtoffer.",
+    "scoring": "Elke zaak wordt gegenereerd met zijn eigen verhaal, een cast van verdachten en een genummerde lijst aanwijzingen, over vijf niveaus, en wordt gecontroleerd op één sluitend antwoord. Notities en doorstrepen kosten je nooit iets. Je score is oplostijd plus strafpunten voor fouten en hints, laagste wint."
+  },
+  "logikwis": {
+    "lead": "Logikwis is de klassieke logicaraster-puzzel: koppel elke persoon aan één item per categorie op basis van een korte lijst aanwijzingen, op een kruistabel.",
+    "scoring": "Elke zaak krijgt een vers thema en een eigen set categorieën, over vijf niveaus van 3x3 tot 5x4, en wordt geverifieerd op één antwoord. Tik om een koppel door te strepen of te bevestigen. Je score is oplostijd plus strafpunten voor fouten en hints, laagste wint."
+  },
+  "wordle": {
+    "lead": "Woordkraker is woorden raden in zes pogingen: elke gok toont welke letters goed staan, welke elders in het woord zitten, en welke er niet in voorkomen.",
+    "scoring": "Woorden lopen van 4 tot 7 letters over vier niveaus, met een toetsenbord op het scherm. Letterstatussen worden getoond in vorm én kleur. Je score is het aantal pogingen plus de tijd, een gemist woord telt als de zwaarste ronde, en het laagste totaal wint."
+  },
+  "crossword": {
+    "lead": "Kruiswoordpuzzels worden vers gebouwd op je telefoon uit een groot woordenboek met aanwijzingen, van een snelle Mini tot een volledige 15x15.",
+    "scoring": "Tik op een aanwijzing om naar zijn woord te springen en tik nogmaals op een vakje om te wisselen tussen horizontaal en verticaal. Een onthulknop vult de eerste lege of foute letter. Je score is oplostijd plus strafpunten voor foute en onthulde letters, laagste wint."
+  },
+  "woordzoeker": {
+    "lead": "Woordzoeker is een woordzoekspel: vind elk woord van de lijst in het letterrooster, horizontaal, verticaal of diagonaal, voor- of achterwaarts.",
+    "scoring": "Tik de eerste letter van een woord aan en dan de laatste, en een gevonden woord wordt van de lijst gestreept. Roosters lopen van 8x8 met 5 woorden tot 14x14 met 12. Je score is oplostijd plus strafpunten voor fouten en hints, laagste wint."
+  },
+  "cijfercode": {
+    "lead": "Cijfercode is de codewoordpuzzel: een ingevuld kruiswoordrooster zonder aanwijzingen, waar elke letter is vervangen door een cijfer en jij de code kraakt.",
+    "scoring": "Typ een letter voor een cijfer en hij verschijnt meteen in elk vakje met dat cijfer. Een paar letters beginnen al onthuld, net genoeg om de rest met logica te kraken. Roosters komen in Mini, Midi en Standaard, en je score is oplostijd plus strafpunten voor foute letters en hints, laagste wint."
+  },
+  "zweeds": {
+    "lead": "Zweeds is de pijltjespuzzel, ook wel Zweedse puzzel genoemd: elke aanwijzing staat in het rooster naast een pijl die toont waar het antwoord loopt.",
+    "scoring": "Elke puzzel is een vers ingedeeld rooster, van een 4x4 Mini tot een 14x14 Grand. Tik een antwoordvakje aan en typ, en tik nogmaals om van richting te wisselen. Je score is oplostijd plus strafpunten voor foute en onthulde letters, laagste wint."
+  },
+  "filippine": {
+    "lead": "Filippine is een stapel aanwijzingen waarvan de antwoorden op één gemarkeerde kolom uitlijnen, die van boven naar beneden een verborgen oplossingswoord spelt.",
+    "scoring": "Los elke rij op vanuit zijn aanwijzing en het oplossingswoord verschijnt zodra elke rij klopt. De gemarkeerde kolom is te zien aan kleur, een dikkere rand en een ster. Puzzels hebben 4, 6 of 8 rijen, en je score is oplostijd plus strafpunten voor foute en onthulde letters, laagste wint."
+  },
+  "hangman": {
+    "lead": "Galgje, de klassieke letters raden: noem één letter per keer en vind het woord voordat de zevende misser de figuur aan de galg compleet maakt.",
+    "scoring": "Een goede letter vult elke plek waar hij hoort en een misser tekent het volgende deel van de figuur. Een hint toont eerst de omschrijving van het woord, dan een letter. Je score is de tijd plus een strafpunt per misser en hint, een verloren ronde telt als de zwaarste, en het laagste wint."
+  },
+  "backgammon": {
+    "lead": "Backgammon is de dobbelsteen- en damschijvenrace rond 24 punten: sla blotten, kom terug vanaf de bar, ruim als eerste op, en win dubbel met een gammon.",
+    "scoring": "Elke afgeronde partij scoort 1 voor een gewone winst, 2 voor een gammon en 3 voor een backgammon, als lopende telling zonder doubling cube. Het bord gooit, markeert geldige zetten en ruimt op. Speel op één telefoon, tegen de computer op drie niveaus, of met Samen spelen op twee telefoons. Standaard- en Nackgammon-openingen zitten erbij."
+  },
+  "dominoes": {
+    "lead": "Domino, van Block en Draw tot All Fives: leg de open uiteinden aan, ga als eerste uit, en scoor de ogen die je tegenstanders overhouden.",
+    "scoring": "Speel op het stenenbord in de app, met één telefoon die de tafel rondgaat, of voer de scores van een echte set in. Het bord weet of jouw variant uit de boneyard trekt en scoort open uiteinden bij All Fives. Wie uitgaat, of de minste ogen overhoudt als de lijn vastloopt, scoort de ogen die de anderen nog vasthouden, tot het doel."
+  },
+  "rummikub": {
+    "lead": "Rummikub is het steenrummyspel: leg reeksen en groepen neer, open met 30 punten, en wees als eerste je rekje leeg.",
+    "scoring": "Als een ronde eindigt, voert elke andere speler de waarde in van de stenen die nog op zijn rekje liggen, met een joker op 30. De winnaar scoort dat totaal en iedereen krijgt zijn eigen totaal als minpunten. Na een paar rondes wint het hoogste totaal."
+  },
+  "cluedo": {
+    "lead": "Cluedo is het klassieke moordmysterie-bordspel. Braggster geeft je een privé-detectiveblok op je eigen telefoon, zodat niemand op je formulier kan meekijken.",
+    "scoring": "Het blok heeft 21 rijen voor de verdachten, wapens en kamers, een envelopkolom die wisselt tussen leeg, uitgesloten en heeft het, en een vrije notitiekolom. De app deelt of ziet nooit iemands kaarten. Zodra de zaak is opgelost, noteer je de winnaar, en die telt mee in de statistieken."
+  },
+  "darts": {
+    "lead": "Darts vanaf 501 of 301: tel af met drie pijlen per beurt, kom precies op nul om te winnen, en bust als je eroverheen schiet.",
+    "scoring": "Voer elke worp in op een dartbord op het scherm, of typ het beurttotaal, en het formulier trekt het af van je resterende score. Een beurt die je onder nul zou brengen is een bust en telt niet mee. De eerste speler die precies op nul komt wint de leg."
+  },
+  "bowling": {
+    "lead": "Tienpins bowlen gescoord als het papieren formulier op de baan: tien frames, strikes tellen de volgende twee ballen mee, spares de volgende ene.",
+    "scoring": "Voer de pins per bal in en het formulier rekent de frames uit, waarbij een frame leeg blijft tot de strike- of sparebonus bekend is, net als een echt scoreformulier. Het tiende frame krijgt zijn bonusballen, en een perfect spel is 300."
+  },
+  "kegelen": {
+    "lead": "Kegelen is negenpins kegelen zoals gespeeld op Nederlandse en Duitse banen: elke kegel die je omgooit is een punt, zonder strikes en zonder spares.",
+    "scoring": "Spreek af hoeveel worpen iedereen krijgt, en voer dan de kegels in die elke speler bij elke worp omgooide. Je totaal is gewoon de som. Volle bos zet alle negen kegels weer op voor elke worp, en Afruimen speelt door op wat er nog staat tot alle negen liggen."
+  },
+  "midgetgolf": {
+    "lead": "Midgetgolf, of minigolf, over 9 of 18 holes: tel elke slag, en de minste slagen aan het eind van de ronde wint.",
+    "scoring": "Voer na elke hole de slagen van elke speler in en het formulier houdt de lopende totalen bij. Kies 9 of 18 holes bij het instellen van de ronde. Het laagste totaal wint, en de stand houdt daar rekening mee."
+  },
+  "tennis": {
+    "lead": "Tennisscore eenvoudig gemaakt: tik op de speler die het punt won, en braggster zet punten om in games, games in sets, en sets in de wedstrijd.",
+    "scoring": "Punten tellen 0, 15, 30 en 40, deuce vraagt een voorsprong van twee punten, een set vraagt zes games met een voorsprong van twee games, en 6-6 gaat naar een tiebreak. Kies best of three of best of five sets. Jij tikt alleen wie het punt won."
+  },
+  "padel": {
+    "lead": "Padelscore voor twee koppels van twee: tik op het koppel dat het punt won, en braggster houdt de games en sets voor je bij.",
+    "scoring": "Games tellen op zoals bij tennis, en bij 40-40 kies je tussen de gouden punt, waarbij het volgende punt beslist, en spelen om voordeel. Sets gaan tot zes games met een voorsprong van twee games en een tiebreak bij 6-6. Een matchtiebreak tot 10 kan de derde set vervangen."
+  },
+  "tabletennis": {
+    "lead": "Tafeltennis, wedstrijden tot 11 punten, met een voorsprong van twee, over een best of 3, 5 of 7 games.",
+    "scoring": "Tik op de speler die de rally won en het scoreformulier houdt de punten en de games bij, inclusief doorspelen bij 10-10 tot iemand twee punten voorstaat. De eerste met genoeg gewonnen games wint de wedstrijd."
+  },
+  "generic": {
+    "lead": "Het lege scoreblok scoort elk spel waar braggster nog geen eigen formulier voor heeft: noem de spelers, voeg rondes toe, en het telt automatisch op.",
+    "scoring": "Kies bij het starten of het hoogste of laagste totaal wint, en voer dan ieders punten in, ronde voor ronde. Braggster houdt de lopende totalen en de stand bij, en de partij telt mee in de statistieken zoals elk ander spel. Het is altijd gratis."
+  },
+  "freestyle": {
+    "lead": "Freestyle is een gratis tafel met kaarten en dobbelstenen voor spellen die je zelf verzint: deel en gooi op het scherm, en houd je eigen score bij.",
+    "scoring": "Kies hoeveel kaarten en dobbelstenen je deelt, per speler of aan een gedeelde tafel, en speel welke regels jullie tafel ook afspreekt. Je voert de punten van elke ronde zelf in en kiest of het hoogste of laagste totaal wint. Freestyle is altijd gratis."
+  }
+}

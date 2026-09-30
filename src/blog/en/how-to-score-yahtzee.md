@@ -16,6 +16,7 @@ secondary_keywords:
   - "yams regles"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -125,6 +126,18 @@ separate the players, so the fifth row down is still obviously the fifth player'
 The rules screen carries the full category reference chart, so nobody has to remember whether a full
 house is 25 or a sum.
 
+## Digital dice, and a phone each
+
+No dice in the house? Switch on the digital dice and roll on screen, hold what you want to keep, and
+the app shows what that roll would score in each open box.
+
+With [Play together](/play-together/), up to six players each use their own phone on the same Wi-Fi.
+One phone starts a table and shows a QR code, the others scan it, and everyone fills in their own
+column. When the host switches on digital dice for the table, the player whose turn it is throws on
+their own phone and everyone else watches the dice land on theirs. No account, no internet, and only
+the host needs the game. The step by step is in the
+[guide to playing together on several phones](/blog/play-games-together-on-multiple-phones/).
+
 ## Frequently asked questions
 
 **How do you get the Yahtzee bonus?**
@@ -140,6 +153,10 @@ No. It scores the sum of all five dice. This is the most commonly misplayed box 
 **What happens if I roll a Yahtzee but the box is already zeroed?**
 If you took a zero in the Yahtzee box, no bonus applies. The Joker rule still governs where the dice
 get scored.
+
+**Can we play Yahtzee on several phones?**
+Yes. With Play together up to six players each use their own phone over the same Wi-Fi, with shared
+digital dice that everyone sees land.
 
 **Is Kniffel the same as Yahtzee?**
 Effectively yes, and the same scorecard covers both, along with Yams and the Generala family.

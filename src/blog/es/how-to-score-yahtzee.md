@@ -16,6 +16,7 @@ secondary_keywords:
   - "yahtzee como se juega"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -129,6 +130,18 @@ claramente la del quinto jugador.
 La pantalla de reglas lleva la tabla completa de referencia por categoría, así que nadie tiene que
 recordar si un full vale 25 o una suma.
 
+## Dados digitales, y un móvil cada uno
+
+¿No hay dados en casa? Activa los dados digitales y tira en la pantalla, aparta los que quieras
+conservar, y la app muestra lo que esa tirada puntuaría en cada casilla libre.
+
+Con [Jugar juntos](/play-together/), hasta seis jugadores usan cada uno su propio móvil por la misma
+red wifi. Un móvil abre una mesa y muestra un código QR, los demás lo escanean, y cada uno rellena
+su propia columna. Cuando el anfitrión activa los dados digitales para la mesa, el jugador que tiene
+el turno tira en su propio móvil y los demás ven caer los dados en el suyo. Sin cuenta, sin internet,
+y solo el anfitrión necesita tener el juego. El paso a paso está en la
+[guía para jugar juntos en varios móviles](/blog/play-games-together-on-multiple-phones/).
+
 ## Preguntas frecuentes
 
 **¿Cómo se consigue el bonus de Yahtzee?**
@@ -145,6 +158,10 @@ No. Puntúa la suma de los cinco dados. Es la casilla que más se puntúa mal en
 **¿Qué pasa si saco un Yahtzee pero la casilla ya está a cero?**
 Si te llevaste un cero en la casilla de Yahtzee, no se aplica ningún bonus. La regla del comodín
 sigue decidiendo dónde se anotan los dados.
+
+**¿Podemos jugar al Yahtzee en varios móviles?**
+Sí. Con Jugar juntos, hasta seis jugadores usan cada uno su propio móvil por la misma red wifi, con
+dados digitales compartidos que todos ven caer.
 
 **¿Kniffel es lo mismo que Yahtzee?**
 En la práctica sí, y el mismo marcador cubre ambos, junto con Yams y la familia Generala.

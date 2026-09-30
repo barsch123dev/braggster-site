@@ -16,6 +16,7 @@ secondary_keywords:
   - "generala regles"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -131,6 +132,18 @@ du cinquième joueur.
 L'écran des règles affiche le tableau complet des catégories, pour que personne n'ait à se rappeler
 si un full vaut 25 points ou une somme.
 
+## Des dés numériques, et un téléphone chacun
+
+Pas de dés à la maison ? Active les dés numériques et lance à l'écran, garde ce que tu veux conserver,
+et l'app montre ce que ce lancer rapporterait dans chaque case ouverte.
+
+Avec [Jouer ensemble](/play-together/), jusqu'à six joueurs utilisent chacun leur propre téléphone sur
+le même Wi-Fi. Un téléphone ouvre une table et affiche un code QR, les autres le scannent, et chacun
+remplit sa propre colonne. Quand l'hôte active les dés numériques pour la table, le joueur dont c'est
+le tour lance sur son propre téléphone et tous les autres voient les dés tomber sur le leur. Pas de
+compte, pas d'internet, et seul l'hôte a besoin du jeu. Le pas à pas se trouve dans le
+[guide pour jouer ensemble sur plusieurs téléphones](/blog/play-games-together-on-multiple-phones/).
+
 ## Questions fréquentes
 
 **Comment obtenir le bonus Yahtzee ?**
@@ -147,6 +160,10 @@ Non. Il compte la somme des cinq dés. C'est la case la plus souvent mal jouée 
 **Que se passe-t-il si j'obtiens un Yahtzee mais que la case est déjà à zéro ?**
 Si tu as pris un zéro dans la case Yahtzee, aucun bonus ne s'applique. La règle du Joker continue
 quand même à déterminer où placer les dés.
+
+**Peut-on jouer au Yahtzee sur plusieurs téléphones ?**
+Oui. Avec Jouer ensemble, jusqu'à six joueurs utilisent chacun leur propre téléphone sur le même Wi-Fi,
+avec des dés numériques partagés que tout le monde voit tomber.
 
 **Le Kniffel, c'est la même chose que le Yahtzee ?**
 En pratique oui, et la même feuille de score couvre les deux, ainsi que le Yams et la famille

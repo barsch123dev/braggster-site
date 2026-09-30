@@ -16,6 +16,7 @@ secondary_keywords:
   - "backgammon contra el ordenador"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -84,13 +85,23 @@ Se admiten dos aperturas:
 - **Nackgammon**, que retrasa dos fichas para que el juego inicial sea menos una carrera y más
   posicional.
 
+## Jugar juntos en dos móviles
+
+También puedes jugar con un móvil cada uno. Con [Jugar juntos](/play-together/), un móvil abre una
+mesa y muestra un código QR, el otro lo escanea, y ambos jugadores ven el mismo tablero en directo
+por la misma red wifi. Cada uno tira y mueve desde su propio móvil, el último movimiento se marca en
+ambos tableros, y la partida terminada anota 1, 2 o 3 en el marcador de los dos móviles. No hay
+cuenta ni internet de por medio, y solo el anfitrión necesita tener el juego. La
+[guía para jugar juntos en varios móviles](/blog/play-games-together-on-multiple-phones/) lo explica
+paso a paso.
+
 ## El rival del ordenador, y por qué es distinto
 
 Backgammon tiene una pantalla de práctica contra el ordenador con tres niveles, jugando con las
 Claras o las Oscuras.
 
-Lo interesante es que no puede funcionar como los otros motores de Braggster. Chess, Checkers y las
-damas internacionales usan todos búsqueda alfa beta, que depende de que el juego sea determinista:
+Lo interesante es que no puede funcionar como los otros motores de Braggster. Chess, Checkers, las
+damas internacionales y Othello usan todos búsqueda alfa beta, que depende de que el juego sea determinista:
 sabes exactamente qué posiciones se pueden alcanzar desde aquí.
 
 Backgammon tiene dados. Cada nodo del árbol es un nodo de azar, con veintiuna tiradas distintas que
@@ -119,6 +130,10 @@ la app.
 
 **¿Puedo jugar backgammon sin conexión contra el ordenador?**
 Sí. El motor corre por completo en tu dispositivo, sin conexión y sin cuenta necesaria.
+
+**¿Pueden dos personas jugar al backgammon en dos móviles?**
+Sí. Con Jugar juntos cada jugador usa su propio móvil por la misma red wifi. Uno abre una mesa, el
+otro escanea su código, y la partida se juega en directo en ambas pantallas.
 
 **¿Qué es Nackgammon?**
 Una posición inicial alternativa que retrasa dos fichas, lo que hace la apertura más posicional y

@@ -16,6 +16,7 @@ secondary_keywords:
   - "regles du jacquet"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -86,13 +87,23 @@ Deux mises en place sont proposées :
 - **Nackgammon**, qui recule deux pions pour rendre le début de partie moins basé sur la course et
   plus sur le positionnement.
 
+## Jouer ensemble sur deux téléphones
+
+Tu peux aussi jouer avec un téléphone chacun. Avec [Jouer ensemble](/play-together/), un téléphone
+ouvre une table et affiche un code QR, l'autre le scanne, et les deux joueurs voient le même plateau
+en direct sur le même Wi-Fi. Chacun lance les dés et déplace ses pions depuis son propre téléphone,
+le dernier coup est marqué sur les deux plateaux, et la partie terminée ajoute 1, 2 ou 3 points au
+décompte sur les deux téléphones. Il n'y a ni compte ni internet, et seul l'hôte a besoin du jeu. Le
+[guide pour jouer ensemble sur plusieurs téléphones](/blog/play-games-together-on-multiple-phones/)
+détaille les étapes.
+
 ## L'adversaire ordinateur, et pourquoi il est différent
 
 Le Backgammon propose un écran d'entraînement contre l'ordinateur avec trois niveaux, en jouant les
 pions clairs ou foncés.
 
 Ce qui vaut la peine d'être su, c'est qu'il ne peut pas fonctionner comme les autres moteurs de
-Braggster. Chess, Checkers et International draughts utilisent tous une recherche alpha-bêta, qui
+Braggster. Chess, Checkers, International draughts et Othello utilisent tous une recherche alpha-bêta, qui
 repose sur le fait que le jeu est déterministe : tu sais exactement quelles positions sont atteignables
 à partir d'ici.
 
@@ -122,6 +133,10 @@ Non. Braggster enregistre uniquement le résultat de la partie, sans aucun enjeu
 
 **Puis-je jouer au Backgammon hors ligne contre l'ordinateur ?**
 Oui. Le moteur tourne entièrement sur ton appareil, sans connexion ni compte requis.
+
+**Deux personnes peuvent-elles jouer au Backgammon sur deux téléphones ?**
+Oui. Avec Jouer ensemble, chaque joueur utilise son propre téléphone sur le même Wi-Fi. L'un ouvre
+une table, l'autre scanne son code, et la partie se déroule en direct sur les deux écrans.
 
 **Qu'est-ce que le Nackgammon ?**
 Une position de départ alternative qui recule deux pions plus loin, rendant l'ouverture plus

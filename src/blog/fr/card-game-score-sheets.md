@@ -1,11 +1,11 @@
 ---
-title: "Feuilles de score pour jeux de cartes : compter les points de 33 jeux"
+title: "Feuilles de score pour jeux de cartes : compter les points de 34 jeux"
 slug: card-game-score-sheets
 locale: fr
 type: pillar
 category: card
-meta_title: "Feuilles de score pour 33 jeux de cartes"
-meta_description: "Règles et feuilles de score numériques pour 33 jeux de cartes, du Klaverjassen au Bridge, en passant par le Hearts et le Canasta. Sans compte requis."
+meta_title: "Feuilles de score pour 34 jeux de cartes"
+meta_description: "Règles et feuilles de score numériques pour 34 jeux de cartes, du Klaverjassen au Bridge, en passant par le Hearts et le Canasta. Sans compte requis."
 primary_keyword: "feuille de score jeux de cartes"
 secondary_keywords:
   - "belote comptage des points"
@@ -15,6 +15,7 @@ secondary_keywords:
   - "feuille de score numerique cartes"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -29,10 +30,10 @@ internal_links:
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: null
+trademark_note: "Uno, Uno Flip et Beverbende sont des marques de leurs éditeurs respectifs. Braggster n'est ni affiliée à eux ni approuvée par eux, et chaque nom est utilisé à titre de référence uniquement."
 ---
 
-# Feuilles de score pour jeux de cartes : compter les points de 33 jeux
+# Feuilles de score pour jeux de cartes : compter les points de 34 jeux
 
 Presque tous les jeux de cartes qui valent la peine d'être rejoués ont besoin d'une feuille de
 score, et presque tous les foyers comptent les points de la même façon : une page arrachée, un
@@ -41,7 +42,7 @@ remplace cette page par une feuille de score qui calcule, conçue pour le jeu pr
 joues, pour que le total soit juste par construction plutôt que par calcul mental.
 
 Ce guide explique comment fonctionne réellement le score dans les grandes familles de jeux de
-cartes, et quels sont, parmi les 33 jeux de cartes de Braggster, ceux qui appartiennent à chacune.
+cartes, et quels sont, parmi les 34 jeux de cartes de Braggster, ceux qui appartiennent à chacune.
 
 ## Ce qu'une feuille de score de jeu de cartes doit savoir faire
 
@@ -54,13 +55,13 @@ vraie feuille de score doit savoir :
   plus le roem. Une manche de Whist ne compte que les levées au-dessus du livre de six. Une manche
   de Canasta peut faire varier le score de plusieurs milliers de points.
 - **Dans quel sens on gagne.** Dans la plupart des jeux, le plus haut total gagne. Burro, les jeux
-  de type Golf et tous les puzzles de l'app fonctionnent à l'inverse : le plus bas gagne, et une
+  de type Golf comme Beverbende et tous les puzzles de l'app fonctionnent à l'inverse : le plus bas gagne, et une
   feuille de score qui se trompe de sens classe le perdant en tête.
 - **Quand la partie se termine.** Course à 500, course à 11, seize manches, ou le premier à ne plus
   avoir de cartes.
 
 Les feuilles de score de Braggster encodent ces quatre éléments pour chaque jeu, ce qui explique
-qu'il y en ait 33 plutôt qu'un seul tableur générique.
+qu'il y en ait 34 plutôt qu'un seul tableur générique.
 
 ## Les jeux de plis
 
@@ -112,6 +113,14 @@ c'est un jeu où le plus bas total gagne.
 
 Pour aller plus loin : [les règles et le score du Pesten](/blog/how-to-score-pesten/).
 
+## Les jeux de mémoire
+
+[Beverbende](/games/beverbende/) est le jeu de mémoire néerlandais de la famille du Golf : tu gardes
+quatre cartes face cachée, tu en regardes deux, et tu pioches, échanges et te souviens jusqu'au total
+le plus bas avant que quelqu'un ne frappe pour le dernier tour. La feuille de score de Braggster
+reprend le bloc de score de la boîte, une colonne par joueur et une ligne par manche, avec le score de
+celui qui a frappé entouré, et le total le plus bas gagne.
+
 ## Les jeux de comparaison de mains
 
 Poker et Blackjack sont notés au résultat, jamais sur quoi que ce soit de misé. La feuille de Poker
@@ -135,14 +144,14 @@ Pour aller plus loin : [le score du Solitaire et le plateau Klondike](/blog/how-
 
 ## Des jeux de cartes régionaux dans une seule app
 
-Tout l'intérêt d'un catalogue de 33 jeux de cartes, c'est que le jeu auquel joue ta famille y
+Tout l'intérêt d'un catalogue de 34 jeux de cartes, c'est que le jeu auquel joue ta famille y
 figure probablement, même si personne en dehors de ton pays n'en a jamais entendu parler. Braggster
 associe chaque jeu aux pays où il est incontournable, pour que le catalogue puisse se filtrer selon
 ta région :
 
 | Région | Jeux de cartes couverts |
 |---|---|
-| Pays-Bas, Belgique | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Whist |
+| Pays-Bas, Belgique | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Beverbende, Whist |
 | Allemagne, Autriche, Suisse | Skat, Doppelkopf, Schnapsen, Königrufen, Jass |
 | France, Monaco | Belote, Bridge, Königrufen |
 | Italie, Saint-Marin | Briscola, Scopa, Canasta |

@@ -16,6 +16,7 @@ secondary_keywords:
   - "feuille de score dominos"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -128,8 +129,8 @@ Pour l'association des tuiles, un seul. Pour le total des extrémités ouvertes 
 moitiés.
 
 **Puis-je jouer aux Dominoes sur le téléphone avec quelqu'un à côté de moi ?**
-Oui. Le plateau se joue en te passant le téléphone d'un joueur à l'autre autour de la table. Il n'y a
-ni jeu en ligne ni compte à créer.
+Oui. Le plateau se joue à tour de rôle : un seul appareil, qu'on se passe autour de la table. Aucun
+compte n'est nécessaire.
 
 ---
 

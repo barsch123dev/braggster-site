@@ -140,6 +140,6 @@ No. Ogni sospettato, stanza e oggetto e originale del gioco.
 
 ---
 
-**Continua:** scopri tutti e tredici i [puzzle di logica](/blog/puzzle-games/), leggi della
+**Continua:** scopri tutti e diciotto i [puzzle di logica](/blog/puzzle-games/), leggi della
 [difficolta di Sudoku](/blog/how-to-play-sudoku/), oppure sfoglia il catalogo su
 [braggster.com/games](/games/).

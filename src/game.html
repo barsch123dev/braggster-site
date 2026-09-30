@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{game_meta_title}}</title>
+<meta name="description" content="{{game_meta_description}}">
+<link rel="canonical" href="{{game_canonical}}">
+{{game_hreflang_html}}
+{{game_social_html}}
+{{game_schema_html}}
+<link rel="icon" sizes="32x32" href="{{root}}assets/web/favicon-32.png">
+<link rel="icon" sizes="16x16" href="{{root}}assets/web/favicon-16.png">
+<link rel="apple-touch-icon" href="{{root}}assets/web/apple-touch-icon-180.png">
+<link rel="stylesheet" href="{{root}}styles.css">
+<link rel="preload" href="{{root}}assets/fonts/Baloo2.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{root}}assets/fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
+{{clarity_html}}
+</head>
+<body>
+<a class="skip-link" href="#main">{{skip_link}}</a>
+
+<div class="wrap">
+  <nav class="nav" aria-label="{{nav_label}}">
+    <a class="nav__logo" href="{{home_href}}" aria-label="braggster">
+      <img src="{{root}}assets/logo/lockup-color.png" alt="braggster" width="220" height="44">
+    </a>
+    <div class="nav__links">
+      <a href="{{home_href}}">{{nav_home}}</a>
+      <a href="{{games_href}}" aria-current="page">{{nav_games}}</a>
+      <a href="{{together_href}}">{{nav_together}}</a>
+      <a href="{{blog_href}}">{{nav_blog}}</a>
+      <a class="btn btn--brag" href="{{home_href}}#get-app">{{nav_cta}}</a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <article class="prose prose--article game-page">
+      <p class="article__crumb"><a href="{{games_href}}">{{game_back}}</a></p>
+      <p class="eyebrow">{{game_eyebrow}}</p>
+      <h1>{{game_h1}}</h1>
+      <p class="game-page__lead">{{game_lead}}</p>
+      <p class="game-page__players">{{game_players}}</p>
+
+      <h2>{{game_can_h}}</h2>
+      <ul class="game-page__can">
+{{game_can_html}}
+      </ul>
+
+      <h2>{{game_scoring_h}}</h2>
+      <p>{{game_scoring}}</p>
+{{game_guide_html}}
+
+      <h2>{{game_faq_title}}</h2>
+      <div class="faq">
+{{game_faq_html}}
+      </div>
+
+      <h2>{{game_related_h}}</h2>
+      <div class="well well--compact">
+{{game_related_html}}
+      </div>
+
+      {{game_trademark_html}}
+    </article>
+
+    <aside class="article__cta">
+      <p>{{banner_sub}}</p>
+      <div class="article__cta-actions">
+        <a class="btn btn--ink" href="{{store_href}}">{{store_ios}}</a>
+        <a class="btn btn--outline" href="{{play_store_href}}">{{store_android}}</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__row">
+      <div class="footer__brand">
+        <img src="{{root}}assets/logo/symbol-color.png" alt="" width="30" height="30">
+        <span>{{footer_copy}}</span>
+      </div>
+      <div class="footer__links">
+        <a href="{{home_href}}">{{nav_home}}</a>
+        <a href="{{games_href}}">{{nav_games}}</a>
+        <a href="{{together_href}}">{{nav_together}}</a>
+        <a href="{{blog_href}}">{{nav_blog}}</a>
+        <a href="{{privacy_href}}">{{footer_privacy}}</a>
+        <a href="{{terms_href}}">{{footer_terms}}</a>
+        <a href="{{support_href}}">{{footer_support}}</a>
+      </div>
+    </div>
+    <nav class="footer__langs" aria-label="{{lang_nav_label}}">
+{{game_lang_links_html}}
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

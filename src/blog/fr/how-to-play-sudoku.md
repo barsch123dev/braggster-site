@@ -15,6 +15,7 @@ secondary_keywords:
   - "comment progresser au sudoku"
   - "notes au crayon sudoku"
 search_intent: informational
+updated: 2026-09-28
 priority: 1
 schema:
   - Article
@@ -104,7 +105,7 @@ entièrement hors ligne.
 
 Braggster n'affichera jamais un chiffre en rouge quand tu le places au mauvais endroit.
 
-C'est un choix de conception délibéré, qui s'applique aux treize casse-têtes de l'app. Un retour
+C'est un choix de conception délibéré, qui s'applique aux dix-huit casse-têtes de l'app. Un retour
 d'erreur en direct transforme un jeu de logique en jeu de vérification : tu arrêtes de déduire et tu
 commences à tâtonner, parce que l'app te dira si tu as tort. Enlève ça, et tu dois vraiment être sûr
 de toi.
@@ -151,6 +152,6 @@ est l'inverse de la plupart des jeux de l'app.
 
 ---
 
-**En savoir plus :** découvre les treize [casse-têtes de logique](/blog/puzzle-games/), essaie le
+**En savoir plus :** découvre les dix-huit [casse-têtes de logique](/blog/puzzle-games/), essaie le
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), ou parcours le catalogue sur
 [braggster.com/games](/games/).

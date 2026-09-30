@@ -1,10 +1,10 @@
 ---
-title: "13 Logic Puzzles in One App, All Generated and All Solvable"
+title: "18 Logic Puzzles in One App, All Generated and All Solvable"
 slug: puzzle-games
 locale: en
 type: pillar
 category: puzzle
-meta_title: "13 Logic Puzzles in One App, Endless and Solvable"
+meta_title: "18 Logic Puzzles in One App, Endless and Solvable"
 meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo and more. Every puzzle generated fresh and verified to have one solution."
 primary_keyword: "logic puzzle app"
 secondary_keywords:
@@ -15,6 +15,7 @@ secondary_keywords:
   - "puzzle games no ads"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -31,14 +32,15 @@ internal_links:
 trademark_note: null
 ---
 
-# 13 Logic Puzzles in One App, All Generated and All Solvable
+# 18 Logic Puzzles in One App, All Generated and All Solvable
 
 Most puzzle apps ship a bank of puzzles and eventually run out. Braggster generates every puzzle
 fresh on demand and then proves it has exactly one solution before showing it to you. That second
 half is the part almost nobody does, and it is the difference between a puzzle you can reason your
 way through and one where you eventually have to guess.
 
-Here are the thirteen, what each one actually asks of you, and how they are scored.
+Here are the eighteen, what each one actually asks of you, and how they are scored. In the app they
+have a tab of their own, Puzzles, next to the games.
 
 ## The number placement family
 
@@ -64,6 +66,10 @@ always points at the smaller value. 4x4 up to 7x7.
 symbols in a row or column, exactly half of each per line, and no two identical rows or columns.
 6x6 up to 12x12, always even. Tap a cell to cycle it through empty, 0 and 1: with two symbols there
 is no number pad to get in the way.
+
+**[Tectonic](/games/tectonic/).** A grid split into outlined regions of one to five cells. Each
+region holds 1 up to its own size exactly once, and no two touching cells, diagonals included, may
+share a digit. 5x5 at Beginner up to 8x8 at Evil.
 
 Deep dives: [Sudoku](/blog/how-to-play-sudoku/), [Killer Sudoku](/blog/how-to-play-killer-sudoku/).
 
@@ -97,11 +103,27 @@ Deep dives: [Minesweeper](/blog/how-to-play-minesweeper/),
 from 4 to 7 letters. Letter states are never signalled by colour alone: right spot is a solid tile
 with a bar, in the word elsewhere is a ring with a dot, absent is struck through.
 
-**Kruiswoord.** A crossword generated at runtime from a large clued word dictionary rather than a
+**Crossword.** A crossword generated at runtime from a large clued word dictionary rather than a
 shipped bank, so the puzzles are unlimited. Mini 5x5, Midi 7x7 and Standard 15x15.
 
 **Woordzoeker.** Word search. Words run in any of eight directions, forwards or backwards, and you
-find one by dragging from its first letter to its last. 8x8 with 5 words up to 14x14 with 12.
+find one by tapping its first letter and then its last. 8x8 with 5 words up to 14x14 with 12.
+
+**[Zweeds](/games/zweeds/).** The arrowword, or Swedish crossword: there is no clue list, because
+every clue sits inside the grid next to an arrow that shows where its answer runs. Each deal is a
+freshly laid out grid, from a 4x4 Mini up to a 14x14 Grand.
+
+**[Cijfercode](/games/cijfercode/).** The codeword: a filled crossword grid with no clues at all,
+where every letter has been swapped for a number. A few letters start revealed, just enough to crack
+the rest, and typing a letter fills every cell that shares its number. Mini 7x7, Midi 9x9 and
+Standard 11x11.
+
+**[Filippine](/games/filippine/).** A stack of clued rows whose answers line up on one marked column,
+and that column spells a hidden solution word from top to bottom. 4, 6 or 8 rows.
+
+**[Hangman](/games/hangman/).** Guess the word a letter at a time before the seventh miss completes
+the figure. A hint shows the word's description first, then one letter, and three word length tiers
+run from 4 up to 15 letters.
 
 ## How puzzles are scored
 
@@ -120,7 +142,7 @@ Assists are pencil notes and hints only, depending on the puzzle.
 
 Every generated puzzle in Braggster is put through a solver before it reaches you:
 
-- Sudoku, Kakuro, Futoshiki, Binairo and Calcudoku are checked by backtracking solvers that confirm
+- Sudoku, Kakuro, Futoshiki, Binairo, Calcudoku and Tectonic are checked by backtracking solvers that confirm
   exactly one completion exists.
 - Killer Sudoku is verified under the combined Sudoku and cage constraint together, not each in
   isolation.
@@ -130,6 +152,8 @@ Every generated puzzle in Braggster is put through a solver before it reaches yo
   by a line solver plus bounded search.
 - Logikwis and Murder Sudoku verify their case has one consistent assignment before writing the
   briefing.
+- Cijfercode runs a solver to pick the fewest revealed letters from which the whole code can still
+  be deduced.
 
 The practical effect: if you are stuck, there is always a next deduction. You are never being asked
 to guess and check.

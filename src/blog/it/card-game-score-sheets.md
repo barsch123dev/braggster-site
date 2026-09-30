@@ -1,11 +1,11 @@
 ---
-title: "Punteggio a Briscola, Scopa e altri 33 giochi di carte"
+title: "Punteggio a Briscola, Scopa e altri 34 giochi di carte"
 slug: card-game-score-sheets
 locale: it
 type: pillar
 category: card
-meta_title: "Punteggio a Briscola, Scopa e altri 33 giochi di carte"
-meta_description: "Regole di punteggio e segnapunti digitali per 33 giochi di carte, da Briscola e Scopa a Canasta, Klaverjassen e Bridge. Nessun account richiesto."
+meta_title: "Punteggio a Briscola, Scopa e altri 34 giochi di carte"
+meta_description: "Regole di punteggio e segnapunti digitali per 34 giochi di carte, da Briscola e Scopa a Canasta, Klaverjassen e Bridge. Nessun account richiesto."
 primary_keyword: "punteggio a briscola"
 secondary_keywords:
   - "come si gioca a scopa"
@@ -15,6 +15,7 @@ secondary_keywords:
   - "regole dei giochi di carte italiani"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -29,10 +30,10 @@ internal_links:
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: null
+trademark_note: "Uno, Uno Flip e Beverbende sono marchi dei rispettivi editori. Braggster non è affiliata a loro né da loro approvata, e ogni nome è usato solo a scopo referenziale."
 ---
 
-# Punteggio a Briscola, Scopa e altri 33 giochi di carte
+# Punteggio a Briscola, Scopa e altri 34 giochi di carte
 
 Quasi ogni gioco di carte che vale la pena giocare due volte ha bisogno di un segnapunti, e quasi
 ogni famiglia lo tiene allo stesso modo: un foglio strappato, una penna sparita e una discussione su
@@ -41,7 +42,7 @@ calcola per te, costruito sul gioco specifico che stai facendo, cosi il totale e
 costruzione e non per aritmetica a mano.
 
 Questa guida spiega come funziona davvero il punteggio nelle principali famiglie di giochi di carte,
-e quali dei 33 giochi di carte in Braggster rientrano in ciascuna.
+e quali dei 34 giochi di carte in Braggster rientrano in ciascuna.
 
 ## Cosa deve fare un segnapunti per le carte
 
@@ -54,13 +55,13 @@ vero segnapunti deve sapere:
   roem. Un round di Whist conta solo le prese oltre la base di sei. Un round di Canasta puo
   oscillare di migliaia di punti.
 - **Quale direzione vince.** Nella maggior parte dei giochi vince il totale piu alto. Burro, i giochi
-  in stile Golf e ogni puzzle dell'app vincono con il totale piu basso, e un segnapunti che sbaglia
-  questo mette il perdente al primo posto.
+  in stile Golf come Beverbende e ogni puzzle dell'app vincono con il totale più basso, e un
+  segnapunti che sbaglia questo mette il perdente al primo posto.
 - **Quando finisce la partita.** Corsa a 500, corsa a 11, sedici round, oppure chi finisce prima le
   carte.
 
-I segnapunti di Braggster codificano tutti e quattro questi punti per ogni gioco, ed e per questo che
-ce ne sono 33 e non un unico foglio di calcolo.
+I segnapunti di Braggster codificano tutti e quattro questi punti per ogni gioco, ed è per questo che
+ce ne sono 34 e non un unico foglio di calcolo.
 
 ## Giochi di prese
 
@@ -109,6 +110,14 @@ lettere ti eliminano, e chi ha meno lettere e in testa, quindi qui vince il tota
 
 Approfondimento: [punteggio e regole Pesten](/blog/how-to-score-pesten/).
 
+## Giochi di memoria
+
+[Beverbende](/games/beverbende/) è il gioco di memoria olandese della famiglia Golf: tieni quattro
+carte coperte, ne sbirci due, e peschi, scambi e ricordi la tua strada verso il totale più basso
+prima che qualcuno bussi per l'ultimo round. Il segnapunti di Braggster ricrea il blocco punteggio
+della scatola, una colonna per giocatore e una riga per round, con il punteggio di chi ha bussato
+cerchiato, e vince il totale più basso.
+
 ## Giochi di confronto tra mani
 
 Poker e Blackjack si segnano in base al risultato, mai a qualcosa messo in gioco. Il segnapunti Poker
@@ -133,14 +142,14 @@ Approfondimento: [punteggio Solitaire e il tabellone Klondike](/blog/how-to-scor
 
 ## Giochi di carte regionali in un'unica app
 
-Parte del senso di un catalogo di 33 giochi di carte e che il gioco che gioca la tua famiglia c'e
+Parte del senso di un catalogo di 34 giochi di carte è che il gioco che gioca la tua famiglia c'è
 quasi sicuramente, anche se nessun altro fuori dal tuo paese ne ha mai sentito parlare. Braggster
 etichetta ogni gioco con i paesi dove e un classico, cosi il catalogo puo pre-filtrare in base alla
 tua regione:
 
 | Regione | Giochi di carte coperti |
 |---|---|
-| Paesi Bassi, Belgio | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Whist |
+| Paesi Bassi, Belgio | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Beverbende, Whist |
 | Germania, Austria, Svizzera | Skat, Doppelkopf, Schnapsen, Koenigrufen, Jass |
 | Francia, Monaco | Belote, Bridge, Koenigrufen |
 | Italia, San Marino | Briscola, Scopa, Canasta |

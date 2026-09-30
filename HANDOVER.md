@@ -3,6 +3,12 @@
 Written 18 July 2026. Audience: whoever picks up this repo next (human or agent). It assumes no
 prior context on either repo.
 
+> **Status, 28 September 2026.** Sections 3 to 6 below are a July snapshot and are historical: the
+> privacy fix in section 4 shipped, the site now has real screenshots, a full `/games/` catalogue
+> with a page per game, a blog, `/play-together/`, and is current with app v3.1.0 (73 games).
+> For the current state read `README.md`, including "Updating the site for an app release".
+> Sections 1, 2, 7 and 8 were updated on that date and still apply.
+
 The short version: the site is structurally healthy and needs no redesign. There is **one item that
 matters** (the privacy page no longer matches what the app collects) and a handful of optional
 refreshes. Read section 4 first.
@@ -22,24 +28,28 @@ refreshes. Read section 4 first.
 ## 2. How the site is built
 
 ```
-src/home.html          Template with {{token}} placeholders
-src/privacy.html       Same, for the privacy page
-src/locales/*.json     All copy: en, nl, es, fr, de, pt-BR, it
+src/*.html             Page templates with {{token}} placeholders (see README.md for the list)
+src/locales/*.json     All UI copy: en, nl, es, fr, de, pt-BR, it
+src/gamepages/*.json   Per-game prose for /games/<id>/, one file per language
+src/games.json         The game catalogue, extracted from the app
+src/blog/<locale>/     The articles, markdown
 src/styles.css         Styles
 tools/build.py         Renders templates x locales into dist/
 tools/check_copy.py    Copy gate
 tools/check_contrast.py WCAG contrast gate
-dist/                  GENERATED OUTPUT, committed to the repo
+dist/                  GENERATED OUTPUT, gitignored, built by CI
 ```
 
-**`dist/` is generated. Never hand-edit it.** Change `src/`, then re-run the build. English renders
+**`dist/` is generated and not committed.** It is in `.gitignore`; CI builds it and deploys it to
+Pages on every push to `main`. Change `src/`, then re-run the build locally to check. English renders
 at the root (`dist/index.html`); the other six render at `dist/<lang>/`.
 
 The two gates are not optional, and CI runs both on every pull request:
 
-- **`check_copy.py`** enforces three things: **no em dashes** (or en dashes used as punctuation) in
-  any user-facing string, **exact locale key parity** with the English base, and **no unsubstituted
-  `{{token}}`** surviving into the built HTML. Adding a key to `en.json` and forgetting the other
+- **`check_copy.py`** enforces **no em dashes** (or en dashes used as punctuation) in any
+  user-facing string, **exact locale key parity** with the English base, **no unsubstituted
+  `{{token}}` or count token** surviving into the built HTML, the **games.json shape**, and a
+  complete **gamepages** entry for every game in every language. Adding a key to `en.json` and forgetting the other
   six locales fails the build.
 - **`check_contrast.py`** pins the corrected WCAG AA colour pairings so a palette edit cannot
   silently reintroduce a contrast failure.
@@ -56,7 +66,7 @@ git checkout -b my-change origin/main
 python3 tools/build.py
 python3 tools/check_copy.py
 python3 tools/check_contrast.py
-git add src dist          # commit BOTH the source and the generated output
+git add src tools assets  # dist/ is gitignored; CI builds it
 git commit -m "..."
 gh pr create --base main
 # merge to main; Pages deploys automatically
@@ -166,7 +176,7 @@ when TestFlight or store release status changes, in all seven locales.
 - [ ] `python3 tools/build.py` runs clean
 - [ ] `python3 tools/check_copy.py` passes (watch for **em dashes** and **locale key parity**)
 - [ ] `python3 tools/check_contrast.py` passes
-- [ ] Both `src/` and the regenerated `dist/` are committed
+- [ ] `src/` (and `assets/` if screenshots changed) is committed; `dist/` is not, CI builds it
 - [ ] Spot-check a non-English page, for example `dist/nl/privacy/index.html`, for unsubstituted
       `{{tokens}}` and for the change actually landing in that locale
 - [ ] If privacy copy changed: it says the same thing as

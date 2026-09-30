@@ -1,0 +1,294 @@
+{
+  "klaverjassen": {
+    "lead": "Klaverjassen ist das niederländische Stichspiel für zwei Zweierteams: 32 Karten, 16 Runden, und Roem sowie Nat-Gehen entscheiden die meisten Abende.",
+    "scoring": "Trage die Kartenpunkte und den Roem jeder Runde ein, den Rest übernimmt der Punktezettel: Eine Runde ist 162 Punkte plus Roem wert, Pit bringt seinen 100-Punkte-Bonus, und geht das spielende Team nat, bekommen die Verteidiger alles. Amsterdam- und Rotterdam-Regeln sind beide eingebaut, und der Regelbildschirm zeigt eine Tabelle mit Kartenrängen und -werten für Trumpf und Fehlfarben. Nach Runde 16 gewinnt das Team mit den meisten Punkten."
+  },
+  "jass": {
+    "lead": "Jass ist das Schweizer Nationalkartenspiel: zwei Zweierteams, 36 Karten, und ein Wettlauf bis 2500 mit Weis-Kombinationen und Trumpfmultiplikatoren.",
+    "scoring": "Jede Runde trägst du die Kartenpunkte, jeden Weis und den am Tisch vereinbarten Multiplikator für den Kontrakt ein, ob Trumpf, Obenabe oder Undenufe. Der Punktezettel führt die laufende Summe bis 2500. Schieber ist die Standardvariante, und bei Coiffeur wird jeder der sechs Kontrakttypen genau einmal gespielt."
+  },
+  "belote": {
+    "lead": "Belote ist das französische Stichspiel für zwei Zweierteams: Trumpf ersteigern, die 162 im Spiel befindlichen Punkte erobern und Belote-Rebelote ansagen.",
+    "scoring": "Nach jedem Blatt wertet der Punktezettel den Kontrakt direkt gegeneinander. Das Team, das Trumpf angesagt hat, behält seine Punkte nur, wenn es mehr Stiche macht als das andere Team; sonst ist das Blatt dans, und die Verteidiger bekommen alle 162 Punkte plus die Belote-Boni. Capot bringt 90 dazu, und die Coinche-Variante verdoppelt oder vervierfacht das Ergebnis. Gespielt wird bis zur vereinbarten Zielzahl, meist 501 oder 1000."
+  },
+  "whist": {
+    "lead": "Whist ist das klassische Partnerspiel mit Stichen: zwei Zweierteams, die ersten sechs Stiche sind das Buch, und jeder weitere Stich bringt einen Punkt.",
+    "scoring": "Trage ein, wie viele Stiche jede Seite gemacht hat; der Punktezettel zählt nur die Stiche über dem Buch von sechs, eine Seite mit acht Stichen bekommt also zwei Punkte. Die erste Seite mit fünf Punkten gewinnt die Partie. Die Wiezen-Variante ergänzt ein Bietverfahren um den Kontrakt und bestimmt Trumpf aus dem höchsten Gebot."
+  },
+  "bridge": {
+    "lead": "Bridge ist das große Partnerkartenspiel: biete mit deinem Partner einen Kontrakt, erfülle ihn mit offenem Dummy, und werte über und unter dem Strich.",
+    "scoring": "Trage den Kontrakt, wer ihn gespielt hat, die Verdopplung und die gemachten Stiche ein, den Rest übernimmt der Punktezettel: den Gebotswert unter dem Strich, Mehrstiche und Spiel sowie Schlemm- und Rubberboni darüber, dazu Strafpunkte für die Verteidiger bei einem gescheiterten Kontrakt. Rubber verfolgt die Vulnerabilität während des Spiels, Duplicate legt sie pro Board vorab fest."
+  },
+  "euchre": {
+    "lead": "Euchre ist das schnelle Trumpf-Ansagespiel für zwei Zweierteams, mit fünf Karten pro Spieler und einem kurzen Blatt; das erste Team mit zehn Punkten gewinnt.",
+    "scoring": "Trage ein, wer Trumpf angesagt hat und wie viele Stiche das Team gemacht hat. Drei oder vier Stiche bringen 1 Punkt, alle fünf (ein March) bringen 2, eine Alleingang-Hand mit allen fünf Stichen bringt 4, und ein Team, das sein Ziel verfehlt, ist euchred und schenkt dem Gegner 2 Punkte. Die Stick-the-dealer-Variante zwingt den Geber, Trumpf anzusagen."
+  },
+  "fivehundred": {
+    "lead": "500 ist Australiens beliebtestes Bietspiel: ersteigere Trumpf, mach mindestens so viele Stiche wie geboten, und lauf bis 500 Punkten.",
+    "scoring": "Der Punktezettel enthält die vollständige Bietertabelle, von 40 für sechs Pik bis 520 für zehn Sans Atout, dazu Misere für 250 und Open Misere für 500. Erfüllst du dein Gebot, bekommst du seinen Wert gutgeschrieben; verfehlst du es, verlierst du ihn, während das andere Team 10 pro Stich bekommt. Das erste Team mit 500 Punkten gewinnt, ein Team bei minus 500 verliert."
+  },
+  "spades": {
+    "lead": "Spades ist das amerikanische Partnerspiel, bei dem Pik immer Trumpf ist, jeder Spieler seine Stiche ansagt, und Mehrstiche dich als Bags einholen.",
+    "scoring": "Trage jedes Gebot und die gemachten Stiche ein. Ein erfülltes Gebot bringt 10 pro geboten Stich plus 1 pro Extrastich, ein verfehltes Gebot kostet 10 pro Stich, und jeder zehnte Bag kostet dem Team 100 Punkte. Nil-Gebote bringen oder kosten 100 für sich allein. Das erste Team mit 500 Punkten gewinnt, im Partnership- oder Solo-Modus."
+  },
+  "cuarenta": {
+    "lead": "Cuarenta ist Ecuadors Nationalkartenspiel: erobere Karten vom Tisch in Paaren und Folgen, erziele Caídas und Limpias, und lauf mit deiner Seite bis 40.",
+    "scoring": "Jede Runde trägst du ein, wie viele der 40 Karten deine Seite erobert hat, plus die Caídas und Limpias jeder Seite. Caídas und Limpias bringen je 2 Punkte, und eroberte Karten über 19 bringen je einen Punkt, bis maximal 6. Die Summen laufen weiter, und die erste Seite mit 40 Punkten gewinnt."
+  },
+  "mus": {
+    "lead": "Mus ist das spanische Bluffspiel für zwei Paare mit 40 Karten, bei dem jedes Blatt in vier Phasen geboten wird: Grande, Chica, Pares und Juego.",
+    "scoring": "Für jedes Blatt trägst du ein, welches Paar Grande, Chica, Pares und Juego gewonnen hat, plus alles, was beim Bieten erhöht wurde. Grande, Chica und Pares bringen einen Grundwert von 1, Juego bringt 2, und eine Phase, die niemand hält, entfällt. Das erste Paar mit 40 Punkten gewinnt, oder mit 30 im Kurzspiel."
+  },
+  "hearts": {
+    "lead": "Hearts ist das Stichspiel, das du durch Vermeiden von Stichen gewinnst: jedes Herz kostet einen Punkt, die Pik-Dame kostet 13, und ein Moonshot dreht alles um.",
+    "scoring": "Trage die Strafpunkte ein, die jeder Spieler in einer Runde bekommen hat, zusammen 26. Ein Moonshot dreht die Runde um, wenn ein Spieler alle Herzen und die Pik-Dame nimmt. Die Partie endet, sobald jemand 100 Punkte erreicht, und die niedrigste Summe gewinnt. Omnibus, Spot und Cancellation sind eingebaut, und du kannst eine ganze Partie in der App gegen drei Computergegner spielen."
+  },
+  "poker": {
+    "lead": "Poker deckt Texas Hold'em, Omaha, Seven Card Stud und Five Card Draw ab. Braggster wertet nur, wer wo landet, nie, was jemand eingesetzt hat.",
+    "scoring": "Nach jeder Session ziehst du die Spieler in ihre Platzierung. Platz eins bringt einen Punkt pro Spieler am Tisch, Platz zwei einen weniger, und der letzte Platz bringt einen Punkt. Die Punkte summieren sich über den Abend, und die höchste Summe gewinnt. Der Regelbildschirm zeigt die vollständige Blattwertung, von Royal Flush bis High Card."
+  },
+  "blackjack": {
+    "lead": "Einundzwanzig ist der Wettlauf bis 21 gegen den Dealer. Spiel Hände gegen einen echten Dealer am Bildschirm, oder zähl ein Spiel mit echten Karten.",
+    "scoring": "Jede Hand wertet ihr Ergebnis: ein Blackjack bringt 3 Punkte, ein Sieg 2, ein Push 1 und eine Niederlage 0, und die höchste Summe gewinnt. Am Tisch in der App gibt und spielt der Dealer seine Hand selbst, und das Ergebnis wird für dich gewertet. Classic-, European-, Atlantic-City- und Spanish-21-Regeln sind alle enthalten."
+  },
+  "solitaire": {
+    "lead": "Patience ist das Solospiel gegen die ausgeteilten Karten. Spiel Klondike direkt in der App, oder zähl ein Spiel mit echten Karten.",
+    "scoring": "Das Klondike-Feld in der App wird per Tipp gespielt, teilt eine oder drei Karten auf einmal aus, und wertet das fertige Spiel für dich. Bei einem echten Spiel trägst du das Ergebnis selbst ein, im Vegas-Stil nach Karten auf den Fundamenten oder im Standard-Stil nach Punkten. Spider, FreeCell und Pyramid sind ebenfalls dabei, und deine Summe wächst von Spiel zu Spiel."
+  },
+  "rummy": {
+    "lead": "Rommé ist die Familie der Ablegespiele, bei denen du Sätze und Folgen bildest und als Erster auszugehen versuchst, von Basic Rummy über Gin bis Rummy 500.",
+    "scoring": "Bei Basic Rummy kassiert der Spieler, der ausgeht, den Wert jeder Karte, die den anderen noch auf der Hand liegt, Bildkarten zu 10 und Asse zu 1. Gin wertet die Deadwood-Differenz mit Boni für Gin und Undercuts, Rummy 500 wertet Kombinationen minus Handkarten, und Indian Rummy wertet Strafpunkte. Der Punktezettel passt sich der gewählten Variante an."
+  },
+  "canasta": {
+    "lead": "Canasta ist das Kombinierspiel mit zwei Decks, bei dem sieben gleiche Karten Canastas bilden, Joker und Zweien wild sind, und eine Partie bis 5000 Punkte geht.",
+    "scoring": "Der Punktezettel ist ein Strichraster für jede Hand: Kombinationswerte, 500 für eine reine Canasta, 300 für eine gemischte, 100 fürs Ausgehen, minus was dir noch auf der Hand bleibt. Er verfolgt auch das steigende Mindestmaß für die erste Kombination, während deine Punktzahl wächst. Die Buraco-Variante nutzt dieselbe Engine mit ihren eigenen Canasta-Regeln."
+  },
+  "jokeren": {
+    "lead": "Joker-Rommé ist das niederländische Rommé mit zwei Decks und Jokern: leg Folgen und Gruppen aus, geh als Erster aus, und halte deine Strafpunkte niedrig.",
+    "scoring": "Geht jemand aus, trägt jeder andere Spieler den Strafwert der Karten ein, die ihm noch auf der Hand liegen, und der Gewinner trägt 0 ein. Euer Tisch legt fest, wie viel ein Joker wert ist. Nach ein paar Blättern gewinnt die niedrigste Summe, und die Rangliste wertet entsprechend."
+  },
+  "pesten": {
+    "lead": "Mau-Mau (niederländisch Pesten) ist das Abwurfspiel aus der Crazy-Eights-Familie: Karten lassen den Nächsten ziehen, aussetzen oder die Farbe wechseln.",
+    "scoring": "Hat ein Spieler keine Karten mehr, trägt jeder andere die Strafpunkte ein, die ihm noch auf der Hand liegen, und der Gewinner trägt 0 ein. Die Summen laufen über mehrere Blätter, und die niedrigste Summe gewinnt. Der Regelbildschirm listet die Sonderkarten, die die meisten Tische verwenden, denn Hausregeln unterscheiden sich je nach Region."
+  },
+  "toepen": {
+    "lead": "Toepen ist das niederländische Knock-out-Kartenspiel mit vier Karten und viel Nerven: klopf, um den Wert der Hand zu erhöhen, und wer übrig bleibt, gewinnt.",
+    "scoring": "Wer eine Hand verliert, bekommt Strafpunkte in Höhe ihres Werts nach jedem Toep, und ein Spieler, der ausgestiegen ist, bekommt den niedrigeren Wert von davor. Der Punktezettel verfolgt jeden Spieler bis zum Limit und wirft ihn bei 15 raus, oder bei 10 in der kürzeren Variante. Wer als Letzter übrig bleibt, gewinnt."
+  },
+  "bollen": {
+    "lead": "Bollen ist das niederländische Vorhersagespiel: sag deine Stiche voraus, eine falsche Vorhersage bringt eine Bol, während die Kartenzahl steigt und fällt.",
+    "scoring": "Jede Runde markierst du für jeden Spieler, ob er sein Gebot erfüllt oder eine Bol bekommen hat. Eine genaue Vorhersage bringt das Gebot, oder das Gebot plus 10 in der +10-Variante, ein Fehlschlag bringt nichts. Der Punktezettel führt die Kartenzahl bis zu einem zu eurem Tisch passenden Höchststand und wieder hinunter bis eins. Die meisten Punkte gewinnen, die meisten Bollen verlieren."
+  },
+  "beverbende": {
+    "lead": "Beverbende ist das niederländische Memory-Kartenspiel: halte vier verdeckte Karten, sieh zwei davon an, und beende jede Runde mit der niedrigsten Summe.",
+    "scoring": "Der Punktezettel sieht aus wie der Zählblock aus der Schachtel: eine Spalte pro Spieler, eine nummerierte Zeile pro Runde und eine Endsumme unten. Trage ein, was die vier Karten jedes Spielers am Rundenende ergeben, und der Wert des Klopfers wird eingekreist. Die Summen laufen weiter, und die niedrigste gewinnt."
+  },
+  "uno": {
+    "lead": "Uno ist das Karten- und Farbzuordnungsspiel: spiel als Erster alle Karten aus, ruf deine letzte an, und kassiere Punkte aus den Händen aller anderen.",
+    "scoring": "Der Rundensieger kassiert die Punkte, die in jeder anderen Hand liegen: Zahlen zum Nennwert, Skip, Reverse und Draw Two zu 20, Wild-Karten zu 50. Der erste Spieler mit 500 Punkten gewinnt die Partie. Classic-, One-Round-, Stacking- und Seven-Zero-Regeln sind alle enthalten."
+  },
+  "unoflip": {
+    "lead": "Uno Flip ist Uno mit einem zweiseitigen Deck: eine Flip-Karte dreht jede Hand und den Stapel zur dunklen Seite, wo die Aktionskarten viel härter treffen.",
+    "scoring": "Uno Flip hat einen eigenen Punktezettel, weil seine Karten eigene Werte haben, von Draw One zu 10 bis Wild Draw Color zu 60. Der Rundensieger kassiert die Punkte aus jeder anderen Hand, und wer zuerst 500 erreicht, gewinnt. Eine One-Round-Variante ist enthalten."
+  },
+  "briscola": {
+    "lead": "Briscola ist Italiens beliebtestes Stichspiel mit 40 Karten: erobere Asse und Dreien, behalte den Trumpf im Blick, und erreiche 61 der 120 Punkte.",
+    "scoring": "Nach jeder Hand trägt jeder Spieler die Kartenpunkte ein, die er erobert hat, zusammen 120: Ass 11, Drei 10, König 4, Cavallo 3 und Bube 2. Die Summen laufen über so viele Hände, wie ihr vereinbart. Die Cinque-carte-Variante teilt fünf Karten aus und verzichtet auf Nachziehen."
+  },
+  "scopa": {
+    "lead": "Scopa ist das italienische Einsammelspiel: nimm Tischkarten durch passenden Wert und leer den ganzen Tisch für eine Scopa, erster bis 11 Punkte.",
+    "scoring": "Nach jeder Hand trägst du die Punkte jedes Spielers ein: je einen für die meisten Karten, die meisten Münzen, das Settebello und die beste Primiera, plus einen für jede Scopa während des Spiels. Der Punktezettel führt die Summen bis 11. Asso piglia tutto, bei dem ein Ass den Tisch leert, ist enthalten."
+  },
+  "truco": {
+    "lead": "Truco ist das brasilianische Bluffspiel mit drei Runden pro Hand, bei dem ein Truco-Ruf den Wert der Hand erhöht, und die erste Seite mit 12 Punkten gewinnt.",
+    "scoring": "Trage ein, wer die Hand gewonnen hat und welchen Wert sie nach den Ansagen hatte: 1, dann Truco für 3, Seis für 6, Nove für 9 und Doze für 12. Die Gewinnerseite bekommt diesen Wert, und wer zuerst 12 erreicht, gewinnt. Paulista- und Mineiro-Varianten sind enthalten."
+  },
+  "skat": {
+    "lead": "Skat ist Deutschlands Dreierklassiker: ersteigere das Alleinspiel, nimm den Skat auf, und schlag die anderen beiden mit mindestens 61 der 120 Punkte.",
+    "scoring": "Der Punktezettel ist eine echte Skatliste. Trage das Spiel, die Matadore, die Kartenpunkte und ein Schneider oder Schwarz ein, und sie berechnet den Spielwert, addiert ihn bei einem Gewinn und zieht ihn bei einem Verlust doppelt ab. Nullspiele werten ihren festen Wert, und die Bock-Variante verdoppelt die nächste Hand."
+  },
+  "doppelkopf": {
+    "lead": "Doppelkopf ist das deutsche Vierspielerspiel mit einem doppelten 48-Karten-Deck, bei dem die Spieler mit den Kreuz-Damen heimlich das Re-Team bilden.",
+    "scoring": "Trage ein, wer Re gespielt hat und wie viele der 240 im Spiel befindlichen Punkte er genommen hat. Der Punktezettel wertet den Gewinn gegen die Schwellen 90, 60 und 30 sowie Schwarz, addiert den Extrapunkt für den Sieg gegen die Kreuz-Damen und bucht einem Solospieler das Dreifache dessen, was jeder Gegner gewinnt oder verliert. Jede Hand summiert sich am Tisch auf null. Hochzeit ist eine eigene Variante."
+  },
+  "schnapsen": {
+    "lead": "Schnapsen ist der österreichische Zweispielerwettlauf bis 66 Kartenpunkte mit 20 Karten, Mariagen zu 20 oder 40, und der Option, den Stock zu schließen.",
+    "scoring": "Nach jeder Hand trägst du ein, wer sie gewonnen hat und wie viele Spielpunkte sie brachte, von 1 bis 3 je nachdem, wie weit der Verlierer zurücklag, oder 2, wenn das Schließen misslingt. Der erste Spieler mit sieben Spielpunkten gewinnt die Partie. Die Bela-Variante bringt ihren Extrapunkt, und der Regelbildschirm zeigt die Karten."
+  },
+  "tarot": {
+    "lead": "Königrufen ist das österreichische Tarockspiel für vier Spieler: der Ansager ruft einen König, und wer ihn hält, wird sein heimlicher Partner.",
+    "scoring": "Trage den Kontrakt, den Ansager und Partner sowie die Kartenpunkte ein, die die ansagende Seite erobert hat. Der Punktezettel misst den Abstand über 36, addiert einen festen Punkt, verdoppelt ihn bei einem Solo, und bucht ihn für die ansagende Seite und gegen die Verteidiger. Eine vereinfachte Variante spielt jede Hand als Solo."
+  },
+  "twentyfive": {
+    "lead": "Twenty-Five ist das irische Stichspiel, bei dem die Fünf Trumpf alles schlägt, jeder Stich 5 Punkte bringt, und wer zuerst 25 erreicht, gewinnt.",
+    "scoring": "Nach jeder Hand trägst du ein, wie viele Stiche jeder Spieler gemacht hat und wer den höchsten Trumpf gespielt hat. Jeder Stich bringt 5 Punkte, und der höchste Trumpf bringt 5 weitere. Der Punktezettel läuft bis 25, oder bis 45 für Partnerschaften in Forty-Five, oder bis 110 in der längeren Variante."
+  },
+  "allfours": {
+    "lead": "All Fours ist das alte Stichspiel, das in der Karibik noch immer beliebt ist: jede Hand bietet vier Punkte, High, Low, Jack und Game, erster bis 14.",
+    "scoring": "Trage die Punkte jedes Spielers für die Hand ein: High für den höchsten ausgeteilten Trumpf, Low für den niedrigsten, Jack fürs Gewinnen des Trumpf-Buben, und Game für die meisten Kartenpunkte in Stichen. Wer zuerst 14 erreicht, gewinnt, oder 7 bei Seven Up. Eine karibische Variante ergänzt den Joker."
+  },
+  "burro": {
+    "lead": "Burro ist das lateinamerikanische Tempospiel mit wandernden Karten: hat jemand vier Gleiche, bekommt der Langsamste einen Buchstaben von BURRO.",
+    "scoring": "Jede Runde markierst du, wer am langsamsten war, und der Punktezettel gibt ihm den nächsten Buchstaben: B, U, R, R, O. Fünf Buchstaben, und du bist raus. Weniger Buchstaben ist besser, und wer als Letzter übrig bleibt, gewinnt."
+  },
+  "loteria": {
+    "lead": "Lotería ist Mexikos Bild-Bingo: ein Ansager zieht illustrierte Karten, alle decken sie auf ihrer Tabla ab, und wer zuerst das Muster voll hat, ruft Lotería.",
+    "scoring": "Braggster hat einen eingebauten Ansager, der die 54 Karten mischt und sie nacheinander namentlich aufdeckt, sodass niemand ein Kartendeck zum Ansagen braucht. Jede gewonnene Runde bringt einen Punkt auf der Liste, und die meisten Siege führen. Full Tabla, Line, Four Corners und Center Square sind alle enthalten."
+  },
+  "yahtzee": {
+    "lead": "Yahtzee ist das Fünf-Würfel-Spiel mit dreizehn Feldern: drei Würfe pro Zug, ein Feld pro Zug ausgefüllt, und ein Bonus von 35 Punkten für 63 im oberen Bereich.",
+    "scoring": "Der Punktezettel berechnet jedes Feld, den oberen Bonus und zusätzliche Yahtzees zu je 100 mit der Joker-Regel, alles direkt im Yahtzee-Feld. Die Spalten schrumpfen, damit jeder Spieler auf den Bildschirm passt. Schalte digitale Würfel ein, und jeder Wurf zeigt, was er wert wäre, und mit Gemeinsam spielen würfeln bis zu sechs Spieler auf ihren eigenen Handys, während alle zusehen, wie die Würfel fallen."
+  },
+  "dudo": {
+    "lead": "Dudo, auch als Perudo oder Lügenwürfeln bekannt, ist das Bluffspiel, bei dem alle fünf Würfel unter einem Becher verstecken und auf den ganzen Tisch bieten.",
+    "scoring": "Jede Runde trägst du ein, wer einen Würfel verloren hat, oder wer mit einer exakten Calza einen zurückgewonnen hat, und der Punktezettel verfolgt die Würfelzahl jedes Spielers. Ein Spieler ohne Würfel ist raus, und wer als Letzter noch Würfel hat, gewinnt. Asse sind standardmäßig wild; die Variante ohne wilde Asse schaltet das ab."
+  },
+  "chess": {
+    "lead": "Schach auf einem Holzbrett in deiner Tasche: jeder legale Zug wird durchgesetzt, inklusive Rochade, En-Passant und Umwandlung, mit laufender Siegzählung.",
+    "scoring": "Jede beendete Partie bringt dem Sieger einen Punkt, ein Remis bringt nichts, sodass ein Abend zu einer Sessionwertung wie 5 zu 3 wird. Spiel auf einem Handy, gegen den Computer auf Leicht, Mittel oder Schwer, oder mit Gemeinsam spielen auf zwei Handys, wo der letzte Zug auf beiden Brettern markiert wird."
+  },
+  "checkers": {
+    "lead": "Checkers, das englische Damespiel, auf einem 8x8-Brett mit Schlagzwang, Mehrfachsprüngen und Damen, spielbereit auf deinem Handy.",
+    "scoring": "Jede beendete Partie bringt dem Sieger einen Punkt, ein Remis bringt nichts, sodass du eine laufende Wertung führst. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Gemeinsam spielen auf zwei Handys. Schlagzwang- und Schlagen-optional-Varianten sind enthalten."
+  },
+  "dammen": {
+    "lead": "Internationales Damespiel ist das 10x10-Spiel mit zwanzig Steinen pro Seite, fliegenden Damen und Höchstschlagzwang, gespielt in niederländischen Vereinen.",
+    "scoring": "Das Brett setzt die Regel zum Höchstschlag durch und lässt dich einen langen Schlagzug Feld für Feld antippen, mit einem Schritt zurück, wenn du dich vertippst. Jede beendete Partie bringt dem Sieger einen Punkt. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Gemeinsam spielen auf zwei Handys."
+  },
+  "connectfour": {
+    "lead": "Connect Four ist das vertikale Vier-in-einer-Reihe-Spiel: wirf eine Scheibe in eine Spalte, lass die Schwerkraft wählen, und reih vier vor deinem Gegner auf.",
+    "scoring": "Tipp eine Spalte an, und die Scheibe fällt auf das 7-mal-6-Feld. Jede beendete Partie bringt dem Sieger einen Punkt, und ein volles Feld ist ein Remis. Die Scheiben unterscheiden sich neben der Farbe auch in der Form, sodass niemand zwei Farben auseinanderhalten muss."
+  },
+  "reversi": {
+    "lead": "Othello ist das Scheiben-Umdreh-Spiel auf 8x8: schließ eine Reihe gegnerischer Scheiben zwischen zwei deiner eigenen ein, und sie drehen sich auf deine Farbe.",
+    "scoring": "Das Brett zeigt, wo du spielen darfst, dreht jede eingeschlossene Reihe um und setzt für dich aus, wenn du keinen Zug hast. Wer am Ende mehr Scheiben hält, gewinnt die Partie und bekommt einen Punkt in der Wertung. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Gemeinsam spielen auf zwei Handys. Feste und freie Eröffnungsvarianten sind enthalten."
+  },
+  "tictactoe": {
+    "lead": "Tic-Tac-Toe, das Drei-in-einer-Reihe-Spiel auf einem 3x3-Raster, spielbar auf einem Handy, mit Siegen und Remis, die für dich erkannt werden.",
+    "scoring": "Tipp ein Feld an, um dein Zeichen zu setzen. Das Brett erkennt einen Sieg oder ein volles Raster von selbst, gibt dem Sieger einen Punkt und nichts bei einem Remis, und führt eine laufende Wertung, damit ein Best-of-Ten den Streit klärt."
+  },
+  "sudoku": {
+    "lead": "Sudoku, das 9x9-Zahlenrätsel: fülle jede Zeile, Spalte und jeden 3x3-Block mit 1 bis 9, von Beginner bis Evil, mit einem frischen Raster jedes Mal.",
+    "scoring": "Jedes Raster wird auf deinem Handy erzeugt und geprüft, ob es genau eine Lösung hat. Deine Wertung ist deine Lösezeit plus ein Abzug für jeden Fehler und jeden Hinweis, weniger ist also besser, und Fehler werden still gezählt statt dir angezeigt. Bleistiftnotizen stehen für Kandidaten bereit."
+  },
+  "killersudoku": {
+    "lead": "Killer Sudoku ergänzt das 9x9-Raster um Käfige: ihre Ziffern ergeben die gedruckte Summe und wiederholen sich nie, zusätzlich zu den Sudoku-Regeln.",
+    "scoring": "Jedes Rätsel wird frisch erzeugt und gemeinsam nach den Sudoku- und Käfigregeln auf Eindeutigkeit geprüft, über fünf Schwierigkeitsstufen. Die Summe eines Käfigs wird zu Tinte, sobald seine Ziffern stimmen. Deine Wertung ist Lösezeit plus Abzüge für Fehler und Hinweise, die niedrigste gewinnt."
+  },
+  "kakuro": {
+    "lead": "Kakuro ist das Kreuzsummenrätsel: fülle jede Reihe weißer Felder mit unterschiedlichen Ziffern von 1 bis 9, die zusammen die Vorgabe am Reihenkopf ergeben.",
+    "scoring": "Die Raster reichen über fünf Stufen von 6x6 bis 10x10, jedes auf deinem Handy erzeugt und auf eine einzige Lösung geprüft. Nutz Bleistiftnotizen und Hinweise, wenn du sie brauchst. Lösezeit plus Abzüge für Fehler und Hinweise ergeben deine Wertung, und weniger ist besser."
+  },
+  "futoshiki": {
+    "lead": "Futoshiki ist das Ungleichheitsrätsel: jede Zeile und Spalte enthält jede Zahl einmal, und die Größer-als-Zeichen zwischen den Feldern müssen stimmen.",
+    "scoring": "Die Raster reichen über fünf Stufen von 4x4 bis 7x7, frisch erzeugt und auf eine eindeutige Lösung geprüft. Bleistiftnotizen und Hinweise helfen dir dabei. Deine Wertung ist die Lösezeit plus ein Abzug für jeden Fehler und Hinweis, die niedrigste gewinnt."
+  },
+  "binairo": {
+    "lead": "Binairo, auch Takuzu genannt: fülle ein Raster mit Nullen und Einsen, nie drei gleiche in Folge, ausgeglichene Zeilen, keine zwei Zeilen oder Spalten gleich.",
+    "scoring": "Tipp ein Feld an, um es durch leer, 0 und 1 zu schalten, auf Rastern von 6x6 bis 12x12. Ein Fehler zählt erst, wenn du mit einem falschen Wert weitermachst; ein Feld durchzuschalten ist also kostenlos. Lösezeit plus Abzüge ist deine Wertung, und weniger gewinnt."
+  },
+  "calcudoku": {
+    "lead": "Calcudoku ist das arithmetische lateinische Quadrat: jede Zahl einmal pro Zeile und Spalte, jede Käfiggruppe erreicht ihr Ziel mit dem gedruckten Zeichen.",
+    "scoring": "Die Raster reichen über fünf Stufen von 4x4 bis 7x7, auf deinem Handy erzeugt und von einem käfigbewussten Löser auf Eindeutigkeit geprüft. Bleistiftnotizen und Hinweise stehen bereit, wenn du sie brauchst. Deine Wertung ist Lösezeit plus Abzüge für Fehler und Hinweise, die niedrigste gewinnt."
+  },
+  "tectonic": {
+    "lead": "Tectonic ist das Regionenrätsel: jede Region enthält 1 bis zu ihrer Größe einmal, und keine zwei angrenzenden Felder, auch diagonal, teilen eine Ziffer.",
+    "scoring": "Die Raster wachsen von 5x5 bei Beginner bis 8x8 bei Evil, und jedes wird frisch erzeugt und auf genau eine Lösung geprüft. Bleistiftnotizen und Hinweise helfen, wenn du feststeckst. Deine Wertung ist Lösezeit plus Abzüge für Fehler und Hinweise, die niedrigste gewinnt."
+  },
+  "nonogram": {
+    "lead": "Nonogram ist Bildlogik: die Zahlen neben jeder Zeile und über jeder Spalte geben die Blöcke gefüllter Felder an, und das gelöste Raster zeigt ein Bild.",
+    "scoring": "Die Raster reichen von 5x5 bis 15x15, aus einem Vorrat handgemachter Bilder, die jeweils auf eine einzige Lösung geprüft sind. Tipp, um ein Feld zu füllen, und halte gedrückt, um eins durchzustreichen. Lösezeit plus Abzüge für Fehler und Hinweise ergeben deine Wertung, weniger ist besser."
+  },
+  "minesweeper": {
+    "lead": "Minesweeper ohne das Raten: jedes Feld ist durch reine Logik beweisbar lösbar, bevor du es siehst, von 9x9 mit 10 Minen bis 16x30 mit 99.",
+    "scoring": "Du startest immer von einer sicheren Öffnung, und eine aufgedeckte Mine kostet dich einen Fehler statt das Spiel, sodass du das Feld zu Ende spielen kannst. Fahnen und Fragezeichen markieren deinen Verdacht. Deine Wertung ist die Räumzeit plus Abzüge für getroffene Minen und genutzte Hinweise, die niedrigste gewinnt."
+  },
+  "murdoku": {
+    "lead": "Murder Sudoku ist ein Krimi auf einem Grundriss: platziere Verdächtige und Opfer je einmal pro Zeile und Spalte. Täter ist, wer mit dem Opfer allein war.",
+    "scoring": "Jeder Fall wird mit eigener Geschichte, einer Besetzung an Verdächtigen und einer nummerierten Hinweisliste erzeugt, über fünf Stufen, und auf eine einzige stimmige Lösung geprüft. Notizen und Streichungen kosten dich nie etwas. Deine Wertung ist Lösezeit plus Abzüge für Fehler und Hinweise, die niedrigste gewinnt."
+  },
+  "logikwis": {
+    "lead": "Logikwis ist das klassische Logikrätsel: ordne jeder Person aus einer kurzen Hinweisliste genau ein Element pro Kategorie zu, auf einem Kreuzreferenzraster.",
+    "scoring": "Jeder Fall zieht ein frisches Thema und einen neuen Kategoriensatz, über fünf Stufen von 3x3 bis 5x4, und ist auf eine einzige Lösung geprüft. Tipp, um ein Paar durchzustreichen oder zu bestätigen. Deine Wertung ist Lösezeit plus Abzüge für Fehler und Hinweise, die niedrigste gewinnt."
+  },
+  "wordle": {
+    "lead": "Woordkraker ist Worträtseln in sechs Versuchen: jeder Versuch zeigt, welche Buchstaben stimmen, welche anderswo im Wort stecken, und welche gar nicht vorkommen.",
+    "scoring": "Die Wörter reichen über vier Stufen von 4 bis 7 Buchstaben, mit einer Tastatur auf dem Bildschirm. Buchstabenzustände zeigen sich in Form ebenso wie in Farbe. Deine Wertung ist die Anzahl der Versuche plus die Zeit, ein verpasstes Wort zählt als schwerste Runde, und die niedrigste Summe gewinnt."
+  },
+  "crossword": {
+    "lead": "Kreuzworträtsel werden frisch auf deinem Handy aus einem großen Wörterbuch mit Hinweisen erzeugt, von einem schnellen Mini bis zum vollen 15x15.",
+    "scoring": "Tipp einen Hinweis an, um zu seinem Wort zu springen, und tipp ein Feld erneut an, um zwischen waagerecht und senkrecht zu wechseln. Ein Aufdecken-Knopf füllt den ersten leeren oder falschen Buchstaben. Deine Wertung ist Lösezeit plus Abzüge für falsche und aufgedeckte Buchstaben, die niedrigste gewinnt."
+  },
+  "woordzoeker": {
+    "lead": "Woordzoeker ist Wortsuche: finde jedes Wort der Liste im Buchstabenraster, waagerecht, senkrecht oder diagonal, vorwärts oder rückwärts.",
+    "scoring": "Tipp den ersten Buchstaben eines Worts an und dann seinen letzten, und ein gefundenes Wort wird von der Liste gestrichen. Die Raster reichen von 8x8 mit 5 Wörtern bis 14x14 mit 12. Deine Wertung ist Lösezeit plus Abzüge für Fehler und Hinweise, die niedrigste gewinnt."
+  },
+  "cijfercode": {
+    "lead": "Cijfercode ist das Zahlenrätsel: ein ausgefülltes Kreuzworträtsel ohne Hinweise, bei dem jeder Buchstabe durch eine Zahl ersetzt ist, die du knacken musst.",
+    "scoring": "Tipp einen Buchstaben für eine Zahl ein, und er erscheint sofort in jedem Feld mit dieser Zahl. Ein paar Buchstaben starten bereits aufgedeckt, gerade genug, um den Rest durch Logik zu knacken. Die Raster kommen in Mini, Midi und Standard, und deine Wertung ist Lösezeit plus Abzüge für falsche Versuche und Hinweise, die niedrigste gewinnt."
+  },
+  "zweeds": {
+    "lead": "Zweeds ist das Pfeilkreuzworträtsel, auch schwedisches Kreuzworträtsel genannt: jeder Hinweis sitzt neben einem Pfeil, der zeigt, wohin seine Antwort läuft.",
+    "scoring": "Jedes Rätsel ist ein frisch angelegtes Raster, von einem 4x4-Mini bis zu einem 14x14-Grand. Tipp ein Antwortfeld an und schreib, tipp erneut, um die Richtung zu wechseln. Deine Wertung ist Lösezeit plus Abzüge für falsche und aufgedeckte Buchstaben, die niedrigste gewinnt."
+  },
+  "filippine": {
+    "lead": "Filippine ist ein Stapel Hinweise, deren Antworten sich in einer markierten Spalte ausrichten, die von oben nach unten ein verstecktes Lösungswort buchstabiert.",
+    "scoring": "Löse jede Zeile aus ihrem Hinweis, und das Lösungswort erscheint, sobald jede Zeile stimmt. Die markierte Spalte zeigt sich durch Farbe, einen stärkeren Rand und einen Stern. Die Rätsel haben 4, 6 oder 8 Zeilen, und deine Wertung ist Lösezeit plus Abzüge für falsche und aufgedeckte Buchstaben, die niedrigste gewinnt."
+  },
+  "hangman": {
+    "lead": "Galgenmännchen, das klassische Buchstabenratespiel: nenn Buchstaben und find das Wort, bevor der siebte Fehlversuch die Figur am Galgen vervollständigt.",
+    "scoring": "Ein Treffer füllt jede Stelle, an der dieser Buchstabe steht, und ein Fehlversuch zeichnet das nächste Teil der Figur. Ein Hinweis zeigt zuerst die Beschreibung des Worts, dann einen Buchstaben. Deine Wertung ist die Zeit plus ein Abzug für jeden Fehlversuch und Hinweis, eine verlorene Runde zählt als schwerste, und die niedrigste gewinnt."
+  },
+  "backgammon": {
+    "lead": "Backgammon ist das Würfel- und Steine-Rennen über 24 Punkte: schlag Blots, komm von der Bar zurück, tu deine Steine zuerst aus, und gewinn mit Gammon doppelt.",
+    "scoring": "Jede beendete Partie bringt 1 Punkt für einen einfachen Sieg, 2 für einen Gammon und 3 für einen Backgammon, als laufende Wertung ohne Verdopplungswürfel. Das Brett würfelt, hebt legale Züge hervor und trägt Steine aus. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Gemeinsam spielen auf zwei Handys. Standard- und Nackgammon-Eröffnungen sind enthalten."
+  },
+  "dominoes": {
+    "lead": "Domino, von Block und Draw bis All Fives: pass die offenen Enden an, geh als Erster aus, und wert die Augen, die deinen Gegnern bleiben.",
+    "scoring": "Spiel auf dem Steinebrett in der App, ein Handy geht am Tisch reihum, oder trage die Werte aus einem echten Set ein. Das Brett weiß, ob deine Variante aus dem Talon zieht, und wertet offene Enden bei All Fives. Wer ausgeht, oder wer die wenigsten Augen hält, wenn die Reihe blockiert, bekommt die Augen der anderen Hände, bis zum Zielwert."
+  },
+  "rummikub": {
+    "lead": "Rummikub ist das Steine-Rommé: leg Folgen und Gruppen aus, eröffne mit 30 Punkten, und leer als Erster dein Gestell.",
+    "scoring": "Endet eine Runde, trägt jeder andere Spieler den Wert der Steine ein, die ihm im Gestell bleiben, ein Joker zählt 30. Der Sieger bekommt die ganze Summe gutgeschrieben, und alle anderen gehen mit ihrer eigenen Summe ins Minus. Nach ein paar Runden gewinnt die höchste Summe."
+  },
+  "cluedo": {
+    "lead": "Cluedo ist der klassische Mordfall-Brettspielklassiker. Braggster gibt dir einen privaten Detektivblock, sodass niemand dir aufs Blatt schaut.",
+    "scoring": "Der Block hat 21 Zeilen für Verdächtige, Waffen und Räume, eine Umschlagspalte, die zwischen leer, ausgeschlossen und hat es wechselt, und eine freie Notizspalte. Die App teilt nie Karten aus und sieht sie auch bei niemandem. Ist der Fall gelöst, trägst du den Sieger ein, und er zählt in der Statistik."
+  },
+  "darts": {
+    "lead": "Darts ab 501 oder 301: zähl mit drei Darts pro Zug herunter, lande auf genau null, um zu gewinnen, und wirf bust, wenn du drüber schießt.",
+    "scoring": "Trage jeden Wurf auf einer Dartscheibe am Bildschirm ein, oder gib die Zugsumme direkt ein, und der Punktezettel zieht sie von deinem verbleibenden Wert ab. Ein Zug, der dich unter null bringen würde, ist ein Bust und zählt nicht. Der erste Spieler, der genau bei null landet, gewinnt das Leg."
+  },
+  "bowling": {
+    "lead": "Zehn-Pin-Bowling gewertet wie der Papierbogen an der Bahn: zehn Frames, Strikes tragen die nächsten zwei Bälle, Spares den nächsten einen.",
+    "scoring": "Trage die Pins jedes Balls ein, und der Punktezettel errechnet die Frames, lässt ein Frame leer, bis sein Strike- oder Spare-Bonus feststeht, genau wie ein echter Punktezettel. Das zehnte Frame bekommt seine Bonusbälle, und ein perfektes Spiel ist 300."
+  },
+  "kegelen": {
+    "lead": "Kegeln ist Neunkegeln, wie es in niederländischen und deutschen Bahnen gespielt wird: jeder umgeworfene Kegel bringt einen Punkt, ohne Strikes und ohne Spares.",
+    "scoring": "Vereinbart, wie viele Würfe jeder bekommt, dann trägst du die Kegel ein, die jeder Spieler bei jedem Wurf umgeworfen hat. Deine Summe ist einfach die Addition. Volle Bos stellt bei jedem Wurf alle neun Kegel neu auf, und Afruimen spielt weiter mit dem, was stehen bleibt, bis alle neun liegen."
+  },
+  "midgetgolf": {
+    "lead": "Minigolf über 9 oder 18 Bahnen: zähl jeden Schlag, und die wenigsten Schläge am Ende der Runde gewinnen.",
+    "scoring": "Trage die Schläge jedes Spielers nach jeder Bahn ein, und der Punktezettel führt die laufenden Summen. Wähl 9 oder 18 Bahnen, wenn du die Runde einrichtest. Die niedrigste Summe gewinnt, und die Rangliste wertet entsprechend."
+  },
+  "tennis": {
+    "lead": "Tennis-Zählen leicht gemacht: tipp an, wer den Punkt gewonnen hat, und braggster macht aus Punkten Spiele, aus Spielen Sätze und aus Sätzen die Partie.",
+    "scoring": "Punkte zählen 0, 15, 30 und 40, Einstand braucht einen Zwei-Punkte-Vorsprung, ein Satz braucht sechs Spiele und zwei Spiele Vorsprung, und 6:6 geht in den Tiebreak. Wähl Best of three oder Best of five Sätze. Du tippst immer nur an, wer den Punkt gewonnen hat."
+  },
+  "padel": {
+    "lead": "Padel-Zählen für zwei Zweierteams: tipp das Team an, das den Punkt gewonnen hat, und braggster führt die Spiele und Sätze für dich.",
+    "scoring": "Spiele zählen wie beim Tennis, und bei 40:40 wählst du zwischen dem Golden Point, bei dem der nächste Punkt entscheidet, und dem Spiel auf Vorteil. Sätze gehen bis sechs Spiele mit zwei Spielen Vorsprung und Tiebreak bei 6:6. Ein Match-Tiebreak bis 10 kann den dritten Satz ersetzen."
+  },
+  "tabletennis": {
+    "lead": "Tischtennis-Spiele bis 11 Punkte, gewonnen mit zwei Punkten Vorsprung, über Best of 3, 5 oder 7 Spiele.",
+    "scoring": "Tipp den Spieler an, der den Ballwechsel gewonnen hat, und der Punktezettel führt die Punkte und Spiele, inklusive Weiterspielen bei 10:10, bis jemand mit zwei Punkten vorne liegt. Wer genug Spiele gewinnt, holt sich die Partie zuerst."
+  },
+  "generic": {
+    "lead": "Das Leere Scoreblatt führt die Punkte für jedes Spiel ohne eigenen Punktezettel: nenn die Spieler, füge Runden hinzu, und die App addiert für dich.",
+    "scoring": "Wähl beim Start, ob die höchste oder die niedrigste Summe gewinnt, dann trage die Punkte aller Runde für Runde ein. Braggster führt die laufenden Summen und die Rangliste, und die Partie zählt in der Statistik wie jedes andere Spiel. Es ist immer kostenlos."
+  },
+  "freestyle": {
+    "lead": "Freestyle ist ein kostenloser Karten- und Würfeltisch für selbst ausgedachte Spiele: teil Karten aus, würfel am Bildschirm, und führt eure eigene Wertung.",
+    "scoring": "Wähl, wie viele Karten und Würfel ausgeteilt werden, pro Spieler oder an einen gemeinsamen Tisch, und spielt, welche Regeln euer Tisch vereinbart. Trage die Punkte jeder Runde ein und wähl, ob die höchste oder niedrigste Summe gewinnt. Freestyle ist immer kostenlos."
+  }
+}

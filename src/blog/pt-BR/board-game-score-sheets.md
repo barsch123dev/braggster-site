@@ -8,26 +8,29 @@ meta_title: "Fichas de Pontuação para Jogos de Tabuleiro"
 meta_description: "Como marcar pontos em jogos de tabuleiro como Dominoes, Backgammon e Rummikub, e quais tabuleiros dá para jogar direto no celular. App local, sem cadastro."
 primary_keyword: "app para marcar pontos jogos de tabuleiro"
 secondary_keywords:
-  - "planilha de pontuacao jogo de tabuleiro"
+  - "planilha de pontuação jogo de tabuleiro"
   - "como marcar pontos jogo de tabuleiro"
   - "jogar tabuleiro no celular"
   - "jogo de tabuleiro para dois"
   - "app placar jogo de tabuleiro"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
   - ItemList
 internal_links:
   - /games/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
   - /blog/how-to-score-dominoes/
   - /blog/how-to-score-backgammon/
   - /blog/how-to-score-rummikub/
   - /blog/card-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: "Rummikub, Cluedo e Connect Four são marcas registradas de seus respectivos editores. O Braggster não tem vínculo com eles nem apoio ou licença deles, e cada nome é usado apenas de forma referencial."
+trademark_note: "Rummikub, Cluedo, Connect Four e Othello são marcas registradas de seus respectivos editores. O Braggster não tem vínculo com eles nem apoio ou licença deles, e cada nome é usado apenas de forma referencial."
 ---
 
 # Fichas de Pontuação e Tabuleiros Jogáveis para Jogos de Tabuleiro
@@ -37,7 +40,8 @@ geram um número a cada rodada, como Dominoes e Rummikub, e pedem uma ficha que 
 verdade. Outros não geram nada dentro de uma única partida: Chess e Tic Tac Toe simplesmente
 terminam, e o que você realmente quer acompanhar é o placar acumulado ao longo da noite.
 
-O Braggster cobre os dois casos, e para dez jogos de tabuleiro ele também dá o tabuleiro em si.
+O Braggster cobre os dois casos, e para oito jogos de tabuleiro ele também dá o tabuleiro em si, em
+um celular só ou, em cinco deles, com um celular para cada jogador.
 
 ## Jogos que pontuam um número
 
@@ -60,8 +64,8 @@ Aprofunde-se: [pontuação de Dominoes](/blog/how-to-score-dominoes/),
 
 ## Jogos sem pontuação dentro de uma partida
 
-Chess, Checkers, International draughts, Connect Four e Tic Tac Toe têm exatamente um resultado
-por partida: alguém vence, ou é empate. Não há número nenhum para anotar.
+Chess, Checkers, International draughts, Othello, Connect Four e Tic Tac Toe têm exatamente um
+resultado por partida: alguém vence, ou é empate. Não há número nenhum para anotar.
 
 O Braggster trata uma partida terminada como uma rodada que vale uma vitória, então o confronto
 vira um placar de sessão. Isso reflete como as pessoas realmente jogam esses jogos: não uma
@@ -74,25 +78,34 @@ Aprofunde-se: [pontuação do Backgammon, gamão e gamão duplo](/blog/how-to-sc
 
 ## Tabuleiros que dá para jogar de verdade no celular
 
-Dez jogos de tabuleiro no Braggster são jogáveis direto no aparelho, não só pontuados:
+Oito jogos de tabuleiro no Braggster são jogáveis direto no aparelho, não só pontuados:
 
 | Jogo | O que é o tabuleiro dentro do app |
 |---|---|
-| Chess | Tabuleiro 8x8 para jogar passando o celular, com todas as regras de movimento aplicadas: xeque, xeque-mate, afogamento, roque, en passant, promoção |
-| Checkers | Tabuleiro 8x8 para jogar passando o celular, regras americana e inglesa, capturas forçadas e em cadeia |
-| International draughts | Tabuleiro 10x10 para jogar passando o celular, damas voadoras, captura máxima obrigatória, casa por casa |
-| Backgammon | Tabuleiro para jogar passando o celular: role, toque para mover, acerte blots, reentre e tire as peças |
-| Dominoes | Tabuleiro de peças para jogar passando o celular: encaixe na ponta aberta correspondente, compre ou passe conforme a variante |
-| Connect Four | Tabuleiro 7x6 para jogar passando o celular, toque em uma coluna e a gravidade escolhe a linha |
-| Tic Tac Toe | Grade 3x3 para jogar passando o celular, com detecção automática de vitória e empate |
-| Sudoku | Grade de quebra-cabeça gerada, cinco níveis de dificuldade |
+| [Chess](/games/chess/) | Tabuleiro 8x8 com todas as regras de movimento aplicadas: xeque, xeque-mate, afogamento, roque, en passant, promoção |
+| [Checkers](/games/checkers/) | Tabuleiro 8x8, regras americana e inglesa, capturas forçadas e em cadeia |
+| [International draughts](/games/dammen/) | Tabuleiro 10x10, damas voadoras, captura máxima obrigatória, casa por casa |
+| [Othello](/games/reversi/) | Tabuleiro 8x8 que vira toda linha presa e passa a vez por você quando você não tem jogada |
+| [Backgammon](/games/backgammon/) | Role, toque para mover, acerte blots, reentre e tire as peças |
+| [Dominoes](/games/dominoes/) | Tabuleiro de peças para jogar passando o celular: encaixe na ponta aberta correspondente, compre ou passe conforme a variante |
+| [Connect Four](/games/connectfour/) | Tabuleiro 7x6 para jogar passando o celular, toque em uma coluna e a gravidade escolhe a linha |
+| [Tic Tac Toe](/games/tictactoe/) | Grade 3x3 para jogar passando o celular, com detecção automática de vitória e empate |
 
 Todos eles registram o resultado pelo mesmo caminho de uma rodada digitada à mão, então uma
 partida jogada no app nunca pode pontuar diferente de uma que você registrou manualmente.
 
+## Jogar juntos, um celular para cada um
+
+Todo tabuleiro funciona passando um celular só de mão em mão. Chess, Checkers, International
+draughts, Othello e Backgammon também jogam em dois celulares com o [Jogar juntos](/play-together/):
+um celular abre uma mesa e mostra um código QR, o outro escaneia, e cada jogador joga do próprio
+celular na mesma rede Wi-Fi. A última jogada fica marcada nos dois tabuleiros, não há conta nem
+internet envolvida, e entrar é grátis. O passo a passo, inclusive o que fazer quando uma mesa não
+aparece, está no [guia para jogar juntos em vários celulares](/blog/play-games-together-on-multiple-phones/).
+
 ## Jogando contra o computador
 
-Quatro dos jogos de tabuleiro também têm uma tela de treino contra um adversário virtual, cada
+Cinco dos jogos de tabuleiro também têm uma tela de treino contra um adversário virtual, cada
 um com três níveis:
 
 - **Chess** usa uma busca alfa beta com avaliação por posição de peça. Você pode jogar com as
@@ -100,11 +113,13 @@ um com três níveis:
 - **Checkers** avalia cadeias de captura múltipla como o único lance que elas são.
 - **International draughts** faz o mesmo no tabuleiro 10x10, onde uma sequência inteira de
   captura conta como um único lance.
+- **Othello** busca com uma tabela de pesos por casa mais mobilidade, e só conta discos no final
+  da partida.
 - **Backgammon** não pode usar busca alfa beta de jeito nenhum, porque os dados tornam todo nó da
   árvore um nó de chance. Ele roda um expectimax sobre os vinte e um resultados distintos de
   dados possíveis.
 
-Os quatro rodam em segundo plano para o tabuleiro continuar respondendo enquanto o motor pensa.
+Os cinco rodam em segundo plano para o tabuleiro continuar respondendo enquanto o motor pensa.
 Partidas de treino nunca são registradas, então elas não afetam suas estatísticas nem sua taxa de
 vitórias.
 
@@ -118,8 +133,12 @@ tela em vez de encolher as casas abaixo de um tamanho de toque confortável.
 ## Perguntas frequentes
 
 **Dá para duas pessoas jogarem em um celular só?**
-Sim. Os tabuleiros jogáveis funcionam passando o aparelho de mão em mão, um por vez. Não existe
-multiplayer online nem cadastro.
+Sim. Os tabuleiros jogáveis funcionam passando o aparelho de mão em mão, um por vez. Não precisa
+de cadastro.
+
+**Dá para jogar em dois celulares?**
+Dá, em Chess, Checkers, International draughts, Othello e Backgammon. Com o Jogar juntos, cada
+jogador usa o próprio celular na mesma rede Wi-Fi, sem conta e sem conexão com a internet.
 
 **O app funciona para um jogo de tabuleiro que não está na lista?**
 Sim. A planilha em branco, sempre grátis, marca pontos de qualquer coisa, e existe uma ficha
@@ -132,8 +151,8 @@ Não. Partidas de treino contra o computador nunca são registradas, de propósi
 Não. Não existe dado dobrador nem nada apostado em lugar nenhum do app.
 
 **Por que o Sudoku aparece como jogo de tabuleiro em algumas páginas?**
-Não deveria. O Sudoku fica com os quebra-cabeças, junto com os outros onze quebra-cabeças solo
-que o Braggster oferece hoje. Veja o [guia de quebra-cabeças](/blog/puzzle-games/).
+Não deveria. O Sudoku fica com os quebra-cabeças, junto com os outros dezessete quebra-cabeças
+solo que o Braggster oferece hoje na própria aba Quebra-cabeças. Veja o [guia de quebra-cabeças](/blog/puzzle-games/).
 
 ---
 

@@ -16,6 +16,7 @@ secondary_keywords:
   - "domino punktezettel"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -124,8 +125,8 @@ bei.
 Zum Anlegen als eine. Für die Summe der offenen Enden bei All Fives als beide.
 
 **Kann ich Dominoes auf dem Handy mit jemandem neben mir spielen?**
-Ja. Das Brett ist zum Weiterreichen gedacht, du reichst das Gerät am Tisch herum. Es gibt kein
-Onlinespiel und kein Konto.
+Ja. Das Brett ist zum Weiterreichen gedacht: ein Gerät, das am Tisch herumgereicht wird. Ein Konto
+brauchst du nicht.
 
 ---
 

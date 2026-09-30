@@ -7,15 +7,16 @@ category: board
 game_id: dominoes
 meta_title: "Pontuação do Dominoes: Block, Draw e All Fives"
 meta_description: "Como funciona a pontuação do dominó nas três variantes principais, o valor das pontas abertas no All Fives, e um tabuleiro jogável que soma cada rodada."
-primary_keyword: "pontuacao do domino"
+primary_keyword: "pontuação do dominó"
 secondary_keywords:
-  - "como pontuar domino"
-  - "regras do all fives domino"
-  - "regras do block domino"
-  - "domino double six"
-  - "ficha de pontos domino"
+  - "como pontuar dominó"
+  - "regras do all fives dominó"
+  - "regras do block dominó"
+  - "dominó double six"
+  - "ficha de pontos dominó"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -124,8 +125,8 @@ para o total.
 Para encaixar, um. Para o total das pontas abertas no All Fives, os dois lados.
 
 **Dá para jogar dominó no celular com alguém do meu lado?**
-Sim. O tabuleiro é para jogar passando o celular, então você passa o aparelho pela mesa. Não
-existe jogo online nem cadastro.
+Sim. O tabuleiro é para jogar passando o celular: um aparelho só, passado pela mesa. Não precisa
+de cadastro.
 
 ---
 

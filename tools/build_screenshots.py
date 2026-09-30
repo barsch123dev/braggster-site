@@ -8,9 +8,10 @@ on the standard library.
 
     python3 tools/build_screenshots.py --src <dir>
 
-The captures come from the app repo's own harness, which renders the nine
-listing screens in all seven languages on a 6.9" simulator; the site serves the
-handful named in SHOTS below:
+The captures come from the app repo's own harness, which renders the listing
+screens in all seven languages on a 6.9" simulator, or from a listing handoff
+folder in the same <lang>/ layout; the site serves the handful named in
+SITE_NAMES below:
 
     fvm flutter drive \\
       --driver=integration_test/store_screenshot_driver.dart \\
@@ -51,13 +52,35 @@ LOCALES = {
 
 # Capture stem -> the name the site uses. The captures are numbered for the App
 # Store's slot order; the site refers to them by what they show.
+#
+# Two capture layouts are accepted, and the map holds both. The app repo's own
+# harness writes app/build/screenshots/iphone69/<lang>/NN-name.png; the 3.0
+# listing handoff (~/Documents/Braggster/handoff-3.0/captures/iphone69/<lang>/)
+# names the same screens after their slot and status. A stem that is not in the
+# source folder is skipped; a folder missing any of SITE_NAMES fails.
 SHOTS = {
+    # The app harness.
     "01-home": "home",
     "02-games": "games",
     "03-yahtzee": "yahtzee",
     "05-chess": "chess",
+    "07-murdoku": "murdoku",
     "08-sudoku": "sudoku",
+    "10-play-together": "play-together",
+    # The 3.0 listing handoff.
+    "01-hook-UPDATE": "home",
+    "02-games-UPDATE": "games",
+    "03-play-together-NEW": "play-together",
+    "04-dice-UPDATE": "yahtzee",
+    "05-boards-CHECK": "chess",
+    "06-murder-sudoku-CHECK": "murdoku",
+    "07-solo-CHECK": "sudoku",
+    "08-crossword-UPDATE": "crossword",
 }
+
+#: The shots the site actually serves (SHOTS in tools/build.py). Every one of
+#: them has to come out of a run, whichever layout the captures are in.
+SITE_NAMES = {"home", "play-together", "chess", "games", "murdoku", "yahtzee"}
 
 #: The phone frame is 320 CSS pixels wide on the site, and the srcset offers the
 #: same again for denser screens.
@@ -90,11 +113,12 @@ def main() -> int:
 
     written: list[tuple[str, int]] = []
     for folder, locale in LOCALES.items():
+        produced: set[str] = set()
         for stem, name in SHOTS.items():
             source = args.src / folder / f"{stem}.png"
             if not source.exists():
-                print(f"missing {source}", file=sys.stderr)
-                return 1
+                continue
+            produced.add(name)
             image = Image.open(source).convert("RGB")
             if image.size != EXPECTED_SIZE:
                 print(
@@ -106,6 +130,10 @@ def main() -> int:
             for width, suffix in ((WIDTH_1X, ""), (WIDTH_2X, "@2x")):
                 out = OUT_DIR / locale / f"{name}{suffix}.webp"
                 written.append((str(out.relative_to(ROOT)), encode(image, out, width)))
+        missing = SITE_NAMES - produced
+        if missing:
+            print(f"{args.src / folder}: no capture for {sorted(missing)}", file=sys.stderr)
+            return 1
 
     total = sum(size for _, size in written)
     biggest = max(written, key=lambda entry: entry[1])

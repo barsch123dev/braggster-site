@@ -16,6 +16,7 @@ secondary_keywords:
   - "hoja de puntuacion domino"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -124,7 +125,8 @@ total.
 Para emparejar, como uno. Para el total de extremos abiertos en All Fives, como dos.
 
 **¿Puedo jugar dominó desde el móvil con alguien a mi lado?**
-Sí. El tablero funciona pasando el dispositivo por la mesa. No hay juego en línea ni cuenta.
+Sí. El tablero funciona pasando el dispositivo: un solo dispositivo, que se pasa por la mesa. No hace
+falta cuenta.
 
 ---
 

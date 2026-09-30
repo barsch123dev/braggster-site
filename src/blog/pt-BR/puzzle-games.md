@@ -1,20 +1,21 @@
 ---
-title: "13 Quebra-Cabeças de Lógica em Um App, Todos Gerados e Todos Solúveis"
+title: "18 Quebra-Cabeças de Lógica em Um App, Todos Gerados e Todos Solúveis"
 slug: puzzle-games
 locale: pt-BR
 type: pillar
 category: puzzle
-meta_title: "13 Quebra-Cabeças de Lógica, Infinitos e Solúveis"
+meta_title: "18 Quebra-Cabeças de Lógica, Infinitos e Solúveis"
 meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo e mais. Cada quebra-cabeça gerado na hora e verificado para ter uma única solução."
-primary_keyword: "app de quebra cabecas de logica"
+primary_keyword: "app de quebra cabeças de lógica"
 secondary_keywords:
-  - "app de quebra cabeca offline"
+  - "app de quebra cabeça offline"
   - "app sudoku e kakuro"
   - "app de nonogram"
-  - "gerador de quebra cabeca solucao unica"
-  - "jogos de quebra cabeca sem anuncio"
+  - "gerador de quebra cabeça solução única"
+  - "jogos de quebra cabeça sem anúncio"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -31,7 +32,7 @@ internal_links:
 trademark_note: null
 ---
 
-# 13 Quebra-Cabeças de Lógica em Um App, Todos Gerados e Todos Solúveis
+# 18 Quebra-Cabeças de Lógica em Um App, Todos Gerados e Todos Solúveis
 
 A maioria dos apps de quebra-cabeça vem com um banco de puzzles fixo que um dia acaba. O
 Braggster gera cada quebra-cabeça na hora, sob demanda, e depois prova que existe exatamente uma
@@ -39,7 +40,8 @@ solução antes de mostrá-lo a você. Essa segunda parte é o que quase ningué
 entre um quebra-cabeça que você resolve raciocinando e um em que, em algum momento, você acaba
 tendo que chutar.
 
-Aqui estão os treze, o que cada um realmente pede de você, e como cada um é pontuado.
+Aqui estão os dezoito, o que cada um realmente pede de você, e como cada um é pontuado. No app eles
+têm uma aba própria, Quebra-cabeças, ao lado dos jogos.
 
 ## A família de colocação de números
 
@@ -62,10 +64,14 @@ forma livre, não uma linha nem um quadrante.
 **Futoshiki.** Um quadrado latino com sinais de desigualdade entre células vizinhas, desenhados
 de modo que o vértice sempre aponta para o valor menor. De 4x4 até 7x7.
 
-**Binairo.** Também chamado de Takuzu ou simplesmente o quebra-cabeça binário. Dois símbolos, 0 e
-1. Nenhum trio de símbolos iguais em linha ou coluna, exatamente metade de cada um por fileira, e
+**Binairo.** Também chamado de Takuzu ou simplesmente o quebra-cabeça binário. Dois símbolos, 0
+e 1. Nenhum trio de símbolos iguais em linha ou coluna, exatamente metade de cada um por fileira, e
 nenhuma linha ou coluna repetida. De 6x6 até 12x12, sempre par. Toque em uma célula para alternar
 entre vazio, 0 e 1: com dois símbolos, não há teclado numérico no caminho.
+
+**[Tectonic](/games/tectonic/).** Uma grade dividida em regiões demarcadas de uma a cinco células.
+Cada região tem de 1 até o seu próprio tamanho, uma vez cada, e nenhuma célula vizinha, diagonais
+incluídas, pode repetir um dígito. De 5x5 no Iniciante até 8x8 no Diabólico.
 
 Aprofunde-se: [Sudoku](/blog/how-to-play-sudoku/), [Killer Sudoku](/blog/how-to-play-killer-sudoku/).
 
@@ -103,13 +109,30 @@ quatro níveis de comprimento, de 4 a 7 letras. Os estados das letras nunca são
 cor: posição certa é um bloco sólido com uma barra, na palavra mas fora do lugar é um anel com um
 ponto, ausente é riscado.
 
-**Kruiswoord.** Uma palavra cruzada gerada em tempo real a partir de um grande dicionário de
+**Crossword.** Uma palavra cruzada gerada em tempo real a partir de um grande dicionário de
 palavras com pistas, em vez de um banco fixo, então os quebra-cabeças são ilimitados. Mini 5x5,
 Midi 7x7 e Padrão 15x15.
 
 **Woordzoeker.** Caça-palavras. As palavras correm em qualquer uma das oito direções, para frente
-ou para trás, e você encontra uma arrastando da primeira até a última letra. De 8x8 com 5 palavras
+ou para trás, e você encontra uma tocando na primeira letra e depois na última. De 8x8 com 5 palavras
 até 14x14 com 12.
+
+**[Zweeds](/games/zweeds/).** A palavra-cruzada com setas, ou cruzadinha sueca: não há lista de
+pistas, porque cada pista fica dentro da grade ao lado de uma seta que mostra para onde a resposta
+corre. Cada partida é uma grade montada na hora, de um Mini 4x4 até um Grand 14x14.
+
+**[Cijfercode](/games/cijfercode/).** O palavra-código: uma grade de palavras cruzadas preenchida,
+sem nenhuma pista, em que cada letra foi trocada por um número. Algumas letras já começam reveladas,
+o suficiente para decifrar o resto, e digitar uma letra preenche todas as células que compartilham
+o mesmo número. Mini 7x7, Midi 9x9 e Padrão 11x11.
+
+**[Filippine](/games/filippine/).** Uma pilha de linhas com pistas cujas respostas se alinham em uma
+coluna marcada, e essa coluna soletra uma palavra-solução escondida de cima a baixo. 4, 6 ou 8
+linhas.
+
+**[Hangman](/games/hangman/).** Adivinhe a palavra uma letra de cada vez antes que o sétimo erro
+complete a figura. Uma dica mostra primeiro a descrição da palavra, depois uma letra, e três níveis
+de comprimento de palavra vão de 4 até 15 letras.
 
 ## Como os quebra-cabeças são pontuados
 
@@ -128,7 +151,7 @@ As ajudas são apenas anotações a lápis e dicas, dependendo do quebra-cabeça
 
 Todo quebra-cabeça gerado no Braggster passa por um solucionador antes de chegar até você:
 
-- Sudoku, Kakuro, Futoshiki, Binairo e Calcudoku são verificados por solucionadores de
+- Sudoku, Kakuro, Futoshiki, Binairo, Calcudoku e Tectonic são verificados por solucionadores de
   backtracking que confirmam que existe exatamente uma solução.
 - Killer Sudoku é verificado sob a restrição combinada de Sudoku e gaiolas juntas, não cada uma
   isolada.
@@ -138,6 +161,8 @@ Todo quebra-cabeça gerado no Braggster passa por um solucionador antes de chega
   contra suas próprias pistas por um solucionador de linha mais busca limitada.
 - Logikwis e Murder Sudoku verificam se o caso tem uma única atribuição consistente antes de
   escrever o briefing.
+- O Cijfercode roda um solucionador para escolher o menor número de letras reveladas a partir do
+  qual o código inteiro ainda pode ser deduzido.
 
 O efeito prático: se você travou, sempre existe uma próxima dedução disponível. Você nunca precisa
 chutar e conferir.

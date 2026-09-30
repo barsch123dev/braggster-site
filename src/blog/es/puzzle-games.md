@@ -1,10 +1,10 @@
 ---
-title: "13 Puzles de Lógica en una App, Todos Generados y Todos Resolubles"
+title: "18 Puzles de Lógica en una App, Todos Generados y Todos Resolubles"
 slug: puzzle-games
 locale: es
 type: pillar
 category: puzzle
-meta_title: "13 Puzles de Lógica, Generados y Resolubles"
+meta_title: "18 Puzles de Lógica, Generados y Resolubles"
 meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo y más. Cada puzle se genera al momento y se verifica que tenga una sola solución."
 primary_keyword: "app de puzzles offline"
 secondary_keywords:
@@ -15,6 +15,7 @@ secondary_keywords:
   - "juegos de logica sin anuncios"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -31,14 +32,15 @@ internal_links:
 trademark_note: null
 ---
 
-# 13 Puzles de Lógica en una App, Todos Generados y Todos Resolubles
+# 18 Puzles de Lógica en una App, Todos Generados y Todos Resolubles
 
 La mayoría de apps de puzles vienen con un banco fijo que acaba agotándose. Braggster genera cada
 puzle al momento y luego demuestra que tiene exactamente una solución antes de mostrártelo. Esa
 segunda parte es la que casi nadie hace, y es la diferencia entre un puzle que puedes resolver
 razonando y uno donde al final tienes que adivinar.
 
-Aquí están los trece, qué te pide cada uno de verdad, y cómo se puntúan.
+Aquí están los dieciocho, qué te pide cada uno de verdad, y cómo se puntúan. En la app tienen una
+pestaña propia, Puzles, junto a los juegos.
 
 ## La familia de colocación numérica
 
@@ -67,6 +69,10 @@ que el vértice siempre apunta al valor más pequeño. De 4x4 a 7x7.
 símbolos iguales seguidos en una fila o columna, exactamente la mitad de cada uno por línea, y
 ninguna fila o columna idéntica a otra. De 6x6 a 12x12, siempre par. Toca una celda para pasarla
 por vacío, 0 y 1: con dos símbolos no hace falta ningún teclado numérico de por medio.
+
+**[Tectonic](/games/tectonic/).** Una cuadrícula dividida en regiones delimitadas de una a cinco
+celdas. Cada región contiene del 1 hasta su propio tamaño exactamente una vez, y dos celdas que se
+tocan, diagonales incluidas, no pueden compartir cifra. De 5x5 en Principiante a 8x8 en Diabólico.
 
 Para profundizar: [Sudoku](/blog/how-to-play-sudoku/), [Killer Sudoku](/blog/how-to-play-killer-sudoku/).
 
@@ -104,13 +110,29 @@ cuatro niveles de longitud de 4 a 7 letras. El estado de cada letra nunca se se�
 en su sitio es una casilla sólida con una barra, en la palabra pero en otro sitio es un anillo con
 un punto, ausente aparece tachado.
 
-**Kruiswoord.** Un crucigrama generado al momento a partir de un gran diccionario de palabras con
+**Crossword.** Un crucigrama generado al momento a partir de un gran diccionario de palabras con
 pistas, en lugar de un banco ya hecho, así que los puzles son ilimitados. Mini 5x5, Midi 7x7 y
 Estándar 15x15.
 
 **Woordzoeker.** Sopa de letras. Las palabras corren en cualquiera de ocho direcciones, hacia
-adelante o hacia atrás, y encuentras una arrastrando desde su primera letra hasta la última. De 8x8
+adelante o hacia atrás, y encuentras una tocando su primera letra y después la última. De 8x8
 con 5 palabras hasta 14x14 con 12.
+
+**[Zweeds](/games/zweeds/).** El crucigrama de flechas, o crucigrama sueco: no hay lista de pistas,
+porque cada pista está dentro de la cuadrícula junto a una flecha que indica por dónde corre su
+respuesta. Cada partida es una cuadrícula recién generada, de un Mini de 4x4 hasta un Grand de 14x14.
+
+**[Cijfercode](/games/cijfercode/).** El puzle de palabra en código: una cuadrícula de crucigrama
+llena y sin ninguna pista, donde cada letra se ha cambiado por un número. Unas pocas letras empiezan
+reveladas, justo las necesarias para descifrar el resto, y al escribir una letra se rellenan todas
+las celdas que comparten su número. Mini 7x7, Midi 9x9 y Estándar 11x11.
+
+**[Filippine](/games/filippine/).** Una pila de filas con pista cuyas respuestas se alinean en una
+columna marcada, y esa columna forma una palabra solución oculta de arriba abajo. 4, 6 u 8 filas.
+
+**[Hangman](/games/hangman/).** Adivina la palabra letra a letra antes de que el séptimo fallo
+complete la figura. Una pista muestra primero la descripción de la palabra, y después una letra, y
+tres niveles de longitud van de 4 hasta 15 letras.
 
 ## Cómo se puntúan los puzles
 
@@ -129,7 +151,7 @@ Las ayudas son solo notas a lápiz y pistas, según el puzle.
 
 Cada puzle generado en Braggster pasa por un solucionador antes de llegar a ti:
 
-- Sudoku, Kakuro, Futoshiki, Binairo y Calcudoku se comprueban con solucionadores por retroceso que
+- Sudoku, Kakuro, Futoshiki, Binairo, Calcudoku y Tectonic se comprueban con solucionadores por retroceso que
   confirman que existe exactamente una solución completa.
 - Killer Sudoku se verifica bajo la restricción combinada de Sudoku y jaulas juntas, no cada una por
   separado.
@@ -139,6 +161,8 @@ Cada puzle generado en Braggster pasa por un solucionador antes de llegar a ti:
   propias pistas con un solucionador de líneas más búsqueda acotada.
 - Logikwis y Murder Sudoku verifican que su caso tiene una única asignación consistente antes de
   escribir el informe.
+- Cijfercode ejecuta un solucionador para elegir el menor número de letras reveladas desde las que
+  todo el código aún se puede deducir.
 
 El efecto práctico: si te quedas atascado, siempre hay una siguiente deducción disponible. Nunca se
 te pide que adivines y compruebes.

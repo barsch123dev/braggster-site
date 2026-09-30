@@ -15,19 +15,22 @@ secondary_keywords:
   - "board game score tracker"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
   - ItemList
 internal_links:
   - /games/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
   - /blog/how-to-score-dominoes/
   - /blog/how-to-score-backgammon/
   - /blog/how-to-score-rummikub/
   - /blog/card-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: "Rummikub, Cluedo and Connect Four are the trademarks of their respective publishers. Braggster is not affiliated with or endorsed by them and each name is used referentially only."
+trademark_note: "Rummikub, Cluedo, Connect Four and Othello are the trademarks of their respective publishers. Braggster is not affiliated with or endorsed by them and each name is used referentially only."
 ---
 
 # Board Game Score Sheets and Playable Boards
@@ -37,7 +40,8 @@ every round, like Dominoes and Rummikub, and want a real calculating sheet. Othe
 at all inside a single game: Chess and Tic Tac Toe just end, and what you actually want tracked is
 the tally across the evening.
 
-Braggster handles both, and for ten board games it also gives you the board itself.
+Braggster handles both, and for eight board games it also gives you the board itself, on one
+phone or, for five of them, on a phone each.
 
 ## Games that score a number
 
@@ -59,8 +63,8 @@ Deep dives: [Dominoes scoring](/blog/how-to-score-dominoes/),
 
 ## Games with no score inside one game
 
-Chess, Checkers, International draughts, Connect Four and Tic Tac Toe have exactly one outcome per
-game: someone wins, or it is a draw. There is no number to write down.
+Chess, Checkers, International draughts, Othello, Connect Four and Tic Tac Toe have exactly one
+outcome per game: someone wins, or it is a draw. There is no number to write down.
 
 Braggster treats a finished game as a round worth one win, so the match becomes a session tally.
 That matches how people actually play these: not one game, but a run of them, and the interesting
@@ -73,25 +77,34 @@ Deep dive: [Backgammon scoring, gammons and backgammons](/blog/how-to-score-back
 
 ## Boards you can actually play on the phone
 
-Ten board games in Braggster are playable on the device, not just scored:
+Eight board games in Braggster are playable on the device, not just scored:
 
 | Game | What the in app board is |
 |---|---|
-| Chess | Hotseat 8x8 board with full legal move enforcement: check, checkmate, stalemate, castling, en passant, promotion |
-| Checkers | Hotseat 8x8 board, American and English rules, forced and multi jump captures |
-| International draughts | Hotseat 10x10 board, flying kings, compulsory maximum capture, tapped out square by square |
-| Backgammon | Hotseat board: roll, tap to move, hit blots, re-enter and bear off |
-| Dominoes | Hotseat tile board: place on the matching open end, draw or pass per variant |
-| Connect Four | Hotseat 7x6 board, tap a column and gravity picks the row |
-| Tic Tac Toe | Hotseat 3x3 grid with auto win and draw detection |
-| Sudoku | Generated puzzle grid, five difficulty tiers |
+| [Chess](/games/chess/) | 8x8 board with full legal move enforcement: check, checkmate, stalemate, castling, en passant, promotion |
+| [Checkers](/games/checkers/) | 8x8 board, American and English rules, forced and multi jump captures |
+| [International draughts](/games/dammen/) | 10x10 board, flying kings, compulsory maximum capture, tapped out square by square |
+| [Othello](/games/reversi/) | 8x8 board that flips every trapped line and passes for you when you have no move |
+| [Backgammon](/games/backgammon/) | Roll, tap to move, hit blots, re-enter and bear off |
+| [Dominoes](/games/dominoes/) | Hotseat tile board: place on the matching open end, draw or pass per variant |
+| [Connect Four](/games/connectfour/) | Hotseat 7x6 board, tap a column and gravity picks the row |
+| [Tic Tac Toe](/games/tictactoe/) | Hotseat 3x3 grid with auto win and draw detection |
 
 Every one of these commits its result through the same round path as a hand entered sheet, so a game
 you played in the app can never score differently from one you keyed in.
 
+## Play together on a phone each
+
+Every board works as pass and play on one phone. Chess, Checkers, International draughts, Othello
+and Backgammon also play on two phones with [Play together](/play-together/): one phone starts a
+table and shows a QR code, the other scans it, and each player moves from their own phone over the
+same Wi-Fi. The last move is marked on both boards, there is no account and no internet involved,
+and joining is free. The step by step, including what to do when a table does not show up, is in
+the [guide to playing together on several phones](/blog/play-games-together-on-multiple-phones/).
+
 ## Playing against the computer
 
-Four of the board games also have a practice screen against a computer opponent, each with three
+Five of the board games also have a practice screen against a computer opponent, each with three
 levels:
 
 - **Chess** uses an alpha beta search with piece square evaluation. You can play White or Black,
@@ -99,10 +112,12 @@ levels:
 - **Checkers** searches multi jump chains as the single turn they are.
 - **International draughts** does the same over the 10x10 board, where a whole capture sequence is
   one move.
+- **Othello** searches with a square weight table plus mobility, and counts discs only in the
+  endgame.
 - **Backgammon** cannot use alpha beta at all, because the dice make every node a chance node. It
   runs an expectimax over the twenty one distinct rolls instead.
 
-All four run on a background thread so the board stays responsive while the engine thinks. Practice
+All five run on a background thread so the board stays responsive while the engine thinks. Practice
 games are never recorded, so they do not pollute your statistics or your win rate.
 
 ## Accessibility built in, not bolted on
@@ -115,8 +130,12 @@ cells below a comfortable tap target.
 ## Frequently asked questions
 
 **Can two people play on one phone?**
-Yes. The playable boards are hotseat, or pass and play: you hand the device across the table. There
-is no online multiplayer and no account.
+Yes. The playable boards are hotseat, or pass and play: you hand the device across the table. No
+account needed.
+
+**Can we play on two phones instead?**
+Yes, for Chess, Checkers, International draughts, Othello and Backgammon. With Play together each
+player uses their own phone over the same Wi-Fi, with no account and no internet connection.
 
 **Does the app work for a board game that is not in the list?**
 Yes. The always free Blank scorecard keeps score for anything, and there is a generic board game
@@ -129,8 +148,8 @@ No. Practice games against the computer are deliberately never recorded.
 No. There is no doubling cube and nothing is staked anywhere in the app.
 
 **Why is Sudoku listed as a board game on some pages?**
-It should not be. Sudoku belongs with the puzzles, along with the eleven other single player puzzles
-Braggster now ships. See the [puzzle guide](/blog/puzzle-games/).
+It should not be. Sudoku belongs with the puzzles, along with the seventeen other single player
+puzzles Braggster now ships on their own Puzzles tab. See the [puzzle guide](/blog/puzzle-games/).
 
 ---
 

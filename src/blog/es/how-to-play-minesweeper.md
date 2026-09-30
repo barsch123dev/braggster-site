@@ -132,6 +132,6 @@ cuenta que crear.
 
 ---
 
-**Más:** consulta los trece [puzles de lógica](/blog/puzzle-games/), lee sobre la
+**Más:** consulta los dieciocho [puzles de lógica](/blog/puzzle-games/), lee sobre la
 [dificultad del Sudoku](/blog/how-to-play-sudoku/), o explora el catálogo en
 [braggster.com/games](/games/).

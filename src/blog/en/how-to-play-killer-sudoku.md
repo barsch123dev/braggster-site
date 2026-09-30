@@ -140,6 +140,6 @@ No. They are generated fresh on demand and verified unique before they are shown
 
 ---
 
-**More:** see all thirteen [logic puzzles](/blog/puzzle-games/), read about
+**More:** see all eighteen [logic puzzles](/blog/puzzle-games/), read about
 [Sudoku difficulty](/blog/how-to-play-sudoku/), or browse the catalogue at
 [braggster.com/games](/games/).
