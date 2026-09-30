@@ -76,6 +76,8 @@ SHOTS = {
     "06-murder-sudoku-CHECK": "murdoku",
     "07-solo-CHECK": "sudoku",
     "08-crossword-UPDATE": "crossword",
+    # Supporting captures the listing does not use, served in the blog guides.
+    "xx-backgammon-SUPPORTING": "backgammon",
 }
 
 #: The shots the site actually serves (SHOTS in tools/build.py). Every one of

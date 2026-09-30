@@ -56,6 +56,12 @@ matches `src/games.json`, which never translates a game name.
 - Keep the markdown structure identical: same headings, same tables with the same rows, same FAQ
   questions, same closing link block.
 - Do not translate link paths. `/blog/how-to-score-hearts/` and `/games/` stay exactly as written.
+- **Screenshot lines** (`![alt](shot:<name> "Caption")`): translate the alt text and the caption,
+  keep `shot:<name>` exactly as written, and keep the lines where they are. The available names are
+  the files in `assets/screenshots/<locale>/`; the image shown is your language's own capture, so
+  when the alt names a button or a screen title, use the words that capture shows (and the app's
+  wording for the feature, such as Samen spelen or Jouer ensemble). No `]` in the alt and no `"` in
+  the caption.
 - Write natural prose in the target language. A translation that reads like English with the words
   swapped is worse than a looser one that reads like it was written in that language.
 - Numbers, scoring tables and rules must survive exactly. If the English says 162 card points, the

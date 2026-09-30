@@ -15,6 +15,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
+updated: 2026-09-30
 schema:
   - Article
   - FAQPage
@@ -68,6 +69,8 @@ medio. Un amigo en otra casa no puede unirse.
 5. **Empieza la partida.** Cuando todos están sentados, el anfitrión la inicia, y cada jugador juega
    su propio puesto en su propio móvil.
 
+![La pantalla de Jugar juntos del anfitrión: un código QR para que los demás lo escaneen, Alex y Sam sentados a la mesa, y Mia pidiendo unirse, con los botones Aceptar y Rechazar](shot:play-together "El móvil del anfitrión muestra el código para escanear y quién quiere unirse.")
+
 ## Qué juegos puedes jugar juntos
 
 - **[Yahtzee](/games/yahtzee/)**, hasta seis jugadores. El anfitrión puede activar los dados
@@ -80,6 +83,10 @@ medio. Un amigo en otra casa no puede unirse.
 - **[Backgammon](/games/backgammon/)**, con victorias simples, gammons y backgammons puntuados como
   siempre. Consulta la [guía de puntuación de Backgammon](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, donde cada volteo se refleja en ambas pantallas.
+
+![Una hoja de Yahtzee para Alex, Sam, Mia y Lee, con la tirada de dados digital de Alex debajo y lo que puntuaría esa tirada en cada categoría](shot:yahtzee "Yahtzee, con dados digitales para toda la mesa.")
+![Un tablero de ajedrez en la posición inicial, turno de Alex contra Sam, con un caballo blanco seleccionado y sus dos movimientos posibles marcados](shot:chess "Ajedrez, con cada movimiento legal validado.")
+![Un tablero de backgammon en la posición inicial, turno de Alex, con el botón Tira los dados debajo](shot:backgammon "Backgammon, listo para la primera tirada.")
 
 En los tableros, el último movimiento se marca en ambos móviles, así ves lo que acaba de hacer tu
 rival en cuanto miras la pantalla. El resumen completo de los tableros está en la

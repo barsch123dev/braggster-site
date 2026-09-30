@@ -35,7 +35,7 @@ slug is a minor ranking factor next to the title and the body.
 `tools/build.py` holds the renderer. It is a small closed subset of markdown rather than a library,
 because this repo has no dependencies and adding one for eighteen articles would be the largest
 thing in it. It handles ATX headings, paragraphs, bold, inline code, links, pipe tables, both list
-kinds and rules, and raises on anything it does not recognise so an unsupported construct fails the
+kinds, rules and app screenshots, and raises on anything it does not recognise so an unsupported construct fails the
 build instead of rendering as literal text.
 
 Two things worth knowing before editing an article:
@@ -43,6 +43,15 @@ Two things worth knowing before editing an article:
 - **The H1 comes from the body, and the build asserts it equals `title:`.** They cannot drift.
 - **Links are written as absolute site paths** (`/games/`, `/blog/<slug>/`) and rewritten to the
   right relative prefix per locale at build time. Do not hand-write `../../`.
+- **Images are app screenshots only**, one per line:
+  `![alt text](shot:<name> "Caption")`. `<name>` is a file in `assets/screenshots/<locale>/`
+  without `.webp` (both `<name>.webp` and `<name>@2x.webp` must exist; `tools/build_screenshots.py`
+  writes them), so each language shows its own capture. It renders the home gallery's phone frame,
+  lazy loaded at a fixed size. Image lines that follow each other directly form one row (up to three
+  fit; on a phone the row scrolls sideways). The build raises on any other source (no URLs), an empty
+  alt, a missing caption, or a name with no file for that locale. Write the alt for a screen reader:
+  what is on the screen, not what the caption already says. The article's first shot also becomes
+  the `image` of its Article structured data.
 
 ## Front matter
 

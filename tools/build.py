@@ -562,6 +562,12 @@ MD_BOLD = re.compile(r"\*\*([^*]+)\*\*")
 MD_CODE = re.compile(r"`([^`]+)`")
 MD_ORDERED = re.compile(r"^(\d+)\.\s+(.*)$")
 FAQ_QUESTION = re.compile(r"^\*\*(.+\?)\*\*$")
+# The one image form an article may use: a screenshot the site already serves,
+# on a line of its own. `![alt](shot:<name> "caption")`, where <name> is a file
+# in assets/screenshots/<locale>/ without its extension.
+MD_IMAGE = re.compile(r'^!\[([^\]]*)\]\((\S+)(?:\s+"([^"]*)")?\)$')
+SHOT_SOURCE = re.compile(r"^shot:([a-z0-9-]+)$")
+SCREENSHOTS_DIR = ROOT / "assets" / "screenshots"
 
 
 def _front_matter_value(raw: str):
@@ -651,7 +657,59 @@ def _table_html(lines: list[str], start: int, href) -> tuple[str, int]:
     return "\n".join(out), i
 
 
-def markdown_html(body: str, href) -> str:
+def parse_shot(line: str) -> tuple[str, str, str]:
+    """(name, alt, caption) from an image line, or ValueError.
+
+    Only the site's own screenshots are allowed: an arbitrary URL would be an
+    unsized, unoptimised image from anywhere, and the build would have no way to
+    check that it exists. The alt is required because it is the only thing a
+    screen reader gets; the caption because the translations rely on it being
+    there to translate.
+    """
+    image = MD_IMAGE.match(line)
+    if not image:
+        raise ValueError(f"malformed image line, expected ![alt](shot:<name> \"caption\"): {line!r}")
+    alt, source, caption = image.group(1).strip(), image.group(2), (image.group(3) or "").strip()
+    shot = SHOT_SOURCE.match(source)
+    if not shot:
+        raise ValueError(f"image source must be shot:<name>, got {source!r}")
+    if not alt:
+        raise ValueError(f"image {source!r} has an empty alt text")
+    if not caption:
+        raise ValueError(f"image {source!r} has no caption")
+    return shot.group(1), alt, caption
+
+
+def article_shots(body: str) -> list[str]:
+    """The shot names an article shows, in order (for the Article schema)."""
+    return [parse_shot(line.strip())[0] for line in body.split("\n") if line.strip().startswith("![")]
+
+
+def shot_exists(locale: str, name: str) -> bool:
+    folder = SCREENSHOTS_DIR / locale
+    return (folder / f"{name}.webp").is_file() and (folder / f"{name}@2x.webp").is_file()
+
+
+def shot_figure_html(line: str, href, root: str | None, locale: str | None) -> str:
+    """One article screenshot, in the home gallery's phone frame."""
+    name, alt, caption = parse_shot(line)
+    if root is None or locale is None:
+        raise ValueError(f"image {name!r} needs a locale to resolve against")
+    if not shot_exists(locale, name):
+        raise ValueError(f"no screenshot {name!r} for {locale} in assets/screenshots/{locale}/")
+    image = screenshot_html(root, locale, name, hero=False).replace(
+        "{alt}", html.escape(alt, quote=True)
+    )
+    return (
+        '<figure class="shot">\n'
+        f'<div class="phone">{image}</div>\n'
+        f"<figcaption>{_inline(caption, href)}</figcaption>\n"
+        "</figure>"
+    )
+
+
+def markdown_html(body: str, href, *, root: str | None = None, locale: str | None = None) -> str:
+    """Render an article body. `root` and `locale` resolve its screenshots."""
     lines = body.split("\n")
     out: list[str] = []
     paragraph: list[str] = []
@@ -711,6 +769,18 @@ def markdown_html(body: str, href) -> str:
             close_list()
             table, i = _table_html(lines, i, href)
             out.append(table)
+            continue
+
+        # Screenshots. Image lines that follow each other directly share one
+        # row, which scrolls sideways on a phone like the home gallery.
+        if line.startswith("!["):
+            flush_paragraph()
+            close_list()
+            figures = []
+            while i < len(lines) and lines[i].strip().startswith("!["):
+                figures.append(shot_figure_html(lines[i].strip(), href, root, locale))
+                i += 1
+            out.append('<div class="shots shots--article">\n' + "\n".join(figures) + "\n</div>")
             continue
 
         ordered = MD_ORDERED.match(line)
@@ -880,6 +950,17 @@ def home_schema(loc: dict[str, str], code: str, url: str) -> str:
     return json_ld([app, organization, website, faq_schema(locale_faq(loc, "home_faq"))])
 
 
+def article_image(body: str, code: str) -> str | list[str]:
+    """The Article's image: the site's social card, led by the article's first
+    screenshot (in this locale, at 2x) when it shows any. A screenshot of the
+    very screen the article describes is a better result thumbnail than a card
+    every page shares, and the card stays as the landscape option."""
+    shots = article_shots(body)
+    if not shots:
+        return OG_IMAGE
+    return [f"{SITE_URL}/assets/screenshots/{code}/{shots[0]}@2x.webp", OG_IMAGE]
+
+
 def article_schema(meta: dict, body: str, url: str, code: str, blog_url: str, home_url: str, loc: dict) -> str:
     blocks: list[dict] = [
         {
@@ -893,7 +974,7 @@ def article_schema(meta: dict, body: str, url: str, code: str, blog_url: str, ho
             "mainEntityOfPage": url,
             "author": {"@type": "Organization", "name": "braggster"},
             "publisher": {"@type": "Organization", "name": "braggster"},
-            "image": OG_IMAGE,
+            "image": article_image(body, code),
         },
         {
             "@context": "https://schema.org",
@@ -1534,7 +1615,7 @@ def build() -> None:
                 article_schema_html=article_schema(
                     meta, body, url, code, f"{SITE_URL}/{ldir}blog/", f"{SITE_URL}/{ldir}", loc
                 ),
-                article_html=markdown_html(body, ahref),
+                article_html=markdown_html(body, ahref, root=aroot, locale=code),
                 article_game_html=article_game_html(loc, meta, f"{aroot}{ldir}games/"),
                 article_trademark_html=(
                     f'<p class="article__note">{html.escape(note)}</p>' if note else ""
