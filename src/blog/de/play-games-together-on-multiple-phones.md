@@ -15,6 +15,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
+updated: 2026-09-30
 schema:
   - Article
   - FAQPage
@@ -68,6 +69,8 @@ und keinen Server dazwischen. Ein Freund in einem anderen Haus kann nicht beitre
 5. **Die Partie starten.** Sind alle am Tisch, startet der Gastgeber, und jeder spielt seinen eigenen
    Platz auf seinem eigenen Handy.
 
+![Die Lobby von Gemeinsam spielen auf dem Handy des Gastgebers: ein QR-Code zum Scannen für die anderen, Alex und Sam am Tisch und Mia, die beitreten möchte, mit den Tasten Zulassen und Ablehnen](shot:play-together "Das Handy des Gastgebers zeigt den Code zum Scannen und wer beitreten möchte.")
+
 ## Welche Spiele ihr gemeinsam spielen könnt
 
 - **[Yahtzee](/games/yahtzee/)**, für bis zu sechs Spieler. Der Gastgeber kann digitale Würfel für den
@@ -80,6 +83,10 @@ und keinen Server dazwischen. Ein Freund in einem anderen Haus kann nicht beitre
 - **[Backgammon](/games/backgammon/)**, mit einfachen Siegen, Gammons und Backgammons wie gewohnt
   gewertet. Siehe den [Backgammon-Wertungsguide](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, wo jede umgedrehte Reihe auf beiden Bildschirmen landet.
+
+![Ein Yahtzee-Punktezettel für Alex, Sam, Mia und Lee, darunter der digitale Würfelwurf von Alex und was dieser Wurf in jeder Kategorie bringen würde](shot:yahtzee "Yahtzee, mit digitalen Würfeln für den ganzen Tisch.")
+![Ein Schachbrett in der Grundstellung, Alex ist gegen Sam am Zug, ein weißer Springer ist ausgewählt und seine zwei möglichen Züge sind markiert](shot:chess "Schach, bei dem jeder Zug nach den Regeln geprüft wird.")
+![Ein Backgammon-Brett in der Ausgangsstellung, Alex ist am Zug, darunter die Taste Würfeln](shot:backgammon "Backgammon, bereit für den ersten Wurf.")
 
 Auf den Brettern wird der letzte Zug auf beiden Handys markiert, sodass du in dem Moment siehst, was
 dein Gegner gerade gemacht hat, in dem du hinschaust. Die vollständige Übersicht der Bretter steht im

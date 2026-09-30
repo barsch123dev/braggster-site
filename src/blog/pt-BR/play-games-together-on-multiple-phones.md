@@ -15,6 +15,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
+updated: 2026-09-30
 schema:
   - Article
   - FAQPage
@@ -68,6 +69,8 @@ casa não consegue entrar.
 5. **Comece a partida.** Quando todos estiverem sentados, o anfitrião inicia, e cada jogador joga a
    própria posição no próprio celular.
 
+![A tela Jogar juntos do anfitrião: um código QR para os outros escanearem, Alex e Sam sentados à mesa e Mia pedindo para entrar, com os botões Aceitar e Recusar](shot:play-together "O celular do anfitrião mostra o código para escanear e quem quer entrar.")
+
 ## Quais jogos dá para jogar juntos
 
 - **[Yahtzee](/games/yahtzee/)**, para até seis jogadores. O anfitrião pode ativar os dados digitais
@@ -80,6 +83,10 @@ casa não consegue entrar.
 - **[Backgammon](/games/backgammon/)**, com vitória simples, gamão e gamão duplo pontuados como de
   costume. Veja o [guia de pontuação do Backgammon](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, em que cada virada aparece nas duas telas.
+
+![Uma planilha de Yahtzee para Alex, Sam, Mia e Lee, com a rolagem de dados digital de Alex embaixo e quanto essa rolagem valeria em cada categoria](shot:yahtzee "Yahtzee, com dados digitais para a mesa toda.")
+![Um tabuleiro de xadrez na posição inicial, vez de Alex contra Sam, com um cavalo branco selecionado e seus dois lances possíveis marcados](shot:chess "Xadrez, com todo lance legal garantido.")
+![Um tabuleiro de gamão na posição inicial, vez de Alex, com o botão Jogue os dados embaixo](shot:backgammon "Gamão, pronto para a primeira rolagem.")
 
 Nos tabuleiros, a última jogada fica marcada nos dois celulares, então você vê o que o seu adversário
 acabou de fazer assim que olha para a tela. O panorama completo dos tabuleiros está no

@@ -15,6 +15,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
+updated: 2026-09-30
 schema:
   - Article
   - FAQPage
@@ -68,6 +69,8 @@ deux. Un ami dans une autre maison ne peut pas rejoindre.
 5. **Lance la partie.** Une fois tout le monde installé, l'hôte démarre, et chaque joueur joue sa place
    sur son propre téléphone.
 
+![L'écran Jouer ensemble de l'hôte : un code QR à scanner pour les autres, Alex et Sam installés à table, et Mia qui demande à rejoindre, avec les boutons Accepter et Refuser](shot:play-together "Le téléphone de l'hôte affiche le code à scanner et qui veut rejoindre.")
+
 ## À quels jeux jouer ensemble
 
 - **[Yahtzee](/games/yahtzee/)**, jusqu'à six joueurs. L'hôte peut activer les dés numériques pour la
@@ -80,6 +83,10 @@ deux. Un ami dans une autre maison ne peut pas rejoindre.
 - **[Backgammon](/games/backgammon/)**, avec les victoires simples, les gammons et les backgammons comptés
   comme d'habitude. Voir le [guide de comptage du Backgammon](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, où chaque retournement apparaît sur les deux écrans.
+
+![Une feuille de score Yahtzee pour Alex, Sam, Mia et Lee, avec en dessous le lancer de dés numériques d'Alex et ce que ce lancer rapporterait dans chaque catégorie](shot:yahtzee "Le Yahtzee, avec des dés numériques pour toute la table.")
+![Un échiquier en position de départ, au tour d'Alex face à Sam, avec un cavalier blanc sélectionné et ses deux coups possibles marqués](shot:chess "Les échecs, avec chaque coup légal vérifié.")
+![Un plateau de backgammon en position de départ, au tour d'Alex, avec le bouton Lance les dés en dessous](shot:backgammon "Le backgammon, prêt pour le premier lancer.")
 
 Sur les plateaux, le dernier coup est marqué sur les deux téléphones, pour que tu voies ce que ton
 adversaire vient de faire dès que tu regardes ton écran. La vue d'ensemble des plateaux se trouve dans le

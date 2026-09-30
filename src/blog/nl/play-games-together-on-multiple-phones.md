@@ -15,6 +15,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
+updated: 2026-09-30
 schema:
   - Article
   - FAQPage
@@ -68,6 +69,8 @@ vriend in een ander huis kan niet meedoen.
 5. **Start de partij.** Zodra iedereen zit, start de gastheer, en elke speler speelt zijn eigen plek op
    zijn eigen telefoon.
 
+![Het scherm Samen spelen van de gastheer: een QR-code voor de anderen om te scannen, Alex en Sam aan tafel, en Mia die wil meedoen, met de knoppen Toelaten en Weigeren](shot:play-together "De telefoon van de gastheer toont de code om te scannen en wie wil meedoen.")
+
 ## Welke spellen je samen kunt spelen
 
 - **[Yahtzee](/games/yahtzee/)**, voor maximaal zes spelers. De gastheer kan digitale dobbelstenen
@@ -80,6 +83,10 @@ vriend in een ander huis kan niet meedoen.
 - **[Backgammon](/games/backgammon/)**, waarbij enkel, gammon en backgammon zoals gewoonlijk worden
   geteld. Zie de [backgammon-telgids](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, waar elke omdraaiing op beide schermen verschijnt.
+
+![Een Yahtzee-scoreformulier voor Alex, Sam, Mia en Lee, met daaronder de digitale worp van Alex en wat die worp in elke categorie zou opleveren](shot:yahtzee "Yahtzee, met digitale dobbelstenen voor de hele tafel.")
+![Een schaakbord in de beginopstelling, Alex is aan zet tegen Sam, met een wit paard geselecteerd en zijn twee mogelijke zetten gemarkeerd](shot:chess "Schaken, met elke geldige zet gecontroleerd.")
+![Een backgammonbord in de beginopstelling, Alex is aan zet, met daaronder de knop Gooi de dobbelstenen](shot:backgammon "Backgammon, klaar voor de eerste worp.")
 
 Op de borden wordt de laatste zet op beide telefoons gemarkeerd, zodat je meteen ziet wat je
 tegenstander net deed. Het volledige overzicht van de borden staat in de

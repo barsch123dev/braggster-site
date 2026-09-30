@@ -15,6 +15,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
+updated: 2026-09-30
 schema:
   - Article
   - FAQPage
@@ -68,6 +69,8 @@ server in between. A friend in another house cannot join.
 5. **Start the match.** Once everyone is seated, the host starts, and each player plays their own
    seat on their own phone.
 
+![The host's Play together screen: a QR code for the others to scan, Alex and Sam seated at the table, and Mia asking to join, with Accept and Decline buttons](shot:play-together "The host's phone shows the code to scan and who is asking to join.")
+
 ## Which games you can play together
 
 - **[Yahtzee](/games/yahtzee/)**, for up to six players. The host can switch on digital dice for the
@@ -80,6 +83,10 @@ server in between. A friend in another house cannot join.
 - **[Backgammon](/games/backgammon/)**, with singles, gammons and backgammons scored as usual. See the
   [Backgammon scoring guide](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, where every flip lands on both screens.
+
+![A Yahtzee scorecard for Alex, Sam, Mia and Lee, with Alex's digital dice roll below it and what that roll would score in each category](shot:yahtzee "Yahtzee, with digital dice for the whole table.")
+![A chess board in the starting position with Alex to move against Sam, a white knight selected and its two possible moves marked](shot:chess "Chess, with every legal move enforced.")
+![A backgammon board in the opening position with Alex to move and a Roll the dice button below it](shot:backgammon "Backgammon, ready for the first roll.")
 
 On the boards, the last move is marked on both phones, so you can see what your opponent just did
 the moment you look down. The full overview of the boards is in the

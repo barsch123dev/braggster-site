@@ -15,6 +15,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
+updated: 2026-09-30
 schema:
   - Article
   - FAQPage
@@ -69,6 +70,8 @@ creare né alcun server in mezzo. Un amico che si trova in un'altra casa non pu�
 5. **Si avvia la partita.** Quando tutti sono seduti al tavolo, l'host avvia la partita, e ogni
    giocatore gioca il proprio posto dal proprio telefono.
 
+![La schermata Gioca insieme dell'host: un codice QR da far scansionare agli altri, Alex e Sam seduti al tavolo e Mia che chiede di unirsi, con i pulsanti Accetta e Rifiuta](shot:play-together "Il telefono dell'host mostra il codice da scansionare e chi chiede di unirsi.")
+
 ## A quali giochi si può giocare insieme
 
 - **[Yahtzee](/games/yahtzee/)**, fino a sei giocatori. L'host può attivare i dadi digitali per il
@@ -81,6 +84,10 @@ creare né alcun server in mezzo. Un amico che si trova in un'altra casa non pu�
 - **[Backgammon](/games/backgammon/)**, con singole, gammon e backgammon segnati come di consueto.
   Vedi la [guida al punteggio di Backgammon](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, dove ogni ribaltamento di pedina compare su entrambi gli schermi.
+
+![Un segnapunti Yahtzee per Alex, Sam, Mia e Lee, con sotto il lancio dei dadi digitali di Alex e quanto varrebbe quel lancio in ogni categoria](shot:yahtzee "Yahtzee, con i dadi digitali per tutto il tavolo.")
+![Una scacchiera nella posizione iniziale, tocca ad Alex contro Sam, con un cavallo bianco selezionato e le sue due mosse possibili segnate](shot:chess "Scacchi, con ogni mossa legale verificata.")
+![Un tabellone di backgammon nella posizione iniziale, tocca ad Alex, con sotto il pulsante Tira i dadi](shot:backgammon "Backgammon, pronto per il primo lancio.")
 
 Sui tabelloni, l'ultima mossa è segnata su entrambi i telefoni, così vedi cosa ha appena fatto il tuo
 avversario non appena guardi il telefono. La panoramica completa dei tabelloni è nella
