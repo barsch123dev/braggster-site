@@ -1,10 +1,10 @@
 ---
-title: "13 Logikrätsel in einer App, alle generiert und alle lösbar"
+title: "18 Logikrätsel in einer App, alle generiert und alle lösbar"
 slug: puzzle-games
 locale: de
 type: pillar
 category: puzzle
-meta_title: "13 Logikrätsel in einer App, endlos und lösbar"
+meta_title: "18 Logikrätsel in einer App, endlos und lösbar"
 meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo und mehr. Jedes Rätsel frisch generiert und auf genau eine Lösung geprüft."
 primary_keyword: "logikrätsel app"
 secondary_keywords:
@@ -15,6 +15,7 @@ secondary_keywords:
   - "rätselspiele ohne werbung"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -31,14 +32,15 @@ internal_links:
 trademark_note: null
 ---
 
-# 13 Logikrätsel in einer App, alle generiert und alle lösbar
+# 18 Logikrätsel in einer App, alle generiert und alle lösbar
 
 Die meisten Rätsel-Apps liefern eine Bank an Rätseln aus, die irgendwann zur Neige geht. Braggster
 generiert jedes Rätsel frisch auf Abruf und beweist dann, dass es genau eine Lösung hat, bevor es dir
 gezeigt wird. Genau diese zweite Hälfte macht kaum jemand, und sie ist der Unterschied zwischen einem
 Rätsel, das du dir logisch erschließen kannst, und einem, bei dem du irgendwann raten musst.
 
-Hier sind die dreizehn, was jedes davon wirklich von dir verlangt, und wie sie gewertet werden.
+Hier sind die achtzehn, was jedes davon wirklich von dir verlangt, und wie sie gewertet werden. In der
+App haben sie einen eigenen Tab, Rätsel, neben den Spielen.
 
 ## Die Zahlenplatzierungs-Familie
 
@@ -66,6 +68,11 @@ so, dass die Spitze immer zum kleineren Wert zeigt. 4x4 bis 7x7.
 gleichen Symbole hintereinander in Zeile oder Spalte, genau die Hälfte von jedem pro Zeile, und keine
 zwei identischen Zeilen oder Spalten. 6x6 bis 12x12, immer gerade. Tipp auf eine Zelle, um sie durch
 leer, 0 und 1 durchzuschalten: Bei zwei Symbolen braucht es kein Ziffernfeld, das im Weg steht.
+
+**[Tectonic](/games/tectonic/).** Ein Gitter, das in umrandete Regionen aus einer bis fünf Zellen
+unterteilt ist. Jede Region enthält 1 bis zu ihrer eigenen Größe genau einmal, und keine zwei
+angrenzenden Zellen, Diagonalen eingeschlossen, dürfen dieselbe Ziffer teilen. 5x5 bei Beginner bis
+8x8 bei Evil.
 
 Vertiefung: [Sudoku](/blog/how-to-play-sudoku/), [Killer Sudoku](/blog/how-to-play-killer-sudoku/).
 
@@ -103,13 +110,30 @@ von 4 bis 7 Buchstaben. Buchstabenzustände werden nie nur über Farbe signalisi
 ist eine volle Kachel mit Balken, im Wort aber falsch platziert ist ein Ring mit Punkt, nicht enthalten
 ist durchgestrichen.
 
-**Kruiswoord.** Ein Kreuzworträtsel, zur Laufzeit aus einem großen Wörterbuch mit Definitionen erzeugt
+**Crossword.** Ein Kreuzworträtsel, zur Laufzeit aus einem großen Wörterbuch mit Definitionen erzeugt
 statt aus einer mitgelieferten Bank, die Rätsel sind also unbegrenzt. Mini 5x5, Midi 7x7 und Standard
 15x15.
 
 **Woordzoeker.** Wortsuche. Wörter laufen in einer von acht Richtungen, vorwärts oder rückwärts, und du
-findest eins, indem du vom ersten bis zum letzten Buchstaben ziehst. 8x8 mit 5 Wörtern bis 14x14 mit
-12.
+findest eins, indem du erst den ersten und dann den letzten Buchstaben antippst. 8x8 mit 5 Wörtern bis
+14x14 mit 12.
+
+**[Zweeds](/games/zweeds/).** Das Pfeilrätsel, auch schwedisches Kreuzworträtsel: Es gibt keine
+Hinweisliste, denn jeder Hinweis sitzt im Gitter neben einem Pfeil, der zeigt, wohin seine Antwort
+läuft. Jedes Rätsel ist ein frisch angelegtes Gitter, von einem 4x4 Mini bis zu einem 14x14 Grand.
+
+**[Cijfercode](/games/cijfercode/).** Das Codewort-Rätsel: ein ausgefülltes Kreuzworträtsel ganz ohne
+Hinweise, in dem jeder Buchstabe gegen eine Zahl getauscht wurde. Ein paar Buchstaben sind zu Beginn
+aufgedeckt, gerade genug, um den Rest zu knacken, und wer einen Buchstaben eintippt, füllt jede Zelle
+mit derselben Zahl. Mini 7x7, Midi 9x9 und Standard 11x11.
+
+**[Filippine](/games/filippine/).** Ein Stapel Zeilen mit Hinweisen, deren Antworten sich in einer
+markierten Spalte ausrichten, und diese Spalte buchstabiert von oben nach unten ein verstecktes
+Lösungswort. 4, 6 oder 8 Zeilen.
+
+**[Hangman](/games/hangman/).** Rate das Wort Buchstabe für Buchstabe, bevor der siebte Fehlversuch die
+Figur vervollständigt. Ein Hinweis zeigt zuerst die Beschreibung des Wortes, dann einen Buchstaben, und
+drei Wortlängenstufen reichen von 4 bis 15 Buchstaben.
 
 ## Wie Rätsel gewertet werden
 
@@ -128,7 +152,7 @@ Hilfen sind je nach Rätsel nur Notizen und Hinweise.
 
 Jedes generierte Rätsel in Braggster durchläuft einen Löser, bevor es dich erreicht:
 
-- Sudoku, Kakuro, Futoshiki, Binairo und Calcudoku werden von Backtracking-Lösern geprüft, die
+- Sudoku, Kakuro, Futoshiki, Binairo, Calcudoku und Tectonic werden von Backtracking-Lösern geprüft, die
   bestätigen, dass genau eine vollständige Lösung existiert.
 - Killer Sudoku wird unter der kombinierten Sudoku- und Käfig-Bedingung zusammen geprüft, nicht jede
   einzeln.
@@ -138,6 +162,8 @@ Jedes generierte Rätsel in Braggster durchläuft einen Löser, bevor es dich er
   begrenzter Suche gegen seine eigenen Hinweise geprüft.
 - Logikwis und Murder Sudoku prüfen vor dem Schreiben der Einleitung, dass ihr Fall genau eine
   konsistente Zuordnung hat.
+- Cijfercode lässt einen Löser laufen, der die wenigsten aufgedeckten Buchstaben wählt, aus denen sich
+  der ganze Code noch ableiten lässt.
 
 Der praktische Effekt: Steckst du fest, gibt es immer eine nächste Deduktion. Du wirst nie gebeten, zu
 raten und zu prüfen.

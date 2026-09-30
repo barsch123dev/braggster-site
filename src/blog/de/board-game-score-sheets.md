@@ -15,19 +15,22 @@ secondary_keywords:
   - "brettspiel punktezettel"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
   - ItemList
 internal_links:
   - /games/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
   - /blog/how-to-score-dominoes/
   - /blog/how-to-score-backgammon/
   - /blog/how-to-score-rummikub/
   - /blog/card-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: "Rummikub, Cluedo und Connect Four sind Marken ihrer jeweiligen Verlage. Braggster steht in keiner Verbindung dazu, wird nicht unterstützt, und jeder Name wird ausschließlich beschreibend verwendet."
+trademark_note: "Rummikub, Cluedo, Connect Four und Othello sind Marken ihrer jeweiligen Verlage. Braggster steht in keiner Verbindung dazu, wird nicht unterstützt, und jeder Name wird ausschließlich beschreibend verwendet."
 ---
 
 # Brettspiel Punktezettel und spielbare Bretter
@@ -37,7 +40,8 @@ laufende Zahl, wie Dominoes und Rummikub, und wollen einen echten rechnenden Zet
 produzieren innerhalb einer einzelnen Partie gar nichts: Chess und Tic Tac Toe enden einfach, und was
 du eigentlich willst, ist die Zählung über den ganzen Abend.
 
-Braggster deckt beides ab, und für zehn Brettspiele gibt es zusätzlich das Brett selbst.
+Braggster deckt beides ab, und für acht Brettspiele gibt es zusätzlich das Brett selbst, auf einem
+Handy oder, bei fünf davon, mit einem Handy pro Person.
 
 ## Spiele, die eine Zahl werten
 
@@ -60,8 +64,8 @@ Vertiefung: [Dominoes Wertung](/blog/how-to-score-dominoes/),
 
 ## Spiele ohne Wertung innerhalb einer Partie
 
-Chess, Checkers, Internationales Damespiel, Connect Four und Tic Tac Toe haben genau ein Ergebnis pro
-Partie: Jemand gewinnt, oder es ist unentschieden. Es gibt keine Zahl, die man notieren müsste.
+Chess, Checkers, Internationales Damespiel, Othello, Connect Four und Tic Tac Toe haben genau ein
+Ergebnis pro Partie: Jemand gewinnt, oder es ist unentschieden. Es gibt keine Zahl, die man notieren müsste.
 
 Braggster behandelt eine beendete Partie als Runde im Wert von einem Sieg, sodass aus der Partie eine
 Sitzungsbilanz wird. Das entspricht, wie diese Spiele tatsächlich gespielt werden: nicht eine Partie,
@@ -74,25 +78,35 @@ Vertiefung: [Backgammon Wertung, Gammons und Backgammons](/blog/how-to-score-bac
 
 ## Bretter, die du wirklich auf dem Handy spielen kannst
 
-Zehn Brettspiele in Braggster sind auf dem Gerät spielbar, nicht nur wertbar:
+Acht Brettspiele in Braggster sind auf dem Gerät spielbar, nicht nur wertbar:
 
 | Spiel | Was das Brett in der App bietet |
 |---|---|
-| Chess | 8x8 Brett zum Weiterreichen mit voller Regeldurchsetzung: Schach, Schachmatt, Patt, Rochade, en passant, Bauernumwandlung |
-| Checkers | 8x8 Brett zum Weiterreichen, amerikanische und englische Regeln, Schlagzwang und Mehrfachschläge |
-| Internationales Damespiel | 10x10 Brett zum Weiterreichen, fliegende Damen, Pflicht zum Maximalschlag, Feld für Feld antippen |
-| Backgammon | Brett zum Weiterreichen: würfeln, tippen zum Ziehen, Blots treffen, wieder einlaufen und austragen |
-| Dominoes | Steinbrett zum Weiterreichen: an das passende offene Ende legen, ziehen oder passen je nach Variante |
-| Connect Four | 7x6 Brett zum Weiterreichen, tipp auf eine Spalte und die Schwerkraft wählt die Reihe |
-| Tic Tac Toe | 3x3 Gitter zum Weiterreichen mit automatischer Sieg- und Unentschieden-Erkennung |
-| Sudoku | Generiertes Rätselgitter, fünf Schwierigkeitsstufen |
+| [Chess](/games/chess/) | 8x8 Brett mit voller Regeldurchsetzung: Schach, Schachmatt, Patt, Rochade, en passant, Bauernumwandlung |
+| [Checkers](/games/checkers/) | 8x8 Brett, amerikanische und englische Regeln, Schlagzwang und Mehrfachschläge |
+| [Internationales Damespiel](/games/dammen/) | 10x10 Brett, fliegende Damen, Pflicht zum Maximalschlag, Feld für Feld antippen |
+| [Othello](/games/reversi/) | 8x8 Brett, das jede eingeschlossene Reihe umdreht und für dich passt, wenn du keinen Zug hast |
+| [Backgammon](/games/backgammon/) | Würfeln, tippen zum Ziehen, Blots treffen, wieder einlaufen und austragen |
+| [Dominoes](/games/dominoes/) | Steinbrett zum Weiterreichen: an das passende offene Ende legen, ziehen oder passen je nach Variante |
+| [Connect Four](/games/connectfour/) | 7x6 Brett zum Weiterreichen, tipp auf eine Spalte und die Schwerkraft wählt die Reihe |
+| [Tic Tac Toe](/games/tictactoe/) | 3x3 Gitter zum Weiterreichen mit automatischer Sieg- und Unentschieden-Erkennung |
 
 Jedes davon speichert sein Ergebnis über denselben Rundenweg wie ein von Hand eingetragener Zettel,
 sodass eine in der App gespielte Partie nie anders zählt als eine, die du selbst eingegeben hast.
 
+## Gemeinsam spielen, ein Handy pro Person
+
+Jedes Brett funktioniert zum Weiterreichen auf einem Handy. Chess, Checkers, Internationales
+Damespiel, Othello und Backgammon lassen sich mit [Gemeinsam spielen](/play-together/) auch auf zwei
+Handys spielen: Ein Handy eröffnet einen Tisch und zeigt einen QR-Code, das andere scannt ihn, und
+jeder zieht von seinem eigenen Handy im selben WLAN. Der letzte Zug wird auf beiden Brettern markiert,
+es gibt kein Konto und keine Internetverbindung, und Mitspielen ist kostenlos. Die Schritt-für-Schritt-
+Anleitung, auch für den Fall, dass ein Tisch nicht erscheint, steht im
+[Guide zum gemeinsamen Spielen auf mehreren Handys](/blog/play-games-together-on-multiple-phones/).
+
 ## Gegen den Computer spielen
 
-Vier der Brettspiele haben zusätzlich einen Übungsbildschirm gegen einen Computergegner, jeweils mit
+Fünf der Brettspiele haben zusätzlich einen Übungsbildschirm gegen einen Computergegner, jeweils mit
 drei Stufen:
 
 - **Chess** nutzt eine Alpha-Beta-Suche mit Bewertung nach Feld und Figur. Du kannst Weiß oder Schwarz
@@ -100,11 +114,13 @@ drei Stufen:
 - **Checkers** durchsucht Mehrfachschlag-Ketten als den einen Zug, der sie sind.
 - **Internationales Damespiel** macht dasselbe über das 10x10 Brett, wo eine ganze Schlagfolge ein
   einziger Zug ist.
+- **Othello** sucht mit einer Feldgewichtungstabelle plus Beweglichkeit und zählt Steine nur im
+  Endspiel.
 - **Backgammon** kann keine Alpha-Beta-Suche verwenden, weil die Würfel jeden Knoten zu einem
   Zufallsknoten machen. Stattdessen läuft eine Expectimax-Suche über die einundzwanzig
   unterschiedlichen Würfe.
 
-Alle vier laufen in einem Hintergrundthread, damit das Brett reaktionsfähig bleibt, während die Engine
+Alle fünf laufen in einem Hintergrundthread, damit das Brett reaktionsfähig bleibt, während die Engine
 rechnet. Übungsspiele werden nie gespeichert, sie verfälschen also weder deine Statistik noch deine
 Gewinnquote.
 
@@ -118,8 +134,12 @@ Tippgröße zu schrumpfen.
 ## Häufige Fragen
 
 **Können zwei Leute auf einem Handy spielen?**
-Ja. Die spielbaren Bretter sind zum Weiterreichen gedacht, du gibst das Gerät am Tisch herum. Es gibt
-keinen Online-Mehrspielermodus und kein Konto.
+Ja. Die spielbaren Bretter sind zum Weiterreichen gedacht, du gibst das Gerät am Tisch herum. Ein
+Konto brauchst du dafür nicht.
+
+**Können wir stattdessen auf zwei Handys spielen?**
+Ja, bei Chess, Checkers, Internationalem Damespiel, Othello und Backgammon. Mit Gemeinsam spielen
+nutzt jeder Spieler sein eigenes Handy im selben WLAN, ohne Konto und ohne Internetverbindung.
 
 **Funktioniert die App für ein Brettspiel, das nicht auf der Liste steht?**
 Ja. Der immer kostenlose Blank-Punktezettel führt Punkte für alles, und es gibt einen generischen
@@ -132,8 +152,8 @@ Nein. Übungsspiele gegen den Computer werden bewusst nie gespeichert.
 Nein. Es gibt keinen Dopplerwürfel und nirgendwo in der App wird etwas eingesetzt.
 
 **Warum steht Sudoku auf manchen Seiten bei den Brettspielen?**
-Das sollte es nicht. Sudoku gehört zu den Rätseln, zusammen mit den elf weiteren Einzelspieler-Rätseln,
-die Braggster inzwischen anbietet. Siehe den [Rätsel-Guide](/blog/puzzle-games/).
+Das sollte es nicht. Sudoku gehört zu den Rätseln, zusammen mit den siebzehn weiteren
+Einzelspieler-Rätseln, die Braggster inzwischen auf einem eigenen Rätsel-Tab anbietet. Siehe den [Rätsel-Guide](/blog/puzzle-games/).
 
 ---
 

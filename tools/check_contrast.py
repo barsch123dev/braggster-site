@@ -26,6 +26,7 @@ WHITE = "#FFFFFF"
 TINT_BLUE = "#E3ECFC"
 TINT_ORANGE = "#FDEBD6"
 TINT_VIOLET = "#E8E4F7"
+TINT_TEAL = "#DDF0EC"
 
 AA_NORMAL = 4.5
 AA_LARGE = 3.0
@@ -50,6 +51,11 @@ PAIRS = [
     ("'Play in app' badge on blue tint", INK, TINT_BLUE, AA_NORMAL),
     ("'Play the computer' badge on violet tint", INK, TINT_VIOLET, AA_NORMAL),
     ("'Lowest wins' badge on orange tint", INK, TINT_ORANGE, AA_NORMAL),
+    ("'Play together' badge on teal tint", INK, TINT_TEAL, AA_NORMAL),
+    ("game chip label on surface", INK, SURFACE, AA_NORMAL),
+    ("announcement link on ink", FELT, INK, AA_NORMAL),
+    ("FAQ answer on surface", MUTED, SURFACE, AA_NORMAL),
+    ("step number on orange tint", INK, TINT_ORANGE, AA_LARGE),
     ("unselected filter label on surface", INK, SURFACE, AA_NORMAL),
     ("selected filter label on ink", FELT, INK, AA_NORMAL),
     ("games page intro on felt", MUTED, FELT, AA_NORMAL),

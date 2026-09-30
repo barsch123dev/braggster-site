@@ -144,6 +144,6 @@ Nein. Sie werden auf Abruf frisch generiert und vor der Anzeige als eindeutig ge
 
 ---
 
-**Mehr:** sieh dir alle dreizehn [Logikrätsel](/blog/puzzle-games/) an, lies über
+**Mehr:** sieh dir alle achtzehn [Logikrätsel](/blog/puzzle-games/) an, lies über
 [Sudoku Schwierigkeitsgrade](/blog/how-to-play-sudoku/), oder durchstöbere den Katalog auf
 [braggster.com/games](/games/).

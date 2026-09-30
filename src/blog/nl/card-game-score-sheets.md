@@ -1,11 +1,11 @@
 ---
-title: "Kaartspel Scoreformulieren: Score Bijhouden voor 33 Kaartspellen"
+title: "Kaartspel Scoreformulieren: Score Bijhouden voor 34 Kaartspellen"
 slug: card-game-score-sheets
 locale: nl
 type: pillar
 category: card
-meta_title: "Kaartspel Scoreformulieren voor 33 Kaartspellen"
-meta_description: "Telregels en digitale scoreformulieren voor 33 kaartspellen: Klaverjassen, Bridge, Hearts, Canasta en meer. Rekenende formulieren, geen account nodig."
+meta_title: "Kaartspel Scoreformulieren voor 34 Kaartspellen"
+meta_description: "Telregels en digitale scoreformulieren voor 34 kaartspellen: Klaverjassen, Bridge, Hearts, Canasta en meer. Rekenende formulieren, geen account nodig."
 primary_keyword: "kaartspel scoreformulier"
 secondary_keywords:
   - "hoe hou je de score bij kaartspellen"
@@ -15,6 +15,7 @@ secondary_keywords:
   - "digitaal scoreformulier kaarten"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -29,10 +30,10 @@ internal_links:
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: null
+trademark_note: "Uno, Uno Flip en Beverbende zijn handelsmerken van hun respectievelijke uitgevers. Braggster is niet aan hen verbonden en wordt niet door hen goedgekeurd, en elke naam wordt uitsluitend beschrijvend gebruikt."
 ---
 
-# Kaartspel Scoreformulieren: Score Bijhouden voor 33 Kaartspellen
+# Kaartspel Scoreformulieren: Score Bijhouden voor 34 Kaartspellen
 
 Bijna elk kaartspel dat het waard is om twee keer te spelen heeft een scoreformulier nodig, en bijna
 elk huishouden houdt de score op dezelfde manier bij: een afgescheurd papiertje, een pen die spoorloos
@@ -40,7 +41,7 @@ is, en ruzie over wie de 40 in de verkeerde kolom heeft gezet. Braggster vervang
 een rekenend scoreformulier dat gebouwd is voor het specifieke spel dat je speelt, zodat het totaal
 klopt door constructie in plaats van door rekenwerk.
 
-Deze gids laat zien hoe scoren in de grote kaartspelfamilies echt werkt, en welke van de 33
+Deze gids laat zien hoe scoren in de grote kaartspelfamilies echt werkt, en welke van de 34
 kaartspellen in Braggster bij elke familie horen.
 
 ## Wat een kaartspel-scoreformulier moet kunnen
@@ -53,13 +54,13 @@ scoreformulier moet weten:
 - **Wat een ronde waard is.** Een ronde Klaverjassen verdeelt precies 162 kaartpunten plus roem. Een
   ronde Whist scoort alleen de slagen boven het boek van zes. Een ronde Canasta kan duizenden punten
   schommelen.
-- **Welke richting wint.** De meeste spellen wint het hoogste totaal. Burro, Golf-achtige spellen en
-  elke puzzel in de app winnen juist met het laagste totaal, en een scoreformulier dat dit omdraait
+- **Welke richting wint.** De meeste spellen wint het hoogste totaal. Burro, Golf-achtige spellen zoals
+  Beverbende en elke puzzel in de app winnen juist met het laagste totaal, en een scoreformulier dat dit omdraait
   zet de verliezer bovenaan.
 - **Wanneer het spel afgelopen is.** Race naar 500, race naar 11, zestien ronden, of als eerste door
   je kaarten heen.
 
-De scoreformulieren van Braggster leggen al deze vier zaken per spel vast, en dat is waarom er 33
+De scoreformulieren van Braggster leggen al deze vier zaken per spel vast, en dat is waarom er 34
 formulieren zijn in plaats van één spreadsheet.
 
 ## Slagenspellen
@@ -110,6 +111,14 @@ laagste totaal.
 
 Verdieping: [Pesten regels en scoren](/blog/how-to-score-pesten/).
 
+## Geheugenspellen
+
+[Beverbende](/games/beverbende/) is het Nederlandse geheugenspel uit de Golf-familie: je houdt vier
+kaarten met de rug boven, bekijkt er twee, en pakt, wisselt en onthoudt je een weg naar het laagste
+totaal voordat iemand klopt voor de laatste ronde. Het scoreformulier van Braggster maakt het scoreblok
+uit de doos na, een kolom per speler en een rij per ronde, met de score van de klopper omcirkeld, en het
+laagste totaal wint.
+
 ## Handvergelijkingsspellen
 
 Poker en Blackjack worden gescoord op uitkomst, nooit op iets dat ingezet wordt. Het Poker-formulier
@@ -133,13 +142,13 @@ Verdieping: [Solitaire scoren en het Klondike-bord](/blog/how-to-score-solitaire
 
 ## Regionale kaartspellen in één app
 
-Een deel van het punt van een catalogus met 33 kaartspellen is dat het spel dat jouw familie speelt er
+Een deel van het punt van een catalogus met 34 kaartspellen is dat het spel dat jouw familie speelt er
 waarschijnlijk bij zit, ook als niemand buiten je land ervan gehoord heeft. Braggster labelt elk spel
 met de landen waar het gangbaar is, zodat de catalogus voor te filteren is op jouw regio:
 
 | Regio | Kaartspellen |
 |---|---|
-| Nederland, België | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Whist |
+| Nederland, België | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Beverbende, Whist |
 | Duitsland, Oostenrijk, Zwitserland | Skat, Doppelkopf, Schnapsen, Königrufen, Jass |
 | Frankrijk, Monaco | Belote, Bridge, Königrufen |
 | Italië, San Marino | Briscola, Scopa, Canasta |

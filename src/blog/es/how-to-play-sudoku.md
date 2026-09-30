@@ -15,6 +15,7 @@ secondary_keywords:
   - "como mejorar en sudoku"
   - "sudoku notas a lapiz"
 search_intent: informational
+updated: 2026-09-28
 priority: 1
 schema:
   - Article
@@ -102,7 +103,7 @@ conexión.
 
 Braggster no va a poner en rojo una cifra cuando la coloques mal.
 
-Es una decisión de diseño deliberada, y se aplica a los trece puzles de la app. La indicación de
+Es una decisión de diseño deliberada, y se aplica a los dieciocho puzles de la app. La indicación de
 errores en vivo convierte un puzle de lógica en un juego validador: dejas de deducir y empiezas a
 probar, porque la app te avisará si te equivocas. Quítale eso y tienes que estar de verdad seguro.
 
@@ -147,6 +148,6 @@ contrario de la mayoría de juegos de la app.
 
 ---
 
-**Más:** consulta los trece [puzles de lógica](/blog/puzzle-games/), prueba
+**Más:** consulta los dieciocho [puzles de lógica](/blog/puzzle-games/), prueba
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), o explora el catálogo en
 [braggster.com/games](/games/).

@@ -16,6 +16,7 @@ secondary_keywords:
   - "tabella yahtzee punti"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -127,6 +128,18 @@ reticolo separano i giocatori, cosi la quinta riga e sempre chiaramente del quin
 La schermata delle regole porta la tabella completa delle categorie, cosi nessuno deve ricordare se
 un full house vale 25 o una somma.
 
+## Dadi digitali, e un telefono a testa
+
+Non hai i dadi in casa? Attiva i dadi digitali e tira sullo schermo, tieni da parte quello che vuoi
+mantenere, e l'app mostra quanto varrebbe quel tiro in ogni casella ancora libera.
+
+Con [Gioca insieme](/play-together/), fino a sei giocatori usano ciascuno il proprio telefono sulla
+stessa rete Wi-Fi. Un telefono apre un tavolo e mostra un codice QR, gli altri lo scansionano, e
+ognuno compila la propria colonna. Quando l'host attiva i dadi digitali per il tavolo, il giocatore
+di turno tira sul proprio telefono e tutti gli altri vedono i dadi atterrare sul loro schermo.
+Nessun account, nessun internet, e solo l'host deve avere il gioco. La guida passo passo è nella
+[guida per giocare insieme su più telefoni](/blog/play-games-together-on-multiple-phones/).
+
 ## Domande frequenti
 
 **Come si ottiene il bonus Yahtzee?**
@@ -142,6 +155,10 @@ No. Segna la somma di tutti e cinque i dadi. E la casella piu spesso segnata mal
 **Cosa succede se tiro uno Yahtzee ma la casella e gia a zero?**
 Se hai preso uno zero nella casella Yahtzee, nessun bonus si applica. La regola Joker continua a
 decidere dove segnare i dadi.
+
+**Possiamo giocare a Yahtzee su più telefoni?**
+Sì. Con Gioca insieme fino a sei giocatori usano ciascuno il proprio telefono sulla stessa rete
+Wi-Fi, con dadi digitali condivisi che tutti vedono atterrare.
 
 **Kniffel e lo stesso gioco di Yahtzee?**
 Praticamente si, e lo stesso segnapunti copre entrambi, insieme a Yams e alla famiglia Generala.

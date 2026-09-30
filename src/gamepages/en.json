@@ -1,0 +1,294 @@
+{
+  "klaverjassen": {
+    "lead": "Klaverjassen is the Dutch trick-taking game for two teams of two, played with 32 cards over 16 rounds, where roem and going nat decide most evenings.",
+    "scoring": "Enter the card points and the roem for each round and the sheet does the rest: it knows a round is worth 162 plus roem, awards pit its 100 bonus, and hands everything to the defenders when the playing team goes nat. Amsterdam and Rotterdam rules are both built in, and the rules screen carries a chart of card ranks and values for trump and plain suits. After round 16 the team with the most points wins."
+  },
+  "jass": {
+    "lead": "Jass is Switzerland's national card game: two teams of two, 36 cards, and a race to 2500 with Weis melds and trump multipliers along the way.",
+    "scoring": "Each round you enter the card points, any Weis and the multiplier your table agreed for that contract, whether a suit, Obenabe or Undenufe. The sheet keeps the running totals toward 2500. Schieber is the default, and the Coiffeur variant plays each of the six contract types exactly once."
+  },
+  "belote": {
+    "lead": "Belote is the French trick-taking game for two teams of two: bid for trump, capture the 162 points in play, and announce belote-rebelote.",
+    "scoring": "Each deal the sheet scores the contract head to head. The team that named trump keeps its points only if it takes more than the other team; otherwise the deal is dans and the defenders take all 162 plus the belote bonuses. Capot adds 90, and the Coinche variant doubles or quadruples the result. Play to the total you agree, usually 501 or 1000."
+  },
+  "whist": {
+    "lead": "Whist is the classic partnership trick-taking game: two teams of two, the first six tricks are the book, and every trick above it scores a point.",
+    "scoring": "Enter the tricks each side won and the sheet counts only those above the book of six, so a side taking eight tricks scores two. The first side to five points wins the game. The Wiezen variant adds bidding for a contract and names trump from the highest bid."
+  },
+  "bridge": {
+    "lead": "Bridge is the great partnership card game: bid a contract with your partner, make it with the dummy face up on the table, and score above and below the line.",
+    "scoring": "Enter the contract, who played it, doubling and the tricks taken, and the scorecard works out the rest: the bid value below the line, overtricks and game, slam and rubber bonuses above it, and penalty points for the defenders when a contract fails. Rubber tracks vulnerability as you play; Duplicate presets it per board."
+  },
+  "euchre": {
+    "lead": "Euchre is the fast trump-calling game for two teams of two, played with five cards each and a short deck, and the first team to ten points wins.",
+    "scoring": "Enter who called trump and how many tricks they took. Three or four tricks scores 1, all five (a march) scores 2, a lone hand that takes all five scores 4, and a calling team that falls short is euchred, giving the other team 2. The Stick the dealer variant forces the dealer to name trump."
+  },
+  "fivehundred": {
+    "lead": "500 is Australia's favorite bidding game: win the auction for trump, make at least as many tricks as you bid, and race to 500 points.",
+    "scoring": "The sheet holds the full bid table, from 40 for six spades up to 520 for ten no trumps, plus misere at 250 and open misere at 500. Make your bid and you score its value; fall short and you lose it, while the other team scores 10 a trick. The first team to 500 wins, and a team that sinks to minus 500 loses."
+  },
+  "spades": {
+    "lead": "Spades is the American partnership game where spades are always trump, every player bids their tricks, and overtricks come back to haunt you as bags.",
+    "scoring": "Enter each bid and the tricks taken. Making a bid scores 10 a trick bid plus 1 per extra trick, missing it costs 10 a trick, and every tenth bag costs the team 100. Nil bids score or lose 100 on their own. The first team to 500 wins, in Partnership or Solo play."
+  },
+  "cuarenta": {
+    "lead": "Cuarenta is Ecuador's national card game: capture cards from the table in pairs and runs, pull off caidas and limpias, and race your side to 40.",
+    "scoring": "Each round you enter how many of the 40 cards your side captured, plus the caidas and limpias each side made. Caidas and limpias are worth 2 points each, and captured cards above 19 score one point each, up to 6. Totals add up and the first side to 40 wins."
+  },
+  "mus": {
+    "lead": "Mus is the Spanish bluffing game for two pairs with a 40-card deck, where each hand is bid through four phases: grande, chica, pares and juego.",
+    "scoring": "For every hand you enter which pair took grande, chica, pares and juego, and anything raised in the bidding. Grande, chica and pares pay a base of 1, juego pays 2, and a phase nobody holds is skipped. The first pair to 40 wins, or to 30 in the short game."
+  },
+  "hearts": {
+    "lead": "Hearts is the trick-taking game you win by avoiding tricks: every heart costs a point, the queen of spades costs 13, and shooting the moon turns it all around.",
+    "scoring": "Enter the penalty points each player took in a round, which add up to 26. A moonshot control flips the round when one player takes every heart and the queen of spades. The game ends when someone reaches 100 and the lowest total wins. Omnibus, Spot and Cancellation are built in, and you can play a full game in the app against three computer opponents."
+  },
+  "poker": {
+    "lead": "Poker covers Texas Hold'em, Omaha, Seven card stud and Five card draw. Braggster scores who finished where in each sit-down, never what anyone put in.",
+    "scoring": "After each sit-down you drag the players into their finishing order. First place scores one point per player at the table, second one less, and last place scores one. Points add up across the evening and the highest total wins. The rules screen carries the full hand ranking, from royal flush down to high card."
+  },
+  "blackjack": {
+    "lead": "Blackjack is the race to 21 against the dealer. In braggster you play hands against a real dealer on screen, or keep score for a game with a physical deck.",
+    "scoring": "Every hand scores its result: a blackjack is 3 points, a win 2, a push 1 and a loss 0, and the highest total wins. On the in-app table the dealer deals and plays its hand and the result is scored for you. Classic, European, Atlantic City and Spanish 21 rules are all included."
+  },
+  "solitaire": {
+    "lead": "Solitaire, also called Patience, is one player against the deal. Play Klondike right in the app, or score a deal you laid out with real cards.",
+    "scoring": "The in-app Klondike board is tap to move, deals one or three cards at a time, and scores the finished deal for you. For a physical deal you enter the result yourself, Vegas style by cards on the foundations or standard style by points. Spider, FreeCell and Pyramid are there as well, and your total grows deal after deal."
+  },
+  "rummy": {
+    "lead": "Rummy is the family of draw and discard games where you meld sets and runs and try to go out first, from basic Rummy to Gin, Rummy 500 and Indian Rummy.",
+    "scoring": "In basic Rummy the player who goes out collects the value of every card left in the other hands, with face cards at 10 and aces at 1. Gin scores the deadwood difference with bonuses for gin and undercuts, Rummy 500 scores melds minus cards in hand, and Indian Rummy scores penalties. The sheet adjusts to the variant you pick."
+  },
+  "canasta": {
+    "lead": "Canasta is the two-deck melding game where sevens of a kind become canastas, jokers and twos run wild, and a game runs all the way to 5000 points.",
+    "scoring": "The scorecard is a tally grid for each hand: melded card values, 500 for a natural canasta, 300 for a mixed one, 100 for going out, minus whatever is left in your hand. It also tracks the rising minimum for a first meld as your score climbs. The Buraco variant shares the engine with its own canasta rules."
+  },
+  "jokeren": {
+    "lead": "Jokeren is the Dutch rummy game with two decks and jokers: lay down runs and groups, go out first, and keep your penalty points low.",
+    "scoring": "When someone goes out, every other player enters the penalty value of the cards left in their hand and the winner enters 0. Your table sets what a joker is worth. After a few deals the lowest total wins, and the standings rank it that way."
+  },
+  "pesten": {
+    "lead": "Pesten is the Dutch shedding game in the Crazy Eights family, full of cards that make the next player draw, skip a turn or change the suit.",
+    "scoring": "When one player runs out of cards, everyone else enters the penalty points still in their hand and the winner enters 0. Totals add up hand after hand and the lowest total wins. The rules screen lists the special cards most tables use, because house rules vary by region."
+  },
+  "toepen": {
+    "lead": "Toepen is the Dutch knockout card game of four cards and a lot of nerve: knock to raise what a hand is worth, and the last player left in wins.",
+    "scoring": "Whoever loses a hand takes penalty points equal to what it was worth after every toep, and a player who folded takes the lower value from before. The sheet tracks each player toward the limit and drops them out at 15, or at 10 in the shorter variant. The last player standing wins."
+  },
+  "bollen": {
+    "lead": "Bollen is the Dutch prediction game: say how many tricks you will take, and a wrong guess earns you a bol while the card count climbs and falls.",
+    "scoring": "Every round you mark for each player whether they made their bid or took a bol. An exact prediction scores the bid, or the bid plus 10 in the +10 variant, and a miss scores nothing. The sheet walks the card count up to a peak that fits your table and back down to one. Most points wins, and most bollen loses."
+  },
+  "beverbende": {
+    "lead": "Beverbende is the Dutch memory card game where you hold four face-down cards, peek at two, and try to end each round with the lowest total.",
+    "scoring": "The scorecard looks like the score block from the box: a column per player, a numbered row per round and a final total at the bottom. Enter what each player's four cards add up to when the round ends, and the knocker's score is ringed. Totals add up and the lowest wins."
+  },
+  "uno": {
+    "lead": "Uno is the color and number matching card game: play all your cards first, call out your last one, and collect points from everyone else's hand.",
+    "scoring": "The round winner collects the points left in every other hand: numbers at face value, Skip, Reverse and Draw Two at 20, wilds at 50. The first player to 500 wins the match. Classic, One round, Stacking and Seven-zero rules are all included."
+  },
+  "unoflip": {
+    "lead": "Uno Flip is Uno with a two-sided deck: a Flip card turns every hand and pile over to the dark side, where the action cards hit much harder.",
+    "scoring": "Uno Flip has its own scorecard because its cards are worth their own values, from Draw One at 10 up to Wild Draw Color at 60. The round winner collects the points in every other hand, and the first to 500 wins. A One round variant is included."
+  },
+  "briscola": {
+    "lead": "Briscola is Italy's favorite trick-taking game, played with a 40-card deck: capture aces and threes, keep an eye on the trump, and reach 61 of the 120 points.",
+    "scoring": "After each hand every player enters the card points they captured, which together add up to 120: ace 11, three 10, king 4, cavalier 3 and jack 2. Totals add up over as many hands as you agree. The Cinque carte variant deals five cards and no draws."
+  },
+  "scopa": {
+    "lead": "Scopa is the Italian capturing game where you take table cards by matching their value and clear the whole table for a sweep, first to 11 points.",
+    "scoring": "After each hand you enter every player's points: one each for most cards, most coins, the settebello and the best primiera, plus one for every scopa made during play. The sheet runs the totals to 11. Asso piglia tutto, where an ace clears the table, is included."
+  },
+  "truco": {
+    "lead": "Truco is the Brazilian bluffing game of three rounds a hand, where calling truco raises what the hand is worth and the first side to 12 wins.",
+    "scoring": "Enter who won the hand and what it was worth after the calls: 1, then truco for 3, seis for 6, nove for 9 and doze for 12. The winning side scores that value and the first to 12 wins. Paulista and Mineiro variants are included."
+  },
+  "skat": {
+    "lead": "Skat is Germany's three-player classic: bid to become the soloist, pick up the skat, and beat the other two players with at least 61 of the 120 points.",
+    "scoring": "The scorecard is a real Skatliste. Enter the game, the matadors, the card points and any schneider or schwarz, and it computes the game value, adding it on a win and subtracting double on a loss. Null games score their fixed value, and the Bock variant doubles the next hand."
+  },
+  "doppelkopf": {
+    "lead": "Doppelkopf is the German four-player game with a doubled 48-card deck, where whoever holds the queens of clubs forms the Re team, secretly.",
+    "scoring": "Enter who played Re and the card points they took from the 240 in play. The sheet scores the win against the 90, 60 and 30 thresholds and schwarz, adds the extra point for beating the queens of clubs, and books a solo player three times what each opponent wins or loses. Every hand adds up to zero across the table. Hochzeit is its own variant."
+  },
+  "schnapsen": {
+    "lead": "Schnapsen is the Austrian two-player race to 66 card points with a 20-card deck, marriages worth 20 or 40, and the option to close the stock.",
+    "scoring": "Each hand you record who won it and how many game points it earned, from 1 to 3 depending on how far behind the loser was, or 2 when the closer fails. The first player to seven game points wins the match. The Bela variant adds its extra point, and the rules show the cards."
+  },
+  "tarot": {
+    "lead": "Königrufen is the Austrian tarock game for four players: the declarer calls a king, and whoever holds it becomes their secret partner.",
+    "scoring": "Enter the contract, the declarer and partner, and the card points the declaring side captured. The scorecard measures the margin over 36, adds a flat point, doubles it for a solo, and books it for the declaring side and against the defenders. A simplified variant plays every hand as a solo."
+  },
+  "twentyfive": {
+    "lead": "Twenty-Five is the Irish trick-taking game where the five of trumps outranks everything, every trick is worth 5, and the first to 25 wins.",
+    "scoring": "After each hand you enter how many tricks every player took and who played the highest trump. Each trick scores 5 and the highest trump earns 5 more. The sheet runs to 25, or to 45 for partnerships in Forty-Five, or to 110 in the longer variant."
+  },
+  "allfours": {
+    "lead": "All Fours is the old trick-taking game still loved in the Caribbean, where each hand offers four points: High, Low, Jack and Game, first to 14.",
+    "scoring": "Enter each player's points for the hand: High for the highest trump dealt, Low for the lowest, Jack for winning the jack of trumps, and Game for the most card points in tricks. The first to 14 wins, or to 7 in Seven Up. A Caribbean variant adds the joker."
+  },
+  "burro": {
+    "lead": "Burro is the Latin American speed game of passing cards around until someone has four of a kind, and the slowest to notice earns a letter of BURRO.",
+    "scoring": "Every round you mark who was slowest, and the sheet hands them the next letter: B, U, R, R, O. Five letters and you are out. Fewer letters is better, and the last player standing wins."
+  },
+  "loteria": {
+    "lead": "Lotería is Mexico's picture bingo: a caller draws illustrated tiles, everyone covers them on their tabla, and the first to finish the pattern shouts Lotería.",
+    "scoring": "Braggster has a built-in caller that shuffles the 54 tiles and reveals them one at a time by name, so nobody needs a deck of cards to call from. Each round won scores a point on the tally, and most wins leads. Full tabla, Line, Four corners and Center square are all included."
+  },
+  "yahtzee": {
+    "lead": "Yahtzee is the five-dice game of thirteen boxes: three rolls a turn, one box filled each turn, and a 35 point bonus for 63 in the upper section.",
+    "scoring": "The sheet calculates every box, the upper bonus, and extra Yahtzees at 100 each with the Joker rule, all in the Yahtzee box itself. Columns shrink to fit every player on screen. Switch on digital dice and each roll shows what it would score, and with Play together up to six players throw on their own phones while everyone watches the dice land."
+  },
+  "dudo": {
+    "lead": "Dudo, also known as Perudo or liar's dice, is the bluffing game where everyone hides five dice under a cup and bids on what the whole table rolled.",
+    "scoring": "Each round you record who lost a die, or who won one back with an exact calza, and the sheet keeps every player's dice count. A player with no dice left is out, and the last one with dice wins. Aces are wild by default; the no-wild-aces variant turns that off."
+  },
+  "chess": {
+    "lead": "Chess on a wooden board in your pocket: every legal move enforced, including castling, en passant and promotion, and a running tally of who wins.",
+    "scoring": "Each finished game scores a point for the winner and nothing for a draw, so an evening becomes a session tally like 5 to 3. Play on one phone, against the computer at Easy, Medium or Hard, or with Play together on two phones, where the last move is marked on both boards."
+  },
+  "checkers": {
+    "lead": "Checkers, or English draughts, on an 8x8 board with forced captures, multi-jumps and kings, ready to play on your phone.",
+    "scoring": "Every finished game scores a point for the winner and a draw scores nothing, so you keep a running tally. Play on one phone, against the computer at three levels, or with Play together on two phones. Captures forced and captures optional variants are included."
+  },
+  "dammen": {
+    "lead": "International draughts is the 10x10 game with twenty pieces a side, flying kings and compulsory maximum capture, the version played in Dutch clubs.",
+    "scoring": "The board enforces the maximum capture rule and lets you tap out a long capture square by square, with a step back if you slip. Each finished game scores a point for the winner. Play on one phone, against the computer at three levels, or with Play together on two phones."
+  },
+  "connectfour": {
+    "lead": "Connect Four is the vertical four in a row game: drop a disc into a column, let gravity pick the row, and line up four before your opponent does.",
+    "scoring": "Tap a column and the disc drops into place on the 7 by 6 board. Each finished game scores a point for the winner and a full board is a draw. The discs differ by shape as well as color, so nobody depends on telling two colors apart."
+  },
+  "reversi": {
+    "lead": "Othello is the disc flipping game on an 8x8 board: trap a line of your opponent's discs between two of yours and they all turn over to your color.",
+    "scoring": "The board shows where you may play, flips every trapped line and passes for you when you have no move. Whoever holds more discs at the end wins the game and scores a point in the tally. Play on one phone, against the computer at three levels, or with Play together on two phones. Fixed and free opening variants are included."
+  },
+  "tictactoe": {
+    "lead": "Tic Tac Toe, the three in a row game on a 3x3 grid, playable on one phone with wins and draws spotted for you.",
+    "scoring": "Tap a square to place your mark. The board sees a win or a full grid by itself, scores a point to the winner and nothing for a draw, and keeps a running tally so a best of ten settles the argument."
+  },
+  "sudoku": {
+    "lead": "Sudoku, the 9x9 number puzzle: fill every row, column and 3x3 box with 1 to 9, from Beginner up to Evil, with a fresh grid every time.",
+    "scoring": "Every grid is generated on your phone and checked to have exactly one solution. Your score is your solve time plus a penalty for each mistake and each hint, so lower is better, and mistakes are counted quietly rather than flashed at you. Pencil notes are there for candidates."
+  },
+  "killersudoku": {
+    "lead": "Killer Sudoku adds cages to the 9x9 grid: the digits in each cage add up to its printed sum and never repeat, on top of the usual Sudoku rules.",
+    "scoring": "Each puzzle is generated fresh and verified unique under the Sudoku and cage rules together, across five difficulty tiers. A cage's sum turns to pen once its digits are right. Your score is solve time plus penalties for mistakes and hints, lowest wins."
+  },
+  "kakuro": {
+    "lead": "Kakuro is the cross sum puzzle: fill each run of white cells with distinct digits from 1 to 9 that add up to the clue at its head.",
+    "scoring": "Grids run from 6x6 to 10x10 over five tiers, each one generated on your phone and proven to have a single solution. Use pencil notes and hints when you need them. Solve time plus penalties for mistakes and hints makes your score, and lower is better."
+  },
+  "futoshiki": {
+    "lead": "Futoshiki is the inequality puzzle: every row and column holds each number once, and the greater than signs between cells must all hold.",
+    "scoring": "Grids go from 4x4 to 7x7 across five tiers, generated fresh and checked for a unique solution. Pencil notes and hints help you along. Your score is the solve time plus a penalty for each mistake and hint, lowest wins."
+  },
+  "binairo": {
+    "lead": "Binairo, also called Takuzu, fills a grid with zeros and ones: never three alike in a row, balanced lines, and no two rows or columns the same.",
+    "scoring": "Tap a cell to cycle it through empty, 0 and 1, on grids from 6x6 to 12x12. A mistake only counts when you move on with a wrong value still standing, so tapping past a value is free. Solve time plus penalties is your score, and lower wins."
+  },
+  "calcudoku": {
+    "lead": "Calcudoku is the arithmetic Latin square: each number once per row and column, and every caged group must reach its target with the printed sign.",
+    "scoring": "Grids run from 4x4 to 7x7 over five tiers, generated on your phone and proven unique by a cage-aware solver. Pencil notes and hints are there when you need them. Your score is solve time plus penalties for mistakes and hints, lowest wins."
+  },
+  "tectonic": {
+    "lead": "Tectonic is the region puzzle: each outlined region holds 1 up to its size once, and no two touching cells, even diagonally, may share a digit.",
+    "scoring": "Grids grow from 5x5 at Beginner to 8x8 at Evil, and every one is generated fresh and proven to have exactly one solution. Pencil notes and hints are there when you are stuck. Your score is solve time plus penalties for mistakes and hints, lowest wins."
+  },
+  "nonogram": {
+    "lead": "Nonogram is picture logic: the numbers beside each row and above each column give the runs of filled cells, and the solved grid reveals a picture.",
+    "scoring": "Grids run from 5x5 to 15x15, drawn from a bank of hand-made pictures that are each verified to have a single solution. Tap to fill a cell and hold to cross one out. Solve time plus penalties for mistakes and hints makes your score, lower is better."
+  },
+  "minesweeper": {
+    "lead": "Minesweeper without the guessing: every field is proven solvable by pure logic before you see it, from 9x9 with 10 mines up to 16x30 with 99.",
+    "scoring": "You always start from a safe opening, and revealing a mine costs you a mistake rather than the game, so you can finish the field. Flags and question marks mark what you suspect. Your score is the clear time plus penalties for mines hit and hints used, lowest wins."
+  },
+  "murdoku": {
+    "lead": "Murder Sudoku is a whodunnit on a floor plan: place every suspect and the victim, one per row and column, and the killer is whoever was alone with the victim.",
+    "scoring": "Each case is generated with its own story, a cast of suspects and a numbered list of clues, across five tiers, and is checked to have one consistent answer. Notes and cross outs never cost you anything. Your score is solve time plus penalties for mistakes and hints, lowest wins."
+  },
+  "logikwis": {
+    "lead": "Logikwis is the classic logic grid puzzle: match every person to one item in each category from a short list of clues, on a cross reference grid.",
+    "scoring": "Each case draws a fresh theme and set of categories, across five tiers from 3x3 up to 5x4, and is verified to have one answer. Tap to cross out or confirm a pair. Your score is solve time plus penalties for mistakes and hints, lowest wins."
+  },
+  "wordle": {
+    "lead": "Woordkraker is word guessing in six tries: each guess shows which letters are right, which are in the word elsewhere, and which are not there at all.",
+    "scoring": "Words run from 4 to 7 letters across four tiers, with an on-screen keyboard. Letter states are shown by shape as well as color. Your score is the number of tries plus the time, a missed word counts as the heaviest round, and the lowest total wins."
+  },
+  "crossword": {
+    "lead": "Crossword puzzles built fresh on your phone from a large clued dictionary, from a quick Mini to a full 15x15, so you never run out.",
+    "scoring": "Tap a clue to jump to its word and tap a cell again to switch between across and down. A reveal button fills the first empty or wrong letter. Your score is solve time plus penalties for wrong and revealed letters, lowest wins."
+  },
+  "woordzoeker": {
+    "lead": "Woordzoeker is word search: find every word from the list in the letter grid, running across, down or diagonally, forwards or backwards.",
+    "scoring": "Tap the first letter of a word and then its last, and a found word is struck off the list. Grids run from 8x8 with 5 words up to 14x14 with 12. Your score is solve time plus penalties for mistakes and hints, lowest wins."
+  },
+  "cijfercode": {
+    "lead": "Cijfercode is the codeword puzzle: a filled crossword grid with no clues, where every letter is replaced by a number and you crack the code.",
+    "scoring": "Type a letter for a number and it appears in every cell with that number at once. A few letters start revealed, just enough to crack the rest by reasoning. Grids come in Mini, Midi and Standard, and your score is solve time plus penalties for wrong guesses and hints, lowest wins."
+  },
+  "zweeds": {
+    "lead": "Zweeds is the arrowword, or Swedish crossword: every clue sits inside the grid next to an arrow that shows where its answer runs.",
+    "scoring": "Each deal is a freshly laid out grid, from a 4x4 Mini up to a 14x14 Grand. Tap an answer cell and type, and tap again to switch direction. Your score is solve time plus penalties for wrong and revealed letters, lowest wins."
+  },
+  "filippine": {
+    "lead": "Filippine is a stack of clues whose answers line up on one marked column, and that column spells a hidden solution word from top to bottom.",
+    "scoring": "Solve each row from its clue and the solution word appears once every row is right. The marked column is shown by color, a heavier border and a star. Puzzles have 4, 6 or 8 rows, and your score is solve time plus penalties for wrong and revealed letters, lowest wins."
+  },
+  "hangman": {
+    "lead": "Hangman, the letter guessing classic: name a letter at a time and find the word before the seventh miss completes the figure on the gallows.",
+    "scoring": "A hit fills every spot that letter belongs to and a miss draws the next part of the figure. A hint shows the word's description first, then one letter. Your score is the time plus a penalty for each miss and hint, a lost round counts as the heaviest, and lowest wins."
+  },
+  "backgammon": {
+    "lead": "Backgammon is the dice and checkers race around 24 points: hit blots, re-enter from the bar, bear off first, and win a gammon for double.",
+    "scoring": "Every finished game scores 1 for a single win, 2 for a gammon and 3 for a backgammon, as a running tally with no doubling cube. The board rolls, highlights legal moves and bears off. Play on one phone, against the computer at three levels, or with Play together on two phones. Standard and Nackgammon openings are included."
+  },
+  "dominoes": {
+    "lead": "Dominoes, from Block and Draw to All Fives: match the open ends, go out first, and score the pips your opponents are left holding.",
+    "scoring": "Play on the in-app tile board, passing one phone around the table, or enter the scores from a real set. The board knows whether your variant draws from the boneyard and scores open ends in All Fives. The side that goes out, or holds the fewest pips when the line blocks, scores the pips left in the other hands, up to the target."
+  },
+  "rummikub": {
+    "lead": "Rummikub is the tile rummy game: lay runs and groups, open with 30 points, and be the first to empty your rack.",
+    "scoring": "When a round ends, each other player enters the value of the tiles left on their rack, with a joker counting 30. The winner scores the lot and everyone else goes minus their own total. After a few rounds the highest total wins."
+  },
+  "cluedo": {
+    "lead": "Cluedo is the classic murder mystery board game. Braggster gives you a private detective notepad on your own phone, so no one peeks at your sheet.",
+    "scoring": "The notepad has 21 rows for the suspects, weapons and rooms, an envelope column that cycles between blank, ruled out and has it, and a free notes column. The app never deals or sees anyone's cards. When the case is solved you record the winner, and it counts in the statistics."
+  },
+  "darts": {
+    "lead": "Darts from 501 or 301: count down with three darts a turn, land on exactly zero to win, and go bust if you overshoot.",
+    "scoring": "Enter each throw on an on-screen dartboard, or type the turn total, and the sheet subtracts it from your remaining score. A turn that would take you below zero is a bust and does not count. The first player to land on exactly zero wins the leg."
+  },
+  "bowling": {
+    "lead": "Ten-pin bowling scored like the paper sheet at the lanes: ten frames, strikes carry the next two balls, spares carry the next one.",
+    "scoring": "Enter the pins for each ball and the sheet works out the frames, leaving a frame blank until its strike or spare bonus is known, just like a real score sheet. The tenth frame gets its bonus balls, and a perfect game is 300."
+  },
+  "kegelen": {
+    "lead": "Kegelen is nine-pin bowling as played in Dutch and German alleys: every pin you knock down is a point, with no strikes and no spares.",
+    "scoring": "Agree how many throws everyone gets, then enter the pins each player felled on every throw. Your total is simply the sum. Volle bos sets all nine pins up for every throw, and Afruimen keeps playing at what is left standing until all nine are down."
+  },
+  "midgetgolf": {
+    "lead": "Midgetgolf, or mini golf, over 9 or 18 holes: count every stroke, and the fewest strokes at the end of the round wins.",
+    "scoring": "Enter each player's strokes after every hole and the sheet keeps the running totals. Pick 9 or 18 holes when you set up the round. The lowest total wins, and the standings rank it that way."
+  },
+  "tennis": {
+    "lead": "Tennis scoring made easy: tap the player who won the point, and braggster turns points into games, games into sets, and sets into the match.",
+    "scoring": "Points count 0, 15, 30 and 40, deuce needs a two-point lead, a set needs six games and a two-game margin, and 6-6 goes to a tiebreak. Choose best of three or best of five sets. You only ever tap who won the point."
+  },
+  "padel": {
+    "lead": "Padel scoring for two teams of two: tap the team that won the point, and braggster keeps the games and sets for you.",
+    "scoring": "Games count up like tennis, and at 40-40 you choose between the golden point, where the next point decides, and playing for advantage. Sets go to six games with a two-game lead and a tiebreak at 6-6. A match tiebreak to 10 can replace the third set."
+  },
+  "tabletennis": {
+    "lead": "Table tennis games to 11 points, won by two clear, over a best of 3, 5 or 7 games match.",
+    "scoring": "Tap the player who won the rally and the scoresheet keeps the points and the games, including the play on at 10-10 until someone leads by two. The first to win enough games takes the match."
+  },
+  "generic": {
+    "lead": "The Blank scorecard keeps score for any game braggster has no scorecard for yet: name the players, add rounds, and it does the adding up.",
+    "scoring": "Choose whether the highest or the lowest total wins when you start, then enter everyone's points round by round. Braggster keeps the running totals and the standings, and the match counts in the statistics like any other game. It is always free."
+  },
+  "freestyle": {
+    "lead": "Freestyle is a free card and dice table for games you make up yourselves: deal cards and roll dice on screen, and keep your own score.",
+    "scoring": "Pick how many cards and dice to deal, per player or to a shared table, and play whatever rules your table agrees. You enter each round's points and choose whether the highest or lowest total wins. Freestyle is always free."
+  }
+}

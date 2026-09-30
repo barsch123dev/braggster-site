@@ -7,15 +7,16 @@ category: dice
 game_id: yahtzee
 meta_title: "Como Pontuar o Yahtzee: Caixas, Bônus e Regra Joker"
 meta_description: "A tabela completa de pontuação do Yahtzee: o bônus de 35 pontos da seção superior, o valor de Yahtzees extras, e a regra do Joker que decide onde os dados vão."
-primary_keyword: "yahtzee pontuacao regras"
+primary_keyword: "yahtzee pontuação regras"
 secondary_keywords:
   - "ficha de pontos yahtzee"
-  - "regras de bonus do yahtzee"
+  - "regras de bônus do yahtzee"
   - "regra do joker no yahtzee"
   - "kniffel punkte"
   - "yams regles"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -128,6 +129,18 @@ grade separam os jogadores, então a quinta linha continua sendo claramente a do
 A tela de regras traz o quadro de referência completo por categoria, então ninguém precisa
 lembrar se uma full house vale 25 ou uma soma.
 
+## Dados digitais, e um celular para cada um
+
+Sem dados em casa? Ative os dados digitais e lance na tela, segure os que quiser guardar, e o app
+mostra quanto essa jogada pontuaria em cada caixa aberta.
+
+Com o [Jogar juntos](/play-together/), até seis jogadores usam cada um o próprio celular na mesma
+rede Wi-Fi. Um celular abre uma mesa e mostra um código QR, os outros escaneiam, e cada um preenche
+a sua própria coluna. Quando o anfitrião ativa os dados digitais para a mesa, quem está na vez
+lança no próprio celular e todos os outros veem os dados caírem no deles. Sem conta, sem internet,
+e só o anfitrião precisa ter o jogo. O passo a passo está no
+[guia para jogar juntos em vários celulares](/blog/play-games-together-on-multiple-phones/).
+
 ## Perguntas frequentes
 
 **Como se consegue o bônus do Yahtzee?**
@@ -143,6 +156,10 @@ Não. Ela pontua a soma dos cinco dados. Essa é a caixa mais errada da ficha in
 **O que acontece se eu tirar um Yahtzee mas a caixa já está zerada?**
 Se você já levou zero na caixa de Yahtzee, nenhum bônus se aplica. A regra do Joker ainda decide
 onde os dados são pontuados.
+
+**Dá para jogar Yahtzee em vários celulares?**
+Dá. Com o Jogar juntos, até seis jogadores usam cada um o próprio celular na mesma rede Wi-Fi, com
+dados digitais compartilhados que todos veem cair.
 
 **Kniffel é o mesmo jogo que Yahtzee?**
 Na prática, sim, e a mesma ficha cobre os dois, junto com o Yams e a família Generala.

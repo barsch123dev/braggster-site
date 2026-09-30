@@ -16,6 +16,7 @@ secondary_keywords:
   - "dominoes scoreformulier"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -127,8 +128,7 @@ helften bij aan het totaal.
 Voor het aansluiten, één. Voor het totaal van de open uiteinden bij All Fives, allebei.
 
 **Kan ik dominoes op de telefoon spelen met iemand naast me?**
-Ja. Het bord is hotseat, dus je geeft het toestel door aan tafel. Er is geen online spel en geen
-account.
+Ja. Het bord is hotseat: één toestel, dat aan tafel wordt doorgegeven. Geen account nodig.
 
 ---
 

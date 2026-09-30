@@ -1,6 +1,6 @@
 {
-  "_comment": "The game catalogue, extracted 2026-08-05 from the app repo's game definitions (app/lib/games/*/*_game_definition.dart, registered in game_registry.dart). Game names are proper nouns and are never translated; only the surrounding UI copy in src/locales/ is. 'functionality' is reference data in English: the page does not render it as prose, because that would put untranslated English paragraphs on six of the seven locales. players.perSide 2 means partnership play (2 teams of 2). Categories mirror the app's GameCategory, except that the blank scorecard is broken out of 'other' into 'free' because it is the one game that is always free.",
-  "generated": "2026-08-05",
+  "_comment": "The game catalogue, extracted 2026-09-28 from the app repo's game definitions at v3.1.0 (app/lib/games/*/*_game_definition.dart, registered in GameRegistry.standard in game_registry.dart; the unregistered Bingo definition is not part of it). Game names are the app's English display names, proper nouns that are never translated; only the surrounding UI copy in src/locales/ and the per-game prose in src/gamepages/ is. 'functionality' is reference data in English and is never rendered: the per-game pages read src/gamepages/<locale>.json instead. Flags mirror the definitions: playInApp is hasInAppPlay, vsComputer is hasComputerOpponent, playTogether is supportsLiveTable, lowestWins is rankingDirection lowerWins, trademark is a non-null trademarkDisclaimer. players.perSide 2 means partnership play (2 teams of 2). Categories mirror the app's GameCategory, except that the blank scorecard and the Freestyle table are broken out of 'other' into 'free' because they are always free. Site ids 'generic' and 'unoflip' are the app's 'generic_board' and 'unoFlip', kept as they are because they are URLs.",
+  "generated": "2026-09-28",
   "games": [
     {
       "id": "klaverjassen",
@@ -26,7 +26,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "jass",
@@ -50,7 +51,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "belote",
@@ -73,7 +75,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "whist",
@@ -98,7 +101,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "bridge",
@@ -119,7 +123,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "euchre",
@@ -142,7 +147,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "fivehundred",
@@ -163,7 +169,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "spades",
@@ -187,7 +194,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "cuarenta",
@@ -211,7 +219,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "mus",
@@ -229,11 +238,12 @@
         "ES",
         "AR"
       ],
-      "functionality": "Four betting phases, Long (to 40) and Short (to 30) variants",
+      "functionality": "Four bidding phases (grande, chica, pares, juego), Long (to 40) and Short (to 30) variants",
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "hearts",
@@ -254,7 +264,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": true
+      "vsComputer": true,
+      "playTogether": false
     },
     {
       "id": "poker",
@@ -273,11 +284,12 @@
         "five-card draw",
         "home game"
       ],
-      "functionality": "Chip and pot tracking, four format variants",
+      "functionality": "Finishing-place scoring per sit-down: first place takes one point per player at the table, last place one. Texas Hold'em, Omaha, Seven card stud and Five card draw formats",
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "blackjack",
@@ -296,15 +308,16 @@
         "pontoon",
         "casino card game"
       ],
-      "functionality": "Chip ledger by default, plus a real dealer that deals and plays hands against you. Classic (Vegas), European, Atlantic City and Spanish 21 variants",
+      "functionality": "A real dealer deals and plays hands against you, or score hands played with a physical deck: blackjack 3, win 2, push 1, loss 0. Classic (Vegas), European, Atlantic City and Spanish 21 variants",
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "solitaire",
-      "name": "Patience (Solitaire)",
+      "name": "Solitaire",
       "category": "card",
       "players": {
         "min": 1,
@@ -324,7 +337,8 @@
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "rummy",
@@ -348,7 +362,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "canasta",
@@ -373,7 +388,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "jokeren",
@@ -394,7 +410,8 @@
       "playInApp": false,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "pesten",
@@ -415,7 +432,8 @@
       "playInApp": false,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "toepen",
@@ -436,7 +454,8 @@
       "playInApp": false,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "bollen",
@@ -458,7 +477,33 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "beverbende",
+      "name": "Beverbende",
+      "category": "card",
+      "players": {
+        "min": 2,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "beverbende",
+        "memory card game",
+        "Cabo",
+        "Kaboo",
+        "Golf card game",
+        "NL",
+        "BE"
+      ],
+      "functionality": "Paper-form scorecard like the block in the box: numbered round rows per player, the knocker's score ringed, penalty totals, lowest wins",
+      "playInApp": false,
+      "lowestWins": true,
+      "trademark": true,
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "uno",
@@ -478,7 +523,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": true,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "unoflip",
@@ -498,7 +544,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": true,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "briscola",
@@ -524,7 +571,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "scopa",
@@ -548,7 +596,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "truco",
@@ -572,7 +621,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "skat",
@@ -595,7 +645,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "doppelkopf",
@@ -617,7 +668,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "schnapsen",
@@ -640,11 +692,12 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "tarot",
-      "name": "Koenigrufen",
+      "name": "Königrufen",
       "category": "card",
       "players": {
         "min": 4,
@@ -652,6 +705,7 @@
         "perSide": 1
       },
       "tags": [
+        "königrufen",
         "koenigrufen",
         "tarock",
         "tarot",
@@ -660,11 +714,12 @@
         "FR",
         "CH"
       ],
-      "functionality": "54-card tarock scoring, classic Koenigrufen and a simplified solo variant",
+      "functionality": "54-card tarock scoring, classic Königrufen and a simplified solo variant",
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "twentyfive",
@@ -687,7 +742,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "allfours",
@@ -711,7 +767,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "burro",
@@ -736,11 +793,12 @@
       "playInApp": false,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "loteria",
-      "name": "Loteria",
+      "name": "Lotería",
       "category": "card",
       "players": {
         "min": 2,
@@ -748,6 +806,7 @@
         "perSide": 1
       },
       "tags": [
+        "lotería",
         "loteria",
         "loteria mexicana",
         "Mexican bingo",
@@ -759,7 +818,8 @@
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "yahtzee",
@@ -779,11 +839,12 @@
         "dice game",
         "five dice"
       ],
-      "functionality": "Full calculating sheet with the 63+ upper bonus and extra-Yahtzee bonuses (100 each, Joker rule). Optional animated on-screen dice roller",
+      "functionality": "Full calculating sheet with the 63+ upper bonus and extra-Yahtzee bonuses (100 each, Joker rule). Optional on-screen digital dice, and Play together with shared dice on up to six phones",
       "playInApp": false,
       "lowestWins": false,
       "trademark": true,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": true
     },
     {
       "id": "dudo",
@@ -810,7 +871,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "chess",
@@ -829,11 +891,12 @@
         "Schach",
         "scacchi"
       ],
-      "functionality": "Live 8x8 board with full legal-move enforcement (check, mate, stalemate, castling, en passant, promotion), Resign and Draw, plus a three-level computer opponent on a practice screen. Session tally of games won",
+      "functionality": "Live 8x8 board with full legal-move enforcement (check, mate, stalemate, castling, en passant, promotion), Resign and Draw, a three-level computer opponent on a practice screen, and Play together on two phones. Session tally of games won",
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": true
+      "vsComputer": true,
+      "playTogether": true
     },
     {
       "id": "checkers",
@@ -851,11 +914,12 @@
         "Engels dammen",
         "damas"
       ],
-      "functionality": "Live 8x8 board, forced and multi-jump captures, king promotion, three-level computer opponent. Captures-forced and Captures-optional variants",
+      "functionality": "Live 8x8 board, forced and multi-jump captures, king promotion, three-level computer opponent, Play together on two phones. Captures-forced and Captures-optional variants",
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": true
+      "vsComputer": true,
+      "playTogether": true
     },
     {
       "id": "dammen",
@@ -873,11 +937,12 @@
         "10x10 damspel",
         "damas internacionales"
       ],
-      "functionality": "Live 10x10 board, flying kings, compulsory maximum capture, tap-out capture sequences with a step-back control",
+      "functionality": "Live 10x10 board, flying kings, compulsory maximum capture, tap-out capture sequences with a step-back control, three-level computer opponent, Play together on two phones",
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": true
+      "vsComputer": true,
+      "playTogether": true
     },
     {
       "id": "connectfour",
@@ -899,7 +964,31 @@
       "playInApp": true,
       "lowestWins": false,
       "trademark": true,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "reversi",
+      "name": "Othello",
+      "category": "board",
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "othello",
+        "reversi",
+        "disc flipping game",
+        "omdraaispel",
+        "Reversi-Spiel"
+      ],
+      "functionality": "Live 8x8 board that flips every trapped line, automatic pass, last move marked, three-level computer opponent, Play together on two phones. Fixed and free opening variants. Session tally of games won",
+      "playInApp": true,
+      "lowestWins": false,
+      "trademark": true,
+      "vsComputer": true,
+      "playTogether": true
     },
     {
       "id": "tictactoe",
@@ -921,7 +1010,8 @@
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "sudoku",
@@ -942,7 +1032,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "killersudoku",
@@ -964,7 +1055,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "kakuro",
@@ -986,7 +1078,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "futoshiki",
@@ -1008,7 +1101,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "binairo",
@@ -1030,7 +1124,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "calcudoku",
@@ -1052,7 +1147,30 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "tectonic",
+      "name": "Tectonic",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "tectonic",
+        "region puzzle",
+        "number puzzle",
+        "logic puzzle"
+      ],
+      "functionality": "Live region grid from 5x5 to 8x8: each region holds 1 to its size once, no two touching cells alike, five difficulty tiers, uniqueness proven by a solver, pencil notes and hints",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false,
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "nonogram",
@@ -1075,7 +1193,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "minesweeper",
@@ -1097,7 +1216,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "murdoku",
@@ -1119,7 +1239,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "logikwis",
@@ -1141,7 +1262,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": true,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "wordle",
@@ -1163,7 +1285,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "crossword",
@@ -1185,7 +1308,8 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "woordzoeker",
@@ -1207,7 +1331,100 @@
       "playInApp": true,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "cijfercode",
+      "name": "Cijfercode",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "codeword",
+        "cijfercode",
+        "number cipher",
+        "code breaker puzzle",
+        "word puzzle"
+      ],
+      "functionality": "Codeword grid with no clues: every letter is a number, a few start revealed, typing a letter fills every cell with that number. Mini 7x7, Midi 9x9 and Standard 11x11",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false,
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "zweeds",
+      "name": "Zweeds",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "arrowword",
+        "zweedse puzzel",
+        "Swedish crossword",
+        "Schwedenraetsel",
+        "arrow crossword"
+      ],
+      "functionality": "Arrowword with every clue printed inside the grid next to an arrow, freshly laid out each deal. Mini 4x4, Midi 8x8, Standard 12x12 and Grand 14x14",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false,
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "filippine",
+      "name": "Filippine",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "filippine",
+        "hidden word puzzle",
+        "clue puzzle",
+        "word puzzle"
+      ],
+      "functionality": "Stack of clued rows whose marked column spells a hidden solution word. Mini 4, Midi 6 and Standard 8 rows",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false,
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "hangman",
+      "name": "Hangman",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "hangman",
+        "galgje",
+        "ahorcado",
+        "le pendu",
+        "Galgenmaennchen",
+        "impiccato"
+      ],
+      "functionality": "Guess the word letter by letter before the gallows figure is drawn, seven misses allowed, hints show the description first. Short, Medium and Long word tiers",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": false,
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "backgammon",
@@ -1226,11 +1443,12 @@
         "nackgammon",
         "doubling cube"
       ],
-      "functionality": "Hotseat board with dice, hits, bar re-entry and bearing off. Wins score 1, gammon 2, backgammon 3. Standard and Nackgammon openings",
+      "functionality": "Board with dice, hits, bar re-entry and bearing off, a three-level computer opponent, and Play together on two phones. Wins score 1, gammon 2, backgammon 3. Standard and Nackgammon openings",
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": true
+      "vsComputer": true,
+      "playTogether": true
     },
     {
       "id": "dominoes",
@@ -1253,7 +1471,8 @@
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "rummikub",
@@ -1273,7 +1492,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": true,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "cluedo",
@@ -1295,7 +1515,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": true,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "darts",
@@ -1318,7 +1539,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "bowling",
@@ -1341,7 +1563,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "kegelen",
@@ -1366,7 +1589,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "midgetgolf",
@@ -1389,7 +1613,8 @@
       "playInApp": false,
       "lowestWins": true,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "tennis",
@@ -1410,7 +1635,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "padel",
@@ -1431,7 +1657,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "tabletennis",
@@ -1453,7 +1680,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "generic",
@@ -1475,7 +1703,8 @@
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     },
     {
       "id": "freestyle",
@@ -1498,7 +1727,8 @@
       "playInApp": true,
       "lowestWins": false,
       "trademark": false,
-      "vsComputer": false
+      "vsComputer": false,
+      "playTogether": false
     }
   ]
 }

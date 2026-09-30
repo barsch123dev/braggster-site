@@ -15,6 +15,7 @@ secondary_keywords:
   - "come migliorare a sudoku"
   - "sudoku appunti a matita"
 search_intent: informational
+updated: 2026-09-28
 priority: 1
 schema:
   - Article
@@ -103,7 +104,7 @@ completamente offline.
 
 Braggster non fara mai lampeggiare in rosso una cifra piazzata male.
 
-E una scelta di design deliberata, e vale per tutti e tredici i puzzle dell'app. Il riscontro
+E una scelta di design deliberata, e vale per tutti e diciotto i puzzle dell'app. Il riscontro
 immediato sugli errori trasforma un puzzle di logica in un gioco da validatore: smetti di dedurre e
 cominci a sondare, perche l'app ti dira se hai sbagliato. Togli quella rete e devi essere davvero
 sicuro.
@@ -148,6 +149,6 @@ il contrario della maggior parte dei giochi dell'app.
 
 ---
 
-**Continua:** scopri tutti e tredici i [puzzle di logica](/blog/puzzle-games/), prova
+**Continua:** scopri tutti e diciotto i [puzzle di logica](/blog/puzzle-games/), prova
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), oppure sfoglia il catalogo su
 [braggster.com/games](/games/).

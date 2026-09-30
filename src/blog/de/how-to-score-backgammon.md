@@ -16,6 +16,7 @@ secondary_keywords:
   - "backgammon spielanleitung"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -85,13 +86,23 @@ Zwei Startaufstellungen werden unterstützt:
 - **Nackgammon**, bei der zwei Steine weiter zurückgesetzt werden, was das frühe Spiel weniger zum
   Wettlauf und mehr zur Positionsfrage macht.
 
+## Gemeinsam spielen auf zwei Handys
+
+Du kannst auch mit einem Handy pro Person spielen. Mit [Gemeinsam spielen](/play-together/) eröffnet ein
+Handy einen Tisch und zeigt einen QR-Code, das andere scannt ihn, und beide Spieler sehen im selben
+WLAN live dasselbe Brett. Jeder würfelt und zieht von seinem eigenen Handy, der letzte Zug wird auf
+beiden Brettern markiert, und die beendete Partie zählt mit 1, 2 oder 3 Punkten auf beiden Handys in die
+Summe. Es gibt kein Konto und keine Internetverbindung, und nur der Gastgeber braucht das Spiel. Der
+[Guide zum gemeinsamen Spielen auf mehreren Handys](/blog/play-games-together-on-multiple-phones/)
+führt Schritt für Schritt durch alles.
+
 ## Der Computergegner, und warum er anders ist
 
 Backgammon hat einen Übungsbildschirm gegen den Computer mit drei Stufen, wahlweise als Hell oder
 Dunkel.
 
 Wissenswert ist, dass er nicht so funktionieren kann wie die anderen Engines in Braggster. Schach,
-Dame und Internationales Damespiel nutzen alle eine Alpha-Beta-Suche, die darauf setzt, dass das Spiel
+Dame, Internationales Damespiel und Othello nutzen alle eine Alpha-Beta-Suche, die darauf setzt, dass das Spiel
 deterministisch ist: Du weißt genau, welche Stellungen von hier aus erreichbar sind.
 
 Backgammon hat Würfel. Jeder Knoten im Suchbaum ist ein Zufallsknoten mit einundzwanzig
@@ -122,6 +133,10 @@ vorkommt.
 
 **Kann ich Backgammon offline gegen den Computer spielen?**
 Ja. Die Engine läuft komplett auf deinem Gerät, ohne Verbindung und ohne Konto.
+
+**Können zwei Leute Backgammon auf zwei Handys spielen?**
+Ja. Mit Gemeinsam spielen nutzt jeder Spieler sein eigenes Handy im selben WLAN. Einer eröffnet einen
+Tisch, der andere scannt seinen Code, und die Partie läuft live auf beiden Bildschirmen.
 
 **Was ist Nackgammon?**
 Eine Startaufstellung, bei der zwei Steine weiter zurückgesetzt werden, was die Eröffnung positioneller

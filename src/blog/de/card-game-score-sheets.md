@@ -1,11 +1,11 @@
 ---
-title: "Kartenspiel Punktezettel: Punkte für 33 Kartenspiele führen"
+title: "Kartenspiel Punktezettel: Punkte für 34 Kartenspiele führen"
 slug: card-game-score-sheets
 locale: de
 type: pillar
 category: card
-meta_title: "Kartenspiel Punktezettel für 33 Kartenspiele"
-meta_description: "Wertungsregeln und digitale Punktezettel für 33 Kartenspiele, von Klaverjassen und Bridge bis Hearts, Canasta und Spades. Rechnende Punktezettel, ohne Konto."
+meta_title: "Kartenspiel Punktezettel für 34 Kartenspiele"
+meta_description: "Wertungsregeln und digitale Punktezettel für 34 Kartenspiele, von Klaverjassen und Bridge bis Hearts, Canasta und Spades. Rechnende Punktezettel, ohne Konto."
 primary_keyword: "kartenspiele punkte app"
 secondary_keywords:
   - "skat zaehlen"
@@ -15,6 +15,7 @@ secondary_keywords:
   - "digitaler punktezettel karten"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -29,10 +30,10 @@ internal_links:
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: null
+trademark_note: "Uno, Uno Flip und Beverbende sind Marken ihrer jeweiligen Verlage. Braggster steht in keiner Verbindung dazu, wird nicht unterstützt, und jeder Name wird ausschließlich beschreibend verwendet."
 ---
 
-# Kartenspiel Punktezettel: Punkte für 33 Kartenspiele führen
+# Kartenspiel Punktezettel: Punkte für 34 Kartenspiele führen
 
 Fast jedes Kartenspiel, das man zweimal spielt, braucht einen Punktezettel, und fast jeder Haushalt
 führt Punkte auf dieselbe Art: ein abgerissenes Blatt Papier, ein Stift, der verschwunden ist, und
@@ -41,7 +42,7 @@ einen rechnenden Punktezettel, gebaut für genau das Spiel, das du spielst, soda
 Konstruktion stimmt und nicht durch Kopfrechnen.
 
 Dieser Guide zeigt, wie die Wertung in den wichtigsten Kartenspiel-Familien funktioniert, und welche
-der 33 Kartenspiele in Braggster zu welcher Familie gehören.
+der 34 Kartenspiele in Braggster zu welcher Familie gehören.
 
 ## Was ein Kartenspiel-Punktezettel leisten muss
 
@@ -54,11 +55,11 @@ Punktezettel muss wissen:
   Whist Runde wertet nur die Stiche über dem Buch von sechs. Eine Canasta Runde kann um Tausende
   schwanken.
 - **Welche Richtung gewinnt.** Die meisten Spiele gewinnt die höchste Summe. Burro, Golf-artige Spiele
-  und jedes Rätsel in der App gewinnt die niedrigste Summe, und ein Punktezettel, der das vertauscht,
-  setzt den Verlierer an die erste Stelle.
+  wie Beverbende und jedes Rätsel in der App gewinnt die niedrigste Summe, und ein Punktezettel, der
+  das vertauscht, setzt den Verlierer an die erste Stelle.
 - **Wann die Partie endet.** Bis 500, bis 11, sechzehn Runden, oder wer zuerst keine Karten mehr hat.
 
-Braggsters Punktezettel kodieren alle vier pro Spiel, deshalb gibt es 33 davon statt einer einzigen
+Braggsters Punktezettel kodieren alle vier pro Spiel, deshalb gibt es 34 davon statt einer einzigen
 Tabelle.
 
 ## Stichspiele
@@ -109,6 +110,14 @@ raus, und wenige Buchstaben führen, deshalb wertet dieses Spiel nach niedrigste
 
 Vertiefung: [Pesten Wertung und Regeln](/blog/how-to-score-pesten/).
 
+## Gedächtnisspiele
+
+[Beverbende](/games/beverbende/) ist das niederländische Gedächtnisspiel aus der Golf-Familie: Du hältst
+vier verdeckte Karten, siehst dir zwei an, und ziehst, tauschst und merkst dich zur niedrigsten Summe,
+bevor jemand für die letzte Runde klopft. Braggsters Punktezettel bildet den Zählblock aus der
+Schachtel nach, eine Spalte pro Spieler und eine Zeile pro Runde, mit eingekreistem Wert des Klopfers,
+und die niedrigste Summe gewinnt.
+
 ## Blattvergleichsspiele
 
 Poker und Blackjack werden nach Ergebnis gewertet, nie nach etwas Eingesetztem. Braggsters Poker
@@ -133,14 +142,14 @@ Vertiefung: [Solitaire Wertung und das Klondike Brett](/blog/how-to-score-solita
 
 ## Regionale Kartenspiele in einer App
 
-Der Sinn eines Katalogs mit 33 Kartenspielen ist unter anderem, dass das Spiel, das deine Familie
+Der Sinn eines Katalogs mit 34 Kartenspielen ist unter anderem, dass das Spiel, das deine Familie
 spielt, vermutlich dabei ist, selbst wenn außerhalb deines Landes kaum jemand davon gehört hat.
 Braggster markiert jedes Spiel mit den Ländern, in denen es fest verankert ist, sodass der Katalog auf
 deine Region vorgefiltert werden kann:
 
 | Region | Erfasste Kartenspiele |
 |---|---|
-| Niederlande, Belgien | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Whist |
+| Niederlande, Belgien | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Beverbende, Whist |
 | Deutschland, Österreich, Schweiz | Skat, Doppelkopf, Schnapsen, Königrufen, Jass |
 | Frankreich, Monaco | Belote, Bridge, Königrufen |
 | Italien, San Marino | Briscola, Scopa, Canasta |

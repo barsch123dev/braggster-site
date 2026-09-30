@@ -16,6 +16,7 @@ secondary_keywords:
   - "segnapunti domino"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -124,8 +125,8 @@ entrambe le sue meta al totale.
 Per l'abbinamento, uno. Per il totale degli estremi aperti in All Fives, entrambe le meta.
 
 **Posso giocare a domino dal telefono con qualcuno accanto a me?**
-Si. Il tabellone e hotseat, quindi passi il dispositivo al tavolo. Non c'e gioco online e non c'e
-account.
+Sì. Il tabellone è hotseat: un solo dispositivo, che passa di mano in mano al tavolo. Non serve
+nessun account.
 
 ---
 

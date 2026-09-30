@@ -15,19 +15,22 @@ secondary_keywords:
   - "marcador para juegos de mesa"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
   - ItemList
 internal_links:
   - /games/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
   - /blog/how-to-score-dominoes/
   - /blog/how-to-score-backgammon/
   - /blog/how-to-score-rummikub/
   - /blog/card-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: "Rummikub, Cluedo y Connect Four son marcas registradas de sus respectivos editores. Braggster no está afiliada a ellos ni cuenta con su respaldo, y cada nombre se usa solo con fines descriptivos."
+trademark_note: "Rummikub, Cluedo, Connect Four y Othello son marcas registradas de sus respectivos editores. Braggster no está afiliada a ellos ni cuenta con su respaldo, y cada nombre se usa solo con fines descriptivos."
 ---
 
 # Hojas de Puntuación para Juegos de Mesa y Tableros Jugables
@@ -37,7 +40,8 @@ generan un número que corre en cada ronda, como Dominoes y Rummikub, y necesita
 calcule de verdad. Otros no producen nada dentro de una sola partida: Chess y Tic Tac Toe
 simplemente terminan, y lo que en realidad quieres registrar es el marcador de toda la noche.
 
-Braggster cubre ambos casos, y para diez juegos de mesa además te da el tablero en sí.
+Braggster cubre ambos casos, y para ocho juegos de mesa además te da el tablero en sí, en un móvil
+o, en cinco de ellos, con un móvil cada uno.
 
 ## Juegos que puntúan con un número
 
@@ -60,8 +64,8 @@ Para profundizar: [puntuación de Dominoes](/blog/how-to-score-dominoes/),
 
 ## Juegos sin puntuación dentro de una sola partida
 
-Chess, Checkers, las damas internacionales, Connect Four y Tic Tac Toe tienen exactamente un
-resultado por partida: alguien gana, o hay empate. No hay ningún número que anotar.
+Chess, Checkers, las damas internacionales, Othello, Connect Four y Tic Tac Toe tienen exactamente
+un resultado por partida: alguien gana, o hay empate. No hay ningún número que anotar.
 
 Braggster trata cada partida terminada como una ronda que vale una victoria, así que el
 enfrentamiento se convierte en un marcador de sesión. Eso encaja con cómo se juega de verdad: no
@@ -75,25 +79,34 @@ Para profundizar: [puntuación de Backgammon, gammons y backgammons](/blog/how-t
 
 ## Tableros que de verdad puedes jugar desde el móvil
 
-Diez juegos de mesa en Braggster son jugables desde el dispositivo, no solo puntuables:
+Ocho juegos de mesa en Braggster son jugables desde el dispositivo, no solo puntuables:
 
 | Juego | Qué es el tablero dentro de la app |
 |---|---|
-| Chess | Tablero 8x8 local con todas las reglas de movimiento legal: jaque, jaque mate, ahogado, enroque, captura al paso, coronación |
-| Checkers | Tablero 8x8 local, reglas americana e inglesa, capturas forzadas y en cadena |
-| Damas internacionales | Tablero 10x10 local, damas voladoras, captura máxima obligatoria, casilla a casilla |
-| Backgammon | Tablero local: tira los dados, toca para mover, golpea fichas sueltas, reingresa y saca fichas |
-| Dominoes | Tablero de fichas local: coloca en el extremo abierto que coincida, roba o pasa según la variante |
-| Connect Four | Tablero 7x6 local, tocas una columna y la gravedad elige la fila |
-| Tic Tac Toe | Cuadrícula 3x3 local con detección automática de victoria y empate |
-| Sudoku | Cuadrícula generada, cinco niveles de dificultad |
+| [Chess](/games/chess/) | Tablero 8x8 con todas las reglas de movimiento legal: jaque, jaque mate, ahogado, enroque, captura al paso, coronación |
+| [Checkers](/games/checkers/) | Tablero 8x8, reglas americana e inglesa, capturas forzadas y en cadena |
+| [Damas internacionales](/games/dammen/) | Tablero 10x10, damas voladoras, captura máxima obligatoria, casilla a casilla |
+| [Othello](/games/reversi/) | Tablero 8x8 que voltea cada línea atrapada y pasa turno por ti cuando no tienes movimiento |
+| [Backgammon](/games/backgammon/) | Tira los dados, toca para mover, golpea fichas sueltas, reingresa y saca fichas |
+| [Dominoes](/games/dominoes/) | Tablero de fichas local: coloca en el extremo abierto que coincida, roba o pasa según la variante |
+| [Connect Four](/games/connectfour/) | Tablero 7x6 local, tocas una columna y la gravedad elige la fila |
+| [Tic Tac Toe](/games/tictactoe/) | Cuadrícula 3x3 local con detección automática de victoria y empate |
 
 Cada uno de estos registra su resultado por el mismo camino que una ronda anotada a mano, así que
 una partida jugada en la app nunca puede puntuar distinto de una que anotaste tú mismo.
 
+## Jugar juntos, un móvil cada uno
+
+Todos los tableros funcionan pasando el móvil. Chess, Checkers, las damas internacionales, Othello y
+Backgammon también se juegan en dos móviles con [Jugar juntos](/play-together/): un móvil abre una
+mesa y muestra un código QR, el otro lo escanea, y cada jugador mueve desde su propio móvil por la
+misma red wifi. El último movimiento se marca en ambos tableros, no hay cuenta ni internet de por
+medio, y unirse es gratis. El paso a paso, incluido qué hacer cuando una mesa no aparece, está en la
+[guía para jugar juntos en varios móviles](/blog/play-games-together-on-multiple-phones/).
+
 ## Jugar contra el ordenador
 
-Cuatro de los juegos de mesa también tienen una pantalla de práctica contra el ordenador, cada una
+Cinco de los juegos de mesa también tienen una pantalla de práctica contra el ordenador, cada una
 con tres niveles:
 
 - **Chess** usa una búsqueda alfa beta con evaluación por posición de las piezas. Puedes jugar con
@@ -101,10 +114,12 @@ con tres niveles:
 - **Checkers** busca las cadenas de capturas múltiples como el único turno que son.
 - **Las damas internacionales** hacen lo mismo sobre el tablero 10x10, donde toda una secuencia de
   captura es un solo movimiento.
+- **Othello** busca con una tabla de pesos por casilla más movilidad, y cuenta fichas solo en el
+  final de la partida.
 - **Backgammon** no puede usar alfa beta en absoluto, porque los dados convierten cada nodo en un
   nodo de azar. En su lugar corre un expectimax sobre las veintiuna tiradas distintas posibles.
 
-Los cuatro corren en un hilo en segundo plano para que el tablero siga respondiendo mientras el
+Los cinco corren en un hilo en segundo plano para que el tablero siga respondiendo mientras el
 motor piensa. Las partidas de práctica nunca se registran, así que no afectan tus estadísticas ni tu
 porcentaje de victorias.
 
@@ -118,8 +133,12 @@ zoom y desplazamiento en lugar de encoger las casillas por debajo de un tamaño 
 ## Preguntas frecuentes
 
 **¿Pueden jugar dos personas en un mismo móvil?**
-Sí. Los tableros jugables funcionan pasando el dispositivo: se lo van pasando por la mesa. No hay
-multijugador en línea ni cuenta.
+Sí. Los tableros jugables funcionan pasando el dispositivo: se lo van pasando por la mesa. No hace
+falta cuenta.
+
+**¿Podemos jugar en dos móviles en su lugar?**
+Sí, en Chess, Checkers, las damas internacionales, Othello y Backgammon. Con Jugar juntos cada
+jugador usa su propio móvil por la misma red wifi, sin cuenta y sin conexión a internet.
 
 **¿La app funciona para un juego de mesa que no está en la lista?**
 Sí. La hoja en blanco, siempre gratis, lleva la puntuación de cualquier cosa, y hay un marcador
@@ -132,8 +151,8 @@ No. Las partidas de práctica contra el ordenador están deliberadamente excluid
 No. No hay cubo doblador y no se apuesta nada en ningún lugar de la app.
 
 **¿Por qué Sudoku aparece como juego de mesa en algunas páginas?**
-No debería. Sudoku pertenece a los puzles, junto con los otros once puzles para un jugador que
-Braggster ya ofrece. Consulta la [guía de puzles](/blog/puzzle-games/).
+No debería. Sudoku pertenece a los puzles, junto con los otros diecisiete puzles para un jugador
+que Braggster ya ofrece en su propia pestaña de Puzles. Consulta la [guía de puzles](/blog/puzzle-games/).
 
 ---
 

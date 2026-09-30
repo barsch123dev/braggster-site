@@ -15,19 +15,22 @@ secondary_keywords:
   - "feuille de score rummikub"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
   - ItemList
 internal_links:
   - /games/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
   - /blog/how-to-score-dominoes/
   - /blog/how-to-score-backgammon/
   - /blog/how-to-score-rummikub/
   - /blog/card-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: "Rummikub, Cluedo et Puissance 4 sont des marques déposées de leurs éditeurs respectifs. Braggster n'est ni affilié ni approuvé par ceux-ci, et chaque nom est utilisé uniquement à titre référentiel."
+trademark_note: "Rummikub, Cluedo, Puissance 4 et Othello sont des marques déposées de leurs éditeurs respectifs. Braggster n'est ni affilié ni approuvé par ceux-ci, et chaque nom est utilisé uniquement à titre référentiel."
 ---
 
 # Feuilles de score pour jeux de plateau et plateaux jouables
@@ -38,7 +41,8 @@ d'une vraie feuille de calcul. D'autres ne produisent rien du tout à l'intérie
 partie : les Échecs et le Morpion se terminent, un point c'est tout, et ce que tu veux vraiment
 suivre, c'est le décompte sur toute la soirée.
 
-Braggster gère les deux cas, et pour dix jeux de plateau, il te donne aussi le plateau lui-même.
+Braggster gère les deux cas, et pour huit jeux de plateau, il te donne aussi le plateau lui-même,
+sur un seul téléphone ou, pour cinq d'entre eux, sur un téléphone chacun.
 
 ## Les jeux qui comptent un score
 
@@ -61,8 +65,8 @@ Pour aller plus loin : [le score aux Dominoes](/blog/how-to-score-dominoes/),
 
 ## Les jeux sans score à l'intérieur d'une partie
 
-Les Échecs, les Dames, les Dames internationales, le Puissance 4 et le Morpion n'ont qu'un seul
-résultat possible par partie : quelqu'un gagne, ou c'est nul. Il n'y a aucun nombre à noter.
+Les Échecs, les Dames, les Dames internationales, l'Othello, le Puissance 4 et le Morpion n'ont
+qu'un seul résultat possible par partie : quelqu'un gagne, ou c'est nul. Il n'y a aucun nombre à noter.
 
 Braggster traite une partie terminée comme une manche qui vaut une victoire, et le match devient un
 décompte de la session. Cela correspond à la façon dont on joue vraiment à ces jeux : pas une seule
@@ -75,26 +79,36 @@ Pour aller plus loin : [le score au Backgammon, gammons et backgammons](/blog/ho
 
 ## Les plateaux que tu peux vraiment jouer sur ton téléphone
 
-Dix jeux de plateau dans Braggster se jouent directement sur l'appareil, pas seulement au score :
+Huit jeux de plateau dans Braggster se jouent directement sur l'appareil, pas seulement au score :
 
 | Jeu | Ce qu'offre le plateau dans l'app |
 |---|---|
-| Échecs | Plateau 8x8 en chaise tournante avec l'application intégrale des règles : échec, échec et mat, pat, roque, prise en passant, promotion |
-| Dames | Plateau 8x8 en chaise tournante, règles américaines et anglaises, prises forcées et multiples |
-| Dames internationales | Plateau 10x10 en chaise tournante, dames volantes, prise maximale obligatoire, cases éliminées une à une |
-| Backgammon | Plateau en chaise tournante : lance les dés, touche pour déplacer, prends les bâtons isolés, rentre et sors tes pions |
-| Dominoes | Plateau de jetons en chaise tournante : pose sur l'extrémité ouverte correspondante, pioche ou passe selon la variante |
-| Puissance 4 | Plateau 7x6 en chaise tournante, touche une colonne et la gravité choisit la ligne |
-| Morpion | Grille 3x3 en chaise tournante avec détection automatique de victoire et de match nul |
-| Sudoku | Grille générée, cinq niveaux de difficulté |
+| [Échecs](/games/chess/) | Plateau 8x8 avec l'application intégrale des règles : échec, échec et mat, pat, roque, prise en passant, promotion |
+| [Dames](/games/checkers/) | Plateau 8x8, règles américaines et anglaises, prises forcées et multiples |
+| [Dames internationales](/games/dammen/) | Plateau 10x10, dames volantes, prise maximale obligatoire, cases éliminées une à une |
+| [Othello](/games/reversi/) | Plateau 8x8 qui retourne chaque ligne encadrée et passe ton tour quand tu n'as aucun coup |
+| [Backgammon](/games/backgammon/) | Lance les dés, touche pour déplacer, prends les bâtons isolés, rentre et sors tes pions |
+| [Dominoes](/games/dominoes/) | Plateau de jetons en chaise tournante : pose sur l'extrémité ouverte correspondante, pioche ou passe selon la variante |
+| [Puissance 4](/games/connectfour/) | Plateau 7x6 en chaise tournante, touche une colonne et la gravité choisit la ligne |
+| [Morpion](/games/tictactoe/) | Grille 3x3 en chaise tournante avec détection automatique de victoire et de match nul |
 
 Chacun de ces plateaux enregistre son résultat par le même circuit qu'une feuille remplie à la
 main, donc une partie jouée dans l'app ne peut jamais être comptée différemment d'une partie saisie
 manuellement.
 
+## Jouer ensemble, un téléphone chacun
+
+Chaque plateau fonctionne en alternance sur un seul téléphone. Les Échecs, les Dames, les Dames
+internationales, l'Othello et le Backgammon se jouent aussi sur deux téléphones avec
+[Jouer ensemble](/play-together/) : un téléphone ouvre une table et affiche un code QR, l'autre le
+scanne, et chaque joueur joue depuis son propre téléphone sur le même Wi-Fi. Le dernier coup est
+marqué sur les deux plateaux, il n'y a ni compte ni internet, et rejoindre est gratuit. Le pas à pas,
+y compris quoi faire quand une table n'apparaît pas, se trouve dans le
+[guide pour jouer ensemble sur plusieurs téléphones](/blog/play-games-together-on-multiple-phones/).
+
 ## Jouer contre l'ordinateur
 
-Quatre de ces jeux de plateau ont aussi un écran d'entraînement contre un adversaire ordinateur,
+Cinq de ces jeux de plateau ont aussi un écran d'entraînement contre un adversaire ordinateur,
 chacun avec trois niveaux :
 
 - **Les Échecs** utilisent une recherche alpha bêta avec une évaluation positionnelle des pièces.
@@ -103,10 +117,12 @@ chacun avec trois niveaux :
   représentent réellement.
 - **Les Dames internationales** font de même sur le plateau 10x10, où toute une séquence de prises
   compte comme un seul coup.
+- **L'Othello** cherche avec une table de poids par case plus la mobilité, et ne compte les pions
+  qu'en fin de partie.
 - **Le Backgammon** ne peut pas du tout utiliser l'alpha bêta, parce que les dés font de chaque
   nœud un nœud de hasard. Il utilise à la place un expectimax sur les vingt et un lancers distincts.
 
-Les quatre tournent sur un thread en arrière-plan pour que le plateau reste réactif pendant que le
+Les cinq tournent sur un thread en arrière-plan pour que le plateau reste réactif pendant que le
 moteur réfléchit. Les parties d'entraînement ne sont jamais enregistrées, elles ne viennent donc
 jamais fausser tes statistiques ni ton taux de victoire.
 
@@ -121,8 +137,13 @@ d'une zone tactile confortable.
 ## Questions fréquentes
 
 **Deux personnes peuvent-elles jouer sur un seul téléphone ?**
-Oui. Les plateaux jouables sont en chaise tournante, tu te passes l'appareil autour de la table. Il
-n'y a ni multijoueur en ligne ni compte.
+Oui. Les plateaux jouables sont en chaise tournante, tu te passes l'appareil autour de la table.
+Aucun compte n'est nécessaire.
+
+**Peut-on jouer sur deux téléphones à la place ?**
+Oui, pour les Échecs, les Dames, les Dames internationales, l'Othello et le Backgammon. Avec Jouer
+ensemble, chaque joueur utilise son propre téléphone sur le même Wi-Fi, sans compte et sans connexion
+internet.
 
 **L'app fonctionne-t-elle pour un jeu de plateau qui n'est pas dans la liste ?**
 Oui. La feuille vierge, toujours gratuite, compte les points de n'importe quoi, et il existe aussi
@@ -135,8 +156,9 @@ Non. Les parties d'entraînement contre l'ordinateur ne sont volontairement jama
 Non. Il n'y a pas de cube de doublement, et rien n'est misé nulle part dans l'app.
 
 **Pourquoi le Sudoku apparaît-il comme jeu de plateau sur certaines pages ?**
-Il ne devrait pas. Le Sudoku appartient aux puzzles, avec les onze autres puzzles solo que
-Braggster propose désormais. Voir le [guide des puzzles](/blog/puzzle-games/).
+Il ne devrait pas. Le Sudoku appartient aux puzzles, avec les dix-sept autres puzzles solo que
+Braggster propose désormais dans son propre onglet Puzzles. Voir le
+[guide des puzzles](/blog/puzzle-games/).
 
 ---
 

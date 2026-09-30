@@ -15,19 +15,22 @@ secondary_keywords:
   - "bordspellen scoretracker"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
   - ItemList
 internal_links:
   - /games/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
   - /blog/how-to-score-dominoes/
   - /blog/how-to-score-backgammon/
   - /blog/how-to-score-rummikub/
   - /blog/card-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: "Rummikub, Cluedo en Connect Four zijn handelsmerken van hun respectievelijke uitgevers. Braggster is niet aan hen verbonden en wordt niet door hen goedgekeurd, en elke naam wordt uitsluitend beschrijvend gebruikt."
+trademark_note: "Rummikub, Cluedo, Connect Four en Othello zijn handelsmerken van hun respectievelijke uitgevers. Braggster is niet aan hen verbonden en wordt niet door hen goedgekeurd, en elke naam wordt uitsluitend beschrijvend gebruikt."
 ---
 
 # Scoreformulieren voor Bordspellen en Speelbare Borden
@@ -37,7 +40,8 @@ lopend getal op, zoals Dominoes en Rummikub, en willen een echt rekenend formuli
 binnen een enkel spel helemaal niets op: Chess en Tic Tac Toe zijn gewoon afgelopen, en wat je
 eigenlijk wilt bijhouden is de stand over de hele avond.
 
-Braggster doet allebei, en voor tien bordspellen krijg je ook nog het bord zelf.
+Braggster doet allebei, en voor acht bordspellen krijg je ook nog het bord zelf, op één telefoon of,
+voor vijf ervan, op een telefoon per speler.
 
 ## Spellen die een getal opleveren
 
@@ -60,8 +64,8 @@ Verdieping: [Dominoes scoren](/blog/how-to-score-dominoes/),
 
 ## Spellen zonder score binnen één potje
 
-Chess, Checkers, International draughts, Connect Four en Tic Tac Toe hebben precies één uitkomst per
-potje: iemand wint, of het is gelijkspel. Er is geen getal om op te schrijven.
+Chess, Checkers, International draughts, Othello, Connect Four en Tic Tac Toe hebben precies één
+uitkomst per potje: iemand wint, of het is gelijkspel. Er is geen getal om op te schrijven.
 
 Braggster telt een afgelopen potje als een ronde die één overwinning waard is, waardoor de partij een
 stand over de avond wordt. Dat past bij hoe mensen deze spellen echt spelen: niet één potje, maar een
@@ -74,36 +78,47 @@ Verdieping: [Backgammon scoren, gammons en backgammons](/blog/how-to-score-backg
 
 ## Borden die je echt op je telefoon kunt spelen
 
-Tien bordspellen in Braggster zijn speelbaar op het toestel, niet alleen te scoren:
+Acht bordspellen in Braggster zijn speelbaar op het toestel, niet alleen te scoren:
 
 | Spel | Wat het bord in de app doet |
 |---|---|
-| Chess | Hotseat 8x8 bord met volledige regelhandhaving: schaak, schaakmat, pat, rokade, en passant, promotie |
-| Checkers | Hotseat 8x8 bord, Amerikaanse en Engelse regels, verplichte slag- en meervoudige slagzetten |
-| International draughts | Hotseat 10x10 bord, vliegende dammen, verplichte maximale slag, vak voor vak getikt |
-| Backgammon | Hotseat bord: gooien, tikken om te zetten, blotjes raken, weer inbrengen en uitbordelen |
-| Dominoes | Hotseat stenenbord: leggen op het passende open uiteinde, trekken of passen per variant |
-| Connect Four | Hotseat 7x6 bord, tik een kolom aan en de zwaartekracht kiest de rij |
-| Tic Tac Toe | Hotseat 3x3 raster met automatische herkenning van winst en gelijkspel |
-| Sudoku | Gegenereerd puzzelraster, vijf moeilijkheidsgraden |
+| [Chess](/games/chess/) | 8x8 bord met volledige regelhandhaving: schaak, schaakmat, pat, rokade, en passant, promotie |
+| [Checkers](/games/checkers/) | 8x8 bord, Amerikaanse en Engelse regels, verplichte slag- en meervoudige slagzetten |
+| [International draughts](/games/dammen/) | 10x10 bord, vliegende dammen, verplichte maximale slag, vak voor vak getikt |
+| [Othello](/games/reversi/) | 8x8 bord dat elke ingesloten rij omdraait en voor je past als je geen zet hebt |
+| [Backgammon](/games/backgammon/) | Gooien, tikken om te zetten, blotjes raken, weer inbrengen en uitbordelen |
+| [Dominoes](/games/dominoes/) | Hotseat stenenbord: leggen op het passende open uiteinde, trekken of passen per variant |
+| [Connect Four](/games/connectfour/) | Hotseat 7x6 bord, tik een kolom aan en de zwaartekracht kiest de rij |
+| [Tic Tac Toe](/games/tictactoe/) | Hotseat 3x3 raster met automatische herkenning van winst en gelijkspel |
 
 Elk van deze bevestigt zijn resultaat via hetzelfde rondepad als een handmatig ingevoerd resultaat,
 dus een potje dat je in de app speelde kan nooit anders scoren dan een potje dat je zelf intikte.
 
+## Samen spelen met een telefoon per speler
+
+Elk bord werkt als doorgeefspel op één telefoon. Chess, Checkers, International draughts, Othello en
+Backgammon spelen ook op twee telefoons met [Samen spelen](/play-together/): één telefoon start een
+tafel en toont een QR-code, de ander scant die, en elke speler zet vanaf zijn eigen telefoon via
+dezelfde wifi. De laatste zet wordt op beide borden gemarkeerd, er is geen account en geen internet
+nodig, en meedoen is gratis. Het stappenplan, inclusief wat je doet als een tafel niet verschijnt, staat
+in de [uitleg over samen spelen op meerdere telefoons](/blog/play-games-together-on-multiple-phones/).
+
 ## Spelen tegen de computer
 
-Vier van de bordspellen hebben ook een oefenscherm tegen een computertegenstander, elk met drie
+Vijf van de bordspellen hebben ook een oefenscherm tegen een computertegenstander, elk met drie
 niveaus:
 
 - **Chess** gebruikt een alpha-beta zoekstrategie met stukswaardering per veld. Je kunt wit of zwart
   spelen, en het bord draait mee.
 - **Checkers** doorzoekt meervoudige slagketens als de ene zet die ze zijn.
 - **International draughts** doet hetzelfde over het 10x10 bord, waar een hele slagreeks één zet is.
+- **Othello** zoekt met een tabel met veldwaarden plus beweeglijkheid, en telt schijven pas in het
+  eindspel.
 - **Backgammon** kan helemaal geen alpha-beta gebruiken, omdat de dobbelstenen van elk knooppunt een
   kansknooppunt maken. In plaats daarvan draait het een expectimax over de eenentwintig verschillende
   worpen.
 
-Alle vier draaien op een achtergrondthread, zodat het bord soepel blijft terwijl de engine nadenkt.
+Alle vijf draaien op een achtergrondthread, zodat het bord soepel blijft terwijl de engine nadenkt.
 Oefenpotjes worden nooit opgeslagen, dus ze vervuilen je statistieken of winstpercentage niet.
 
 ## Toegankelijkheid ingebouwd, niet achteraf geplakt
@@ -116,8 +131,12 @@ plaats van vakjes kleiner te maken dan een prettig tikformaat.
 ## Veelgestelde vragen
 
 **Kunnen twee mensen op één telefoon spelen?**
-Ja. De speelbare borden zijn hotseat, oftewel om de beurt: je geeft het toestel door aan tafel. Er
-is geen online multiplayer en geen account.
+Ja. De speelbare borden zijn hotseat, oftewel om de beurt: je geeft het toestel door aan tafel. Geen
+account nodig.
+
+**Kunnen we ook op twee telefoons spelen?**
+Ja, bij Chess, Checkers, International draughts, Othello en Backgammon. Met Samen spelen gebruikt elke
+speler zijn eigen telefoon via dezelfde wifi, zonder account en zonder internetverbinding.
 
 **Werkt de app voor een bordspel dat niet in de lijst staat?**
 Ja. Het altijd gratis blanco scoreformulier houdt score voor alles, en er is een algemeen
@@ -130,8 +149,8 @@ Nee. Oefenpotjes tegen de computer worden bewust nooit opgeslagen.
 Nee. Er is geen dobbelverdubbelaar en er staat nergens in de app iets op het spel.
 
 **Waarom staat Sudoku op sommige pagina's tussen de bordspellen?**
-Dat zou niet moeten. Sudoku hoort bij de puzzels, samen met de elf andere puzzels voor één speler die
-Braggster inmiddels heeft. Zie de [puzzelgids](/blog/puzzle-games/).
+Dat zou niet moeten. Sudoku hoort bij de puzzels, samen met de zeventien andere puzzels voor één speler
+die Braggster inmiddels heeft op een eigen tabblad Puzzels. Zie de [puzzelgids](/blog/puzzle-games/).
 
 ---
 

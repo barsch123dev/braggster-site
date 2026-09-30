@@ -16,6 +16,7 @@ secondary_keywords:
   - "backgammon contro il computer"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -84,14 +85,24 @@ Sono supportate due aperture:
 - **Nackgammon**, che sposta indietro due pedine per rendere l'inizio partita meno una corsa e piu
   posizionale.
 
+## Gioca insieme su due telefoni
+
+Puoi anche giocare con un telefono a testa. Con [Gioca insieme](/play-together/), un telefono apre
+un tavolo e mostra un codice QR, l'altro lo scansiona, ed entrambi i giocatori vedono lo stesso
+tabellone dal vivo sulla stessa rete Wi-Fi. Ognuno tira e muove dal proprio telefono, l'ultima mossa
+resta segnata su entrambi i tabelloni, e la partita finita segna 1, 2 o 3 punti nel conteggio su
+entrambi i telefoni. Non c'è nessun account né internet coinvolti, e solo l'host deve avere il
+gioco. La [guida per giocare insieme su più telefoni](/blog/play-games-together-on-multiple-phones/)
+spiega tutti i passaggi.
+
 ## L'avversario del computer, e perche e diverso
 
 Backgammon ha una modalita di allenamento contro il computer su tre livelli, giocando con le pedine
 Chiare o Scure.
 
-Vale la pena sapere che non puo funzionare come gli altri motori di Braggster. Chess, Checkers e
-International draughts usano tutti la ricerca alpha beta, che si basa sul fatto che il gioco sia
-deterministico: sai esattamente quali posizioni sono raggiungibili da qui.
+Vale la pena sapere che non può funzionare come gli altri motori di Braggster. Chess, Checkers,
+International draughts e Othello usano tutti la ricerca alpha beta, che si basa sul fatto che il
+gioco sia deterministico: sai esattamente quali posizioni sono raggiungibili da qui.
 
 Backgammon ha i dadi. Ogni nodo dell'albero e un nodo di probabilita, con ventuno tiri distinti da
 considerare. Cosi il motore del backgammon usa invece una ricerca **expectimax**, facendo la media su
@@ -119,6 +130,10 @@ dell'app.
 
 **Posso giocare a backgammon offline contro il computer?**
 Si. Il motore gira interamente sul tuo dispositivo, senza bisogno di connessione ne di account.
+
+**Possono giocare due persone a backgammon su due telefoni?**
+Sì. Con Gioca insieme ogni giocatore usa il proprio telefono sulla stessa rete Wi-Fi. Uno apre un
+tavolo, l'altro scansiona il suo codice, e la partita si svolge dal vivo su entrambi gli schermi.
 
 **Cos'e il Nackgammon?**
 Una posizione di partenza alternativa che arretra due pedine, rendendo l'apertura piu posizionale e

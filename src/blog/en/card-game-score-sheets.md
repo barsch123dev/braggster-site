@@ -1,11 +1,11 @@
 ---
-title: "Card Game Score Sheets: How to Keep Score for 33 Card Games"
+title: "Card Game Score Sheets: How to Keep Score for 34 Card Games"
 slug: card-game-score-sheets
 locale: en
 type: pillar
 category: card
-meta_title: "Card Game Score Sheets: Keep Score for 33 Games"
-meta_description: "Scoring rules and digital score sheets for 33 card games, from Klaverjassen and Bridge to Hearts, Canasta and Spades. Calculating scorecards, no account needed."
+meta_title: "Card Game Score Sheets: Keep Score for 34 Games"
+meta_description: "Scoring rules and digital score sheets for 34 card games, from Klaverjassen and Bridge to Hearts, Canasta and Spades. Calculating scorecards, no account needed."
 primary_keyword: "card game score sheet"
 secondary_keywords:
   - "how to keep score in card games"
@@ -15,6 +15,7 @@ secondary_keywords:
   - "digital score sheet cards"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -29,17 +30,17 @@ internal_links:
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: null
+trademark_note: "Uno, Uno Flip and Beverbende are the trademarks of their respective publishers. Braggster is not affiliated with or endorsed by them and each name is used referentially only."
 ---
 
-# Card Game Score Sheets: How to Keep Score for 33 Card Games
+# Card Game Score Sheets: How to Keep Score for 34 Card Games
 
 Almost every card game worth playing twice needs a score sheet, and almost every household keeps
 score the same way: a torn-off page, a pen that has gone missing, and an argument about who wrote
 down the 40 in the wrong column. Braggster replaces that page with a calculating scorecard built for
 the specific game you are playing, so the total is right by construction rather than by arithmetic.
 
-This guide covers how scoring actually works across the main card game families, and which of the 33
+This guide covers how scoring actually works across the main card game families, and which of the 34
 card games in Braggster fit each one.
 
 ## What a card game score sheet has to do
@@ -50,11 +51,11 @@ A generic table of numbers is the wrong tool for most card games. A real score s
   columns, not four. Poker and Pesten are individuals, so it has one per player.
 - **What a round is worth.** A Klaverjassen round distributes exactly 162 card points plus roem.
   A Whist round scores only the tricks above the book of six. A Canasta round can swing thousands.
-- **Which direction wins.** Most games are highest total wins. Burro, Golf-style games and every
-  puzzle in the app are lowest wins, and a score sheet that gets this backwards ranks the loser first.
+- **Which direction wins.** Most games are highest total wins. Burro, Golf-style games like
+  Beverbende and every puzzle in the app are lowest wins, and a score sheet that gets this backwards ranks the loser first.
 - **When the game ends.** Race to 500, race to 11, sixteen rounds, or first to run out of cards.
 
-Braggster's scorecards encode all four per game, which is why there are 33 of them rather than one
+Braggster's scorecards encode all four per game, which is why there are 34 of them rather than one
 spreadsheet.
 
 ## Trick taking games
@@ -102,6 +103,13 @@ puts you out, and fewest letters leads, so this one ranks lowest wins.
 
 Deep dive: [Pesten scoring and rules](/blog/how-to-score-pesten/).
 
+## Memory games
+
+[Beverbende](/games/beverbende/) is the Dutch memory game in the Golf family: you hold four face down
+cards, peek at two, and draw, swap and remember your way to the lowest total before someone knocks for the
+last round. Braggster's scorecard recreates the score block from the box, a column per player and a
+row per round, with the knocker's score ringed, and the lowest total wins.
+
 ## Hand comparison games
 
 Poker and Blackjack are scored by outcome, never by anything staked. Braggster's Poker sheet scores
@@ -124,13 +132,13 @@ Deep dive: [Solitaire scoring and the Klondike board](/blog/how-to-score-solitai
 
 ## Regional card games in one app
 
-Part of the point of a 33 game card catalogue is that the game your family plays is probably in it
+Part of the point of a 34 game card catalogue is that the game your family plays is probably in it
 even if nobody outside your country has heard of it. Braggster tags each game with the countries
 where it is a staple, so the catalogue can pre-filter to your region:
 
 | Region | Card games covered |
 |---|---|
-| Netherlands, Belgium | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Whist |
+| Netherlands, Belgium | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Beverbende, Whist |
 | Germany, Austria, Switzerland | Skat, Doppelkopf, Schnapsen, Königrufen, Jass |
 | France, Monaco | Belote, Bridge, Königrufen |
 | Italy, San Marino | Briscola, Scopa, Canasta |

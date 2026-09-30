@@ -129,6 +129,6 @@ account nodig.
 
 ---
 
-**Meer:** bekijk alle dertien [logicapuzzels](/blog/puzzle-games/), lees over
+**Meer:** bekijk alle achttien [logicapuzzels](/blog/puzzle-games/), lees over
 [Sudoku-moeilijkheidsgraad](/blog/how-to-play-sudoku/), of blader door de catalogus op
 [braggster.com/games](/games/).

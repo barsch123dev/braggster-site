@@ -7,15 +7,16 @@ category: board
 game_id: backgammon
 meta_title: "Pontuação do Backgammon: Simples, Gamão, Gamão Duplo"
 meta_description: "O valor de cada vitória no Backgammon, o Gamão: 1 ponto no simples, 2 no gamão, 3 no gamão duplo. Com tabuleiro jogável e adversário virtual com expectimax."
-primary_keyword: "gamao regras"
+primary_keyword: "gamão regras"
 secondary_keywords:
-  - "o que e gamao no backgammon"
+  - "o que é gamão no backgammon"
   - "regras do backgammon"
-  - "jogar gamao offline"
-  - "pontuacao de partida de gamao"
-  - "gamao contra o computador"
+  - "jogar gamão offline"
+  - "pontuação de partida de gamão"
+  - "gamão contra o computador"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -84,13 +85,23 @@ Duas posições iniciais são compatíveis:
 - **Nackgammon**, que recua duas peças para deixar o início de jogo menos uma corrida e mais
   posicional.
 
+## Jogar juntos em dois celulares
+
+Você também pode jogar com um celular para cada um. Com o [Jogar juntos](/play-together/), um
+celular abre uma mesa e mostra um código QR, o outro escaneia, e os dois jogadores veem o mesmo
+tabuleiro ao vivo na mesma rede Wi-Fi. Cada um lança os dados e move do próprio celular, a última
+jogada fica marcada nos dois tabuleiros, e a partida terminada soma 1, 2 ou 3 pontos no placar dos
+dois celulares. Não há conta nem internet envolvida, e só o anfitrião precisa ter o jogo. O
+[guia para jogar juntos em vários celulares](/blog/play-games-together-on-multiple-phones/) explica
+tudo passo a passo.
+
 ## O adversário virtual, e por que ele é diferente
 
 O Backgammon tem uma tela de treino contra o computador com três níveis, jogando com as peças
 claras ou escuras.
 
 Vale saber que ele não pode funcionar do mesmo jeito que os outros motores do Braggster. Chess,
-Checkers e International draughts usam busca alfa beta, que depende do jogo ser determinístico:
+Checkers, International draughts e Othello usam busca alfa beta, que depende do jogo ser determinístico:
 você sabe exatamente quais posições são alcançáveis a partir de cada momento.
 
 O Backgammon tem dados. Todo nó da árvore de decisão é um nó de chance, com vinte e um resultados
@@ -118,6 +129,10 @@ Não. O Braggster registra só o resultado da partida, sem nenhuma aposta em lug
 
 **Dá para jogar Backgammon offline contra o computador?**
 Sim. O motor roda totalmente no seu aparelho, sem precisar de conexão nem de cadastro.
+
+**Dá para duas pessoas jogarem Backgammon em dois celulares?**
+Dá. Com o Jogar juntos, cada jogador usa o próprio celular na mesma rede Wi-Fi. Um abre uma mesa, o
+outro escaneia o código, e a partida acontece ao vivo nas duas telas.
 
 **O que é Nackgammon?**
 Uma posição inicial alternativa que recua duas peças ainda mais, deixando a abertura mais

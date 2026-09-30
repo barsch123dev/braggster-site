@@ -1,18 +1,20 @@
 # The blog
 
-Eighteen articles, seven languages, 126 markdown files. They exist to give the site something to
+Nineteen articles, seven languages, 133 markdown files. They exist to give the site something to
 rank for besides the home page: before this, `/games/` was the only URL that could answer any game
 query, and it is one list page carrying the whole catalogue.
 
 ## Structure
 
-Four **category pillars** and fourteen **per-game articles**, hub and spoke. Each spoke links up to
+Four **category pillars**, one **feature guide** (Play together) and fourteen **per-game
+articles**, hub and spoke. Each spoke links up to
 its pillar and out to `/games/`; each pillar links down to its spokes and across to the other three.
 
 | Pillar | Spokes |
 |---|---|
 | `card-game-score-sheets` | Klaverjassen, Hearts, Bridge, Solitaire, Pesten |
 | `board-game-score-sheets` | Dominoes, Backgammon, Rummikub |
+| `play-games-together-on-multiple-phones` | Links to Yahtzee and Backgammon, and to `/play-together/` |
 | `dice-game-score-sheets` | Yahtzee, Dudo |
 | `puzzle-games` | Sudoku, Killer Sudoku, Minesweeper, Murder Sudoku |
 
@@ -60,7 +62,13 @@ priority:            # 1 publish first, 2 second
 schema:              # JSON-LD types
 internal_links:      # every in-site link the article makes
 trademark_note:      # rendered as a footer disclaimer, or null
+published:           # optional YYYY-MM-DD, for an article added after 2026-08-05
+updated:             # optional YYYY-MM-DD, set when an article's content changes (dateModified)
 ```
+
+The feature guide is `type: pillar` in `category: board` with no `game_id`; the index lists it in
+the board section beside the board pillar. A per-game article's `game_id` does two jobs: the
+article links to `/games/<game_id>/` by itself, and that game page links back to the article.
 
 Every article closes with an FAQ section. That is not decoration: `faq_pairs()` in `build.py` lifts
 those question and answer pairs into `FAQPage` JSON-LD, which is what wins the "People also ask"
@@ -101,7 +109,7 @@ since the puzzles are language specific.
 
 **Regional card games.** Skat, Belote, Briscola, Scopa, Truco, Canasta, Spades, Euchre, Whist, Jass,
 Toepen, Jokeren, Bollen, Cuarenta, Loteria, Burro, Mus, Doppelkopf, Schnapsen, Twenty-Five, 500, All
-Fours, Königrufen. Individually small, collectively the reason a 33 game card catalogue exists. The
+Fours, Königrufen, Beverbende. Individually small, collectively the reason a 34 game card catalogue exists. The
 right approach is one article per game **in its own market's language first**, Skat in German,
 Belote in French, Briscola in Italian, Truco in Portuguese and Spanish, rather than English first
 and translated.
@@ -110,12 +118,9 @@ and translated.
 score keeping comparison, the local-first privacy angle, running a game night tournament across
 several games.
 
-## Known gap
+## Per-game pages
 
-`/games/` has **no per-game anchors**. The only ids on it are the filter inputs, and because the
-filter is a CSS `:has(:checked)` trick a fragment link does not even apply the filter, so an article
-cannot deep link to the game it is about and every one of them links to the catalogue page plainly.
-
-The cheap fix is an `id` per game card. The fix worth making is a real `/games/<id>/` page per game,
-which would turn 66 list entries into 66 indexable URLs and give all 126 of these articles something
-specific to point at.
+The old known gap (no per-game anchors on `/games/`) is closed: every game has its own page at
+`/games/<id>/` in all seven languages. Link to it from article prose as `/games/<id>/`, using the
+ids in `src/games.json` (Othello is `reversi`, International draughts is `dammen`, Murder Sudoku is
+`murdoku`).

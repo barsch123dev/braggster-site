@@ -1,10 +1,10 @@
 ---
-title: "13 puzzles logiques dans une seule app, tous générés et tous solubles"
+title: "18 puzzles logiques dans une seule app, tous générés et tous solubles"
 slug: puzzle-games
 locale: fr
 type: pillar
 category: puzzle
-meta_title: "13 puzzles logiques dans une app, générés et solubles"
+meta_title: "18 puzzles logiques dans une app, générés et solubles"
 meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo et bien d'autres. Chaque puzzle est généré à la volée avec une seule solution."
 primary_keyword: "application jeux de logique"
 secondary_keywords:
@@ -15,6 +15,7 @@ secondary_keywords:
   - "jeux de reflexion hors ligne"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -31,14 +32,15 @@ internal_links:
 trademark_note: null
 ---
 
-# 13 puzzles logiques dans une seule app, tous générés et tous solubles
+# 18 puzzles logiques dans une seule app, tous générés et tous solubles
 
 La plupart des apps de puzzles embarquent une banque de puzzles qui finit par s'épuiser. Braggster
 génère chaque puzzle à la volée, à la demande, puis prouve qu'il n'a qu'une seule solution avant de
 te le montrer. Cette seconde partie, presque personne ne la fait, et c'est ce qui distingue un
 puzzle que tu peux résoudre par la logique d'un puzzle où tu finis par devoir deviner.
 
-Voici les treize puzzles, ce que chacun te demande vraiment, et comment ils sont notés.
+Voici les dix-huit puzzles, ce que chacun te demande vraiment, et comment ils sont notés. Dans l'app,
+ils ont leur propre onglet, Puzzles, à côté des jeux.
 
 ## La famille du placement de chiffres
 
@@ -69,6 +71,10 @@ Jamais trois symboles identiques d'affilée sur une ligne ou une colonne, exacte
 chaque symbole par ligne, et jamais deux lignes ou deux colonnes identiques. De 6x6 à 12x12,
 toujours pair. Touche une case pour la faire défiler entre vide, 0 et 1 : avec deux symboles, pas
 besoin de pavé numérique qui encombre l'écran.
+
+**[Tectonic](/games/tectonic/).** Une grille découpée en régions cerclées de une à cinq cases. Chaque
+région contient de 1 à sa propre taille exactement une fois, et deux cases voisines, diagonales
+comprises, ne peuvent jamais partager un chiffre. De 5x5 en Débutant jusqu'à 8x8 en Diabolique.
 
 Pour aller plus loin : [le Sudoku](/blog/how-to-play-sudoku/),
 [le Killer Sudoku](/blog/how-to-play-killer-sudoku/).
@@ -108,13 +114,30 @@ quatre niveaux de longueur de 4 à 7 lettres. L'état de chaque lettre n'est jam
 seule couleur : bonne place, c'est une case pleine avec une barre ; présente ailleurs dans le mot,
 c'est un anneau avec un point ; absente, c'est barré.
 
-**Kruiswoord.** Un mot croisé généré au moment même, à partir d'un vaste dictionnaire de mots avec
+**Crossword.** Un mot croisé généré au moment même, à partir d'un vaste dictionnaire de mots avec
 indices plutôt que d'une banque figée, ce qui rend les puzzles illimités. Mini 5x5, Midi 7x7 et
 Standard 15x15.
 
 **Woordzoeker.** Une grille de mots mêlés. Les mots suivent l'une des huit directions, à l'endroit
-ou à l'envers, et tu en trouves un en faisant glisser ton doigt de sa première à sa dernière
-lettre. De 8x8 avec 5 mots jusqu'à 14x14 avec 12 mots.
+ou à l'envers, et tu en trouves un en touchant sa première lettre puis sa dernière. De 8x8
+avec 5 mots jusqu'à 14x14 avec 12 mots.
+
+**[Zweeds](/games/zweeds/).** Le mot fléché, ou mots croisés suédois : il n'y a pas de liste de
+définitions, parce que chaque définition se trouve dans la grille à côté d'une flèche qui indique où
+court sa réponse. Chaque partie est une grille disposée à chaque fois, d'un Mini 4x4 jusqu'à un
+Grand 14x14.
+
+**[Cijfercode](/games/cijfercode/).** Le mot codé : une grille de mots croisés remplie sans aucune
+définition, où chaque lettre a été remplacée par un nombre. Quelques lettres sont révélées au départ,
+juste assez pour déchiffrer le reste, et taper une lettre remplit toutes les cases qui portent son
+nombre. Mini 7x7, Midi 9x9 et Standard 11x11.
+
+**[Filippine](/games/filippine/).** Une pile de lignes à définitions dont les réponses s'alignent sur
+une colonne marquée, et cette colonne épelle de haut en bas un mot solution caché. 4, 6 ou 8 lignes.
+
+**[Hangman](/games/hangman/).** Devine le mot lettre par lettre avant que la septième erreur ne
+complète la figure. Un indice montre d'abord la description du mot, puis une lettre, et trois niveaux
+de longueur de mot vont de 4 jusqu'à 15 lettres.
 
 ## Comment les puzzles sont notés
 
@@ -134,7 +157,7 @@ L'aide se limite aux notes au crayon et aux indices, selon le puzzle.
 
 Chaque puzzle généré dans Braggster passe par un solveur avant de t'être proposé :
 
-- Sudoku, Kakuro, Futoshiki, Binairo et Calcudoku sont vérifiés par des solveurs à retour arrière
+- Sudoku, Kakuro, Futoshiki, Binairo, Calcudoku et Tectonic sont vérifiés par des solveurs à retour arrière
   qui confirment qu'une seule solution existe.
 - Le Killer Sudoku est vérifié en combinant la contrainte du Sudoku et celle des zones, jamais
   l'une sans l'autre.
@@ -145,6 +168,8 @@ Chaque puzzle généré dans Braggster passe par un solveur avant de t'être pro
   bornée.
 - Logikwis et Murder Sudoku vérifient que leur cas n'a qu'une seule attribution cohérente avant de
   rédiger le briefing.
+- Cijfercode lance un solveur pour choisir le moins de lettres révélées à partir desquelles tout le
+  code peut encore être déduit.
 
 L'effet concret : si tu es bloqué, il y a toujours une déduction suivante à faire. On ne te demande
 jamais de deviner puis de vérifier.

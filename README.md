@@ -13,11 +13,15 @@ public website.
 ```
 src/home.html          page template
 src/games.html         games catalogue template
+src/game.html          one page per game, /games/<id>/
+src/play-together.html the Play together landing page, /play-together/
+src/gamepages/*.json   per-game prose (lead, scoring), one file per language
 src/privacy.html       privacy policy template
 src/blog.html          blog index template
 src/article.html       one blog article
 src/blog/<locale>/*.md the articles themselves; see src/blog/README.md
-src/games.json         the game catalogue: 66 entries, extracted from the app
+src/games.json         the game catalogue: 73 entries, extracted from the app
+src/gamenames.json     each game's name in each locale, copied from the app's ARBs
 src/styles.css         all styling; brand tokens live in :root
 src/locales/*.json     one file per language, all copy
 assets/                logos, favicons, self-hosted fonts, share card, app screenshots
@@ -25,7 +29,8 @@ tools/build.py         renders src/ into dist/
 tools/build_fonts.py   subsets the font TTFs to Latin woff2 (rarely needed)
 tools/build_og.py      regenerates the Open Graph share card (rarely needed)
 tools/build_screenshots.py  resizes the app's store captures into web WebP (per app release)
-tools/check_copy.py    no em dashes, locale key parity, no unrendered tokens, games.json shape
+tools/sync_game_names.py    copies the app's localized game names into src/gamenames.json (per app release)
+tools/check_copy.py    no em dashes, locale key parity, no unrendered tokens, games.json shape, gamepages and gamenames parity
 tools/check_contrast.py WCAG AA contrast gate for the palette
 ```
 
@@ -36,11 +41,12 @@ pages are relative, so the output works from a subpath as well as from the apex 
 ## The games catalogue
 
 `src/games.json` is the one home for the game list. It was extracted from the app repo's game
-definitions (`app/lib/games/*/*_game_definition.dart`), and the counts it encodes are the app's:
-66 games, 33 card / 2 dice / 9 board / 13 puzzle / 7 sports / 2 always free, 24 playable in the
-app, 19 that rank lowest-wins, 7 that carry a publisher disclaimer. Those numbers are not written into
-the copy: the locales spell them `{n}`, `{play}` and `{low}`, and `build.py` counts games.json and
-substitutes. They were spelled out until the app shipped its 54th game and all seven locales had
+definitions (`app/lib/games/*/*_game_definition.dart`), and the counts it encodes are the app's
+(v3.1.0): 73 games, 34 card / 2 dice / 10 board / 18 puzzle / 7 sports / 2 always free, 31
+playable in the app, 6 against the computer, 6 playable together on several phones, 25 that rank
+lowest-wins, 9 that carry a publisher disclaimer. Those numbers are not written into the copy: the
+locales spell them `{n}`, `{play}`, `{ai}`, `{together}`, `{puzzles}` and `{low}`, and `build.py`
+counts games.json and substitutes. They were spelled out until the app shipped its 54th game and all seven locales had
 to be chased, and `check_copy.py` now fails on a placeholder that survives into the HTML. `/games/` renders from it, and the
 home page teaser chips take their names from it too, so nothing here is hand-kept twice.
 
@@ -51,17 +57,33 @@ player count, the category, the badges and the tag words, all of which are eithe
 or come from `src/locales/`. The tag words are other names, regional names and translations, and
 they are rendered as real text because they exist to be found.
 
-The category filter and the play-in-app toggle are plain radio and checkbox inputs with **no
-JavaScript**. `build.py` generates `:has(:checked)` rules from `games.json` into a `<style>` block
-on the page, including the rules that show the empty state for the three filter pairs that
-genuinely match nothing. A browser without `:has()` shows all 66, which is the right fallback for
+The category filter and the three toggles (play in app, play the computer, play together) are plain
+radio and checkbox inputs with **no JavaScript**. `build.py` generates `:has(:checked)` rules from
+`games.json` into a `<style>` block on the page, including the rules that show the empty state for
+the filter combinations that genuinely match nothing. A browser without `:has()` shows all 73, which is the right fallback for
 a page whose job is to list them. If you add a category, the CSS follows automatically; there is
 no hand-written selector to keep in sync.
+
+## Per-game pages and Play together
+
+Every game has its own page at `/games/<id>/` in all seven languages, 511 pages in all. The prose
+is two fields per game in `src/gamepages/<locale>.json`: `lead` (what the game is, also the meta
+description, so at most 160 characters) and `scoring` (what braggster's sheet or board does).
+Everything else on the page is generated from the `games.json` flags and shared `game_*` locale
+keys: the H1 ("Play X" when playable, "X score sheet" otherwise), the "What you can do" list, a
+two or three question FAQ, related games from the same category, a link to the game's blog guide
+(any article whose `game_id` names it), and the trademark disclaimer when `trademark` is set. Each
+page emits `WebPage`, `BreadcrumbList` and `FAQPage` JSON-LD. `check_copy.py` fails if any locale
+is missing a game, has an empty field or an over-long lead, or (in English) uses wagering words.
+
+`/play-together/` is the landing page for the multi-phone mode (`pt_*` keys). Its games list comes
+from the `playTogether` flag, so a game the app adds to Play together appears there by itself. The
+copy says "the same Wi-Fi" and never "online": the mode is local network only.
 
 ## The blog
 
 `/blog/` and `/blog/<slug>/`, in all seven languages, from markdown under `src/blog/<locale>/`.
-Eighteen articles: four category pillars and fourteen per-game guides, written to give the site
+Nineteen articles: four category pillars, the Play together guide and fourteen per-game guides, written to give the site
 something to rank for besides the home page and `/games/`.
 
 `build.py` renders the markdown itself, in a deliberately small closed subset rather than through a
@@ -83,6 +105,31 @@ python3 -m http.server -d dist  # preview at localhost:8000
 ```
 
 No dependencies beyond the Python standard library. CI runs the same three commands.
+
+`dist/` is **not committed**: it is in `.gitignore`, and `.github/workflows/deploy.yml` builds it on
+every push to `main` and deploys it to Pages. Pull requests run the build and both gates only.
+
+## Updating the site for an app release
+
+1. **Catalogue.** Re-extract `src/games.json` from `GameRegistry.standard` in the app repo
+   (unregistered definitions such as Bingo stay out). Check every flag against its definition:
+   `playInApp` is `hasInAppPlay`, `vsComputer` is `hasComputerOpponent`, `playTogether` is
+   `supportsLiveTable` (pinned in `app/test/unit/game_live_table_test.dart`), `lowestWins` is
+   `rankingDirection: lowerWins`, `trademark` is a non-null `trademarkDisclaimer`, and the player
+   counts come from `sideStructure`. Use the app's English display names.
+2. **Local names.** Run `python3 tools/sync_game_names.py --app <app repo>/app` (default
+   `~/GitHub/Spelletjesapp/app`). It rewrites `src/gamenames.json` from each definition's `BrandName`
+   key in the seven ARBs; a locale that lacks the key keeps the English name, never the Dutch
+   fallback. It fails on any site id it cannot map (add an alias in `SITE_TO_APP_ID` when an id
+   differs) and prints English names that differ from `games.json`, which should match.
+3. **Per-game prose.** Add a `lead` and `scoring` for every new id to `src/gamepages/en.json`, from
+   the definition and its rules text, then to the six other locales (`check_copy.py` enforces it).
+4. **Counts.** Nothing to do if the copy uses the `{n}`-style tokens. Grep the locales and the blog
+   for spelled-out numbers that the tokens cannot reach, such as the card and puzzle pillar titles.
+5. **Screenshots.** Regenerate them (below) and look at every frame before committing.
+6. **Blog fact check.** Read the pillars for anything the release changed: new games, new play
+   modes, anything the app now does that an article says it does not.
+7. **Build and gates**, then read the home page, `/games/` and one new game page in two languages.
 
 The two asset builders are **not** part of that loop and do not run in CI. Their output is committed,
 so you only run them when the input changes: `build_fonts.py` after replacing a source `.ttf`
@@ -133,9 +180,15 @@ user-text rule.
 ## Screenshots
 
 The phone screenshots are real captures of the app, one set per language. They are not made here:
-the app repo has a harness that renders the nine listing screens in all seven languages on a 6.9"
-simulator, the same captures the App Store listing draws from. The site serves the handful named in
-the `SHOTS` map in `tools/build_screenshots.py` (home, games, yahtzee, chess and sudoku).
+the app repo has a harness that renders the listing screens in all seven languages on a 6.9"
+simulator, the same captures the App Store listing draws from. The site serves the six named in
+`SHOTS` in `tools/build.py` (home, play-together, chess, games, murdoku, yahtzee).
+`tools/build_screenshots.py` maps capture file names to those site names and accepts two source
+layouts, both as `<folder>/<lang>/NN-name.png` with `pt_BR` for Brazilian Portuguese: the app
+harness output (`app/build/screenshots/iphone69/`, files like `01-home.png`) and a listing handoff
+folder such as `~/Documents/Braggster/handoff-3.0/captures/iphone69/` (files like
+`01-hook-UPDATE.png`). A capture that is not in the map is ignored; a language missing any served
+shot fails the run.
 
 ```bash
 # in the app repo
@@ -145,14 +198,14 @@ fvm flutter drive \
   --dart-define=SCREENSHOT_DEVICE=iphone69 \
   -d <simulator udid>
 
-# back here, pointing at build/screenshots/iphone69/
+# back here, pointing at build/screenshots/iphone69/ or a handoff captures/iphone69/ folder
 python3 tools/build_screenshots.py --src <that folder>
 ```
 
 `build_screenshots.py` only resizes and re-encodes: 1320x2868 PNGs of about 450KB become WebP at
-320 and 640 CSS pixels, 1.5MB for all 70 files. If a screenshot is wrong, fix it in the harness and
-capture again rather than editing pixels here. The hero image loads eagerly and the four gallery
-shots lazily, so a first view pulls one 21KB image rather than five.
+320 and 640 CSS pixels. If a screenshot is wrong, fix it in the harness and capture again rather
+than editing pixels here. The hero image loads eagerly and the five gallery shots lazily. The
+`sudoku` and `crossword` files are written too but not currently served.
 
 ## Fonts
 

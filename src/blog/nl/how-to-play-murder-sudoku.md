@@ -141,6 +141,6 @@ Nee. Elke verdachte, kamer en objectnaam is origineel voor dit spel.
 
 ---
 
-**Meer:** bekijk alle dertien [logicapuzzels](/blog/puzzle-games/), lees over
+**Meer:** bekijk alle achttien [logicapuzzels](/blog/puzzle-games/), lees over
 [Sudoku-moeilijkheidsgraad](/blog/how-to-play-sudoku/), of blader door de catalogus op
 [braggster.com/games](/games/).

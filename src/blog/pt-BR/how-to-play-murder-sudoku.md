@@ -140,6 +140,6 @@ Não. Todo nome de suspeito, cômodo e objeto é original do jogo.
 
 ---
 
-**Mais:** veja os treze [quebra-cabeças de lógica](/blog/puzzle-games/), leia sobre a
+**Mais:** veja os dezoito [quebra-cabeças de lógica](/blog/puzzle-games/), leia sobre a
 [dificuldade do Sudoku](/blog/how-to-play-sudoku/), ou veja o catálogo em
 [braggster.com/games](/games/).

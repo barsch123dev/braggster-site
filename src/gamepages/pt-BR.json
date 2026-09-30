@@ -1,0 +1,294 @@
+{
+  "klaverjassen": {
+    "lead": "Klaverjassen é o jogo holandês de vazas para duas duplas, jogado com 32 cartas ao longo de 16 rodadas, onde o roem e o nat decidem a maioria das noites.",
+    "scoring": "Digite os pontos de carta e o roem de cada rodada e a ficha faz o resto: ela sabe que uma rodada vale 162 mais o roem, dá o bônus de 100 do pit, e entrega tudo para os defensores quando a dupla que jogou vai nat. As regras de Amsterdã e Roterdã já vêm incluídas, e a tela de regras traz uma tabela com a ordem e o valor das cartas de trunfo e das outras naipes. Depois da rodada 16, a dupla com mais pontos vence."
+  },
+  "jass": {
+    "lead": "Jass é o jogo de cartas nacional da Suíça: duas duplas, 36 cartas, e uma corrida até 2500 pontos, com combinações Weis e multiplicadores de trunfo pelo caminho.",
+    "scoring": "A cada rodada você digita os pontos de carta, qualquer Weis e o multiplicador combinado na sua mesa para aquele contrato, seja um naipe, Obenabe ou Undenufe. A ficha mantém o total corrente rumo aos 2500. Schieber é o padrão, e a variante Coiffeur joga cada um dos seis tipos de contrato exatamente uma vez."
+  },
+  "belote": {
+    "lead": "Belote é o jogo francês de vazas para duas duplas: dê lances pelo trunfo, capture os 162 pontos em jogo e anuncie belote-rebelote.",
+    "scoring": "Em cada mão a ficha compara o contrato cara a cara. A dupla que declarou o trunfo só fica com seus pontos se fizer mais que a outra dupla; caso contrário a mão é dans, e os defensores levam todos os 162 pontos mais os bônus de belote. O capot soma 90, e a variante Coinche dobra ou quadruplica o resultado. Jogue até o total combinado, normalmente 501 ou 1000."
+  },
+  "whist": {
+    "lead": "Whist é o clássico jogo de vazas em duplas: duas duplas, as seis primeiras vazas formam o book, e cada vaza acima disso vale um ponto.",
+    "scoring": "Digite as vazas que cada lado fez e a ficha conta só as que passam do book de seis, então um lado que faz oito vazas marca dois pontos. O primeiro lado a chegar a cinco pontos vence a partida. A variante Wiezen acrescenta lances por um contrato e define o trunfo pelo maior lance."
+  },
+  "bridge": {
+    "lead": "Bridge é o grande jogo de cartas em duplas: dê lances por um contrato com seu parceiro, cumpra-o com o morto na mesa e pontue acima e abaixo da linha.",
+    "scoring": "Digite o contrato, quem jogou, a dobra e as vazas feitas, e a planilha calcula o resto: o valor do contrato abaixo da linha, vazas extras e o bônus de jogo, slam e rubber acima dela, e os pontos de penalidade para os defensores quando o contrato falha. No Rubber a vulnerabilidade é acompanhada conforme você joga; no Duplicate ela já vem definida por mesa."
+  },
+  "euchre": {
+    "lead": "Euchre é o jogo rápido de declarar trunfo para duas duplas, jogado com cinco cartas cada e um baralho reduzido, e a primeira dupla a chegar a dez pontos vence.",
+    "scoring": "Digite quem declarou o trunfo e quantas vazas essa dupla fez. Três ou quatro vazas vale 1 ponto, todas as cinco (um march) vale 2, uma mão solo que faz as cinco vale 4, e uma dupla que declarou e não cumpre é euchred, dando 2 pontos ao outro lado. A variante Stick the dealer obriga o dealer a declarar o trunfo."
+  },
+  "fivehundred": {
+    "lead": "500 é o jogo de lances favorito da Austrália: vença o leilão pelo trunfo, faça pelo menos as vazas que você arrematou, e corra até 500 pontos.",
+    "scoring": "A ficha traz a tabela completa de lances, de 40 para seis de espadas até 520 para dez sem trunfo, além do misere valendo 250 e do misere aberto valendo 500. Se você cumpre o lance, marca o valor dele; se não cumpre, perde esse valor, enquanto o outro lado marca 10 por vaza. A primeira dupla a chegar a 500 vence, e uma dupla que cai a menos 500 perde."
+  },
+  "spades": {
+    "lead": "Spades é o jogo americano em duplas onde espadas é sempre trunfo, cada jogador dá um lance de vazas, e as vazas extras voltam para assombrar você como bags.",
+    "scoring": "Digite cada lance e as vazas feitas. Cumprir o lance vale 10 por vaza apostada mais 1 por vaza extra, não cumprir custa 10 por vaza, e cada décimo bag custa 100 pontos para a dupla. Lances Nil valem ou custam 100 pontos por conta própria. A primeira dupla a chegar a 500 vence, tanto em duplas quanto no modo Solo."
+  },
+  "cuarenta": {
+    "lead": "Cuarenta é o jogo de cartas nacional do Equador: capture cartas da mesa em pares e sequências, faça caídas e limpias, e leve seu lado até 40.",
+    "scoring": "A cada rodada você digita quantas das 40 cartas o seu lado capturou, além das caídas e limpias feitas por cada lado. Caídas e limpias valem 2 pontos cada, e as cartas capturadas acima de 19 valem um ponto cada, até 6. Os totais se somam e o primeiro lado a chegar a 40 vence."
+  },
+  "mus": {
+    "lead": "Mus é o jogo espanhol de blefe para duas duplas com um baralho de 40 cartas, onde cada mão passa por lances em quatro fases: grande, chica, pares e juego.",
+    "scoring": "Em cada mão você digita qual dupla levou grande, chica, pares e juego, e o que foi apostado nos lances. Grande, chica e pares valem uma base de 1, juego vale 2, e uma fase que ninguém tem é pulada. A primeira dupla a chegar a 40 vence, ou a 30 no jogo curto."
+  },
+  "hearts": {
+    "lead": "Copas é o jogo de vazas que você vence evitando vazas: cada copa custa um ponto, a dama de espadas custa 13, e estourar a lua vira tudo do avesso.",
+    "scoring": "Digite os pontos de penalidade que cada jogador levou na rodada, que somam 26 no total. Um controle de estouro de lua inverte a rodada quando um jogador leva todas as copas e a dama de espadas. O jogo termina quando alguém chega a 100, e o menor total vence. Omnibus, Spot e Cancellation já vêm incluídos, e você pode jogar uma partida completa no app contra três adversários do computador."
+  },
+  "poker": {
+    "lead": "Pôquer cobre Texas Hold'em, Omaha, Seven card stud e Five card draw. O Braggster marca quem terminou em cada posição na sessão, nunca o que cada um pôs na mesa.",
+    "scoring": "Depois de cada sessão você arrasta os jogadores para a ordem de classificação. O primeiro lugar marca um ponto por jogador na mesa, o segundo marca um a menos, e o último marca um. Os pontos se somam ao longo da noite e o maior total vence. A tela de regras traz o ranking completo das mãos, do royal flush até a carta mais alta."
+  },
+  "blackjack": {
+    "lead": "Vinte e um é a corrida até 21 contra o dealer. No braggster você joga mãos contra um dealer na tela, ou marca os pontos de uma partida com baralho físico.",
+    "scoring": "Cada mão pontua seu resultado: um blackjack vale 3 pontos, uma vitória vale 2, um empate vale 1 e uma derrota vale 0, e o maior total vence. Na mesa do app o dealer distribui e joga a própria mão, e o resultado é pontuado automaticamente. As regras Classic, European, Atlantic City e Spanish 21 já vêm incluídas."
+  },
+  "solitaire": {
+    "lead": "Paciência é o jogo de um jogador contra o baralho. Jogue Klondike direto no app, ou marque os pontos de uma partida montada com cartas de verdade.",
+    "scoring": "O tabuleiro de Klondike no app funciona com toques para mover, distribui uma ou três cartas por vez, e pontua a partida terminada para você. Para uma partida física, você digita o resultado, no estilo Vegas pelas cartas nas fundações ou no estilo padrão por pontos. Spider, FreeCell e Pyramid também estão disponíveis, e o seu total cresce partida após partida."
+  },
+  "rummy": {
+    "lead": "Rami é a família de jogos de comprar e descartar em que você forma trincas e sequências e tenta bater primeiro, do rami básico ao Gin e ao Rummy 500.",
+    "scoring": "No rami básico, quem bate recolhe o valor de todas as cartas que sobraram nas outras mãos, com figuras valendo 10 e ases valendo 1. O Gin pontua a diferença de deadwood com bônus para gin e undercut, o Rummy 500 pontua as combinações menos as cartas na mão, e o Indian Rummy pontua penalidades. A ficha se ajusta à variante escolhida."
+  },
+  "canasta": {
+    "lead": "Canastra é o jogo de combinações com dois baralhos: sete cartas iguais viram uma canastra, coringas e 2 são curingas, e a partida vai até 5000 pontos.",
+    "scoring": "A planilha é uma grade de totais por mão: o valor das cartas combinadas, 500 por uma canastra limpa, 300 por uma suja, 100 por bater, menos o que sobrar na sua mão. Ela também acompanha o mínimo crescente para a primeira combinação conforme sua pontuação sobe. A variante Buraco usa o mesmo motor com suas próprias regras de canastra."
+  },
+  "jokeren": {
+    "lead": "Jokeren é o rami holandês com dois baralhos e coringas: monte sequências e trincas, seja o primeiro a bater e mantenha seus pontos de penalidade baixos.",
+    "scoring": "Quando alguém bate, todos os outros jogadores digitam o valor de penalidade das cartas que sobraram na mão, e o vencedor digita 0. A sua mesa combina quanto vale um coringa. Depois de algumas partidas, o menor total vence, e a classificação segue essa ordem."
+  },
+  "pesten": {
+    "lead": "Pesten é o jogo holandês de se livrar das cartas, da família do Crazy Eights, com cartas que fazem o próximo comprar, perder a vez ou trocar o naipe.",
+    "scoring": "Quando um jogador fica sem cartas, todos os outros digitam os pontos de penalidade que ainda têm na mão, e o vencedor digita 0. Os totais se somam mão após mão e o menor total vence. A tela de regras lista as cartas especiais mais usadas, porque as regras da casa variam de região para região."
+  },
+  "toepen": {
+    "lead": "Toepen é o jogo holandês eliminatório de quatro cartas e muita coragem: bata na mesa para aumentar o valor da mão, e o último jogador que sobrar vence.",
+    "scoring": "Quem perde uma mão leva pontos de penalidade iguais ao valor dela depois de cada toep, e um jogador que desistiu leva o valor menor de antes. A ficha acompanha cada jogador rumo ao limite e o elimina ao chegar a 15, ou a 10 na variante mais curta. O último jogador de pé vence."
+  },
+  "bollen": {
+    "lead": "Bollen é o jogo holandês de previsão: diga quantas vazas você vai fazer, e um palpite errado te rende um bol enquanto o número de cartas sobe e desce.",
+    "scoring": "A cada rodada você marca, para cada jogador, se ele cumpriu a previsão ou levou um bol. Uma previsão exata pontua o valor apostado, ou o valor mais 10 na variante +10, e um erro não pontua nada. A ficha leva o número de cartas até um pico que se ajusta à sua mesa e depois de volta a um. Quem tem mais pontos vence, e quem tem mais bollen perde."
+  },
+  "beverbende": {
+    "lead": "Beverbende é o jogo holandês de memória: você segura quatro cartas viradas para baixo, espia duas e tenta terminar cada rodada com o menor total.",
+    "scoring": "A planilha se parece com o bloco de pontos da caixa: uma coluna por jogador, uma linha numerada por rodada e um total no final. Digite quanto somam as quatro cartas de cada jogador quando a rodada termina, e a pontuação de quem bateu fica circulada. Os totais se somam e o menor vence."
+  },
+  "uno": {
+    "lead": "Uno é o jogo de combinar cores e números: seja o primeiro a jogar todas as cartas, avise quando restar a última e recolha pontos da mão de todo mundo.",
+    "scoring": "O vencedor da rodada recolhe os pontos que sobraram em todas as outras mãos: números pelo valor de face, Pular, Inverter e Compre Duas valendo 20, curingas valendo 50. O primeiro jogador a chegar a 500 vence a partida. As regras Classic, Uma rodada, Empilhar e Sete-zero já vêm incluídas."
+  },
+  "unoflip": {
+    "lead": "Uno Flip é o Uno com um baralho de dois lados: uma carta Flip vira todas as mãos e o monte para o lado escuro, onde as cartas de ação batem muito mais forte.",
+    "scoring": "O Uno Flip tem sua própria planilha porque suas cartas têm valores próprios, de Compre Uma valendo 10 até Curinga Compre Cor valendo 60. O vencedor da rodada recolhe os pontos de todas as outras mãos, e o primeiro a chegar a 500 vence. A variante Uma rodada já vem incluída."
+  },
+  "briscola": {
+    "lead": "Briscola é o jogo de vazas favorito da Itália, jogado com um baralho de 40 cartas: capture ases e três, fique de olho no trunfo, e chegue a 61 dos 120 pontos.",
+    "scoring": "Depois de cada mão, cada jogador digita os pontos de carta que capturou, que juntos somam 120: ás vale 11, três vale 10, rei vale 4, cavalo vale 3 e valete vale 2. Os totais se somam pelo número de mãos que vocês combinarem. A variante Cinque carte distribui cinco cartas e sem compras."
+  },
+  "scopa": {
+    "lead": "Scopa é o jogo italiano de captura em que você pega cartas da mesa combinando o valor delas e limpa a mesa inteira para fazer uma scopa, até chegar a 11 pontos.",
+    "scoring": "Depois de cada mão você digita os pontos de cada jogador: um para quem tem mais cartas, um para mais ouros, um para o settebello e um para a melhor primiera, mais um para cada scopa feita durante o jogo. A ficha leva os totais até 11. A variante Asso piglia tutto, em que um ás limpa a mesa, já vem incluída."
+  },
+  "truco": {
+    "lead": "Truco é o jogo brasileiro de blefe de três rodadas por mão, em que pedir truco aumenta o valor da mão, e o primeiro lado a chegar a 12 vence.",
+    "scoring": "Digite quem venceu a mão e quanto ela valia depois dos pedidos: 1, depois truco vale 3, seis vale 6, nove vale 9 e doze vale 12. O lado vencedor marca esse valor e o primeiro a chegar a 12 vence. As variantes Paulista e Mineira já vêm incluídas."
+  },
+  "skat": {
+    "lead": "Skat é o clássico alemão para três jogadores: dê lances para ser o solista, pegue o skat e derrote os outros dois com pelo menos 61 dos 120 pontos.",
+    "scoring": "A planilha é uma verdadeira Skatliste. Digite o jogo, os matadors, os pontos de carta e qualquer schneider ou schwarz, e ela calcula o valor do jogo, somando em caso de vitória e subtraindo o dobro em caso de derrota. Jogos Null pontuam seu valor fixo, e a variante Bock dobra a mão seguinte."
+  },
+  "doppelkopf": {
+    "lead": "Doppelkopf é o jogo alemão para quatro jogadores com um baralho duplo de 48 cartas, em que quem tem as damas de paus forma a dupla Re, em segredo.",
+    "scoring": "Digite quem jogou Re e os pontos de carta que essa dupla fez dos 240 em jogo. A ficha pontua a vitória contra os limiares de 90, 60 e 30 e o schwarz, soma o ponto extra por vencer as damas de paus, e registra um jogador solo com o triplo do que cada adversário ganha ou perde. Toda mão soma zero na mesa inteira. Hochzeit é sua própria variante."
+  },
+  "schnapsen": {
+    "lead": "Schnapsen é a corrida austríaca para dois até 66 pontos de carta, com baralho de 20 cartas, casamentos valendo 20 ou 40 e a opção de fechar o monte.",
+    "scoring": "Em cada mão você registra quem venceu e quantos pontos de jogo ela rendeu, de 1 a 3 dependendo de quão atrás o perdedor ficou, ou 2 quando quem fechou o monte falha. O primeiro jogador a chegar a sete pontos de jogo vence a partida. A variante Bela soma o seu ponto extra, e as regras mostram as cartas."
+  },
+  "tarot": {
+    "lead": "Königrufen é o jogo austríaco de tarock para quatro jogadores: o declarante chama um rei, e quem tiver essa carta se torna seu parceiro secreto.",
+    "scoring": "Digite o contrato, o declarante e o parceiro, e os pontos de carta que o lado declarante capturou. A planilha mede a margem sobre 36, soma um ponto fixo, dobra no caso de um solo, e credita o lado declarante enquanto debita os defensores. Uma variante simplificada joga toda mão como solo."
+  },
+  "twentyfive": {
+    "lead": "Twenty-Five é o jogo irlandês de vazas em que o cinco de trunfo supera tudo, cada vaza vale 5, e o primeiro a chegar a 25 vence.",
+    "scoring": "Depois de cada mão você digita quantas vazas cada jogador fez e quem jogou o maior trunfo. Cada vaza vale 5 e o maior trunfo rende mais 5. A ficha corre até 25, ou até 45 em duplas no Forty-Five, ou até 110 na variante mais longa."
+  },
+  "allfours": {
+    "lead": "All Fours é o antigo jogo de vazas ainda muito querido no Caribe, em que cada mão oferece quatro pontos: High, Low, Jack e Game, até o primeiro a chegar a 14.",
+    "scoring": "Digite os pontos de cada jogador na mão: High para o maior trunfo distribuído, Low para o menor, Jack por vencer o valete de trunfo, e Game para mais pontos de carta nas vazas. O primeiro a chegar a 14 vence, ou a 7 no Seven Up. Uma variante caribenha acrescenta o coringa."
+  },
+  "burro": {
+    "lead": "Burro é o jogo latino-americano de velocidade em que se passam cartas até alguém ter quatro cartas iguais, e o mais lento a perceber ganha uma letra de BURRO.",
+    "scoring": "A cada rodada você marca quem foi o mais lento, e a ficha dá a essa pessoa a próxima letra: B, U, R, R, O. Cinco letras e você está fora. Menos letras é melhor, e o último jogador de pé vence."
+  },
+  "loteria": {
+    "lead": "Lotería é o bingo de figuras do México: um locutor sorteia cartas ilustradas, todo mundo cobre a sua tabla, e o primeiro a completar o padrão grita Lotería.",
+    "scoring": "O Braggster tem um locutor embutido que embaralha as 54 cartas e revela uma de cada vez pelo nome, então ninguém precisa de um baralho para sortear. Cada rodada vencida marca um ponto na contagem, e quem tem mais vitórias lidera. Tabla cheia, Linha, Quatro cantos e Quadrado central já vêm incluídos."
+  },
+  "yahtzee": {
+    "lead": "Yahtzee é o jogo de cinco dados com treze caixas: três lançamentos por turno, uma caixa por turno e um bônus de 35 pontos por chegar a 63 na seção superior.",
+    "scoring": "A ficha calcula cada caixa, o bônus superior, e Yahtzees extras a 100 pontos cada com a regra do Joker, tudo na própria caixa de Yahtzee. As colunas encolhem para caber todo mundo na tela. Ative os dados digitais e cada lançamento mostra quanto vai pontuar, e com o Jogar juntos até seis jogadores lançam no próprio celular enquanto todo mundo vê os dados caírem."
+  },
+  "dudo": {
+    "lead": "Dudo, também conhecido como Perudo ou dado mentiroso, é o jogo de blefe em que todos escondem cinco dados sob um copo e dão lances sobre a mesa inteira.",
+    "scoring": "A cada rodada você registra quem perdeu um dado, ou quem recuperou um com uma calza exata, e a ficha mantém a contagem de dados de cada jogador. Um jogador sem dados está fora, e o último com dados vence. Os ases são curingas por padrão; a variante sem ases curingas desativa isso."
+  },
+  "chess": {
+    "lead": "Xadrez em um tabuleiro de madeira no seu bolso: todo lance legal é garantido, incluindo roque, en passant e promoção, com um placar contínuo de quem vence.",
+    "scoring": "Cada partida terminada marca um ponto para o vencedor e nada para um empate, então uma noite vira um placar de sessão tipo 5 a 3. Jogue em um celular, contra o computador no Fácil, Médio ou Difícil, ou com o Jogar juntos em dois celulares, onde o último lance fica marcado nos dois tabuleiros."
+  },
+  "checkers": {
+    "lead": "Damas inglesas em um tabuleiro 8x8 com capturas obrigatórias, capturas múltiplas e damas promovidas, prontas para jogar no seu celular.",
+    "scoring": "Cada partida terminada marca um ponto para o vencedor e um empate não marca nada, então você mantém um placar contínuo. Jogue em um celular, contra o computador em três níveis, ou com o Jogar juntos em dois celulares. As variantes de captura obrigatória e captura opcional já vêm incluídas."
+  },
+  "dammen": {
+    "lead": "Damas internacionais é o jogo 10x10 com vinte peças por lado, damas voadoras e captura máxima obrigatória, a versão jogada nos clubes holandeses.",
+    "scoring": "O tabuleiro aplica a regra da captura máxima e permite tocar uma captura longa casa por casa, com a opção de voltar um passo se você errar. Cada partida terminada marca um ponto para o vencedor. Jogue em um celular, contra o computador em três níveis, ou com o Jogar juntos em dois celulares."
+  },
+  "connectfour": {
+    "lead": "Connect Four é o jogo vertical de quatro em linha: solte um disco em uma coluna, deixe a gravidade escolher a fileira, e alinhe quatro antes do seu adversário.",
+    "scoring": "Toque em uma coluna e o disco cai no lugar em um tabuleiro de 7 por 6. Cada partida terminada marca um ponto para o vencedor e um tabuleiro cheio é um empate. Os discos se diferenciam por forma além de cor, então ninguém depende de distinguir duas cores."
+  },
+  "reversi": {
+    "lead": "Othello é o jogo de virar discos em um tabuleiro 8x8: prenda uma linha de discos do seu adversário entre dois seus e todos eles viram para a sua cor.",
+    "scoring": "O tabuleiro mostra onde você pode jogar, vira toda linha presa e passa a vez automaticamente quando você não tem jogada. Quem tiver mais discos no final vence a partida e marca um ponto no placar. Jogue em um celular, contra o computador em três níveis, ou com o Jogar juntos em dois celulares. As variantes de abertura fixa e livre já vêm incluídas."
+  },
+  "tictactoe": {
+    "lead": "Jogo da velha, o jogo de três em linha em uma grade 3x3, jogável em um celular, com vitórias e empates identificados automaticamente.",
+    "scoring": "Toque em um quadrado para colocar sua marca. O tabuleiro identifica sozinho uma vitória ou uma grade cheia, marca um ponto para o vencedor e nada para um empate, e mantém um placar contínuo para que um melhor de dez resolva a discussão."
+  },
+  "sudoku": {
+    "lead": "Sudoku, o quebra-cabeça numérico 9x9: preencha cada linha, coluna e quadrado 3x3 com 1 a 9, do Iniciante ao Diabólico, com uma grade nova toda vez.",
+    "scoring": "Cada grade é gerada no seu celular e verificada para ter exatamente uma solução. Sua pontuação é o tempo de resolução mais uma penalidade para cada erro e cada dica, então quanto menor, melhor, e os erros são contados discretamente em vez de aparecerem na tela. As anotações a lápis estão lá para os candidatos."
+  },
+  "killersudoku": {
+    "lead": "Killer Sudoku acrescenta gaiolas à grade 9x9: os dígitos de cada gaiola somam o valor impresso e nunca se repetem, além das regras normais do Sudoku.",
+    "scoring": "Cada quebra-cabeça é gerado na hora e verificado como único sob as regras de Sudoku e de gaiola juntas, em cinco níveis de dificuldade. A soma de uma gaiola vira caneta assim que seus dígitos estão certos. Sua pontuação é o tempo de resolução mais penalidades por erros e dicas, e o menor total vence."
+  },
+  "kakuro": {
+    "lead": "Kakuro é o quebra-cabeça de somas cruzadas: preencha cada sequência de células brancas com dígitos distintos de 1 a 9 que somem a pista no início dela.",
+    "scoring": "As grades vão de 6x6 a 10x10 em cinco níveis, cada uma gerada no seu celular e comprovadamente com uma única solução. Use anotações a lápis e dicas quando precisar. O tempo de resolução mais as penalidades por erros e dicas formam sua pontuação, e quanto menor, melhor."
+  },
+  "futoshiki": {
+    "lead": "Futoshiki é o quebra-cabeça de desigualdades: cada linha e coluna tem cada número uma vez, e todos os sinais de maior que entre as células precisam valer.",
+    "scoring": "As grades vão de 4x4 a 7x7 em cinco níveis, geradas na hora e verificadas para ter uma solução única. Anotações a lápis e dicas ajudam no caminho. Sua pontuação é o tempo de resolução mais uma penalidade para cada erro e dica, e o menor total vence."
+  },
+  "binairo": {
+    "lead": "Binairo, também chamado de Takuzu, preenche uma grade com zeros e uns: nunca três iguais seguidos, linhas equilibradas, e nenhuma linha ou coluna repetida.",
+    "scoring": "Toque em uma célula para alternar entre vazia, 0 e 1, em grades de 6x6 a 12x12. Um erro só conta quando você avança com um valor errado ainda de pé, então tocar além de um valor é de graça. O tempo de resolução mais as penalidades formam sua pontuação, e quanto menor, melhor."
+  },
+  "calcudoku": {
+    "lead": "Calcudoku é o quadrado latino aritmético: cada número uma vez por linha e coluna, e todo grupo em gaiola precisa alcançar o alvo com a operação impressa.",
+    "scoring": "As grades vão de 4x4 a 7x7 em cinco níveis, geradas no seu celular e comprovadamente únicas por um solucionador que entende as gaiolas. Anotações a lápis e dicas estão lá quando você precisar. Sua pontuação é o tempo de resolução mais penalidades por erros e dicas, e o menor total vence."
+  },
+  "tectonic": {
+    "lead": "Tectonic é o quebra-cabeça de regiões: cada região tem de 1 até o seu tamanho, uma vez cada, e células vizinhas, até na diagonal, não repetem dígito.",
+    "scoring": "As grades crescem de 5x5 no Iniciante até 8x8 no Diabólico, e cada uma é gerada na hora e comprovada com exatamente uma solução. Anotações a lápis e dicas estão lá quando você travar. Sua pontuação é o tempo de resolução mais penalidades por erros e dicas, e o menor total vence."
+  },
+  "nonogram": {
+    "lead": "Nonogram é lógica em imagem: os números ao lado de cada linha e coluna indicam as sequências de células preenchidas, e a grade resolvida revela um desenho.",
+    "scoring": "As grades vão de 5x5 a 15x15, tiradas de um banco de desenhos feitos à mão, cada um verificado com uma única solução. Toque para preencher uma célula e segure para marcá-la com um X. O tempo de resolução mais as penalidades por erros e dicas formam sua pontuação, e quanto menor, melhor."
+  },
+  "minesweeper": {
+    "lead": "Campo minado sem achismo: cada campo é comprovadamente solucionável por pura lógica antes de você vê-lo, de 9x9 com 10 minas até 16x30 com 99.",
+    "scoring": "Você sempre começa de uma abertura segura, e revelar uma mina custa um erro em vez do jogo inteiro, então você pode terminar o campo. Bandeiras e pontos de interrogação marcam o que você suspeita. Sua pontuação é o tempo de limpeza mais as penalidades por minas atingidas e dicas usadas, e o menor total vence."
+  },
+  "murdoku": {
+    "lead": "Murder Sudoku é um whodunnit em uma planta baixa: posicione cada suspeito e a vítima, um por linha e coluna, e o assassino é quem estava a sós com a vítima.",
+    "scoring": "Cada caso é gerado com sua própria história, um elenco de suspeitos e uma lista numerada de pistas, em cinco níveis, e é verificado para ter uma única resposta consistente. Anotações e riscos nunca custam nada. Sua pontuação é o tempo de resolução mais penalidades por erros e dicas, e o menor total vence."
+  },
+  "logikwis": {
+    "lead": "Logikwis é o clássico quebra-cabeça de grade lógica: ligue cada pessoa a um item de cada categoria a partir de uma lista curta de pistas.",
+    "scoring": "Cada caso sorteia um tema e um conjunto de categorias novos, em cinco níveis de 3x3 até 5x4, e é verificado para ter uma única resposta. Toque para riscar ou confirmar um par. Sua pontuação é o tempo de resolução mais penalidades por erros e dicas, e o menor total vence."
+  },
+  "wordle": {
+    "lead": "Woordkraker é adivinhar palavras em seis tentativas: cada palpite mostra quais letras estão certas, quais estão em outro lugar e quais não estão na palavra.",
+    "scoring": "As palavras vão de 4 a 7 letras em quatro níveis, com um teclado na tela. O estado de cada letra é mostrado por forma além de cor. Sua pontuação é o número de tentativas mais o tempo, uma palavra não descoberta conta como a rodada mais pesada, e o menor total vence."
+  },
+  "crossword": {
+    "lead": "Palavras cruzadas geradas na hora no seu celular a partir de um grande dicionário com pistas, de um Mini rápido a um 15x15 completo, sem nunca acabar.",
+    "scoring": "Toque em uma pista para pular para a palavra dela e toque em uma célula de novo para alternar entre horizontal e vertical. Um botão de revelar preenche a primeira letra vazia ou errada. Sua pontuação é o tempo de resolução mais penalidades por letras erradas e reveladas, e o menor total vence."
+  },
+  "woordzoeker": {
+    "lead": "Woordzoeker é caça-palavras: encontre cada palavra da lista na grade de letras, na horizontal, vertical ou diagonal, para frente ou para trás.",
+    "scoring": "Toque na primeira letra de uma palavra e depois na última, e uma palavra encontrada é riscada da lista. As grades vão de 8x8 com 5 palavras até 14x14 com 12. Sua pontuação é o tempo de resolução mais penalidades por erros e dicas, e o menor total vence."
+  },
+  "cijfercode": {
+    "lead": "Cijfercode é o quebra-cabeça de palavra-código: uma grade de palavras cruzadas preenchida, sem pistas, em que cada letra vira um número e você decifra o código.",
+    "scoring": "Digite uma letra para um número e ela aparece em toda célula com esse número de uma vez. Algumas letras já começam reveladas, o suficiente para decifrar o resto por raciocínio. As grades vêm em Mini, Midi e Standard, e sua pontuação é o tempo de resolução mais penalidades por tentativas erradas e dicas, e o menor total vence."
+  },
+  "zweeds": {
+    "lead": "Zweeds é a palavra-cruzada com setas, ou cruzadinha sueca: cada pista fica dentro da grade ao lado de uma seta que mostra para onde a resposta corre.",
+    "scoring": "Cada partida é uma grade montada na hora, de um Mini 4x4 até um Grand 14x14. Toque em uma célula de resposta e digite, e toque de novo para trocar a direção. Sua pontuação é o tempo de resolução mais penalidades por letras erradas e reveladas, e o menor total vence."
+  },
+  "filippine": {
+    "lead": "Filippine é uma pilha de pistas cujas respostas se alinham em uma coluna marcada, e essa coluna soletra uma palavra-solução escondida de cima a baixo.",
+    "scoring": "Resolva cada linha a partir da sua pista, e a palavra-solução aparece assim que todas as linhas estiverem certas. A coluna marcada é mostrada por cor, uma borda mais grossa e uma estrela. Os quebra-cabeças têm 4, 6 ou 8 linhas, e sua pontuação é o tempo de resolução mais penalidades por letras erradas e reveladas, e o menor total vence."
+  },
+  "hangman": {
+    "lead": "Forca, o clássico de adivinhar letras: diga uma letra de cada vez e descubra a palavra antes que o sétimo erro complete a figura na forca.",
+    "scoring": "Um acerto preenche todos os espaços daquela letra e um erro desenha a próxima parte da figura. Uma dica mostra primeiro a descrição da palavra, depois uma letra. Sua pontuação é o tempo mais uma penalidade para cada erro e dica, uma rodada perdida conta como a mais pesada, e o menor total vence."
+  },
+  "backgammon": {
+    "lead": "Gamão é a corrida de dados e peças por 24 pontos: capture peças soltas, reentre pela barra, retire as suas primeiro e vença de gamão para dobrar.",
+    "scoring": "Cada partida terminada marca 1 ponto por uma vitória simples, 2 por um gamão e 3 por um gamão duplo, em um placar contínuo sem dado dobrador. O tabuleiro lança os dados, destaca os lances legais e retira as peças. Jogue em um celular, contra o computador em três níveis, ou com o Jogar juntos em dois celulares. As aberturas Standard e Nackgammon já vêm incluídas."
+  },
+  "dominoes": {
+    "lead": "Dominó, do Block e Draw até o All Fives: combine as pontas abertas, seja o primeiro a bater, e marque os pontos que sobraram na mão dos seus adversários.",
+    "scoring": "Jogue no tabuleiro de peças do app, passando um celular pela mesa, ou digite os pontos de um jogo físico. O tabuleiro sabe se a sua variante compra do monte e pontua as pontas abertas no All Fives. O lado que bate, ou que tem menos pontos quando a fila trava, marca os pontos que sobraram nas outras mãos, até o alvo combinado."
+  },
+  "rummikub": {
+    "lead": "Rummikub é o rami de peças: monte sequências e trincas, abra com 30 pontos, e seja o primeiro a esvaziar o seu suporte.",
+    "scoring": "Quando uma rodada termina, cada outro jogador digita o valor das peças que sobraram no suporte, com um coringa valendo 30. O vencedor marca o total de todo mundo e os demais ficam negativos pelo próprio total. Depois de algumas rodadas, o maior total vence."
+  },
+  "cluedo": {
+    "lead": "Cluedo é o clássico jogo de tabuleiro de mistério. O Braggster dá a você um bloco de detetive no seu próprio celular, então ninguém espia a sua ficha.",
+    "scoring": "O bloco tem 21 linhas para os suspeitos, armas e cômodos, uma coluna de envelope que alterna entre vazio, descartado e tem, e uma coluna livre para anotações. O app nunca distribui nem vê as cartas de ninguém. Quando o caso é resolvido, você registra o vencedor, e ele conta nas estatísticas."
+  },
+  "darts": {
+    "lead": "Dardos a partir de 501 ou 301: conte regressivamente com três dardos por turno, chegue a exatamente zero para vencer, e estoure se passar do zero.",
+    "scoring": "Digite cada lançamento em um alvo na tela, ou digite o total do turno, e a ficha subtrai do seu placar restante. Um turno que levaria você abaixo de zero estoura e não conta. O primeiro jogador a chegar a exatamente zero vence a partida."
+  },
+  "bowling": {
+    "lead": "Boliche de dez pinos pontuado como a ficha de papel da pista: dez frames, o strike carrega as próximas duas bolas, o spare carrega a próxima.",
+    "scoring": "Digite os pinos de cada bola e a ficha calcula os frames, deixando um frame em branco até que o bônus de strike ou spare seja conhecido, igual a uma ficha de pontos de verdade. O décimo frame ganha suas bolas bônus, e um jogo perfeito é 300."
+  },
+  "kegelen": {
+    "lead": "Kegelen é o boliche de nove pinos jogado nas pistas holandesas e alemãs: cada pino derrubado vale um ponto, sem strikes e sem spares.",
+    "scoring": "Combinem quantos lançamentos cada um vai ter, depois digite os pinos que cada jogador derrubou em cada lançamento. O seu total é simplesmente a soma. O Volle bos coloca os nove pinos de pé em todo lançamento, e o Afruimen continua jogando no que sobrou de pé até os nove caírem."
+  },
+  "midgetgolf": {
+    "lead": "Minigolfe em 9 ou 18 buracos: conte cada tacada, e quem tiver menos tacadas no final da rodada vence.",
+    "scoring": "Digite as tacadas de cada jogador depois de cada buraco e a ficha mantém os totais correntes. Escolha 9 ou 18 buracos ao configurar a rodada. O menor total vence, e a classificação segue essa ordem."
+  },
+  "tennis": {
+    "lead": "Pontuação de tênis descomplicada: toque no jogador que venceu o ponto, e o braggster transforma pontos em games, games em sets, e sets na partida.",
+    "scoring": "Os pontos contam 0, 15, 30 e 40, o deuce precisa de uma vantagem de dois pontos, um set precisa de seis games e uma margem de dois games, e 6-6 vai para o tiebreak. Escolha melhor de três ou melhor de cinco sets. Você só precisa tocar em quem venceu o ponto."
+  },
+  "padel": {
+    "lead": "Pontuação de padel para duas duplas: toque na dupla que venceu o ponto, e o braggster cuida dos games e sets para você.",
+    "scoring": "Os games contam como no tênis, e em 40-40 você escolhe entre o ponto de ouro, em que o próximo ponto decide, e jogar com vantagem. Os sets vão até seis games com uma vantagem de dois games e um tiebreak em 6-6. Um tiebreak de partida até 10 pode substituir o terceiro set."
+  },
+  "tabletennis": {
+    "lead": "Tênis de mesa com games até 11 pontos, vencidos por uma vantagem de dois, em uma partida de melhor de 3, 5 ou 7 games.",
+    "scoring": "Toque no jogador que venceu a disputa e a ficha mantém os pontos e os games, incluindo a continuação em 10-10 até alguém abrir dois pontos de vantagem. O primeiro a vencer games suficientes leva a partida."
+  },
+  "generic": {
+    "lead": "O placar em branco marca os pontos de qualquer jogo que o braggster ainda não tem: nomeie os jogadores, adicione rodadas, e ela faz a soma.",
+    "scoring": "Escolha se o maior ou o menor total vence ao começar, depois digite os pontos de todo mundo rodada por rodada. O braggster mantém os totais correntes e a classificação, e a partida conta nas estatísticas como qualquer outro jogo. É sempre grátis."
+  },
+  "freestyle": {
+    "lead": "Freestyle é uma mesa gratuita de cartas e dados para jogos que vocês mesmos inventam: distribua cartas e lance dados na tela, e marque os seus próprios pontos.",
+    "scoring": "Escolha quantas cartas e dados distribuir, por jogador ou para uma mesa compartilhada, e joguem com as regras que a sua mesa combinar. Digite os pontos de cada rodada e escolha se o maior ou o menor total vence. O Freestyle é sempre gratuito."
+  }
+}

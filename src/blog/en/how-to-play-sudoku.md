@@ -15,6 +15,7 @@ secondary_keywords:
   - "how to get better at sudoku"
   - "sudoku pencil marks"
 search_intent: informational
+updated: 2026-09-28
 priority: 1
 schema:
   - Article
@@ -98,7 +99,7 @@ Because generation runs on your device, the supply is unlimited and works entire
 
 Braggster will not flash a digit red when you place it wrongly.
 
-This is a deliberate design decision, and it applies across all thirteen puzzles in the app. Live
+This is a deliberate design decision, and it applies across all eighteen puzzles in the app. Live
 error feedback turns a logic puzzle into a validator game: you stop deducing and start probing,
 because the app will tell you if you are wrong. Take that away and you have to actually be sure.
 
@@ -142,6 +143,6 @@ games in the app.
 
 ---
 
-**More:** see all thirteen [logic puzzles](/blog/puzzle-games/), try
+**More:** see all eighteen [logic puzzles](/blog/puzzle-games/), try
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), or browse the catalogue at
 [braggster.com/games](/games/).

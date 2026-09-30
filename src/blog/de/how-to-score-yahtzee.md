@@ -16,6 +16,7 @@ secondary_keywords:
   - "kniffel spielanleitung"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -130,6 +131,18 @@ gehört.
 Die Regelseite zeigt die vollständige Tabelle mit allen Kategorien, damit niemand raten muss, ob ein
 Full House 25 Punkte oder die Summe der Würfel wert ist.
 
+## Digitale Würfel, und ein Handy pro Person
+
+Keine Würfel im Haus? Schalte die digitalen Würfel ein und würfle auf dem Bildschirm, halte fest, was
+du behalten willst, und die App zeigt, was dieser Wurf in jedem offenen Feld einbringen würde.
+
+Mit [Gemeinsam spielen](/play-together/) nutzen bis zu sechs Spieler jeweils ihr eigenes Handy im
+selben WLAN. Ein Handy eröffnet einen Tisch und zeigt einen QR-Code, die anderen scannen ihn, und
+jeder füllt seine eigene Spalte aus. Schaltet der Gastgeber die digitalen Würfel für den Tisch ein,
+würfelt der Spieler, der dran ist, auf seinem eigenen Handy, und alle anderen sehen die Würfel auf
+ihrem landen. Kein Konto, kein Internet, und nur der Gastgeber braucht das Spiel. Die Schritt-für-Schritt-
+Anleitung steht im [Guide zum gemeinsamen Spielen auf mehreren Handys](/blog/play-games-together-on-multiple-phones/).
+
 ## Häufige Fragen
 
 **Wie bekommt man den Kniffel Bonus?**
@@ -147,6 +160,10 @@ Zettel.
 **Was passiert, wenn ich ein Kniffel würfle, das Feld aber schon mit Null belegt ist?**
 Hast du eine Null ins Kniffel Feld eingetragen, gibt es keinen Bonus mehr. Die Jokerregel bestimmt
 trotzdem, wo die Würfel eingetragen werden.
+
+**Können wir Yahtzee auf mehreren Handys spielen?**
+Ja. Mit Gemeinsam spielen nutzen bis zu sechs Spieler jeweils ihr eigenes Handy im selben WLAN, mit
+gemeinsamen digitalen Würfeln, die alle landen sehen.
 
 **Ist Kniffel dasselbe wie Yahtzee?**
 Im Grunde ja, und derselbe Punktezettel deckt beide ab, zusammen mit Yams und der Generala Familie.

@@ -13,6 +13,7 @@ import html
 import json
 import re
 import shutil
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -82,6 +83,41 @@ OG_IMAGE_SIZE = (1200, 630)
 # definitions. Everything the games page and the home chips render is derived
 # from it, so the site cannot drift from the app the way a hand-kept list did.
 GAMES = json.loads((SRC / "games.json").read_text("utf-8"))["games"]
+GAMES_BY_ID = {g["id"]: g for g in GAMES}
+
+# The app's own name for each game in each locale (Schach, Buscaminas, Morpion),
+# copied from its ARBs by tools/sync_game_names.py. Only the rendered name is
+# local: URLs stay on the English id, so hreflang pairs the same page.
+GAME_NAMES: dict[str, dict[str, str]] = json.loads((SRC / "gamenames.json").read_text("utf-8"))
+
+
+def game_name(game: dict, code: str) -> str:
+    """The name to print for a game on a page in locale `code`. Every rendered
+    game name goes through here; games.json's English name is the fallback."""
+    return GAME_NAMES.get(code, {}).get(game["id"]) or game["name"]
+
+
+def game_tags(game: dict, code: str) -> list[str]:
+    """A game's search words on a page in locale `code`. Where the shown name is
+    local, the English name leads the tags, so a reader (or a search engine)
+    looking for "Chess" on /fr/games/ still finds Échecs. Case-insensitive
+    duplicates of that name drop out of the rest."""
+    shown = game_name(game, code).casefold()
+    extra: list[str] = []
+    for name in (GAME_NAMES.get("en", {}).get(game["id"]), game["name"]):
+        if name and name.casefold() != shown and name.casefold() not in {e.casefold() for e in extra}:
+            extra.append(name)
+    taken = {e.casefold() for e in extra}
+    return extra + [t for t in game["tags"] if t.casefold() not in taken]
+
+# The filter toggles on /games/: input id suffix, games.json flag, badge key and
+# the data attribute the card carries. Everything that filters or badges reads
+# this one list, so a new toggle is one row here plus its locale key.
+TOGGLES = [
+    ("app", "playInApp", "games_badge_app"),
+    ("ai", "vsComputer", "games_badge_ai"),
+    ("together", "playTogether", "games_badge_together"),
+]
 
 # Category order on the games page. Mirrors the app's GameCategory, except that
 # the blank scorecard is split out of "other" into its own "free" bucket: it is
@@ -90,12 +126,14 @@ CATEGORIES = ["card", "dice", "board", "puzzle", "sports", "free"]
 
 # The home page keeps a short teaser rather than the whole catalogue. This is a
 # curated slice, spread across categories and countries, but the names
-# themselves still come from games.json, so a rename in the app travels here.
+# themselves still come from games.json and gamenames.json, so a rename in the
+# app travels here.
 HOME_CHIP_IDS = [
     "klaverjassen",
     "pesten",
     "poker",
     "chess",
+    "reversi",
     "briscola",
     "yahtzee",
     "belote",
@@ -117,12 +155,23 @@ COUNTS = {
     "{n}": str(len(GAMES)),
     "{play}": str(sum(1 for g in GAMES if g["playInApp"])),
     "{ai}": str(sum(1 for g in GAMES if g["vsComputer"])),
+    "{together}": str(sum(1 for g in GAMES if g["playTogether"])),
+    "{puzzles}": str(sum(1 for g in GAMES if g["category"] == "puzzle")),
     "{low}": str(sum(1 for g in GAMES if g["lowestWins"])),
 }
 
+# The date this build ran, for the sitemap's <lastmod>. A static site has no
+# per-page modification time worth trusting, and every page is rebuilt anyway.
+BUILD_DATE = date.today().isoformat()
+
 # The screenshots tools/build_screenshots.py writes, in the order the gallery
-# shows them. The hero takes the first; the rest are the gallery.
-SHOTS = ["home", "games", "yahtzee", "chess", "sudoku"]
+# shows them. The hero takes the first; the rest are the gallery. Locale keys
+# are shot_<name>_alt and shot_<name>_cap, with any hyphen as an underscore.
+SHOTS = ["home", "play-together", "chess", "games", "murdoku", "yahtzee"]
+
+
+def shot_key(shot: str) -> str:
+    return shot.replace("-", "_")
 SHOT_WIDTH, SHOT_HEIGHT = 320, 695
 
 # Feature glyphs, rebuilt as inline SVG from the prototype's div geometry.
@@ -146,7 +195,20 @@ GLYPH_PASS = (
     "</svg>"
 )
 
+# Two phones side by side, for Play together.
+GLYPH_PHONES = (
+    '<svg width="26" height="24" viewBox="0 0 26 24" aria-hidden="true" focusable="false">'
+    '<rect x="0" y="3" width="11" height="20" rx="3" fill="#16243D" transform="rotate(-6 5.5 13)"/>'
+    '<rect x="15" y="1" width="11" height="20" rx="3" fill="#2D6BE4" transform="rotate(6 20.5 11)"/>'
+    '<circle cx="13" cy="12" r="2" fill="#F08A24"/>'
+    "</svg>"
+)
+
+# Key prefix, tile colour, tilt, glyph. Play together leads because it is the
+# newest thing the app does; its keys are named rather than numbered so the
+# three original cards kept their keys (and their translations) when it arrived.
 FEATURES = [
+    ("f_together", "#E3ECFC", 4, GLYPH_PHONES),
     ("f1", "#FDEBD6", -6, GLYPH_DICE),
     ("f2", "#E3ECFC", 5, GLYPH_BARS),
     ("f3", "#FDEBD6", -5, GLYPH_PASS),
@@ -181,13 +243,14 @@ def shots_html(loc: dict[str, str], root: str, locale: str) -> str:
     """The gallery: every shot but the one already in the hero."""
     figures = []
     for shot in SHOTS[1:]:
+        key = shot_key(shot)
         image = screenshot_html(root, locale, shot, hero=False).replace(
-            "{alt}", html.escape(loc[f"shot_{shot}_alt"], quote=True)
+            "{alt}", html.escape(loc[f"shot_{key}_alt"], quote=True)
         )
         figures.append(
             f'        <figure class="shot">\n'
             f'          <div class="phone">{image}</div>\n'
-            f"          <figcaption>{html.escape(loc[f'shot_{shot}_cap'])}</figcaption>\n"
+            f"          <figcaption>{html.escape(loc[f'shot_{key}_cap'])}</figcaption>\n"
             f"        </figure>"
         )
     return "\n".join(figures)
@@ -223,10 +286,14 @@ def chips_html(loc: dict[str, str], games_href: str) -> str:
     """The home teaser. The last chip is a link through to the full catalogue,
     which is where the "more" chip used to sit before there was a page to send
     people to."""
-    by_id = {g["id"]: g for g in GAMES}
-    names = [by_id[i]["name"] for i in HOME_CHIP_IDS]
-    chips = [f'        <span class="chip">{html.escape(n)}</span>' for n in names]
-    chips.append(f'        <span class="chip">{html.escape(loc["chip_generic"])}</span>')
+    chips = [
+        f'        <a class="chip" href="{games_href}{i}/">{html.escape(game_name(GAMES_BY_ID[i], loc["lang"]))}</a>'
+        for i in HOME_CHIP_IDS
+    ]
+    # "Any board game" is what the blank scorecard is for, so it goes there.
+    chips.append(
+        f'        <a class="chip" href="{games_href}generic/">{html.escape(loc["chip_generic"])}</a>'
+    )
     more = counted(loc["games_more_link"])
     chips.append(f'        <a class="chip chip--more" href="{games_href}">{html.escape(more)}</a>')
     return "\n".join(chips)
@@ -267,45 +334,42 @@ def games_filters_html(loc: dict[str, str]) -> str:
         rows.append(f'          <label for="f-{cat}" class="filters__chip">{label}</label>')
     rows.append("        </fieldset>")
     rows.append('        <div class="filters filters--toggle">')
-    rows.append('          <input type="checkbox" id="f-app" class="filters__input">')
-    rows.append(
-        f'          <label for="f-app" class="filters__chip">{html.escape(loc["games_badge_app"])}</label>'
-    )
-    rows.append('          <input type="checkbox" id="f-ai" class="filters__input">')
-    rows.append(
-        f'          <label for="f-ai" class="filters__chip">{html.escape(loc["games_badge_ai"])}</label>'
-    )
+    for toggle, _flag, key in TOGGLES:
+        rows.append(f'          <input type="checkbox" id="f-{toggle}" class="filters__input">')
+        rows.append(
+            f'          <label for="f-{toggle}" class="filters__chip">{html.escape(loc[key])}</label>'
+        )
     rows.append("        </div>")
     return "\n".join(rows)
 
 
-def games_grid_html(loc: dict[str, str]) -> str:
+def games_grid_html(loc: dict[str, str], games_href: str) -> str:
     """One card per game. Tag words are rendered as real text, not attributes,
     because they exist to be found: by a search engine, and by a reader looking
-    for the name their family uses."""
+    for the name their family uses. The name links to the game's own page."""
     items = []
     for game in GAMES:
-        badges = []
-        if game["playInApp"]:
-            badges.append(("game__badge game__badge--app", loc["games_badge_app"]))
-        if game["vsComputer"]:
-            badges.append(("game__badge game__badge--ai", loc["games_badge_ai"]))
+        badges = [
+            (f"game__badge game__badge--{toggle}", loc[key])
+            for toggle, flag, key in TOGGLES
+            if game[flag]
+        ]
         if game["lowestWins"]:
             badges.append(("game__badge game__badge--low", loc["games_badge_lowest"]))
         badge_html = "".join(
             f'<span class="{cls}">{html.escape(text)}</span>' for cls, text in badges
         )
-        app_attr = " data-app" if game["playInApp"] else ""
-        ai_attr = " data-ai" if game["vsComputer"] else ""
+        attrs = "".join(f" data-{toggle}" for toggle, flag, _ in TOGGLES if game[flag])
         category_label = loc["games_cat_" + game["category"]]
         meta = f"{players_label(loc, game['players'])} · {category_label}"
         items.append(
-            f'          <li class="game" data-cat="{game["category"]}"{app_attr}{ai_attr}>\n'
-            f'            <h2 class="game__name">{html.escape(game["name"])}</h2>\n'
+            f'          <li class="game" data-cat="{game["category"]}"{attrs}>\n'
+            f'            <h2 class="game__name"><a href="{games_href}{game["id"]}/">'
+            f'{html.escape(game_name(game, loc["lang"]))}</a></h2>\n'
             f'            <p class="game__meta">{html.escape(meta)}</p>\n'
             + (f'            <p class="game__badges">{badge_html}</p>\n' if badge_html else "")
             + f'            <p class="game__tags"><span class="sr-only">{html.escape(loc["games_tags_label"])} </span>'
-            f'{html.escape(", ".join(game["tags"]))}</p>\n'
+            f'{html.escape(", ".join(game_tags(game, loc["lang"])))}</p>\n'
             f"          </li>"
         )
     return "\n".join(items)
@@ -315,49 +379,55 @@ def games_css() -> str:
     """The filter behaviour, generated from the data rather than hand-written.
 
     Two kinds of rule. The first hides everything outside the chosen category,
-    everything without in-app play, or everything a computer cannot play. The
+    and everything without the flag of each checked toggle (TOGGLES). The
     second turns on the empty state, and it only fires for combinations that
     genuinely have no games: asking for dice and play-in-app, or for puzzles
-    played against the computer, matches nothing. Both are derived here so they
-    cannot drift from games.json.
+    played together, matches nothing. Both are derived here so they cannot
+    drift from games.json.
     """
     lines = [
-        "  .games:has(#f-app:checked) .game:not([data-app]) { display: none; }",
-        "  .games:has(#f-ai:checked) .game:not([data-ai]) { display: none; }",
+        f"  .games:has(#f-{toggle}:checked) .game:not([data-{toggle}]) {{ display: none; }}"
+        for toggle, _flag, _key in TOGGLES
     ]
     for cat in CATEGORIES:
         lines.append(
             f'  .games:has(#f-{cat}:checked) .game:not([data-cat="{cat}"]) {{ display: none; }}'
         )
 
-    def matches(cat: str, app_on: bool, ai_on: bool) -> int:
+    def matches(cat: str, on: frozenset[str]) -> int:
         return sum(
             1
             for g in GAMES
             if (cat == "all" or g["category"] == cat)
-            and (not app_on or g["playInApp"])
-            and (not ai_on or g["vsComputer"])
+            and all(g[flag] for toggle, flag, _ in TOGGLES if toggle in on)
         )
+
+    # Every non-empty set of checked toggles, smallest first.
+    names = [toggle for toggle, _flag, _key in TOGGLES]
+    combos = sorted(
+        (
+            frozenset(n for bit, n in enumerate(names) if mask >> bit & 1)
+            for mask in range(1, 1 << len(names))
+        ),
+        key=len,
+    )
 
     # Each active toggle only removes games, so a combination that is already
     # empty stays empty when another toggle is added: emitting the minimal empty
-    # combination (fewest toggles) is enough, its selector matching the fuller
-    # states too. Category is a radio, not a toggle (picking one unchecks All),
-    # so All and each category are considered on their own.
+    # combinations (no empty proper subset) is enough, their selectors matching
+    # the fuller states too. Category is a radio, not a toggle (picking one
+    # unchecks All), so All and each category are considered on their own.
     empty = []
     for cat in ["all", *CATEGORIES]:
-        for app_on, ai_on in ((True, False), (False, True), (True, True)):
-            if matches(cat, app_on, ai_on) != 0:
+        minimal: list[frozenset[str]] = []
+        for on in combos:
+            if matches(cat, on) != 0:
                 continue
-            if app_on and ai_on and (
-                matches(cat, True, False) == 0 or matches(cat, False, True) == 0
-            ):
-                continue  # a single-toggle rule for this category already covers it
+            if any(smaller < on for smaller in minimal):
+                continue  # a smaller rule for this category already covers it
+            minimal.append(on)
             parts = [f":has(#f-{cat}:checked)"]
-            if app_on:
-                parts.append(":has(#f-app:checked)")
-            if ai_on:
-                parts.append(":has(#f-ai:checked)")
+            parts += [f":has(#f-{toggle}:checked)" for toggle in names if toggle in on]
             empty.append("  .games" + "".join(parts) + " .games__empty")
     if empty:
         lines.append(",\n".join(empty) + " { display: block; }")
@@ -376,18 +446,28 @@ def lang_links_html(
     return "\n".join(links)
 
 
-def social_html(current: str, title: str, description: str, url: str) -> str:
+def social_html(
+    current: str,
+    title: str,
+    description: str,
+    url: str,
+    *,
+    og_type: str = "website",
+    published: str | None = None,
+    modified: str | None = None,
+) -> str:
     """Open Graph and Twitter card tags.
 
     Title and description are escaped here rather than by render(), because the
-    whole block is substituted as raw _html.
+    whole block is substituted as raw _html. Articles pass og_type "article"
+    and their dates.
     """
     title = html.escape(title, quote=True)
     description = html.escape(description, quote=True)
     width, height = OG_IMAGE_SIZE
 
     tags = [
-        '<meta property="og:type" content="website">',
+        f'<meta property="og:type" content="{og_type}">',
         '<meta property="og:site_name" content="braggster">',
         f'<meta property="og:title" content="{title}">',
         f'<meta property="og:description" content="{description}">',
@@ -401,6 +481,10 @@ def social_html(current: str, title: str, description: str, url: str) -> str:
     for code in LOCALES:
         if code != current:
             tags.append(f'<meta property="og:locale:alternate" content="{OG_LOCALES[code]}">')
+    if published:
+        tags.append(f'<meta property="article:published_time" content="{published}">')
+    if modified:
+        tags.append(f'<meta property="article:modified_time" content="{modified}">')
 
     tags += [
         '<meta name="twitter:card" content="summary_large_image">',
@@ -449,6 +533,27 @@ BLOG_CATEGORY_ORDER = ["card", "board", "dice", "puzzle"]
 # there is nothing per-file to derive one from, so it is a constant rather than
 # a fake per-article date.
 BLOG_PUBLISHED = "2026-08-05"
+
+
+def _front_matter_date(meta: dict, field: str, default: str) -> str:
+    value = meta.get(field)
+    if value is None:
+        return default
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(value)):
+        raise ValueError(f"{field}: {value!r} is not a YYYY-MM-DD date")
+    return str(value)
+
+
+def article_published(meta: dict) -> str:
+    """datePublished: the article's own `published:` front matter, for an
+    article added after the first batch, else BLOG_PUBLISHED."""
+    return _front_matter_date(meta, "published", BLOG_PUBLISHED)
+
+
+def article_modified(meta: dict) -> str:
+    """dateModified: `updated:` when an edit set one, else the publication
+    date. Only an edited article moves."""
+    return _front_matter_date(meta, "updated", article_published(meta))
 
 FM_SCALAR = re.compile(r"^([a-z_]+):\s*(.*)$")
 FM_ITEM = re.compile(r"^\s+-\s+(.*)$")
@@ -565,6 +670,16 @@ def markdown_html(body: str, href) -> str:
             out.append(f"</{open_list}>")
             open_list = None
 
+    def item_text(first: str) -> str:
+        # A list item may wrap onto indented continuation lines; join them into
+        # the item instead of letting them close the list as a new paragraph.
+        nonlocal i
+        parts = [first]
+        while i + 1 < len(lines) and lines[i + 1][:1] in (" ", "\t") and lines[i + 1].strip():
+            i += 1
+            parts.append(lines[i].strip())
+        return " ".join(parts)
+
     while i < len(lines):
         line = lines[i].strip()
 
@@ -605,7 +720,7 @@ def markdown_html(body: str, href) -> str:
                 close_list()
                 out.append("<ol>")
                 open_list = "ol"
-            out.append(f"<li>{_inline(ordered.group(2), href)}</li>")
+            out.append(f"<li>{_inline(item_text(ordered.group(2)), href)}</li>")
             i += 1
             continue
 
@@ -615,7 +730,7 @@ def markdown_html(body: str, href) -> str:
                 close_list()
                 out.append("<ul>")
                 open_list = "ul"
-            out.append(f"<li>{_inline(line[2:], href)}</li>")
+            out.append(f"<li>{_inline(item_text(line[2:]), href)}</li>")
             i += 1
             continue
 
@@ -648,7 +763,11 @@ def faq_pairs(body: str) -> list[tuple[str, str]]:
                 break
             answer.append(follow.strip())
         if answer:
-            pairs.append((question.group(1), " ".join(answer)))
+            # Schema text is plain text: keep a link's words, drop its target
+            # and the bold markers, so the answer does not read as markdown.
+            text = MD_LINK.sub(lambda m: m.group(1), " ".join(answer))
+            text = MD_BOLD.sub(lambda m: m.group(1), text)
+            pairs.append((question.group(1), text))
     return pairs
 
 
@@ -660,6 +779,107 @@ def json_ld(blocks: list[dict]) -> str:
     return f'<script type="application/ld+json">{body}</script>'
 
 
+def faq_schema(pairs: list[tuple[str, str]]) -> dict:
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": question,
+                "acceptedAnswer": {"@type": "Answer", "text": answer},
+            }
+            for question, answer in pairs
+        ],
+    }
+
+
+def breadcrumb_schema(trail: list[tuple[str, str]]) -> dict:
+    """BreadcrumbList from (name, url) pairs, outermost first."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": position, "name": name, "item": url}
+            for position, (name, url) in enumerate(trail, start=1)
+        ],
+    }
+
+
+def webpage_schema(name: str, description: str, url: str, code: str) -> dict:
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": name,
+        "description": description,
+        "url": url,
+        "inLanguage": code,
+        "isPartOf": {"@type": "WebSite", "name": "braggster", "url": f"{SITE_URL}/"},
+    }
+
+
+def locale_faq(loc: dict[str, str], prefix: str) -> list[tuple[str, str]]:
+    """Question and answer pairs stored as <prefix>_q1/<prefix>_a1, ... in a
+    locale, in order, until the numbering stops. Counts are filled in here, so
+    the visible FAQ and the FAQPage schema say exactly the same thing."""
+    pairs = []
+    index = 1
+    while f"{prefix}_q{index}" in loc:
+        pairs.append((counted(loc[f"{prefix}_q{index}"]), counted(loc[f"{prefix}_a{index}"])))
+        index += 1
+    return pairs
+
+
+def faq_html(pairs: list[tuple[str, str]], indent: str = "        ") -> str:
+    """The visible FAQ: one h3 and one paragraph per question, the same pairs
+    the FAQPage schema carries."""
+    rows = []
+    for question, answer in pairs:
+        rows.append(f'{indent}<div class="faq__item">')
+        rows.append(f"{indent}  <h3>{html.escape(question)}</h3>")
+        rows.append(f"{indent}  <p>{html.escape(answer)}</p>")
+        rows.append(f"{indent}</div>")
+    return "\n".join(rows)
+
+
+def home_schema(loc: dict[str, str], code: str, url: str) -> str:
+    """The app itself, the organisation behind it, the site, and the home FAQ.
+
+    No rating or review block: the site has no reviews of its own to show, and
+    inventing an aggregate is exactly what the structured data guidelines ban.
+    """
+    app = {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Braggster",
+        "description": counted(loc["meta_description"]),
+        "url": url,
+        "image": OG_IMAGE,
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "GameApplication",
+        "inLanguage": list(LOCALES),
+        "downloadUrl": [APP_STORE_URL, PLAY_STORE_URL],
+        "installUrl": [APP_STORE_URL, PLAY_STORE_URL],
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+    }
+    organization = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "braggster",
+        "url": f"{SITE_URL}/",
+        "logo": f"{SITE_URL}/assets/logo/symbol-color.png",
+        "email": CONTACT_EMAIL,
+    }
+    website = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "braggster",
+        "url": url,
+        "inLanguage": code,
+    }
+    return json_ld([app, organization, website, faq_schema(locale_faq(loc, "home_faq"))])
+
+
 def article_schema(meta: dict, body: str, url: str, code: str, blog_url: str, home_url: str, loc: dict) -> str:
     blocks: list[dict] = [
         {
@@ -668,8 +888,8 @@ def article_schema(meta: dict, body: str, url: str, code: str, blog_url: str, ho
             "headline": meta["title"],
             "description": meta["meta_description"],
             "inLanguage": code,
-            "datePublished": BLOG_PUBLISHED,
-            "dateModified": BLOG_PUBLISHED,
+            "datePublished": article_published(meta),
+            "dateModified": article_modified(meta),
             "mainEntityOfPage": url,
             "author": {"@type": "Organization", "name": "braggster"},
             "publisher": {"@type": "Organization", "name": "braggster"},
@@ -688,20 +908,7 @@ def article_schema(meta: dict, body: str, url: str, code: str, blog_url: str, ho
 
     pairs = faq_pairs(body)
     if pairs:
-        blocks.append(
-            {
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": question,
-                        "acceptedAnswer": {"@type": "Answer", "text": answer},
-                    }
-                    for question, answer in pairs
-                ],
-            }
-        )
+        blocks.append(faq_schema(pairs))
     return json_ld(blocks)
 
 
@@ -740,8 +947,237 @@ def blog_index_html(loc: dict, entries: dict[str, dict], href) -> str:
     return "\n".join(sections)
 
 
+def page_values(loc: dict[str, str], root: str, ldir: str) -> dict[str, str]:
+    """A locale's copy plus everything every page's nav and footer link to.
+
+    One place for the hrefs, so a page added to the footer (Terms, Play
+    together) reaches every template at once instead of seven update() calls.
+    """
+    values = dict(loc)
+    values.update(
+        root=root,
+        home_href=f"{root}{ldir}" or "./",
+        games_href=f"{root}{ldir}games/",
+        blog_href=f"{root}{ldir}blog/",
+        privacy_href=f"{root}{ldir}privacy/",
+        support_href=f"{root}{ldir}support/",
+        terms_href=f"{root}{ldir}terms/",
+        together_href=f"{root}{ldir}play-together/",
+        store_href=APP_STORE_URL,
+        play_store_href=PLAY_STORE_URL,
+        contact_email=CONTACT_EMAIL,
+        support_email=SUPPORT_EMAIL,
+        clarity_html=CLARITY_HTML,
+    )
+    return values
+
+
+# ---------------------------------------------------------------------------
+# Per-game pages: /games/<id>/ in every locale.
+#
+# The prose (what the game is, what braggster's sheet or board does) lives in
+# src/gamepages/<locale>.json, one {lead, scoring} per games.json id; the lead
+# doubles as the meta description, so check_copy.py holds it to 160 characters.
+# Everything else on the page is generated from games.json flags and shared
+# locale keys, so a flag change in the app reaches all 73 pages at once.
+# ---------------------------------------------------------------------------
+
+GAMEPAGES_SRC = SRC / "gamepages"
+
+# How many related games a page lists, all from its own category.
+RELATED_COUNT = 6
+
+
+def named(loc: dict[str, str], text: str, game: dict) -> str:
+    """Locale copy with {name} filled by the game's name in that locale."""
+    return counted(text).replace("{name}", game_name(game, loc["lang"]))
+
+
+def game_h1(loc: dict[str, str], game: dict) -> str:
+    if game["category"] == "free":
+        return game_name(game, loc["lang"])
+    key = "game_h1_play" if game["playInApp"] else "game_h1_score"
+    return named(loc, loc[key], game)
+
+
+def game_meta_title(loc: dict[str, str], game: dict) -> str:
+    if game["category"] == "free":
+        key = "game_meta_title_free"
+    elif game["playInApp"]:
+        key = "game_meta_title_play"
+    else:
+        key = "game_meta_title_score"
+    return named(loc, loc[key], game)
+
+
+def game_can_html(loc: dict[str, str], game: dict, together_href: str) -> str:
+    """The "What you can do" list, one item per thing the app does for this
+    game. Driven entirely by the flags, so it cannot promise a mode the app
+    does not have."""
+    puzzle = game["category"] == "puzzle"
+    items: list[str] = []
+
+    def add(key: str) -> None:
+        items.append(html.escape(named(loc, loc[key], game)))
+
+    if game["category"] == "free":
+        add("game_can_free")
+        add("game_can_score_any")
+        if game["playInApp"]:
+            add("game_can_play")
+    elif puzzle:
+        add("game_can_solve")
+    else:
+        add("game_can_score")
+        if game["playInApp"]:
+            add("game_can_play")
+    if game["vsComputer"]:
+        add("game_can_ai")
+    if game["playTogether"]:
+        text = html.escape(named(loc, loc["game_can_together"], game))
+        items.append(f'<a href="{together_href}">{text}</a>')
+    if game["lowestWins"]:
+        add("game_can_low")
+    add("game_can_rules")
+    add("game_can_stats")
+    return "\n".join(f"          <li>{item}</li>" for item in items)
+
+
+def game_faq(loc: dict[str, str], game: dict) -> list[tuple[str, str]]:
+    """Two or three questions, picked by the game's flags. Every answer is a
+    fact about the app that holds for every game that gets the question."""
+    pairs = []
+
+    def ask(q: str, a: str) -> None:
+        pairs.append((named(loc, loc[q], game), named(loc, loc[a], game)))
+
+    if game["category"] == "free":
+        ask("game_faq_free_q", "game_faq_alwaysfree_a")
+    else:
+        ask("game_faq_free_q", "game_faq_free_a")
+
+    if game["playTogether"]:
+        ask("game_faq_together_q", "game_faq_together_a")
+    elif game["playInApp"] and game["category"] != "puzzle":
+        ask("game_faq_play_q", "game_faq_play_a")
+    else:
+        ask("game_faq_offline_q", "game_faq_offline_a")
+
+    if game["vsComputer"]:
+        ask("game_faq_ai_q", "game_faq_ai_a")
+    elif game["lowestWins"]:
+        ask("game_faq_low_q", "game_faq_low_a")
+    return pairs
+
+
+def related_games(game: dict) -> list[dict]:
+    """Up to RELATED_COUNT others from the same category, starting just after
+    this one in catalogue order and wrapping, so neighbours link to each other
+    and every game in a category is linked from somewhere."""
+    same = [g for g in GAMES if g["category"] == game["category"]]
+    index = same.index(game)
+    ordered = same[index + 1 :] + same[:index]
+    return ordered[:RELATED_COUNT]
+
+
+def game_related_html(loc: dict[str, str], game: dict, games_href: str) -> str:
+    chips = [
+        f'        <a class="chip" href="{games_href}{g["id"]}/">{html.escape(game_name(g, loc["lang"]))}</a>'
+        for g in related_games(game)
+    ]
+    more = counted(loc["games_more_link"])
+    chips.append(f'        <a class="chip chip--more" href="{games_href}">{html.escape(more)}</a>')
+    return "\n".join(chips)
+
+
+def game_guide_html(loc: dict[str, str], guide: tuple[str, str] | None, href) -> str:
+    """A link to the blog guide about this game, when this locale has one."""
+    if not guide:
+        return ""
+    slug, title = guide
+    link = html.escape(href(f"/blog/{slug}/"), quote=True)
+    return (
+        f'      <p class="game-page__guide">{html.escape(loc["game_guide_label"])} '
+        f'<a href="{link}">{html.escape(title)}</a></p>'
+    )
+
+
+def article_game_html(loc: dict[str, str], meta: dict, games_href: str) -> str:
+    """A per-game article links to that game's own page, in every locale,
+    without anyone having to write the link into seven markdown files."""
+    game = GAMES_BY_ID.get(meta.get("game_id") or "")
+    if not game:
+        return ""
+    text = html.escape(named(loc, loc["article_game_link"], game))
+    return f'<p class="article__game"><a href="{games_href}{game["id"]}/">{text}</a></p>'
+
+
+def sitemap_xml(entries: list[tuple[str, list[str]]]) -> str:
+    """One <url> per page per locale, with <lastmod> and the page's hreflang
+    alternates as xhtml:link, x-default pointing at the English root copy."""
+    rows = []
+    for suffix, codes in entries:
+        alternates = [
+            f'    <xhtml:link rel="alternate" hreflang="{c}" href="{SITE_URL}/{locale_dir(c)}{suffix}"/>'
+            for c in codes
+        ]
+        alternates.append(
+            f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE_URL}/{suffix}"/>'
+        )
+        for code in codes:
+            rows.append(
+                "  <url>\n"
+                f"    <loc>{SITE_URL}/{locale_dir(code)}{suffix}</loc>\n"
+                f"    <lastmod>{BUILD_DATE}</lastmod>\n" + "\n".join(alternates) + "\n  </url>"
+            )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+        'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "\n".join(rows) + "\n</urlset>\n"
+    )
+
+
+# The blog guide /play-together/ points to, when the locale holds it.
+TOGETHER_GUIDE = "play-games-together-on-multiple-phones"
+
+
+def together_games_html(loc: dict[str, str], games_href: str) -> str:
+    """The Play together games, from the playTogether flag, each linking to its
+    own page with its player count (one phone per player)."""
+    cards = []
+    for game in GAMES:
+        if not game["playTogether"]:
+            continue
+        cards.append(
+            f'        <li class="game">\n'
+            f'          <h3 class="game__name"><a href="{games_href}{game["id"]}/">'
+            f'{html.escape(game_name(game, loc["lang"]))}</a></h3>\n'
+            f'          <p class="game__meta">{html.escape(players_label(loc, game["players"]))}</p>\n'
+            f"        </li>"
+        )
+    return "\n".join(cards)
+
+
+def load_gamepages() -> dict[str, dict[str, dict[str, str]]]:
+    """src/gamepages/<locale>.json for every locale. A missing id fails here
+    with a clear message rather than as a KeyError halfway through a build;
+    check_copy.py holds the fuller gate (non-empty, lengths, no extra ids)."""
+    pages = {}
+    for code in LOCALES:
+        path = GAMEPAGES_SRC / f"{code}.json"
+        data = json.loads(path.read_text("utf-8"))
+        missing = [g["id"] for g in GAMES if g["id"] not in data]
+        if missing:
+            raise ValueError(f"{path.relative_to(ROOT)}: no entry for {missing}")
+        pages[code] = data
+    return pages
+
+
 def build() -> None:
     locales = {c: json.loads((SRC / "locales" / f"{c}.json").read_text("utf-8")) for c in LOCALES}
+    gamepages = load_gamepages()
+    game_tpl = (SRC / "game.html").read_text("utf-8")
+    together_tpl = (SRC / "play-together.html").read_text("utf-8")
     home_tpl = (SRC / "home.html").read_text("utf-8")
     privacy_tpl = (SRC / "privacy.html").read_text("utf-8")
     terms_tpl = (SRC / "terms.html").read_text("utf-8")
@@ -798,14 +1234,16 @@ def build() -> None:
 
     for code in LOCALES:
         loc = dict(locales[code])
+        # The helpers that print a game name read the locale from loc["lang"].
+        if loc.get("lang") != code:
+            raise ValueError(f"src/locales/{code}.json: lang is {loc.get('lang')!r}, expected {code!r}")
         ldir = locale_dir(code)
 
         # ---- Home: <root>/<ldir>index.html
         depth = ldir.count("/")
         root = "../" * depth
-        values = dict(loc)
+        values = page_values(loc, root, ldir)
         values.update(
-            root=root,
             canonical=f"{SITE_URL}/{ldir}",
             hreflang_html=hreflang_html(""),
             social_html=social_html(
@@ -818,15 +1256,8 @@ def build() -> None:
             shots_html=shots_html(loc, root, code),
             chips_html=chips_html(loc, f"{root}{ldir}games/"),
             lang_links_html=lang_links_html(code, locales, root, ""),
-            games_href=f"{root}{ldir}games/",
-            blog_href=f"{root}{ldir}blog/",
-            privacy_href=f"{root}{ldir}privacy/",
-            support_href=f"{root}{ldir}support/",
-            store_href=APP_STORE_URL,
-            play_store_href=PLAY_STORE_URL,
-            contact_email=CONTACT_EMAIL,
-            support_email=SUPPORT_EMAIL,
-            clarity_html=CLARITY_HTML,
+            home_schema_html=home_schema(loc, code, f"{SITE_URL}/{ldir}"),
+            home_faq_html=faq_html(locale_faq(loc, "home_faq")),
         )
         out = DIST / ldir / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
@@ -836,9 +1267,8 @@ def build() -> None:
         # ---- Privacy: <root>/<ldir>privacy/index.html
         pdepth = depth + 1
         proot = "../" * pdepth
-        pvalues = dict(loc)
+        pvalues = page_values(loc, proot, ldir)
         pvalues.update(
-            root=proot,
             privacy_canonical=f"{SITE_URL}/{ldir}privacy/",
             privacy_hreflang_html=hreflang_html("privacy/"),
             privacy_social_html=social_html(
@@ -848,13 +1278,6 @@ def build() -> None:
                 f"{SITE_URL}/{ldir}privacy/",
             ),
             privacy_lang_links_html=lang_links_html(code, locales, proot, "privacy/"),
-            home_href=f"{proot}{ldir}",
-            blog_href=f"{proot}{ldir}blog/",
-            privacy_href=f"{proot}{ldir}privacy/",
-            support_href=f"{proot}{ldir}support/",
-            contact_email=CONTACT_EMAIL,
-            support_email=SUPPORT_EMAIL,
-            clarity_html=CLARITY_HTML,
         )
         pout = DIST / ldir / "privacy" / "index.html"
         pout.parent.mkdir(parents=True, exist_ok=True)
@@ -863,9 +1286,8 @@ def build() -> None:
 
         # ---- Terms: <root>/<ldir>terms/index.html
         troot = "../" * (depth + 1)
-        tvalues = dict(loc)
+        tvalues = page_values(loc, troot, ldir)
         tvalues.update(
-            root=troot,
             terms_canonical=f"{SITE_URL}/{ldir}terms/",
             terms_hreflang_html=hreflang_html("terms/"),
             terms_social_html=social_html(
@@ -875,13 +1297,6 @@ def build() -> None:
                 f"{SITE_URL}/{ldir}terms/",
             ),
             terms_lang_links_html=lang_links_html(code, locales, troot, "terms/"),
-            home_href=f"{troot}{ldir}",
-            blog_href=f"{troot}{ldir}blog/",
-            privacy_href=f"{troot}{ldir}privacy/",
-            support_href=f"{troot}{ldir}support/",
-            contact_email=CONTACT_EMAIL,
-            support_email=SUPPORT_EMAIL,
-            clarity_html=CLARITY_HTML,
         )
         tout = DIST / ldir / "terms" / "index.html"
         tout.parent.mkdir(parents=True, exist_ok=True)
@@ -890,9 +1305,8 @@ def build() -> None:
 
         # ---- Games: <root>/<ldir>games/index.html
         groot = "../" * (depth + 1)
-        gvalues = dict(loc)
+        gvalues = page_values(loc, groot, ldir)
         gvalues.update(
-            root=groot,
             games_canonical=f"{SITE_URL}/{ldir}games/",
             games_hreflang_html=hreflang_html("games/"),
             games_social_html=social_html(
@@ -903,29 +1317,138 @@ def build() -> None:
             ),
             games_lang_links_html=lang_links_html(code, locales, groot, "games/"),
             games_filters_html=games_filters_html(loc),
-            games_grid_html=games_grid_html(loc),
+            games_grid_html=games_grid_html(loc, f"{groot}{ldir}games/"),
             games_css_html=games_css(),
-            home_href=f"{groot}{ldir}",
-            games_href=f"{groot}{ldir}games/",
-            blog_href=f"{groot}{ldir}blog/",
-            privacy_href=f"{groot}{ldir}privacy/",
-            support_href=f"{groot}{ldir}support/",
-            store_href=APP_STORE_URL,
-            contact_email=CONTACT_EMAIL,
-            support_email=SUPPORT_EMAIL,
-            clarity_html=CLARITY_HTML,
+            games_schema_html=json_ld(
+                [
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "ItemList",
+                        "name": counted(loc["games_h1"]),
+                        "numberOfItems": len(GAMES),
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": position,
+                                "name": game_name(game, code),
+                                "url": f"{SITE_URL}/{ldir}games/{game['id']}/",
+                            }
+                            for position, game in enumerate(GAMES, start=1)
+                        ],
+                    }
+                ]
+            ),
         )
         gout = DIST / ldir / "games" / "index.html"
         gout.parent.mkdir(parents=True, exist_ok=True)
         gout.write_text(render(games_tpl, gvalues), "utf-8")
         written.append(str(gout.relative_to(DIST)))
 
+        # ---- One page per game: <root>/<ldir>games/<id>/index.html
+        # The guide for a game is whichever article in this locale names it in
+        # its game_id front matter, so a translated guide is picked up as soon
+        # as it lands and an untranslated one is never linked.
+        guides = {
+            meta["game_id"]: (slug, meta["title"])
+            for slug, (meta, _) in articles[code].items()
+            if meta.get("game_id")
+        }
+        pages = gamepages[code]
+        gproot = "../" * (depth + 2)
+        gphref = site_href(gproot, ldir)
+        for game in GAMES:
+            gid = game["id"]
+            url = f"{SITE_URL}/{ldir}games/{gid}/"
+            h1 = game_h1(loc, game)
+            lead = pages[gid]["lead"]
+            faq = game_faq(loc, game)
+            gpvalues = page_values(loc, gproot, ldir)
+            gpvalues.update(
+                game_meta_title=game_meta_title(loc, game),
+                game_meta_description=lead,
+                game_canonical=url,
+                game_hreflang_html=hreflang_html(f"games/{gid}/"),
+                game_social_html=social_html(code, game_meta_title(loc, game), lead, url),
+                game_schema_html=json_ld(
+                    [
+                        webpage_schema(h1, lead, url, code),
+                        breadcrumb_schema(
+                            [
+                                (loc["nav_home"], f"{SITE_URL}/{ldir}"),
+                                (loc["nav_games"], f"{SITE_URL}/{ldir}games/"),
+                                (game_name(game, code), url),
+                            ]
+                        ),
+                        faq_schema(faq),
+                    ]
+                ),
+                game_lang_links_html=lang_links_html(code, locales, gproot, f"games/{gid}/"),
+                game_eyebrow=loc["games_cat_" + game["category"]],
+                game_h1=h1,
+                game_lead=lead,
+                game_players=players_label(loc, game["players"]),
+                game_can_html=game_can_html(loc, game, f"{gproot}{ldir}play-together/"),
+                game_scoring=pages[gid]["scoring"],
+                game_guide_html=game_guide_html(loc, guides.get(gid), gphref),
+                game_faq_title=named(loc, loc["game_faq_h"], game),
+                game_faq_html=faq_html(faq),
+                game_related_html=game_related_html(loc, game, f"{gproot}{ldir}games/"),
+                game_trademark_html=(
+                    f'<p class="disclaimer">{html.escape(loc["disclaimer"])}</p>'
+                    if game["trademark"]
+                    else ""
+                ),
+            )
+            gpout = DIST / ldir / "games" / gid / "index.html"
+            gpout.parent.mkdir(parents=True, exist_ok=True)
+            gpout.write_text(render(game_tpl, gpvalues), "utf-8")
+            written.append(str(gpout.relative_to(DIST)))
+
+        # ---- Play together: <root>/<ldir>play-together/index.html
+        ptroot = "../" * (depth + 1)
+        pturl = f"{SITE_URL}/{ldir}play-together/"
+        ptfaq = locale_faq(loc, "pt_faq")
+        ptguide = articles[code].get(TOGETHER_GUIDE)
+        ptvalues = page_values(loc, ptroot, ldir)
+        ptvalues.update(
+            pt_canonical=pturl,
+            pt_hreflang_html=hreflang_html("play-together/"),
+            pt_social_html=social_html(
+                code, counted(loc["pt_meta_title"]), counted(loc["pt_meta_description"]), pturl
+            ),
+            pt_schema_html=json_ld(
+                [
+                    webpage_schema(
+                        counted(loc["pt_h1"]), counted(loc["pt_meta_description"]), pturl, code
+                    ),
+                    breadcrumb_schema(
+                        [(loc["nav_home"], f"{SITE_URL}/{ldir}"), (loc["nav_together"], pturl)]
+                    ),
+                    faq_schema(ptfaq),
+                ]
+            ),
+            pt_lang_links_html=lang_links_html(code, locales, ptroot, "play-together/"),
+            pt_shot_html=screenshot_html(ptroot, code, "play-together", hero=True).replace(
+                "{alt}", html.escape(loc["shot_play_together_alt"], quote=True)
+            ),
+            pt_games_html=together_games_html(loc, f"{ptroot}{ldir}games/"),
+            pt_guide_html=game_guide_html(
+                loc,
+                (TOGETHER_GUIDE, ptguide[0]["title"]) if ptguide else None,
+                site_href(ptroot, ldir),
+            ),
+            pt_faq_html=faq_html(ptfaq),
+        )
+        ptout = DIST / ldir / "play-together" / "index.html"
+        ptout.parent.mkdir(parents=True, exist_ok=True)
+        ptout.write_text(render(together_tpl, ptvalues), "utf-8")
+        written.append(str(ptout.relative_to(DIST)))
+
         # ---- Support: <root>/<ldir>support/index.html
         sdepth = depth + 1
         sroot = "../" * sdepth
-        svalues = dict(loc)
+        svalues = page_values(loc, sroot, ldir)
         svalues.update(
-            root=sroot,
             support_canonical=f"{SITE_URL}/{ldir}support/",
             support_hreflang_html=hreflang_html("support/"),
             support_social_html=social_html(
@@ -935,13 +1458,6 @@ def build() -> None:
                 f"{SITE_URL}/{ldir}support/",
             ),
             support_lang_links_html=lang_links_html(code, locales, sroot, "support/"),
-            home_href=f"{sroot}{ldir}",
-            blog_href=f"{sroot}{ldir}blog/",
-            privacy_href=f"{sroot}{ldir}privacy/",
-            support_href=f"{sroot}{ldir}support/",
-            contact_email=CONTACT_EMAIL,
-            support_email=SUPPORT_EMAIL,
-            clarity_html=CLARITY_HTML,
         )
         sout = DIST / ldir / "support" / "index.html"
         sout.parent.mkdir(parents=True, exist_ok=True)
@@ -958,9 +1474,8 @@ def build() -> None:
         metas = {slug: meta for slug, (meta, _) in entries.items()}
         blog_url = f"{SITE_URL}/{ldir}blog/"
 
-        bvalues = dict(loc)
+        bvalues = page_values(loc, broot, ldir)
         bvalues.update(
-            root=broot,
             blog_canonical=blog_url,
             blog_hreflang_html=hreflang_html("blog/", [c for c in LOCALES if articles[c]]),
             blog_social_html=social_html(
@@ -988,14 +1503,6 @@ def build() -> None:
             blog_lang_links_html=lang_links_html(
                 code, locales, broot, "blog/", [c for c in LOCALES if articles[c]]
             ),
-            home_href=f"{broot}{ldir}",
-            games_href=f"{broot}{ldir}games/",
-            blog_href=f"{broot}{ldir}blog/",
-            privacy_href=f"{broot}{ldir}privacy/",
-            support_href=f"{broot}{ldir}support/",
-            contact_email=CONTACT_EMAIL,
-            support_email=SUPPORT_EMAIL,
-            clarity_html=CLARITY_HTML,
         )
         bout = DIST / ldir / "blog" / "index.html"
         bout.parent.mkdir(parents=True, exist_ok=True)
@@ -1009,18 +1516,26 @@ def build() -> None:
             url = f"{SITE_URL}/{ldir}blog/{slug}/"
             alternates = slug_locales.get(slug, [code])
             note = meta.get("trademark_note")
-            avalues = dict(loc)
+            avalues = page_values(loc, aroot, ldir)
             avalues.update(
-                root=aroot,
                 article_meta_title=meta["meta_title"],
                 article_meta_description=meta["meta_description"],
                 article_canonical=url,
                 article_hreflang_html=hreflang_html(f"blog/{slug}/", alternates),
-                article_social_html=social_html(code, meta["meta_title"], meta["meta_description"], url),
+                article_social_html=social_html(
+                    code,
+                    meta["meta_title"],
+                    meta["meta_description"],
+                    url,
+                    og_type="article",
+                    published=article_published(meta),
+                    modified=article_modified(meta),
+                ),
                 article_schema_html=article_schema(
                     meta, body, url, code, f"{SITE_URL}/{ldir}blog/", f"{SITE_URL}/{ldir}", loc
                 ),
                 article_html=markdown_html(body, ahref),
+                article_game_html=article_game_html(loc, meta, f"{aroot}{ldir}games/"),
                 article_trademark_html=(
                     f'<p class="article__note">{html.escape(note)}</p>' if note else ""
                 ),
@@ -1028,34 +1543,21 @@ def build() -> None:
                     code, locales, aroot, f"blog/{slug}/", alternates
                 ),
                 blog_back=loc["blog_back"],
-                home_href=f"{aroot}{ldir}",
-                games_href=f"{aroot}{ldir}games/",
-                blog_href=f"{aroot}{ldir}blog/",
-                privacy_href=f"{aroot}{ldir}privacy/",
-                support_href=f"{aroot}{ldir}support/",
-                contact_email=CONTACT_EMAIL,
-                support_email=SUPPORT_EMAIL,
-                clarity_html=CLARITY_HTML,
             )
             aout = DIST / ldir / "blog" / slug / "index.html"
             aout.parent.mkdir(parents=True, exist_ok=True)
             aout.write_text(render(article_tpl, avalues), "utf-8")
             written.append(str(aout.relative_to(DIST)))
 
-    urls = [f"{SITE_URL}/{locale_dir(c)}{s}" for s in ("", "games/", "privacy/", "support/") for c in LOCALES]
-    urls += [
-        f"{SITE_URL}/{locale_dir(c)}blog/{s}"
-        for c in LOCALES
-        if articles[c]
-        for s in [""] + [f"{slug}/" for slug in sorted(articles[c])]
-    ]
-    sitemap = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
-    (DIST / "sitemap.xml").write_text(
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f"{sitemap}\n</urlset>\n",
-        "utf-8",
-    )
+    # The sitemap: every page in every locale that holds it, each with its
+    # hreflang alternates, the same set hreflang_html() puts in the page head.
+    # (suffix, locales holding it) per page.
+    pages_everywhere = ["", "games/", "play-together/", "privacy/", "terms/", "support/"]
+    pages_everywhere += [f"games/{g['id']}/" for g in GAMES]
+    entries_by_suffix: list[tuple[str, list[str]]] = [(s, LOCALES) for s in pages_everywhere]
+    entries_by_suffix.append(("blog/", [c for c in LOCALES if articles[c]]))
+    entries_by_suffix += [(f"blog/{slug}/", codes) for slug, codes in sorted(slug_locales.items())]
+    (DIST / "sitemap.xml").write_text(sitemap_xml(entries_by_suffix), "utf-8")
     (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
 
     print(f"built {len(written)} pages into {DIST}")

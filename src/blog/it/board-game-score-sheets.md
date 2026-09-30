@@ -15,19 +15,22 @@ secondary_keywords:
   - "tabellone giochi da tavolo app"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
   - ItemList
 internal_links:
   - /games/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
   - /blog/how-to-score-dominoes/
   - /blog/how-to-score-backgammon/
   - /blog/how-to-score-rummikub/
   - /blog/card-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: "Rummikub, Cluedo e Connect Four sono marchi dei rispettivi editori. Braggster non e affiliata a loro ne da loro approvata, e ogni nome e usato solo a scopo referenziale."
+trademark_note: "Rummikub, Cluedo, Connect Four e Othello sono marchi dei rispettivi editori. Braggster non è affiliata a loro né da loro approvata, e ogni nome è usato solo a scopo referenziale."
 ---
 
 # Segnapunti per giochi da tavolo e tabelloni giocabili
@@ -37,7 +40,8 @@ un numero che cresce a ogni turno, come Dominoes e Rummikub, e vogliono un vero 
 calcoli per te. Altri non producono nulla dentro una singola partita: Chess e Tic Tac Toe finiscono
 e basta, e quello che vuoi davvero tracciare e il conteggio delle vittorie lungo tutta la serata.
 
-Braggster gestisce entrambi i casi, e per dieci giochi da tavolo ti da anche il tabellone stesso.
+Braggster gestisce entrambi i casi, e per otto giochi da tavolo ti dà anche il tabellone stesso, su
+un telefono solo o, per cinque di questi, con un telefono a testa.
 
 ## Giochi che producono un numero
 
@@ -60,8 +64,8 @@ Approfondimenti: [punteggio Dominoes](/blog/how-to-score-dominoes/),
 
 ## Giochi senza punteggio dentro una singola partita
 
-Chess, Checkers, International draughts, Connect Four e Tic Tac Toe hanno un solo risultato per
-partita: qualcuno vince, oppure e pareggio. Non c'e nessun numero da scrivere.
+Chess, Checkers, International draughts, Othello, Connect Four e Tic Tac Toe hanno un solo
+risultato per partita: qualcuno vince, oppure è pareggio. Non c'è nessun numero da scrivere.
 
 Braggster tratta una partita finita come un round che vale una vittoria, cosi la sfida diventa un
 conteggio di sessione. Corrisponde a come si gioca davvero a questi giochi: non una partita sola, ma
@@ -75,26 +79,36 @@ Approfondimento: [punteggio Backgammon, gammon e backgammon](/blog/how-to-score-
 
 ## Tabelloni che puoi davvero giocare dal telefono
 
-Dieci giochi da tavolo in Braggster sono giocabili direttamente dal dispositivo, non solo segnati:
+Otto giochi da tavolo in Braggster sono giocabili direttamente dal dispositivo, non solo segnati:
 
 | Gioco | Cosa offre il tabellone nell'app |
 |---|---|
-| Chess | Tabellone 8x8 hotseat con tutte le mosse legali: scacco, scacco matto, stallo, arrocco, en passant, promozione |
-| Checkers | Tabellone 8x8 hotseat, regole americane e inglesi, catture forzate e multiple |
-| International draughts | Tabellone 10x10 hotseat, dame volanti, cattura massima obbligatoria, casella per casella |
-| Backgammon | Tabellone hotseat: tira, tocca per muovere, colpisci le pedine sole, rientra e porta a casa |
-| Dominoes | Tabellone hotseat a tessere: posiziona sull'estremo aperto giusto, pesca o passa secondo la variante |
-| Connect Four | Tabellone 7x6 hotseat, tocchi una colonna e la gravita sceglie la riga |
-| Tic Tac Toe | Griglia 3x3 hotseat con rilevamento automatico di vittoria e pareggio |
-| Sudoku | Griglia generata, cinque livelli di difficolta |
+| [Chess](/games/chess/) | Tabellone 8x8 con tutte le mosse legali: scacco, scacco matto, stallo, arrocco, en passant, promozione |
+| [Checkers](/games/checkers/) | Tabellone 8x8, regole americane e inglesi, catture forzate e multiple |
+| [International draughts](/games/dammen/) | Tabellone 10x10, dame volanti, cattura massima obbligatoria, casella per casella |
+| [Othello](/games/reversi/) | Tabellone 8x8 che ribalta ogni linea intrappolata e passa da solo il turno quando non hai mosse disponibili |
+| [Backgammon](/games/backgammon/) | Tira, tocca per muovere, colpisci le pedine sole, rientra e porta a casa |
+| [Dominoes](/games/dominoes/) | Tabellone hotseat a tessere: posiziona sull'estremo aperto giusto, pesca o passa secondo la variante |
+| [Connect Four](/games/connectfour/) | Tabellone 7x6 hotseat, tocchi una colonna e la gravità sceglie la riga |
+| [Tic Tac Toe](/games/tictactoe/) | Griglia 3x3 hotseat con rilevamento automatico di vittoria e pareggio |
 
 Ognuno di questi registra il risultato attraverso lo stesso percorso di un round inserito a mano,
 quindi una partita giocata nell'app non puo mai avere un punteggio diverso da una inserita
 manualmente.
 
+## Gioca insieme, un telefono a testa
+
+Ogni tabellone funziona anche in hotseat su un solo telefono. Chess, Checkers, International
+draughts, Othello e Backgammon si giocano anche su due telefoni con [Gioca
+insieme](/play-together/): un telefono apre un tavolo e mostra un codice QR, l'altro lo scansiona, e
+ogni giocatore muove dal proprio telefono sulla stessa rete Wi-Fi. L'ultima mossa resta segnata su
+entrambi i tabelloni, non c'è nessun account né internet coinvolti, e partecipare è gratis. La guida
+passo passo, compreso cosa fare quando un tavolo non compare, è nella [guida per giocare insieme su
+più telefoni](/blog/play-games-together-on-multiple-phones/).
+
 ## Giocare contro il computer
 
-Quattro dei giochi da tavolo hanno anche una modalita di allenamento contro il computer, ognuna su
+Cinque dei giochi da tavolo hanno anche una modalità di allenamento contro il computer, ognuna su
 tre livelli:
 
 - **Chess** usa una ricerca alpha beta con valutazione posizionale dei pezzi. Puoi giocare con il
@@ -102,10 +116,12 @@ tre livelli:
 - **Checkers** cerca le catene di catture multiple come l'unica mossa che sono.
 - **International draughts** fa lo stesso sulla scacchiera 10x10, dove un'intera sequenza di
   catture e una sola mossa.
+- **Othello** cerca con una tabella di pesi per casella più la mobilità, e conta i dischi solo nel
+  finale di partita.
 - **Backgammon** non puo usare l'alpha beta, perche i dadi rendono ogni nodo un nodo di probabilita.
   Al suo posto gira un expectimax sui ventuno tiri distinti possibili.
 
-Tutti e quattro girano su un processo in background, cosi il tabellone resta reattivo mentre il
+Tutti e cinque girano su un processo in background, cosi il tabellone resta reattivo mentre il
 motore pensa. Le partite di allenamento non vengono mai registrate, quindi non influenzano le tue
 statistiche ne il tuo tasso di vittorie.
 
@@ -119,8 +135,13 @@ invece di rimpicciolire le celle sotto una dimensione comoda al tocco.
 ## Domande frequenti
 
 **Possono giocare due persone sullo stesso telefono?**
-Si. I tabelloni giocabili sono hotseat, cioe passi il dispositivo al tavolo. Non c'e multiplayer
-online e non c'e account.
+Sì. I tabelloni giocabili sono hotseat, cioè passi il dispositivo al tavolo. Non serve nessun
+account.
+
+**Possiamo giocare su due telefoni invece che uno?**
+Sì, per Chess, Checkers, International draughts, Othello e Backgammon. Con Gioca insieme ogni
+giocatore usa il proprio telefono sulla stessa rete Wi-Fi, senza nessun account e senza connessione
+internet.
 
 **L'app funziona per un gioco da tavolo che non e nell'elenco?**
 Si. Il segnapunti vuoto, sempre gratuito, tiene il punteggio di qualsiasi cosa, e c'e un segnapunti
@@ -133,8 +154,8 @@ No. Le partite di allenamento contro il computer non vengono mai registrate, di 
 No. Non c'e nessun dado raddoppiante e in nessuna parte dell'app viene messo in gioco qualcosa.
 
 **Perche Sudoku compare tra i giochi da tavolo in alcune pagine?**
-Non dovrebbe. Sudoku appartiene ai puzzle, insieme agli altri undici puzzle in solitaria che
-Braggster offre ora. Vedi la [guida ai puzzle](/blog/puzzle-games/).
+Non dovrebbe. Sudoku appartiene ai puzzle, insieme agli altri diciassette puzzle in solitaria che
+Braggster offre ora nella loro scheda Puzzle. Vedi la [guida ai puzzle](/blog/puzzle-games/).
 
 ---
 

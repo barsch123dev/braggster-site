@@ -1,10 +1,10 @@
 ---
-title: "13 puzzle di logica in un'app, tutti generati e tutti risolvibili"
+title: "18 puzzle di logica in un'app, tutti generati e tutti risolvibili"
 slug: puzzle-games
 locale: it
 type: pillar
 category: puzzle
-meta_title: "13 puzzle di logica in un'app, infiniti e risolvibili"
+meta_title: "18 puzzle di logica in un'app, infiniti e risolvibili"
 meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo e altro. Ogni puzzle generato al momento e verificato con una sola soluzione."
 primary_keyword: "app puzzle di logica"
 secondary_keywords:
@@ -15,6 +15,7 @@ secondary_keywords:
   - "giochi rompicapo senza pubblicita"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -31,14 +32,15 @@ internal_links:
 trademark_note: null
 ---
 
-# 13 puzzle di logica in un'app, tutti generati e tutti risolvibili
+# 18 puzzle di logica in un'app, tutti generati e tutti risolvibili
 
 La maggior parte delle app di puzzle distribuisce un archivio di puzzle e prima o poi finisce le
 scorte. Braggster genera ogni puzzle al momento e poi dimostra che ha esattamente una soluzione prima
 di mostrartelo. Quella seconda meta e la parte che quasi nessuno fa, ed e la differenza tra un puzzle
 che puoi ragionare fino in fondo e uno dove prima o poi devi indovinare.
 
-Ecco i tredici, cosa chiede davvero ciascuno, e come vengono segnati.
+Ecco i diciotto, cosa chiede davvero ciascuno, e come vengono segnati. Nell'app hanno una scheda
+tutta loro, Puzzle, accanto ai giochi.
 
 ## La famiglia dei numeri da piazzare
 
@@ -65,6 +67,11 @@ vertice punta sempre verso il valore piu piccolo. Da 4x4 a 7x7.
 simboli identici di fila in riga o colonna, esattamente meta di ciascuno per linea, e nessuna riga o
 colonna identica a un'altra. Da 6x6 a 12x12, sempre pari. Tocca una cella per farla passare tra vuota,
 0 e 1: con due soli simboli non serve un tastierino numerico tra i piedi.
+
+**[Tectonic](/games/tectonic/).** Una griglia divisa in regioni delineate da una a cinque celle.
+Ogni regione contiene i numeri da 1 fino alla propria dimensione esattamente una volta, e due celle
+adiacenti, diagonali comprese, non possono mai condividere una cifra. Da 5x5 a Principiante fino a
+8x8 a Impossibile.
 
 Approfondimenti: [Sudoku](/blog/how-to-play-sudoku/), [Killer Sudoku](/blog/how-to-play-killer-sudoku/).
 
@@ -101,12 +108,29 @@ livelli di lunghezza da 4 a 7 lettere. Lo stato delle lettere non e mai segnalat
 posto giusto e una tessera piena con una barra, presente altrove e un anello con un punto, assente e
 barrato.
 
-**Kruiswoord.** Un cruciverba generato al momento da un ampio dizionario di parole con definizioni
+**Crossword.** Un cruciverba generato al momento da un ampio dizionario di parole con definizioni
 invece che da un archivio gia pronto, quindi i puzzle sono illimitati. Mini 5x5, Midi 7x7 e Standard
 15x15.
 
 **Woordzoeker.** Ricerca di parole. Le parole corrono in una delle otto direzioni, avanti o indietro,
-e le trovi trascinando dalla prima lettera all'ultima. Da 8x8 con 5 parole a 14x14 con 12.
+e le trovi toccando prima la sua prima lettera e poi l'ultima. Da 8x8 con 5 parole a 14x14 con 12.
+
+**[Zweeds](/games/zweeds/).** Il cruciverba a schema svedese: non c'è nessuna lista di definizioni,
+perché ogni definizione sta dentro la griglia stessa, accanto a una freccia che indica dove corre la
+sua risposta. Ogni partita ha una griglia disposta di fresco, da un Mini 4x4 fino a un Grand 14x14.
+
+**[Cijfercode](/games/cijfercode/).** Il cruciverba a codice: una griglia già riempita e senza
+nessuna definizione, dove ogni lettera è stata sostituita da un numero. Poche lettere partono già
+svelate, quanto basta per decifrare il resto, e digitare una lettera riempie ogni cella che condivide
+il suo numero. Mini 7x7, Midi 9x9 e Standard 11x11.
+
+**[Filippine](/games/filippine/).** Una pila di righe con definizione le cui risposte si allineano su
+una colonna segnata, e quella colonna compone dall'alto in basso una parola soluzione nascosta. 4, 6
+o 8 righe.
+
+**[Hangman](/games/hangman/).** Indovina la parola una lettera alla volta prima che il settimo
+errore completi la figura. Un suggerimento mostra prima la descrizione della parola, poi una
+lettera, e tre livelli di lunghezza vanno da 4 a 15 lettere.
 
 ## Come vengono segnati i puzzle
 
@@ -125,8 +149,8 @@ Gli aiuti sono solo appunti a matita e suggerimenti, a seconda del puzzle.
 
 Ogni puzzle generato in Braggster passa attraverso un solutore prima di arrivare a te:
 
-- Sudoku, Kakuro, Futoshiki, Binairo e Calcudoku sono verificati da solutori a backtracking che
-  confermano che esiste esattamente un completamento.
+- Sudoku, Kakuro, Futoshiki, Binairo, Calcudoku e Tectonic sono verificati da solutori a
+  backtracking che confermano che esiste esattamente un completamento.
 - Killer Sudoku e verificato sotto il vincolo combinato di Sudoku e gabbie insieme, non ciascuno da
   solo.
 - Minesweeper va oltre e dimostra che il campo e risolvibile con pura deduzione dalla regione di
@@ -135,6 +159,8 @@ Ogni puzzle generato in Braggster passa attraverso un solutore prima di arrivare
   contro i propri indizi da un solutore di linee piu una ricerca limitata.
 - Logikwis e Murder Sudoku verificano che il loro caso abbia un'unica assegnazione coerente prima di
   scrivere il resoconto.
+- Cijfercode esegue un solutore per scegliere il minor numero di lettere svelate da cui l'intero
+  codice si può ancora dedurre.
 
 L'effetto pratico: se sei bloccato, c'e sempre una deduzione successiva disponibile. Non ti viene mai
 chiesto di indovinare e controllare.

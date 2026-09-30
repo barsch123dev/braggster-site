@@ -17,6 +17,8 @@
   --tint-blue: #E3ECFC;
   --tint-orange: #FDEBD6;
   --tint-violet: #E8E4F7;
+  /* Play together badge. Ink on it is pinned in tools/check_contrast.py. */
+  --tint-teal: #DDF0EC;
   --line: rgba(22, 36, 61, 0.12);
   /* Prototype used #FFFFFF on --brag (2.51:1). Ink navy gives 6.26:1. */
   --on-brag: #16243D;
@@ -91,6 +93,9 @@ img { max-width: 100%; display: block; }
   line-height: 1.3;
   text-align: center;
 }
+.announce__link { color: var(--felt); text-decoration: underline; text-underline-offset: 3px; }
+.announce__link:hover { color: var(--felt); }
+
 .announce__new {
   color: var(--brag);
   font-weight: 700;
@@ -250,7 +255,8 @@ img { max-width: 100%; display: block; }
 }
 
 /* Features */
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.cards--two { grid-template-columns: repeat(2, 1fr); }
 .card {
   background: var(--surface);
   border-radius: 20px;
@@ -295,6 +301,9 @@ img { max-width: 100%; display: block; }
 .chip--soon { background: transparent; border: 1.5px dashed rgba(22, 36, 61, 0.25); color: var(--muted); }
 
 /* The last chip on the home teaser links through to the full catalogue. */
+/* Game chips link to the game's page: ink, not link blue, and the 48dp floor. */
+a.chip { display: inline-flex; align-items: center; min-height: 48px; color: var(--ink); }
+a.chip:hover { color: var(--ink); border-color: var(--ink); }
 .chip--more { background: var(--brag); color: var(--on-brag); border-color: transparent; }
 .chip--more:hover { color: var(--on-brag); }
 
@@ -386,6 +395,10 @@ img { max-width: 100%; display: block; }
   gap: 8px;
 }
 .game__name { font-family: 'Baloo 2', system-ui, sans-serif; font-weight: 700; font-size: 18px; margin: 0; }
+/* The name is the link to the game's own page. Block, so the whole row is
+   the target rather than the width of the word. */
+.game__name a { display: block; color: var(--ink); }
+.game__name a:hover { color: var(--link); }
 .game__meta { font-size: 13.5px; font-weight: 600; color: var(--muted); margin: 0; }
 .game__badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
 .game__badge {
@@ -398,6 +411,7 @@ img { max-width: 100%; display: block; }
 .game__badge--app { background: var(--tint-blue); }
 .game__badge--ai { background: var(--tint-violet); }
 .game__badge--low { background: var(--tint-orange); }
+.game__badge--together { background: var(--tint-teal); }
 .game__tags { font-size: 12.5px; line-height: 1.5; color: var(--muted); margin: 0; }
 
 /* Shown only for filter pairs that genuinely match nothing. build.py works out
@@ -435,7 +449,7 @@ img { max-width: 100%; display: block; }
 .footer__brand { display: flex; align-items: center; gap: 12px; }
 .footer__brand img { width: 30px; height: 30px; }
 .footer__brand span { font-size: 13.5px; color: var(--muted); }
-.footer__links { display: flex; gap: 8px; font-size: 13.5px; font-weight: 600; }
+.footer__links { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13.5px; font-weight: 600; }
 .footer__langs {
   padding-bottom: 24px;
   display: flex;
@@ -487,6 +501,10 @@ img { max-width: 100%; display: block; }
 .prose__updated { font-size: 13.5px; color: var(--muted); }
 
 /* Responsive. The design is desktop-first at 1100px; these are the obvious stacks. */
+@media (max-width: 1100px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 32px; padding-block: 32px 64px; }
 
@@ -694,4 +712,63 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 900px) {
   .posts { grid-template-columns: 1fr; }
+}
+
+/* ---------------------------------------------------------------------------
+   FAQ blocks (home, /play-together/, every game page), the Play together
+   steps, and the per-game pages. The FAQ is plain h3 + p rather than
+   <details>: the answers are the content a searcher came for, so they stay
+   visible, and they are the same pairs the FAQPage schema carries.
+   --------------------------------------------------------------------------- */
+
+.faq { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.faq__item { background: var(--surface); border-radius: 20px; padding: 24px; }
+.faq__item h3 {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+.faq__item p { font-size: 15px; line-height: 1.6; color: var(--muted); margin: 0; }
+.prose .faq { grid-template-columns: 1fr; margin: 8px 0 16px; }
+
+.steps {
+  list-style: none;
+  counter-reset: step;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.steps__item { counter-increment: step; }
+.steps__item::before {
+  content: counter(step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--tint-orange);
+  color: var(--ink);
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.game-page .eyebrow { margin: 0; }
+.game-page h1 { margin-top: 4px; }
+.game-page__lead { font-size: 18px; color: var(--ink); }
+.game-page__players { font-size: 14px; font-weight: 600; margin-top: 0; }
+.game-page__can li { color: var(--ink); }
+.game-page__guide { font-weight: 600; }
+.well--compact { padding: 20px; margin: 8px 0 24px; }
+
+.article__game { font-weight: 600; margin: 24px 0 0; }
+.article__cta-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+@media (max-width: 900px) {
+  .faq, .steps { grid-template-columns: 1fr; }
 }

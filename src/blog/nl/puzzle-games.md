@@ -1,10 +1,10 @@
 ---
-title: "13 Logicapuzzels in Één App, Allemaal Gegenereerd en Allemaal Oplosbaar"
+title: "18 Logicapuzzels in Één App, Allemaal Gegenereerd en Allemaal Oplosbaar"
 slug: puzzle-games
 locale: nl
 type: pillar
 category: puzzle
-meta_title: "13 Logicapuzzels in Één App, Eindeloos en Oplosbaar"
+meta_title: "18 Logicapuzzels in Één App, Eindeloos en Oplosbaar"
 meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo en meer. Elke puzzel vers gegenereerd en geverifieerd op precies één oplossing."
 primary_keyword: "puzzelspel app"
 secondary_keywords:
@@ -15,6 +15,7 @@ secondary_keywords:
   - "puzzelspellen zonder advertenties"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -31,14 +32,15 @@ internal_links:
 trademark_note: null
 ---
 
-# 13 Logicapuzzels in Één App, Allemaal Gegenereerd en Allemaal Oplosbaar
+# 18 Logicapuzzels in Één App, Allemaal Gegenereerd en Allemaal Oplosbaar
 
 De meeste puzzelapps leveren een voorraad puzzels en die raakt op een dag op. Braggster genereert
 elke puzzel vers op aanvraag en bewijst daarna dat hij precies één oplossing heeft voordat hij je
 getoond wordt. Dat tweede deel doet bijna niemand, en dat is het verschil tussen een puzzel waar je
 je logisch doorheen kunt redeneren en eentje waar je uiteindelijk moet gokken.
 
-Hier zijn de dertien, wat elk ervan van je vraagt, en hoe ze gescoord worden.
+Hier zijn de achttien, wat elk ervan van je vraagt, en hoe ze gescoord worden. In de app hebben ze een
+eigen tabblad, Puzzels, naast de spellen.
 
 ## De cijferplaatsingsfamilie
 
@@ -65,6 +67,10 @@ zodat de punt altijd naar de kleinere waarde wijst. 4x4 tot 7x7.
 gelijke symbolen op een rij in een rij of kolom, precies de helft van elk per lijn, en geen twee
 identieke rijen of kolommen. 6x6 tot 12x12, altijd even. Tik op een vakje om het te laten cyclen
 tussen leeg, 0 en 1: met twee symbolen staat er geen cijferpaneel in de weg.
+
+**[Tectonic](/games/tectonic/).** Een rooster verdeeld in omlijnde gebieden van één tot vijf vakjes.
+Elk gebied bevat 1 tot en met zijn eigen grootte precies één keer, en geen twee aangrenzende vakjes,
+diagonalen inbegrepen, mogen een cijfer delen. 5x5 bij Beginner tot 8x8 bij Duivels.
 
 Verdieping: [Sudoku](/blog/how-to-play-sudoku/), [Killer Sudoku](/blog/how-to-play-killer-sudoku/).
 
@@ -102,13 +108,30 @@ lengteniveaus van 4 tot 7 letters. Letterstatussen worden nooit alleen met kleur
 plek is een vol tegeltje met een balk, in het woord maar op de verkeerde plek is een ring met een
 stip, afwezig staat doorgestreept.
 
-**Kruiswoord.** Een kruiswoordraadsel dat live gegenereerd wordt uit een groot woordenboek met
+**Crossword.** Een kruiswoordraadsel dat live gegenereerd wordt uit een groot woordenboek met
 aanwijzingen in plaats van uit een meegeleverde voorraad, zodat de puzzels onbeperkt zijn. Mini 5x5,
 Midi 7x7 en Standaard 15x15.
 
 **Woordzoeker.** Woorden zoeken. Woorden lopen in elk van acht richtingen, voor- of achterstevoren,
-en je vindt er eentje door van de eerste naar de laatste letter te slepen. 8x8 met 5 woorden tot
-14x14 met 12.
+en je vindt er eentje door eerst op zijn eerste en dan op zijn laatste letter te tikken. 8x8 met 5
+woorden tot 14x14 met 12.
+
+**[Zweeds](/games/zweeds/).** De pijltjespuzzel, oftewel de Zweedse puzzel: er is geen lijst met
+aanwijzingen, want elke aanwijzing staat in het rooster naast een pijl die toont waar het antwoord
+loopt. Elke puzzel is een vers ingedeeld rooster, van een 4x4 Mini tot een 14x14 Grand.
+
+**[Cijfercode](/games/cijfercode/).** De codewoordpuzzel: een ingevuld kruiswoordrooster zonder enige
+aanwijzing, waarin elke letter is vervangen door een cijfer. Een paar letters beginnen onthuld, net
+genoeg om de rest te kraken, en een letter typen vult elk vakje met datzelfde cijfer. Mini 7x7, Midi 9x9
+en Standaard 11x11.
+
+**[Filippine](/games/filippine/).** Een stapel rijen met aanwijzingen waarvan de antwoorden op één
+gemarkeerde kolom uitlijnen, en die kolom spelt van boven naar beneden een verborgen oplossingswoord.
+4, 6 of 8 rijen.
+
+**[Hangman](/games/hangman/).** Raad het woord letter voor letter voordat de zevende misser de figuur
+compleet maakt. Een hint toont eerst de omschrijving van het woord, dan een letter, en drie niveaus
+van woordlengte lopen van 4 tot 15 letters.
 
 ## Hoe puzzels gescoord worden
 
@@ -127,8 +150,8 @@ Hulpmiddelen zijn alleen potloodnotities en hints, afhankelijk van de puzzel.
 
 Elke gegenereerde puzzel in Braggster gaat door een oplosser voordat hij bij je terechtkomt:
 
-- Sudoku, Kakuro, Futoshiki, Binairo en Calcudoku worden gecontroleerd door backtracking-oplossers die
-  bevestigen dat er precies één volledige oplossing bestaat.
+- Sudoku, Kakuro, Futoshiki, Binairo, Calcudoku en Tectonic worden gecontroleerd door
+  backtracking-oplossers die bevestigen dat er precies één volledige oplossing bestaat.
 - Killer Sudoku wordt geverifieerd onder de gecombineerde Sudoku- en kooibeperking samen, niet elk
   afzonderlijk.
 - Minesweeper gaat verder en bewijst dat het veld door pure deductie oplosbaar is vanuit de
@@ -137,6 +160,8 @@ Elke gegenereerde puzzel in Braggster gaat door een oplosser voordat hij bij je 
   tegen de eigen aanwijzingen door een lijnoplosser plus begrensde zoekactie.
 - Logikwis en Murder Sudoku verifiëren dat hun zaak één consistente toewijzing heeft voordat de
   briefing geschreven wordt.
+- Cijfercode draait een oplosser om de minste onthulde letters te kiezen waarmee de hele code nog af te
+  leiden is.
 
 Het praktische effect: zit je vast, dan is er altijd een volgende deductie. Je wordt nooit gevraagd om
 te gokken en te controleren.

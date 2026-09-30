@@ -8,6 +8,7 @@
 <link rel="canonical" href="{{canonical}}">
 {{hreflang_html}}
 {{social_html}}
+{{home_schema_html}}
 <link rel="icon" sizes="32x32" href="{{root}}assets/web/favicon-32.png">
 <link rel="icon" sizes="16x16" href="{{root}}assets/web/favicon-16.png">
 <link rel="apple-touch-icon" href="{{root}}assets/web/apple-touch-icon-180.png">
@@ -21,7 +22,7 @@
 
 <div class="announce">
   <span class="announce__new">{{announce_new}}</span>
-  <span>{{announce_text}}</span>
+  <a class="announce__link" href="{{together_href}}">{{announce_text}}</a>
 </div>
 
 <div class="wrap">
@@ -33,8 +34,8 @@
       <a href="{{root}}" aria-current="page">{{nav_home}}</a>
       <a href="#features">{{nav_features}}</a>
       <a href="{{games_href}}">{{nav_games}}</a>
+      <a href="{{together_href}}">{{nav_together}}</a>
       <a href="{{blog_href}}">{{nav_blog}}</a>
-      <a href="#about">{{nav_about}}</a>
       <a class="btn btn--brag" href="#get-app">{{nav_cta}}</a>
     </div>
   </nav>
@@ -91,6 +92,16 @@
       <p class="disclaimer">{{disclaimer}}</p>
     </section>
 
+    <section class="section" id="faq">
+      <div class="section__head">
+        <p class="eyebrow">{{home_faq_eyebrow}}</p>
+        <h2>{{home_faq_h2}}</h2>
+      </div>
+      <div class="faq">
+{{home_faq_html}}
+      </div>
+    </section>
+
     <section class="banner">
       <div class="banner__card">
         <div class="banner__left">
@@ -114,8 +125,10 @@
         <span>{{footer_copy}}</span>
       </div>
       <div class="footer__links">
+        <a href="{{together_href}}">{{nav_together}}</a>
         <a href="{{blog_href}}">{{nav_blog}}</a>
         <a href="{{privacy_href}}">{{footer_privacy}}</a>
+        <a href="{{terms_href}}">{{footer_terms}}</a>
         <a href="{{support_href}}">{{footer_support}}</a>
         <a href="mailto:{{contact_email}}">{{footer_contact}}</a>
       </div>

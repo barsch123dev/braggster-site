@@ -7,14 +7,15 @@ category: puzzle
 game_id: sudoku
 meta_title: "Níveis de Dificuldade do Sudoku, Explicados"
 meta_description: "Por que o número de pistas não define a dificuldade do Sudoku, quais técnicas cada nível exige, e como toda partida é comprovada com uma única solução."
-primary_keyword: "sudoku niveis de dificuldade"
+primary_keyword: "sudoku níveis de dificuldade"
 secondary_keywords:
-  - "tecnicas de resolucao de sudoku"
-  - "app sudoku offline sem anuncio"
-  - "sudoku solucao unica"
+  - "técnicas de resolução de sudoku"
+  - "app sudoku offline sem anúncio"
+  - "sudoku solução única"
   - "como melhorar no sudoku"
-  - "anotacoes a lapis sudoku"
+  - "anotações a lápis sudoku"
 search_intent: informational
+updated: 2026-09-28
 priority: 1
 schema:
   - Article
@@ -102,7 +103,7 @@ Como a geração roda no seu aparelho, o estoque é ilimitado e funciona totalme
 
 O Braggster não pisca um dígito de vermelho quando você o coloca errado.
 
-É uma decisão de design deliberada, e vale para os treze quebra-cabeças do app. Feedback de erro
+É uma decisão de design deliberada, e vale para os dezoito quebra-cabeças do app. Feedback de erro
 ao vivo transforma um quebra-cabeça de lógica em um jogo de validação: você para de deduzir e
 começa a testar, porque o app vai te avisar se estiver errado. Tire isso, e você precisa ter
 certeza de verdade.
@@ -147,6 +148,6 @@ maioria dos jogos do app.
 
 ---
 
-**Mais:** veja os treze [quebra-cabeças de lógica](/blog/puzzle-games/), experimente o
+**Mais:** veja os dezoito [quebra-cabeças de lógica](/blog/puzzle-games/), experimente o
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), ou veja o catálogo em
 [braggster.com/games](/games/).

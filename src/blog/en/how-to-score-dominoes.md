@@ -16,6 +16,7 @@ secondary_keywords:
   - "dominoes score sheet"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -120,8 +121,7 @@ to the total.
 For matching, one. For the open end total in All Fives, both halves.
 
 **Can I play dominoes on the phone with someone next to me?**
-Yes. The board is hotseat, so you pass the device around the table. There is no online play and no
-account.
+Yes. The board is hotseat: one device, passed around the table. No account needed.
 
 ---
 

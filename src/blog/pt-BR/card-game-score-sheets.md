@@ -1,20 +1,21 @@
 ---
-title: "Fichas de Pontuação para Jogos de Cartas: Como Marcar Pontos em 33 Jogos"
+title: "Fichas de Pontuação para Jogos de Cartas: Como Marcar Pontos em 34 Jogos"
 slug: card-game-score-sheets
 locale: pt-BR
 type: pillar
 category: card
-meta_title: "Fichas de Pontuação para 33 Jogos de Cartas"
-meta_description: "Regras de pontuação e fichas digitais para 33 jogos de cartas, de Truco e Buraco a Klaverjassen, Bridge e Hearts. Fichas que calculam sozinhas, sem cadastro."
-primary_keyword: "ficha de pontuacao jogo de cartas"
+meta_title: "Fichas de Pontuação para 34 Jogos de Cartas"
+meta_description: "Regras de pontuação e fichas digitais para 34 jogos de cartas, de Truco e Buraco a Klaverjassen, Bridge e Hearts. Fichas que calculam sozinhas, sem cadastro."
+primary_keyword: "ficha de pontuação jogo de cartas"
 secondary_keywords:
   - "regras do truco"
-  - "buraco pontuacao"
+  - "buraco pontuação"
   - "como jogar canasta"
   - "app para jogos de cartas"
   - "planilha de pontos cartas"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -29,10 +30,10 @@ internal_links:
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
   - /blog/puzzle-games/
-trademark_note: null
+trademark_note: "Uno, Uno Flip e Beverbende são marcas registradas de seus respectivos editores. O Braggster não tem vínculo com eles nem apoio ou licença deles, e cada nome é usado apenas de forma referencial."
 ---
 
-# Fichas de Pontuação para Jogos de Cartas: Como Marcar Pontos em 33 Jogos
+# Fichas de Pontuação para Jogos de Cartas: Como Marcar Pontos em 34 Jogos
 
 Quase todo jogo de cartas que vale a pena jogar duas vezes precisa de uma ficha de pontuação, e
 quase toda casa marca os pontos do mesmo jeito: uma folha arrancada de um caderno, uma caneta que
@@ -41,7 +42,7 @@ uma ficha que calcula sozinha, feita para o jogo específico que você está jog
 está certo por construção, não por conta de cabeça.
 
 Este guia mostra como a pontuação funciona de verdade nas principais famílias de jogos de cartas,
-e quais dos 33 jogos de cartas do Braggster entram em cada uma.
+e quais dos 34 jogos de cartas do Braggster entram em cada uma.
 
 ## O que uma ficha de pontuação de cartas precisa fazer
 
@@ -53,13 +54,13 @@ de verdade precisa saber:
 - **Quanto vale uma rodada.** Uma rodada de Klaverjassen distribui exatamente 162 pontos de cartas
   mais roem. Uma rodada de Whist só pontua as vazas acima da base de seis. Uma rodada de Canasta
   pode oscilar milhares de pontos.
-- **Qual direção vence.** A maioria dos jogos é maior pontuação vence. Burro, jogos estilo Golf e
-  todo quebra-cabeça do app são menor pontuação vence, e uma ficha que inverte isso coloca quem
+- **Qual direção vence.** A maioria dos jogos é maior pontuação vence. Burro, jogos estilo Golf como
+  Beverbende e todo quebra-cabeça do app são menor pontuação vence, e uma ficha que inverte isso coloca quem
   perdeu em primeiro lugar.
 - **Quando o jogo termina.** Corrida até 500, corrida até 11, dezesseis rodadas, ou quem ficar sem
   cartas primeiro.
 
-As fichas do Braggster codificam essas quatro coisas para cada jogo, e é por isso que existem 33
+As fichas do Braggster codificam essas quatro coisas para cada jogo, e é por isso que existem 34
 fichas em vez de uma planilha genérica.
 
 ## Jogos de vazas
@@ -110,6 +111,14 @@ pontuação vence.
 
 Aprofunde-se: [regras e pontuação de Pesten](/blog/how-to-score-pesten/).
 
+## Jogos de memória
+
+[Beverbende](/games/beverbende/) é o jogo holandês de memória da família do Golf: você segura quatro
+cartas viradas para baixo, espia duas, e compra, troca e lembra até chegar ao menor total antes de
+alguém bater para a última rodada. A ficha do Braggster recria o bloco de pontos da caixa, uma
+coluna por jogador e uma linha por rodada, com a pontuação de quem bateu circulada, e o menor total
+vence.
+
 ## Jogos de comparação de mão
 
 Poker e Blackjack são pontuados pelo resultado, nunca por algo apostado. A ficha de Poker do
@@ -133,14 +142,14 @@ Aprofunde-se: [pontuação de Solitaire e o tabuleiro Klondike](/blog/how-to-sco
 
 ## Jogos de cartas regionais em um só app
 
-Parte da graça de um catálogo com 33 jogos de cartas é que o jogo da sua família provavelmente
+Parte da graça de um catálogo com 34 jogos de cartas é que o jogo da sua família provavelmente
 está nele, mesmo que ninguém fora do seu país já tenha ouvido falar dele. O Braggster marca cada
 jogo com os países onde ele é tradicional, então o catálogo pode filtrar automaticamente para a
 sua região:
 
 | Região | Jogos de cartas |
 |---|---|
-| Holanda, Bélgica | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Whist |
+| Holanda, Bélgica | Klaverjassen, Pesten, Toepen, Jokeren, Bollen, Beverbende, Whist |
 | Alemanha, Áustria, Suíça | Skat, Doppelkopf, Schnapsen, Königrufen, Jass |
 | França, Mônaco | Belote, Bridge, Königrufen |
 | Itália, San Marino | Briscola, Scopa, Canasta |

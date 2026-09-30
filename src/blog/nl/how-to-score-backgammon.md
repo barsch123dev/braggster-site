@@ -16,6 +16,7 @@ secondary_keywords:
   - "backgammon tegen de computer"
 search_intent: informational
 priority: 1
+updated: 2026-09-28
 schema:
   - Article
   - FAQPage
@@ -84,12 +85,22 @@ Twee openingen worden ondersteund:
 - **Nackgammon**, waarbij twee stenen verder naar achteren staan, wat het beginspel minder een race en
   meer positioneel maakt.
 
+## Samen spelen op twee telefoons
+
+Je kunt ook spelen met een telefoon per speler. Met [Samen spelen](/play-together/) start één telefoon
+een tafel en toont een QR-code, scant de ander die, en zien beide spelers live hetzelfde bord via
+dezelfde wifi. Jullie gooien en zetten allebei vanaf je eigen telefoon, de laatste zet wordt op beide
+borden gemarkeerd, en het afgeronde potje scoort 1, 2 of 3 in de lopende stand op beide telefoons. Er is
+geen account en geen internet nodig, en alleen de gastheer heeft het spel nodig. De
+[uitleg over samen spelen op meerdere telefoons](/blog/play-games-together-on-multiple-phones/) loopt
+het stap voor stap door.
+
 ## De computertegenstander, en waarom die anders is
 
 Backgammon heeft een oefenscherm tegen de computer met drie niveaus, spelend als Licht of Donker.
 
 Wat de moeite waard is om te weten: dit kan niet werken zoals de andere engines in Braggster. Chess,
-Checkers en International draughts gebruiken allemaal alpha-beta zoekstrategie, die erop leunt dat het
+Checkers, International draughts en Othello gebruiken allemaal alpha-beta zoekstrategie, die erop leunt dat het
 spel deterministisch is: je weet precies welke stellingen vanaf hier bereikbaar zijn.
 
 Backgammon heeft dobbelstenen. Elk knooppunt in de boom is een kansknooppunt, met eenentwintig
@@ -118,6 +129,10 @@ het spel staat.
 
 **Kan ik offline tegen de computer backgammon spelen?**
 Ja. De engine draait volledig op je toestel, geen verbinding en geen account nodig.
+
+**Kunnen twee mensen backgammon spelen op twee telefoons?**
+Ja. Met Samen spelen gebruikt elke speler zijn eigen telefoon op dezelfde wifi. De ene start een tafel,
+de ander scant de code, en het potje speelt live op beide schermen.
 
 **Wat is Nackgammon?**
 Een variantstartpositie waarbij twee stenen verder naar achteren staan, wat de opening meer
