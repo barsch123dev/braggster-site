@@ -35,9 +35,21 @@ jobs:
       - name: Copy gate (no em dashes, locale parity)
         run: python3 tools/check_copy.py
 
+      # Universal links (Live Table invites) need dist/.well-known/ to reach the
+      # live site. Pages drops it unless .nojekyll is present, so fail here,
+      # on pull requests too, if either file is missing or the manifest is not
+      # JSON.
+      - name: Well-known files gate (universal links)
+        run: |
+          test -f dist/.nojekyll
+          python3 -c "import json; json.load(open('dist/.well-known/apple-app-site-association'))"
+
       - uses: actions/configure-pages@v5
         if: github.ref == 'refs/heads/main'
 
+      # Keep this on v3. v4 and later add --exclude=".[^/]*" to the archive
+      # step, which silently drops every hidden path, including .well-known/
+      # and .nojekyll, and breaks the app's universal links.
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:

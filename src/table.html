@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{lt_meta_title}}</title>
+<meta name="description" content="{{lt_meta_description}}">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" sizes="32x32" href="{{root}}assets/web/favicon-32.png">
+<link rel="icon" sizes="16x16" href="{{root}}assets/web/favicon-16.png">
+<link rel="apple-touch-icon" href="{{root}}assets/web/apple-touch-icon-180.png">
+<link rel="stylesheet" href="{{root}}styles.css">
+<link rel="preload" href="{{root}}assets/fonts/Baloo2.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{root}}assets/fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
+<!-- No analytics tag on this page: the invite code lives in the URL fragment,
+     and a session recorder would capture the page URL. -->
+</head>
+<body>
+<a class="skip-link" href="#main">{{skip_link}}</a>
+
+<div class="wrap">
+  <nav class="nav" aria-label="{{nav_label}}">
+    <a class="nav__logo" href="{{home_href}}" aria-label="braggster">
+      <img src="{{root}}assets/logo/lockup-color.png" alt="braggster" width="220" height="44">
+    </a>
+    <div class="nav__links">
+      <a href="{{home_href}}">{{nav_home}}</a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <header class="invite">
+      <p class="eyebrow">{{lt_eyebrow}}</p>
+      <h1>{{lt_h1}}</h1>
+      <p class="hero__sub">{{lt_intro}}</p>
+      <div class="invite__code">
+        <p class="invite__label">{{lt_code_label}}</p>
+        <p class="invite__value"><span id="table-code">{{lt_code_none}}</span></p>
+      </div>
+      <div class="hero__actions" id="get-app">
+        <a class="btn btn--ink" href="{{store_href}}">{{store_ios}}</a>
+        <a class="btn btn--outline" href="{{play_store_href}}">{{store_android}}</a>
+      </div>
+    </header>
+
+    <section class="section" id="how">
+      <div class="section__head">
+        <h2>{{lt_how_h2}}</h2>
+      </div>
+      <ol class="steps">
+        <li class="card steps__item">
+          <h3>{{lt_step1_title}}</h3>
+          <p>{{lt_step1_body}}</p>
+        </li>
+        <li class="card steps__item">
+          <h3>{{lt_step2_title}}</h3>
+          <p>{{lt_step2_body}}</p>
+        </li>
+        <li class="card steps__item">
+          <h3>{{lt_step3_title}}</h3>
+          <p>{{lt_step3_body}}</p>
+        </li>
+      </ol>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__row">
+      <div class="footer__brand">
+        <img src="{{root}}assets/logo/symbol-color.png" alt="" width="30" height="30">
+        <span>{{footer_copy}}</span>
+      </div>
+      <div class="footer__links">
+        <a href="{{home_href}}">{{nav_home}}</a>
+        <a href="{{together_href}}">{{nav_together}}</a>
+        <a href="{{privacy_href}}">{{footer_privacy}}</a>
+        <a href="{{terms_href}}">{{footer_terms}}</a>
+        <a href="{{support_href}}">{{footer_support}}</a>
+      </div>
+    </div>
+    <nav class="footer__langs" aria-label="{{lang_nav_label}}">
+{{lt_lang_links_html}}
+    </nav>
+  </div>
+</footer>
+
+<script>
+// Shows the invite code from the URL fragment. Reads location.hash only: no
+// network call, no storage. Alphabet and length match the app's invite codes.
+(function () {
+  var el = document.getElementById('table-code');
+  var raw = (location.hash || '').replace(/^#/, '').replace(/-/g, '').toUpperCase();
+  if (/^[ABCDEFGHJKLMNPQRSTUVWXYZ23456789]{8}$/.test(raw)) {
+    el.textContent = raw.slice(0, 4) + '-' + raw.slice(4);
+    el.parentNode.className += ' invite__value--set';
+  }
+})();
+</script>
+</body>
+</html>
