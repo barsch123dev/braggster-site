@@ -1,9 +1,10 @@
 # braggster.com
 
 The marketing site for [Braggster](https://braggster.com), the score-keeping companion for
-real-life game nights. Static HTML, no framework, and the only script on the page is the
-Microsoft Clarity tag (see [Analytics](#analytics)). Deployed to GitHub Pages on every push to
-`main`.
+real-life game nights. Static HTML, no framework, and the only script on a page is the
+Microsoft Clarity tag (see [Analytics](#analytics)), with one exception: the Live Table invite
+fallback at `/t/` (see [Live Table invite links](#live-table-invite-links)) carries a 10-line
+inline script instead and no Clarity tag. Deployed to GitHub Pages on every push to `main`.
 
 The Braggster app itself lives in a separate, private repository. This repo contains only the
 public website.
@@ -17,6 +18,8 @@ src/game.html          one page per game, /games/<id>/
 src/play-together.html the Play together landing page, /play-together/
 src/gamepages/*.json   per-game prose (lead, scoring), one file per language
 src/privacy.html       privacy policy template
+src/table.html         Live Table invite fallback (/t/), noindex, not in the sitemap
+src/well-known/        files served from /.well-known/ (apple-app-site-association)
 src/blog.html          blog index template
 src/article.html       one blog article
 src/blog/<locale>/*.md the articles themselves; see src/blog/README.md
@@ -165,6 +168,26 @@ Keep both.
 Clarity is still a third party receiving visitor IP addresses and interaction data, so it is
 disclosed in `privacy_website_p` in all seven locales. **If you remove the `consentv2` call, add a
 consent banner, or point the tag at a different project, the privacy copy has to change with it.**
+
+## Live Table invite links
+
+Braggster's online Live Tables are joined with `https://braggster.com/t#WK7QF3XP`: an 8-character
+code after the `#`. With the app installed the link opens it (iOS universal link, Android App
+Link). Without it, the phone lands on `/t/` (and `/nl/t/`, `/es/t/` and so on), which reads
+`location.hash`, validates it against the app's alphabet and shows the code as `WK7Q-F3XP`.
+
+- **`/.well-known/apple-app-site-association`** comes from `src/well-known/`. It lands in a hidden
+  folder of `dist/`, so the deploy depends on two things: `.nojekyll` (which `build.py` writes) and
+  `actions/upload-pages-artifact@v3`, whose archive step keeps hidden paths. **Do not bump that
+  action to v4 or later** without checking: those versions exclude every dot-path and the app's
+  universal links would silently stop working. The workflow fails a build whose `dist/` lacks the
+  manifest.
+- **`/.well-known/assetlinks.json`** (Android App Links) does not exist yet. It needs the Play app
+  signing certificate SHA-256 from Play Console, App integrity. Add it as
+  `src/well-known/assetlinks.json` and copy it in `build.py` next to the AASA file.
+- **The inline script on `/t/`** is the one script on the site besides Clarity's tag, and Clarity
+  is deliberately not loaded there: the code sits in the URL fragment and a session recorder would
+  capture it. The script makes no network call and uses no storage.
 
 ## Two deliberate deviations from the design handover
 

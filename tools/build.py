@@ -1259,6 +1259,7 @@ def build() -> None:
     gamepages = load_gamepages()
     game_tpl = (SRC / "game.html").read_text("utf-8")
     together_tpl = (SRC / "play-together.html").read_text("utf-8")
+    table_tpl = (SRC / "table.html").read_text("utf-8")
     home_tpl = (SRC / "home.html").read_text("utf-8")
     privacy_tpl = (SRC / "privacy.html").read_text("utf-8")
     terms_tpl = (SRC / "terms.html").read_text("utf-8")
@@ -1310,6 +1311,18 @@ def build() -> None:
     shutil.copy2(SRC / "styles.css", DIST / "styles.css")
     shutil.copy2(ROOT / "CNAME", DIST / "CNAME")
     (DIST / ".nojekyll").write_text("")
+
+    # Universal-link manifest for https://braggster.com/t#<code> (Live Table
+    # invites). It must be served from /.well-known/ with no extension, so it
+    # is a hidden folder in dist/: the deploy workflow pins
+    # actions/upload-pages-artifact@v3, which keeps it, and .nojekyll above
+    # stops Pages dropping it. The Android twin (assetlinks.json) is
+    # deliberately absent until the Play signing certificate fingerprint is in.
+    wellknown = DIST / ".well-known"
+    wellknown.mkdir()
+    aasa = (SRC / "well-known" / "apple-app-site-association").read_text("utf-8")
+    json.loads(aasa)  # fail the build on malformed JSON
+    (wellknown / "apple-app-site-association").write_text(aasa, "utf-8")
 
     written: list[str] = []
 
@@ -1524,6 +1537,17 @@ def build() -> None:
         ptout.parent.mkdir(parents=True, exist_ok=True)
         ptout.write_text(render(together_tpl, ptvalues), "utf-8")
         written.append(str(ptout.relative_to(DIST)))
+
+        # ---- Live Table invite fallback: <root>/<ldir>t/index.html
+        # The page a phone without the app lands on. It is not content: it is
+        # noindex, has no canonical or hreflang, and stays out of the sitemap.
+        ltroot = "../" * (depth + 1)
+        ltvalues = page_values(loc, ltroot, ldir)
+        ltvalues.update(lt_lang_links_html=lang_links_html(code, locales, ltroot, "t/"))
+        ltout = DIST / ldir / "t" / "index.html"
+        ltout.parent.mkdir(parents=True, exist_ok=True)
+        ltout.write_text(render(table_tpl, ltvalues), "utf-8")
+        written.append(str(ltout.relative_to(DIST)))
 
         # ---- Support: <root>/<ldir>support/index.html
         sdepth = depth + 1
