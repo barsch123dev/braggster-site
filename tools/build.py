@@ -1316,13 +1316,18 @@ def build() -> None:
     # invites). It must be served from /.well-known/ with no extension, so it
     # is a hidden folder in dist/: the deploy workflow pins
     # actions/upload-pages-artifact@v3, which keeps it, and .nojekyll above
-    # stops Pages dropping it. The Android twin (assetlinks.json) is
-    # deliberately absent until the Play signing certificate fingerprint is in.
+    # stops Pages dropping it. Its Android twin, assetlinks.json, verifies the
+    # same /t links as App Links; its fingerprint is the Play app signing key
+    # (Play Console > App integrity), not the upload key, because that is the
+    # key Play-installed builds carry.
     wellknown = DIST / ".well-known"
     wellknown.mkdir()
     aasa = (SRC / "well-known" / "apple-app-site-association").read_text("utf-8")
     json.loads(aasa)  # fail the build on malformed JSON
     (wellknown / "apple-app-site-association").write_text(aasa, "utf-8")
+    assetlinks = (SRC / "well-known" / "assetlinks.json").read_text("utf-8")
+    json.loads(assetlinks)  # fail the build on malformed JSON
+    (wellknown / "assetlinks.json").write_text(assetlinks, "utf-8")
 
     written: list[str] = []
 
