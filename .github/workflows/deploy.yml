@@ -43,6 +43,7 @@ jobs:
         run: |
           test -f dist/.nojekyll
           python3 -c "import json; json.load(open('dist/.well-known/apple-app-site-association'))"
+          python3 -c "import json; json.load(open('dist/.well-known/assetlinks.json'))"
 
       - uses: actions/configure-pages@v5
         if: github.ref == 'refs/heads/main'
