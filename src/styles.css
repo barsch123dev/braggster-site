@@ -833,3 +833,20 @@ a.chip:hover { color: var(--ink); border-color: var(--ink); }
   letter-spacing: 0.12em;
   font-variant-numeric: tabular-nums;
 }
+/* The code and its Copy button share a row and wrap under each other on a
+   narrow phone. Both only show once the script has read a valid code. */
+.invite__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+.invite [hidden] { display: none; }
+.btn--sm { font-size: 15px; padding: 10px 22px; }
+button.btn { cursor: pointer; }
+.invite__hint { margin: 4px 0 0; font-size: 15px; line-height: 1.5; color: var(--muted); }
+/* Live region for "Code copied". Always rendered, even empty: a screen reader
+   can miss a change inside a region that was display: none. */
+.invite__status { margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); }
+.invite__note { margin: -8px 0 0; font-size: 15px; line-height: 1.5; color: var(--muted); }

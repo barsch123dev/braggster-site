@@ -252,5 +252,10 @@
   "lt_step2_title": "Installe d'abord Braggster",
   "lt_step2_body": "Si tu ne l'as pas encore, installe-la depuis l'App Store ou Google Play.",
   "lt_step3_title": "Touche ensuite le lien à nouveau",
-  "lt_step3_body": "Ou ouvre Braggster, choisis Jouer ensemble et saisis le code affiché ci-dessus."
+  "lt_step3_body": "Ou ouvre Braggster, touche Rejoindre ou ouvrir sous Jouer ensemble, puis Rejoindre et Saisir le code, et saisis le code affiché ci-dessus.",
+  "lt_copy_button": "Copier le code",
+  "lt_copied": "Code copié",
+  "lt_copy_failed": "Impossible de copier. Le code est sélectionné, copie-le toi-même.",
+  "lt_copy_hint": "Copie le code et installe Braggster. Ouvre ensuite l'app, touche Rejoindre ou ouvrir sous Jouer ensemble, puis Rejoindre, Saisir le code et Coller.",
+  "lt_desktop_note": "Ouvre ce lien sur ton téléphone pour rejoindre la table."
 }
