@@ -31,6 +31,34 @@ APP_STORE_URL = "https://apps.apple.com/app/id6789661787"
 # the listing id is the same for every visitor regardless of language or country.
 PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.braggster.app"
 
+# Install attribution for the Live Table invite page (/t/) only, so the stores
+# can say how many installs an invite brought. Nothing is added to the site or
+# the app: both stores read these parameters themselves and report aggregates.
+#
+# Google Play: an install referrer, shown in Play Console's acquisition reports.
+INVITE_PLAY_STORE_URL = (
+    PLAY_STORE_URL + "&referrer=utm_source%3Dbraggster_invite%26utm_medium%3Dlive_table"
+)
+
+# App Store: a campaign link, shown in App Store Connect under App Analytics.
+# THE ONE PLACE TO SET THE TOKEN: paste the pt= value from App Store Connect,
+# App Analytics, Campaigns, Generate link, between the quotes below. While it is
+# empty the invite page links to the plain APP_STORE_URL, so nothing breaks.
+APP_STORE_PROVIDER_TOKEN = ""
+INVITE_CAMPAIGN = "live-invite"
+
+
+def invite_app_store_url() -> str:
+    """The App Store link for /t/: a campaign link once the token is set."""
+    token = APP_STORE_PROVIDER_TOKEN.strip()
+    if not token:
+        return APP_STORE_URL
+    # Apple's provider tokens are digits only. Fail the build on a typo rather
+    # than ship a link whose campaign silently never counts.
+    if not token.isdigit():
+        raise ValueError(f"APP_STORE_PROVIDER_TOKEN must be digits only, got {token!r}")
+    return f"https://apps.apple.com/app/apple-store/id6789661787?pt={token}&ct={INVITE_CAMPAIGN}"
+
 CONTACT_EMAIL = "hello@braggster.com"
 SUPPORT_EMAIL = "support@braggster.com"
 
@@ -444,6 +472,36 @@ def lang_links_html(
         name = html.escape(locales[code]["name"])
         links.append(f'      <a href="{href}" hreflang="{code}" lang="{code}"{current_attr}>{name}</a>')
     return "\n".join(links)
+
+
+def invite_lang_links_html(current: str, locales: dict[str, dict], root: str) -> str:
+    """The language switcher on /t/, whose English link says it was chosen.
+
+    The English /t/ sends a browser whose first language has its own invite
+    page there (invite_lang_map). A guest who picks English in this switcher
+    did so on purpose, so their link carries ?lang=en and the script stays put.
+    The script also appends the invite code to these links, so switching
+    language keeps it.
+    """
+    links = lang_links_html(current, locales, root, "t/")
+    return links.replace(f'href="{root}t/"', f'href="{root}t/?lang=en"', 1)
+
+
+def invite_lang_map(current: str) -> str:
+    """JSON for /t/'s language follow-up: browser language to localized path.
+
+    Only the English page gets a map, so a localized page never redirects and
+    no two pages can send a guest back and forth. Keys are the language part of
+    each locale (pt-BR answers every pt browser); paths are relative to the
+    site root and only name pages this build writes.
+    """
+    if current != DEFAULT_LOCALE:
+        return "{}"
+    targets: dict[str, str] = {}
+    for code in LOCALES:
+        if code != DEFAULT_LOCALE:
+            targets.setdefault(code.split("-")[0].lower(), f"{locale_dir(code)}t/")
+    return json.dumps(targets, separators=(",", ":"))
 
 
 def social_html(
@@ -1548,7 +1606,12 @@ def build() -> None:
         # noindex, has no canonical or hreflang, and stays out of the sitemap.
         ltroot = "../" * (depth + 1)
         ltvalues = page_values(loc, ltroot, ldir)
-        ltvalues.update(lt_lang_links_html=lang_links_html(code, locales, ltroot, "t/"))
+        ltvalues.update(
+            lt_lang_links_html=invite_lang_links_html(code, locales, ltroot),
+            lt_store_href=invite_app_store_url(),
+            lt_play_store_href=INVITE_PLAY_STORE_URL,
+            lt_lang_map=invite_lang_map(code),
+        )
         ltout = DIST / ldir / "t" / "index.html"
         ltout.parent.mkdir(parents=True, exist_ok=True)
         ltout.write_text(render(table_tpl, ltvalues), "utf-8")
