@@ -137,7 +137,7 @@
   },
   "yahtzee": {
     "lead": "Yahtzee ist das Fünf-Würfel-Spiel mit dreizehn Feldern: drei Würfe pro Zug, ein Feld pro Zug ausgefüllt, und ein Bonus von 35 Punkten für 63 im oberen Bereich.",
-    "scoring": "Der Punktezettel berechnet jedes Feld, den oberen Bonus und zusätzliche Yahtzees zu je 100 mit der Joker-Regel, alles direkt im Yahtzee-Feld. Die Spalten schrumpfen, damit jeder Spieler auf den Bildschirm passt. Schalte digitale Würfel ein, und jeder Wurf zeigt, was er wert wäre, und mit Gemeinsam spielen würfeln bis zu sechs Spieler auf ihren eigenen Handys, während alle zusehen, wie die Würfel fallen."
+    "scoring": "Der Punktezettel berechnet jedes Feld, den oberen Bonus und zusätzliche Yahtzees zu je 100 mit der Joker-Regel, alles direkt im Yahtzee-Feld. Die Spalten schrumpfen, damit jeder Spieler auf den Bildschirm passt. Schalte digitale Würfel ein, und jeder Wurf zeigt, was er wert wäre, und mit Zusammen spielen würfeln bis zu sechs Spieler auf ihren eigenen Handys, während alle zusehen, wie die Würfel fallen."
   },
   "dudo": {
     "lead": "Dudo, auch als Perudo oder Lügenwürfeln bekannt, ist das Bluffspiel, bei dem alle fünf Würfel unter einem Becher verstecken und auf den ganzen Tisch bieten.",
@@ -145,15 +145,15 @@
   },
   "chess": {
     "lead": "Schach auf einem Holzbrett in deiner Tasche: jeder legale Zug wird durchgesetzt, inklusive Rochade, En-Passant und Umwandlung, mit laufender Siegzählung.",
-    "scoring": "Jede beendete Partie bringt dem Sieger einen Punkt, ein Remis bringt nichts, sodass ein Abend zu einer Sessionwertung wie 5 zu 3 wird. Spiel auf einem Handy, gegen den Computer auf Leicht, Mittel oder Schwer, oder mit Gemeinsam spielen auf zwei Handys, wo der letzte Zug auf beiden Brettern markiert wird."
+    "scoring": "Jede beendete Partie bringt dem Sieger einen Punkt, ein Remis bringt nichts, sodass ein Abend zu einer Sessionwertung wie 5 zu 3 wird. Spiel auf einem Handy, gegen den Computer auf Leicht, Mittel oder Schwer, oder mit Zusammen spielen auf zwei Handys, wo der letzte Zug auf beiden Brettern markiert wird."
   },
   "checkers": {
     "lead": "Checkers, das englische Damespiel, auf einem 8x8-Brett mit Schlagzwang, Mehrfachsprüngen und Damen, spielbereit auf deinem Handy.",
-    "scoring": "Jede beendete Partie bringt dem Sieger einen Punkt, ein Remis bringt nichts, sodass du eine laufende Wertung führst. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Gemeinsam spielen auf zwei Handys. Schlagzwang- und Schlagen-optional-Varianten sind enthalten."
+    "scoring": "Jede beendete Partie bringt dem Sieger einen Punkt, ein Remis bringt nichts, sodass du eine laufende Wertung führst. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Zusammen spielen auf zwei Handys. Schlagzwang- und Schlagen-optional-Varianten sind enthalten."
   },
   "dammen": {
     "lead": "Internationales Damespiel ist das 10x10-Spiel mit zwanzig Steinen pro Seite, fliegenden Damen und Höchstschlagzwang, gespielt in niederländischen Vereinen.",
-    "scoring": "Das Brett setzt die Regel zum Höchstschlag durch und lässt dich einen langen Schlagzug Feld für Feld antippen, mit einem Schritt zurück, wenn du dich vertippst. Jede beendete Partie bringt dem Sieger einen Punkt. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Gemeinsam spielen auf zwei Handys."
+    "scoring": "Das Brett setzt die Regel zum Höchstschlag durch und lässt dich einen langen Schlagzug Feld für Feld antippen, mit einem Schritt zurück, wenn du dich vertippst. Jede beendete Partie bringt dem Sieger einen Punkt. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Zusammen spielen auf zwei Handys."
   },
   "connectfour": {
     "lead": "Connect Four ist das vertikale Vier-in-einer-Reihe-Spiel: wirf eine Scheibe in eine Spalte, lass die Schwerkraft wählen, und reih vier vor deinem Gegner auf.",
@@ -161,7 +161,7 @@
   },
   "reversi": {
     "lead": "Othello ist das Scheiben-Umdreh-Spiel auf 8x8: schließ eine Reihe gegnerischer Scheiben zwischen zwei deiner eigenen ein, und sie drehen sich auf deine Farbe.",
-    "scoring": "Das Brett zeigt, wo du spielen darfst, dreht jede eingeschlossene Reihe um und setzt für dich aus, wenn du keinen Zug hast. Wer am Ende mehr Scheiben hält, gewinnt die Partie und bekommt einen Punkt in der Wertung. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Gemeinsam spielen auf zwei Handys. Feste und freie Eröffnungsvarianten sind enthalten."
+    "scoring": "Das Brett zeigt, wo du spielen darfst, dreht jede eingeschlossene Reihe um und setzt für dich aus, wenn du keinen Zug hast. Wer am Ende mehr Scheiben hält, gewinnt die Partie und bekommt einen Punkt in der Wertung. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Zusammen spielen auf zwei Handys. Feste und freie Eröffnungsvarianten sind enthalten."
   },
   "tictactoe": {
     "lead": "Tic-Tac-Toe, das Drei-in-einer-Reihe-Spiel auf einem 3x3-Raster, spielbar auf einem Handy, mit Siegen und Remis, die für dich erkannt werden.",
@@ -241,7 +241,7 @@
   },
   "backgammon": {
     "lead": "Backgammon ist das Würfel- und Steine-Rennen über 24 Punkte: schlag Blots, komm von der Bar zurück, tu deine Steine zuerst aus, und gewinn mit Gammon doppelt.",
-    "scoring": "Jede beendete Partie bringt 1 Punkt für einen einfachen Sieg, 2 für einen Gammon und 3 für einen Backgammon, als laufende Wertung ohne Verdopplungswürfel. Das Brett würfelt, hebt legale Züge hervor und trägt Steine aus. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Gemeinsam spielen auf zwei Handys. Standard- und Nackgammon-Eröffnungen sind enthalten."
+    "scoring": "Jede beendete Partie bringt 1 Punkt für einen einfachen Sieg, 2 für einen Gammon und 3 für einen Backgammon, als laufende Wertung ohne Verdopplungswürfel. Das Brett würfelt, hebt legale Züge hervor und trägt Steine aus. Spiel auf einem Handy, gegen den Computer auf drei Stufen, oder mit Zusammen spielen auf zwei Handys. Standard- und Nackgammon-Eröffnungen sind enthalten."
   },
   "dominoes": {
     "lead": "Domino, von Block und Draw bis All Fives: pass die offenen Enden an, geh als Erster aus, und wert die Augen, die deinen Gegnern bleiben.",
