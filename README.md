@@ -81,7 +81,11 @@ is missing a game, has an empty field or an over-long lead, or (in English) uses
 
 `/play-together/` is the landing page for the multi-phone mode (`pt_*` keys). Its games list comes
 from the `playTogether` flag, so a game the app adds to Play together appears there by itself. The
-copy says "the same Wi-Fi" and never "online": the mode is local network only.
+copy covers both routes since app 3.4: on the same Wi-Fi the phones connect directly with no
+internet, and online a table is joined by invite link or code through the relay (see
+[Live Table invite links](#live-table-invite-links) and the privacy page's Online Live Tables
+section). Say both, and never imply that Wi-Fi play needs the internet or that online play is
+the only way.
 
 ## The blog
 
@@ -182,9 +186,9 @@ Link). Without it, the phone lands on `/t/` (and `/nl/t/`, `/es/t/` and so on), 
   action to v4 or later** without checking: those versions exclude every dot-path and the app's
   universal links would silently stop working. The workflow fails a build whose `dist/` lacks the
   manifest.
-- **`/.well-known/assetlinks.json`** (Android App Links) does not exist yet. It needs the Play app
-  signing certificate SHA-256 from Play Console, App integrity. Add it as
-  `src/well-known/assetlinks.json` and copy it in `build.py` next to the AASA file.
+- **`/.well-known/assetlinks.json`** (Android App Links) comes from `src/well-known/` as well and
+  is copied next to the AASA file. Its fingerprint is the Play app signing certificate SHA-256
+  (Play Console, App integrity), not the upload key.
 - **The inline scripts on `/t/`** are the only scripts on the site besides Clarity's tag, and
   Clarity is deliberately not loaded there: the code sits in the URL fragment and a session
   recorder would capture it. They make no network call and use no storage. Without JavaScript the
