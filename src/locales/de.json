@@ -254,5 +254,10 @@
   "lt_step2_title": "Installiere zuerst Braggster",
   "lt_step2_body": "Hast du die App noch nicht, installiere sie aus dem App Store oder von Google Play.",
   "lt_step3_title": "Tippe dann noch einmal auf den Link",
-  "lt_step3_body": "Oder öffne Braggster, tipp auf Mitspielen oder starten und dann auf Mitspielen, wähle Code eintippen und gib den oben gezeigten Code ein."
+  "lt_step3_body": "Oder öffne Braggster, tippe unter Zusammen spielen auf Mitspielen oder starten, dann auf Mitspielen und Code eintippen, und gib den oben gezeigten Code ein.",
+  "lt_copy_button": "Code kopieren",
+  "lt_copied": "Code kopiert",
+  "lt_copy_failed": "Kopieren hat nicht geklappt. Der Code ist markiert, kopiere ihn selbst.",
+  "lt_copy_hint": "Kopiere den Code und installiere Braggster. Öffne dann die App, tippe unter Zusammen spielen auf Mitspielen oder starten, dann auf Mitspielen, Code eintippen und Einfügen.",
+  "lt_desktop_note": "Öffne diesen Link auf deinem Handy, um am Tisch mitzuspielen."
 }

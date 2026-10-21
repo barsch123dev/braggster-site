@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{lang}}">
+<html lang="{{lang}}" data-invite-langs="{{lt_lang_map}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,23 @@
 <meta name="description" content="{{lt_meta_description}}">
 <meta name="robots" content="noindex">
 <meta name="referrer" content="no-referrer">
+<script>
+// Language follow-up. Only the English page carries a map (build.py,
+// invite_lang_map), so a localized page never redirects and nothing loops. A
+// browser whose first language has its own invite page goes there, code kept;
+// ?lang=en (the English link in the language switcher) means stay.
+(function () {
+  try {
+    if (/[?&]lang=en(&|$)/.test(location.search)) return;
+    var map = JSON.parse(document.documentElement.getAttribute('data-invite-langs') || '{}');
+    var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    var first = String(langs[0] || '').toLowerCase().split('-')[0];
+    if (Object.prototype.hasOwnProperty.call(map, first)) {
+      location.replace('{{root}}' + map[first] + location.hash);
+    }
+  } catch (e) {}
+})();
+</script>
 <link rel="icon" sizes="32x32" href="{{root}}assets/web/favicon-32.png">
 <link rel="icon" sizes="16x16" href="{{root}}assets/web/favicon-16.png">
 <link rel="apple-touch-icon" href="{{root}}assets/web/apple-touch-icon-180.png">
@@ -38,12 +55,21 @@
       <p class="hero__sub">{{lt_intro}}</p>
       <div class="invite__code">
         <p class="invite__label">{{lt_code_label}}</p>
-        <p class="invite__value"><span id="table-code">{{lt_code_none}}</span></p>
+        <div class="invite__row">
+          <p class="invite__value"><span id="table-code">{{lt_code_none}}</span></p>
+          <button type="button" class="btn btn--outline btn--sm" id="copy-code" hidden>{{lt_copy_button}}</button>
+        </div>
+        <p class="invite__hint" id="copy-hint" hidden>{{lt_copy_hint}}</p>
+        <p class="invite__status" id="copy-status" role="status" aria-live="polite" data-copied="{{lt_copied}}" data-failed="{{lt_copy_failed}}"></p>
       </div>
+      <!-- Without the script both stores show as equals. The script makes the
+           visitor's own store the big button and the other a small link, or on
+           a computer adds the line saying to open the invite on a phone. -->
       <div class="hero__actions" id="get-app">
-        <a class="btn btn--ink" href="{{store_href}}">{{store_ios}}</a>
-        <a class="btn btn--outline" href="{{play_store_href}}">{{store_android}}</a>
+        <a class="btn btn--ink" id="store-ios" href="{{lt_store_href}}">{{store_ios}}</a>
+        <a class="btn btn--outline" id="store-android" href="{{lt_play_store_href}}">{{store_android}}</a>
       </div>
+      <p class="invite__note" id="desktop-note" hidden>{{lt_desktop_note}}</p>
     </header>
 
     <section class="section" id="how">
@@ -90,7 +116,8 @@
 </footer>
 
 <script>
-// Shows the invite code from the URL fragment. Reads location.hash only: no
+// Shows the invite code from the URL fragment, offers to copy it, and puts the
+// visitor's own store first. Reads location.hash and the user agent only: no
 // network call, no storage. Alphabet and length match the app's invite codes.
 (function () {
   var el = document.getElementById('table-code');
@@ -98,6 +125,74 @@
   if (/^[ABCDEFGHJKLMNPQRSTUVWXYZ23456789]{8}$/.test(raw)) {
     el.textContent = raw.slice(0, 4) + '-' + raw.slice(4);
     el.parentNode.className += ' invite__value--set';
+    setUpCopy(raw);
+    // Switching language keeps the code.
+    var langLinks = document.querySelectorAll('.footer__langs a');
+    for (var i = 0; i < langLinks.length; i++) langLinks[i].href += '#' + raw;
+  }
+
+  // Copy the bare code: the app's Paste button reads it, with or without the
+  // dash. The clipboard API needs a secure context; the fallbacks are the old
+  // copy command and, failing that, the code selected for a manual copy.
+  function setUpCopy(code) {
+    var button = document.getElementById('copy-code');
+    var status = document.getElementById('copy-status');
+    button.hidden = false;
+    document.getElementById('copy-hint').hidden = false;
+    function say(key) {
+      // Cleared first so a second tap is announced again.
+      status.textContent = '';
+      setTimeout(function () { status.textContent = status.getAttribute(key); }, 50);
+    }
+    function legacyCopy() {
+      var area = document.createElement('textarea');
+      area.value = code;
+      area.setAttribute('readonly', '');
+      area.style.position = 'fixed';
+      area.style.opacity = '0';
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(area);
+      button.focus();
+      return ok;
+    }
+    function selectCode() {
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    }
+    button.addEventListener('click', function () {
+      function fallback() {
+        if (legacyCopy()) { say('data-copied'); } else { selectCode(); say('data-failed'); }
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(function () { say('data-copied'); }, fallback);
+      } else {
+        fallback();
+      }
+    });
+  }
+
+  // Store order by platform. iPadOS reports a Mac user agent, so a Mac that
+  // has a touch screen is an iPad. Anything else is a computer, which cannot
+  // install the app and gets told to open the link on a phone.
+  var ua = navigator.userAgent || '';
+  var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var android = /Android/.test(ua);
+  var appStore = document.getElementById('store-ios');
+  var play = document.getElementById('store-android');
+  if (ios) {
+    play.className = 'link';
+  } else if (android) {
+    play.className = 'btn btn--ink';
+    appStore.className = 'link';
+    appStore.parentNode.insertBefore(play, appStore);
+  } else {
+    document.getElementById('desktop-note').hidden = false;
   }
 })();
 </script>

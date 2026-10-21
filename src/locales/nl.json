@@ -254,5 +254,10 @@
   "lt_step2_title": "Installeer eerst Braggster",
   "lt_step2_body": "Heb je de app nog niet? Haal hem dan in de App Store of bij Google Play.",
   "lt_step3_title": "Tik daarna nogmaals op de link",
-  "lt_step3_body": "Of open Braggster, tik op Meedoen of starten en dan op Meedoen, kies Code intypen en voer de hierboven getoonde code in."
+  "lt_step3_body": "Of open Braggster, tik onder Samen spelen op Meedoen of starten, dan op Meedoen en Code intypen, en voer de code hierboven in.",
+  "lt_copy_button": "Code kopiëren",
+  "lt_copied": "Code gekopieerd",
+  "lt_copy_failed": "Kopiëren lukte niet. De code is geselecteerd, dus kopieer hem zelf.",
+  "lt_copy_hint": "Kopieer de code en installeer Braggster. Open de app en tik onder Samen spelen op Meedoen of starten, dan op Meedoen, Code intypen en Plakken.",
+  "lt_desktop_note": "Open deze link op je telefoon om mee te doen aan de tafel."
 }

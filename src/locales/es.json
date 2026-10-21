@@ -254,5 +254,10 @@
   "lt_step2_title": "Instala Braggster primero",
   "lt_step2_body": "Si aún no la tienes, instálala desde la App Store o Google Play.",
   "lt_step3_title": "Después vuelve a tocar el enlace",
-  "lt_step3_body": "O abre Braggster, toca Unirse o abrir y luego Unirse, elige Escribir el código e introduce el código que ves arriba."
+  "lt_step3_body": "O abre Braggster, toca Unirse o abrir en Jugar juntos, luego Unirse y Escribir el código, e introduce el código que ves arriba.",
+  "lt_copy_button": "Copiar código",
+  "lt_copied": "Código copiado",
+  "lt_copy_failed": "No se pudo copiar. El código está seleccionado, así que cópialo tú.",
+  "lt_copy_hint": "Copia el código e instala Braggster. Luego ábrela, toca Unirse o abrir en Jugar juntos, y después Unirse, Escribir el código y Pegar.",
+  "lt_desktop_note": "Abre este enlace en tu móvil para unirte a la mesa."
 }

@@ -3,8 +3,8 @@
 The marketing site for [Braggster](https://braggster.com), the score-keeping companion for
 real-life game nights. Static HTML, no framework, and the only script on a page is the
 Microsoft Clarity tag (see [Analytics](#analytics)), with one exception: the Live Table invite
-fallback at `/t/` (see [Live Table invite links](#live-table-invite-links)) carries a 10-line
-inline script instead and no Clarity tag. Deployed to GitHub Pages on every push to `main`.
+fallback at `/t/` (see [Live Table invite links](#live-table-invite-links)) carries its own small
+inline scripts instead and no Clarity tag. Deployed to GitHub Pages on every push to `main`.
 
 The Braggster app itself lives in a separate, private repository. This repo contains only the
 public website.
@@ -189,9 +189,31 @@ Link). Without it, the phone lands on `/t/` (and `/nl/t/`, `/es/t/` and so on), 
 - **`/.well-known/assetlinks.json`** (Android App Links) comes from `src/well-known/` as well and
   is copied next to the AASA file. Its fingerprint is the Play app signing certificate SHA-256
   (Play Console, App integrity), not the upload key.
-- **The inline script on `/t/`** is the one script on the site besides Clarity's tag, and Clarity
-  is deliberately not loaded there: the code sits in the URL fragment and a session recorder would
-  capture it. The script makes no network call and uses no storage.
+- **The inline scripts on `/t/`** are the only scripts on the site besides Clarity's tag, and
+  Clarity is deliberately not loaded there: the code sits in the URL fragment and a session
+  recorder would capture it. They make no network call and use no storage. Without JavaScript the
+  page shows both store buttons as equals, as it always has. With it:
+  - **Store order.** From the user agent: an iPhone or iPad (iPadOS says Macintosh, so a Mac with
+    a touch screen counts) gets the App Store as the big button and Google Play as a small link;
+    Android the other way round; anything else keeps both and adds "open this link on your phone".
+  - **Copy code.** A button beside the code copies the bare 8 characters (the app's Paste button
+    accepts them, dash or not), with the steps to Paste in the app's own button names
+    (`lt_copy_hint`). It falls back to the old copy command, then to selecting the code. The
+    result is announced in a `role="status"` live region.
+  - **Language follow-up.** Only the English `/t/` carries a map (`invite_lang_map` in `build.py`,
+    in `data-invite-langs`): when the browser's first language is nl, es, fr, de, pt or it it does
+    `location.replace` to that locale's `t/`, keeping the hash. Localized pages get an empty map,
+    so they never redirect and nothing loops. The English link in the page's language switcher is
+    `t/?lang=en`, which the script reads as "stay", and the script adds the code to every
+    switcher link so changing language keeps it.
+- **Store links on `/t/` carry install attribution**, and only there. Google Play gets
+  `&referrer=utm_source%3Dbraggster_invite%26utm_medium%3Dlive_table` (Play Console, acquisition
+  reports). The App Store link becomes a campaign link,
+  `https://apps.apple.com/app/apple-store/id6789661787?pt=<token>&ct=live-invite` (App Store
+  Connect, App Analytics), **once `APP_STORE_PROVIDER_TOKEN` at the top of `tools/build.py` is
+  set**: get the `pt=` value from App Store Connect, App Analytics, Campaigns, Generate link. While
+  it is empty the page links to the plain App Store URL; a value that is not all digits fails the
+  build. Neither adds tracking to the site or the app: the stores read the parameters themselves.
 
 ## Two deliberate deviations from the design handover
 
