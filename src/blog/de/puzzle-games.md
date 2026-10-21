@@ -15,7 +15,7 @@ secondary_keywords:
   - "rätselspiele ohne werbung"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -45,13 +45,13 @@ App haben sie einen eigenen Tab, Rätsel, neben den Spielen.
 ## Die Zahlenplatzierungs-Familie
 
 **Sudoku.** Das klassische 9x9. Jede Zeile, Spalte und jeder 3x3 Block enthält 1 bis 9 genau einmal.
-Fünf Stufen, Beginner bis Evil, und die Stufe ändert wirklich die verlangte Lösungstechnik: Beginner
-und Easy sind allein mit Einern lösbar, die schwereren Stufen nicht.
+Fünf Stufen, Anfänger bis Teuflisch, und die Stufe ändert wirklich die verlangte Lösungstechnik: Anfänger
+und Leicht sind allein mit Einern lösbar, die schwereren Stufen nicht.
 
 **Killer Sudoku.** Sudokus Gitter plus eine Aufteilung der 81 Zellen in Käfige, jeder mit einer
 gedruckten Summe. Die Ziffern jedes Käfigs sind verschieden und ergeben zusammen diese Summe. Killer
-Rätsel starten meist mit wenigen Vorgaben oder gar keinen, weil die Käfige die Bedingung stattdessen
-tragen.
+Rätsel starten mit deutlich weniger Vorgaben als ein normales Sudoku, weil die Käfige einen Teil der
+Bedingung tragen: etwa 32 bei Anfänger, rund ein Dutzend bei Teuflisch.
 
 **Kakuro.** Das Kreuzsummen-Rätsel. Jede Reihe weißer Zellen enthält verschiedene Ziffern von 1 bis
 9, die zusammen den Hinweis am Anfang ergeben. Gitter reichen von 6x6 bis 10x10.
@@ -71,8 +71,8 @@ leer, 0 und 1 durchzuschalten: Bei zwei Symbolen braucht es kein Ziffernfeld, da
 
 **[Tectonic](/games/tectonic/).** Ein Gitter, das in umrandete Regionen aus einer bis fünf Zellen
 unterteilt ist. Jede Region enthält 1 bis zu ihrer eigenen Größe genau einmal, und keine zwei
-angrenzenden Zellen, Diagonalen eingeschlossen, dürfen dieselbe Ziffer teilen. 5x5 bei Beginner bis
-8x8 bei Evil.
+angrenzenden Zellen, Diagonalen eingeschlossen, dürfen dieselbe Ziffer teilen. 5x5 bei Anfänger bis
+8x8 bei Teuflisch.
 
 Vertiefung: [Sudoku](/blog/how-to-play-sudoku/), [Killer Sudoku](/blog/how-to-play-killer-sudoku/).
 
@@ -184,8 +184,9 @@ Keine Werbung irgendwo in der App. Der Timer fließt in deine Punktzahl ein, abe
 nichts unterbricht dich.
 
 **Welche Rätsel gibt es in meiner Sprache?**
-Sudoku und Logikwis sind in allen sieben Sprachen der App verfügbar. Die Worträtsel sind naturgemäß
-sprachspezifisch und bringen jetzt jeweils eigene Wort- und Hinweislisten in allen sieben mit.
+Alle achtzehn sind in allen sieben Sprachen der App verfügbar. Die Zahlen- und Logikrätsel sind
+sprachunabhängig, die Worträtsel naturgemäß sprachspezifisch: Ihre Wörter und Hinweise folgen der
+App-Sprache, mit eigenen Listen in allen sieben.
 
 **Kann ich mit Notizen spielen?**
 Ja, bei den Zahlengitter-Rätseln. Binairo und Nonogram nutzen stattdessen eine Zwei-Zustands-Zellenlogik,

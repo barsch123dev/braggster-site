@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Solitaire Scoren: Klondike, Vegas en de Draw Three Regel
@@ -68,7 +69,10 @@ gespeeld". Vegas vraagt "hoeveel van de deal heb je daadwerkelijk vrijgemaakt". 
 het waard is om over veel potjes bij te houden, omdat hij vergelijkbaar is tussen deals op een manier
 die een voortgangsscore niet is.
 
-Braggster biedt allebei aan.
+Braggster biedt allebei aan. Bij Vegas vul je in hoeveel kaarten de fundamenten bereikten, van 0 tot
+52, en de app maakt daar een nettoscore van voor je lopende totaal: vijf punten per kaart min 52, dus
+een volle deal levert +208 op en een lege -52. Bij standaard vul je zelf het puntentotaal van de deal
+in.
 
 ## Draw one versus draw three
 

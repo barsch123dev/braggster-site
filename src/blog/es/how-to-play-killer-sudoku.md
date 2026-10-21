@@ -16,6 +16,7 @@ secondary_keywords:
   - "sudoku de sumas como se juega"
 search_intent: informational
 priority: 1
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -30,7 +31,7 @@ trademark_note: null
 # Killer Sudoku: Cómo Resolver las Jaulas sin Adivinar
 
 Killer Sudoku parece un Sudoku con decoración extra y se juega como un puzle completamente
-distinto. La mayoría de las cuadrículas empiezan con **muy pocos números iniciales, o ninguno**, lo
+distinto. La mayoría de las cuadrículas empiezan con **muchos menos números iniciales que un Sudoku normal**, lo
 cual es alarmante la primera vez que lo ves. Toda la información está ahí. Solo que está escrita
 como sumas en lugar de cifras.
 
@@ -107,10 +108,13 @@ un solucionador por retroceso consciente de las jaulas. Comprobar las dos restri
 separado no serviría: una cuadrícula puede ser ambigua solo bajo Sudoku y única en cuanto se aplican
 las jaulas, y también al revés.
 
-Si un intento con pocas cifras no se puede demostrar único dentro del presupuesto de búsqueda, el
-generador recurre al conjunto de números iniciales ya verificado de Sudoku para ese nivel. La
-consecuencia es que **cada puzle que te toca es de verdad resoluble de forma única**, nunca un
-quizás.
+Parte de un conjunto de números iniciales de Sudoku que ya es único y va quitando números de uno en
+uno. Una retirada solo se mantiene si el solucionador demuestra, dentro de un presupuesto de búsqueda
+pequeño, que el puzle sigue teniendo exactamente una solución; un número inicial que no logra
+demostrar prescindible se queda. Por eso la cantidad baja con el nivel: unos 32 en Principiante, 24 en
+Fácil, 16 en Medio y alrededor de una docena en Difícil y Diabólico, donde además las jaulas son más
+grandes. La consecuencia es que **cada puzle que te toca es de verdad resoluble de forma única**,
+nunca un quizás.
 
 ## El tablero
 
@@ -135,8 +139,9 @@ Cada fila, columna y caja suma 45. Comparar eso con las jaulas dentro de una uni
 de las celdas que sobran, y muchas veces resuelve una directamente.
 
 **¿Por qué los puzles de Killer Sudoku tienen tan pocos números iniciales?**
-Las jaulas cargan con la restricción en su lugar. Una cuadrícula Killer bien construida puede
-empezar sin ningún número inicial y aun así tener exactamente una solución.
+Las jaulas cargan con parte de la restricción. Una cuadrícula Killer bien construida puede empezar
+sin ningún número inicial y aun así tener exactamente una solución, y en Braggster la cantidad baja de
+unos 32 en Principiante a alrededor de una docena en Diabólico.
 
 **¿Es Killer Sudoku más difícil que el Sudoku normal?**
 Distinto más que estrictamente más difícil. Exige aritmética además de lógica, pero las sumas de

@@ -15,7 +15,7 @@ secondary_keywords:
   - "feuille de score rummikub"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -101,8 +101,7 @@ manuellement.
 Chaque plateau fonctionne en alternance sur un seul téléphone. Les Échecs, les Dames, les Dames
 internationales, l'Othello et le Backgammon se jouent aussi sur deux téléphones avec
 [Jouer ensemble](/play-together/) : un téléphone ouvre une table et affiche un code QR, l'autre le
-scanne, et chaque joueur joue depuis son propre téléphone sur le même Wi-Fi. Le dernier coup est
-marqué sur les deux plateaux, il n'y a ni compte ni internet, et rejoindre est gratuit. Le pas à pas,
+scanne, et chaque joueur joue depuis son propre téléphone. Sur le même Wi-Fi, pas besoin d'internet, et des amis plus loin rejoignent en ligne avec un lien d'invitation ou un code de 8 caractères. Le dernier coup est marqué sur les deux plateaux, il n'y a pas de compte, et rejoindre est gratuit. Le pas à pas,
 y compris quoi faire quand une table n'apparaît pas, se trouve dans le
 [guide pour jouer ensemble sur plusieurs téléphones](/blog/play-games-together-on-multiple-phones/).
 
@@ -141,9 +140,7 @@ Oui. Les plateaux jouables sont en chaise tournante, tu te passes l'appareil aut
 Aucun compte n'est nécessaire.
 
 **Peut-on jouer sur deux téléphones à la place ?**
-Oui, pour les Échecs, les Dames, les Dames internationales, l'Othello et le Backgammon. Avec Jouer
-ensemble, chaque joueur utilise son propre téléphone sur le même Wi-Fi, sans compte et sans connexion
-internet.
+Oui, pour les Échecs, les Dames, les Dames internationales, l'Othello et le Backgammon. Avec Jouer ensemble, chaque joueur utilise son propre téléphone, sur le même Wi-Fi sans internet ou en ligne avec un lien d'invitation, et dans les deux cas sans compte.
 
 **L'app fonctionne-t-elle pour un jeu de plateau qui n'est pas dans la liste ?**
 Oui. La feuille vierge, toujours gratuite, compte les points de n'importe quoi, et il existe aussi

@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Solitaire Punkte zählen: Klondike, Vegas und die Drei-Karten-Regel
@@ -71,7 +72,10 @@ gespielt". Vegas fragt "wie viel vom Deal hast du wirklich geschafft". Vegas loh
 viele Partien mitzuverfolgen, weil es zwischen Deals vergleichbar ist, was eine Fortschrittspunktzahl
 nicht ist.
 
-Braggster bietet beide an.
+Braggster bietet beide an. Bei Vegas trägst du ein, wie viele Karten die Fundamente erreicht haben,
+von 0 bis 52, und die App macht daraus einen Nettowert für deine laufende Summe: fünf Punkte pro
+Karte minus 52, ein voller Deal bringt also +208 und ein leerer -52. Bei Standard trägst du die
+Punktsumme des Deals selbst ein.
 
 ## Eine Karte gegen drei Karten ziehen
 

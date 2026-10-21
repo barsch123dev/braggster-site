@@ -16,6 +16,7 @@ secondary_keywords:
   - "grade de deducao quebra cabeca"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -60,12 +61,13 @@ consequência disso.
 
 As pistas vêm em várias formas, e aprender a lê-las é a maior parte da habilidade envolvida:
 
-- **Fatos diretos.** Um suspeito está ou não está em um cômodo nomeado. O ponto de apoio mais
-  fácil, e por onde você sempre deve começar.
-- **Posição relativa.** Uma pessoa está na mesma linha ou coluna que outra, ou não está.
-- **Pistas de direção.** Um suspeito fica em uma direção específica em relação a um cômodo ou a
-  outra pessoa. Leia com atenção: a convenção é fixa e explicada na tela de regras, e inverter a
-  orientação vai produzir uma grade consistente, mas errada.
+- **Fatos diretos.** Um suspeito está ou não está em um cômodo nomeado, ou em uma linha ou coluna
+  indicada. O ponto de apoio mais fácil, e por onde você sempre deve começar.
+- **Posição relativa.** Um suspeito está no mesmo cômodo que outro.
+- **Pistas de direção.** Um suspeito fica ao norte, ao sul, a leste ou a oeste de um móvel, ou mais ao
+  norte ou mais a oeste que outro suspeito. Leia com atenção: a convenção é fixa, com o norte para
+  cima como mostra a bússola no tabuleiro, e inverter a orientação vai produzir uma grade consistente,
+  mas errada.
 - **Fatos negativos.** Ninguém está em um cômodo indicado, ou um suspeito não está ao lado de
   algo.
 

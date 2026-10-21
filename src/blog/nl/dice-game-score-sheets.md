@@ -15,6 +15,7 @@ secondary_keywords:
   - "online dobbelsteen app"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -26,6 +27,7 @@ internal_links:
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/puzzle-games/
+  - /play-together/
 trademark_note: "Yahtzee is een handelsmerk van zijn uitgever. Braggster is niet aan hen verbonden en wordt niet door hen goedgekeurd, en de naam wordt uitsluitend beschrijvend gebruikt."
 ---
 
@@ -94,16 +96,18 @@ omdat de dobbelstenen elke stelling een kansknooppunt maken. Zie
 [bordspel scoren](/blog/board-game-score-sheets/).
 
 **Freestyle** is de altijd gratis kaart- en dobbeltafel. Je kiest hoeveel kaarten en dobbelstenen er
-gedeeld worden, deelt een hand per speler of naar een gedeelde pot, en deelt opnieuw, gooit opnieuw en
+gedeeld worden, deelt een hand per speler of naar de tafel, en deelt opnieuw, gooit opnieuw en
 past de aantallen live aan. Het wordt ondersteund door een vrij scoreformulier waarop je kiest of het
 hoogste of het laagste totaal wint, wat het de aangewezen tool maakt voor elk dobbelspel dat nog geen
 eigen formulier heeft.
 
 ## Als de dobbelstenen zoek zijn
 
-De dobbelsteenroller van Braggster is app-breed gedeeld in plaats van vastgeplakt aan één spel, dus
-elk spel met een dobbelconfiguratie kan op het scherm gooien. Dat dekt de situatie waarin je de
-regels, de spelers en de snacks hebt, maar de dobbelstenen in een andere tas zitten.
+De dobbelsteenroller van Braggster is app-breed gedeeld in plaats van vastgeplakt aan één spel: Yahtzee heeft Digitaal gooien, Backgammon gooit op zijn eigen bord en Freestyle gooit zoveel dobbelstenen als jij vraagt. Dat dekt de situatie waarin je de regels, de spelers en de snacks hebt, maar de dobbelstenen in een andere tas zitten.
+
+## Yahtzee online met vrienden
+
+Yahtzee is het enige dobbelspel met [Samen spelen](/play-together/): tot zes spelers, elk met een eigen telefoon. Op dezelfde wifi is geen internet nodig, en vrienden elders doen online mee met een uitnodigingslink of een code van 8 tekens. De gastheer kan Digitaal gooien aanzetten, en iedereen ziet de worp op zijn eigen telefoon landen. Dudo scoor je op één telefoon.
 
 ## Veelgestelde vragen
 
@@ -112,8 +116,10 @@ Ja. De bonus van 35 punten bij 63 volgt uit de bovensectie, en het scoreformulie
 plaats van het aan jou te vragen.
 
 **Hoeveel spelers kan ik tegelijk scoren?**
-Het scoreformulier maakt kolommen smaller om aan de tafel te passen in plaats van je te beperken tot
-een handig aantal, dus grote groepen passen nog steeds op één scherm.
+Yahtzee en Dudo zijn voor twee tot zes spelers, en het scoreformulier maakt de kolommen smaller zodat iedereen op één scherm past.
+
+**Kan ik online Yahtzee spelen met vrienden?**
+Ja. Met Samen spelen gebruiken tot zes spelers elk hun eigen telefoon: op dezelfde wifi is geen internet nodig, of nodig vrienden overal online uit met een link of een code van 8 tekens. Dudo is geen Samen-spelen-spel, dus daar houdt één telefoon de score bij.
 
 **Is er een weddenschap- of inzetmodus?**
 Nee. Nergens in Braggster wordt een inzet, weddenschap of uitbetaling geregistreerd. Dudo scoort wie
@@ -124,7 +130,7 @@ Ja. Gebruik Freestyle voor een kaart- en dobbeltafel met een vrij scoreformulier
 blanco scoreformulier voor werkelijk alles.
 
 **Heb ik een account nodig?**
-Nee. Braggster is lokaal-eerst: geen login, geen server, en je scores blijven op je toestel.
+Nee. Braggster kent geen login of registratie, en je scores blijven op je toestel. Ook online samen spelen vraagt geen account.
 
 ---
 

@@ -14,9 +14,10 @@ secondary_keywords:
   - "bonus yahtzee 35 points"
   - "regle du joker yahtzee"
   - "generala regles"
+  - "yams en ligne"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -24,6 +25,8 @@ schema:
 internal_links:
   - /games/
   - /blog/dice-game-score-sheets/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
 trademark_note: "Yahtzee est une marque déposée de son éditeur. Braggster n'est ni affilié ni approuvé par celui-ci, et le nom est utilisé uniquement à titre référentiel."
 ---
 
@@ -137,11 +140,7 @@ si un full vaut 25 points ou une somme.
 Pas de dés à la maison ? Active les dés numériques et lance à l'écran, garde ce que tu veux conserver,
 et l'app montre ce que ce lancer rapporterait dans chaque case ouverte.
 
-Avec [Jouer ensemble](/play-together/), jusqu'à six joueurs utilisent chacun leur propre téléphone sur
-le même Wi-Fi. Un téléphone ouvre une table et affiche un code QR, les autres le scannent, et chacun
-remplit sa propre colonne. Quand l'hôte active les dés numériques pour la table, le joueur dont c'est
-le tour lance sur son propre téléphone et tous les autres voient les dés tomber sur le leur. Pas de
-compte, pas d'internet, et seul l'hôte a besoin du jeu. Le pas à pas se trouve dans le
+Avec [Jouer ensemble](/play-together/), tu peux jouer au Yahtzee en ligne avec des amis ou dans la même pièce : jusqu'à six joueurs, un téléphone chacun. Sur le même Wi-Fi, pas besoin d'internet : un téléphone ouvre une table et affiche un code QR, les autres le scannent. Les amis qui sont ailleurs rejoignent avec un lien d'invitation ou un code de 8 caractères, et une même table peut mélanger les deux. Chacun remplit sa propre colonne. Quand l'hôte active le Lancer de dés numérique pour la table, le joueur dont c'est le tour lance sur son propre téléphone et tous les autres voient les dés tomber sur le leur. En ligne, la partie est chiffrée de bout en bout et le serveur relais ne peut pas la lire. Pas de compte, et seul l'hôte a besoin du jeu. Le pas à pas se trouve dans le
 [guide pour jouer ensemble sur plusieurs téléphones](/blog/play-games-together-on-multiple-phones/).
 
 ## Questions fréquentes
@@ -161,9 +160,8 @@ Non. Il compte la somme des cinq dés. C'est la case la plus souvent mal jouée 
 Si tu as pris un zéro dans la case Yahtzee, aucun bonus ne s'applique. La règle du Joker continue
 quand même à déterminer où placer les dés.
 
-**Peut-on jouer au Yahtzee sur plusieurs téléphones ?**
-Oui. Avec Jouer ensemble, jusqu'à six joueurs utilisent chacun leur propre téléphone sur le même Wi-Fi,
-avec des dés numériques partagés que tout le monde voit tomber.
+**Peut-on jouer au Yahtzee sur plusieurs téléphones, ou en ligne ?**
+Oui. Avec Jouer ensemble, jusqu'à six joueurs utilisent chacun leur propre téléphone : sur le même Wi-Fi, pas besoin d'internet, ou invite des amis où qu'ils soient avec un lien ou un code de 8 caractères. L'hôte peut activer le Lancer de dés numérique, que tout le monde voit tomber.
 
 **Le Kniffel, c'est la même chose que le Yahtzee ?**
 En pratique oui, et la même feuille de score couvre les deux, ainsi que le Yams et la famille

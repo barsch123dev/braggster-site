@@ -14,9 +14,10 @@ secondary_keywords:
   - "jugar backgammon sin conexion"
   - "backgammon puntuacion por partido"
   - "backgammon contra el ordenador"
+  - "jugar backgammon online con amigos"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -85,13 +86,11 @@ Se admiten dos aperturas:
 - **Nackgammon**, que retrasa dos fichas para que el juego inicial sea menos una carrera y más
   posicional.
 
-## Jugar juntos en dos móviles
+## Jugar juntos en dos móviles, cerca o por internet
 
 También puedes jugar con un móvil cada uno. Con [Jugar juntos](/play-together/), un móvil abre una
-mesa y muestra un código QR, el otro lo escanea, y ambos jugadores ven el mismo tablero en directo
-por la misma red wifi. Cada uno tira y mueve desde su propio móvil, el último movimiento se marca en
-ambos tableros, y la partida terminada anota 1, 2 o 3 en el marcador de los dos móviles. No hay
-cuenta ni internet de por medio, y solo el anfitrión necesita tener el juego. La
+mesa y muestra un código QR, el otro lo escanea, y ambos jugadores ven el mismo tablero en directo. Cada uno tira y mueve desde su propio móvil, el último movimiento se marca en
+ambos tableros, y la partida terminada anota 1, 2 o 3 en el marcador de los dos móviles. En la misma red wifi no hace falta internet, y para jugar backgammon online con amigos que estén lejos basta con enviar un enlace de invitación o el código de 8 caracteres. No hay cuenta, y solo el anfitrión necesita tener el juego. La
 [guía para jugar juntos en varios móviles](/blog/play-games-together-on-multiple-phones/) lo explica
 paso a paso.
 
@@ -131,9 +130,8 @@ la app.
 **¿Puedo jugar backgammon sin conexión contra el ordenador?**
 Sí. El motor corre por completo en tu dispositivo, sin conexión y sin cuenta necesaria.
 
-**¿Pueden dos personas jugar al backgammon en dos móviles?**
-Sí. Con Jugar juntos cada jugador usa su propio móvil por la misma red wifi. Uno abre una mesa, el
-otro escanea su código, y la partida se juega en directo en ambas pantallas.
+**¿Pueden dos personas jugar al backgammon en dos móviles, también online?**
+Sí. Con Jugar juntos cada jugador usa su propio móvil. Uno abre una mesa, el otro escanea su código, y la partida se juega en directo en ambas pantallas. En la misma red wifi no hace falta internet; los amigos que estén lejos se unen online con un enlace de invitación o el código de 8 caracteres.
 
 **¿Qué es Nackgammon?**
 Una posición inicial alternativa que retrasa dos fichas, lo que hace la apertura más posicional y

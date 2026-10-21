@@ -14,9 +14,10 @@ secondary_keywords:
   - "joker rule yahtzee"
   - "kniffel punkte"
   - "yams regles"
+  - "yahtzee online with friends"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -24,6 +25,8 @@ schema:
 internal_links:
   - /games/
   - /blog/dice-game-score-sheets/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
 trademark_note: "Yahtzee is a trademark of its publisher. Braggster is not affiliated with or endorsed by them and the name is used referentially only."
 ---
 
@@ -131,11 +134,7 @@ house is 25 or a sum.
 No dice in the house? Switch on the digital dice and roll on screen, hold what you want to keep, and
 the app shows what that roll would score in each open box.
 
-With [Play together](/play-together/), up to six players each use their own phone on the same Wi-Fi.
-One phone starts a table and shows a QR code, the others scan it, and everyone fills in their own
-column. When the host switches on digital dice for the table, the player whose turn it is throws on
-their own phone and everyone else watches the dice land on theirs. No account, no internet, and only
-the host needs the game. The step by step is in the
+With [Play together](/play-together/) you can play Yahtzee online with friends or in the same room: up to six players, a phone each. On the same Wi-Fi no internet is needed: one phone starts a table and shows a QR code, and the others scan it. Friends anywhere else join with an invite link or an 8-character code, and one table can mix both. Everyone fills in their own column. When the host switches on the Digital dice roll for the table, the player whose turn it is throws on their own phone and everyone else watches the dice land on theirs. Online, the match is end-to-end encrypted and the relay cannot read it. No account, and only the host needs the game. The step by step is in the
 [guide to playing together on several phones](/blog/play-games-together-on-multiple-phones/).
 
 ## Frequently asked questions
@@ -154,9 +153,8 @@ No. It scores the sum of all five dice. This is the most commonly misplayed box 
 If you took a zero in the Yahtzee box, no bonus applies. The Joker rule still governs where the dice
 get scored.
 
-**Can we play Yahtzee on several phones?**
-Yes. With Play together up to six players each use their own phone over the same Wi-Fi, with shared
-digital dice that everyone sees land.
+**Can we play Yahtzee on several phones, or online?**
+Yes. With Play together up to six players each use their own phone: on the same Wi-Fi no internet is needed, or invite friends anywhere online with a link or an 8-character code. The host can switch on a Digital dice roll that everyone watches land.
 
 **Is Kniffel the same as Yahtzee?**
 Effectively yes, and the same scorecard covers both, along with Yams and the Generala family.

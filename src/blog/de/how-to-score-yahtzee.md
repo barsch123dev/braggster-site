@@ -14,9 +14,10 @@ secondary_keywords:
   - "kniffel bonus"
   - "joker regel kniffel"
   - "kniffel spielanleitung"
+  - "kniffel online spielen"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -24,6 +25,8 @@ schema:
 internal_links:
   - /games/
   - /blog/dice-game-score-sheets/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
 trademark_note: "Yahtzee ist eine Marke des jeweiligen Verlags. Braggster steht in keiner Verbindung dazu, wird nicht unterstützt, und der Name wird ausschließlich beschreibend verwendet."
 ---
 
@@ -136,12 +139,8 @@ Full House 25 Punkte oder die Summe der Würfel wert ist.
 Keine Würfel im Haus? Schalte die digitalen Würfel ein und würfle auf dem Bildschirm, halte fest, was
 du behalten willst, und die App zeigt, was dieser Wurf in jedem offenen Feld einbringen würde.
 
-Mit [Gemeinsam spielen](/play-together/) nutzen bis zu sechs Spieler jeweils ihr eigenes Handy im
-selben WLAN. Ein Handy eröffnet einen Tisch und zeigt einen QR-Code, die anderen scannen ihn, und
-jeder füllt seine eigene Spalte aus. Schaltet der Gastgeber die digitalen Würfel für den Tisch ein,
-würfelt der Spieler, der dran ist, auf seinem eigenen Handy, und alle anderen sehen die Würfel auf
-ihrem landen. Kein Konto, kein Internet, und nur der Gastgeber braucht das Spiel. Die Schritt-für-Schritt-
-Anleitung steht im [Guide zum gemeinsamen Spielen auf mehreren Handys](/blog/play-games-together-on-multiple-phones/).
+Mit [Zusammen spielen](/play-together/) spielst du Yahtzee (Kniffel) online mit Freunden oder im selben Raum: bis zu sechs Spieler, jeweils ein eigenes Handy. Im selben WLAN braucht es kein Internet: Ein Handy eröffnet einen Tisch und zeigt einen QR-Code, die anderen scannen ihn. Freunde von anderswo steigen per Einladungslink oder mit einem Code aus 8 Zeichen ein, und ein Tisch kann beides mischen. Jeder füllt seine eigene Spalte aus. Schaltet der Gastgeber den Digitalen Würfelwurf für den Tisch ein, würfelt der Spieler, der dran ist, auf seinem eigenen Handy, und alle anderen sehen die Würfel auf ihrem landen. Online ist die Partie Ende-zu-Ende verschlüsselt, der Relay-Server kann sie nicht lesen. Kein Konto, und nur der Gastgeber braucht das Spiel. Die Anleitung Schritt für Schritt steht im
+[Guide zum gemeinsamen Spielen auf mehreren Handys](/blog/play-games-together-on-multiple-phones/).
 
 ## Häufige Fragen
 
@@ -161,9 +160,8 @@ Zettel.
 Hast du eine Null ins Kniffel Feld eingetragen, gibt es keinen Bonus mehr. Die Jokerregel bestimmt
 trotzdem, wo die Würfel eingetragen werden.
 
-**Können wir Yahtzee auf mehreren Handys spielen?**
-Ja. Mit Gemeinsam spielen nutzen bis zu sechs Spieler jeweils ihr eigenes Handy im selben WLAN, mit
-gemeinsamen digitalen Würfeln, die alle landen sehen.
+**Können wir Yahtzee auf mehreren Handys spielen, auch online?**
+Ja. Mit Zusammen spielen nutzen bis zu sechs Spieler jeweils ihr eigenes Handy: im selben WLAN braucht es kein Internet, oder du lädst Freunde von überall per Link oder Code aus 8 Zeichen ein. Der Gastgeber kann den Digitalen Würfelwurf einschalten, den alle landen sehen.
 
 **Ist Kniffel dasselbe wie Yahtzee?**
 Im Grunde ja, und derselbe Punktezettel deckt beide ab, zusammen mit Yams und der Generala Familie.

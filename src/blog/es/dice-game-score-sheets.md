@@ -15,6 +15,7 @@ secondary_keywords:
   - "app tirar dados online"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -26,6 +27,7 @@ internal_links:
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/puzzle-games/
+  - /play-together/
 trademark_note: "Yahtzee es una marca registrada de su editor. Braggster no está afiliada a ellos ni cuenta con su respaldo, y el nombre se usa solo con fines descriptivos."
 ---
 
@@ -103,9 +105,11 @@ tenga su propia hoja.
 
 ## Cuando faltan los dados
 
-El dado de Braggster es compartido en toda la app en lugar de estar pegado a un solo juego, así que
-cualquier juego con una configuración de dados puede tirarlos en pantalla. Eso cubre el caso
-habitual de tener las reglas, los jugadores y los aperitivos listos, pero los dados en otra bolsa.
+El dado de Braggster es compartido en toda la app en lugar de estar pegado a un solo juego: Yahtzee tiene su Tirada de dados digital, Backgammon tira sobre su propio tablero y Freestyle tira tantos dados como pidas. Eso cubre el caso habitual de tener las reglas, los jugadores y los aperitivos listos, pero los dados en otra bolsa.
+
+## Yahtzee online con amigos
+
+Yahtzee es el único juego de dados con [Jugar juntos](/play-together/): hasta seis jugadores, un móvil cada uno. En la misma red wifi no hace falta internet, y los amigos que estén en otro sitio se unen online con un enlace de invitación o un código de 8 caracteres. El anfitrión puede activar la Tirada de dados digital y todos ven caer la tirada en su propio móvil. Dudo se puntúa en un solo móvil.
 
 ## Preguntas frecuentes
 
@@ -114,8 +118,10 @@ Sí. El bonus de 35 puntos al llegar a 63 surge de la sección superior, y el ma
 que tengas que hacerlo tú.
 
 **¿A cuántos jugadores puedo llevarles la puntuación a la vez?**
-El marcador comprime las columnas para caber en la mesa en lugar de limitarte a un número cómodo,
-así que los grupos grandes siguen cabiendo en una sola pantalla.
+Yahtzee y Dudo admiten de dos a seis jugadores, y el marcador comprime las columnas para que todos quepan en una sola pantalla.
+
+**¿Puedo jugar al Yahtzee online con amigos?**
+Sí. Con Jugar juntos, hasta seis jugadores usan cada uno su propio móvil: en la misma red wifi no hace falta internet, o invita a amigos desde cualquier lugar con un enlace o un código de 8 caracteres. Dudo no tiene Jugar juntos, así que un solo móvil lleva su puntuación.
 
 **¿Hay algún modo de apuestas?**
 No. Nada en toda la app registra una apuesta, una cantidad puesta en juego ni un pago. Dudo puntúa
@@ -126,8 +132,7 @@ Sí. Usa Freestyle para una mesa de cartas y dados con marcador libre, o la hoja
 gratis, para cualquier cosa.
 
 **¿Necesito una cuenta?**
-No. Braggster funciona sin conexión a un servidor: sin inicio de sesión, sin backend, y tu
-puntuación se queda en tu dispositivo.
+No. Braggster no pide inicio de sesión ni registro, y tu puntuación se queda en tu dispositivo. Jugar juntos online tampoco necesita cuenta.
 
 ---
 

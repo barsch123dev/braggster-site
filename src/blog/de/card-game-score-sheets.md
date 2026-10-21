@@ -15,7 +15,7 @@ secondary_keywords:
   - "digitaler punktezettel karten"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -156,8 +156,8 @@ deine Region vorgefiltert werden kann:
 | Spanien | Mus, Briscola, Scopa |
 | Brasilien, Argentinien, Chile | Truco, Canasta, Briscola, Scopa |
 | Ecuador, Kolumbien, Bolivien | Cuarenta, Truco |
-| Mexiko, Zentralamerika | Loteria, Burro, Dominoes |
-| Karibik | All Fours, Spades, Whist, Dominoes |
+| Mexiko, Zentralamerika | Loteria, Burro |
+| Karibik | All Fours, Spades, Whist |
 | Großbritannien, Irland | Whist, Twenty-Five, Bridge |
 | USA, Kanada | Euchre, Spades, Hearts, Poker |
 | Australien, Neuseeland | 500, Euchre, Bridge |
@@ -166,7 +166,7 @@ deine Region vorgefiltert werden kann:
 
 **Brauche ich ein Konto, um Punkte zu führen?**
 Nein. Braggster ist lokal: Partien, Spieler und Statistiken liegen auf deinem Gerät, es gibt kein
-Login und keinen Server, bei dem du dich anmelden müsstest.
+Login und kein Konto, das du anlegen müsstest.
 
 **Kann ich es offline nutzen?**
 Ja. Nichts im Wertungsweg braucht eine Verbindung.

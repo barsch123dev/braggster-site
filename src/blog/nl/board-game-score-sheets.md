@@ -15,7 +15,7 @@ secondary_keywords:
   - "bordspellen scoretracker"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -98,9 +98,7 @@ dus een potje dat je in de app speelde kan nooit anders scoren dan een potje dat
 
 Elk bord werkt als doorgeefspel op één telefoon. Chess, Checkers, International draughts, Othello en
 Backgammon spelen ook op twee telefoons met [Samen spelen](/play-together/): één telefoon start een
-tafel en toont een QR-code, de ander scant die, en elke speler zet vanaf zijn eigen telefoon via
-dezelfde wifi. De laatste zet wordt op beide borden gemarkeerd, er is geen account en geen internet
-nodig, en meedoen is gratis. Het stappenplan, inclusief wat je doet als een tafel niet verschijnt, staat
+tafel en toont een QR-code, de ander scant die, en elke speler zet vanaf zijn eigen telefoon. Op dezelfde wifi is geen internet nodig, en vrienden elders doen online mee met een uitnodigingslink of een code van 8 tekens. De laatste zet wordt op beide borden gemarkeerd, er is geen account nodig, en meedoen is gratis. Het stappenplan, inclusief wat je doet als een tafel niet verschijnt, staat
 in de [uitleg over samen spelen op meerdere telefoons](/blog/play-games-together-on-multiple-phones/).
 
 ## Spelen tegen de computer
@@ -135,8 +133,7 @@ Ja. De speelbare borden zijn hotseat, oftewel om de beurt: je geeft het toestel 
 account nodig.
 
 **Kunnen we ook op twee telefoons spelen?**
-Ja, bij Chess, Checkers, International draughts, Othello en Backgammon. Met Samen spelen gebruikt elke
-speler zijn eigen telefoon via dezelfde wifi, zonder account en zonder internetverbinding.
+Ja, bij Chess, Checkers, International draughts, Othello en Backgammon. Met Samen spelen gebruikt elke speler zijn eigen telefoon, op dezelfde wifi zonder internet of online via een uitnodigingslink, en in beide gevallen zonder account.
 
 **Werkt de app voor een bordspel dat niet in de lijst staat?**
 Ja. Het altijd gratis blanco scoreformulier houdt score voor alles, en er is een algemeen

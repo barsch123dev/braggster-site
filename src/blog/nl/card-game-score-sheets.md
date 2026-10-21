@@ -15,7 +15,7 @@ secondary_keywords:
   - "digitaal scoreformulier kaarten"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -155,8 +155,8 @@ met de landen waar het gangbaar is, zodat de catalogus voor te filteren is op jo
 | Spanje | Mus, Briscola, Scopa |
 | Brazilië, Argentinië, Chili | Truco, Canasta, Briscola, Scopa |
 | Ecuador, Colombia, Bolivia | Cuarenta, Truco |
-| Mexico, Midden-Amerika | Loteria, Burro, Dominoes |
-| Caribisch gebied | All Fours, Spades, Whist, Dominoes |
+| Mexico, Midden-Amerika | Loteria, Burro |
+| Caribisch gebied | All Fours, Spades, Whist |
 | VK, Ierland | Whist, Twenty-Five, Bridge |
 | VS, Canada | Euchre, Spades, Hearts, Poker |
 | Australië, Nieuw-Zeeland | 500, Euchre, Bridge |
@@ -165,7 +165,7 @@ met de landen waar het gangbaar is, zodat de catalogus voor te filteren is op jo
 
 **Heb ik een account nodig om score bij te houden?**
 Nee. Braggster is lokaal-eerst: wedstrijden, spelers en statistieken staan op je toestel, er is geen
-login, en er is geen server om je bij aan te melden.
+login, en er is geen account om aan te maken.
 
 **Kan ik het offline gebruiken?**
 Ja. Niets in het scoreproces heeft een verbinding nodig.

@@ -15,7 +15,7 @@ secondary_keywords:
   - "digital score sheet cards"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -145,8 +145,8 @@ where it is a staple, so the catalogue can pre-filter to your region:
 | Spain | Mus, Briscola, Scopa |
 | Brazil, Argentina, Chile | Truco, Canasta, Briscola, Scopa |
 | Ecuador, Colombia, Bolivia | Cuarenta, Truco |
-| Mexico, Central America | Loteria, Burro, Dominoes |
-| Caribbean | All Fours, Spades, Whist, Dominoes |
+| Mexico, Central America | Loteria, Burro |
+| Caribbean | All Fours, Spades, Whist |
 | UK, Ireland | Whist, Twenty-Five, Bridge |
 | US, Canada | Euchre, Spades, Hearts, Poker |
 | Australia, New Zealand | 500, Euchre, Bridge |
@@ -155,7 +155,7 @@ where it is a staple, so the catalogue can pre-filter to your region:
 
 **Do I need an account to keep score?**
 No. Braggster is local first: matches, players and statistics live on your device, there is no login,
-and there is no backend to sign up for.
+and there is no account to create.
 
 **Can I use it offline?**
 Yes. Nothing in the scoring path needs a connection.

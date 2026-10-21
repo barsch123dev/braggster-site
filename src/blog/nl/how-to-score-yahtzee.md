@@ -14,9 +14,10 @@ secondary_keywords:
   - "joker regel yahtzee"
   - "kniffel punkte"
   - "yams regles"
+  - "yahtzee online met vrienden"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -24,6 +25,8 @@ schema:
 internal_links:
   - /games/
   - /blog/dice-game-score-sheets/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
 trademark_note: "Yahtzee is een handelsmerk van zijn uitgever. Braggster is niet aan hen verbonden en wordt niet door hen goedgekeurd, en de naam wordt uitsluitend beschrijvend gebruikt."
 ---
 
@@ -132,11 +135,7 @@ Het regelscherm bevat de volledige categorietabel, zodat niemand hoeft te onthou
 Geen dobbelstenen in huis? Zet de digitale dobbelstenen aan en gooi op het scherm, houd vast wat je wilt
 bewaren, en de app toont wat die worp in elk open vak zou scoren.
 
-Met [Samen spelen](/play-together/) gebruiken tot zes spelers elk hun eigen telefoon op dezelfde wifi.
-Eén telefoon start een tafel en toont een QR-code, de anderen scannen die, en iedereen vult zijn eigen
-kolom in. Zet de gastheer de digitale dobbelstenen aan voor de tafel, dan gooit de speler die aan de beurt
-is op zijn eigen telefoon en zien de anderen de dobbelstenen op hun eigen scherm landen. Geen account,
-geen internet, en alleen de gastheer heeft het spel nodig. Het stappenplan staat in de
+Met [Samen spelen](/play-together/) speel je Yahtzee online met vrienden of gewoon in dezelfde kamer: tot zes spelers, elk met een eigen telefoon. Op dezelfde wifi is geen internet nodig: één telefoon start een tafel en toont een QR-code, de anderen scannen die. Vrienden elders doen mee met een uitnodigingslink of een code van 8 tekens, en één tafel kan beide mixen. Iedereen vult zijn eigen kolom in. Zet de gastheer Digitaal gooien aan voor de tafel, dan gooit de speler die aan de beurt is op zijn eigen telefoon en zien de anderen de dobbelstenen op hun eigen scherm landen. Online is de partij end-to-end versleuteld en kan de relayserver niets lezen. Geen account, en alleen de gastheer heeft het spel nodig. Het stappenplan staat in de
 [uitleg over samen spelen op meerdere telefoons](/blog/play-games-together-on-multiple-phones/).
 
 ## Veelgestelde vragen
@@ -156,9 +155,8 @@ wordt.
 Heb je een nul genomen in het Yahtzee-vak, dan geldt er geen bonus. De Joker-regel bepaalt nog steeds
 waar de dobbelstenen gescoord worden.
 
-**Kunnen we Yahtzee op meerdere telefoons spelen?**
-Ja. Met Samen spelen gebruiken tot zes spelers elk hun eigen telefoon via dezelfde wifi, met gedeelde
-digitale dobbelstenen die iedereen ziet landen.
+**Kunnen we Yahtzee op meerdere telefoons spelen, ook online?**
+Ja. Met Samen spelen gebruiken tot zes spelers elk hun eigen telefoon: op dezelfde wifi is geen internet nodig, of nodig vrienden overal online uit met een link of een code van 8 tekens. De gastheer kan Digitaal gooien aanzetten, dat iedereen ziet landen.
 
 **Is Kniffel hetzelfde als Yahtzee?**
 Vrijwel wel, en hetzelfde scoreformulier dekt beide, samen met Yams en de Generala-familie.

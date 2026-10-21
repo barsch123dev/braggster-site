@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Bridge Scoring Explained: Contracts, Vulnerability and Rubbers
@@ -81,8 +82,8 @@ A double multiplies the trick score and sharpens the penalties considerably. Red
 again. A doubled contract that makes also collects a bonus for the insult, and a doubled contract
 that fails escalates fast:
 
-Non vulnerable doubled undertricks run 100, 300, 500, then 300 each thereafter. Vulnerable doubled
-undertricks run 200, then 300 each. This is the layer where a paper score sheet most often goes
+Non vulnerable doubled undertricks cost 100 for the first, 200 each for the second and third, then
+300 each. Vulnerable doubled undertricks cost 200 for the first, then 300 each. This is the layer where a paper score sheet most often goes
 wrong, because the sequence is not a flat rate.
 
 ## Layer five: overtricks and honours
@@ -105,6 +106,17 @@ bonuses are awarded per hand rather than per rubber.
 Braggster gives Bridge a scorecard for four players in two fixed partnerships on a standard 52 card
 deck, so the sides are set up correctly from the start rather than being four independent columns you
 have to remember to pair.
+
+The scorecard follows the paper pad: one column per partnership, with a line across the middle.
+For each deal you enter who played the contract, the bid level, the trump suit, any double or
+redouble, whether that side is vulnerable and how many tricks it won. Braggster writes the contract
+points below the line in the declaring side's column and the bonuses above it, or the penalty above
+the line for the defenders if the contract goes down, and keeps a total for each side. Rubber and
+Duplicate are both there.
+
+It scores each deal on its own, so you switch the vulnerable setting on yourself once a side has won
+its first game. It adds the game bonus when a deal's contract reaches 100, and it does not carry part
+scores forward or add the rubber bonus or honours, so add those on top if your table plays them.
 
 The point of a digital sheet here is not that Bridge scoring is impossible by hand. It is that the
 doubled undertrick sequence and the vulnerability switch are exactly the kind of rule that gets

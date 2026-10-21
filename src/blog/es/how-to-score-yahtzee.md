@@ -14,9 +14,10 @@ secondary_keywords:
   - "regla del comodin yahtzee"
   - "generala reglas puntuacion"
   - "yahtzee como se juega"
+  - "jugar yahtzee online"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -24,6 +25,8 @@ schema:
 internal_links:
   - /games/
   - /blog/dice-game-score-sheets/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
 trademark_note: "Yahtzee es una marca registrada de su editor. Braggster no está afiliada a ellos ni cuenta con su respaldo, y el nombre se usa solo con fines descriptivos."
 ---
 
@@ -135,11 +138,7 @@ recordar si un full vale 25 o una suma.
 ¿No hay dados en casa? Activa los dados digitales y tira en la pantalla, aparta los que quieras
 conservar, y la app muestra lo que esa tirada puntuaría en cada casilla libre.
 
-Con [Jugar juntos](/play-together/), hasta seis jugadores usan cada uno su propio móvil por la misma
-red wifi. Un móvil abre una mesa y muestra un código QR, los demás lo escanean, y cada uno rellena
-su propia columna. Cuando el anfitrión activa los dados digitales para la mesa, el jugador que tiene
-el turno tira en su propio móvil y los demás ven caer los dados en el suyo. Sin cuenta, sin internet,
-y solo el anfitrión necesita tener el juego. El paso a paso está en la
+Con [Jugar juntos](/play-together/) puedes jugar al Yahtzee online con amigos o en la misma sala: hasta seis jugadores, un móvil cada uno. En la misma red wifi no hace falta internet: un móvil abre una mesa y muestra un código QR, y los demás lo escanean. Los amigos que estén en otro sitio se unen con un enlace de invitación o un código de 8 caracteres, y una misma mesa puede mezclar ambos. Cada uno rellena su propia columna. Cuando el anfitrión activa la Tirada de dados digital para la mesa, el jugador que tiene el turno tira en su propio móvil y los demás ven caer los dados en el suyo. Online, la partida va cifrada de extremo a extremo y el servidor de retransmisión no puede leerla. Sin cuenta, y solo el anfitrión necesita tener el juego. El paso a paso está en la
 [guía para jugar juntos en varios móviles](/blog/play-games-together-on-multiple-phones/).
 
 ## Preguntas frecuentes
@@ -159,9 +158,8 @@ No. Puntúa la suma de los cinco dados. Es la casilla que más se puntúa mal en
 Si te llevaste un cero en la casilla de Yahtzee, no se aplica ningún bonus. La regla del comodín
 sigue decidiendo dónde se anotan los dados.
 
-**¿Podemos jugar al Yahtzee en varios móviles?**
-Sí. Con Jugar juntos, hasta seis jugadores usan cada uno su propio móvil por la misma red wifi, con
-dados digitales compartidos que todos ven caer.
+**¿Podemos jugar al Yahtzee en varios móviles, o online?**
+Sí. Con Jugar juntos, hasta seis jugadores usan cada uno su propio móvil: en la misma red wifi no hace falta internet, o invita a amigos desde cualquier lugar con un enlace o un código de 8 caracteres. El anfitrión puede activar la Tirada de dados digital, que todos ven caer.
 
 **¿Kniffel es lo mismo que Yahtzee?**
 En la práctica sí, y el mismo marcador cubre ambos, junto con Yams y la familia Generala.

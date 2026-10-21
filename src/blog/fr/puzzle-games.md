@@ -15,7 +15,7 @@ secondary_keywords:
   - "jeux de reflexion hors ligne"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -51,8 +51,8 @@ niveaux plus difficiles non.
 
 **Killer Sudoku.** La grille du Sudoku, plus un découpage des 81 cases en zones, chacune affichant
 une somme. Les chiffres de chaque zone sont tous différents et s'additionnent à cette somme. Les
-puzzles Killer démarrent en général avec peu d'indices, voire aucun, parce que ce sont les zones
-qui portent la contrainte.
+puzzles Killer démarrent avec bien moins d'indices qu'un Sudoku classique, parce que les zones portent
+une partie de la contrainte : environ 32 en Débutant, une douzaine en Diabolique.
 
 **Kakuro.** Le puzzle des sommes croisées. Chaque suite de cases blanches contient des chiffres
 distincts de 1 à 9 dont la somme correspond à l'indice en tête de suite. Les grilles vont de 6x6 à
@@ -190,8 +190,9 @@ Aucune publicité dans l'app. Le chronomètre alimente ton score, mais rien n'ex
 t'interrompt.
 
 **Quels puzzles sont disponibles dans ma langue ?**
-Sudoku et Logikwis sont disponibles dans les sept langues de l'app. Les puzzles de mots sont par
-nature spécifiques à une langue, et chacun propose désormais ses propres listes de mots et d'indices dans les sept.
+Les dix-huit sont disponibles dans les sept langues de l'app. Les puzzles de chiffres et de logique ne
+dépendent pas de la langue, et les puzzles de mots sont par nature spécifiques à une langue : leurs
+mots et leurs indices suivent la langue de l'app, avec leurs propres listes dans les sept.
 
 **Puis-je jouer avec des notes au crayon ?**
 Oui, sur les puzzles à grille de chiffres. Binairo et Nonogram utilisent à la place une grammaire

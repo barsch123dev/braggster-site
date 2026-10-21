@@ -15,7 +15,7 @@ secondary_keywords:
   - "tabellone giochi da tavolo app"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -38,7 +38,7 @@ trademark_note: "Rummikub, Cluedo, Connect Four e Othello sono marchi dei rispet
 I giochi da tavolo si dividono in due gruppi scomodi quando si tratta di punteggio. Alcuni producono
 un numero che cresce a ogni turno, come Dominoes e Rummikub, e vogliono un vero segnapunti che
 calcoli per te. Altri non producono nulla dentro una singola partita: Chess e Tic Tac Toe finiscono
-e basta, e quello che vuoi davvero tracciare e il conteggio delle vittorie lungo tutta la serata.
+e basta, e quello che vuoi davvero tracciare è il conteggio delle vittorie lungo tutta la serata.
 
 Braggster gestisce entrambi i casi, e per otto giochi da tavolo ti dà anche il tabellone stesso, su
 un telefono solo o, per cinque di questi, con un telefono a testa.
@@ -47,17 +47,17 @@ un telefono solo o, per cinque di questi, con un telefono a testa.
 
 **Dominoes** corre verso un obiettivo, 100 in Block e Draw, 150 in All Fives, sui pallini che
 restano in mano agli avversari. All Fives aggiunge punteggio durante la partita ogni volta che gli
-estremi aperti totalizzano un multiplo di cinque, ed e proprio li che un foglio di carta comincia a
+estremi aperti totalizzano un multiplo di cinque, ed è proprio lì che un foglio di carta comincia a
 perdere il conto.
 
-**Rummikub** e il rummy con le tessere: alla fine di un round conti le tessere rimaste sul tuo
+**Rummikub** è il rummy con le tessere: alla fine di un round conti le tessere rimaste sul tuo
 leggio come valore negativo, e il vincitore incassa il resto. Oscillazioni grandi, molta aritmetica,
 un caso da manuale per un segnapunti che fa i conti al posto tuo.
 
-**Cluedo** e il caso a parte. E deduzione, non punteggio, quindi Braggster gli affianca un blocco
+**Cluedo** è il caso a parte. È deduzione, non punteggio, quindi Braggster gli affianca un blocco
 notes da investigatore privato invece di un segnapunti: una colonna per la busta con la soluzione e
-una per gli appunti liberi, su tutte le 21 carte. Non ci sono colonne per avversario, perche l'app
-non distribuisce ne vede mai la mano di nessuno. E il tuo blocco notes, sul tuo dispositivo.
+una per gli appunti liberi, su tutte le 21 carte. Non ci sono colonne per avversario, perché l'app
+non distribuisce né vede mai la mano di nessuno. È il tuo blocco notes, sul tuo dispositivo.
 
 Approfondimenti: [punteggio Dominoes](/blog/how-to-score-dominoes/),
 [punteggio Rummikub](/blog/how-to-score-rummikub/).
@@ -67,11 +67,11 @@ Approfondimenti: [punteggio Dominoes](/blog/how-to-score-dominoes/),
 Chess, Checkers, International draughts, Othello, Connect Four e Tic Tac Toe hanno un solo
 risultato per partita: qualcuno vince, oppure è pareggio. Non c'è nessun numero da scrivere.
 
-Braggster tratta una partita finita come un round che vale una vittoria, cosi la sfida diventa un
+Braggster tratta una partita finita come un round che vale una vittoria, così la sfida diventa un
 conteggio di sessione. Corrisponde a come si gioca davvero a questi giochi: non una partita sola, ma
-una serie, e il numero interessante e 5 a 3, non la posizione sulla scacchiera.
+una serie, e il numero interessante è 5 a 3, non la posizione sulla scacchiera.
 
-Backgammon sta a meta strada tra i due gruppi. Una partita finita vale 1 punto per una vittoria
+Backgammon sta a metà strada tra i due gruppi. Una partita finita vale 1 punto per una vittoria
 semplice, 2 per un gammon e 3 per un backgammon, e quei punti si accumulano in un conteggio
 progressivo.
 
@@ -93,16 +93,14 @@ Otto giochi da tavolo in Braggster sono giocabili direttamente dal dispositivo, 
 | [Tic Tac Toe](/games/tictactoe/) | Griglia 3x3 hotseat con rilevamento automatico di vittoria e pareggio |
 
 Ognuno di questi registra il risultato attraverso lo stesso percorso di un round inserito a mano,
-quindi una partita giocata nell'app non puo mai avere un punteggio diverso da una inserita
+quindi una partita giocata nell'app non può mai avere un punteggio diverso da una inserita
 manualmente.
 
 ## Gioca insieme, un telefono a testa
 
 Ogni tabellone funziona anche in hotseat su un solo telefono. Chess, Checkers, International
 draughts, Othello e Backgammon si giocano anche su due telefoni con [Gioca
-insieme](/play-together/): un telefono apre un tavolo e mostra un codice QR, l'altro lo scansiona, e
-ogni giocatore muove dal proprio telefono sulla stessa rete Wi-Fi. L'ultima mossa resta segnata su
-entrambi i tabelloni, non c'è nessun account né internet coinvolti, e partecipare è gratis. La guida
+insieme](/play-together/): un telefono apre un tavolo e mostra un codice QR, l'altro lo scansiona, e ogni giocatore muove dal proprio telefono. Sulla stessa rete Wi-Fi non serve internet, e gli amici lontani si uniscono online con un link di invito o un codice di 8 caratteri. L'ultima mossa resta segnata su entrambi i tabelloni, non serve nessun account, e partecipare è gratis. La guida
 passo passo, compreso cosa fare quando un tavolo non compare, è nella [guida per giocare insieme su
 più telefoni](/blog/play-games-together-on-multiple-phones/).
 
@@ -118,18 +116,18 @@ tre livelli:
   catture e una sola mossa.
 - **Othello** cerca con una tabella di pesi per casella più la mobilità, e conta i dischi solo nel
   finale di partita.
-- **Backgammon** non puo usare l'alpha beta, perche i dadi rendono ogni nodo un nodo di probabilita.
+- **Backgammon** non può usare l'alpha beta, perché i dadi rendono ogni nodo un nodo di probabilità.
   Al suo posto gira un expectimax sui ventuno tiri distinti possibili.
 
-Tutti e cinque girano su un processo in background, cosi il tabellone resta reattivo mentre il
+Tutti e cinque girano su un processo in background, così il tabellone resta reattivo mentre il
 motore pensa. Le partite di allenamento non vengono mai registrate, quindi non influenzano le tue
-statistiche ne il tuo tasso di vittorie.
+statistiche né il tuo tasso di vittorie.
 
-## Accessibilita integrata, non aggiunta dopo
+## Accessibilità integrata, non aggiunta dopo
 
 Ogni tabellone in Braggster distingue i pezzi per forma oltre che per colore. Connect Four usa un
-disco pieno contro un anello con un punto al centro invece di rosso contro giallo, perche il colore
-non e mai l'unico segnale nell'app. I tabelloni da 12x12 in su usano pizzico per zoomare e trascinare
+disco pieno contro un anello con un punto al centro invece di rosso contro giallo, perché il colore
+non è mai l'unico segnale nell'app. I tabelloni da 12x12 in su usano pizzico per zoomare e trascinare
 invece di rimpicciolire le celle sotto una dimensione comoda al tocco.
 
 ## Domande frequenti
@@ -139,21 +137,19 @@ Sì. I tabelloni giocabili sono hotseat, cioè passi il dispositivo al tavolo. N
 account.
 
 **Possiamo giocare su due telefoni invece che uno?**
-Sì, per Chess, Checkers, International draughts, Othello e Backgammon. Con Gioca insieme ogni
-giocatore usa il proprio telefono sulla stessa rete Wi-Fi, senza nessun account e senza connessione
-internet.
+Sì, per Chess, Checkers, International draughts, Othello e Backgammon. Con Gioca insieme ogni giocatore usa il proprio telefono, sulla stessa rete Wi-Fi senza internet oppure online con un link di invito, e in entrambi i casi senza nessun account.
 
-**L'app funziona per un gioco da tavolo che non e nell'elenco?**
-Si. Il segnapunti vuoto, sempre gratuito, tiene il punteggio di qualsiasi cosa, e c'e un segnapunti
+**L'app funziona per un gioco da tavolo che non è nell'elenco?**
+Sì. Il segnapunti vuoto, sempre gratuito, tiene il punteggio di qualsiasi cosa, e c'è un segnapunti
 generico per i giochi da tavolo non tracciati.
 
 **Le partite contro il computer contano nelle mie statistiche?**
 No. Le partite di allenamento contro il computer non vengono mai registrate, di proposito.
 
-**C'e un dado raddoppiante in Backgammon?**
-No. Non c'e nessun dado raddoppiante e in nessuna parte dell'app viene messo in gioco qualcosa.
+**C'è un dado raddoppiante in Backgammon?**
+No. Non c'è nessun dado raddoppiante e in nessuna parte dell'app viene messo in gioco qualcosa.
 
-**Perche Sudoku compare tra i giochi da tavolo in alcune pagine?**
+**Perché Sudoku compare tra i giochi da tavolo in alcune pagine?**
 Non dovrebbe. Sudoku appartiene ai puzzle, insieme agli altri diciassette puzzle in solitaria che
 Braggster offre ora nella loro scheda Puzzle. Vedi la [guida ai puzzle](/blog/puzzle-games/).
 

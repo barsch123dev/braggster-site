@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Le calcul des points au Solitaire : Klondike, Vegas et le tirage par trois
@@ -71,7 +72,10 @@ bien joué cette partie ». Le Vegas demande « quelle part de la partie as-tu r
 Vegas est celui qu'il vaut la peine de suivre sur de nombreuses parties, parce qu'il se compare d'une
 partie à l'autre d'une façon qu'un score de progression ne permet pas.
 
-Braggster propose les deux.
+Braggster propose les deux. Avec Vegas, tu saisis combien de cartes ont atteint les fondations, de 0 à
+52, et l'appli en tire un score net pour ton total courant : cinq points par carte moins 52, donc une
+donne complète rapporte +208 et une donne vide -52. Avec le standard, tu saisis toi-même le total de
+points de la donne.
 
 ## Tirage un contre tirage trois
 

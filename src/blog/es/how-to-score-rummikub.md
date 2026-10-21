@@ -16,6 +16,7 @@ secondary_keywords:
   - "hoja de puntuacion rummy de fichas"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -116,8 +117,7 @@ regla de manipulación y es el corazón del juego.
 
 **¿Braggster tiene un tablero jugable de Rummikub?**
 No. Rummikub en Braggster es un marcador que calcula para un juego real sobre la mesa. Los juegos de
-mesa con partida jugable dentro de la app son Chess, Checkers, las damas internacionales,
-Backgammon, Dominoes, Connect Four y Tic Tac Toe.
+mesa con partida jugable dentro de la app son Chess, Checkers, las damas internacionales, Othello, Backgammon, Dominoes, Connect Four y Tic Tac Toe.
 
 ---
 

@@ -15,6 +15,7 @@ secondary_keywords:
   - "würfel app online"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -26,6 +27,7 @@ internal_links:
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/puzzle-games/
+  - /play-together/
 trademark_note: "Yahtzee ist eine Marke des jeweiligen Verlags. Braggster steht in keiner Verbindung dazu, wird nicht unterstützt, und der Name wird ausschließlich beschreibend verwendet."
 ---
 
@@ -102,10 +104,11 @@ keinen eigenen Zettel hat.
 
 ## Wenn die Würfel fehlen
 
-Braggsters Würfel-Roller ist app-weit verfügbar statt an ein einzelnes Spiel gebunden, jedes Spiel mit
-einer Würfelkonfiguration kann also direkt auf dem Bildschirm würfeln. Das deckt den Haushaltsfall ab,
-in dem du die Regeln, die Spieler und die Snacks hast, aber die Würfel in einer anderen Tasche
-stecken.
+Braggsters Würfel-Roller ist app-weit verfügbar statt an ein einzelnes Spiel gebunden: Yahtzee hat den Digitalen Würfelwurf, Backgammon würfelt auf seinem eigenen Brett und Freestyle würfelt so viele Würfel, wie du angibst. Das deckt den Haushaltsfall ab, in dem du die Regeln, die Spieler und die Snacks hast, aber die Würfel in einer anderen Tasche stecken.
+
+## Yahtzee (Kniffel) online mit Freunden
+
+Yahtzee ist das einzige Würfelspiel mit [Zusammen spielen](/play-together/): bis zu sechs Spieler, ein Handy pro Person. Im selben WLAN braucht es kein Internet, und Freunde von überall steigen online per Einladungslink oder mit einem Code aus 8 Zeichen ein. Der Gastgeber kann den Digitalen Würfelwurf einschalten, und alle sehen den Wurf auf ihrem eigenen Handy landen. Dudo wird auf einem Handy gewertet.
 
 ## Häufige Fragen
 
@@ -114,8 +117,10 @@ Ja. Der 35-Punkte-Bonus ab 63 ergibt sich aus dem oberen Block, und der Zettel b
 dich danach zu fragen.
 
 **Wie viele Spieler kann ich gleichzeitig werten?**
-Der Zettel schrumpft Spalten, damit sie zum Tisch passen, statt dich auf eine bequeme Anzahl zu
-begrenzen, größere Gruppen passen also trotzdem auf einen Bildschirm.
+Yahtzee und Dudo sind für zwei bis sechs Spieler, und der Zettel schrumpft die Spalten, damit alle auf einen Bildschirm passen.
+
+**Kann ich Yahtzee (Kniffel) online mit Freunden spielen?**
+Ja. Mit Zusammen spielen nutzen bis zu sechs Spieler jeweils ihr eigenes Handy: im selben WLAN braucht es kein Internet, oder du lädst Freunde von überall per Link oder Code aus 8 Zeichen ein. Dudo hat kein Zusammen spielen, dort führt ein Handy die Wertung.
 
 **Gibt es einen Einsatz- oder Wett-Modus?**
 Nein. Nirgendwo in Braggster wird ein Einsatz, ein Pot oder eine Auszahlung gespeichert. Dudo wertet,
@@ -126,7 +131,7 @@ Ja. Nutz Freestyle für einen Karten- und Würfeltisch mit freiformigem Punkteze
 kostenlosen Blank-Punktezettel für alles.
 
 **Brauche ich ein Konto?**
-Nein. Braggster ist lokal: kein Login, kein Server, deine Punkte bleiben auf deinem Gerät.
+Nein. Braggster kennt weder Login noch Registrierung, und deine Punkte bleiben auf deinem Gerät. Auch Zusammen spielen online braucht kein Konto.
 
 ---
 

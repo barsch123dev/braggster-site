@@ -16,6 +16,7 @@ secondary_keywords:
   - "mijnenveger spelen"
 search_intent: informational
 priority: 1
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -49,7 +50,7 @@ Braggster heeft vijf niveaus:
 | Makkelijk | 9x9 | 13 |
 | Gemiddeld | 16x16 | 40 |
 | Moeilijk | 16x24 | 70 |
-| Meedogenloos | 16x30 | 99 |
+| Duivels | 16x30 | 99 |
 
 ## De twee regels die het meeste van een veld oplossen
 
@@ -121,7 +122,7 @@ Drie opeenvolgende getallen die 1, 2, 1 lezen met onbekenden eronder. De mijnen 
 enen en het middelste vakje is veilig. Het is het nuttigste patroon om te leren.
 
 **Wat is het moeilijkste veld?**
-Meedogenloos, 16x30 met 99 mijnen. Beginner is 9x9 met 10.
+Duivels, 16x30 met 99 mijnen. Beginner is 9x9 met 10.
 
 **Werkt het offline?**
 Ja. Velden worden op je toestel gegenereerd en geverifieerd, dus er is niets te downloaden en geen

@@ -16,6 +16,7 @@ secondary_keywords:
   - "tile rummy score sheet"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -113,7 +114,7 @@ rule and it is the heart of the game.
 
 **Does Braggster have a playable Rummikub board?**
 No. Rummikub in Braggster is a calculating scorecard for a real set on the table. The board games
-with in app play are Chess, Checkers, International draughts, Backgammon, Dominoes, Connect Four and
+with in app play are Chess, Checkers, International draughts, Othello, Backgammon, Dominoes, Connect Four and
 Tic Tac Toe.
 
 ---

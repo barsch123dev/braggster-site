@@ -16,6 +16,7 @@ secondary_keywords:
   - "como jogar sudoku de somas"
 search_intent: informational
 priority: 1
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -30,7 +31,7 @@ trademark_note: null
 # Killer Sudoku: Como Resolver Gaiolas Sem Chutar
 
 O Killer Sudoku parece um Sudoku com decoração extra e joga como um quebra-cabeça completamente
-diferente. A maioria das grades começa com **muito poucas pistas, ou nenhuma**, o que assusta na
+diferente. A maioria das grades começa com **bem menos pistas que um Sudoku comum**, o que assusta na
 primeira vez que você vê uma. A informação toda está lá. Só que escrita como somas em vez de
 dígitos.
 
@@ -107,9 +108,12 @@ um solucionador de backtracking consciente das gaiolas. Verificar as duas restri
 não bastaria: uma grade pode ser ambígua só pelo Sudoku e única depois que as gaiolas entram, e
 também o contrário.
 
-Se uma tentativa esparsa não puder ser comprovada única dentro do orçamento de busca, o gerador
-recorre ao conjunto de pistas já verificado do Sudoku para aquele nível. A consequência é que
-**todo quebra-cabeça que você recebe é realmente solúvel de forma única**, nunca um talvez.
+Ele parte de um conjunto de pistas do Sudoku que já é único e vai tirando pistas uma a uma. Uma
+retirada só fica se o solucionador comprovar, dentro de um orçamento de busca pequeno, que o
+quebra-cabeça continua com exatamente uma solução; uma pista que ele não consegue comprovar como
+dispensável permanece. Por isso a quantidade cai com o nível: cerca de 32 no Iniciante, 24 no Fácil,
+16 no Médio e uns doze no Difícil e no Diabólico, onde as gaiolas também são maiores. A consequência
+é que **todo quebra-cabeça que você recebe é realmente solúvel de forma única**, nunca um talvez.
 
 ## O tabuleiro
 
@@ -133,8 +137,9 @@ Toda linha, coluna e quadrante soma 45. Comparar isso com as gaiolas dentro de u
 o total das células que sobraram, e às vezes resolve uma diretamente.
 
 **Por que os quebra-cabeças Killer Sudoku têm tão poucos números dados?**
-As gaiolas carregam a restrição no lugar deles. Uma grade Killer bem construída pode começar sem
-nenhuma pista e ainda ter exatamente uma solução.
+As gaiolas carregam parte da restrição. Uma grade Killer bem construída pode começar sem nenhuma
+pista e ainda ter exatamente uma solução, e no Braggster a quantidade cai de cerca de 32 no Iniciante
+para uns doze no Diabólico.
 
 **O Killer Sudoku é mais difícil que o Sudoku comum?**
 É diferente, mais do que estritamente mais difícil. Exige aritmética junto com a lógica, mas as

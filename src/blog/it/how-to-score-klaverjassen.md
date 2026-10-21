@@ -28,8 +28,8 @@ trademark_note: null
 
 # Come si segna a Klaverjassen: il boompje spiegato
 
-Klaverjassen e il gioco di carte nazionale olandese, e il suo foglio segnapunti e uno dei pochi al
-mondo ad avere un nome proprio. Il boompje, il piccolo albero, e un blocco a quattro sezioni con
+Klaverjassen è il gioco di carte nazionale olandese, e il suo foglio segnapunti è uno dei pochi al
+mondo ad avere un nome proprio. Il boompje, il piccolo albero, è un blocco a quattro sezioni con
 controlli a 648, 1296, 1944 e 2592, e generazioni di giocatori lo hanno compilato a mano ai tavoli di
 cucina in tutti i Paesi Bassi, Belgio e Suriname.
 
@@ -40,14 +40,14 @@ Ecco come funziona il punteggio, e cosa fa bene un boompje digitale che uno di c
 Quattro giocatori, coppie fisse. Tu e il tuo compagno siete Wij, gli avversari sono Zij, e i posti
 non cambiano. Il mazzo ha 32 carte, dal sette all'asso.
 
-Ogni mano distribuisce esattamente **162 punti carta**, piu l'eventuale roem. Quel totale fisso e
-tutta la base del punteggio del Klaverjassen: se i punteggi delle due squadre non sommano a 162 piu
-il roem, qualcosa e sbagliato e il foglio dovrebbe segnalarlo.
+Ogni mano distribuisce esattamente **162 punti carta**, più l'eventuale roem. Quel totale fisso è
+tutta la base del punteggio del Klaverjassen: se i punteggi delle due squadre non sommano a 162 più
+il roem, qualcosa è sbagliato e il foglio dovrebbe segnalarlo.
 
 ## Valori delle carte
 
-Briscola e carte fuori briscola hanno valori diversi, ed e la cosa che i nuovi giocatori sbagliano
-piu spesso.
+Briscola e carte fuori briscola hanno valori diversi, ed è la cosa che i nuovi giocatori sbagliano
+più spesso.
 
 | Carta | Briscola | Fuori briscola |
 |---|---|---|
@@ -65,7 +65,7 @@ i dieci punti per aver vinto l'ultima presa e il mazzo totalizza 162.
 
 ## Roem
 
-Il roem e un bonus per combinazioni di carte dentro una presa, dichiarato quando la presa viene
+Il roem è un bonus per combinazioni di carte dentro una presa, dichiarato quando la presa viene
 vinta:
 
 - Tre carte in sequenza dello stesso seme: **20**
@@ -73,18 +73,18 @@ vinta:
 - Re e regina di briscola insieme, lo stuk: **20**
 - Poker in cima alla briscola: **100**
 
-Il roem va a chi vince la presa, non a chi teneva le carte, ed e per questo che puo ribaltare una
-mano che sembrava gia decisa.
+Il roem va a chi vince la presa, non a chi teneva le carte, ed è per questo che può ribaltare una
+mano che sembrava già decisa.
 
 ## Pit e nat
 
 Due risultati saltano l'intero conteggio.
 
-**Pit** significa prendere ogni presa. La squadra che gioca prende tutti i 162 punti piu tutto il
+**Pit** significa prendere ogni presa. La squadra che gioca prende tutti i 162 punti più tutto il
 roem, e i difensori non prendono nulla.
 
-**Nat** e il contrario: la squadra che ha scelto la briscola non e riuscita a prendere piu di meta.
-Segna zero, e ogni punto piu ogni roem va all'altra squadra.
+**Nat** è il contrario: la squadra che ha scelto la briscola non è riuscita a prendere più di metà.
+Segna zero, e ogni punto più ogni roem va all'altra squadra.
 
 Nel foglio del round di Braggster, entrambi sono un singolo pulsante sotto il selettore di porta Wij
 e Zij. PIT riempie 162, NAT riempie 0. Non devi sommare nulla, e non puoi inserire un totale che non
@@ -103,13 +103,13 @@ alla fine di ogni sezione:
 | Dopo 16 round | 2592 |
 
 Quei numeri non sono arbitrari. Quattro round a 162 punti ciascuno fa 648, e i controlli esistono
-perche un errore venga scoperto entro quattro mani invece che alla fine della serata.
+perché un errore venga scoperto entro quattro mani invece che alla fine della serata.
 
-Il blocco di ogni squadra ha tre colonne, Punten, Roem e Mars, piu righe di riepilogo Roem, Mars e
+Il blocco di ogni squadra ha tre colonne, Punten, Roem e Mars, più righe di riepilogo Roem, Mars e
 Totaal. La partita si completa al sedicesimo round.
 
-Braggster riproduce questo schema invece di sostituirlo con una tabella generica, perche il boompje e
-cio che i giocatori di Klaverjassen sanno gia leggere. Quello che cambia e che l'aritmetica e i
+Braggster riproduce questo schema invece di sostituirlo con una tabella generica, perché il boompje è
+ciò che i giocatori di Klaverjassen sanno già leggere. Quello che cambia è che l'aritmetica e i
 controlli vengono calcolati invece che fidati.
 
 ## Varianti
@@ -118,7 +118,7 @@ Braggster include le due varianti olandesi standard, relative alla regola base:
 
 - **Amsterdams:** chi sceglie la briscola deve battere gli avversari o va nat, con i soliti obblighi
   di giocare briscola e di sormontare.
-- **Rotterdams:** l'insieme di obblighi piu severo, dove devi sempre giocare briscola e sempre
+- **Rotterdams:** l'insieme di obblighi più severo, dove devi sempre giocare briscola e sempre
   sormontare quando puoi.
 
 Le regole di casa della tua famiglia probabilmente corrispondono a una delle due. Scegli quella
@@ -127,23 +127,23 @@ all'inizio della partita e il foglio la segue.
 ## Domande frequenti
 
 **Quanti punti vale una partita completa di Klaverjassen?**
-2592 su sedici round, cioe 162 per sedici. Il roem si aggiunge sopra, quindi i totali reali sono piu
+2592 su sedici round, cioè 162 per sedici. Il roem si aggiunge sopra, quindi i totali reali sono più
 alti.
 
 **Cosa succede se una squadra va nat?**
-La squadra che ha scelto la briscola segna zero e i difensori prendono tutti i 162 punti carta piu
+La squadra che ha scelto la briscola segna zero e i difensori prendono tutti i 162 punti carta più
 tutto il roem della mano.
 
-**Il roem e incluso nel 162?**
-No. Il 162 e solo punti carta. Il roem si aggiunge separatamente, e viene tracciato nella sua colonna
+**Il roem è incluso nel 162?**
+No. Il 162 è solo punti carta. Il roem si aggiunge separatamente, e viene tracciato nella sua colonna
 sul boompje.
 
 **L'app gestisce diversamente Amsterdams e Rotterdams?**
 Gli obblighi differiscono nel gioco, non nell'aritmetica, quindi scegli la variante all'inizio e viene
-registrata con la partita. Il percorso di punteggio e lo stesso.
+registrata con la partita. Il percorso di punteggio è lo stesso.
 
 **Posso vedere i valori delle carte mentre gioco?**
-Si. La schermata delle regole porta una tabella visiva di rango e punti delle carte con righe
+Sì. La schermata delle regole porta una tabella visiva di rango e punti delle carte con righe
 separate per briscola e fuori briscola, insieme alla spiegazione del roem.
 
 ---

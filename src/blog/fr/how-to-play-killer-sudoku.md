@@ -16,6 +16,7 @@ secondary_keywords:
   - "sudoku tueur comment jouer"
 search_intent: informational
 priority: 1
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -30,8 +31,8 @@ trademark_note: null
 # Killer Sudoku : comment résoudre les cages sans deviner
 
 Le Killer Sudoku ressemble à un Sudoku avec de la décoration en plus, mais se joue comme un
-casse-tête complètement différent. La plupart des grilles démarrent avec **très peu de chiffres
-donnés, voire aucun**, ce qui est déstabilisant la première fois qu'on en voit une. L'information est
+casse-tête complètement différent. La plupart des grilles démarrent avec **bien moins de chiffres
+donnés qu'un Sudoku classique**, ce qui est déstabilisant la première fois qu'on en voit une. L'information est
 pourtant bien là. Elle est juste écrite sous forme de sommes plutôt que de chiffres.
 
 ## Les règles
@@ -110,9 +111,12 @@ l'aide d'un solveur de retour en arrière conscient des cages. Vérifier les deu
 séparément ne suffirait pas : une grille peut être ambiguë avec le Sudoku seul et devenir unique une
 fois les cages appliquées, et inversement.
 
-Si une tentative avec peu de chiffres donnés ne peut pas être prouvée unique dans le budget de
-recherche imparti, le générateur retombe sur l'ensemble de chiffres donnés déjà vérifié du Sudoku pour
-ce niveau. La conséquence, c'est que **chaque grille qui t'est distribuée est réellement soluble de
+Il part d'un ensemble de chiffres donnés du Sudoku déjà unique, puis retire les chiffres donnés un
+par un. Un retrait n'est conservé que si le solveur prouve, dans un petit budget de recherche, que la
+grille a toujours exactement une solution ; un chiffre donné qu'il ne parvient pas à prouver
+superflu reste en place. C'est pourquoi le nombre baisse avec le niveau : environ 32 en Débutant, 24
+en Facile, 16 en Moyen et une douzaine en Difficile et Diabolique, où les cages sont aussi plus
+grandes. La conséquence, c'est que **chaque grille qui t'est distribuée est réellement soluble de
 façon unique**, jamais un peut-être.
 
 ## Le plateau
@@ -138,8 +142,9 @@ Chaque ligne, chaque colonne et chaque carré totalise 45. Comparer ce nombre au
 une unité révèle le total des cases restantes, et résout souvent une case directement.
 
 **Pourquoi les grilles de Killer Sudoku ont-elles si peu de chiffres donnés ?**
-Ce sont les cages qui portent la contrainte à la place. Une grille Killer bien construite peut
-démarrer avec zéro chiffre donné et avoir quand même exactement une solution.
+Ce sont les cages qui portent une partie de la contrainte. Une grille Killer bien construite peut
+démarrer avec zéro chiffre donné et avoir quand même exactement une solution, et dans Braggster le
+nombre passe d'environ 32 en Débutant à une douzaine en Diabolique.
 
 **Le Killer Sudoku est-il plus difficile que le Sudoku classique ?**
 Différent plutôt que strictement plus difficile. Il demande du calcul en plus de la logique, mais les

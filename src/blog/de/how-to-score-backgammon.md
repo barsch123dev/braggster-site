@@ -14,9 +14,10 @@ secondary_keywords:
   - "backgammon offline spielen"
   - "backgammon gegen computer"
   - "backgammon spielanleitung"
+  - "backgammon online spielen mit freunden"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -86,13 +87,12 @@ Zwei Startaufstellungen werden unterstützt:
 - **Nackgammon**, bei der zwei Steine weiter zurückgesetzt werden, was das frühe Spiel weniger zum
   Wettlauf und mehr zur Positionsfrage macht.
 
-## Gemeinsam spielen auf zwei Handys
+## Zusammen spielen auf zwei Handys, nebeneinander oder online
 
-Du kannst auch mit einem Handy pro Person spielen. Mit [Gemeinsam spielen](/play-together/) eröffnet ein
-Handy einen Tisch und zeigt einen QR-Code, das andere scannt ihn, und beide Spieler sehen im selben
-WLAN live dasselbe Brett. Jeder würfelt und zieht von seinem eigenen Handy, der letzte Zug wird auf
+Du kannst auch mit einem Handy pro Person spielen. Mit [Zusammen spielen](/play-together/) eröffnet ein
+Handy einen Tisch und zeigt einen QR-Code, das andere scannt ihn, und beide Spieler sehen live dasselbe Brett. Jeder würfelt und zieht von seinem eigenen Handy, der letzte Zug wird auf
 beiden Brettern markiert, und die beendete Partie zählt mit 1, 2 oder 3 Punkten auf beiden Handys in die
-Summe. Es gibt kein Konto und keine Internetverbindung, und nur der Gastgeber braucht das Spiel. Der
+Summe. Im selben WLAN braucht es kein Internet, und wer Backgammon online mit Freunden woanders spielen will, schickt einen Einladungslink oder den Code aus 8 Zeichen. Es gibt kein Konto, und nur der Gastgeber braucht das Spiel. Der
 [Guide zum gemeinsamen Spielen auf mehreren Handys](/blog/play-games-together-on-multiple-phones/)
 führt Schritt für Schritt durch alles.
 
@@ -134,9 +134,8 @@ vorkommt.
 **Kann ich Backgammon offline gegen den Computer spielen?**
 Ja. Die Engine läuft komplett auf deinem Gerät, ohne Verbindung und ohne Konto.
 
-**Können zwei Leute Backgammon auf zwei Handys spielen?**
-Ja. Mit Gemeinsam spielen nutzt jeder Spieler sein eigenes Handy im selben WLAN. Einer eröffnet einen
-Tisch, der andere scannt seinen Code, und die Partie läuft live auf beiden Bildschirmen.
+**Können zwei Leute Backgammon auf zwei Handys spielen, auch online?**
+Ja. Mit Zusammen spielen nutzt jeder Spieler sein eigenes Handy. Einer eröffnet einen Tisch, der andere scannt seinen Code, und die Partie läuft live auf beiden Bildschirmen. Im selben WLAN braucht es kein Internet; Freunde anderswo kommen online per Einladungslink oder mit dem Code aus 8 Zeichen dazu.
 
 **Was ist Nackgammon?**
 Eine Startaufstellung, bei der zwei Steine weiter zurückgesetzt werden, was die Eröffnung positioneller

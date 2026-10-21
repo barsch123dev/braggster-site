@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Puntuación de Bridge Explicada: Contratos, Vulnerabilidad y Rubbers
@@ -86,8 +87,9 @@ Un doble multiplica la puntuación de bazas y agudiza bastante las penalizacione
 vuelve a duplicar. Un contrato doblado que se cumple también cobra un bono por el insulto, y un
 contrato doblado que falla escala rápido:
 
-Las bajas dobladas sin vulnerabilidad corren 100, 300, 500, y luego 300 cada una en adelante. Las
-bajas dobladas con vulnerabilidad corren 200, y luego 300 cada una. Esta es la capa donde una hoja
+Las bajas dobladas sin vulnerabilidad cuestan 100 la primera, 200 cada una la segunda y la tercera,
+y luego 300 cada una. Las bajas dobladas con vulnerabilidad cuestan 200 la primera, y luego 300 cada
+una. Esta es la capa donde una hoja
 de papel más se equivoca, porque la secuencia no es una tarifa plana.
 
 ## Capa cinco: bazas de más y honores
@@ -111,6 +113,17 @@ y bono son los mismos, pero los bonos de manga se dan por mano y no por rubber.
 Braggster le da a Bridge un marcador para cuatro jugadores en dos parejas fijas sobre una baraja
 estándar de 52 cartas, así que los bandos quedan bien montados desde el principio en lugar de ser
 cuatro columnas sueltas que hay que recordar emparejar.
+
+El marcador sigue el bloc de papel: una columna por pareja, con una línea que cruza por el medio.
+En cada mano anotas quién jugó el contrato, el nivel de la licitación, el palo de triunfo, si
+hubo doble o redoble, si ese bando es vulnerable y cuántas bazas ganó. Braggster escribe los puntos
+del contrato bajo la línea, en la columna del bando que lo juega, y los bonos encima, o, si el
+contrato cae, la penalización sobre la línea para los defensores, y lleva un total por bando. Rubber
+y duplicado están los dos.
+
+Puntúa cada mano por separado, así que activas lo de vulnerable tú mismo cuando un bando gana su
+primera manga. Da el bono de manga cuando el contrato de una mano llega a 100, pero no arrastra los
+parciales ni suma el bono de rubber ni los honores, así que añádelos tú si vuestra mesa los juega.
 
 La gracia de una hoja digital aquí no es que la puntuación de Bridge sea imposible a mano. Es que
 la secuencia de bajas dobladas y el cambio de vulnerabilidad son exactamente el tipo de regla que se

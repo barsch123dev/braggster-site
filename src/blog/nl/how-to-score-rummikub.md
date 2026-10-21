@@ -16,6 +16,7 @@ secondary_keywords:
   - "tegel-rummy scoreformulier"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -114,7 +115,7 @@ hart van het spel.
 
 **Heeft Braggster een speelbaar Rummikub-bord?**
 Nee. Rummikub in Braggster is een rekenend scoreformulier voor een echte set op tafel. De bordspellen
-met speelbaarheid in de app zijn Chess, Checkers, International draughts, Backgammon, Dominoes,
+met speelbaarheid in de app zijn Chess, Checkers, International draughts, Othello, Backgammon, Dominoes,
 Connect Four en Tic Tac Toe.
 
 ---

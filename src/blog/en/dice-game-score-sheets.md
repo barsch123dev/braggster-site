@@ -15,6 +15,7 @@ secondary_keywords:
   - "online dice roller app"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -26,6 +27,7 @@ internal_links:
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/puzzle-games/
+  - /play-together/
 trademark_note: "Yahtzee is a trademark of its publisher. Braggster is not affiliated with or endorsed by them and the name is used referentially only."
 ---
 
@@ -98,9 +100,11 @@ the tool for any dice game that does not have its own sheet yet.
 
 ## When the dice are missing
 
-Braggster's dice roller is shared across the app rather than bolted onto one game, so any game with
-a dice config can roll on screen. That covers the household case where you have the rules, the
-players and the snacks, but the dice are in a different bag.
+Braggster's dice roller is shared across the app rather than bolted onto one game: Yahtzee has a Digital dice roll, Backgammon rolls on its own board, and Freestyle rolls as many dice as you ask for. That covers the household case where you have the rules, the players and the snacks, but the dice are in a different bag.
+
+## Yahtzee online with friends
+
+Yahtzee is the one dice game with [Play together](/play-together/): up to six players, a phone each. On the same Wi-Fi no internet is needed, and friends anywhere else can join online with an invite link or an 8-character code. The host can switch on a Digital dice roll, and everyone watches the throw land on their own phone. Dudo is scored on one phone.
 
 ## Frequently asked questions
 
@@ -109,8 +113,10 @@ Yes. The 35 point bonus at 63 is emergent from the upper section, and the scorec
 rather than asking you to.
 
 **How many players can I score at once?**
-The scorecard compresses columns to fit the table rather than capping you at a comfortable number,
-so large groups still fit on one screen.
+Yahtzee and Dudo take two to six players, and the scorecard compresses its columns so every one of them fits on one screen.
+
+**Can I play Yahtzee online with friends?**
+Yes. With Play together up to six players each use their own phone: on the same Wi-Fi no internet is needed, or invite friends anywhere online with a link or an 8-character code. Dudo is not a Play together game, so one phone keeps its score.
 
 **Is there a wagering or betting mode?**
 No. Nothing anywhere in Braggster records a bet, a stake or a payout. Dudo scores who is still in,
@@ -121,7 +127,7 @@ Yes. Use Freestyle for a card and dice table with a freeform scorecard, or the a
 scorecard for anything at all.
 
 **Do I need an account?**
-No. Braggster is local first: no login, no backend, and your scores stay on your device.
+No. Braggster has no login or sign-up, and your scores stay on your device. Playing together online needs no account either.
 
 ---
 

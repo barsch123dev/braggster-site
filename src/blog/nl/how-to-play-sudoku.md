@@ -16,7 +16,7 @@ secondary_keywords:
   - "sudoku potloodnotities"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -66,8 +66,7 @@ Drietallen werken hetzelfde, met drie.
 de rest van die rij buiten het vak. En omgekeerd.
 
 **X-Wing en verder.** Patronen die meerdere eenheden tegelijk overspannen. Hier houdt een puzzel op
-een sleur te zijn en wordt interessant, en hier leven de niveaus Moeilijk en Meedogenloos van
-Braggster.
+een sleur te zijn en wordt interessant, en daar kunnen de zwaardere niveaus je naartoe brengen.
 
 ## Waarom "minder gegeven cijfers" een slechte maatstaf is
 
@@ -75,16 +74,18 @@ Een rooster met 24 gegeven cijfers die handig geplaatst zijn kan een wandeling m
 zijn. Een rooster met 30 gegeven cijfers die ongelukkig geplaatst zijn kan paren en wijzen vereisen.
 Het aantal zegt op zichzelf bijna niets.
 
-Daarom beoordeelt Braggster op techniek in plaats van op het aantal gegeven cijfers. De gekozen
-variant wordt op de wedstrijd opgeslagen, en de generator deelt een puzzel die daarop is afgestemd.
+Daarom beoordeelt Braggster niet alleen op het aantal gegeven cijfers. Beginner en Makkelijk zijn
+gegarandeerd oplosbaar met alleen enkelingen, Gemiddeld, Moeilijk en Duivels vragen gegarandeerd meer
+dan enkelingen, en het aantal gegeven cijfers loopt per niveau terug. De gekozen variant wordt op de
+wedstrijd opgeslagen, en de generator deelt een puzzel die daarop is afgestemd.
 
 | Niveau | Wat het vereist |
 |---|---|
-| Beginner | Alleen naakte en verborgen enkelingen |
-| Makkelijk | Alleen naakte en verborgen enkelingen |
-| Gemiddeld | Paren en vak-lijn-interacties |
-| Moeilijk | Meerdere geavanceerde technieken |
-| Meedogenloos | Aanhoudende geavanceerde techniek |
+| Beginner | Alleen naakte en verborgen enkelingen, de meeste gegeven cijfers |
+| Makkelijk | Alleen naakte en verborgen enkelingen, minder gegeven cijfers |
+| Gemiddeld | Meer dan enkelingen |
+| Moeilijk | Meer dan enkelingen, minder gegeven cijfers |
+| Duivels | Meer dan enkelingen, de minste gegeven cijfers |
 
 ## Elke puzzel heeft precies één oplossing
 
@@ -123,8 +124,8 @@ naast je kaart- en bordspelrecords in plaats van in een apart hokje.
 ## Veelgestelde vragen
 
 **Wat is de moeilijkste Sudoku-moeilijkheidsgraad in Braggster?**
-Meedogenloos, het vijfde niveau. Beginner en Makkelijk zijn oplosbaar met alleen enkelingen, Gemiddeld
-introduceert paren, en Moeilijk en Meedogenloos vereisen aanhoudende geavanceerde techniek.
+Duivels, het vijfde niveau. Beginner en Makkelijk zijn oplosbaar met alleen enkelingen, terwijl
+Gemiddeld, Moeilijk en Duivels meer dan enkelingen vragen, met per niveau minder gegeven cijfers.
 
 **Vertelt de app me wanneer ik een fout maak?**
 Niet tijdens het spelen. Fouten worden stilzwijgend geteld en getoond in de samenvatting. Dat is

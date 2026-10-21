@@ -15,7 +15,7 @@ secondary_keywords:
   - "como melhorar no sudoku"
   - "anotações a lápis sudoku"
 search_intent: informational
-updated: 2026-09-28
+updated: 2026-10-21
 priority: 1
 schema:
   - Article
@@ -66,8 +66,8 @@ resto da unidade. As trincas funcionam do mesmo jeito, com três.
 ele pode ser eliminado do resto dessa linha fora do quadrante. E o inverso também vale.
 
 **X-Wing e além.** Padrões que atravessam várias unidades ao mesmo tempo. É aqui que o
-quebra-cabeça deixa de ser repetitivo e começa a ficar interessante, e é onde vivem os níveis
-Difícil e Diabólico do Braggster.
+quebra-cabeça deixa de ser repetitivo e começa a ficar interessante, e é para onde os níveis mais
+difíceis podem levar você.
 
 ## Por que "menos pistas" é um mau indicador
 
@@ -75,16 +75,18 @@ Uma grade com 24 pistas bem distribuídas pode ser resolvida só com candidatos 
 com 30 pistas mal distribuídas pode exigir pares e apontamento. A contagem sozinha quase não diz
 nada.
 
-É por isso que o Braggster classifica pela técnica, não pela quantidade de pistas. A variante
-escolhida fica salva na partida, e o gerador entrega um quebra-cabeça graduado para ela.
+É por isso que o Braggster não classifica só pela quantidade de pistas. Iniciante e Fácil são
+garantidamente solúveis só com candidatos únicos, Médio, Difícil e Diabólico garantidamente exigem
+mais que candidatos únicos, e as pistas vão diminuindo a cada nível. A variante escolhida fica salva
+na partida, e o gerador entrega um quebra-cabeça graduado para ela.
 
 | Nível | O que exige |
 |---|---|
-| Iniciante | Só candidatos únicos simples e ocultos |
-| Fácil | Só candidatos únicos simples e ocultos |
-| Médio | Pares e interações linha e quadrante |
-| Difícil | Várias técnicas avançadas |
-| Diabólico | Técnica avançada sustentada |
+| Iniciante | Só candidatos únicos simples e ocultos, mais pistas |
+| Fácil | Só candidatos únicos simples e ocultos, menos pistas |
+| Médio | Mais que candidatos únicos |
+| Difícil | Mais que candidatos únicos, menos pistas |
+| Diabólico | Mais que candidatos únicos, o menor número de pistas |
 
 ## Todo quebra-cabeça tem exatamente uma solução
 
@@ -125,8 +127,8 @@ Sudoku fica ao lado dos seus registros de cartas e tabuleiro, não isolado à pa
 ## Perguntas frequentes
 
 **Qual é o nível mais difícil de Sudoku no Braggster?**
-Diabólico, o quinto nível. Iniciante e Fácil são solúveis só com candidatos únicos, Médio
-introduz pares, e Difícil e Diabólico exigem técnica avançada sustentada.
+Diabólico, o quinto nível. Iniciante e Fácil são solúveis só com candidatos únicos, enquanto Médio,
+Difícil e Diabólico exigem mais que candidatos únicos, com menos pistas a cada degrau.
 
 **O app avisa quando eu erro?**
 Não enquanto você joga. Os erros são contados silenciosamente e aparecem no resumo da solução.

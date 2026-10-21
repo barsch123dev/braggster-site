@@ -14,9 +14,10 @@ secondary_keywords:
   - "play backgammon offline"
   - "backgammon match scoring"
   - "backgammon vs computer"
+  - "play backgammon online with friends"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -83,13 +84,11 @@ Two openings are supported:
 - **Nackgammon**, which moves two checkers back to make the early game less racing and more
   positional.
 
-## Play together on two phones
+## Play together on two phones, nearby or online
 
 You can also play on a phone each. With [Play together](/play-together/), one phone starts a table
-and shows a QR code, the other scans it, and both players see the same board live over the same
-Wi-Fi. Each of you rolls and moves from your own phone, the last move is marked on both boards, and
-the finished game scores 1, 2 or 3 into the tally on both phones. There is no account and no
-internet involved, and only the host needs the game. The
+and shows a QR code, the other scans it, and both players see the same board live. Each of you rolls and moves from your own phone, the last move is marked on both boards, and
+the finished game scores 1, 2 or 3 into the tally on both phones. On the same Wi-Fi no internet is needed, and to play backgammon online with a friend somewhere else, send an invite link or the 8-character code. There is no account, and only the host needs the game. The
 [guide to playing together on several phones](/blog/play-games-together-on-multiple-phones/) walks
 through it step by step.
 
@@ -126,9 +125,8 @@ No. Braggster records the game result only, with no stake anywhere in the app.
 **Can I play backgammon offline against the computer?**
 Yes. The engine runs entirely on your device, no connection and no account required.
 
-**Can two people play backgammon on two phones?**
-Yes. With Play together each player uses their own phone on the same Wi-Fi. One starts a table, the
-other scans its code, and the game plays out live on both screens.
+**Can two people play backgammon on two phones, or online?**
+Yes. With Play together each player uses their own phone. One starts a table, the other scans its code, and the game plays out live on both screens. On the same Wi-Fi no internet is needed; friends elsewhere join online with an invite link or the 8-character code.
 
 **What is Nackgammon?**
 A variant starting position that pulls two checkers further back, making the opening more positional
