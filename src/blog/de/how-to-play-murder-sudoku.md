@@ -16,6 +16,7 @@ secondary_keywords:
   - "deduktionsrätsel spiel"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -60,12 +61,12 @@ Mörder nicht direkt. Du folgerst den ganzen Grundriss, und der Mörder fällt d
 
 Hinweise kommen in mehreren Formen, und sie lesen zu lernen ist der größte Teil des Könnens:
 
-- **Direkte Fakten.** Ein Verdächtiger ist oder ist nicht in einem genannten Raum. Der leichteste
-  Einstieg, und wo du immer anfangen solltest.
-- **Relative Position.** Eine Person ist in derselben Zeile oder Spalte wie eine andere, oder ist es
-  nicht.
-- **Kompass-Hinweise.** Ein Verdächtiger sitzt in einer bestimmten Richtung relativ zu einem Raum oder
-  einer anderen Person. Lies diese genau: Die Konvention ist fest und auf der Regelseite erklärt, und
+- **Direkte Fakten.** Ein Verdächtiger ist oder ist nicht in einem genannten Raum, oder in einer
+  genannten Zeile oder Spalte. Der leichteste Einstieg, und wo du immer anfangen solltest.
+- **Relative Position.** Ein Verdächtiger ist im selben Raum wie ein anderer.
+- **Kompass-Hinweise.** Ein Verdächtiger steht nördlich, südlich, östlich oder westlich eines
+  Möbelstücks, oder weiter nördlich oder weiter westlich als ein anderer Verdächtiger. Lies diese
+  genau: Die Konvention ist fest, Norden liegt oben, wie die Kompassmarkierung auf dem Brett zeigt, und
   die Ausrichtung falsch herum zu lesen ergibt ein konsistentes, aber falsches Gitter.
 - **Negative Fakten.** Niemand ist in einem bestimmten Raum, oder ein Verdächtiger ist nicht neben
   etwas.
@@ -74,7 +75,7 @@ Auf den schwereren Stufen dünnen die direkten Fakten aus, und die indirekten tr
 
 ## Fünf Stufen
 
-Beginner, Easy, Medium, Hard und Evil, dasselbe Stufenmuster wie bei Sudoku, Killer Sudoku und
+Anfänger, Leicht, Mittel, Schwer und Teuflisch, dasselbe Stufenmuster wie bei Sudoku, Killer Sudoku und
 Logikwis. Die Stufe ändert die Mischung der Hinweise, nicht das Brett: Schwerere Fälle geben dir
 weniger direkte Fakten und mehr Hinweise, die erst nützlich werden, sobald etwas anderes feststeht.
 

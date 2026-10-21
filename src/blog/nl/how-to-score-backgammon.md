@@ -14,9 +14,10 @@ secondary_keywords:
   - "backgammon offline spelen"
   - "backgammon puntentelling"
   - "backgammon tegen de computer"
+  - "backgammon online spelen met vrienden"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -85,13 +86,11 @@ Twee openingen worden ondersteund:
 - **Nackgammon**, waarbij twee stenen verder naar achteren staan, wat het beginspel minder een race en
   meer positioneel maakt.
 
-## Samen spelen op twee telefoons
+## Samen spelen op twee telefoons, dichtbij of online
 
 Je kunt ook spelen met een telefoon per speler. Met [Samen spelen](/play-together/) start één telefoon
-een tafel en toont een QR-code, scant de ander die, en zien beide spelers live hetzelfde bord via
-dezelfde wifi. Jullie gooien en zetten allebei vanaf je eigen telefoon, de laatste zet wordt op beide
-borden gemarkeerd, en het afgeronde potje scoort 1, 2 of 3 in de lopende stand op beide telefoons. Er is
-geen account en geen internet nodig, en alleen de gastheer heeft het spel nodig. De
+een tafel en toont een QR-code, scant de ander die, en zien beide spelers live hetzelfde bord. Jullie gooien en zetten allebei vanaf je eigen telefoon, de laatste zet wordt op beide
+borden gemarkeerd, en het afgeronde potje scoort 1, 2 of 3 in de lopende stand op beide telefoons. Op dezelfde wifi is geen internet nodig, en wil je online backgammon spelen met vrienden elders, stuur dan een uitnodigingslink of de code van 8 tekens. Er is geen account nodig, en alleen de gastheer heeft het spel nodig. De
 [uitleg over samen spelen op meerdere telefoons](/blog/play-games-together-on-multiple-phones/) loopt
 het stap voor stap door.
 
@@ -130,9 +129,8 @@ het spel staat.
 **Kan ik offline tegen de computer backgammon spelen?**
 Ja. De engine draait volledig op je toestel, geen verbinding en geen account nodig.
 
-**Kunnen twee mensen backgammon spelen op twee telefoons?**
-Ja. Met Samen spelen gebruikt elke speler zijn eigen telefoon op dezelfde wifi. De ene start een tafel,
-de ander scant de code, en het potje speelt live op beide schermen.
+**Kunnen twee mensen backgammon spelen op twee telefoons, ook online?**
+Ja. Met Samen spelen gebruikt elke speler zijn eigen telefoon. De ene start een tafel, de ander scant de code, en het potje speelt live op beide schermen. Op dezelfde wifi is geen internet nodig; vrienden elders doen online mee met een uitnodigingslink of de code van 8 tekens.
 
 **Wat is Nackgammon?**
 Een variantstartpositie waarbij twee stenen verder naar achteren staan, wat de opening meer

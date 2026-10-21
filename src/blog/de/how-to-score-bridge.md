@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Bridge Punkte zählen: Kontrakte, Vulnerability und Rubbers
@@ -84,8 +85,8 @@ Ein Kontra vervielfacht den Stichwert und verschärft die Strafpunkte deutlich. 
 noch einmal. Ein kontrierter Kontrakt, der erfüllt wird, bekommt zusätzlich einen Bonus für die
 "Beleidigung", und ein kontrierter Kontrakt, der scheitert, eskaliert schnell:
 
-Nicht vulnerable kontrierte Unterstiche laufen 100, 300, 500, danach je 300. Vulnerable kontrierte
-Unterstiche laufen 200, danach je 300. Das ist die Schicht, bei der ein Papierzettel am häufigsten
+Nicht vulnerable kontrierte Unterstiche kosten 100 für den ersten, je 200 für den zweiten und
+dritten, danach je 300. Vulnerable kontrierte Unterstiche kosten 200 für den ersten, danach je 300. Das ist die Schicht, bei der ein Papierzettel am häufigsten
 danebenliegt, weil die Reihe kein fester Satz ist.
 
 ## Schicht fünf: Überstiche und Honneurs
@@ -108,6 +109,18 @@ aber Spielboni werden pro Hand statt pro Rubber vergeben.
 Braggster gibt Bridge einen Punktezettel für vier Spieler in zwei festen Partnerschaften mit einem
 Standard 52-Karten-Deck, sodass die Seiten von Anfang an richtig eingerichtet sind, statt vier
 unabhängige Spalten zu sein, die du selbst paaren musst.
+
+Der Punktezettel folgt dem Papierblock: eine Spalte pro Partnerschaft, mit einem Strich in der
+Mitte. Für jede Runde trägst du ein, wer den Kontrakt gespielt hat, die Reizstufe, die Trumpffarbe,
+ein eventuelles Kontra oder Re-Kontra, ob diese Seite vulnerable ist und wie viele Stiche sie
+gewonnen hat. Braggster schreibt die Kontraktpunkte unter den Strich in die Spalte der spielenden
+Seite und die Boni darüber, oder bei einem gescheiterten Kontrakt die Strafpunkte über den Strich für
+die Verteidiger, und führt eine Summe pro Seite. Rubber und Turnierbridge sind beide dabei.
+
+Er wertet jede Runde für sich, also schaltest du Vulnerable selbst ein, sobald eine Seite ihr erstes
+Spiel gewonnen hat. Der Spielbonus kommt, wenn der Kontrakt einer Runde 100 erreicht, Teilgebote
+werden aber nicht weitergetragen, und Rubberbonus und Honneurs werden nicht dazugerechnet, also
+addiere sie selbst, wenn euer Tisch sie spielt.
 
 Der Sinn eines digitalen Zettels liegt hier nicht darin, dass Bridge Wertung von Hand unmöglich wäre.
 Es liegt daran, dass die kontrierte Unterstich-Reihe und der Vulnerability-Wechsel genau die Art Regel

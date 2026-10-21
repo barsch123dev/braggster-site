@@ -16,6 +16,7 @@ secondary_keywords:
   - "minesweeper spielanleitung deutsch"
 search_intent: informational
 priority: 1
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -46,11 +47,11 @@ Braggster liefert fünf Stufen:
 
 | Stufe | Feld | Minen |
 |---|---|---|
-| Beginner | 9x9 | 10 |
-| Easy | 9x9 | 13 |
-| Medium | 16x16 | 40 |
-| Hard | 16x24 | 70 |
-| Evil | 16x30 | 99 |
+| Anfänger | 9x9 | 10 |
+| Leicht | 9x9 | 13 |
+| Mittel | 16x16 | 40 |
+| Schwer | 16x24 | 70 |
+| Teuflisch | 16x30 | 99 |
 
 ## Die zwei Regeln, die die meisten Felder lösen
 
@@ -123,7 +124,7 @@ den beiden 1ern, und die mittlere Zelle ist sicher. Es ist das nützlichste Must
 kann.
 
 **Was ist das schwerste Feld?**
-Evil, bei 16x30 mit 99 Minen. Beginner ist 9x9 mit 10.
+Teuflisch, bei 16x30 mit 99 Minen. Anfänger ist 9x9 mit 10.
 
 **Funktioniert es offline?**
 Ja. Felder werden auf deinem Gerät generiert und geprüft, es gibt also nichts herunterzuladen und

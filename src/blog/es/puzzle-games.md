@@ -15,7 +15,7 @@ secondary_keywords:
   - "juegos de logica sin anuncios"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -51,8 +51,8 @@ no.
 
 **Killer Sudoku.** La cuadrícula del Sudoku más una partición de las 81 celdas en jaulas, cada una
 con una suma impresa. Las cifras de cada jaula son distintas entre sí y suman ese total. Los puzles
-Killer suelen empezar con pocos números iniciales o ninguno, porque las jaulas cargan con la
-restricción en su lugar.
+Killer empiezan con bastantes menos números iniciales que un Sudoku normal, porque las jaulas cargan
+con parte de la restricción: unos 32 en Principiante y alrededor de una docena en Diabólico.
 
 **Kakuro.** El puzle de sumas cruzadas. Cada tira de celdas blancas contiene cifras distintas del 1
 al 9 que suman la pista de su cabecera. Las cuadrículas van de 6x6 a 10x10.
@@ -181,8 +181,9 @@ No hay anuncios en ningún lugar de la app. El cronómetro alimenta tu puntuaci�
 nada interrumpe.
 
 **¿Qué puzles están disponibles en mi idioma?**
-Sudoku y Logikwis están en los siete idiomas de la app. Los puzles de palabras son específicos de
-cada idioma por naturaleza, y ahora cada uno trae sus propias listas de palabras y pistas en los siete.
+Los dieciocho están en los siete idiomas de la app. Los puzles numéricos y de lógica no dependen del
+idioma, y los puzles de palabras son específicos de cada idioma por naturaleza: sus palabras y pistas
+siguen el idioma de la app, con listas propias en los siete.
 
 **¿Puedo jugar con notas a lápiz?**
 Sí, en los puzles de cuadrícula numérica. Binairo y Nonogram usan en su lugar una gramática de celda

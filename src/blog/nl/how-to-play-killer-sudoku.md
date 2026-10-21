@@ -16,6 +16,7 @@ secondary_keywords:
   - "somsudoku uitleg"
 search_intent: informational
 priority: 1
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -30,7 +31,7 @@ trademark_note: null
 # Killer Sudoku: Kooien Oplossen Zonder te Gokken
 
 Killer Sudoku ziet eruit als Sudoku met extra versiering en speelt als een compleet andere puzzel. De
-meeste roosters beginnen met **heel weinig gegeven getallen, of helemaal geen**, wat de eerste keer
+meeste roosters beginnen met **veel minder gegeven getallen dan een gewone Sudoku**, wat de eerste keer
 dat je er eentje ziet best verontrustend is. Alle informatie is er gewoon. Hij staat alleen genoteerd
 als sommen in plaats van cijfers.
 
@@ -106,9 +107,12 @@ een kooibewuste backtracking-oplosser. De twee beperkingen los van elkaar checke
 een rooster kan ambigu zijn onder Sudoku alleen en uniek worden zodra de kooien toegepast worden, en
 andersom.
 
-Kan een schaarse poging niet binnen het zoekbudget bewezen worden uniek te zijn, dan valt de generator
-terug op de al geverifieerde gegeven-set van Sudoku voor die moeilijkheidsgraad. Het gevolg is dat
-**elke puzzel die je krijgt echt eenduidig oplosbaar is**, nooit misschien.
+De generator begint met een al unieke gegeven-set van Sudoku en haalt daar één voor één gegeven
+getallen uit weg. Een weggehaald getal blijft alleen weg als de oplosser binnen een klein zoekbudget
+bewijst dat de puzzel nog precies één oplossing heeft; een gegeven getal dat hij niet als overbodig
+kan bewijzen, blijft staan. Daarom daalt het aantal met het niveau: ongeveer 32 bij Beginner, 24 bij
+Makkelijk, 16 bij Gemiddeld en rond de twaalf bij Moeilijk en Duivels, waar de kooien ook groter zijn.
+Het gevolg is dat **elke puzzel die je krijgt echt eenduidig oplosbaar is**, nooit misschien.
 
 ## Het bord
 
@@ -131,8 +135,9 @@ Elke rij, kolom en vak telt op tot 45. Dat vergelijken met de kooien binnen een 
 totaal van de overgebleven vakjes, en lost er vaak meteen eentje op.
 
 **Waarom hebben Killer Sudoku-puzzels zo weinig gegeven getallen?**
-De kooien dragen de beperking in plaats daarvan. Een goed opgebouwd Killer-rooster kan met nul gegeven
-getallen beginnen en toch precies één oplossing hebben.
+De kooien dragen een deel van de beperking. Een goed opgebouwd Killer-rooster kan met nul gegeven
+getallen beginnen en toch precies één oplossing hebben, en bij Braggster daalt het aantal van ongeveer
+32 bij Beginner naar rond de twaalf bij Duivels.
 
 **Is Killer Sudoku moeilijker dan gewone Sudoku?**
 Eerder anders dan strikt moeilijker. Het vraagt rekenwerk naast de logica, maar de kooisommen geven

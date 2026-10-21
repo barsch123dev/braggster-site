@@ -16,6 +16,7 @@ secondary_keywords:
   - "juego de logica de casos"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -60,12 +61,13 @@ deduces al asesino directamente. Deduces todo el plano de la casa, y el asesino 
 
 Las pistas llegan en varias formas, y aprender a leerlas es la mayor parte de la habilidad:
 
-- **Hechos directos.** Un sospechoso está o no está en una habitación concreta. El punto de apoyo
-  más fácil, y por donde siempre deberías empezar.
-- **Posición relativa.** Una persona está en la misma fila o columna que otra, o no lo está.
-- **Pistas de orientación.** Un sospechoso se sienta en una dirección concreta respecto a una
-  habitación o a otra persona. Léelas con cuidado: la convención es fija y aparece en la pantalla
-  de reglas, y equivocarse de orientación produce una cuadrícula consistente pero incorrecta.
+- **Hechos directos.** Un sospechoso está o no está en una habitación concreta, o en una fila o
+  columna concreta. El punto de apoyo más fácil, y por donde siempre deberías empezar.
+- **Posición relativa.** Un sospechoso está en la misma habitación que otro.
+- **Pistas de orientación.** Un sospechoso está al norte, al sur, al este o al oeste de un mueble, o
+  más al norte o más al oeste que otro sospechoso. Léelas con cuidado: la convención es fija, con el
+  norte arriba como indica la brújula del tablero, y equivocarse de orientación produce una
+  cuadrícula consistente pero incorrecta.
 - **Hechos negativos.** Nadie está en una habitación dada, o un sospechoso no está junto a algo.
 
 En los niveles más difíciles, los hechos directos escasean y los indirectos cargan con más peso.

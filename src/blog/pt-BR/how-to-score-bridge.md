@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Pontuação do Bridge Explicada: Contratos, Vulnerabilidade e Rubbers
@@ -85,8 +86,8 @@ Uma dobra multiplica a pontuação de vaza e afia bastante as penalidades. Redob
 Um contrato dobrado que se cumpre também ganha um bônus pelo insulto, e um contrato dobrado que
 falha escala rápido:
 
-Vazas a menos sem vulnerabilidade em contrato dobrado correm 100, 300, 500, depois 300 cada
-adiante. Vulnerável, correm 200, depois 300 cada. É a camada em que uma ficha de papel mais erra,
+Vazas a menos em contrato dobrado, sem vulnerabilidade, custam 100 a primeira, 200 cada a segunda e a
+terceira, depois 300 cada. Vulnerável, custam 200 a primeira, depois 300 cada. É a camada em que uma ficha de papel mais erra,
 porque a sequência não é uma taxa fixa.
 
 ## Camada cinco: vazas extras e honras
@@ -110,6 +111,17 @@ mas os bônus de jogo são concedidos por mão, não por rubber.
 O Braggster dá ao Bridge uma ficha para quatro jogadores em duas duplas fixas com um baralho
 padrão de 52 cartas, então os lados já ficam montados corretamente desde o início, em vez de
 serem quatro colunas independentes que você precisa lembrar de emparelhar.
+
+A ficha segue o bloco de papel: uma coluna por dupla, com uma linha no meio. A cada mão você
+informa quem jogou o contrato, o nível do lance, o naipe de trunfo, uma eventual dobra ou redobra,
+se aquela dupla está vulnerável e quantas vazas fez. O Braggster escreve os pontos do contrato abaixo
+da linha, na coluna da dupla declarante, e os bônus acima, ou, se o contrato cai, a penalidade acima
+da linha para os defensores, e mantém um total por dupla. Rubber e duplicado estão os dois.
+
+Ele pontua cada mão separadamente, então você liga a vulnerabilidade por conta própria quando uma
+dupla ganha seu primeiro jogo. Dá o bônus de jogo quando o contrato de uma mão chega a 100, mas não
+leva os contratos parciais adiante nem soma o bônus de rubber e as honras, então some esses você
+mesmo se a sua mesa joga com eles.
 
 O ponto de uma ficha digital aqui não é que a pontuação do Bridge seja impossível de fazer à mão.
 É que a sequência de vazas a menos dobradas e a troca de vulnerabilidade são exatamente o tipo de

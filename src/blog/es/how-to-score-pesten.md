@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Reglas y Puntuación de Pesten: El Crazy Eights Holandés
@@ -82,7 +83,9 @@ de todas. Gana el total más bajo de la serie.
 La alternativa, más sencilla y más habitual en mesas familiares, es puntuar **rondas ganadas**:
 quien se queda sin cartas se lleva la ronda, y se juega hasta un número acordado.
 
-Braggster lleva la puntuación de una serie de las dos maneras. La razón para usar un marcador en un
+El marcador de Pesten de Braggster sigue el recuento de penalización: tras cada mano apuntas los
+puntos de penalización que le quedan a cada jugador, el ganador apunta 0, y el marcador lleva los
+totales acumulados con el más bajo en cabeza. No hay un modo aparte de rondas ganadas. La razón para usar un marcador en un
 juego tan sencillo no es la aritmética, es el registro: una noche de Pesten son diez o quince
 rondas, y la pregunta al final es quién ganó la noche de verdad.
 

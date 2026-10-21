@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Pesten Regels en Score Bijhouden: De Nederlandse Crazy Eights
@@ -81,7 +82,10 @@ Het laagste totaal over de reeks wint.
 Het alternatief, eenvoudiger en gebruikelijker aan familietafels, is **gewonnen rondes** scoren: de
 speler die uitspeelt wint de ronde, en je speelt tot een afgesproken aantal.
 
-Braggster houdt de score bij voor een reeks op allebei de manieren. De reden om voor zo'n eenvoudig
+Het Pesten-scoreformulier van Braggster werkt met de strafpuntentelling: na elke hand vul je de
+strafpunten in die elke speler in handen houdt, de winnaar vult 0 in, en het formulier houdt de
+lopende totalen bij met het laagste bovenaan. Een aparte stand voor gewonnen rondes is er niet. De
+reden om voor zo'n eenvoudig
 spel toch een scoreformulier te gebruiken is niet het rekenwerk, het is de vastlegging: een avond
 Pesten is tien of vijftien rondes, en de vraag aan het eind is wie de avond nu echt gewonnen heeft.
 

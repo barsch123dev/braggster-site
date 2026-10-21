@@ -16,6 +16,7 @@ secondary_keywords:
   - "sum sudoku how to play"
 search_intent: informational
 priority: 1
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -30,7 +31,7 @@ trademark_note: null
 # Killer Sudoku: How to Solve Cages Without Guessing
 
 Killer Sudoku looks like Sudoku with extra decoration and plays like a completely different puzzle.
-Most grids start with **very few givens, or none at all**, which is alarming the first time you see
+Grids start with **far fewer givens than a plain Sudoku**, which is alarming the first time you see
 one. The information is all there. It is just written as sums instead of digits.
 
 ## The rules
@@ -103,8 +104,11 @@ It then verifies uniqueness under the **combined** Sudoku and cage constraint to
 aware backtracking solver. Checking the two constraints separately would not do: a grid can be
 ambiguous under Sudoku alone and unique once the cages are applied, and the reverse.
 
-If a sparse attempt cannot be proven unique inside the search budget, the generator falls back to
-Sudoku's already verified given set for the tier. The consequence is that **every puzzle you are
+It starts from a Sudoku given set that is already unique, then takes givens away one at a time, and
+a removal only stays if the solver proves the puzzle still has exactly one solution inside a small
+search budget. A given it cannot prove redundant is kept. That is why the count falls with the tier:
+about 32 givens at Beginner, 24 at Easy, 16 at Medium, and around a dozen at Hard and Evil, where the
+cages are also larger. The consequence is that **every puzzle you are
 dealt is genuinely uniquely solvable**, never a maybe.
 
 ## The board
@@ -128,8 +132,9 @@ Every row, column and box sums to 45. Comparing that against the cages inside a 
 total of the leftover cells, and often solves one outright.
 
 **Why do Killer Sudoku puzzles have so few given numbers?**
-The cages carry the constraint instead. A well constructed Killer grid can start with zero givens and
-still have exactly one solution.
+The cages carry part of the constraint instead. A well constructed Killer grid can start with zero
+givens and still have exactly one solution, and in Braggster the count falls from about 32 at Beginner
+to around a dozen at Evil.
 
 **Is Killer Sudoku harder than regular Sudoku?**
 Different rather than strictly harder. It requires arithmetic alongside the logic, but the cage sums

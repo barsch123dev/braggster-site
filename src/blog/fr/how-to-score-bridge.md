@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Comptage des points au Bridge : contrats, vulnérabilité et robres
@@ -87,8 +88,9 @@ Un contre multiplie le score de levées et durcit nettement les pénalités. Un 
 encore. Un contrat contré qui réussit rapporte en plus une prime pour l'insulte, et un contrat
 contré qui chute grimpe vite :
 
-Les chutes contrées non vulnérables valent 100, 300, 500, puis 300 chacune ensuite. Les chutes
-contrées vulnérables valent 200, puis 300 chacune. C'est la couche où une feuille de score papier se
+Les chutes contrées non vulnérables coûtent 100 pour la première, 200 chacune pour la deuxième et la
+troisième, puis 300 chacune. Les chutes contrées vulnérables coûtent 200 pour la première, puis 300
+chacune. C'est la couche où une feuille de score papier se
 trompe le plus souvent, parce que la progression n'est pas un taux fixe.
 
 ## Cinquième couche : les levées supplémentaires et les honneurs
@@ -112,6 +114,18 @@ de bonus sont les mêmes, mais les bonus de manche sont attribués par donne plu
 Braggster propose au Bridge une feuille de score pour quatre joueurs répartis en deux partenariats
 fixes sur un jeu de 52 cartes standard, pour que les camps soient correctement en place dès le début
 plutôt que d'avoir quatre colonnes indépendantes que tu dois te rappeler d'associer.
+
+La feuille de score suit le bloc papier : une colonne par partenariat, avec une ligne au milieu.
+Pour chaque donne, tu saisis qui a joué le contrat, le niveau de l'enchère, la couleur d'atout, un
+éventuel contre ou surcontre, si ce camp est vulnérable et combien de levées il a faites. Braggster
+inscrit les points du contrat sous la ligne, dans la colonne du camp déclarant, et les bonus
+au-dessus, ou, si le contrat chute, la pénalité au-dessus de la ligne pour les défenseurs, et tient
+un total par camp. Robre et duplicate y sont tous les deux.
+
+Elle compte chaque donne séparément : tu actives toi-même la vulnérabilité dès qu'un camp a remporté
+sa première manche. Le bonus de manche est versé quand le contrat d'une donne atteint 100, mais les
+scores partiels ne sont pas reportés et la prime de robre et les honneurs ne sont pas ajoutés, donc
+ajoute-les toi-même si votre table les joue.
 
 L'intérêt d'une feuille numérique ici n'est pas que le calcul du bridge soit impossible à la main.
 C'est que la progression des chutes contrées et le changement de vulnérabilité sont exactement le

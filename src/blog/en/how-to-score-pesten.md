@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Pesten Rules and Scoring: The Dutch Crazy Eights
@@ -78,7 +79,9 @@ pestkaarten, with the joker heaviest of all. Lowest total across the series wins
 The alternative, simpler and more common at family tables, is to score **rounds won**: the player who
 goes out takes the round, and you play to an agreed number.
 
-Braggster keeps score for a series either way. The reason to use a scorecard at all for a game this
+Braggster's Pesten scorecard follows the penalty count: after each hand you enter the penalty points
+each player is left holding, the winner enters 0, and it keeps the running totals with the lowest
+leading. There is no separate rounds won mode. The reason to use a scorecard at all for a game this
 simple is not the arithmetic, it is the record: a Pesten evening is ten or fifteen rounds, and the
 question at the end is who actually won the evening.
 

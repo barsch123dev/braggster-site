@@ -15,7 +15,7 @@ secondary_keywords:
   - "puzzelspellen zonder advertenties"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -45,13 +45,13 @@ eigen tabblad, Puzzels, naast de spellen.
 ## De cijferplaatsingsfamilie
 
 **Sudoku.** De klassieke 9x9. Elke rij, kolom en 3x3 vak bevat 1 tot en met 9 precies één keer. Vijf
-niveaus, Beginner tot en met Meedogenloos, en het niveau verandert echt de vereiste oplostechniek:
+niveaus, Beginner tot en met Duivels, en het niveau verandert echt de vereiste oplostechniek:
 Beginner en Makkelijk zijn oplosbaar met alleen enkelingen, de moeilijkere niveaus niet.
 
 **Killer Sudoku.** Het rooster van Sudoku plus een verdeling van de 81 vakjes in kooien, elk met een
 gedrukte som. De cijfers in elke kooi zijn verschillend en tellen op tot die som. Killer-puzzels
-beginnen doorgaans met weinig of geen gegeven cijfers, omdat de kooien de beperking in plaats daarvan
-dragen.
+beginnen met veel minder gegeven cijfers dan een gewone Sudoku, omdat de kooien een deel van de
+beperking dragen: ongeveer 32 bij Beginner, rond de twaalf bij Duivels.
 
 **Kakuro.** De sompuzzel met kruiswoordvorm. Elke reeks witte vakjes bevat verschillende cijfers 1
 tot en met 9 die optellen tot de aanwijzing aan het begin ervan. Roosters lopen van 6x6 tot 10x10.
@@ -181,8 +181,9 @@ Geen advertenties nergens in de app. De timer voedt je score, maar er verloopt n
 onderbreekt niets.
 
 **Welke puzzels zijn beschikbaar in mijn taal?**
-Sudoku en Logikwis zijn er in alle zeven talen van de app. De woordpuzzels zijn van nature
-taalspecifiek en hebben nu elk hun eigen woord- en aanwijzingslijsten in alle zeven.
+Alle achttien zijn er in alle zeven talen van de app. De cijfer- en logicapuzzels zijn onafhankelijk
+van taal, de woordpuzzels zijn van nature taalspecifiek: hun woorden en aanwijzingen volgen de taal
+van de app, met eigen lijsten in alle zeven.
 
 **Kan ik met potloodnotities spelen?**
 Ja, bij de cijferroosterpuzzels. Binairo en Nonogram gebruiken in plaats daarvan een grammatica met

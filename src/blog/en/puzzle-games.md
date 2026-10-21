@@ -15,7 +15,7 @@ secondary_keywords:
   - "puzzle games no ads"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -49,8 +49,9 @@ Beginner through Evil, and the tier genuinely changes the solving technique requ
 Easy are solvable with singles alone, the harder tiers are not.
 
 **Killer Sudoku.** Sudoku's grid plus a partition of the 81 cells into cages, each with a printed
-sum. Every cage's digits are distinct and add to that sum. Killer puzzles typically start with few
-givens or none at all, because the cages carry the constraint instead.
+sum. Every cage's digits are distinct and add to that sum. Killer puzzles start with far fewer
+givens than plain Sudoku, because the cages carry part of the constraint instead: about 32 at
+Beginner, down to around a dozen at Evil.
 
 **Kakuro.** The cross sum puzzle. Every run of white cells holds distinct digits 1 to 9 adding up to
 the clue at its head. Grids run 6x6 up to 10x10.
@@ -171,8 +172,9 @@ Yes. Generation happens on the device, so there is nothing to download and no co
 No ads anywhere in the app. The timer feeds your score, but nothing expires and nothing interrupts.
 
 **Which puzzles are available in my language?**
-Sudoku and Logikwis are in all seven app languages. The word puzzles are language specific by
-nature, and each now ships its own word and clue lists in all seven.
+All eighteen are in all seven app languages. The number and logic puzzles do not depend on language,
+and the word puzzles are language specific by nature: their words and clues follow the app language,
+with their own lists in all seven.
 
 **Can I play with pencil notes?**
 Yes, on the number grid puzzles. Binairo and Nonogram use a two state cell grammar instead, which is

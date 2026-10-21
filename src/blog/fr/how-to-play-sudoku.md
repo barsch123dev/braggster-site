@@ -15,7 +15,7 @@ secondary_keywords:
   - "comment progresser au sudoku"
   - "notes au crayon sudoku"
 search_intent: informational
-updated: 2026-09-28
+updated: 2026-10-21
 priority: 1
 schema:
   - Article
@@ -66,8 +66,8 @@ l'unité. Les triplets fonctionnent pareil, avec trois chiffres.
 éliminé du reste de cette ligne en dehors du carré. Et inversement.
 
 **X-Wing et au delà.** Des motifs qui s'étendent sur plusieurs unités à la fois. C'est là qu'une
-grille cesse d'être une corvée et devient intéressante, et c'est le terrain des niveaux Difficile et
-Diabolique de Braggster.
+grille cesse d'être une corvée et devient intéressante, et c'est là que les niveaux les plus durs
+peuvent t'emmener.
 
 ## Pourquoi « moins de chiffres donnés » est un mauvais indicateur
 
@@ -75,17 +75,19 @@ Une grille avec 24 chiffres donnés, disposés de façon favorable, peut se rés
 singles. Une grille avec 30 chiffres donnés, mal disposés, peut nécessiter des paires et du pointage.
 Le nombre à lui seul ne dit presque rien.
 
-C'est pourquoi Braggster note la difficulté par technique plutôt que par nombre de chiffres donnés. Le
+C'est pourquoi Braggster ne note pas la difficulté au seul nombre de chiffres donnés. Débutant et
+Facile sont garantis solubles avec les singles seuls, Moyen, Difficile et Diabolique sont garantis
+de demander plus que des singles, et les chiffres donnés se font plus rares à chaque niveau. Le
 niveau choisi est enregistré sur la partie, et le générateur distribue une grille calibrée en
 conséquence.
 
 | Niveau | Ce qu'il exige |
 |---|---|
-| Débutant | Singles nus et cachés uniquement |
-| Facile | Singles nus et cachés uniquement |
-| Moyen | Paires et interactions ligne-carré |
-| Difficile | Plusieurs techniques avancées |
-| Diabolique | Technique avancée soutenue |
+| Débutant | Singles nus et cachés uniquement, le plus de chiffres donnés |
+| Facile | Singles nus et cachés uniquement, moins de chiffres donnés |
+| Moyen | Plus que des singles |
+| Difficile | Plus que des singles, moins de chiffres donnés |
+| Diabolique | Plus que des singles, le moins de chiffres donnés |
 
 ## Chaque grille a exactement une solution
 
@@ -129,8 +131,9 @@ un silo séparé.
 ## Questions fréquentes
 
 **Quel est le niveau de difficulté le plus élevé du Sudoku dans Braggster ?**
-Diabolique, le cinquième niveau. Débutant et Facile se résolvent avec des singles seuls, Moyen
-introduit les paires, et Difficile et Diabolique demandent une technique avancée soutenue.
+Diabolique, le cinquième niveau. Débutant et Facile se résolvent avec des singles seuls, tandis que
+Moyen, Difficile et Diabolique demandent plus que des singles, avec moins de chiffres donnés à chaque
+palier.
 
 **L'app me dit-elle quand je fais une erreur ?**
 Pas pendant que tu joues. Les erreurs sont comptées en silence et affichées dans le résumé de fin de

@@ -15,7 +15,7 @@ secondary_keywords:
   - "jogos de quebra cabeça sem anúncio"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -41,7 +41,7 @@ entre um quebra-cabeça que você resolve raciocinando e um em que, em algum mom
 tendo que chutar.
 
 Aqui estão os dezoito, o que cada um realmente pede de você, e como cada um é pontuado. No app eles
-têm uma aba própria, Quebra-cabeças, ao lado dos jogos.
+têm uma aba própria, Puzzles, ao lado dos jogos.
 
 ## A família de colocação de números
 
@@ -51,7 +51,8 @@ exigida: Iniciante e Fácil são solúveis só com candidatos únicos, os nívei
 
 **Killer Sudoku.** A grade do Sudoku mais uma divisão das 81 células em gaiolas, cada uma com uma
 soma impressa. Os dígitos de cada gaiola são distintos e somam esse valor. Os quebra-cabeças
-Killer costumam começar com poucas ou nenhuma pista, porque as gaiolas é que carregam a restrição.
+Killer começam com bem menos pistas que um Sudoku comum, porque as gaiolas carregam parte da
+restrição: cerca de 32 no Iniciante, uns doze no Diabólico.
 
 **Kakuro.** O quebra-cabeça de somas cruzadas. Cada sequência de células brancas tem dígitos
 distintos de 1 a 9 que somam a pista no início dela. As grades vão de 6x6 até 10x10.
@@ -182,8 +183,9 @@ Nenhum anúncio em lugar nenhum do app. O cronômetro alimenta sua pontuação, 
 nada interrompe.
 
 **Quais quebra-cabeças estão no meu idioma?**
-Sudoku e Logikwis estão nos sete idiomas do app. Os quebra-cabeças de palavras são específicos de
-cada idioma por natureza, e agora cada um traz suas próprias listas de palavras e pistas nos sete.
+Os dezoito estão nos sete idiomas do app. Os quebra-cabeças de números e de lógica não dependem do
+idioma, e os de palavras são específicos de cada idioma por natureza: suas palavras e pistas seguem o
+idioma do app, com listas próprias nos sete.
 
 **Dá para jogar com anotações a lápis?**
 Sim, nos quebra-cabeças de grade numérica. Binairo e Nonogram usam uma gramática de célula de

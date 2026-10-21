@@ -15,7 +15,7 @@ secondary_keywords:
   - "brettspiel punktezettel"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -94,13 +94,11 @@ Acht Brettspiele in Braggster sind auf dem Gerät spielbar, nicht nur wertbar:
 Jedes davon speichert sein Ergebnis über denselben Rundenweg wie ein von Hand eingetragener Zettel,
 sodass eine in der App gespielte Partie nie anders zählt als eine, die du selbst eingegeben hast.
 
-## Gemeinsam spielen, ein Handy pro Person
+## Zusammen spielen, ein Handy pro Person
 
 Jedes Brett funktioniert zum Weiterreichen auf einem Handy. Chess, Checkers, Internationales
-Damespiel, Othello und Backgammon lassen sich mit [Gemeinsam spielen](/play-together/) auch auf zwei
-Handys spielen: Ein Handy eröffnet einen Tisch und zeigt einen QR-Code, das andere scannt ihn, und
-jeder zieht von seinem eigenen Handy im selben WLAN. Der letzte Zug wird auf beiden Brettern markiert,
-es gibt kein Konto und keine Internetverbindung, und Mitspielen ist kostenlos. Die Schritt-für-Schritt-
+Damespiel, Othello und Backgammon lassen sich mit [Zusammen spielen](/play-together/) auch auf zwei
+Handys spielen: Ein Handy eröffnet einen Tisch und zeigt einen QR-Code, das andere scannt ihn, und jeder zieht von seinem eigenen Handy. Im selben WLAN braucht es kein Internet, und Freunde anderswo spielen online mit, per Einladungslink oder mit einem Code aus 8 Zeichen. Der letzte Zug wird auf beiden Brettern markiert, es gibt kein Konto, und Mitspielen ist kostenlos. Die Schritt-für-Schritt-
 Anleitung, auch für den Fall, dass ein Tisch nicht erscheint, steht im
 [Guide zum gemeinsamen Spielen auf mehreren Handys](/blog/play-games-together-on-multiple-phones/).
 
@@ -138,8 +136,7 @@ Ja. Die spielbaren Bretter sind zum Weiterreichen gedacht, du gibst das Gerät a
 Konto brauchst du dafür nicht.
 
 **Können wir stattdessen auf zwei Handys spielen?**
-Ja, bei Chess, Checkers, Internationalem Damespiel, Othello und Backgammon. Mit Gemeinsam spielen
-nutzt jeder Spieler sein eigenes Handy im selben WLAN, ohne Konto und ohne Internetverbindung.
+Ja, bei Chess, Checkers, Internationalem Damespiel, Othello und Backgammon. Mit Zusammen spielen nutzt jeder Spieler sein eigenes Handy, im selben WLAN ohne Internet oder online per Einladungslink, in beiden Fällen ohne Konto.
 
 **Funktioniert die App für ein Brettspiel, das nicht auf der Liste steht?**
 Ja. Der immer kostenlose Blank-Punktezettel führt Punkte für alles, und es gibt einen generischen

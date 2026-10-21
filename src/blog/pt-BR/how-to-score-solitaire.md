@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Pontuação do Solitaire: Klondike, Vegas e a Regra do Draw Three
@@ -69,7 +70,10 @@ jogo". O Vegas pergunta "quanto do jogo você realmente conseguiu limpar". O Veg
 pena acompanhar em muitos jogos, porque é comparável entre partidas de um jeito que uma pontuação
 de progresso não é.
 
-O Braggster oferece os dois.
+O Braggster oferece os dois. No Vegas você informa quantas cartas chegaram às fundações, de 0 a 52, e
+o app transforma isso numa pontuação líquida para o seu total acumulado: cinco pontos por carta menos
+52, então uma partida completa rende +208 e uma vazia -52. No padrão você informa por conta própria o
+total de pontos da partida.
 
 ## Compra de uma carta contra compra de três
 

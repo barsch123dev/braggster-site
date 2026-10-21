@@ -16,6 +16,7 @@ secondary_keywords:
   - "deduction grid puzzle"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -59,12 +60,13 @@ murderer directly. You deduce the whole floor plan, and the murderer falls out o
 
 Clues come in several shapes, and learning to read them is most of the skill:
 
-- **Direct facts.** A suspect is or is not in a named room. The easiest foothold, and where you
-  should always start.
-- **Relative position.** One person is in the same row or column as another, or is not.
-- **Compass clues.** A suspect sits in a particular direction relative to a room or another person.
-  Read these carefully: the convention is fixed and stated in the rules screen, and getting the
-  orientation backwards will produce a consistent but wrong grid.
+- **Direct facts.** A suspect is or is not in a named room, or in a named row or column. The easiest
+  foothold, and where you should always start.
+- **Relative position.** One suspect is in the same room as another.
+- **Compass clues.** A suspect stands north, south, east or west of a piece of furniture, or further
+  north or further west than another suspect. Read these carefully: the convention is fixed, with north
+  at the top as the compass marker on the board shows, and getting the orientation backwards will
+  produce a consistent but wrong grid.
 - **Negative facts.** Nobody is in a given room, or a suspect is not adjacent to something.
 
 At the harder tiers, direct facts thin out and the indirect ones carry more of the load.

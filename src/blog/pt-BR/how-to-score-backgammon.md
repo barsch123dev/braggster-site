@@ -14,9 +14,10 @@ secondary_keywords:
   - "jogar gamão offline"
   - "pontuação de partida de gamão"
   - "gamão contra o computador"
+  - "jogar gamão online com amigos"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -85,13 +86,12 @@ Duas posições iniciais são compatíveis:
 - **Nackgammon**, que recua duas peças para deixar o início de jogo menos uma corrida e mais
   posicional.
 
-## Jogar juntos em dois celulares
+## Jogar juntos em dois celulares, perto ou online
 
 Você também pode jogar com um celular para cada um. Com o [Jogar juntos](/play-together/), um
-celular abre uma mesa e mostra um código QR, o outro escaneia, e os dois jogadores veem o mesmo
-tabuleiro ao vivo na mesma rede Wi-Fi. Cada um lança os dados e move do próprio celular, a última
+celular abre uma mesa e mostra um código QR, o outro escaneia, e os dois jogadores veem o mesmo tabuleiro ao vivo. Cada um lança os dados e move do próprio celular, a última
 jogada fica marcada nos dois tabuleiros, e a partida terminada soma 1, 2 ou 3 pontos no placar dos
-dois celulares. Não há conta nem internet envolvida, e só o anfitrião precisa ter o jogo. O
+dois celulares. Na mesma rede Wi-Fi não precisa de internet, e para jogar Backgammon online com amigos em outro lugar basta enviar um link de convite ou o código de 8 caracteres. Não há conta, e só o anfitrião precisa ter o jogo. O
 [guia para jogar juntos em vários celulares](/blog/play-games-together-on-multiple-phones/) explica
 tudo passo a passo.
 
@@ -130,9 +130,8 @@ Não. O Braggster registra só o resultado da partida, sem nenhuma aposta em lug
 **Dá para jogar Backgammon offline contra o computador?**
 Sim. O motor roda totalmente no seu aparelho, sem precisar de conexão nem de cadastro.
 
-**Dá para duas pessoas jogarem Backgammon em dois celulares?**
-Dá. Com o Jogar juntos, cada jogador usa o próprio celular na mesma rede Wi-Fi. Um abre uma mesa, o
-outro escaneia o código, e a partida acontece ao vivo nas duas telas.
+**Dá para duas pessoas jogarem Backgammon em dois celulares, ou online?**
+Dá. Com o Jogar juntos, cada jogador usa o próprio celular. Um abre uma mesa, o outro escaneia o código, e a partida acontece ao vivo nas duas telas. Na mesma rede Wi-Fi não precisa de internet; amigos em outro lugar entram online com um link de convite ou o código de 8 caracteres.
 
 **O que é Nackgammon?**
 Uma posição inicial alternativa que recua duas peças ainda mais, deixando a abertura mais

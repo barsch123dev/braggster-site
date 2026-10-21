@@ -14,9 +14,10 @@ secondary_keywords:
   - "jouer au backgammon hors ligne"
   - "backgammon contre ordinateur"
   - "regles du jacquet"
+  - "jouer au backgammon en ligne entre amis"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -87,13 +88,12 @@ Deux mises en place sont proposées :
 - **Nackgammon**, qui recule deux pions pour rendre le début de partie moins basé sur la course et
   plus sur le positionnement.
 
-## Jouer ensemble sur deux téléphones
+## Jouer ensemble sur deux téléphones, à côté ou en ligne
 
 Tu peux aussi jouer avec un téléphone chacun. Avec [Jouer ensemble](/play-together/), un téléphone
-ouvre une table et affiche un code QR, l'autre le scanne, et les deux joueurs voient le même plateau
-en direct sur le même Wi-Fi. Chacun lance les dés et déplace ses pions depuis son propre téléphone,
+ouvre une table et affiche un code QR, l'autre le scanne, et les deux joueurs voient le même plateau en direct. Chacun lance les dés et déplace ses pions depuis son propre téléphone,
 le dernier coup est marqué sur les deux plateaux, et la partie terminée ajoute 1, 2 ou 3 points au
-décompte sur les deux téléphones. Il n'y a ni compte ni internet, et seul l'hôte a besoin du jeu. Le
+décompte sur les deux téléphones. Sur le même Wi-Fi, pas besoin d'internet, et pour jouer au backgammon en ligne avec un ami plus loin, envoie un lien d'invitation ou le code de 8 caractères. Il n'y a pas de compte, et seul l'hôte a besoin du jeu. Le
 [guide pour jouer ensemble sur plusieurs téléphones](/blog/play-games-together-on-multiple-phones/)
 détaille les étapes.
 
@@ -134,9 +134,8 @@ Non. Braggster enregistre uniquement le résultat de la partie, sans aucun enjeu
 **Puis-je jouer au Backgammon hors ligne contre l'ordinateur ?**
 Oui. Le moteur tourne entièrement sur ton appareil, sans connexion ni compte requis.
 
-**Deux personnes peuvent-elles jouer au Backgammon sur deux téléphones ?**
-Oui. Avec Jouer ensemble, chaque joueur utilise son propre téléphone sur le même Wi-Fi. L'un ouvre
-une table, l'autre scanne son code, et la partie se déroule en direct sur les deux écrans.
+**Deux personnes peuvent-elles jouer au Backgammon sur deux téléphones, y compris en ligne ?**
+Oui. Avec Jouer ensemble, chaque joueur utilise son propre téléphone. L'un ouvre une table, l'autre scanne son code, et la partie se déroule en direct sur les deux écrans. Sur le même Wi-Fi, pas besoin d'internet ; des amis plus loin rejoignent en ligne avec un lien d'invitation ou le code de 8 caractères.
 
 **Qu'est-ce que le Nackgammon ?**
 Une position de départ alternative qui recule deux pions plus loin, rendant l'ouverture plus

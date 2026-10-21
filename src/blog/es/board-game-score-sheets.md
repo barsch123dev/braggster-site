@@ -15,7 +15,7 @@ secondary_keywords:
   - "marcador para juegos de mesa"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -99,9 +99,7 @@ una partida jugada en la app nunca puede puntuar distinto de una que anotaste t�
 
 Todos los tableros funcionan pasando el móvil. Chess, Checkers, las damas internacionales, Othello y
 Backgammon también se juegan en dos móviles con [Jugar juntos](/play-together/): un móvil abre una
-mesa y muestra un código QR, el otro lo escanea, y cada jugador mueve desde su propio móvil por la
-misma red wifi. El último movimiento se marca en ambos tableros, no hay cuenta ni internet de por
-medio, y unirse es gratis. El paso a paso, incluido qué hacer cuando una mesa no aparece, está en la
+mesa y muestra un código QR, el otro lo escanea, y cada jugador mueve desde su propio móvil. En la misma red wifi no hace falta internet, y los amigos que estén lejos se unen por internet con un enlace de invitación o un código de 8 caracteres. El último movimiento se marca en ambos tableros, no hay cuenta, y unirse es gratis. El paso a paso, incluido qué hacer cuando una mesa no aparece, está en la
 [guía para jugar juntos en varios móviles](/blog/play-games-together-on-multiple-phones/).
 
 ## Jugar contra el ordenador
@@ -137,8 +135,7 @@ Sí. Los tableros jugables funcionan pasando el dispositivo: se lo van pasando p
 falta cuenta.
 
 **¿Podemos jugar en dos móviles en su lugar?**
-Sí, en Chess, Checkers, las damas internacionales, Othello y Backgammon. Con Jugar juntos cada
-jugador usa su propio móvil por la misma red wifi, sin cuenta y sin conexión a internet.
+Sí, en Chess, Checkers, las damas internacionales, Othello y Backgammon. Con Jugar juntos cada jugador usa su propio móvil, por la misma red wifi sin internet o por internet con un enlace de invitación, y en ambos casos sin cuenta.
 
 **¿La app funciona para un juego de mesa que no está en la lista?**
 Sí. La hoja en blanco, siempre gratis, lleva la puntuación de cualquier cosa, y hay un marcador

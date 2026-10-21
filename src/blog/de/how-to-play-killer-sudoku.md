@@ -16,6 +16,7 @@ secondary_keywords:
   - "summen sudoku spielen"
 search_intent: informational
 priority: 1
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -30,7 +31,7 @@ trademark_note: null
 # Killer Sudoku: Käfige lösen, ohne zu raten
 
 Killer Sudoku sieht aus wie Sudoku mit zusätzlicher Deko und spielt sich wie ein völlig anderes
-Rätsel. Die meisten Gitter starten mit **sehr wenigen Vorgaben oder gar keinen**, was beim ersten Mal
+Rätsel. Die meisten Gitter starten mit **deutlich weniger Vorgaben als ein normales Sudoku**, was beim ersten Mal
 beunruhigend wirkt. Die Information ist trotzdem komplett da. Sie steht nur als Summen statt als
 Ziffern.
 
@@ -107,9 +108,12 @@ mit einem käfigbewussten Backtracking-Löser. Die beiden Bedingungen getrennt z
 reichen: Ein Gitter kann unter Sudoku allein mehrdeutig und mit den Käfigen eindeutig sein, und
 umgekehrt.
 
-Kann ein dünn besetzter Versuch innerhalb des Suchbudgets nicht als eindeutig bewiesen werden, fällt
-der Generator auf die bereits geprüfte Vorgabenmenge von Sudoku für diese Stufe zurück. Die Folge:
-**Jedes Rätsel, das du bekommst, ist wirklich eindeutig lösbar**, nie ein Vielleicht.
+Der Generator startet mit einer bereits eindeutigen Sudoku-Vorgabenmenge und nimmt dann Vorgaben
+einzeln weg. Eine Entfernung bleibt nur bestehen, wenn der Löser innerhalb eines kleinen Suchbudgets
+beweist, dass das Rätsel weiter genau eine Lösung hat; eine Vorgabe, die er nicht als überflüssig
+beweisen kann, bleibt stehen. Deshalb sinkt die Zahl mit der Stufe: etwa 32 Vorgaben bei Anfänger, 24
+bei Leicht, 16 bei Mittel und rund ein Dutzend bei Schwer und Teuflisch, wo die Käfige zudem größer
+sind. Die Folge: **Jedes Rätsel, das du bekommst, ist wirklich eindeutig lösbar**, nie ein Vielleicht.
 
 ## Das Brett
 
@@ -132,8 +136,9 @@ Jede Zeile, Spalte und jeder Block ergibt 45. Vergleichst du das mit den Käfige
 zeigt sich die Summe der übrig gebliebenen Zellen, und oft löst das eine direkt.
 
 **Warum haben Killer Sudoku Rätsel so wenige Vorgaben?**
-Die Käfige tragen die Bedingung stattdessen. Ein gut gebautes Killer Gitter kann mit null Vorgaben
-starten und trotzdem genau eine Lösung haben.
+Die Käfige tragen einen Teil der Bedingung. Ein gut gebautes Killer Gitter kann mit null Vorgaben
+starten und trotzdem genau eine Lösung haben, und in Braggster sinkt die Zahl von etwa 32 bei Anfänger
+auf rund ein Dutzend bei Teuflisch.
 
 **Ist Killer Sudoku schwerer als normales Sudoku?**
 Eher anders als strikt schwerer. Es verlangt Rechnen zusätzlich zur Logik, aber die Käfigsummen liefern

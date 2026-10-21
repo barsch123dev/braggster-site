@@ -16,6 +16,7 @@ secondary_keywords:
   - "ficha de pontos rami de pecas"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -115,7 +116,7 @@ de manipulação e é o coração do jogo.
 
 **O Braggster tem um tabuleiro jogável de Rummikub?**
 Não. O Rummikub no Braggster é uma ficha que calcula sozinha para um jogo de verdade na mesa. Os
-jogos de tabuleiro jogáveis dentro do app são Chess, Checkers, International draughts, Backgammon,
+jogos de tabuleiro jogáveis dentro do app são Chess, Checkers, International draughts, Othello, Backgammon,
 Dominoes, Connect Four e Tic Tac Toe.
 
 ---

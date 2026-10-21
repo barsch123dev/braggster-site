@@ -15,7 +15,7 @@ secondary_keywords:
   - "board game score tracker"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -97,9 +97,7 @@ you played in the app can never score differently from one you keyed in.
 
 Every board works as pass and play on one phone. Chess, Checkers, International draughts, Othello
 and Backgammon also play on two phones with [Play together](/play-together/): one phone starts a
-table and shows a QR code, the other scans it, and each player moves from their own phone over the
-same Wi-Fi. The last move is marked on both boards, there is no account and no internet involved,
-and joining is free. The step by step, including what to do when a table does not show up, is in
+table and shows a QR code, the other scans it, and each player moves from their own phone. On the same Wi-Fi no internet is needed, and friends anywhere else can join online with an invite link or an 8-character code. The last move is marked on both boards, there is no account, and joining is free. The step by step, including what to do when a table does not show up, is in
 the [guide to playing together on several phones](/blog/play-games-together-on-multiple-phones/).
 
 ## Playing against the computer
@@ -134,8 +132,7 @@ Yes. The playable boards are hotseat, or pass and play: you hand the device acro
 account needed.
 
 **Can we play on two phones instead?**
-Yes, for Chess, Checkers, International draughts, Othello and Backgammon. With Play together each
-player uses their own phone over the same Wi-Fi, with no account and no internet connection.
+Yes, for Chess, Checkers, International draughts, Othello and Backgammon. With Play together each player uses their own phone, on the same Wi-Fi with no internet needed or online through an invite link, and with no account either way.
 
 **Does the app work for a board game that is not in the list?**
 Yes. The always free Blank scorecard keeps score for anything, and there is a generic board game

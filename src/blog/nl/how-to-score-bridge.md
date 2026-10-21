@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Bridge Scoren Uitgelegd: Contracten, Kwetsbaarheid en Robbers
@@ -85,8 +86,9 @@ Een dubbel vermenigvuldigt de slagenscore en scherpt de straffen flink aan. Redo
 het nogmaals. Een gedubbeld contract dat gehaald wordt levert ook een bonus op voor de belediging, en
 een gedubbeld contract dat mislukt loopt snel op:
 
-Niet-kwetsbare gedubbelde ondergaan-slagen lopen 100, 300, 500, en daarna 300 per slag. Kwetsbare
-gedubbelde ondergaan-slagen lopen 200, en daarna 300 per slag. Dit is de laag waar een papieren
+Niet-kwetsbare gedubbelde ondergaan-slagen kosten 100 voor de eerste, 200 per slag voor de tweede en
+derde, en daarna 300 per slag. Kwetsbare gedubbelde ondergaan-slagen kosten 200 voor de eerste, en
+daarna 300 per slag. Dit is de laag waar een papieren
 scoreformulier het vaakst misgaat, omdat de reeks geen vast tarief is.
 
 ## Laag vijf: overslagen en honneurs
@@ -110,6 +112,18 @@ hetzelfde, maar spelbonussen worden per hand toegekend in plaats van per robber.
 Braggster geeft Bridge een scoreformulier voor vier spelers in twee vaste koppels op een standaard
 kaartspel van 52 kaarten, zodat de partijen vanaf het begin correct staan in plaats van vier losse
 kolommen die je zelf moet onthouden te koppelen.
+
+Het scoreformulier volgt het papieren blok: een kolom per koppel, met een streep door het midden.
+Voor elke ronde vul je in wie het contract speelde, het biedniveau, de troefkleur, een eventueel
+dubbel of redubbel, of die partij kwetsbaar is en hoeveel slagen ze won. Braggster zet de
+contractpunten onder de streep in de kolom van de spelende partij en de bonussen erboven, of, als
+het contract mislukt, de straf boven de streep voor de verdedigers, en houdt een totaal per partij
+bij. Robber en Duplicate zijn allebei beschikbaar.
+
+Het scoort elke ronde apart, dus je zet kwetsbaar zelf aan zodra een partij haar eerste spel heeft
+gewonnen. De spelbonus komt als het contract van een ronde 100 of meer waard is, maar deelscores
+worden niet doorgeschoven en de robberbonus en honneurs worden niet bijgeteld, dus tel die er zelf
+bij op als jullie tafel ze speelt.
 
 Het punt van een digitaal formulier hier is niet dat bridge scoren met de hand onmogelijk is. Het is
 dat de reeks gedubbelde ondergaan-slagen en de kwetsbaarheidswissel precies het soort regel is dat

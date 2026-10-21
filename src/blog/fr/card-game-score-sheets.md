@@ -15,7 +15,7 @@ secondary_keywords:
   - "feuille de score numerique cartes"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -158,8 +158,8 @@ ta région :
 | Espagne | Mus, Briscola, Scopa |
 | Brésil, Argentine, Chili | Truco, Canasta, Briscola, Scopa |
 | Équateur, Colombie, Bolivie | Cuarenta, Truco |
-| Mexique, Amérique centrale | Loteria, Burro, Dominoes |
-| Caraïbes | All Fours, Spades, Whist, Dominoes |
+| Mexique, Amérique centrale | Loteria, Burro |
+| Caraïbes | All Fours, Spades, Whist |
 | Royaume-Uni, Irlande | Whist, Twenty-Five, Bridge |
 | États-Unis, Canada | Euchre, Spades, Hearts, Poker |
 | Australie, Nouvelle-Zélande | 500, Euchre, Bridge |
@@ -168,7 +168,7 @@ ta région :
 
 **Ai-je besoin d'un compte pour compter les points ?**
 Non. Braggster fonctionne d'abord en local : les parties, les joueurs et les statistiques vivent
-sur ton appareil, il n'y a pas de connexion, et il n'y a pas de serveur auquel s'inscrire.
+sur ton appareil, il n'y a pas de connexion, et il n'y a pas de compte à créer.
 
 **Puis-je l'utiliser hors ligne ?**
 Oui. Rien dans le calcul des scores n'a besoin de connexion.

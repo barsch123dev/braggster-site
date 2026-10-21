@@ -16,6 +16,7 @@ secondary_keywords:
   - "rommé mit steinen regeln"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -116,7 +117,7 @@ und das Herzstück des Spiels.
 
 **Hat Braggster ein spielbares Rummikub Brett?**
 Nein. Rummikub in Braggster ist ein rechnender Punktezettel für ein echtes Set auf dem Tisch. Die
-Brettspiele mit Spiel in der App sind Chess, Checkers, Internationales Damespiel, Backgammon,
+Brettspiele mit Spiel in der App sind Chess, Checkers, Internationales Damespiel, Othello, Backgammon,
 Dominoes, Connect Four und Tic Tac Toe.
 
 ---

@@ -16,6 +16,7 @@ secondary_keywords:
   - "rummy des tuiles regles"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -119,8 +120,7 @@ règle de manipulation, et c'est le cœur du jeu.
 
 **Braggster propose-t-il un plateau de Rummikub jouable ?**
 Non. Le Rummikub dans Braggster est une feuille de score qui calcule pour un vrai jeu posé sur la
-table. Les jeux de plateau jouables dans l'app sont Chess, Checkers, International draughts,
-Backgammon, Dominoes, Connect Four et Tic Tac Toe.
+table. Les jeux de plateau jouables dans l'app sont Chess, Checkers, International draughts, Othello, Backgammon, Dominoes, Connect Four et Tic Tac Toe.
 
 ---
 

@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Pesten Regeln und Punkte: Das niederländische Mau-Mau
@@ -82,7 +83,10 @@ Die Alternative, einfacher und an Familientischen häufiger, ist die Wertung nac
 Runden**: Wer als Erster fertig wird, gewinnt die Runde, und gespielt wird bis zu einer vereinbarten
 Zahl.
 
-Braggster hält die Serie auf beide Arten fest. Der Grund, für ein so einfaches Spiel überhaupt einen
+Der Pesten Punktezettel von Braggster folgt der Strafpunktzählung: Nach jeder Hand trägst du die
+Strafpunkte ein, die jedem Spieler auf der Hand bleiben, der Gewinner trägt 0 ein, und der Zettel führt
+die laufenden Summen mit der niedrigsten vorn. Einen eigenen Modus für gewonnene Runden gibt es
+nicht. Der Grund, für ein so einfaches Spiel überhaupt einen
 Punktezettel zu nutzen, ist nicht die Rechnung, sondern die Aufzeichnung: Ein Pesten Abend hat zehn
 oder fünfzehn Runden, und am Ende steht die Frage, wer den Abend eigentlich gewonnen hat.
 

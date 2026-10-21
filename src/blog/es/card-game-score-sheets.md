@@ -15,7 +15,7 @@ secondary_keywords:
   - "hoja de puntuación digital cartas"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -155,8 +155,8 @@ los países donde es habitual, así que el catálogo se puede filtrar por tu reg
 | España | Mus, Briscola, Scopa |
 | Brasil, Argentina, Chile | Truco, Canasta, Briscola, Scopa |
 | Ecuador, Colombia, Bolivia | Cuarenta, Truco |
-| México, Centroamérica | Loteria, Burro, Dominoes |
-| Caribe | All Fours, Spades, Whist, Dominoes |
+| México, Centroamérica | Loteria, Burro |
+| Caribe | All Fours, Spades, Whist |
 | Reino Unido, Irlanda | Whist, Twenty-Five, Bridge |
 | EE. UU., Canadá | Euchre, Spades, Hearts, Poker |
 | Australia, Nueva Zelanda | 500, Euchre, Bridge |
@@ -164,7 +164,7 @@ los países donde es habitual, así que el catálogo se puede filtrar por tu reg
 ## Preguntas frecuentes
 
 **¿Necesito una cuenta para llevar la puntuación?**
-No. Braggster funciona sin conexión a un servidor: las partidas, los jugadores y las estadísticas
+No. Braggster es local primero: las partidas, los jugadores y las estadísticas
 viven en tu dispositivo, no hay inicio de sesión ni nada que registrar.
 
 **¿Puedo usarla sin conexión?**

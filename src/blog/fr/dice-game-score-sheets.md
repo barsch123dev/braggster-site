@@ -15,6 +15,7 @@ secondary_keywords:
   - "application de lancer de des"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -26,6 +27,7 @@ internal_links:
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/puzzle-games/
+  - /play-together/
 trademark_note: "Yahtzee est une marque déposée de son éditeur. Braggster n'est ni affilié ni approuvé par celui-ci, et le nom est utilisé uniquement à titre référentiel."
 ---
 
@@ -106,9 +108,11 @@ pour tout jeu de dés qui n'a pas encore sa propre feuille.
 
 ## Quand les dés ont disparu
 
-Le lanceur de dés de Braggster est partagé dans toute l'app plutôt que réservé à un seul jeu, donc
-tout jeu avec une configuration de dés peut lancer à l'écran. Cela couvre le cas classique où tu as
-les règles, les joueurs et les biscuits apéro, mais où les dés sont dans un autre sac.
+Le lanceur de dés de Braggster est partagé dans toute l'app plutôt que réservé à un seul jeu : le Yahtzee propose un Lancer de dés numérique, le Backgammon lance sur son propre plateau et Freestyle lance autant de dés que tu veux. Cela couvre le cas classique où tu as les règles, les joueurs et les biscuits apéro, mais où les dés sont dans un autre sac.
+
+## Yahtzee (Yams) en ligne avec des amis
+
+Le Yahtzee est le seul jeu de dés avec [Jouer ensemble](/play-together/) : jusqu'à six joueurs, un téléphone chacun. Sur le même Wi-Fi, pas besoin d'internet, et les amis qui sont ailleurs rejoignent la table en ligne avec un lien d'invitation ou un code de 8 caractères. L'hôte peut activer le Lancer de dés numérique, et chacun voit le lancer arriver sur son propre téléphone. Le Dudo se compte sur un seul téléphone.
 
 ## Questions fréquentes
 
@@ -117,8 +121,10 @@ Oui. Le bonus de 35 points à 63 découle de la section haute, et la feuille le 
 te le demander.
 
 **Combien de joueurs puis-je compter en même temps ?**
-La feuille de score resserre les colonnes pour que tout le monde tienne, plutôt que de te limiter
-à un nombre confortable, donc les grands groupes tiennent quand même sur un seul écran.
+Le Yahtzee et le Dudo accueillent de deux à six joueurs, et la feuille de score resserre les colonnes pour que tout le monde tienne sur un seul écran.
+
+**Peut-on jouer au Yahtzee en ligne avec des amis ?**
+Oui. Avec Jouer ensemble, jusqu'à six joueurs utilisent chacun leur propre téléphone : sur le même Wi-Fi, pas besoin d'internet, ou invite des amis où qu'ils soient avec un lien ou un code de 8 caractères. Le Dudo n'a pas Jouer ensemble, un seul téléphone en tient donc le score.
 
 **Y a-t-il un mode avec des mises ou des paris ?**
 Non. Rien dans Braggster n'enregistre de pari, de mise ou de gain. Le Dudo compte qui est encore
@@ -129,8 +135,7 @@ Oui. Utilise Freestyle pour une table de cartes et de dés avec une feuille de s
 feuille vierge, toujours gratuite, pour absolument n'importe quoi.
 
 **Ai-je besoin d'un compte ?**
-Non. Braggster fonctionne d'abord en local : pas de connexion, pas de serveur, et tes scores
-restent sur ton appareil.
+Non. Braggster n'a ni connexion ni inscription, et tes scores restent sur ton appareil. Jouer ensemble en ligne ne demande pas de compte non plus.
 
 ---
 

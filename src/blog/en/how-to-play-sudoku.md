@@ -15,7 +15,7 @@ secondary_keywords:
   - "how to get better at sudoku"
   - "sudoku pencil marks"
 search_intent: informational
-updated: 2026-09-28
+updated: 2026-10-21
 priority: 1
 schema:
   - Article
@@ -65,23 +65,25 @@ same way with three.
 rest of that row outside the box. And the reverse.
 
 **X-Wing and beyond.** Patterns that span multiple units at once. This is where puzzles stop being a
-grind and start being interesting, and where Braggster's Hard and Evil tiers live.
+grind and start being interesting, and where the harder tiers can send you.
 
 ## Why "fewer givens" is a bad proxy
 
 A grid with 24 givens arranged helpfully can be a singles-only walk. A grid with 30 givens arranged
 awkwardly can require pairs and pointing. The count tells you almost nothing on its own.
 
-This is why Braggster grades by technique rather than by given count. The chosen variant is stored on
-the match, and the generator deals a puzzle graded to it.
+This is why Braggster does not grade on given count alone. Beginner and Easy puzzles are guaranteed
+solvable with singles, Medium, Hard and Evil are guaranteed to need more than singles, and the
+givens thin out as you climb. The chosen variant is stored on the match, and the generator deals a
+puzzle graded to it.
 
 | Tier | What it requires |
 |---|---|
-| Beginner | Naked and hidden singles only |
-| Easy | Naked and hidden singles only |
-| Medium | Pairs and box line interactions |
-| Hard | Multiple advanced techniques |
-| Evil | Sustained advanced technique |
+| Beginner | Naked and hidden singles only, the most givens |
+| Easy | Naked and hidden singles only, fewer givens |
+| Medium | More than singles |
+| Hard | More than singles, fewer givens |
+| Evil | More than singles, the fewest givens |
 
 ## Every puzzle has exactly one solution
 
@@ -120,8 +122,8 @@ alongside your card and board game records rather than in a separate silo.
 ## Frequently asked questions
 
 **What is the hardest Sudoku difficulty in Braggster?**
-Evil, the fifth tier. Beginner and Easy are solvable with singles alone, Medium introduces pairs, and
-Hard and Evil require sustained advanced technique.
+Evil, the fifth tier. Beginner and Easy are solvable with singles alone, while Medium, Hard and Evil
+all need more than singles, with fewer givens at each step up.
 
 **Does the app tell me when I make a mistake?**
 Not while you play. Mistakes are counted silently and shown in the solve summary. This is deliberate

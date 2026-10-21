@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Regras e Pontuação do Pesten: O Crazy Eights Holandês
@@ -80,7 +81,9 @@ todas. Menor total ao longo da série vence.
 A alternativa, mais simples e mais comum nas mesas de família, é pontuar **rodadas vencidas**:
 quem esvazia a mão primeiro leva a rodada, e vocês jogam até um número combinado.
 
-O Braggster marca pontos para uma série dos dois jeitos. O motivo para usar uma ficha nesse jogo
+A ficha de Pesten do Braggster segue a contagem de penalidade: depois de cada mão você informa os
+pontos de penalidade que sobram para cada jogador, o vencedor informa 0, e a ficha mantém os totais
+acumulados com o menor na frente. Não existe um modo separado de rodadas vencidas. O motivo para usar uma ficha nesse jogo
 tão simples não é a conta, é o registro: uma noite de Pesten são dez ou quinze rodadas, e a
 pergunta no final é quem realmente venceu a noite.
 

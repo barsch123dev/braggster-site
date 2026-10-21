@@ -16,6 +16,7 @@ secondary_keywords:
   - "grille de déduction jeu"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -61,13 +62,13 @@ découle.
 Les indices prennent plusieurs formes, et apprendre à les lire, c'est l'essentiel de la compétence
 requise :
 
-- **Les faits directs.** Un suspect est ou n'est pas dans une pièce nommée. Le point d'appui le plus
-  facile, et celui par lequel il faut toujours commencer.
-- **La position relative.** Une personne est dans la même ligne ou la même colonne qu'une autre, ou
-  n'y est pas.
-- **Les indices de direction.** Un suspect se trouve dans une direction précise par rapport à une
-  pièce ou à une autre personne. Lis-les avec attention : la convention est fixe et indiquée sur
-  l'écran des règles, et inverser l'orientation produira une grille cohérente mais fausse.
+- **Les faits directs.** Un suspect est ou n'est pas dans une pièce nommée, ou dans une ligne ou une
+  colonne donnée. Le point d'appui le plus facile, et celui par lequel il faut toujours commencer.
+- **La position relative.** Un suspect est dans la même pièce qu'un autre.
+- **Les indices de direction.** Un suspect se trouve au nord, au sud, à l'est ou à l'ouest d'un
+  meuble, ou plus au nord ou plus à l'ouest qu'un autre suspect. Lis-les avec attention : la convention
+  est fixe, avec le nord en haut comme l'indique la boussole sur le plateau, et inverser l'orientation
+  produira une grille cohérente mais fausse.
 - **Les faits négatifs.** Personne n'est dans une pièce donnée, ou un suspect n'est pas adjacent à
   quelque chose.
 

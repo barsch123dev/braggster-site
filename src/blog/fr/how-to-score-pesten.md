@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Règles et points du Pesten : le Crazy Eights néerlandais
@@ -82,7 +83,10 @@ L'alternative, plus simple et plus courante dans les familles, est de compter le
 gagnées** : le joueur qui termine sa main remporte la manche, et vous jouez jusqu'à un nombre
 convenu.
 
-Braggster garde le score d'une série dans les deux cas. La raison d'utiliser une feuille de score pour
+La feuille de score du Pesten de Braggster suit le comptage de pénalité : après chaque main, tu
+entres les points de pénalité qui restent à chaque joueur, le gagnant inscrit 0, et la feuille tient
+les totaux courants avec le plus bas en tête. Il n'y a pas de mode distinct pour les manches gagnées.
+La raison d'utiliser une feuille de score pour
 un jeu aussi simple n'est pas le calcul, c'est la trace : une soirée de Pesten compte dix ou quinze
 manches, et la question à la fin est de savoir qui a vraiment gagné la soirée.
 

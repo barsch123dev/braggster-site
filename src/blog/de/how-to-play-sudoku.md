@@ -16,7 +16,7 @@ secondary_keywords:
   - "sudoku notizen"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -54,8 +54,8 @@ Zeile, Spalte oder ihrem Block vorkommen. Scan immer zuerst danach.
 kann, obwohl diese Zelle selbst mehrere Kandidaten hat. Anfänger übersehen diese ständig, weil sie auf
 Zellen schauen statt auf Ziffern.
 
-Diese beiden allein lösen eine riesige Zahl veröffentlichter Rätsel. In Braggster sind **Beginner und
-Easy garantiert allein mit Einern lösbar**, genau das macht sie zu einem guten Startpunkt, um Tempo
+Diese beiden allein lösen eine riesige Zahl veröffentlichter Rätsel. In Braggster sind **Anfänger und
+Leicht garantiert allein mit Einern lösbar**, genau das macht sie zu einem guten Startpunkt, um Tempo
 aufzubauen.
 
 **Nackte und versteckte Paare.** Zwei Zellen in einer Einheit, die sich genau zwei Kandidaten teilen:
@@ -66,8 +66,8 @@ ausgeschlossen werden. Tripel funktionieren genauso, nur mit drei.
 dieser Zeile außerhalb des Blocks ausgeschlossen werden. Und umgekehrt.
 
 **X-Wing und mehr.** Muster, die sich über mehrere Einheiten gleichzeitig erstrecken. Hier hören
-Rätsel auf, eine Fleißarbeit zu sein, und werden interessant, und hier leben Braggsters Stufen Hard
-und Evil.
+Rätsel auf, eine Fleißarbeit zu sein, und werden interessant, und dorthin können dich die schwereren
+Stufen führen.
 
 ## Warum "weniger Vorgaben" ein schlechter Maßstab ist
 
@@ -75,16 +75,18 @@ Ein Gitter mit 24 Vorgaben, günstig angeordnet, kann ein reiner Einer-Spazierga
 30 Vorgaben, ungünstig angeordnet, kann Paare und Pointing verlangen. Die Zahl allein sagt fast
 nichts aus.
 
-Deshalb bewertet Braggster nach Technik statt nach Anzahl der Vorgaben. Die gewählte Stufe wird auf der
-Partie gespeichert, und der Generator liefert ein passend abgestuftes Rätsel.
+Deshalb bewertet Braggster nicht allein nach der Anzahl der Vorgaben. Anfänger und Leicht sind
+garantiert allein mit Einern lösbar, Mittel, Schwer und Teuflisch brauchen garantiert mehr als Einer,
+und die Vorgaben werden mit jeder Stufe weniger. Die gewählte Stufe wird auf der Partie gespeichert,
+und der Generator liefert ein passend abgestuftes Rätsel.
 
 | Stufe | Was sie verlangt |
 |---|---|
-| Beginner | Nur nackte und versteckte Einer |
-| Easy | Nur nackte und versteckte Einer |
-| Medium | Paare und Box-Zeilen-Wechselwirkungen |
-| Hard | Mehrere fortgeschrittene Techniken |
-| Evil | Anhaltend fortgeschrittene Technik |
+| Anfänger | Nur nackte und versteckte Einer, die meisten Vorgaben |
+| Leicht | Nur nackte und versteckte Einer, weniger Vorgaben |
+| Mittel | Mehr als Einer |
+| Schwer | Mehr als Einer, weniger Vorgaben |
+| Teuflisch | Mehr als Einer, die wenigsten Vorgaben |
 
 ## Jedes Rätsel hat genau eine Lösung
 
@@ -126,8 +128,8 @@ neben deinen Karten- und Brettspielrekorden steht statt in einer eigenen Nische.
 ## Häufige Fragen
 
 **Was ist der höchste Sudoku Schwierigkeitsgrad in Braggster?**
-Evil, die fünfte Stufe. Beginner und Easy sind allein mit Einern lösbar, Medium führt Paare ein, und
-Hard sowie Evil verlangen anhaltend fortgeschrittene Technik.
+Teuflisch, die fünfte Stufe. Anfänger und Leicht sind allein mit Einern lösbar, während Mittel,
+Schwer und Teuflisch mehr als Einer brauchen, mit jeweils weniger Vorgaben.
 
 **Sagt mir die App, wenn ich einen Fehler mache?**
 Nicht während des Spiels. Fehler werden still gezählt und in der Lösungszusammenfassung gezeigt. Das

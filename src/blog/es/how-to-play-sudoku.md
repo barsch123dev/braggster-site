@@ -15,7 +15,7 @@ secondary_keywords:
   - "como mejorar en sudoku"
   - "sudoku notas a lapiz"
 search_intent: informational
-updated: 2026-09-28
+updated: 2026-10-21
 priority: 1
 schema:
   - Article
@@ -66,8 +66,7 @@ la unidad. Los tríos funcionan igual con tres.
 del resto de esa fila fuera de la caja. Y al revés.
 
 **X-Wing y más allá.** Patrones que abarcan varias unidades a la vez. Aquí es donde los puzles dejan
-de ser un trámite y empiezan a ser interesantes, y donde viven los niveles Difícil y Diabólico de
-Braggster.
+de ser un trámite y empiezan a ser interesantes, y adonde pueden llevarte los niveles más difíciles.
 
 ## Por qué "menos números iniciales" es un mal indicador
 
@@ -75,16 +74,18 @@ Una cuadrícula con 24 números iniciales colocados de forma útil puede resolve
 Una cuadrícula con 30 números iniciales colocados de forma incómoda puede exigir pares y la técnica
 de apuntar. El recuento por sí solo casi no dice nada.
 
-Por eso Braggster clasifica por técnica y no por número de cifras. La variante elegida se guarda en
-la partida, y el generador reparte un puzle graduado a ese nivel.
+Por eso Braggster no clasifica solo por número de cifras. Principiante y Fácil se garantizan
+resolubles con singles, Medio, Difícil y Diabólico se garantizan más allá de los singles, y las cifras
+iniciales van disminuyendo al subir. La variante elegida se guarda en la partida, y el generador
+reparte un puzle graduado a ese nivel.
 
 | Nivel | Qué exige |
 |---|---|
-| Principiante | Solo singles desnudos y ocultos |
-| Fácil | Solo singles desnudos y ocultos |
-| Medio | Pares e interacciones de caja y línea |
-| Difícil | Varias técnicas avanzadas |
-| Diabólico | Técnica avanzada sostenida |
+| Principiante | Solo singles desnudos y ocultos, las más cifras iniciales |
+| Fácil | Solo singles desnudos y ocultos, menos cifras iniciales |
+| Medio | Más que singles |
+| Difícil | Más que singles, menos cifras iniciales |
+| Diabólico | Más que singles, las menos cifras iniciales |
 
 ## Cada puzle tiene exactamente una solución
 
@@ -125,8 +126,8 @@ compartimento aparte.
 ## Preguntas frecuentes
 
 **¿Cuál es el nivel de dificultad más alto de Sudoku en Braggster?**
-Diabólico, el quinto nivel. Principiante y Fácil se resuelven solo con singles, Medio introduce los
-pares, y Difícil y Diabólico exigen técnica avanzada sostenida.
+Diabólico, el quinto nivel. Principiante y Fácil se resuelven solo con singles, mientras que Medio,
+Difícil y Diabólico exigen más que singles, con menos cifras iniciales en cada paso.
 
 **¿La app me avisa cuando cometo un error?**
 No mientras juegas. Los errores se cuentan en silencio y se muestran en el resumen final. Esto es

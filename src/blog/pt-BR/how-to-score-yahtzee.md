@@ -14,9 +14,10 @@ secondary_keywords:
   - "regra do joker no yahtzee"
   - "kniffel punkte"
   - "yams regles"
+  - "yahtzee online com amigos"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -24,6 +25,8 @@ schema:
 internal_links:
   - /games/
   - /blog/dice-game-score-sheets/
+  - /play-together/
+  - /blog/play-games-together-on-multiple-phones/
 trademark_note: "Yahtzee é uma marca registrada de seu editor. O Braggster não tem vínculo com ele nem apoio ou licença dele, e o nome é usado apenas de forma referencial."
 ---
 
@@ -134,11 +137,7 @@ lembrar se uma full house vale 25 ou uma soma.
 Sem dados em casa? Ative os dados digitais e lance na tela, segure os que quiser guardar, e o app
 mostra quanto essa jogada pontuaria em cada caixa aberta.
 
-Com o [Jogar juntos](/play-together/), até seis jogadores usam cada um o próprio celular na mesma
-rede Wi-Fi. Um celular abre uma mesa e mostra um código QR, os outros escaneiam, e cada um preenche
-a sua própria coluna. Quando o anfitrião ativa os dados digitais para a mesa, quem está na vez
-lança no próprio celular e todos os outros veem os dados caírem no deles. Sem conta, sem internet,
-e só o anfitrião precisa ter o jogo. O passo a passo está no
+Com o [Jogar juntos](/play-together/), você joga Yahtzee online com amigos ou na mesma sala: até seis jogadores, um celular para cada um. Na mesma rede Wi-Fi não precisa de internet: um celular abre uma mesa e mostra um código QR, e os outros escaneiam. Amigos de qualquer outro lugar entram com um link de convite ou um código de 8 caracteres, e uma mesa pode misturar os dois. Cada um preenche a sua própria coluna. Quando o anfitrião ativa a Rolagem de dados digital para a mesa, quem está na vez lança no próprio celular e todos os outros veem os dados caírem no deles. Online, a partida é criptografada de ponta a ponta e o servidor de retransmissão não consegue lê-la. Sem conta, e só o anfitrião precisa ter o jogo. O passo a passo está no
 [guia para jogar juntos em vários celulares](/blog/play-games-together-on-multiple-phones/).
 
 ## Perguntas frequentes
@@ -157,9 +156,8 @@ Não. Ela pontua a soma dos cinco dados. Essa é a caixa mais errada da ficha in
 Se você já levou zero na caixa de Yahtzee, nenhum bônus se aplica. A regra do Joker ainda decide
 onde os dados são pontuados.
 
-**Dá para jogar Yahtzee em vários celulares?**
-Dá. Com o Jogar juntos, até seis jogadores usam cada um o próprio celular na mesma rede Wi-Fi, com
-dados digitais compartilhados que todos veem cair.
+**Dá para jogar Yahtzee em vários celulares, ou online?**
+Dá. Com o Jogar juntos, até seis jogadores usam cada um o próprio celular: na mesma rede Wi-Fi não precisa de internet, ou convide amigos de qualquer lugar com um link ou um código de 8 caracteres. O anfitrião pode ativar a Rolagem de dados digital, que todos veem cair.
 
 **Kniffel é o mesmo jogo que Yahtzee?**
 Na prática, sim, e a mesma ficha cobre os dois, junto com o Yams e a família Generala.

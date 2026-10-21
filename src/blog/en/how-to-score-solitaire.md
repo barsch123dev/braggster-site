@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Solitaire Scoring: Klondike, Vegas and the Draw Three Rule
@@ -67,7 +68,9 @@ The two systems answer different questions. Standard asks "how well did you play
 asks "how much of the deal did you actually clear". Vegas is the one worth tracking across many games,
 because it is comparable between deals in a way a progress score is not.
 
-Braggster offers both.
+Braggster offers both. For Vegas you enter how many cards reached the foundations, 0 to 52, and it
+turns that into a net score for your running total: five points per card minus 52, so a full deal
+nets +208 and an empty one -52. For standard you enter the deal's point total yourself.
 
 ## Draw one versus draw three
 

@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Puntuación de Solitaire: Klondike, Vegas y la Regla de Tres Cartas
@@ -69,7 +70,10 @@ reparto". Vegas pregunta "cuánto del reparto lograste despejar de verdad". Vega
 pena seguir a lo largo de muchas partidas, porque es comparable entre repartos de una forma que una
 puntuación de progreso no lo es.
 
-Braggster ofrece los dos.
+Braggster ofrece los dos. En Vegas anotas cuántas cartas llegaron a las fundaciones, de 0 a 52, y la
+app lo convierte en una puntuación neta para tu total acumulado: cinco puntos por carta menos 52, así
+que un reparto completo suma +208 y uno vacío -52. En el estándar anotas tú mismo el total de puntos
+del reparto.
 
 ## Una carta contra tres cartas
 

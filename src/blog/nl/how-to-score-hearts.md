@@ -24,6 +24,7 @@ internal_links:
   - /games/
   - /blog/card-game-score-sheets/
 trademark_note: null
+updated: 2026-10-21
 ---
 
 # Hearts Regels en Scoren, Plus Spelen Tegen de Computer
@@ -77,7 +78,7 @@ schoppenvrouw heeft kunnen kwijtraken.
 
 ## De rest van de regels die ertoe doen
 
-- De speler met de **klaverenboer** opent de eerste slag.
+- De speler met de **klaveren twee** opent de eerste slag.
 - Je moet **kleur bekennen** als je kunt.
 - **Harten liggen niet open** aan het begin: je mag geen hart uitspelen totdat er eentje is
   afgelegd op een andere kleur, of je hebt niets anders.

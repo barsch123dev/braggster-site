@@ -16,6 +16,7 @@ secondary_keywords:
   - "deductierooster puzzel"
 search_intent: informational
 priority: 2
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -60,19 +61,20 @@ dader niet rechtstreeks af. Je leidt de hele plattegrond af, en de dader valt da
 Aanwijzingen komen in verschillende vormen, en leren ze te lezen is het grootste deel van de
 vaardigheid:
 
-- **Directe feiten.** Een verdachte zit wel of niet in een genoemde kamer. Het makkelijkste
-  aanknopingspunt, en waar je altijd moet beginnen.
-- **Relatieve positie.** De ene persoon zit in dezelfde rij of kolom als een ander, of juist niet.
-- **Kompasaanwijzingen.** Een verdachte zit in een bepaalde richting ten opzichte van een kamer of een
-  andere persoon. Lees deze zorgvuldig: de conventie ligt vast en staat op het regelscherm, en de
-  richting verkeerd om lezen levert een consistent maar fout rooster op.
+- **Directe feiten.** Een verdachte zit wel of niet in een genoemde kamer, of in een genoemde rij of
+  kolom. Het makkelijkste aanknopingspunt, en waar je altijd moet beginnen.
+- **Relatieve positie.** De ene verdachte zit in dezelfde kamer als een ander.
+- **Kompasaanwijzingen.** Een verdachte staat ten noorden, zuiden, oosten of westen van een
+  meubelstuk, of verder naar het noorden of westen dan een andere verdachte. Lees deze zorgvuldig: de
+  conventie ligt vast, met het noorden boven zoals het kompas op het bord laat zien, en de richting
+  verkeerd om lezen levert een consistent maar fout rooster op.
 - **Negatieve feiten.** Niemand zit in een genoemde kamer, of een verdachte grenst niet aan iets.
 
 Bij de hogere niveaus dunnen de directe feiten uit en dragen de indirecte meer van het gewicht.
 
 ## Vijf niveaus
 
-Beginner, Makkelijk, Gemiddeld, Moeilijk en Meedogenloos, hetzelfde niveaupatroon als Sudoku, Killer
+Beginner, Makkelijk, Gemiddeld, Moeilijk en Duivels, hetzelfde niveaupatroon als Sudoku, Killer
 Sudoku en Logikwis. Het niveau verandert de mix van aanwijzingen, niet het bord: moeilijkere zaken
 geven je minder directe feiten en meer aanwijzingen die pas nuttig worden als er iets anders al
 vaststaat.

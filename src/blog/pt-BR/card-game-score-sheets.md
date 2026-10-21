@@ -15,7 +15,7 @@ secondary_keywords:
   - "planilha de pontos cartas"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -156,8 +156,8 @@ sua região:
 | Espanha | Mus, Briscola, Scopa |
 | Brasil, Argentina, Chile | Truco, Canasta, Briscola, Scopa |
 | Equador, Colômbia, Bolívia | Cuarenta, Truco |
-| México, América Central | Loteria, Burro, Dominoes |
-| Caribe | All Fours, Spades, Whist, Dominoes |
+| México, América Central | Loteria, Burro |
+| Caribe | All Fours, Spades, Whist |
 | Reino Unido, Irlanda | Whist, Twenty-Five, Bridge |
 | EUA, Canadá | Euchre, Spades, Hearts, Poker |
 | Austrália, Nova Zelândia | 500, Euchre, Bridge |
@@ -166,7 +166,7 @@ sua região:
 
 **Preciso de uma conta para marcar pontos?**
 Não. O Braggster é local: partidas, jogadores e estatísticas ficam no seu aparelho, não existe
-login, e não existe nenhum servidor para se cadastrar.
+login, e não existe nenhuma conta para criar.
 
 **Dá para usar offline?**
 Sim. Nada no caminho da pontuação precisa de conexão.

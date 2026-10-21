@@ -15,7 +15,7 @@ secondary_keywords:
   - "app placar jogo de tabuleiro"
 search_intent: informational
 priority: 1
-updated: 2026-09-28
+updated: 2026-10-21
 schema:
   - Article
   - FAQPage
@@ -98,9 +98,7 @@ partida jogada no app nunca pode pontuar diferente de uma que você registrou ma
 
 Todo tabuleiro funciona passando um celular só de mão em mão. Chess, Checkers, International
 draughts, Othello e Backgammon também jogam em dois celulares com o [Jogar juntos](/play-together/):
-um celular abre uma mesa e mostra um código QR, o outro escaneia, e cada jogador joga do próprio
-celular na mesma rede Wi-Fi. A última jogada fica marcada nos dois tabuleiros, não há conta nem
-internet envolvida, e entrar é grátis. O passo a passo, inclusive o que fazer quando uma mesa não
+um celular abre uma mesa e mostra um código QR, o outro escaneia, e cada jogador joga do próprio celular. Na mesma rede Wi-Fi não precisa de internet, e amigos em outro lugar entram online com um link de convite ou um código de 8 caracteres. A última jogada fica marcada nos dois tabuleiros, não há conta, e entrar é grátis. O passo a passo, inclusive o que fazer quando uma mesa não
 aparece, está no [guia para jogar juntos em vários celulares](/blog/play-games-together-on-multiple-phones/).
 
 ## Jogando contra o computador
@@ -137,8 +135,7 @@ Sim. Os tabuleiros jogáveis funcionam passando o aparelho de mão em mão, um p
 de cadastro.
 
 **Dá para jogar em dois celulares?**
-Dá, em Chess, Checkers, International draughts, Othello e Backgammon. Com o Jogar juntos, cada
-jogador usa o próprio celular na mesma rede Wi-Fi, sem conta e sem conexão com a internet.
+Dá, em Chess, Checkers, International draughts, Othello e Backgammon. Com o Jogar juntos, cada jogador usa o próprio celular, na mesma rede Wi-Fi sem internet ou online por um link de convite, e nos dois casos sem conta.
 
 **O app funciona para um jogo de tabuleiro que não está na lista?**
 Sim. A planilha em branco, sempre grátis, marca pontos de qualquer coisa, e existe uma ficha
