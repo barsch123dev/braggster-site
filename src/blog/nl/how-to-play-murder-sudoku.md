@@ -135,7 +135,7 @@ Nee. Elke zaak wordt op aanvraag gegenereerd en geverifieerd op precies één op
 is onbeperkt.
 
 **In welke talen is het beschikbaar?**
-Alle zeven app-talen. De verhaaltekst is per taal geschreven in plaats van machinaal vertaald, zodat
+Alle elf app-talen. De verhaaltekst is per taal geschreven in plaats van machinaal vertaald, zodat
 het mysterie in elke taal natuurlijk leest.
 
 **Is het gebaseerd op een bestaand bordspel?**
@@ -143,6 +143,6 @@ Nee. Elke verdachte, kamer en objectnaam is origineel voor dit spel.
 
 ---
 
-**Meer:** bekijk alle achttien [logicapuzzels](/blog/puzzle-games/), lees over
+**Meer:** bekijk alle negentien [logicapuzzels](/blog/puzzle-games/), lees over
 [Sudoku-moeilijkheidsgraad](/blog/how-to-play-sudoku/), of blader door de catalogus op
 [braggster.com/games](/games/).

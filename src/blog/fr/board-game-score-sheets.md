@@ -153,7 +153,7 @@ Non. Les parties d'entraînement contre l'ordinateur ne sont volontairement jama
 Non. Il n'y a pas de cube de doublement, et rien n'est misé nulle part dans l'app.
 
 **Pourquoi le Sudoku apparaît-il comme jeu de plateau sur certaines pages ?**
-Il ne devrait pas. Le Sudoku appartient aux puzzles, avec les dix-sept autres puzzles solo que
+Il ne devrait pas. Le Sudoku appartient aux puzzles, avec les dix-huit autres puzzles solo que
 Braggster propose désormais dans son propre onglet Puzzles. Voir le
 [guide des puzzles](/blog/puzzle-games/).
 

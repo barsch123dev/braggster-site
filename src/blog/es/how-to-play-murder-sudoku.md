@@ -135,7 +135,7 @@ No. Cada caso se genera al momento y se verifica que tenga exactamente una soluc
 suministro es ilimitado.
 
 **¿En qué idiomas está disponible?**
-En los siete idiomas de la app. El texto de la historia se escribe idioma por idioma en lugar de
+En los once idiomas de la app. El texto de la historia se escribe idioma por idioma en lugar de
 traducirse a máquina, de modo que el misterio se lee con naturalidad en cada uno.
 
 **¿Está relacionado con algún juego de mesa existente?**
@@ -143,6 +143,6 @@ No. Cada sospechoso, habitación y objeto es original del juego.
 
 ---
 
-**Más:** consulta los dieciocho [puzles de lógica](/blog/puzzle-games/), lee sobre la
+**Más:** consulta los diecinueve [puzles de lógica](/blog/puzzle-games/), lee sobre la
 [dificultad del Sudoku](/blog/how-to-play-sudoku/), o explora el catálogo en
 [braggster.com/games](/games/).

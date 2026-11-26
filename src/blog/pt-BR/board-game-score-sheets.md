@@ -148,7 +148,7 @@ Não. Partidas de treino contra o computador nunca são registradas, de propósi
 Não. Não existe dado dobrador nem nada apostado em lugar nenhum do app.
 
 **Por que o Sudoku aparece como jogo de tabuleiro em algumas páginas?**
-Não deveria. O Sudoku fica com os quebra-cabeças, junto com os outros dezessete quebra-cabeças
+Não deveria. O Sudoku fica com os quebra-cabeças, junto com os outros dezoito quebra-cabeças
 solo que o Braggster oferece hoje na própria aba Quebra-cabeças. Veja o [guia de quebra-cabeças](/blog/puzzle-games/).
 
 ---

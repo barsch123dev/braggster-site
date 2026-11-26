@@ -136,7 +136,7 @@ Nein. Jeder Fall wird auf Abruf generiert und auf genau eine Lösung geprüft, d
 unbegrenzt.
 
 **In welchen Sprachen ist es verfügbar?**
-In allen sieben App-Sprachen. Der Story-Text wird pro Sprache geschrieben statt maschinell
+In allen elf App-Sprachen. Der Story-Text wird pro Sprache geschrieben statt maschinell
 übersetzt, sodass sich der Kriminalfall in jeder Sprache natürlich liest.
 
 **Ist es an ein bestehendes Brettspiel angelehnt?**
@@ -144,6 +144,6 @@ Nein. Jeder Verdächtige, jeder Raum und jedes Objekt ist original für dieses S
 
 ---
 
-**Mehr:** sieh dir alle achtzehn [Logikrätsel](/blog/puzzle-games/) an, lies über
+**Mehr:** sieh dir alle neunzehn [Logikrätsel](/blog/puzzle-games/) an, lies über
 [Sudoku Schwierigkeitsgrade](/blog/how-to-play-sudoku/), oder durchstöbere den Katalog auf
 [braggster.com/games](/games/).

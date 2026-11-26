@@ -131,7 +131,7 @@ No. Ogni caso viene generato al momento e verificato con esattamente una soluzio
 disponibilità è illimitata.
 
 **In quali lingue è disponibile?**
-In tutte e sette le lingue dell'app. Il testo della storia è scritto per ogni lingua invece di
+In tutte e undici le lingue dell'app. Il testo della storia è scritto per ogni lingua invece di
 essere tradotto in modo automatico, così che si legge in modo naturale in ognuna.
 
 **È collegato a qualche gioco da tavolo esistente?**
@@ -139,6 +139,6 @@ No. Ogni sospettato, stanza e oggetto e originale del gioco.
 
 ---
 
-**Continua:** scopri tutti e diciotto i [puzzle di logica](/blog/puzzle-games/), leggi della
+**Continua:** scopri tutti e diciannove i [puzzle di logica](/blog/puzzle-games/), leggi della
 [difficoltà di Sudoku](/blog/how-to-play-sudoku/), oppure sfoglia il catalogo su
 [braggster.com/games](/games/).

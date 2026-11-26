@@ -134,7 +134,7 @@ Não. Cada caso é gerado sob demanda e verificado para ter exatamente uma solu�
 é ilimitado.
 
 **Em quais idiomas está disponível?**
-Em todos os sete idiomas do app. O texto da história é escrito por idioma em vez de traduzido por
+Em todos os onze idiomas do app. O texto da história é escrito por idioma em vez de traduzido por
 máquina, de modo que o mistério é lido com naturalidade em cada um.
 
 **Tem relação com algum jogo de tabuleiro existente?**
@@ -142,6 +142,6 @@ Não. Todo nome de suspeito, cômodo e objeto é original do jogo.
 
 ---
 
-**Mais:** veja os dezoito [quebra-cabeças de lógica](/blog/puzzle-games/), leia sobre a
+**Mais:** veja os dezenove [quebra-cabeças de lógica](/blog/puzzle-games/), leia sobre a
 [dificuldade do Sudoku](/blog/how-to-play-sudoku/), ou veja o catálogo em
 [braggster.com/games](/games/).

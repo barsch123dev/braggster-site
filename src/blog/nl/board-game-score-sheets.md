@@ -146,7 +146,7 @@ Nee. Oefenpotjes tegen de computer worden bewust nooit opgeslagen.
 Nee. Er is geen dobbelverdubbelaar en er staat nergens in de app iets op het spel.
 
 **Waarom staat Sudoku op sommige pagina's tussen de bordspellen?**
-Dat zou niet moeten. Sudoku hoort bij de puzzels, samen met de zeventien andere puzzels voor één speler
+Dat zou niet moeten. Sudoku hoort bij de puzzels, samen met de achttien andere puzzels voor één speler
 die Braggster inmiddels heeft op een eigen tabblad Puzzels. Zie de [puzzelgids](/blog/puzzle-games/).
 
 ---

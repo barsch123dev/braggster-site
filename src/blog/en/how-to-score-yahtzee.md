@@ -17,7 +17,7 @@ secondary_keywords:
   - "yahtzee online with friends"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -113,8 +113,16 @@ The game travels under different names, and the scoring is essentially the same 
 - **Kniffel** in Germany
 - **Yams** in France
 - **Generala** in Argentina, with some rule differences around the straights
+- **Yatzy** in Denmark, Sweden, Norway and Finland, which is a different sheet rather than another
+  name for the same one
 
-Braggster ships one scorecard covering the family, in all seven app languages.
+Scandinavian Yatzy has fifteen boxes instead of thirteen. One Pair and Two Pairs join the lower
+section, the upper bonus is 50 for 63 or more, the Small Straight is exactly 1-2-3-4-5 for 15 and the
+Large Straight exactly 2-3-4-5-6 for 20, and the kinds, Full House and Chance score the dice you
+used. A Yatzy is worth 50, and there are no extra Yatzy bonuses and no Joker rule.
+
+Braggster ships one scorecard covering the family, with Scandinavian Yatzy as a variant of its own,
+in all eleven app languages.
 
 ## The scorecard, sized to your table
 

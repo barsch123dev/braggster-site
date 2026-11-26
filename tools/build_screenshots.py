@@ -9,7 +9,7 @@ on the standard library.
     python3 tools/build_screenshots.py --src <dir>
 
 The captures come from the app repo's own harness, which renders the listing
-screens in all seven languages on a 6.9" simulator, or from a listing handoff
+screens in every site language on a 6.9" simulator, or from a listing handoff
 folder in the same <lang>/ layout; the site serves the handful named in
 SITE_NAMES below:
 
@@ -48,6 +48,10 @@ LOCALES = {
     "de": "de",
     "pt_BR": "pt-BR",
     "it": "it",
+    "da": "da",
+    "sv": "sv",
+    "nb": "nb",
+    "fi": "fi",
 }
 
 # Capture stem -> the name the site uses. The captures are numbered for the App
@@ -66,7 +70,10 @@ SHOTS = {
     "05-chess": "chess",
     "07-murdoku": "murdoku",
     "08-sudoku": "sudoku",
+    "04-backgammon": "backgammon",
+    "09-crossword": "crossword",
     "10-play-together": "play-together",
+    "13-memory": "memory",
     # The 3.0 listing handoff.
     "01-hook-UPDATE": "home",
     "02-games-UPDATE": "games",

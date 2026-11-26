@@ -1,11 +1,11 @@
 ---
-title: "18 Logic Puzzles in One App, All Generated and All Solvable"
+title: "19 Logic and Memory Puzzles in One App, All Generated"
 slug: puzzle-games
 locale: en
 type: pillar
 category: puzzle
-meta_title: "18 Logic Puzzles in One App, Endless and Solvable"
-meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo and more. Every puzzle generated fresh and verified to have one solution."
+meta_title: "19 Logic and Memory Puzzles in One App, Endless"
+meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Memory and more. Every puzzle generated fresh, and every logic puzzle verified to have one solution."
 primary_keyword: "logic puzzle app"
 secondary_keywords:
   - "offline puzzle games app"
@@ -15,7 +15,7 @@ secondary_keywords:
   - "puzzle games no ads"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -26,20 +26,21 @@ internal_links:
   - /blog/how-to-play-killer-sudoku/
   - /blog/how-to-play-minesweeper/
   - /blog/how-to-play-murder-sudoku/
+  - /blog/how-to-play-memory/
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
 trademark_note: null
 ---
 
-# 18 Logic Puzzles in One App, All Generated and All Solvable
+# 19 Logic and Memory Puzzles in One App, All Generated
 
 Most puzzle apps ship a bank of puzzles and eventually run out. Braggster generates every puzzle
 fresh on demand and then proves it has exactly one solution before showing it to you. That second
 half is the part almost nobody does, and it is the difference between a puzzle you can reason your
 way through and one where you eventually have to guess.
 
-Here are the eighteen, what each one actually asks of you, and how they are scored. In the app they
+Here are the nineteen, what each one actually asks of you, and how they are scored. In the app they
 have a tab of their own, Puzzles, next to the games.
 
 ## The number placement family
@@ -126,6 +127,17 @@ and that column spells a hidden solution word from top to bottom. 4, 6 or 8 rows
 the figure. A hint shows the word's description first, then one letter, and three word length tiers
 run from 4 up to 15 letters.
 
+## The memory one
+
+**[Memory solo](/games/memorysolo/).** The pairs game against the clock. Turn two cards at a time;
+a pair stays face up, a miss turns back. Boards run from 3 by 4 with 6 pairs up to 6 by 6 with 18,
+in four painted picture scenes. It is the one puzzle here that tests recall rather than deduction,
+so its penalty is shaped differently: only a **known miss** costs 10 seconds, a miss where you had
+already seen the other card. Turning a card you have never seen is free. The same board also plays
+as a multiplayer game, against the computer or at a Live Table.
+
+Deep dive: [How to play Memory](/blog/how-to-play-memory/).
+
 ## How puzzles are scored
 
 Every puzzle scores the same way, and it is the opposite of the rest of the app: **lowest total
@@ -172,9 +184,9 @@ Yes. Generation happens on the device, so there is nothing to download and no co
 No ads anywhere in the app. The timer feeds your score, but nothing expires and nothing interrupts.
 
 **Which puzzles are available in my language?**
-All eighteen are in all seven app languages. The number and logic puzzles do not depend on language,
+All nineteen are in all eleven app languages. The number and logic puzzles do not depend on language,
 and the word puzzles are language specific by nature: their words and clues follow the app language,
-with their own lists in all seven.
+with their own lists in all eleven.
 
 **Can I play with pencil notes?**
 Yes, on the number grid puzzles. Binairo and Nonogram use a two state cell grammar instead, which is

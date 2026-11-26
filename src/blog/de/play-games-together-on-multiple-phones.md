@@ -17,7 +17,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -31,11 +31,13 @@ internal_links:
   - /games/dammen/
   - /games/backgammon/
   - /games/reversi/
+  - /games/memory/
   - /blog/how-to-score-yahtzee/
+  - /blog/how-to-play-memory/
   - /blog/how-to-score-backgammon/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
-trademark_note: "Yahtzee und Othello sind Marken ihrer jeweiligen Inhaber. Braggster steht in keiner Verbindung dazu, wird nicht unterstützt, und jeder Name wird ausschließlich beschreibend verwendet."
+trademark_note: "Yahtzee, Othello und Memory sind Marken ihrer jeweiligen Inhaber. Braggster steht in keiner Verbindung dazu, wird nicht unterstützt, und jeder Name wird ausschließlich beschreibend verwendet."
 ---
 
 # Brettspiele gemeinsam auf mehreren Handys spielen, im WLAN oder online
@@ -99,7 +101,7 @@ In beiden Fällen gibt es kein Konto anzulegen, keinen Benutzernamen und keine F
    Platz auf seinem eigenen Handy. Nach der Partie bleibt der Tisch offen: Tipp auf **Noch einmal
    spielen**, und alle, die zusagen, spielen die nächste Partie auf denselben Plätzen.
 
-![Die Lobby von Zusammen spielen auf dem Handy des Gastgebers: ein QR-Code zum Scannen für die anderen, Alex und Sam am Tisch und Mia, die beitreten möchte, mit den Tasten Zulassen und Ablehnen](shot:play-together "Das Handy des Gastgebers zeigt den Code zum Scannen und wer beitreten möchte.")
+![Die Lobby von Zusammen spielen auf dem Handy des Gastgebers: Mia, die beitreten möchte, mit den Tasten Zulassen und Ablehnen, ein QR-Code und ein Code zum Eintippen für die anderen, ein Button Einladung senden, und Alex und Sam schon am Tisch](shot:play-together "Das Handy des Gastgebers zeigt die Codes zum Beitreten und wer hereinkommen möchte.")
 
 ## Welche Spiele ihr gemeinsam spielen könnt
 
@@ -113,6 +115,9 @@ In beiden Fällen gibt es kein Konto anzulegen, keinen Benutzernamen und keine F
 - **[Backgammon](/games/backgammon/)**, mit einfachen Siegen, Gammons und Backgammons wie gewohnt
   gewertet. Siehe den [Backgammon-Wertungsguide](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, wo jede umgedrehte Reihe auf beiden Bildschirmen landet.
+- **[Memory](/games/memory/)**, für bis zu sechs Spieler. Nur das Handy des Gastgebers kennt die
+  Anordnung; jedes andere Handy sieht die offenen Karten und sonst nichts, sodass niemand schummeln
+  kann. Siehe [Memory Spielregeln](/blog/how-to-play-memory/).
 
 ![Ein Yahtzee-Punktezettel für Alex, Sam, Mia und Lee, darunter der digitale Würfelwurf von Alex und was dieser Wurf in jeder Kategorie bringen würde](shot:yahtzee "Yahtzee, mit digitalen Würfeln für den ganzen Tisch.")
 ![Ein Schachbrett in der Grundstellung, Alex ist gegen Sam am Zug, ein weißer Springer ist ausgewählt und seine zwei möglichen Züge sind markiert](shot:chess "Schach, bei dem jeder Zug nach den Regeln geprüft wird.")
@@ -171,8 +176,8 @@ online per Einladungslink. Beide Spieler sehen das Brett live, und jeder zieht v
 
 **Können wir online mit Freunden spielen, die nicht im selben Raum sind?**
 Ja. Eröffne einen Tisch, tippe auf **Einladung senden** und schicke den Link per WhatsApp oder eine
-andere App, oder lies den Code aus 8 Zeichen vor. Es funktioniert mit Yahtzee, Chess, Checkers,
-Internationales Damespiel, Backgammon und Othello. Du musst kein Konto anlegen, das Beitreten ist
+andere App, oder lies den Code aus 8 Zeichen vor. Es funktioniert mit Yahtzee, Memory, Chess,
+Checkers, Internationales Damespiel, Backgammon und Othello. Du musst kein Konto anlegen, das Beitreten ist
 kostenlos, und die Partie ist Ende-zu-Ende-verschlüsselt, der Server reicht sie also nur weiter und
 kann sie nicht lesen.
 
@@ -186,7 +191,7 @@ Ja. An einem Tisch können iPhones und Android-Handys frei gemischt sein, und Sp
 Spieler online können sich einen Tisch teilen.
 
 **Wie viele Spieler können an einem Tisch mitspielen?**
-Yahtzee erlaubt bis zu sechs Spieler, ein Handy pro Person. Chess, Checkers, Internationales
+Yahtzee und Memory erlauben bis zu sechs Spieler, ein Handy pro Person. Chess, Checkers, Internationales
 Damespiel, Backgammon und Othello sind Zweispielerspiele, also zwei Handys.
 
 **Muss jeder das Spiel kaufen?**

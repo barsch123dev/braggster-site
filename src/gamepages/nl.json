@@ -290,5 +290,29 @@
   "freestyle": {
     "lead": "Freestyle is een gratis tafel met kaarten en dobbelstenen voor spellen die je zelf verzint: deel en gooi op het scherm, en houd je eigen score bij.",
     "scoring": "Kies hoeveel kaarten en dobbelstenen je deelt, per speler of aan een gedeelde tafel, en speel welke regels jullie tafel ook afspreekt. Je voert de punten van elke ronde zelf in en kiest of het hoogste of laagste totaal wint. Freestyle is altijd gratis."
+  },
+  "memory": {
+    "lead": "Memory, het paren zoeken voor 2 tot 6 spelers: draai twee kaarten om, houd een paar en ga door, en de meeste paren winnen.",
+    "scoring": "Het bord is het scoreformulier. Geef één telefoon door, met het bord afgedekt tussen de beurten, speel tegen de computer op Makkelijk, Gemiddeld of Moeilijk, of geef iedereen een telefoon aan een Live Table, waar alleen de telefoon van de host de indeling kent. Elk paar is een punt, de punten tellen van spel tot spel op en wie over de hele partij de meeste paren heeft, wint. Vijf bordformaten lopen van 6 tot 18 paren."
+  },
+  "amerikaner": {
+    "lead": "Amerikaner is het Noorse slagenspel voor vier waarin de hoogste bieder troef kiest en een kaart afroept om voor die hand een partner te vinden.",
+    "scoring": "Voer de bieder, de afgeroepen partner, het bod en de slagen van elke kant in, en het formulier controleert of het klopt. Bieder en partner winnen of verliezen het bod, elke tegenstander scoort een punt per slag, en de solo-Amerikaner is hoe dan ook 52 waard. Wie als eerste 52 haalt, beëindigt het spel. De Kani-variant speelt dertien slagen en gaat nooit onder nul."
+  },
+  "capture": {
+    "lead": "Vangen is het Noordse viskaartspel: pak kaarten van tafel met dezelfde waarde of dezelfde som, en veeg de tafel leeg voor een extra punt.",
+    "scoring": "Tik na elke ronde aan wie de meeste kaarten pakte, de meeste schoppen, elke aas, de ruiten tien, de schoppen twee, de laatste vangst en elke tafelveeg. Het formulier telt de punten op en wie als eerste 16 haalt wint, of 21 in de langere variant. Een Finse telvariant laat het punt voor de laatste vangst vallen."
+  },
+  "molkky": {
+    "lead": "Mölkky is het Finse werpspel met houten pinnen: gooi genummerde pinnen om, haal precies 50 punten om te winnen, en bij meer dan 50 val je terug naar 25.",
+    "scoring": "Eén tik per worp op een toetsenbord met Mis en de twaalf pinnen. Eén pin die valt telt zijn nummer, meerdere pinnen tellen hoeveel er vielen, en het formulier houdt het lopende totaal bij. Boven de 50 val je terug naar 25, of naar 0 in de resetvariant, en drie keer mis achter elkaar zet een speler uit het spel."
+  },
+  "kubb": {
+    "lead": "Kubb is het Zweedse grasveldspel, in Denemarken Kongespil genoemd: gooi de kubbs van de tegenstander om, daarna de koning, en win het spel.",
+    "scoring": "Binnen een spel zijn er geen punten, alleen een winnaar, dus elk spel is één tik voor de kant die het won. Speel een best of 3, een best of 5 of één spel. Een team speelt onder één naam, dus elke kant is één regel."
+  },
+  "memorysolo": {
+    "lead": "Memory solo, het paren zoeken tegen de klok: vind alle paren op een bord van 6 tot 18 paren, en alleen vermijdbare missers kosten tijd.",
+    "scoring": "Je score is je tijd plus 10 seconden voor elke misser waarbij je de andere kaart al had gezien. Een kaart omdraaien die je nog nooit had gezien kost niets. Het laagste totaal wint. De getekende kaarten komen in vier thema's, en een bord dat bezig is, gaat verder als je terugkomt."
   }
 }

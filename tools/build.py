@@ -87,7 +87,7 @@ CLARITY_HTML = (
 )
 
 # English is canonical and sits at the root. Order drives the footer language nav.
-LOCALES = ["en", "nl", "es", "fr", "de", "pt-BR", "it"]
+LOCALES = ["en", "nl", "es", "fr", "de", "pt-BR", "it", "da", "sv", "nb", "fi"]
 DEFAULT_LOCALE = "en"
 
 # Open Graph wants language_TERRITORY, which is not the same shape as our locale
@@ -100,6 +100,10 @@ OG_LOCALES = {
     "de": "de_DE",
     "pt-BR": "pt_BR",
     "it": "it_IT",
+    "da": "da_DK",
+    "sv": "sv_SE",
+    "nb": "nb_NO",
+    "fi": "fi_FI",
 }
 
 # The share card is text-free and locale-independent: the headline a reader sees
@@ -1102,6 +1106,8 @@ def page_values(loc: dict[str, str], root: str, ldir: str) -> dict[str, str]:
         support_href=f"{root}{ldir}support/",
         terms_href=f"{root}{ldir}terms/",
         together_href=f"{root}{ldir}play-together/",
+        # The home page's "New" banner points here; move it with the banner.
+        announce_href=f"{root}{ldir}games/memory/",
         store_href=APP_STORE_URL,
         play_store_href=PLAY_STORE_URL,
         contact_email=CONTACT_EMAIL,

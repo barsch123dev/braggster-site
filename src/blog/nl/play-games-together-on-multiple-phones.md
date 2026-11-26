@@ -17,7 +17,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -31,11 +31,13 @@ internal_links:
   - /games/dammen/
   - /games/backgammon/
   - /games/reversi/
+  - /games/memory/
   - /blog/how-to-score-yahtzee/
+  - /blog/how-to-play-memory/
   - /blog/how-to-score-backgammon/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
-trademark_note: "Yahtzee en Othello zijn handelsmerken van hun respectieve eigenaren. Braggster is niet verbonden aan of gesteund door hen en elke naam wordt alleen ter verwijzing gebruikt."
+trademark_note: "Yahtzee, Othello en Memory zijn handelsmerken van hun respectieve eigenaren. Braggster is niet verbonden aan of gesteund door hen en elke naam wordt alleen ter verwijzing gebruikt."
 ---
 
 # Bordspellen Samen Spelen op Meerdere Telefoons, via Wifi of Online
@@ -96,7 +98,7 @@ In beide gevallen hoef je geen account aan te maken, en er is geen gebruikersnaa
    zijn eigen telefoon. Na afloop blijft de tafel open: tik op **Nog een potje**, en iedereen die ja
    zegt speelt de volgende partij op dezelfde plekken.
 
-![Het scherm Samen spelen van de gastheer: een QR-code voor de anderen om te scannen, Alex en Sam aan tafel, en Mia die wil meedoen, met de knoppen Toelaten en Weigeren](shot:play-together "De telefoon van de gastheer toont de code om te scannen en wie wil meedoen.")
+![Het scherm Samen spelen van de gastheer: Mia die wil meedoen, met de knoppen Toelaten en Weigeren, een QR-code en een code om in te typen voor de anderen, een knop Uitnodiging sturen, en Alex en Sam die al aan tafel zitten](shot:play-together "De telefoon van de gastheer toont de codes om mee te doen en wie wil binnenkomen.")
 
 ## Welke spellen je samen kunt spelen
 
@@ -110,6 +112,9 @@ In beide gevallen hoef je geen account aan te maken, en er is geen gebruikersnaa
 - **[Backgammon](/games/backgammon/)**, waarbij enkel, gammon en backgammon zoals gewoonlijk worden
   geteld. Zie de [backgammon-telgids](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, waar elke omdraaiing op beide schermen verschijnt.
+- **[Memory](/games/memory/)**, voor maximaal zes spelers. Alleen de telefoon van de gastheer kent de
+  indeling; elke andere telefoon ziet de kaarten die open liggen en verder niets, dus niemand kan
+  spieken. Zie [Memory spelen](/blog/how-to-play-memory/).
 
 ![Een Yahtzee-scoreformulier voor Alex, Sam, Mia en Lee, met daaronder de digitale worp van Alex en wat die worp in elke categorie zou opleveren](shot:yahtzee "Yahtzee, met digitale dobbelstenen voor de hele tafel.")
 ![Een schaakbord in de beginopstelling, Alex is aan zet tegen Sam, met een wit paard geselecteerd en zijn twee mogelijke zetten gemarkeerd](shot:chess "Schaken, met elke geldige zet gecontroleerd.")
@@ -168,7 +173,7 @@ een uitnodigingslink. Beide spelers zien het bord live en zetten vanaf hun eigen
 
 **Kunnen we online spelen met vrienden die niet in dezelfde ruimte zijn?**
 Ja. Start een tafel, tik op **Uitnodiging sturen** en stuur de link via WhatsApp of een andere app, of
-lees de code van 8 tekens voor. Het werkt met Yahtzee, Chess, Checkers, International draughts,
+lees de code van 8 tekens voor. Het werkt met Yahtzee, Memory, Chess, Checkers, International draughts,
 Backgammon en Othello. Je hoeft geen account aan te maken, meedoen is gratis en de partij is
 end-to-end versleuteld, dus de server geeft alles alleen door en kan het niet lezen.
 
@@ -182,7 +187,7 @@ Ja. Aan een tafel kunnen iPhones en Android-telefoons vrij gemengd worden, en sp
 en spelers online kunnen één tafel delen.
 
 **Hoeveel spelers kunnen aan een tafel meedoen?**
-Yahtzee is er voor maximaal zes spelers, een telefoon per speler. Chess, Checkers, International
+Yahtzee en Memory zijn er voor maximaal zes spelers, een telefoon per speler. Chess, Checkers, International
 draughts, Backgammon en Othello zijn spellen voor twee spelers, dus twee telefoons.
 
 **Moet iedereen het spel kopen?**

@@ -149,7 +149,7 @@ Nein. Übungsspiele gegen den Computer werden bewusst nie gespeichert.
 Nein. Es gibt keinen Dopplerwürfel und nirgendwo in der App wird etwas eingesetzt.
 
 **Warum steht Sudoku auf manchen Seiten bei den Brettspielen?**
-Das sollte es nicht. Sudoku gehört zu den Rätseln, zusammen mit den siebzehn weiteren
+Das sollte es nicht. Sudoku gehört zu den Rätseln, zusammen mit den achtzehn weiteren
 Einzelspieler-Rätseln, die Braggster inzwischen auf einem eigenen Rätsel-Tab anbietet. Siehe den [Rätsel-Guide](/blog/puzzle-games/).
 
 ---

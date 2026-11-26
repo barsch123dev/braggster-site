@@ -115,7 +115,7 @@ Le Dudo est un jeu vraiment international, avec un nom différent presque partou
 | Brésil | Dado mentiroso |
 | Royaume-Uni, États-Unis | Perudo, liar's dice |
 
-Braggster propose un seul jeu qui couvre toute la famille, dans les sept langues de l'app.
+Braggster propose un seul jeu qui couvre toute la famille, dans les onze langues de l'app.
 
 ## Questions fréquentes
 

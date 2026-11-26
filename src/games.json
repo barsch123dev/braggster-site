@@ -1,6 +1,6 @@
 {
-  "_comment": "The game catalogue, extracted 2026-09-28 from the app repo's game definitions at v3.1.0 (app/lib/games/*/*_game_definition.dart, registered in GameRegistry.standard in game_registry.dart; the unregistered Bingo definition is not part of it). Game names are the app's English display names, proper nouns that are never translated; only the surrounding UI copy in src/locales/ and the per-game prose in src/gamepages/ is. 'functionality' is reference data in English and is never rendered: the per-game pages read src/gamepages/<locale>.json instead. Flags mirror the definitions: playInApp is hasInAppPlay, vsComputer is hasComputerOpponent, playTogether is supportsLiveTable, lowestWins is rankingDirection lowerWins, trademark is a non-null trademarkDisclaimer. players.perSide 2 means partnership play (2 teams of 2). Categories mirror the app's GameCategory, except that the blank scorecard and the Freestyle table are broken out of 'other' into 'free' because they are always free. Site ids 'generic' and 'unoflip' are the app's 'generic_board' and 'unoFlip', kept as they are because they are URLs.",
-  "generated": "2026-09-28",
+  "_comment": "The game catalogue, extracted 2026-11-26 from the app repo's game definitions at v4.0.0 (app/lib/games/*/*_game_definition.dart, registered in GameRegistry.standard in game_registry.dart; the unregistered Bingo definition is not part of it). Game names are the app's English display names, proper nouns that are never translated; only the surrounding UI copy in src/locales/ and the per-game prose in src/gamepages/ is. 'functionality' is reference data in English and is never rendered: the per-game pages read src/gamepages/<locale>.json instead. Flags mirror the definitions: playInApp is hasInAppPlay, vsComputer is hasComputerOpponent, playTogether is supportsLiveTable, lowestWins is rankingDirection lowerWins, trademark is a non-null trademarkDisclaimer. players.perSide 2 means partnership play (2 teams of 2). Categories mirror the app's GameCategory, except that the blank scorecard and the Freestyle table are broken out of 'other' into 'free' because they are always free. Site ids 'generic', 'unoflip' and 'memorysolo' are the app's 'generic_board', 'unoFlip' and 'memory_solo', kept as they are because they are URLs.",
+  "generated": "2026-11-26",
   "games": [
     {
       "id": "klaverjassen",
@@ -471,7 +471,8 @@
         "bolformulier",
         "boerenbridge",
         "prediction game",
-        "NL"
+        "NL",
+        "plump"
       ],
       "functionality": "Prediction sheet where the card count climbs to a table-sized peak and back to 1. Base and +10 bonus variants",
       "playInApp": false,
@@ -816,6 +817,81 @@
       ],
       "functionality": "Built-in caller that reveals all 54 tiles by name, plus a win tally. Full tabla, Line, Four corners and Center square variants",
       "playInApp": true,
+      "lowestWins": false,
+      "trademark": false,
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "memory",
+      "name": "Memory",
+      "category": "card",
+      "players": {
+        "min": 2,
+        "max": 6,
+        "perSide": 1
+      },
+      "tags": [
+        "memory",
+        "pairs",
+        "concentration",
+        "matching pairs",
+        "memorie",
+        "Memory card game"
+      ],
+      "functionality": "Pairs board for 2 to 6 players in five sizes: on one phone, against the computer at Easy, Medium or Hard (it remembers 40, 70 or 95 percent of what it has seen), or at a Live Table where the host's phone holds the layout. Most pairs over the match wins",
+      "playInApp": true,
+      "lowestWins": false,
+      "trademark": true,
+      "vsComputer": true,
+      "playTogether": true
+    },
+    {
+      "id": "amerikaner",
+      "name": "Amerikaner",
+      "category": "card",
+      "players": {
+        "min": 4,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "amerikaner",
+        "kani",
+        "called partner",
+        "trick game",
+        "NO",
+        "IS"
+      ],
+      "functionality": "Called-partner trick game for four: bid 6 to 12 tricks or the lone Amerikaner, call a card for a partner, first to 52. Kani variant with thirteen tricks",
+      "playInApp": false,
+      "lowestWins": false,
+      "trademark": false,
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "capture",
+      "name": "Capture",
+      "category": "card",
+      "players": {
+        "min": 2,
+        "max": 4,
+        "perSide": 1
+      },
+      "tags": [
+        "capture",
+        "fishing card game",
+        "fang",
+        "fånga",
+        "kaappaus",
+        "DK",
+        "SE",
+        "NO",
+        "FI"
+      ],
+      "functionality": "Nordic fishing card game: capture table cards by value or sum. Points for most cards, most spades, aces, the ten of diamonds, the two of spades, sweeps and the last capture, first to 16 (or 21). Finnish count variant",
+      "playInApp": false,
       "lowestWins": false,
       "trademark": false,
       "vsComputer": false,
@@ -1427,6 +1503,29 @@
       "playTogether": false
     },
     {
+      "id": "memorysolo",
+      "name": "Memory solo",
+      "category": "puzzle",
+      "players": {
+        "min": 1,
+        "max": 1,
+        "perSide": 1
+      },
+      "tags": [
+        "memory solo",
+        "pairs",
+        "memory puzzle",
+        "concentration",
+        "brain training"
+      ],
+      "functionality": "Timed pairs puzzle in five board sizes (6 to 18 pairs) with painted picture scenes. Scored on solve time plus 10 seconds per known miss, lowest wins, resumes mid-board",
+      "playInApp": true,
+      "lowestWins": true,
+      "trademark": true,
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
       "id": "backgammon",
       "name": "Backgammon",
       "category": "board",
@@ -1677,6 +1776,54 @@
         "11 points"
       ],
       "functionality": "Best of 3, 5 and 7 variants",
+      "playInApp": false,
+      "lowestWins": false,
+      "trademark": false,
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "molkky",
+      "name": "Mölkky",
+      "category": "sports",
+      "players": {
+        "min": 2,
+        "max": 8,
+        "perSide": 1
+      },
+      "tags": [
+        "mölkky",
+        "molkky",
+        "finnish skittles",
+        "pin throwing",
+        "FI",
+        "FR"
+      ],
+      "functionality": "One tap per throw on a 0 to 12 pin keypad. Exactly 50 wins, over 50 drops to 25, three misses in a row and you are out. Reset to 0 variant",
+      "playInApp": false,
+      "lowestWins": false,
+      "trademark": true,
+      "vsComputer": false,
+      "playTogether": false
+    },
+    {
+      "id": "kubb",
+      "name": "Kubb",
+      "category": "sports",
+      "players": {
+        "min": 2,
+        "max": 2,
+        "perSide": 1
+      },
+      "tags": [
+        "kubb",
+        "kongespil",
+        "viking chess",
+        "lawn game",
+        "SE",
+        "DK"
+      ],
+      "functionality": "Two sides, one button per side for each game won. Best of 3, best of 5 or a single game",
       "playInApp": false,
       "lowestWins": false,
       "trademark": false,

@@ -114,7 +114,7 @@ Dudo is een oprecht internationaal spel met bijna overal een andere naam:
 | Brazilië | Dado mentiroso |
 | VK, VS | Perudo, liar's dice |
 
-Braggster levert één spel dat de hele familie dekt, in alle zeven talen van de app.
+Braggster levert één spel dat de hele familie dekt, in alle elf talen van de app.
 
 ## Veelgestelde vragen
 

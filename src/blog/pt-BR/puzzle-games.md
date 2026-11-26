@@ -1,11 +1,11 @@
 ---
-title: "18 Quebra-Cabeças de Lógica em Um App, Todos Gerados e Todos Solúveis"
+title: "19 Quebra-Cabeças de Lógica e Memória em Um App, Todos Gerados"
 slug: puzzle-games
 locale: pt-BR
 type: pillar
 category: puzzle
-meta_title: "18 Quebra-Cabeças de Lógica, Infinitos e Solúveis"
-meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo e mais. Cada quebra-cabeça gerado na hora e verificado para ter uma única solução."
+meta_title: "19 Quebra-Cabeças de Lógica e Memória, Infinitos"
+meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Memory e mais. Cada quebra-cabeça gerado na hora, e cada um de lógica verificado com uma única solução."
 primary_keyword: "app de quebra cabeças de lógica"
 secondary_keywords:
   - "app de quebra cabeça offline"
@@ -15,7 +15,7 @@ secondary_keywords:
   - "jogos de quebra cabeça sem anúncio"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -26,13 +26,14 @@ internal_links:
   - /blog/how-to-play-killer-sudoku/
   - /blog/how-to-play-minesweeper/
   - /blog/how-to-play-murder-sudoku/
+  - /blog/how-to-play-memory/
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
 trademark_note: null
 ---
 
-# 18 Quebra-Cabeças de Lógica em Um App, Todos Gerados e Todos Solúveis
+# 19 Quebra-Cabeças de Lógica e Memória em Um App, Todos Gerados
 
 A maioria dos apps de quebra-cabeça vem com um banco de puzzles fixo que um dia acaba. O
 Braggster gera cada quebra-cabeça na hora, sob demanda, e depois prova que existe exatamente uma
@@ -40,7 +41,7 @@ solução antes de mostrá-lo a você. Essa segunda parte é o que quase ningué
 entre um quebra-cabeça que você resolve raciocinando e um em que, em algum momento, você acaba
 tendo que chutar.
 
-Aqui estão os dezoito, o que cada um realmente pede de você, e como cada um é pontuado. No app eles
+Aqui estão os dezenove, o que cada um realmente pede de você, e como cada um é pontuado. No app eles
 têm uma aba própria, Puzzles, ao lado dos jogos.
 
 ## A família de colocação de números
@@ -135,6 +136,18 @@ linhas.
 complete a figura. Uma dica mostra primeiro a descrição da palavra, depois uma letra, e três níveis
 de comprimento de palavra vão de 4 até 15 letras.
 
+## O quebra-cabeça de memória
+
+**[Memory solo](/games/memorysolo/).** O jogo dos pares contra o relógio. Você vira duas cartas por vez;
+um par fica virado para cima, um erro volta a ficar virado para baixo. Os tabuleiros vão de 3 por 4
+com 6 pares até 6 por 6 com 18, em quatro temas de figuras pintadas. É o único quebra-cabeça aqui que
+testa a memória em vez da dedução, por isso a sua penalidade tem outro formato: só um **erro
+conhecido** custa 10 segundos, um erro em que você já tinha visto a outra carta. Virar uma carta que
+você nunca viu não custa nada. O mesmo tabuleiro também é jogado como jogo para vários jogadores,
+contra o computador ou em uma Live Table.
+
+Aprofunde-se: [Jogo da memória: regras](/blog/how-to-play-memory/).
+
 ## Como os quebra-cabeças são pontuados
 
 Todo quebra-cabeça é pontuado do mesmo jeito, e é o oposto do resto do app: **menor pontuação
@@ -183,9 +196,9 @@ Nenhum anúncio em lugar nenhum do app. O cronômetro alimenta sua pontuação, 
 nada interrompe.
 
 **Quais quebra-cabeças estão no meu idioma?**
-Os dezoito estão nos sete idiomas do app. Os quebra-cabeças de números e de lógica não dependem do
+Os dezenove estão nos onze idiomas do app. Os quebra-cabeças de números e de lógica não dependem do
 idioma, e os de palavras são específicos de cada idioma por natureza: suas palavras e pistas seguem o
-idioma do app, com listas próprias nos sete.
+idioma do app, com listas próprias nos onze.
 
 **Dá para jogar com anotações a lápis?**
 Sim, nos quebra-cabeças de grade numérica. Binairo e Nonogram usam uma gramática de célula de

@@ -17,7 +17,7 @@ secondary_keywords:
   - "yahtzee online con amici"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -114,9 +114,11 @@ Il gioco viaggia con nomi diversi, e il punteggio è sostanzialmente lo stesso o
 - **Kniffel** in Germania
 - **Yams** in Francia
 - **Generala** in Argentina, con alcune differenze di regole sulle scale
+- **Yatzy** in Danimarca, Svezia, Norvegia e Finlandia, che è un segnapunti diverso e non un altro nome per lo stesso
 
-Braggster include un unico segnapunti che copre tutta la famiglia, in tutte e sette le lingue
-dell'app.
+Lo Yatzy scandinavo ha quindici caselle invece di tredici. Coppia e Doppia coppia si aggiungono al blocco inferiore, il bonus del blocco superiore è 50 da 63 in su, la Scala corta è esattamente 1-2-3-4-5 per 15 e la Scala lunga esattamente 2-3-4-5-6 per 20, e Tris, Poker, Full e Chance contano i dadi usati. Uno Yatzy vale 50, e non ci sono bonus Yatzy extra né regola del Joker.
+
+Braggster include un unico segnapunti che copre tutta la famiglia, con lo Yatzy scandinavo come variante a sé, in tutte e undici le lingue dell'app.
 
 ## Il segnapunti, su misura per il tuo tavolo
 

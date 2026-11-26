@@ -101,7 +101,7 @@ Because generation runs on your device, the supply is unlimited and works entire
 
 Braggster will not flash a digit red when you place it wrongly.
 
-This is a deliberate design decision, and it applies across all eighteen puzzles in the app. Live
+This is a deliberate design decision, and it applies across all nineteen puzzles in the app. Live
 error feedback turns a logic puzzle into a validator game: you stop deducing and start probing,
 because the app will tell you if you are wrong. Take that away and you have to actually be sure.
 
@@ -145,6 +145,6 @@ games in the app.
 
 ---
 
-**More:** see all eighteen [logic puzzles](/blog/puzzle-games/), try
+**More:** see all nineteen [logic puzzles](/blog/puzzle-games/), try
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), or browse the catalogue at
 [braggster.com/games](/games/).

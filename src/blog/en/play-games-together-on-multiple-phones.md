@@ -16,7 +16,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -30,11 +30,13 @@ internal_links:
   - /games/dammen/
   - /games/backgammon/
   - /games/reversi/
+  - /games/memory/
   - /blog/how-to-score-yahtzee/
+  - /blog/how-to-play-memory/
   - /blog/how-to-score-backgammon/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
-trademark_note: "Yahtzee and Othello are the trademarks of their respective owners. Braggster is not affiliated with or endorsed by them and each name is used referentially only."
+trademark_note: "Yahtzee, Othello and Memory are the trademarks of their respective owners. Braggster is not affiliated with or endorsed by them and each name is used referentially only."
 ---
 
 # Play Board Games Together on Several Phones, Wi-Fi or Online
@@ -92,7 +94,7 @@ Either way there is no account to create, no username and no friend list.
    seat on their own phone. When the match ends the table stays open: tap **Play again**, and
    everyone who says yes plays the next match in the same seats.
 
-![The host's Play together screen: a QR code for the others to scan, Alex and Sam seated at the table, and Mia asking to join, with Accept and Decline buttons](shot:play-together "The host's phone shows the code to scan and who is asking to join.")
+![The host's Play together screen: Mia asking to join with Accept and Decline buttons, a QR code and a code to type for the others, a Send an invite button, and Alex and Sam already at the table](shot:play-together "The host's phone shows the codes to join and who is asking to come in.")
 
 ## Which games you can play together
 
@@ -106,6 +108,9 @@ Either way there is no account to create, no username and no friend list.
 - **[Backgammon](/games/backgammon/)**, with singles, gammons and backgammons scored as usual. See the
   [Backgammon scoring guide](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, where every flip lands on both screens.
+- **[Memory](/games/memory/)**, for up to six players. Only the host's phone holds the layout; every
+  other phone sees the cards that are face up and nothing more, so nobody can peek. See
+  [how to play Memory](/blog/how-to-play-memory/).
 
 ![A Yahtzee scorecard for Alex, Sam, Mia and Lee, with Alex's digital dice roll below it and what that roll would score in each category](shot:yahtzee "Yahtzee, with digital dice for the whole table.")
 ![A chess board in the starting position with Alex to move against Sam, a white knight selected and its two possible moves marked](shot:chess "Chess, with every legal move enforced.")
@@ -161,8 +166,8 @@ with an invite link. Both players see the board live and each moves from their o
 
 **Can we play online with friends who are not in the same room?**
 Yes. Start a table, tap **Send an invite** and send the link in WhatsApp or any other app, or read out
-the 8-character code. It works with Yahtzee, Chess, Checkers, International draughts, Backgammon and
-Othello. There is no account to create, joining is free, and the match is end-to-end encrypted, so the
+the 8-character code. It works with Yahtzee, Memory, Chess, Checkers, International draughts,
+Backgammon and Othello. There is no account to create, joining is free, and the match is end-to-end encrypted, so the
 server only passes it on and cannot read it.
 
 **Do we need an internet connection?**
@@ -175,7 +180,7 @@ Yes. A table can mix iPhones and Android phones freely, and players on the same 
 online can share one table.
 
 **How many players can join a table?**
-Yahtzee takes up to six players, a phone each. Chess, Checkers, International draughts, Backgammon
+Yahtzee and Memory take up to six players, a phone each. Chess, Checkers, International draughts, Backgammon
 and Othello are two-player games, so two phones.
 
 **Does everyone need to buy the game?**

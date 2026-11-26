@@ -6,7 +6,7 @@ Applies to every locale under `src/blog/<locale>/`. English at `src/blog/en/` is
 
 **Keep the English filename.** `how-to-score-klaverjassen.md` stays `how-to-score-klaverjassen.md` in
 every locale, and the `slug:` field keeps its English value. The URL becomes
-`/<locale>/blog/<slug>/`. One slug per article across all seven languages keeps hreflang, the
+`/<locale>/blog/<slug>/`. One slug per article across all eleven languages keeps hreflang, the
 renderer and the internal links simple, and the slug is a minor ranking factor next to the title and
 the body.
 
@@ -72,3 +72,23 @@ matches `src/games.json`, which never translates a game name.
 Match `src/locales/<locale>.json`, which holds the site's existing copy in your language. That file
 is the reference for tone, for how the product is described, and for terminology already chosen
 (what "score sheet" is called, how the app is introduced).
+
+## Diacritics and local game names
+
+- **Keep your language's letters everywhere, meta fields included.** å, æ, ø, ä, ö, ã, ç, é and the
+  rest belong in `title`, `meta_title`, `meta_description` and the keyword fields exactly as in the
+  body. A keyword written without its accents is not what people type, and it reads as a typo in
+  the search result.
+- **Use the app's own name for a game in your language** where it has one. `src/gamenames.json`
+  holds the name the app shows per locale (Yatzy in Danish, Swedish and Norwegian, Fang, Fånga and
+  Kaappaus for Capture, and so on); the body should say what the reader sees in the app. Link paths
+  stay on the English id (`/games/yahtzee/`).
+- **Difficulty and level names** come from the app, not from a dictionary: the
+  `practiceDifficulty*` keys in the app's `app_<locale>.arb`. Never leave them in English.
+
+## Nordic locales
+
+Danish (`da`), Swedish (`sv`), Norwegian Bokmål (`nb`) and Finnish (`fi`) joined with app 4.0. Write
+Bokmål, not Nynorsk. Re-target keywords for the Nordic market: Yatzy, not Yahtzee, is the dice game
+people search for there (`yatzy regler`, `yatzy pisteet`), and Memory is often searched as
+`vendespil` (da), `memory spel` (sv), `memory spill` (nb) and `muistipeli` (fi).
