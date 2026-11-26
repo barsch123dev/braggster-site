@@ -17,7 +17,7 @@ secondary_keywords:
   - "yahtzee online com amigos"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -116,8 +116,11 @@ O jogo viaja com nomes diferentes, e a pontuação é essencialmente a mesma em 
 - **Kniffel** na Alemanha
 - **Yams** na França
 - **Generala** na Argentina, com algumas diferenças de regra nas sequências
+- **Yatzy** na Dinamarca, Suécia, Noruega e Finlândia, que é outra ficha e não outro nome para a mesma
 
-O Braggster tem uma única ficha cobrindo toda a família, nos sete idiomas do app.
+O Yatzy escandinavo tem quinze caixas em vez de treze. Um Par e Dois Pares entram no bloco inferior, o bônus do bloco superior é de 50 a partir de 63, a Sequência baixa é exatamente 1-2-3-4-5 por 15 e a Sequência alta exatamente 2-3-4-5-6 por 20, e a Trinca, a Quadra, o Full house e a Chance somam os dados usados. Um Yatzy vale 50, e não há bônus extras de Yatzy nem regra do Joker.
+
+O Braggster tem uma única ficha cobrindo toda a família, com o Yatzy escandinavo como variante própria, nos onze idiomas do app.
 
 ## A ficha, do tamanho da sua mesa
 

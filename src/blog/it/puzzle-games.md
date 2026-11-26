@@ -1,11 +1,11 @@
 ---
-title: "18 puzzle di logica in un'app, tutti generati e tutti risolvibili"
+title: "19 puzzle di logica e di memoria in un'app, tutti generati"
 slug: puzzle-games
 locale: it
 type: pillar
 category: puzzle
-meta_title: "18 puzzle di logica in un'app, infiniti e risolvibili"
-meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo e altro. Ogni puzzle generato al momento e verificato con una sola soluzione."
+meta_title: "19 puzzle di logica e memoria in un'app, infiniti"
+meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Memory e altro. Ogni puzzle generato al momento, ogni puzzle di logica verificato con una soluzione unica."
 primary_keyword: "app puzzle di logica"
 secondary_keywords:
   - "giochi di logica offline"
@@ -15,7 +15,7 @@ secondary_keywords:
   - "giochi rompicapo senza pubblicità"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -26,20 +26,21 @@ internal_links:
   - /blog/how-to-play-killer-sudoku/
   - /blog/how-to-play-minesweeper/
   - /blog/how-to-play-murder-sudoku/
+  - /blog/how-to-play-memory/
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
 trademark_note: null
 ---
 
-# 18 puzzle di logica in un'app, tutti generati e tutti risolvibili
+# 19 puzzle di logica e di memoria in un'app, tutti generati
 
 La maggior parte delle app di puzzle distribuisce un archivio di puzzle e prima o poi finisce le
 scorte. Braggster genera ogni puzzle al momento e poi dimostra che ha esattamente una soluzione prima
 di mostrartelo. Quella seconda metà è la parte che quasi nessuno fa, ed è la differenza tra un puzzle
 che puoi ragionare fino in fondo e uno dove prima o poi devi indovinare.
 
-Ecco i diciotto, cosa chiede davvero ciascuno, e come vengono segnati. Nell'app hanno una scheda
+Ecco i diciannove, cosa chiede davvero ciascuno, e come vengono segnati. Nell'app hanno una scheda
 tutta loro, Puzzle, accanto ai giochi.
 
 ## La famiglia dei numeri da piazzare
@@ -132,6 +133,17 @@ o 8 righe.
 errore completi la figura. Un suggerimento mostra prima la descrizione della parola, poi una
 lettera, e tre livelli di lunghezza vanno da 4 a 15 lettere.
 
+## Il puzzle di memoria
+
+**[Memory solo](/games/memorysolo/).** Il gioco delle coppie contro il tempo. Giri due carte alla volta;
+una coppia resta scoperta, un errore si copre di nuovo. I tabelloni vanno da 3 per 4 con 6 coppie a 6
+per 6 con 18, in quattro temi di figure dipinte. È l'unico puzzle qui che mette alla prova la memoria
+invece della deduzione, quindi la sua penalità ha un'altra forma: costa 10 secondi solo un **errore
+noto**, un errore in cui avevi già visto l'altra carta. Girare una carta mai vista non costa nulla. Lo
+stesso tabellone si gioca anche come gioco per più giocatori, contro il computer o a una Live Table.
+
+Approfondimento: [Memory, regole del gioco](/blog/how-to-play-memory/).
+
 ## Come vengono segnati i puzzle
 
 Ogni puzzle segna allo stesso modo, ed è il contrario del resto dell'app: **vince il totale più
@@ -179,9 +191,9 @@ Nessuna pubblicità da nessuna parte nell'app. Il timer alimenta il tuo punteggi
 nulla interrompe.
 
 **Quali puzzle sono disponibili nella mia lingua?**
-Tutti e diciotto sono in tutte e sette le lingue dell'app. I puzzle di numeri e di logica non dipendono
+Tutti e diciannove sono in tutte e undici le lingue dell'app. I puzzle di numeri e di logica non dipendono
 dalla lingua, mentre quelli di parole sono specifici per lingua per loro natura: parole e indizi
-seguono la lingua dell'app, con liste proprie in tutte e sette.
+seguono la lingua dell'app, con liste proprie in tutte e undici.
 
 **Posso giocare con gli appunti a matita?**
 Sì, sui puzzle numerici a griglia. Binairo e Nonogram usano invece una grammatica a due stati per

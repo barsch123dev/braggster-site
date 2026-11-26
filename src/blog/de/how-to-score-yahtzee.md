@@ -17,7 +17,7 @@ secondary_keywords:
   - "kniffel online spielen"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -117,8 +117,11 @@ Das Spiel reist unter verschiedenen Namen um die Welt, die Wertung bleibt dabei 
 - **Kniffel** in Deutschland
 - **Yams** in Frankreich
 - **Generala** in Argentinien, mit ein paar Regelunterschieden bei den Straßen
+- **Yatzy** in Dänemark, Schweden, Norwegen und Finnland, ein anderer Zettel statt nur ein anderer Name für denselben
 
-Braggster liefert einen Punktezettel für die ganze Familie, in allen sieben Sprachen der App.
+Das skandinavische Yatzy hat fünfzehn Felder statt dreizehn. Ein Paar und Zwei Paare kommen im unteren Block dazu, der Bonus im oberen Block beträgt 50 ab 63 Punkten, die Kleine Straße ist genau 1-2-3-4-5 für 15 und die Große Straße genau 2-3-4-5-6 für 20, und Dreierpasch, Viererpasch, Full House und Chance zählen die verwendeten Würfel. Ein Yatzy bringt 50 Punkte, zusätzliche Yatzy-Boni und eine Jokerregel gibt es nicht.
+
+Braggster liefert einen Punktezettel für die ganze Familie, mit dem skandinavischen Yatzy als eigener Variante, in allen elf Sprachen der App.
 
 ## Der Punktezettel, passend für deinen Tisch
 

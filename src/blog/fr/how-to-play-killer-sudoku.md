@@ -155,6 +155,6 @@ Non. Elles sont générées à la demande et vérifiées uniques avant d'être a
 
 ---
 
-**En savoir plus :** découvre les dix-huit [casse-têtes de logique](/blog/puzzle-games/), lis notre
+**En savoir plus :** découvre les dix-neuf [casse-têtes de logique](/blog/puzzle-games/), lis notre
 article sur [la difficulté au Sudoku](/blog/how-to-play-sudoku/), ou parcours le catalogue sur
 [braggster.com/games](/games/).

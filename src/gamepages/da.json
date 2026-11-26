@@ -1,0 +1,318 @@
+{
+  "klaverjassen": {
+    "lead": "Klaverjassen er det hollandske stikspil for to hold med to spillere: 32 kort, 16 runder, hvor roem og at gå nat afgør de fleste aftener.",
+    "scoring": "Indtast kortpointene og roem for hver runde, så klarer pointblokken resten: den ved, at en runde er 162 plus roem værd, giver pit sine 100 i bonus og giver alt til forsvarerne, når det spillende hold går nat. Amsterdam- og Rotterdam-reglerne er begge indbygget, og regelskærmen har en oversigt over kortenes rang og værdi for trumf og almindelige farver. Efter runde 16 vinder holdet med flest point."
+  },
+  "jass": {
+    "lead": "Jass er Schweiz' nationale kortspil: to hold med to, 36 kort og et kapløb til 2500 med Weis-meldinger og trumfmultiplikatorer undervejs.",
+    "scoring": "Hver runde indtaster du kortpointene, eventuelle Weis og den multiplikator, jeres bord er enige om for den kontrakt, hvad enten den er en farve, Obenabe eller Undenufe. Pointblokken holder løbende styr på totalerne mod 2500. Schieber er standard, og Coiffeur-varianten spiller hver af de seks kontrakttyper præcis én gang."
+  },
+  "belote": {
+    "lead": "Belote er det franske stikspil for to hold med to: meld trumf, tag de 162 point i spillet, og annoncér belote-rebelote.",
+    "scoring": "Hvert giv scorer pointblokken kontrakten som en duel. Holdet, der meldte trumf, beholder kun sine point, hvis det tager flere end det andet hold. Ellers er giv dans, og forsvarerne tager alle 162 plus belote-bonusserne. Capot giver 90 ekstra, og Coinche-varianten fordobler eller firedobler resultatet. Spil til den sum, I aftaler, som regel 501 eller 1000."
+  },
+  "whist": {
+    "lead": "Whist er det klassiske makkerspil med stik: to hold med to, de første seks stik er bogen, og hvert stik derover giver et point.",
+    "scoring": "Indtast, hvor mange stik hver side vandt, så tæller pointblokken kun dem over bogen på seks, så en side med otte stik får to point. Den første side med fem point vinder spillet. Wiezen-varianten tilføjer meldinger om en kontrakt og udpeger trumf efter den højeste melding."
+  },
+  "bridge": {
+    "lead": "Bridge er det store makkerspil: meld en kontrakt med din makker, spil den med dummy åben på bordet, og tæl point over og under stregen.",
+    "scoring": "Indtast kontrakten, hvem der spillede den, doblinger og antal stik, så regner pointblokken resten ud: meldingens værdi under stregen, overstik og udgang, slem- og robberbonusser over den og strafpoint til forsvarerne, når en kontrakt går ned. Rubber følger zonen, mens du spiller. Duplicate forudindstiller den pr. board."
+  },
+  "euchre": {
+    "lead": "Euchre er det hurtige trumfspil for to hold med to, spillet med fem kort hver og et kort spil. Det første hold med ti point vinder.",
+    "scoring": "Indtast, hvem der meldte trumf, og hvor mange stik de tog. Tre eller fire stik giver 1, alle fem (en march) giver 2, en soloudmelding, der tager alle fem, giver 4, og et melderhold, der kommer til kort, er euchred og giver det andet hold 2. Stick the dealer-varianten tvinger giveren til at melde trumf."
+  },
+  "fivehundred": {
+    "lead": "500 er Australiens yndlingsspil med meldinger: vind auktionen om trumf, tag mindst lige så mange stik, som du meldte, og kap til 500 point.",
+    "scoring": "Pointblokken har hele meldetabellen, fra 40 for seks spar op til 520 for ti uden trumf, plus misere til 250 og åben misere til 500. Hold din melding, og du scorer dens værdi. Kommer du til kort, mister du den, mens det andet hold scorer 10 pr. stik. Det første hold til 500 vinder, og et hold, der falder til minus 500, taber."
+  },
+  "spades": {
+    "lead": "Spades er det amerikanske makkerspil, hvor spar altid er trumf, hver spiller melder sine stik, og overstik kommer tilbage som bags.",
+    "scoring": "Indtast hver melding og de tagne stik. At holde en melding giver 10 pr. meldt stik plus 1 for hvert ekstra stik, at komme til kort koster 10 pr. stik, og hver tiende bag koster holdet 100. Nil-meldinger giver eller koster 100 for sig. Det første hold til 500 vinder, i makker- eller solospil."
+  },
+  "cuarenta": {
+    "lead": "Cuarenta er Ecuadors nationale kortspil: fang kort fra bordet i par og rækker, lav caidas og limpias, og kap med dit hold til 40.",
+    "scoring": "Hver runde indtaster du, hvor mange af de 40 kort dit hold fangede, plus de caidas og limpias, hver side lavede. Caidas og limpias er 2 point værd hver, og fangede kort over 19 giver ét point hver, op til 6. Totalerne lægges sammen, og den første side til 40 vinder."
+  },
+  "mus": {
+    "lead": "Mus er det spanske bluffespil for to par med 40 kort, hvor hvert giv meldes gennem fire faser: grande, chica, pares og juego.",
+    "scoring": "For hvert giv indtaster du, hvilket par der tog grande, chica, pares og juego, og alt, der blev hævet i meldingerne. Grande, chica og pares giver en basis på 1, juego giver 2, og en fase, ingen har, springes over. Det første par til 40 vinder, eller til 30 i det korte spil."
+  },
+  "hearts": {
+    "lead": "Hjerterfri (Hearts) er stikspillet, du vinder ved at undgå stik: hvert hjerter koster et point, spar dame koster 13, og at skyde månen vender det hele.",
+    "scoring": "Indtast de strafpoint, hver spiller tog i en runde, som tilsammen er 26. En månekontrol vender runden, når én spiller tager alle hjerter og spar dame. Spillet slutter, når nogen når 100, og laveste sum vinder. Omnibus, Spot og Cancellation er indbygget, og du kan spille et helt spil i appen mod tre computermodstandere."
+  },
+  "poker": {
+    "lead": "Poker dækker Texas Hold'em, Omaha, Seven card stud og Five card draw. Braggster tæller, hvem der endte hvor i hver omgang, aldrig hvad nogen satte i.",
+    "scoring": "Efter hver omgang trækker du spillerne i deres slutrækkefølge. Førstepladsen giver ét point pr. spiller ved bordet, andenpladsen ét mindre, og sidstepladsen giver ét. Point lægges sammen hen over aftenen, og højeste sum vinder. Regelskærmen har den fulde håndrangering, fra royal flush ned til højt kort."
+  },
+  "blackjack": {
+    "lead": "Blackjack er kapløbet til 21 mod giveren. I braggster spiller du hænder mod en rigtig giver på skærmen, eller holder point i et spil med et fysisk spil kort.",
+    "scoring": "Hver hånd scorer sit resultat: en blackjack er 3 point, en sejr 2, uafgjort 1 og et tab 0, og højeste sum vinder. Ved bordet i appen giver og spiller giveren sin hånd, og resultatet tælles for dig. Klassiske, europæiske, Atlantic City- og Spanish 21-regler er alle med."
+  },
+  "solitaire": {
+    "lead": "Kabale (Solitaire) er én spiller mod giv. Spil Klondike direkte i appen, eller tæl et giv, du har lagt med rigtige kort.",
+    "scoring": "Klondike-brættet i appen flyttes med tryk, vender ét eller tre kort ad gangen og tæller det færdige giv for dig. Til et fysisk giv indtaster du resultatet selv, Vegas-stil efter kort på grundbunkerne eller standardstil efter point. Spider, FreeCell og Pyramid er der også, og din total vokser giv efter giv."
+  },
+  "rummy": {
+    "lead": "Rummy er familien af træk-og-kasser-spil, hvor du lægger sæt og rækker og prøver at gå ud først, fra almindelig Rummy til Gin, Rummy 500 og Indian Rummy.",
+    "scoring": "I almindelig Rummy samler den, der går ud, værdien af alle kort tilbage i de andres hænder, med billedkort til 10 og esser til 1. Gin scorer forskellen i deadwood med bonusser for gin og undercut, Rummy 500 scorer meldinger minus kort på hånden, og Indian Rummy scorer strafpoint. Pointblokken tilpasser sig den variant, du vælger."
+  },
+  "canasta": {
+    "lead": "Canasta er meldespillet med to spil kort, hvor syv ens kort bliver til en canasta, jokere og toere er vilde, og et spil løber helt til 5000 point.",
+    "scoring": "Pointblokken er et optællingsgitter for hver hånd: værdien af lagte kort, 500 for en ren canasta, 300 for en blandet, 100 for at gå ud, minus det, der er tilbage på din hånd. Den følger også det stigende minimum for den første udlægning, efterhånden som din score vokser. Buraco-varianten deler motor med sine egne canasta-regler."
+  },
+  "jokeren": {
+    "lead": "Joker-rummy (Jokeren) er det hollandske rummyspil med to spil kort og jokere: læg rækker og grupper, gå ud først, og hold dine strafpoint lave.",
+    "scoring": "Når nogen går ud, indtaster alle de andre strafværdien af de kort, de har tilbage, og vinderen indtaster 0. Jeres bord bestemmer, hvad en joker er værd. Efter nogle giv vinder laveste sum, og stillingen rangerer det sådan."
+  },
+  "pesten": {
+    "lead": "Olsen (Pesten) er det hollandske aflæggerspil i familie med Crazy Eights, fuld af kort, der får næste spiller til at trække, stå over eller skifte farve.",
+    "scoring": "Når én spiller løber tør for kort, indtaster alle andre de strafpoint, de stadig har på hånden, og vinderen indtaster 0. Totalerne lægges sammen hånd efter hånd, og laveste sum vinder. Regelskærmen viser de særlige kort, de fleste borde bruger, for husregler varierer fra egn til egn."
+  },
+  "toepen": {
+    "lead": "Toepen er det hollandske udelukkelsesspil med fire kort og en hel del mod: bank for at hæve, hvad en hånd er værd, og den sidste tilbage vinder.",
+    "scoring": "Den, der taber en hånd, får strafpoint svarende til dens værdi efter hver toep, og en spiller, der gav op, får den lavere værdi fra før. Pointblokken følger hver spiller mod grænsen og sender dem ud ved 15, eller ved 10 i den kortere variant. Den sidste spiller tilbage vinder."
+  },
+  "bollen": {
+    "lead": "Bollen er det hollandske gættespil: sig, hvor mange stik du tager, og et forkert gæt giver dig en bol, mens antallet af kort stiger og falder.",
+    "scoring": "Hver runde markerer du for hver spiller, om de holdt deres melding eller tog en bol. En præcis forudsigelse scorer meldingen, eller meldingen plus 10 i +10-varianten, og en fejl giver ingenting. Pointblokken fører kortantallet op til en top, der passer til jeres bord, og ned til én igen. Flest point vinder, og flest bollen taber."
+  },
+  "beverbende": {
+    "lead": "Beverbende er det hollandske hukommelseskortspil, hvor du har fire kort med forsiden nedad, kigger på to og prøver at ende hver runde med den laveste sum.",
+    "scoring": "Pointblokken ligner pointblokken fra æsken: en kolonne pr. spiller, en nummereret række pr. runde og en slutsum nederst. Indtast, hvad hver spillers fire kort giver, når runden slutter, så ringes bankerens score ind. Totalerne lægges sammen, og laveste vinder."
+  },
+  "uno": {
+    "lead": "Uno er kortspillet, hvor du matcher farve og tal: spil alle dine kort først, sig til, når du har ét tilbage, og saml point fra alle andres hænder.",
+    "scoring": "Rundens vinder samler de point, der er tilbage i alle andre hænder: tal til pålydende, Skip, Reverse og Draw Two til 20, jokere til 50. Den første spiller til 500 vinder kampen. Klassiske regler, Én runde, Stacking og Seven-zero er alle med."
+  },
+  "unoflip": {
+    "lead": "Uno Flip er Uno med et tosidet spil: et Flip-kort vender alle hænder og bunker om til den mørke side, hvor handlingskortene slår meget hårdere.",
+    "scoring": "Uno Flip har sit eget pointblok, fordi kortene har deres egne værdier, fra Draw One til 10 op til Wild Draw Color til 60. Rundens vinder samler pointene i alle andre hænder, og den første til 500 vinder. En Én runde-variant er med."
+  },
+  "briscola": {
+    "lead": "Briscola er Italiens yndlingsstikspil med 40 kort: fang esser og treere, hold øje med trumf, og nå 61 af de 120 point.",
+    "scoring": "Efter hver hånd indtaster hver spiller de kortpoint, de fangede, som tilsammen giver 120: es 11, tre 10, konge 4, ridder 3 og knægt 2. Totalerne lægges sammen over så mange hænder, som I aftaler. Cinque carte-varianten giver fem kort og ingen træk."
+  },
+  "scopa": {
+    "lead": "Scopa er det italienske fangstspil, hvor du tager kort fra bordet ved at matche deres værdi og rydder hele bordet for en scopa, først til 11 point.",
+    "scoring": "Efter hver hånd indtaster du hver spillers point: ét hver for flest kort, flest mønter, settebello og den bedste primiera, plus ét for hver scopa lavet under spillet. Pointblokken løber totalerne op til 11. Asso piglia tutto, hvor et es rydder bordet, er med."
+  },
+  "truco": {
+    "lead": "Truco er det brasilianske bluffespil med tre runder pr. hånd, hvor et truco hæver, hvad hånden er værd, og den første side til 12 vinder.",
+    "scoring": "Indtast, hvem der vandt hånden, og hvad den var værd efter udmeldingerne: 1, så truco for 3, seis for 6, nove for 9 og doze for 12. Den vindende side scorer den værdi, og den første til 12 vinder. Paulista- og Mineiro-varianter er med."
+  },
+  "skat": {
+    "lead": "Skat er Tysklands klassiker for tre spillere: meld for at blive spilfører, tag skatten op, og slå de to andre med mindst 61 af de 120 point.",
+    "scoring": "Pointblokken er en rigtig Skatliste. Indtast spillet, matadorerne, kortpointene og eventuel schneider eller schwarz, så regner den spilværdien ud, lægger den til ved en sejr og trækker det dobbelte fra ved et tab. Null-spil scorer deres faste værdi, og Bock-varianten fordobler næste hånd."
+  },
+  "doppelkopf": {
+    "lead": "Doppelkopf er det tyske spil for fire med et fordoblet spil på 48 kort, hvor den, der har klørdamerne, i hemmelighed danner Re-holdet.",
+    "scoring": "Indtast, hvem der spillede Re, og de kortpoint, de tog af de 240 i spillet. Pointblokken scorer sejren mod grænserne 90, 60 og 30 og schwarz, lægger det ekstra point til for at slå klørdamerne og bogfører en solospiller med tre gange, hvad hver modstander vinder eller taber. Hver hånd går i nul over hele bordet. Hochzeit er sin egen variant."
+  },
+  "schnapsen": {
+    "lead": "Schnapsen er det østrigske spil for to, et kapløb til 66 kortpoint med 20 kort, ægteskaber til 20 eller 40 og mulighed for at lukke bunken.",
+    "scoring": "Hver hånd noterer du, hvem der vandt den, og hvor mange spilpoint den gav, fra 1 til 3 afhængigt af, hvor langt bagud taberen var, eller 2, når den, der lukkede, fejler. Den første spiller til syv spilpoint vinder kampen. Bela-varianten tilføjer sit ekstra point, og reglerne viser kortene."
+  },
+  "tarot": {
+    "lead": "Königrufen er det østrigske tarokspil for fire: spilføreren kalder en konge, og den, der har den, bliver hans hemmelige makker.",
+    "scoring": "Indtast kontrakten, spilfører og makker og de kortpoint, den spillende side fangede. Pointblokken måler marginen over 36, lægger et fast point til, fordobler det ved et solospil og bogfører det for den spillende side og mod forsvarerne. En forenklet variant spiller hver hånd som solo."
+  },
+  "twentyfive": {
+    "lead": "Twenty-Five er det irske stikspil, hvor trumf-femmeren slår alt, hvert stik er 5 værd, og den første til 25 vinder.",
+    "scoring": "Efter hver hånd indtaster du, hvor mange stik hver spiller tog, og hvem der spillede den højeste trumf. Hvert stik scorer 5, og den højeste trumf giver 5 mere. Pointblokken løber til 25, eller til 45 for makkerspil i Forty-Five, eller til 110 i den længere variant."
+  },
+  "allfours": {
+    "lead": "All Fours er det gamle stikspil, der stadig elskes i Caribien, hvor hver hånd tilbyder fire point: High, Low, Jack og Game, først til 14.",
+    "scoring": "Indtast hver spillers point for hånden: High for den højeste trumf, der blev givet, Low for den laveste, Jack for at vinde trumfknægten og Game for flest kortpoint i stik. Den første til 14 vinder, eller til 7 i Seven Up. En caribisk variant tilføjer jokeren."
+  },
+  "burro": {
+    "lead": "Burro er det latinamerikanske hurtigspil, hvor man sender kort rundt, til nogen har fire ens, og den langsomste til at opdage det får et bogstav i BURRO.",
+    "scoring": "Hver runde markerer du, hvem der var langsomst, og pointblokken giver dem næste bogstav: B, U, R, R, O. Fem bogstaver, og du er ude. Færre bogstaver er bedre, og den sidste spiller tilbage vinder."
+  },
+  "loteria": {
+    "lead": "Lotería er Mexicos billedbingo: en kalder trækker illustrerede brikker, alle dækker dem på deres tabla, og den første, der fuldfører mønsteret, råber Lotería.",
+    "scoring": "Braggster har en indbygget kalder, der blander de 54 brikker og afslører dem én ad gangen ved navn, så ingen behøver et kortspil til at kalde fra. Hver vundet runde giver et point i optællingen, og flest sejre fører. Fuld tabla, Række, Fire hjørner og Midterfelt er alle med."
+  },
+  "yahtzee": {
+    "lead": "Yatzy er terningspillet med fem terninger og tretten felter: tre kast pr. tur, ét felt udfyldt hver tur og 35 points bonus for 63 i den øverste del.",
+    "scoring": "Pointblokken regner hvert felt ud, den øverste bonus og ekstra Yatzy til 100 hver med jokerreglen, alt sammen i selve Yatzy-feltet. Kolonnerne skrumper, så alle spillere er på skærmen. Slå digitale terninger til, og hvert kast viser, hvad det ville give, og med Spil sammen kaster op til seks spillere på deres egne telefoner, mens alle ser terningerne lande."
+  },
+  "dudo": {
+    "lead": "Dudo, også kendt som Perudo eller løgnerterninger, er bluffespillet, hvor alle skjuler fem terninger under et bæger og byder på, hvad hele bordet slog.",
+    "scoring": "Hver runde registrerer du, hvem der mistede en terning, eller hvem der vandt en tilbage med en præcis calza, og pointblokken holder styr på hver spillers antal terninger. En spiller uden terninger er ude, og den sidste med terninger vinder. Esser er vilde som standard. Varianten uden vilde esser slår det fra."
+  },
+  "chess": {
+    "lead": "Skak på et træbræt i lommen: hvert lovligt træk håndhæves, også rokade, en passant og forvandling, og en løbende optælling af, hvem der vinder.",
+    "scoring": "Hvert færdigt parti giver ét point til vinderen og intet for remis, så en aften bliver til en stilling som 5 mod 3. Spil på én telefon, mod computeren på Let, Middel eller Svær, eller med Spil sammen på to telefoner, hvor det sidste træk er markeret på begge brætter."
+  },
+  "checkers": {
+    "lead": "Checkers, eller engelsk dam, på et 8x8-bræt med tvungne slag, flerdobbelte spring og konger, klar til at spille på din telefon.",
+    "scoring": "Hvert færdigt parti giver ét point til vinderen, og remis giver intet, så du har en løbende optælling. Spil på én telefon, mod computeren på tre niveauer eller med Spil sammen på to telefoner. Varianter med tvungne slag og valgfrie slag er med."
+  },
+  "dammen": {
+    "lead": "Internationalt dam er spillet på 10x10 med tyve brikker på hver side, flyvende konger og tvungen maksimal slagning, versionen fra hollandske klubber.",
+    "scoring": "Brættet håndhæver reglen om maksimal slagning og lader dig trykke en lang slagning ud felt for felt, med et skridt tilbage, hvis du glider. Hvert færdigt parti giver ét point til vinderen. Spil på én telefon, mod computeren på tre niveauer eller med Spil sammen på to telefoner."
+  },
+  "connectfour": {
+    "lead": "Fire på stribe er spillet med fire på lodret række: slip en brik i en kolonne, lad tyngdekraften vælge rækken, og få fire på række, før din modstander gør.",
+    "scoring": "Tryk på en kolonne, så falder brikken på plads på brættet på 7 gange 6. Hvert færdigt parti giver ét point til vinderen, og et fuldt bræt er uafgjort. Brikkerne er forskellige i form og ikke kun i farve, så ingen er afhængig af at kunne se forskel på to farver."
+  },
+  "reversi": {
+    "lead": "Othello er spillet, hvor man vender brikker på et 8x8-bræt: indeslut en række af din modstanders brikker mellem to af dine, og de vender alle til din farve.",
+    "scoring": "Brættet viser, hvor du må spille, vender alle indesluttede rækker og går for dig, når du ingen træk har. Den, der har flest brikker til sidst, vinder partiet og scorer et point i optællingen. Spil på én telefon, mod computeren på tre niveauer eller med Spil sammen på to telefoner. Faste og frie åbninger er med."
+  },
+  "tictactoe": {
+    "lead": "Kryds og bolle, spillet med tre på række på et 3x3-gitter, kan spilles på én telefon, og sejre og uafgjorte bliver set for dig.",
+    "scoring": "Tryk på et felt for at sætte dit mærke. Brættet ser selv en sejr eller et fuldt gitter, giver et point til vinderen og intet ved uafgjort og fører en løbende optælling, så en bedst af ti afgør diskussionen."
+  },
+  "sudoku": {
+    "lead": "Sudoku, talgåden på 9x9: udfyld hver række, kolonne og 3x3-boks med 1 til 9, fra Begynder op til Djævelsk, med et nyt gitter hver gang.",
+    "scoring": "Hvert gitter bliver lavet på din telefon og kontrolleret for, at det har præcis én løsning. Din score er din løsetid plus en straf for hver fejl og hvert hint, så lavere er bedre, og fejl tælles i det stille i stedet for at blinke ad dig. Blyantsnoter er der til kandidater."
+  },
+  "killersudoku": {
+    "lead": "Killer Sudoku tilføjer bure til 9x9-gitteret: cifrene i hvert bur giver tilsammen den trykte sum og gentages aldrig, oven i de sædvanlige Sudoku-regler.",
+    "scoring": "Hver gåde bliver lavet frisk og kontrolleret for kun at have én løsning under Sudoku- og burreglerne samtidig, på tværs af fem sværhedsgrader. Et burs sum bliver til tusch, når dets cifre er rigtige. Din score er løsetid plus straf for fejl og hint, laveste vinder."
+  },
+  "kakuro": {
+    "lead": "Kakuro er krydssum-gåden: udfyld hver række af hvide felter med forskellige cifre fra 1 til 9, der giver tilsammen tallet i toppen.",
+    "scoring": "Gitrene går fra 6x6 til 10x10 over fem niveauer, hver lavet på din telefon og bevist at have én løsning. Brug blyantsnoter og hint, når du har brug for det. Løsetid plus straf for fejl og hint giver din score, og lavere er bedre."
+  },
+  "futoshiki": {
+    "lead": "Futoshiki er ulighedsgåden: hver række og kolonne har hvert tal én gang, og større end-tegnene mellem felterne skal alle holde.",
+    "scoring": "Gitrene går fra 4x4 til 7x7 over fem niveauer, lavet frisk og kontrolleret for en unik løsning. Blyantsnoter og hint hjælper dig på vej. Din score er løsetiden plus en straf for hver fejl og hvert hint, laveste vinder."
+  },
+  "binairo": {
+    "lead": "Binairo, også kaldet Takuzu, fylder et gitter med nuller og ettaller: aldrig tre ens på række, balancerede linjer og ingen to ens rækker eller kolonner.",
+    "scoring": "Tryk på et felt for at skifte det mellem tomt, 0 og 1, på gitre fra 6x6 til 12x12. En fejl tæller kun, når du går videre med en forkert værdi stående, så det er gratis at trykke forbi en værdi. Løsetid plus straf er din score, og lavere vinder."
+  },
+  "calcudoku": {
+    "lead": "Calcudoku er det regnende latinske kvadrat: hvert tal én gang pr. række og kolonne, og hver burgruppe skal nå sit mål med det trykte regnetegn.",
+    "scoring": "Gitrene går fra 4x4 til 7x7 over fem niveauer, lavet på din telefon og bevist unikke af en bur-bevidst løser. Blyantsnoter og hint er der, når du har brug for dem. Din score er løsetid plus straf for fejl og hint, laveste vinder."
+  },
+  "tectonic": {
+    "lead": "Tectonic er områdegåden: hvert område rummer 1 op til dets størrelse én gang, og to felter, der rører hinanden, også på skrå, må ikke have samme ciffer.",
+    "scoring": "Gitrene vokser fra 5x5 på Begynder til 8x8 på Djævelsk, og hvert er lavet frisk og bevist at have præcis én løsning. Blyantsnoter og hint er der, når du sidder fast. Din score er løsetid plus straf for fejl og hint, laveste vinder."
+  },
+  "nonogram": {
+    "lead": "Nonogram er billedlogik: tallene ved siden af hver række og over hver kolonne angiver rækkerne af udfyldte felter, og det løste gitter afslører et billede.",
+    "scoring": "Gitrene går fra 5x5 til 15x15, hentet fra en samling håndlavede billeder, der hver er kontrolleret for én løsning. Tryk for at fylde et felt, og hold for at krydse et ud. Løsetid plus straf for fejl og hint giver din score, lavere er bedre."
+  },
+  "minesweeper": {
+    "lead": "Minestryger uden gætteri: hvert felt er bevist løseligt med ren logik, før du ser det, fra 9x9 med 10 miner op til 16x30 med 99.",
+    "scoring": "Du starter altid fra en sikker åbning, og at afsløre en mine koster dig en fejl i stedet for spillet, så du kan gøre feltet færdigt. Flag og spørgsmålstegn markerer det, du mistænker. Din score er ryddetiden plus straf for ramte miner og brugte hint, laveste vinder."
+  },
+  "murdoku": {
+    "lead": "Murder Sudoku er en mordgåde på en plantegning: placér hver mistænkt og offeret, én pr. række og kolonne, og morderen er den, der var alene med offeret.",
+    "scoring": "Hver sag bliver lavet med sin egen historie, et persongalleri af mistænkte og en nummereret liste af spor, på tværs af fem niveauer, og kontrolleret for ét konsistent svar. Noter og overstregninger koster aldrig noget. Din score er løsetid plus straf for fejl og hint, laveste vinder."
+  },
+  "logikwis": {
+    "lead": "Logikwis er den klassiske logikgitter-gåde: par hver person med én ting i hver kategori ud fra en kort liste af spor, på et krydsreferencegitter.",
+    "scoring": "Hver sag trækker et nyt tema og nye kategorier, på tværs af fem niveauer fra 3x3 op til 5x4, og er kontrolleret for ét svar. Tryk for at krydse et par ud eller bekræfte det. Din score er løsetid plus straf for fejl og hint, laveste vinder."
+  },
+  "wordle": {
+    "lead": "Woordkraker er ordgætning på seks forsøg: hvert gæt viser, hvilke bogstaver der er rigtige, hvilke der er i ordet et andet sted, og hvilke der slet ikke er der.",
+    "scoring": "Ordene er fra 4 til 7 bogstaver på tværs af fire niveauer, med et tastatur på skærmen. Bogstavernes tilstand vises med form og ikke kun farve. Din score er antallet af forsøg plus tiden, et ord, du ikke fandt, tæller som den tungeste runde, og laveste sum vinder."
+  },
+  "crossword": {
+    "lead": "Kryds og tværs, lavet frisk på din telefon fra en stor ordbog med ledetråde, fra en hurtig Mini til en hel 15x15, så du aldrig løber tør.",
+    "scoring": "Tryk på en ledetråd for at hoppe til dens ord, og tryk på et felt igen for at skifte mellem vandret og lodret. En afslørknap fylder det første tomme eller forkerte bogstav i. Din score er løsetid plus straf for forkerte og afslørede bogstaver, laveste vinder."
+  },
+  "woordzoeker": {
+    "lead": "Woordzoeker er ordsøgning: find hvert ord fra listen i bogstavgitteret, vandret, lodret eller på skrå, forlæns eller baglæns.",
+    "scoring": "Tryk på et ords første bogstav og derefter på dets sidste, så bliver et fundet ord streget af listen. Gitrene går fra 8x8 med 5 ord op til 14x14 med 12. Din score er løsetid plus straf for fejl og hint, laveste vinder."
+  },
+  "cijfercode": {
+    "lead": "Cijfercode er kodeordsgåden: et udfyldt krydsordsgitter uden ledetråde, hvor hvert bogstav er erstattet af et tal, og du knækker koden.",
+    "scoring": "Skriv et bogstav for et tal, og det dukker op i alle felter med det tal på én gang. Nogle få bogstaver er afsløret fra start, lige nok til at knække resten med logik. Gitrene findes som Mini, Midi og Standard, og din score er løsetid plus straf for forkerte gæt og hint, laveste vinder."
+  },
+  "zweeds": {
+    "lead": "Zweeds er pilekrydsordet, eller det svenske kryds og tværs: hver ledetråd står inde i gitteret ved siden af en pil, der viser, hvor svaret løber.",
+    "scoring": "Hvert giv er et nylagt gitter, fra en 4x4 Mini op til en 14x14 Grand. Tryk på et svarfelt og skriv, og tryk igen for at skifte retning. Din score er løsetid plus straf for forkerte og afslørede bogstaver, laveste vinder."
+  },
+  "filippine": {
+    "lead": "Filippine er en stak ledetråde, hvis svar står på linje i én markeret kolonne, og den kolonne staver et skjult løsningsord oppefra og ned.",
+    "scoring": "Løs hver række ud fra dens ledetråd, så dukker løsningsordet op, når alle rækker er rigtige. Den markerede kolonne vises med farve, en kraftigere kant og en stjerne. Gåderne har 4, 6 eller 8 rækker, og din score er løsetid plus straf for forkerte og afslørede bogstaver, laveste vinder."
+  },
+  "hangman": {
+    "lead": "Galgespil, klassikeren med bogstavgætning: nævn ét bogstav ad gangen, og find ordet, før det syvende forkerte gæt fuldender figuren på galgen.",
+    "scoring": "Et rigtigt gæt fylder alle de pladser, bogstavet hører til, og et forkert tegner næste del af figuren. Et hint viser først ordets beskrivelse og derefter ét bogstav. Din score er tiden plus en straf for hvert forkert gæt og hint, en tabt runde tæller som den tungeste, og laveste vinder."
+  },
+  "backgammon": {
+    "lead": "Backgammon er terninge- og brikløbet rundt om 24 felter: slå enkelte brikker, kom ind igen fra baren, bær ud først, og vind en gammon for det dobbelte.",
+    "scoring": "Hvert færdigt parti giver 1 for en enkelt sejr, 2 for en gammon og 3 for en backgammon, som en løbende optælling uden dobbeltkube. Brættet slår terninger, fremhæver lovlige træk og bærer ud. Spil på én telefon, mod computeren på tre niveauer eller med Spil sammen på to telefoner. Standard- og Nackgammon-åbninger er med."
+  },
+  "dominoes": {
+    "lead": "Domino, fra Block og Draw til All Fives: match de åbne ender, gå ud først, og scor de øjne, dine modstandere sidder med.",
+    "scoring": "Spil på brikbrættet i appen og send én telefon rundt om bordet, eller indtast pointene fra et rigtigt sæt. Brættet ved, om din variant trækker fra bunken, og scorer åbne ender i All Fives. Den side, der går ud, eller har færrest øjne, når rækken blokerer, scorer de øjne, der er tilbage i de andres hænder, op til målet."
+  },
+  "rummikub": {
+    "lead": "Rummikub er brikrummyspillet: læg rækker og grupper, åbn med 30 point, og vær den første, der tømmer sit stativ.",
+    "scoring": "Når en runde slutter, indtaster hver af de andre spillere værdien af de brikker, der er tilbage på deres stativ, hvor en joker tæller 30. Vinderen scorer det hele, og alle andre går minus med deres egen sum. Efter nogle runder vinder højeste sum."
+  },
+  "cluedo": {
+    "lead": "Cluedo er det klassiske mordgådebrætspil. Braggster giver dig en privat detektivblok på din egen telefon, så ingen kigger med på dit ark.",
+    "scoring": "Blokken har 21 rækker til de mistænkte, våbnene og værelserne, en kuvertkolonne, der skifter mellem tom, udelukket og har den, og en fri notekolonne. Appen giver eller ser aldrig nogens kort. Når sagen er løst, registrerer du vinderen, og den tæller med i statistikken."
+  },
+  "darts": {
+    "lead": "Dart fra 501 eller 301: tæl ned med tre pile pr. tur, ram præcis nul for at vinde, og gå bust, hvis du skyder over.",
+    "scoring": "Indtast hvert kast på en dartskive på skærmen, eller skriv turens sum, så trækker pointblokken det fra din resterende score. En tur, der ville tage dig under nul, er en bust og tæller ikke. Den første spiller, der rammer præcis nul, vinder legget."
+  },
+  "bowling": {
+    "lead": "Bowling med ti kegler, talt op som papirarket på banerne: ti frames, strikes tager de næste to kugler med, spares den næste.",
+    "scoring": "Indtast keglerne for hver kugle, så regner pointblokken framene ud og lader en frame stå tom, til dens strike- eller spare-bonus er kendt, ligesom et rigtigt pointark. Den tiende frame får sine bonuskugler, og et perfekt spil er 300."
+  },
+  "kegelen": {
+    "lead": "Keglespil (Kegelen) er bowling med ni kegler, som det spilles på hollandske og tyske baner: hver kegle, du vælter, er et point, uden strikes og spares.",
+    "scoring": "Aftal, hvor mange kast alle får, og indtast så de kegler, hver spiller væltede ved hvert kast. Din total er blot summen. Volle bos stiller alle ni kegler op til hvert kast, og Afruimen spiller videre med det, der står tilbage, til alle ni er væltet."
+  },
+  "midgetgolf": {
+    "lead": "Minigolf over 9 eller 18 huller: tæl hvert slag, og de færreste slag ved rundens slutning vinder.",
+    "scoring": "Indtast hver spillers slag efter hvert hul, så fører pointblokken de løbende totaler. Vælg 9 eller 18 huller, når du sætter runden op. Laveste sum vinder, og stillingen rangerer det sådan."
+  },
+  "tennis": {
+    "lead": "Tennispoint gjort nemt: tryk på den spiller, der vandt bolden, så gør braggster point til partier, partier til sæt og sæt til kampen.",
+    "scoring": "Point tæller 0, 15, 30 og 40, deuce kræver to points føring, et sæt kræver seks partier og to partiers margin, og 6-6 går til tiebreak. Vælg bedst af tre eller bedst af fem sæt. Du trykker kun på, hvem der vandt bolden."
+  },
+  "padel": {
+    "lead": "Padelpoint for to hold med to: tryk på holdet, der vandt bolden, så holder braggster styr på partier og sæt for dig.",
+    "scoring": "Partier tæller op som i tennis, og ved 40-40 vælger du mellem golden point, hvor næste bold afgør, og at spille på fordel. Sæt går til seks partier med to partiers føring og tiebreak ved 6-6. En match-tiebreak til 10 kan erstatte tredje sæt."
+  },
+  "tabletennis": {
+    "lead": "Bordtennispartier til 11 point, vundet med to i forskel, i en kamp over bedst af 3, 5 eller 7 partier.",
+    "scoring": "Tryk på spilleren, der vandt vekslen, så holder pointarket styr på point og partier, også forlængelsen ved 10-10, til nogen fører med to. Den første, der vinder nok partier, tager kampen."
+  },
+  "generic": {
+    "lead": "Det tomme pointblok holder point i ethvert spil, braggster endnu ikke har et pointblok til: navngiv spillerne, tilføj runder, og det klarer optællingen.",
+    "scoring": "Vælg, om højeste eller laveste sum vinder, når du starter, og indtast så alles point runde for runde. Braggster holder de løbende totaler og stillingen, og kampen tæller med i statistikken som ethvert andet spil. Det er altid gratis."
+  },
+  "freestyle": {
+    "lead": "Freestyle er et gratis bord til kort og terninger for spil, I selv finder på: giv kort og slå terninger på skærmen, og hold jeres egne point.",
+    "scoring": "Vælg, hvor mange kort og terninger der gives, pr. spiller eller til et fælles bord, og spil efter de regler, jeres bord aftaler. Du indtaster hver rundes point og vælger, om højeste eller laveste sum vinder. Freestyle er altid gratis."
+  },
+  "memory": {
+    "lead": "Memory, parspillet for 2 til 6 spillere: vend to kort, behold et par og tag en tur til, og hav flest par, når brættet er ryddet.",
+    "scoring": "Brættet er pointblokken. Send én telefon rundt, med brættet tildækket mellem turene, spil mod computeren på Let, Middel eller Svær, eller giv alle en telefon ved et Live Table, hvor kun værtens telefon har kortenes placering. Hvert par er et point, pointene lægges sammen spil for spil, og flest par over kampen vinder. Fem brætstørrelser går fra 6 til 18 par."
+  },
+  "amerikaner": {
+    "lead": "Amerikaner er det norske stikspil for fire, hvor den højeste byder melder trumf og kalder et kort for at vælge en makker til hånden.",
+    "scoring": "Indtast budgiver, den kaldte makker, buddet og de stik, hver side tog, så kontrollerer pointblokken, at de går op. Budgiver og makker vinder eller taber buddet, hver modstander scorer et point pr. stik, og den enlige Amerikaner er 52 værd uanset hvad. Den første til 52 afslutter spillet. Kani-varianten spiller tretten stik og går aldrig under nul."
+  },
+  "capture": {
+    "lead": "Fang (Capture) er det nordiske fiskekortspil: tag kort fra bordet ved at matche deres værdi eller deres sum, og fej bordet for et ekstra point.",
+    "scoring": "Efter hver runde trykker du på, hvem der tog flest kort, flest spar, hvert es, ruder ti, spar to, det sidste fangede kort og hver fejning. Pointblokken lægger pointene sammen, og den første til 16 vinder, eller 21 i den længere variant. En finsk optællingsvariant dropper pointet for det sidste fangede kort."
+  },
+  "molkky": {
+    "lead": "Mölkky er det finske spil med kasteketsjere: vælt nummererede kegler, score præcis 50 for at vinde, og gå over 50 for at falde tilbage til 25.",
+    "scoring": "Ét tryk pr. kast på et tastatur med Forbi og de tolv kegler. Én kegle væltet scorer dens nummer, flere scorer, hvor mange der væltede, og pointblokken holder den løbende total. Over 50 sender dig til 25, eller til 0 i nulstillingsvarianten, og tre forbier i træk sender en spiller ud."
+  },
+  "kubb": {
+    "lead": "Kubb er det svenske plænespil, som i Danmark også hedder kongespil: vælt den anden sides kubber og derefter kongen for at vinde spillet.",
+    "scoring": "Der er ingen point inde i et spil, kun en vinder, så hvert spil er ét tryk for den side, der vandt det. Spil bedst af 3, bedst af 5 eller et enkelt spil. Et hold spiller under ét navn, så hver side er én linje."
+  },
+  "memorysolo": {
+    "lead": "Memory solo, parspillet mod uret: find hvert par på et bræt med 6 til 18 par, og kun fejl, du kunne have undgået, koster tid.",
+    "scoring": "Din score er din tid plus 10 sekunder for hver kendt fejl, en fejl, hvor du allerede havde set det andet kort. At vende et kort, du aldrig har set, er gratis. Laveste sum vinder. De malede kort findes i fire motiver, og et bræt i gang genoptages, når du kommer tilbage."
+  }
+}

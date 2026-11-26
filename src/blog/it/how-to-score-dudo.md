@@ -115,7 +115,7 @@ Dudo è un gioco davvero internazionale con un nome diverso quasi ovunque:
 | Brasile | Dado mentiroso |
 | Regno Unito, Stati Uniti | Perudo, dadi bugiardi |
 
-Braggster include un unico gioco che copre tutta la famiglia, in tutte e sette le lingue dell'app.
+Braggster include un unico gioco che copre tutta la famiglia, in tutte e undici le lingue dell'app.
 
 ## Domande frequenti
 

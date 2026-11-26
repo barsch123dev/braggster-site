@@ -111,7 +111,7 @@ Dudo is a genuinely international game with a different name almost everywhere:
 | Brazil | Dado mentiroso |
 | UK, US | Perudo, liar's dice |
 
-Braggster ships one game covering the family, in all seven app languages.
+Braggster ships one game covering the family, in all eleven app languages.
 
 ## Frequently asked questions
 

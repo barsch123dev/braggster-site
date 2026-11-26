@@ -105,7 +105,7 @@ Como a geração roda no seu aparelho, o estoque é ilimitado e funciona totalme
 
 O Braggster não pisca um dígito de vermelho quando você o coloca errado.
 
-É uma decisão de design deliberada, e vale para os dezoito quebra-cabeças do app. Feedback de erro
+É uma decisão de design deliberada, e vale para os dezenove quebra-cabeças do app. Feedback de erro
 ao vivo transforma um quebra-cabeça de lógica em um jogo de validação: você para de deduzir e
 começa a testar, porque o app vai te avisar se estiver errado. Tire isso, e você precisa ter
 certeza de verdade.
@@ -150,6 +150,6 @@ maioria dos jogos do app.
 
 ---
 
-**Mais:** veja os dezoito [quebra-cabeças de lógica](/blog/puzzle-games/), experimente o
+**Mais:** veja os dezenove [quebra-cabeças de lógica](/blog/puzzle-games/), experimente o
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), ou veja o catálogo em
 [braggster.com/games](/games/).

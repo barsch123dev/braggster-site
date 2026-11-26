@@ -1,11 +1,11 @@
 ---
-title: "18 Logikrätsel in einer App, alle generiert und alle lösbar"
+title: "19 Logik- und Memory-Rätsel in einer App, alle generiert"
 slug: puzzle-games
 locale: de
 type: pillar
 category: puzzle
-meta_title: "18 Logikrätsel in einer App, endlos und lösbar"
-meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo und mehr. Jedes Rätsel frisch generiert und auf genau eine Lösung geprüft."
+meta_title: "19 Logik- und Memory-Rätsel in einer App, endlos"
+meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Memory und mehr. Jedes Rätsel frisch generiert, jedes Logikrätsel auf genau eine Lösung geprüft."
 primary_keyword: "logikrätsel app"
 secondary_keywords:
   - "offline rätsel app"
@@ -15,7 +15,7 @@ secondary_keywords:
   - "rätselspiele ohne werbung"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -26,20 +26,21 @@ internal_links:
   - /blog/how-to-play-killer-sudoku/
   - /blog/how-to-play-minesweeper/
   - /blog/how-to-play-murder-sudoku/
+  - /blog/how-to-play-memory/
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
 trademark_note: null
 ---
 
-# 18 Logikrätsel in einer App, alle generiert und alle lösbar
+# 19 Logik- und Memory-Rätsel in einer App, alle generiert
 
 Die meisten Rätsel-Apps liefern eine Bank an Rätseln aus, die irgendwann zur Neige geht. Braggster
 generiert jedes Rätsel frisch auf Abruf und beweist dann, dass es genau eine Lösung hat, bevor es dir
 gezeigt wird. Genau diese zweite Hälfte macht kaum jemand, und sie ist der Unterschied zwischen einem
 Rätsel, das du dir logisch erschließen kannst, und einem, bei dem du irgendwann raten musst.
 
-Hier sind die achtzehn, was jedes davon wirklich von dir verlangt, und wie sie gewertet werden. In der
+Hier sind die neunzehn, was jedes davon wirklich von dir verlangt, und wie sie gewertet werden. In der
 App haben sie einen eigenen Tab, Rätsel, neben den Spielen.
 
 ## Die Zahlenplatzierungs-Familie
@@ -135,6 +136,18 @@ Lösungswort. 4, 6 oder 8 Zeilen.
 Figur vervollständigt. Ein Hinweis zeigt zuerst die Beschreibung des Wortes, dann einen Buchstaben, und
 drei Wortlängenstufen reichen von 4 bis 15 Buchstaben.
 
+## Das Memory-Rätsel
+
+**[Memory solo](/games/memorysolo/).** Das Paarespiel gegen die Uhr. Du deckst zwei Karten auf einmal
+auf; ein Paar bleibt offen, ein Fehlgriff wird wieder umgedreht. Die Spielfelder reichen von 3 mal 4
+mit 6 Paaren bis 6 mal 6 mit 18, in vier gemalten Bilderthemen. Es ist das einzige Rätsel hier, das
+Erinnerung prüft statt Deduktion, deshalb ist seine Strafe anders geformt: Nur ein **bekannter
+Fehlgriff** kostet 10 Sekunden, ein Fehlgriff, bei dem du die andere Karte schon gesehen hattest. Eine
+Karte aufzudecken, die du noch nie gesehen hast, kostet nichts. Dasselbe Spielfeld lässt sich auch als
+Mehrspielerspiel spielen, gegen den Computer oder an einem Live Table.
+
+Vertiefung: [Memory Spielregeln](/blog/how-to-play-memory/).
+
 ## Wie Rätsel gewertet werden
 
 Jedes Rätsel wird auf die gleiche Art gewertet, und zwar genau umgekehrt zum Rest der App: **Die
@@ -184,9 +197,9 @@ Keine Werbung irgendwo in der App. Der Timer fließt in deine Punktzahl ein, abe
 nichts unterbricht dich.
 
 **Welche Rätsel gibt es in meiner Sprache?**
-Alle achtzehn sind in allen sieben Sprachen der App verfügbar. Die Zahlen- und Logikrätsel sind
+Alle neunzehn sind in allen elf Sprachen der App verfügbar. Die Zahlen- und Logikrätsel sind
 sprachunabhängig, die Worträtsel naturgemäß sprachspezifisch: Ihre Wörter und Hinweise folgen der
-App-Sprache, mit eigenen Listen in allen sieben.
+App-Sprache, mit eigenen Listen in allen elf.
 
 **Kann ich mit Notizen spielen?**
 Ja, bei den Zahlengitter-Rätseln. Binairo und Nonogram nutzen stattdessen eine Zwei-Zustands-Zellenlogik,

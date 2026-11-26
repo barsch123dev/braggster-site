@@ -290,5 +290,29 @@
   "freestyle": {
     "lead": "Freestyle est une table libre de cartes et de dés pour les jeux que vous inventez : distribue des cartes, lance des dés à l'écran, et garde ton propre score.",
     "scoring": "Choisis combien de cartes et de dés distribuer, par joueur ou vers une table partagée, et jouez avec les règles que votre table décide. Tu entres les points de chaque manche et tu choisis si le total le plus haut ou le plus bas gagne. Freestyle est toujours gratuit."
+  },
+  "memory": {
+    "lead": "Memory, le jeu de paires pour 2 à 6 joueurs : retourne deux cartes, garde la paire et rejoue. Celui qui a le plus de paires gagne.",
+    "scoring": "Le plateau fait office de feuille de score. Passe un seul téléphone, avec le plateau masqué entre les tours, joue contre l'ordinateur en Facile, Moyen ou Difficile, ou donne un téléphone à chacun à une Live Table, où seul le téléphone de l'hôte connaît la disposition. Chaque paire vaut un point, les points s'additionnent de partie en partie et celui qui a le plus de paires sur l'ensemble gagne. Cinq tailles de plateau vont de 6 à 18 paires."
+  },
+  "amerikaner": {
+    "lead": "L'Amerikaner est le jeu de plis norvégien à quatre où le plus offrant choisit l'atout et appelle une carte pour désigner son partenaire de la donne.",
+    "scoring": "Note le preneur, le partenaire appelé, l'enchère et les plis de chaque camp, et la feuille vérifie que le compte est bon. Preneur et partenaire gagnent ou perdent l'enchère, chaque adversaire marque un point par pli, et l'Amerikaner en solo vaut 52 dans les deux cas. Le premier à 52 termine la partie. La variante Kani se joue en treize plis et ne descend jamais sous zéro."
+  },
+  "capture": {
+    "lead": "Capture est le jeu de pêche nordique aux cartes : prends des cartes de la table par leur valeur ou leur somme, et balaie la table pour un point de plus.",
+    "scoring": "À la fin de chaque manche, touche qui a pris le plus de cartes, le plus de piques, chaque as, le dix de carreau, le deux de pique, la dernière prise et chaque balayage. La feuille additionne les points et le premier à 16 gagne, ou à 21 dans la variante longue. Une variante finlandaise du décompte supprime le point de la dernière prise."
+  },
+  "molkky": {
+    "lead": "Le Mölkky est le jeu de lancer de quilles finlandais : renverse des quilles numérotées, marque exactement 50 pour gagner, et au-delà de 50 tu retombes à 25.",
+    "scoring": "Un toucher par lancer sur un clavier avec Raté et les douze quilles. Une quille tombée vaut son numéro, plusieurs valent le nombre tombé, et la feuille garde le total courant. Dépasser 50 te ramène à 25, ou à 0 dans la variante de remise à zéro, et trois ratés d'affilée éliminent un joueur."
+  },
+  "kubb": {
+    "lead": "Le Kubb est le jeu de pelouse suédois, appelé Kongespil au Danemark : renverse les kubbs de l'autre camp, puis le roi, pour gagner la partie.",
+    "scoring": "Il n'y a pas de points dans une partie, seulement un gagnant, donc chaque partie est un toucher pour le camp qui l'a remportée. Joue au meilleur des 3, au meilleur des 5 ou en une seule partie. Une équipe joue sous un seul nom, donc chaque camp tient sur une ligne."
+  },
+  "memorysolo": {
+    "lead": "Memory solo, le jeu de paires contre la montre : trouve toutes les paires d'un plateau de 6 à 18 paires, et seuls les ratés évitables coûtent du temps.",
+    "scoring": "Ton score est ton temps plus 10 secondes pour chaque raté où tu avais déjà vu l'autre carte. Retourner une carte jamais vue ne coûte rien. Le total le plus bas gagne. Les cartes peintes existent en quatre thèmes, et un plateau en cours reprend quand tu reviens."
   }
 }

@@ -1,0 +1,318 @@
+{
+  "klaverjassen": {
+    "lead": "Klaverjassen on hollantilainen tikkipeli kahdelle kahden joukkueelle: 32 korttia, 16 kierrosta, ja roem ja nat ratkaisevat useimmat illat.",
+    "scoring": "Kirjaa kierroksen korttipisteet ja roem, niin pistelista hoitaa lopun: se tietää, että kierros on 162 pistettä plus roem, antaa pitille 100 pisteen bonuksen ja siirtää kaiken puolustajille, kun pelaava joukkue menee nat. Amsterdamin ja Rotterdamin säännöt ovat molemmat mukana, ja sääntönäytöllä on taulukko korttien arvojärjestyksestä ja arvoista valtille ja muille maille. Kierroksen 16 jälkeen eniten pisteitä saanut joukkue voittaa."
+  },
+  "jass": {
+    "lead": "Jass on Sveitsin kansallinen korttipeli: kaksi kahden joukkuetta, 36 korttia ja kisa 2500 pisteeseen Weis-yhdistelmin ja valttikertoimin.",
+    "scoring": "Joka kierroksella kirjaat korttipisteet, mahdolliset Weisit ja pöydässänne sovitun kertoimen sopimukselle, olipa se väri, Obenabe tai Undenufe. Pistelista pitää kokonaissummat kohti lukemaa 2500. Schieber on oletus, ja Coiffeur-pelimuodossa jokainen kuudesta sopimustyypistä pelataan tasan kerran."
+  },
+  "belote": {
+    "lead": "Belote on ranskalainen tikkipeli kahdelle kahden joukkueelle: huuda valtti, kerää pelin 162 pistettä ja ilmoita belote-rebelote.",
+    "scoring": "Jokaisessa jaossa pistelista pisteyttää sopimuksen joukkueiden kesken. Valtin nimennyt joukkue pitää pisteensä vain, jos se ottaa enemmän kuin toinen joukkue. Muuten jako on dans ja puolustajat saavat kaikki 162 pistettä sekä belote-bonukset. Capot lisää 90, ja Coinche-pelimuodossa tulos kaksinkertaistuu tai nelinkertaistuu. Pelatkaa sovittuun summaan, yleensä 501 tai 1000."
+  },
+  "whist": {
+    "lead": "Whist on klassinen pariskuntien tikkipeli: kaksi kahden joukkuetta, kuusi ensimmäistä tikkiä ovat perusmäärä, ja jokainen sen ylittävä tikki tuo pisteen.",
+    "scoring": "Kirjaa kummankin puolen ottamat tikit, niin pistelista laskee vain kuuden tikin perusmäärän ylittävät: kahdeksan tikkiä ottanut puoli saa kaksi pistettä. Ensimmäinen viiteen pisteeseen yltävä puoli voittaa pelin. Wiezen-pelimuoto lisää sopimushuutokaupan ja nimeää valtin korkeimman tarjouksen mukaan."
+  },
+  "bridge": {
+    "lead": "Bridge on korttipelien suuri parikilpailu: huutakaa sopimus kumppanin kanssa, pelatkaa se lepääjä avoimena pöydällä ja pisteyttäkää viivan ylä- ja alapuolelle.",
+    "scoring": "Kirjaa sopimus, sen pelaaja, kaksinkertaistus ja otetut tikit, niin pistelista laskee loput: tarjouksen arvon viivan alle, ylitikit sekä pelin, slämmin ja robberin bonukset viivan yläpuolelle sekä puolustajien rangaistuspisteet, kun sopimus kaatuu. Rubber seuraa haavoittuvuutta pelin edetessä, Duplicate asettaa sen valmiiksi jokaiselle jaolle."
+  },
+  "euchre": {
+    "lead": "Euchre on nopea valtinhuutopeli kahdelle kahden joukkueelle: viisi korttia kullekin, lyhyt pakka ja kymmenen pisteen kisa.",
+    "scoring": "Kirjaa valtin huutaja ja hänen ottamansa tikit. Kolme tai neljä tikkiä tuo 1 pisteen, kaikki viisi (march) 2 pistettä, yksin pelattu käsi, joka ottaa kaikki viisi, 4 pistettä, ja huutajajoukkue, joka jää vajaaksi, on euchred ja antaa toiselle joukkueelle 2 pistettä. Stick the dealer -pelimuodossa jakajan on pakko nimetä valtti."
+  },
+  "fivehundred": {
+    "lead": "500 on Australian suosikkihuutopeli: voita valttihuutokauppa, ota vähintään huutamasi määrä tikkejä ja kisaa 500 pisteeseen.",
+    "scoring": "Pistelistalla on koko huutotaulukko, 40 pisteestä kuudella padalla 520 pisteeseen kymmenellä ilman valttia, sekä misere 250 pisteellä ja avoin misere 500 pisteellä. Jos teet huutosi, saat sen arvon. Jos et, menetät sen, ja toinen joukkue saa 10 pistettä tikiltä. Ensimmäinen 500 pisteeseen yltävä joukkue voittaa, ja miinus 500:aan vajoava joukkue häviää."
+  },
+  "spades": {
+    "lead": "Spades on amerikkalainen pariskuntapeli, jossa pata on aina valtti, jokainen huutaa tikkinsä ja ylitikit palaavat kiusaamaan bageina.",
+    "scoring": "Kirjaa jokainen huuto ja otetut tikit. Huudon täyttäminen tuo 10 pistettä huudettua tikkiä kohden plus 1 jokaisesta ylimääräisestä, huudon ohi menevä maksaa 10 pistettä tikiltä, ja joka kymmenes bagi maksaa joukkueelle 100 pistettä. Nil-huudot tuovat tai vievät 100 pistettä erikseen. Ensimmäinen 500 pisteeseen yltävä voittaa, sekä pareittain että yksin pelattaessa."
+  },
+  "cuarenta": {
+    "lead": "Cuarenta on Ecuadorin kansallinen korttipeli: ota pöydästä kortteja pareina ja sarjoina, tee caidoja ja limpioita ja kisaa puolellasi 40 pisteeseen.",
+    "scoring": "Joka kierroksella kirjaat, montako 40 kortista puolesi keräsi, sekä kummankin puolen caidat ja limpiat. Caida ja limpia ovat kumpikin 2 pisteen arvoisia, ja yli 19 kerätystä kortista saa pisteen kustakin, enintään 6. Summat kertyvät, ja ensimmäinen 40 pisteeseen yltävä puoli voittaa."
+  },
+  "mus": {
+    "lead": "Mus on espanjalainen bluffauspeli kahdelle parille 40 kortin pakalla: jokainen jako huudetaan neljässä vaiheessa: grande, chica, pares ja juego.",
+    "scoring": "Jokaisesta jaosta kirjaat, mikä pari otti vaiheet grande, chica, pares ja juego sekä huutokaupassa korotetut panokset. Grande, chica ja pares tuottavat perustana 1, juego 2, ja vaihe, jota kukaan ei omista, ohitetaan. Ensimmäinen pari 40 pisteeseen voittaa, lyhyessä pelissä 30 pisteeseen."
+  },
+  "hearts": {
+    "lead": "Hearts on tikkipeli, jonka voittaa välttelemällä tikkejä: jokainen hertta maksaa pisteen, patadaami 13, ja kuun ampuminen kääntää kaiken ympäri.",
+    "scoring": "Kirjaa kunkin pelaajan kierroksella ottamat rangaistuspisteet, jotka summautuvat 26:een. Kuunampumisen valitsin kääntää kierroksen, kun yksi pelaaja ottaa kaikki hertat ja patadaamin. Peli päättyy, kun joku yltää 100:aan, ja pienin summa voittaa. Omnibus, Spot ja Cancellation ovat mukana, ja koko pelin voit pelata sovelluksessa kolmea tietokonevastustajaa vastaan."
+  },
+  "poker": {
+    "lead": "Pokeri kattaa Texas Hold'emin, Omahan, Seven card studin ja Five card drawn. Braggster pisteyttää, kuka sijoittui minnekin, ei sitä, mitä kukin pani peliin.",
+    "scoring": "Jokaisen pelikerran jälkeen vedät pelaajat sijoitusjärjestykseen. Ensimmäinen sija tuo yhden pisteen jokaista pöydässä istunutta pelaajaa kohti, toinen yhden vähemmän ja viimeinen yhden pisteen. Pisteet kertyvät illan mittaan, ja suurin summa voittaa. Sääntönäytöllä on täysi käsien arvojärjestys värisuorasta aina korttiin."
+  },
+  "blackjack": {
+    "lead": "Blackjack on kisa 21:een jakajaa vastaan. Braggsterissa pelaat käsiä näytöllä olevaa jakajaa vastaan tai pidät pisteet fyysisellä pakalla pelatulle pelille.",
+    "scoring": "Jokainen käsi pisteytetään tuloksensa mukaan: blackjack on 3 pistettä, voitto 2, tasapeli 1 ja tappio 0, ja suurin summa voittaa. Sovelluksen pöydässä jakaja jakaa ja pelaa omansa, ja tulos pisteytetään puolestasi. Classic-, European-, Atlantic City- ja Spanish 21 -säännöt ovat mukana."
+  },
+  "solitaire": {
+    "lead": "Pasianssi on yksi pelaaja jakoa vastaan. Pelaa Klondikea suoraan sovelluksessa tai pisteytä oikeilla korteilla levittämäsi jako.",
+    "scoring": "Sovelluksen Klondike-lauta toimii napauttamalla, jakaa yhden tai kolme korttia kerrallaan ja pisteyttää päättyneen jaon puolestasi. Fyysisen jaon tuloksen kirjaat itse, Vegas-tyylillä perustusten korttien mukaan tai tavallisesti pisteinä. Spider, FreeCell ja Pyramid ovat myös mukana, ja kokonaissummasi kasvaa jako jaolta."
+  },
+  "rummy": {
+    "lead": "Rommi on nosto- ja hylkäyspelien perhe: laske pöytään sarjoja ja suoria ja pääse ensin ulos. Mukana peruspeli, Gin, Rummy 500 ja Indian Rummy.",
+    "scoring": "Peruskäsissä ulos päässyt saa muiden käteen jääneiden korttien arvon, kuvakortit 10 ja ässät 1. Gin pisteyttää deadwood-erotuksen gin- ja undercut-bonuksin, Rummy 500 pisteyttää pöytään lasketut yhdistelmät miinus käteen jääneet kortit, ja Indian Rummy pisteyttää rangaistuksia. Pistelista mukautuu valitsemaasi pelimuotoon."
+  },
+  "canasta": {
+    "lead": "Canasta on kahden pakan yhdistelmäpeli, jossa seitsemän samanarvoista kortia on canasta, jokerit ja kakkoset ovat villejä ja peli kestää 5000 pisteeseen.",
+    "scoring": "Pistelista on jokaisen jaon laskentaruudukko: pöytään lasketut korttiarvot, 500 luonnolliselle canastalle, 300 sekalaiselle, 100 ulos pääsystä, miinus käteen jäänyt. Se seuraa myös ensimmäisen laskun nousevaa vähimmäisarvoa pisteiden kasvaessa. Buraco-pelimuoto jakaa moottorin omilla canasta-säännöillään."
+  },
+  "jokeren": {
+    "lead": "Jokeri-rommi on hollantilainen rommi kahdella pakalla ja jokereilla: laske sarjoja ja ryhmiä, pääse ensin ulos ja pidä rangaistuspisteesi pieninä.",
+    "scoring": "Kun joku pääsee ulos, kaikki muut kirjaavat käteen jääneiden korttien rangaistusarvon ja voittaja kirjaa 0. Pöytänne päättää, mitä jokeri on arvoltaan. Muutaman jaon jälkeen pienin summa voittaa, ja tilanne järjestetään sen mukaan."
+  },
+  "pesten": {
+    "lead": "Mau-Mau eli hollantilainen Pesten on Crazy Eights -sukuinen korttipeli, jossa erikoiskortit pakottavat nostamaan, ohittamaan vuoron tai vaihtamaan maata.",
+    "scoring": "Kun yksi pelaaja jää ilman kortteja, kaikki muut kirjaavat käteen jääneet rangaistuspisteet ja voittaja kirjaa 0. Summat kertyvät jako jaolta, ja pienin summa voittaa. Sääntönäytöllä on useimmissa pöydissä käytetyt erikoiskortit, koska kotisäännöt vaihtelevat alueittain."
+  },
+  "toepen": {
+    "lead": "Toepen on hollantilainen pudotuspeli neljällä kortilla ja paljolla röyhkeydellä: koputa korottaaksesi jaon arvoa, ja viimeinen mukana oleva voittaa.",
+    "scoring": "Jaon häviäjä ottaa rangaistuspisteitä jaon arvon verran kunkin toepin jälkeen, ja luovuttanut pelaaja ottaa edellisen, pienemmän arvon. Pistelista seuraa jokaista pelaajaa kohti rajaa ja pudottaa hänet pelistä 15 pisteessä, lyhyemmässä pelimuodossa 10:ssä. Viimeinen jäljelle jäävä voittaa."
+  },
+  "bollen": {
+    "lead": "Bollen on hollantilainen ennustuspeli: sano, montako tikkiä otat, ja väärä arvaus tuo bolin, kun korttien määrä nousee ja laskee.",
+    "scoring": "Joka kierroksella merkitset jokaiselle pelaajalle, tekikö hän huutonsa vai otti bolin. Täsmällinen ennustus tuo huudon arvon, +10-pelimuodossa huudon plus 10, ja ohi mennyt ei tuo mitään. Pistelista vie korttien määrän pöydällenne sopivaan huippuun ja takaisin yhteen. Eniten pisteitä saanut voittaa, ja eniten bolleja saanut häviää."
+  },
+  "beverbende": {
+    "lead": "Beverbende on hollantilainen muistikorttipeli: neljä korttia kuvapuoli alaspäin, kurkistus kahteen, ja tavoitteena pienin summa kierroksen lopussa.",
+    "scoring": "Pistelista näyttää laatikon pistelohkolta: sarake pelaajaa kohti, numeroitu rivi kierrosta kohti ja loppusumma alareunassa. Kirjaa jokaisen pelaajan neljän kortin summa kierroksen päättyessä, ja koputtajan tulos rinkulloidaan. Summat kertyvät, ja pienin voittaa."
+  },
+  "uno": {
+    "lead": "Uno on väri- ja numeropariutuspeli: pelaa kaikki korttisi ensimmäisenä, huuda viimeisestä ja kerää pisteet muiden käsistä.",
+    "scoring": "Kierroksen voittaja saa kaikkien muiden käteen jääneet pisteet: numerokortit nimellisarvolla, Skip, Reverse ja Draw Two 20 pisteellä, villit 50 pisteellä. Ensimmäinen 500 pisteeseen yltävä voittaa ottelun. Classic-, One round-, Stacking- ja Seven-zero-säännöt ovat mukana."
+  },
+  "unoflip": {
+    "lead": "Uno Flip on Uno kaksipuolisella pakalla: Flip-kortti kääntää jokaisen käden ja pinon tummalle puolelle, missä toimintakortit iskevät paljon kovempaa.",
+    "scoring": "Uno Flipillä on oma pistelistansa, koska sen korteilla on omat arvonsa, Draw One 10 pisteestä Wild Draw Color 60 pisteeseen. Kierroksen voittaja saa pisteet kaikista muiden käsistä, ja ensimmäinen 500 pisteeseen voittaa. One round -pelimuoto on mukana."
+  },
+  "briscola": {
+    "lead": "Briscola on Italian suosikkitikkipeli 40 kortin pakalla: kerää ässät ja kolmoset, pidä silmällä valttia ja yllä 61 pisteeseen 120:stä.",
+    "scoring": "Jokaisen jaon jälkeen jokainen pelaaja kirjaa keräämänsä korttipisteet, jotka yhteensä ovat 120: ässä 11, kolmonen 10, kuningas 4, ratsumies 3 ja jätkä 2. Summat kertyvät niin monen jaon yli kuin sovitte. Cinque carte -pelimuodossa jaetaan viisi korttia eikä nostoja ole."
+  },
+  "scopa": {
+    "lead": "Scopa on italialainen keräilypeli, jossa otat pöydästä kortteja arvon mukaan ja tyhjennät koko pöydän scopaksi: ensimmäinen 11 pisteeseen voittaa.",
+    "scoring": "Jokaisen jaon jälkeen kirjaat kunkin pelaajan pisteet: yksi kullekin eniten korteille, eniten rahoille, settebellolle ja parhaalle primieralle sekä yksi jokaisesta pelin aikana tehdystä scopasta. Pistelista vie summat 11:een. Asso piglia tutto, jossa ässä tyhjentää pöydän, on mukana."
+  },
+  "truco": {
+    "lead": "Truco on brasilialainen bluffauspeli, jossa jaossa on kolme kierrosta ja trucon huutaminen korottaa jaon arvoa: ensimmäinen 12 pisteeseen voittaa.",
+    "scoring": "Kirjaa jaon voittaja ja sen arvo huutojen jälkeen: 1, sitten truco 3:sta, seis 6:sta, nove 9:stä ja doze 12:sta. Voittanut puoli saa tämän arvon, ja ensimmäinen 12:een yltävä voittaa. Paulista- ja Mineiro-pelimuodot ovat mukana."
+  },
+  "skat": {
+    "lead": "Skat on Saksan kolmen pelaajan klassikko: huuda tullaksesi yksinpelaajaksi, ota skat ja voita kaksi muuta vähintään 61 pisteellä 120:stä.",
+    "scoring": "Pistelista on aito Skatliste. Kirjaa peli, matadorit, korttipisteet sekä mahdollinen schneider tai schwarz, niin se laskee pelin arvon, lisää sen voitosta ja vähentää kaksinkertaisena tappiosta. Null-pelit saavat kiinteän arvonsa, ja Bock-pelimuoto kaksinkertaistaa seuraavan jaon."
+  },
+  "doppelkopf": {
+    "lead": "Doppelkopf on saksalainen nelinpeli tuplatulla 48 kortin pakalla, jossa risti-daamit omistavat muodostavat salaa Re-joukkueen.",
+    "scoring": "Kirjaa Re:tä pelannut ja hänen ottamansa korttipisteet pelin 240:stä. Pistelista pisteyttää voiton 90, 60 ja 30 pisteen rajoja sekä schwarzia vasten, lisää ylimääräisen pisteen risti-daamien lyömisestä ja kirjaa yksinpelaajalle kolminkertaisen määrän siihen, mitä kukin vastustaja voittaa tai häviää. Jokainen jako summautuu pöydässä nollaan. Hochzeit on oma pelimuotonsa."
+  },
+  "schnapsen": {
+    "lead": "Schnapsen on itävaltalainen kahden pelaajan kisa 66 korttipisteeseen 20 kortin pakalla, avioparit 20 tai 40 pisteen arvoisina ja mahdollisuus sulkea pakka.",
+    "scoring": "Jokaisesta jaosta kirjaat voittajan ja ansaitut pelipisteet, 1-3 sen mukaan, kuinka kauas häviäjä jäi, tai 2, kun sulkija epäonnistuu. Ensimmäinen seitsemään pelipisteeseen yltävä voittaa ottelun. Bela-pelimuoto lisää oman lisäpisteensä, ja säännöissä on kortit esillä."
+  },
+  "tarot": {
+    "lead": "Königrufen on itävaltalainen tarokki neljälle pelaajalle: julistaja kutsuu kuninkaan, ja sen haltijasta tulee hänen salainen kumppaninsa.",
+    "scoring": "Kirjaa sopimus, julistaja ja kumppani sekä julistajapuolen keräämät korttipisteet. Pistelista mittaa marginaalin yli 36:n, lisää kiinteän pisteen, kaksinkertaistaa sen soolossa ja kirjaa sen julistajapuolelle ja puolustajia vastaan. Yksinkertaistettu pelimuoto pelaa jokaisen jaon soolona."
+  },
+  "twentyfive": {
+    "lead": "Twenty-Five on irlantilainen tikkipeli, jossa valtin viitonen päihittää kaiken, jokainen tikki on 5 pisteen arvoinen ja ensimmäinen 25:een voittaa.",
+    "scoring": "Jokaisen jaon jälkeen kirjaat, montako tikkiä kukin pelaaja otti ja kuka pelasi korkeimman valtin. Jokainen tikki tuo 5 pistettä ja korkein valtti 5 lisää. Pistelista kulkee 25:een, pareille Forty-Fivessä 45:een ja pidemmässä pelimuodossa 110:een."
+  },
+  "allfours": {
+    "lead": "All Fours on vanha tikkipeli, jota rakastetaan yhä Karibialla: jokaisessa jaossa on neljä pistettä, High, Low, Jack ja Game, ja ensimmäinen 14:ään voittaa.",
+    "scoring": "Kirjaa jokaisen pelaajan jaon pisteet: High jaetusta korkeimmasta valtista, Low matalimmasta, Jack valtin jätkän voittamisesta ja Game tikkien suurimmasta korttipistemäärästä. Ensimmäinen 14:ään voittaa, Seven Upissa 7:ään. Karibian pelimuoto lisää jokerin."
+  },
+  "burro": {
+    "lead": "Burro on latinalaisamerikkalainen nopeuspeli: kortteja kierrätetään, kunnes jollakulla on neljä samaa, ja hitain huomaaja saa BURRO-sanan kirjaimen.",
+    "scoring": "Joka kierroksella merkitset, kuka oli hitain, ja pistelista antaa hänelle seuraavan kirjaimen: B, U, R, R, O. Viisi kirjainta ja olet ulkona. Mitä vähemmän kirjaimia, sitä parempi, ja viimeinen jäljelle jäävä voittaa."
+  },
+  "loteria": {
+    "lead": "Lotería on Meksikon kuvabingo: kuuluttaja nostaa kuvitettuja laattoja, kaikki peittävät ne tablallaan, ja ensimmäinen valmis huutaa Lotería.",
+    "scoring": "Braggsterissa on sisäänrakennettu kuuluttaja, joka sekoittaa 54 laattaa ja paljastaa ne yksi kerrallaan nimeltä, joten kenenkään ei tarvitse kuuluttaa korttipakasta. Jokainen voitettu kierros tuo pisteen, ja eniten voittoja saanut johtaa. Koko tabla, Rivi, Neljä kulmaa ja Keskiruutu ovat mukana."
+  },
+  "yahtzee": {
+    "lead": "Yatzy on viiden nopan peli kolmellatoista ruudulla: kolme heittoa vuorossa, yksi ruutu täytetään joka vuorolla ja 35 pisteen bonus ylemmän osan 63 pisteestä.",
+    "scoring": "Pistelista laskee jokaisen ruudun, ylemmän bonuksen ja ylimääräiset Yatzyt 100 pisteen arvolla jokerisäännöllä, kaiken Yatzy-ruudun sisällä. Sarakkeet kutistuvat, jotta jokainen pelaaja mahtuu näytölle. Kytke digitaaliset nopat päälle, niin jokainen heitto näyttää arvonsa, ja Pelatkaa yhdessä -toiminnolla enintään kuusi pelaajaa heittää omilla puhelimillaan kaikkien katsoessa noppien asettumista."
+  },
+  "dudo": {
+    "lead": "Dudo, eli Perudo tai valehtelijan nopat, on bluffauspeli, jossa jokainen piilottaa viisi noppaa kupin alle ja huutaa, mitä koko pöytä heitti.",
+    "scoring": "Joka kierroksella kirjaat, kuka menetti nopan tai voitti sen takaisin täsmällisellä calzalla, ja pistelista pitää kirjaa jokaisen pelaajan nopista. Pelaaja, jolla ei ole noppia jäljellä, on ulkona, ja viimeinen noppia omistava voittaa. Ässät ovat oletuksena villejä, ja villittömän ässän pelimuoto kytkee sen pois."
+  },
+  "chess": {
+    "lead": "Shakki puulaudalla taskussasi: jokainen sääntöjenmukainen siirto valvotaan, myös linnoitus, ohestalyönti ja korotus, sekä ajantasainen voittotilanne.",
+    "scoring": "Jokainen päättynyt peli tuo voittajalle pisteen ja tasapeli ei mitään, joten ilta muuttuu kierrostilanteeksi kuten 5-3. Pelaa yhdellä puhelimella, tietokonetta vastaan tasoilla Helppo, Keskitaso tai Vaikea, tai Pelatkaa yhdessä -toiminnolla kahdella puhelimella, jolloin viimeisin siirto merkitään molemmille laudoille."
+  },
+  "checkers": {
+    "lead": "Checkers eli englantilainen tammi 8x8-laudalla pakollisin lyönnein, monilyönnein ja kuninkain, valmiina pelattavaksi puhelimella.",
+    "scoring": "Jokainen päättynyt peli tuo voittajalle pisteen ja tasapeli ei mitään, joten pidät ajantasaista tilannetta. Pelaa yhdellä puhelimella, tietokonetta vastaan kolmella tasolla tai Pelatkaa yhdessä -toiminnolla kahdella puhelimella. Pakolliset ja vapaaehtoiset lyönnit -pelimuodot ovat mukana."
+  },
+  "dammen": {
+    "lead": "Kansainvälinen tammi on 10x10-peli, jossa kullakin on kaksikymmentä nappulaa, lentävät kuninkaat ja pakollinen enimmäislyönti, hollantilaisten kerhojen versio.",
+    "scoring": "Lauta valvoo enimmäislyöntisääntöä ja antaa napauttaa pitkän lyöntisarjan ruutu kerrallaan, ja liukastuessasi voit ottaa askeleen takaisin. Jokainen päättynyt peli tuo voittajalle pisteen. Pelaa yhdellä puhelimella, tietokonetta vastaan kolmella tasolla tai Pelatkaa yhdessä -toiminnolla kahdella puhelimella."
+  },
+  "connectfour": {
+    "lead": "Connect Four on pystysuora neljän suora: pudota kiekko sarakkeeseen, anna painovoiman valita rivi ja saa neljä peräkkäin ennen vastustajaa.",
+    "scoring": "Napauta saraketta, niin kiekko putoaa paikalleen 7 x 6 -laudalla. Jokainen päättynyt peli tuo voittajalle pisteen, ja täysi lauta on tasapeli. Kiekot eroavat muodoltaan eivätkä vain väriltään, joten kenenkään ei tarvitse erottaa kahta väriä toisistaan."
+  },
+  "reversi": {
+    "lead": "Othello on kiekkoja kääntävä peli 8x8-laudalla: saarrosta vastustajan kiekkorivi kahden omasi väliin, niin kaikki kääntyvät sinun väriisi.",
+    "scoring": "Lauta näyttää, mihin saat pelata, kääntää jokaisen saarretun rivin ja ohittaa puolestasi, kun siirtoa ei ole. Se, jolla on lopussa enemmän kiekkoja, voittaa pelin ja saa pisteen tilanteeseen. Pelaa yhdellä puhelimella, tietokonetta vastaan kolmella tasolla tai Pelatkaa yhdessä -toiminnolla kahdella puhelimella. Kiinteä ja vapaa avaus ovat mukana."
+  },
+  "tictactoe": {
+    "lead": "Ristinolla, kolmen suora 3x3-ruudukossa, pelattavissa yhdellä puhelimella ja voitot ja tasapelit tunnistetaan puolestasi.",
+    "scoring": "Napauta ruutua asettaaksesi merkkisi. Lauta huomaa voiton tai täyden ruudukon itse, antaa voittajalle pisteen ja tasapelistä ei mitään, ja pitää ajantasaista tilannetta, joten kymmenen erän ottelu ratkaisee riidan."
+  },
+  "sudoku": {
+    "lead": "Sudoku, 9x9-numeropulma: täytä jokainen rivi, sarake ja 3x3-ruutu luvuilla 1-9, Aloittelijasta Ilkeään, joka kerta uusi ruudukko.",
+    "scoring": "Jokainen ruudukko luodaan puhelimellasi ja tarkistetaan, että ratkaisu on täsmälleen yksi. Pisteesi on ratkaisuaika plus rangaistus jokaisesta virheestä ja vihjeestä, joten pienempi on parempi, ja virheet lasketaan hiljaa niitä sinulle vilkuttamatta. Muistiinpanot ehdokkaille ovat käytettävissä."
+  },
+  "killersudoku": {
+    "lead": "Killer Sudoku lisää 9x9-ruudukkoon häkkejä: häkin numerot summautuvat painettuun summaan eivätkä koskaan toistu, tavallisten Sudoku-sääntöjen lisäksi.",
+    "scoring": "Jokainen pulma luodaan uutena ja varmistetaan yksiselitteiseksi Sudoku- ja häkkisääntöjen yhdessä, viidellä vaikeustasolla. Häkin summa muuttuu musteeksi, kun sen numerot ovat oikein. Pisteesi on ratkaisuaika plus rangaistukset virheistä ja vihjeistä, pienin voittaa."
+  },
+  "kakuro": {
+    "lead": "Kakuro on summaristikkopulma: täytä jokainen valkoisten ruutujen jakso eri numeroilla 1-9 niin, että ne summautuvat jakson alussa olevaan vihjeeseen.",
+    "scoring": "Ruudukot ovat 6x6:sta 10x10:een viidellä tasolla, kukin luotu puhelimellasi ja todistettu yksiselitteiseksi. Käytä muistiinpanoja ja vihjeitä, kun tarvitset. Pisteesi on ratkaisuaika plus rangaistukset virheistä ja vihjeistä, ja pienempi on parempi."
+  },
+  "futoshiki": {
+    "lead": "Futoshiki on epäyhtälöpulma: jokaisella rivillä ja sarakkeella on jokainen luku kerran, ja ruutujen väliset suurempi kuin -merkit on täytettävä.",
+    "scoring": "Ruudukot ovat 4x4:stä 7x7:ään viidellä tasolla, luotu uutena ja tarkistettu yksiselitteisiksi. Muistiinpanot ja vihjeet auttavat matkalla. Pisteesi on ratkaisuaika plus rangaistus jokaisesta virheestä ja vihjeestä, pienin voittaa."
+  },
+  "binairo": {
+    "lead": "Binairo eli Takuzu täyttää ruudukon nollilla ja ykkösillä: ei koskaan kolmea samaa peräkkäin, tasapainoiset rivit eikä kahta samaa riviä tai saraketta.",
+    "scoring": "Napauta ruutua kiertääksesi sen tilat tyhjä, 0 ja 1, ruudukoissa 6x6:sta 12x12:een. Virhe lasketaan vain, kun jatkat väärän arvon jäädessä paikalleen, joten arvon yli napauttaminen on ilmaista. Pisteesi on ratkaisuaika plus rangaistukset, ja pienin voittaa."
+  },
+  "calcudoku": {
+    "lead": "Calcudoku on laskutoimituksilla höystetty latinalainen neliö: jokainen luku kerran per rivi ja sarake, ja jokaisen häkin on osuttava tavoitteeseensa merkillä.",
+    "scoring": "Ruudukot ovat 4x4:stä 7x7:ään viidellä tasolla, luotu puhelimellasi ja todistettu yksiselitteisiksi häkit huomioivalla ratkaisijalla. Muistiinpanot ja vihjeet ovat käytettävissä, kun tarvitset. Pisteesi on ratkaisuaika plus rangaistukset virheistä ja vihjeistä, pienin voittaa."
+  },
+  "tectonic": {
+    "lead": "Tectonic on aluepulma: jokaisella reunustetulla alueella on luvut 1:stä sen kokoon kerran, eikä viereisillä ruuduilla, viistoonkaan, saa olla samaa lukua.",
+    "scoring": "Ruudukot kasvavat 5x5:stä Aloittelijalla 8x8:aan Ilkeällä, ja jokainen luodaan uutena ja todistetaan yksiselitteiseksi. Muistiinpanot ja vihjeet ovat käytettävissä, kun jäät jumiin. Pisteesi on ratkaisuaika plus rangaistukset virheistä ja vihjeistä, pienin voittaa."
+  },
+  "nonogram": {
+    "lead": "Nonogram on kuvalogiikkaa: rivien vieressä ja sarakkeiden yläpuolella olevat luvut kertovat täytettyjen ruutujen jaksot, ja ratkaistu ruudukko paljastaa kuvan.",
+    "scoring": "Ruudukot ovat 5x5:stä 15x15:een, ja ne on poimittu käsin tehtyjen kuvien pankista, joista jokainen on varmistettu yksiselitteiseksi. Napauta täyttääksesi ruudun ja pidä pohjassa ruksataksesi sen. Pisteesi on ratkaisuaika plus rangaistukset virheistä ja vihjeistä, pienempi on parempi."
+  },
+  "minesweeper": {
+    "lead": "Minesweeper ilman arvailua: jokainen kenttä on todistettu ratkaistavaksi pelkällä logiikalla ennen kuin näet sen, 9x9:stä 10 miinalla 16x30:een 99 miinalla.",
+    "scoring": "Aloitat aina turvallisesta avauksesta, ja miinan paljastaminen maksaa virheen eikä peliä, joten voit viimeistellä kentän. Liput ja kysymysmerkit merkitsevät epäilyksesi. Pisteesi on selvitysaika plus rangaistukset osutuista miinoista ja käytetyistä vihjeistä, pienin voittaa."
+  },
+  "murdoku": {
+    "lead": "Murder Sudoku on murhamysteeri pohjapiirroksella: sijoita jokainen epäilty ja uhri, yksi per rivi ja sarake, ja murhaaja on se, joka oli uhrin kanssa kahden.",
+    "scoring": "Jokainen tapaus luodaan omalla tarinallaan, epäiltyjen näyttelijäjoukolla ja numeroidulla vihjelistalla viidellä tasolla, ja tarkistetaan yhdelle johdonmukaiselle vastaukselle. Muistiinpanot ja ruksaukset eivät koskaan maksa mitään. Pisteesi on ratkaisuaika plus rangaistukset virheistä ja vihjeistä, pienin voittaa."
+  },
+  "logikwis": {
+    "lead": "Logikwis on klassinen logiikkaruudukkopulma: yhdistä jokainen henkilö yhteen kohteeseen jokaisessa luokassa lyhyen vihjelistan avulla ristiintaulukossa.",
+    "scoring": "Jokainen tapaus arpoo uuden teeman ja luokat viidellä tasolla 3x3:sta 5x4:ään ja varmistetaan yhdelle vastaukselle. Napauta ruksataksesi tai vahvistaaksesi parin. Pisteesi on ratkaisuaika plus rangaistukset virheistä ja vihjeistä, pienin voittaa."
+  },
+  "wordle": {
+    "lead": "Woordkraker on sana-arvaus kuudella yrityksellä: jokainen arvaus näyttää, mitkä kirjaimet ovat oikein, mitkä sanassa muualla ja mitkä eivät lainkaan.",
+    "scoring": "Sanat ovat 4-7 kirjaimen mittaisia neljällä tasolla, ja käytössä on näyttönäppäimistö. Kirjainten tilat näytetään muodolla ja värillä. Pisteesi on yritysten määrä plus aika, ohi mennyt sana lasketaan raskaimmaksi kierrokseksi, ja pienin summa voittaa."
+  },
+  "crossword": {
+    "lead": "Ristikoita, jotka luodaan uutena puhelimellasi suuresta vihjesanakirjasta, nopeasta Ministä täyteen 15x15:een, joten ne eivät lopu koskaan.",
+    "scoring": "Napauta vihjettä hypätäksesi sen sanaan ja napauta ruutua uudelleen vaihtaaksesi vaaka- ja pystysuunnan välillä. Paljasta-painike täyttää ensimmäisen tyhjän tai väärän kirjaimen. Pisteesi on ratkaisuaika plus rangaistukset väärästä ja paljastetuista kirjaimista, pienin voittaa."
+  },
+  "woordzoeker": {
+    "lead": "Woordzoeker on sanahaku: etsi listan jokainen sana kirjainruudukosta vaaka-, pysty- tai vinosuunnassa, eteen- tai taaksepäin.",
+    "scoring": "Napauta sanan ensimmäistä ja sitten viimeistä kirjainta, niin löydetty sana yliviivataan listasta. Ruudukot ovat 8x8:sta 5 sanalla 14x14:ään 12 sanalla. Pisteesi on ratkaisuaika plus rangaistukset virheistä ja vihjeistä, pienin voittaa."
+  },
+  "cijfercode": {
+    "lead": "Cijfercode on salakirjoituspulma: täytetty ristikkoruudukko ilman vihjeitä, jossa jokainen kirjain on korvattu numerolla ja sinä murrat koodin.",
+    "scoring": "Kirjoita kirjain numerolle, niin se ilmestyy kerralla jokaiseen ruutuun, jossa on tuo numero. Muutama kirjain on alussa paljastettu, juuri sen verran, että loput voi päätellä. Ruudukot ovat kokoa Mini, Midi ja Standard, ja pisteesi on ratkaisuaika plus rangaistukset väärästä arvauksesta ja vihjeistä, pienin voittaa."
+  },
+  "zweeds": {
+    "lead": "Zweeds on nuolisanaristikko eli ruotsalainen ristikko: jokainen vihje on ruudukon sisällä nuolen vieressä, joka näyttää, mihin vastaus kulkee.",
+    "scoring": "Jokainen jako on uutena asetettu ruudukko, 4x4 Ministä 14x14 Grandiin. Napauta vastausruutua ja kirjoita, ja napauta uudelleen vaihtaaksesi suuntaa. Pisteesi on ratkaisuaika plus rangaistukset väärästä ja paljastetuista kirjaimista, pienin voittaa."
+  },
+  "filippine": {
+    "lead": "Filippine on pino vihjeitä, joiden vastaukset asettuvat samaan merkittyyn sarakkeeseen, ja se sarake muodostaa ylhäältä alas piilotetun ratkaisusanan.",
+    "scoring": "Ratkaise jokainen rivi vihjeestään, niin ratkaisusana ilmestyy, kun jokainen rivi on oikein. Merkitty sarake näkyy värillä, paksummalla reunalla ja tähdellä. Pulmissa on 4, 6 tai 8 riviä, ja pisteesi on ratkaisuaika plus rangaistukset väärästä ja paljastetuista kirjaimista, pienin voittaa."
+  },
+  "hangman": {
+    "lead": "Hirsipuu, kirjainarvauksen klassikko: nimeä kirjain kerrallaan ja löydä sana, ennen kuin seitsemäs huti täydentää hirsipuun hahmon.",
+    "scoring": "Osuma täyttää kaikki paikat, joihin kirjain kuuluu, ja huti piirtää hahmon seuraavan osan. Vihje näyttää ensin sanan kuvauksen ja sitten yhden kirjaimen. Pisteesi on aika plus rangaistus jokaisesta hudista ja vihjeestä, hävitty kierros lasketaan raskaimmaksi, ja pienin voittaa."
+  },
+  "backgammon": {
+    "lead": "Backgammon on noppa- ja nappulakisa 24 pisteen ympäri: lyö yksinäiset nappulat, palaa baarista, vie nappulat ensin ulos ja voita gammon kaksinkertaisesta.",
+    "scoring": "Jokainen päättynyt peli tuo 1 pisteen tavallisesta voitosta, 2 gammonista ja 3 backgammonista, ajantasaisena tilanteena ilman tuplauskuutiota. Lauta heittää, korostaa sallitut siirrot ja vie nappulat ulos. Pelaa yhdellä puhelimella, tietokonetta vastaan kolmella tasolla tai Pelatkaa yhdessä -toiminnolla kahdella puhelimella. Standard- ja Nackgammon-avaukset ovat mukana."
+  },
+  "dominoes": {
+    "lead": "Domino, Blockista ja Drawsta All Fivesiin: sovita avoimet päät, pääse ensin ulos ja pisteytä vastustajien käteen jääneet silmäluvut.",
+    "scoring": "Pelaa sovelluksen laattalaudalla kierrättäen yhtä puhelinta pöydän ympäri tai kirjaa pisteet oikeasta pelistä. Lauta tietää, nostetaanko pelimuodossasi pakasta, ja pisteyttää avoimet päät All Fivesissa. Ulos päässyt tai vähiten silmälukuja pitävä puoli, kun rivi tukkeutuu, saa muiden käteen jääneet silmäluvut, tavoitteeseen asti."
+  },
+  "rummikub": {
+    "lead": "Rummikub on laattarommi: laske sarjoja ja ryhmiä, avaa 30 pisteellä ja ole ensimmäinen, joka tyhjentää telineensä.",
+    "scoring": "Kun kierros päättyy, jokainen muu pelaaja kirjaa telineelleen jääneiden laattojen arvon, jokeri 30:nä. Voittaja saa koko summan ja kaikki muut menevät miinukselle oman summansa verran. Muutaman kierroksen jälkeen suurin summa voittaa."
+  },
+  "cluedo": {
+    "lead": "Cluedo on klassinen murhamysteerilautapeli. Braggster antaa sinulle yksityisetsivän muistilehtiön omalle puhelimellesi, joten kukaan ei kurki listaasi.",
+    "scoring": "Muistilehtiössä on 21 riviä epäillyille, aseille ja huoneille, kirjekuorisarake, joka kiertää tilat tyhjä, poissuljettu ja löytyi, sekä vapaa muistiinpanosarake. Sovellus ei koskaan jaa eikä näe kenenkään kortteja. Kun tapaus on ratkaistu, kirjaat voittajan, ja se lasketaan tilastoihin."
+  },
+  "darts": {
+    "lead": "Darts 501:stä tai 301:stä: laske alas kolmella tikalla vuorossa, osu täsmälleen nollaan voittaaksesi ja mene yli, jos ylität.",
+    "scoring": "Kirjaa jokainen heitto näytön tikkataululla tai kirjoita vuoron summa, niin pistelista vähentää sen jäljellä olevasta pistemäärästäsi. Vuoro, joka veisi nollan alle, on bust eikä se lasketa. Ensimmäinen täsmälleen nollaan osuva voittaa erän."
+  },
+  "bowling": {
+    "lead": "Keilaus pisteytettynä kuten paperilomake radalla: kymmenen kehystä, kaato vie seuraavat kaksi palloa ja varaus seuraavan yhden.",
+    "scoring": "Kirjaa kunkin pallon kaadot, niin pistelista laskee kehykset ja jättää kehyksen tyhjäksi, kunnes kaadon tai varauksen bonus tiedetään, aivan kuin oikeassa pistelistassa. Kymmenes kehys saa bonuspallonsa, ja täydellinen peli on 300."
+  },
+  "kegelen": {
+    "lead": "Kegelen on yhdeksän keilan keilailua hollantilaisilla ja saksalaisilla radoilla: jokainen kaatamasi keila on piste, ei kaatoja eikä varauksia.",
+    "scoring": "Sopikaa, montako heittoa kukin saa, ja kirjaa jokaisen pelaajan kaatamat keilat jokaisella heitolla. Kokonaissumma on yksinkertaisesti summa. Volle bos pystyttää kaikki yhdeksän keilaa joka heitolle, ja Afruimen jatkaa pelaamista pystyyn jääneillä, kunnes kaikki yhdeksän on kaadettu."
+  },
+  "midgetgolf": {
+    "lead": "Minigolf 9 tai 18 väylällä: laske jokainen lyönti, ja kierroksen lopussa vähiten lyöntejä käyttänyt voittaa.",
+    "scoring": "Kirjaa jokaisen pelaajan lyönnit jokaisen väylän jälkeen, niin pistelista pitää ajantasaiset summat. Valitse 9 tai 18 väylää kierrosta asettaessasi. Pienin summa voittaa, ja tilanne järjestetään sen mukaan."
+  },
+  "tennis": {
+    "lead": "Tennispisteytys helpoksi: napauta pelaajaa, joka voitti pisteen, ja braggster muuttaa pisteet peleiksi, pelit eriksi ja erät otteluksi.",
+    "scoring": "Pisteet lasketaan 0, 15, 30 ja 40, tasatilanne vaatii kahden pisteen johdon, erä vaatii kuusi peliä ja kahden pelin eron, ja 6-6 menee tiebreakiin. Valitse kolmen tai viiden erän ottelu. Napautat aina vain sitä, kuka voitti pisteen."
+  },
+  "padel": {
+    "lead": "Padelin pisteytys kahdelle kahden joukkueelle: napauta pistettä voittanutta joukkuetta, ja braggster pitää pelit ja erät puolestasi.",
+    "scoring": "Pelit lasketaan kuten tennissä, ja tasatilanteessa 40-40 valitset kultaisen pisteen, jossa seuraava piste ratkaisee, tai edun pelaamisen. Erät menevät kuuteen peliin kahden pelin erolla ja tiebreakilla lukemissa 6-6. Ottelun tiebreak 10:een voi korvata kolmannen erän."
+  },
+  "tabletennis": {
+    "lead": "Pöytätennispelit 11 pisteeseen, voitettuna kahden pisteen erolla, kolmen, viiden tai seitsemän pelin ottelussa.",
+    "scoring": "Napauta vaihdon voittanutta pelaajaa, niin pistelista pitää pisteet ja pelit, myös jatkon tilanteessa 10-10, kunnes joku johtaa kahdella. Ensimmäinen riittävän monta peliä voittanut ottaa ottelun."
+  },
+  "generic": {
+    "lead": "Tyhjä pistelista pitää pisteet mille tahansa pelille, jolle braggsterilla ei vielä ole pistelistaa: nimeä pelaajat, lisää kierroksia, ja se laskee yhteen.",
+    "scoring": "Valitse aloittaessasi, voittaako suurin vai pienin summa, ja kirjaa sitten kaikkien pisteet kierros kerrallaan. Braggster pitää kokonaissummat ja tilanteen, ja ottelu lasketaan tilastoihin kuten mikä tahansa muu peli. Se on aina ilmainen."
+  },
+  "freestyle": {
+    "lead": "Freestyle on ilmainen kortti- ja noppapöytä itse keksimillesi peleille: jaa kortit ja heitä noppaa näytöllä ja pidä omat pisteesi.",
+    "scoring": "Valitse, montako korttia ja noppaa jaetaan, pelaajittain tai yhteiselle pöydälle, ja pelatkaa mitä sääntöjä pöytänne sopii. Kirjaat kierroksen pisteet ja valitset, voittaako suurin vai pienin summa. Freestyle on aina ilmainen."
+  },
+  "memory": {
+    "lead": "Memory, paripeli 2-6 pelaajalle: käännä kaksi korttia, pidä pari ja jatka, ja omista eniten pareja, kun lauta on tyhjä.",
+    "scoring": "Lauta on pistelista. Kierrätä yhtä puhelinta, lauta peitettynä vuorojen välillä, pelaa tietokonetta vastaan tasolla Helppo, Keskitaso tai Vaikea tai anna jokaiselle oma puhelin pöydässä, jossa vain isännän puhelin tietää asettelun. Jokainen pari on piste, pisteet kertyvät pelistä toiseen, ja ottelun eniten pareja saanut voittaa. Viisi laudan kokoa vaihtelee 6:sta 18:aan pariin."
+  },
+  "amerikaner": {
+    "lead": "Amerikaner on norjalainen tikkipeli neljälle, jossa korkein huutaja nimeää valtin ja kutsuu kortin valitakseen jaolle kumppanin.",
+    "scoring": "Kirjaa huutaja, kutsuttu kumppani, huuto ja kummankin puolen tikit, niin pistelista tarkistaa, että ne täsmäävät. Huutaja ja kumppani voittavat tai menettävät huudon, jokainen vastustaja saa pisteen tikiltä, ja yksin pelattu Amerikaner on 52 pisteen arvoinen kummin päin tahansa. Ensimmäinen 52:een päättää pelin. Kani-pelimuodossa pelataan kolmetoista tikkiä eikä summa laske koskaan nollan alle."
+  },
+  "capture": {
+    "lead": "Kaappaus on pohjoismainen kalastuskorttipeli: ota pöydästä kortteja arvon tai summan mukaan ja lakaise pöytä lisäpisteestä.",
+    "scoring": "Jokaisen kierroksen jälkeen napautat, kuka sai eniten kortteja, eniten patoja, jokaisen ässän, ruutukympin, pata-kakkosen, viimeisen kaappauksen ja jokaisen lakaisun. Pistelista laskee pisteet, ja ensimmäinen 16:een voittaa, pidemmässä pelimuodossa 21:een. Suomalainen laskutapa jättää pois pisteen viimeisestä kaappauksesta."
+  },
+  "molkky": {
+    "lead": "Mölkky on suomalainen keiloja heittäen kaadettava peli: kaada numeroituja keiloja, tee täsmälleen 50 pistettä voittaaksesi ja yli 50 pudottaa takaisin 25:een.",
+    "scoring": "Yksi napautus per heitto näppäimistöltä, jossa on Huti ja kaksitoista keilaa. Yksi kaatunut keila tuo numeronsa, useampi kaatuneiden määrän, ja pistelista pitää kokonaissummaa. Yli 50 pudottaa sinut 25:een, nollaus-pelimuodossa 0:aan, ja kolme hutia peräkkäin pudottaa pelaajan pelistä."
+  },
+  "kubb": {
+    "lead": "Kubb on ruotsalainen nurmikkopeli, jota Tanskassa kutsutaan nimellä Kongespil: kaada toisen puolen kubbit ja sitten kuningas voittaaksesi pelin.",
+    "scoring": "Pelin sisällä ei ole pisteitä, vain voittaja, joten jokainen peli on yksi napautus voittaneelle puolelle. Pelaa kolmen tai viiden erän ottelu tai yksi peli. Joukkue pelaa yhdellä nimellä, joten kukin puoli on yksi rivi."
+  },
+  "memorysolo": {
+    "lead": "Memory yksin, paripeli kelloa vastaan: löydä jokainen pari 6-18 parin laudalta, ja vain vältettävissä olleet huti-vedot maksavat aikaa.",
+    "scoring": "Pisteesi on aikasi plus 10 sekuntia jokaisesta tunnetusta hudista, hudista, jossa olit jo nähnyt toisen kortin. Kortin, jota et ollut nähnyt, kääntäminen on ilmaista. Pienin summa voittaa. Maalatut kortit tulevat neljässä teemassa, ja kesken oleva lauta jatkuu, kun palaat."
+  }
+}

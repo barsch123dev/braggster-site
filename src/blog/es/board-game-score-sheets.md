@@ -148,7 +148,7 @@ No. Las partidas de práctica contra el ordenador están deliberadamente excluid
 No. No hay cubo doblador y no se apuesta nada en ningún lugar de la app.
 
 **¿Por qué Sudoku aparece como juego de mesa en algunas páginas?**
-No debería. Sudoku pertenece a los puzles, junto con los otros diecisiete puzles para un jugador
+No debería. Sudoku pertenece a los puzles, junto con los otros dieciocho puzles para un jugador
 que Braggster ya ofrece en su propia pestaña de Puzles. Consulta la [guía de puzles](/blog/puzzle-games/).
 
 ---

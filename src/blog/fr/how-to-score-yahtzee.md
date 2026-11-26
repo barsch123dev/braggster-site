@@ -17,7 +17,7 @@ secondary_keywords:
   - "yams en ligne"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -118,8 +118,11 @@ Le jeu voyage sous différents noms, et les règles restent essentiellement les 
 - **Kniffel** en Allemagne
 - **Yams** en France
 - **Generala** en Argentine, avec quelques différences de règles sur les suites
+- **Yatzy** au Danemark, en Suède, en Norvège et en Finlande, qui est une autre feuille et non un autre nom pour la même
 
-Braggster propose une seule feuille de score pour toute la famille, dans les sept langues de l'app.
+Le Yatzy scandinave compte quinze cases au lieu de treize. Une paire et Deux paires rejoignent le bloc inférieur, le bonus du bloc supérieur est de 50 à partir de 63, la Petite suite est exactement 1-2-3-4-5 pour 15 et la Grande suite exactement 2-3-4-5-6 pour 20, et le Brelan, le Carré, le Full et la Chance comptent les dés utilisés. Un Yatzy vaut 50, et il n'y a ni bonus Yatzy supplémentaire ni règle du Joker.
+
+Braggster propose une seule feuille de score pour toute la famille, avec le Yatzy scandinave comme variante à part entière, dans les onze langues de l'app.
 
 ## Une feuille de score adaptée à ta table
 

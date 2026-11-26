@@ -17,7 +17,7 @@ secondary_keywords:
   - "jugar yahtzee online"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -116,8 +116,11 @@ El juego viaja con nombres distintos, y la puntuación es esencialmente la misma
 - **Kniffel** en Alemania
 - **Yams** en Francia
 - **Generala** en Argentina, con algunas diferencias de reglas en las escaleras
+- **Yatzy** en Dinamarca, Suecia, Noruega y Finlandia, que es otra hoja y no otro nombre para la misma
 
-Braggster ofrece un solo marcador que cubre toda la familia, en los siete idiomas de la app.
+El Yatzy escandinavo tiene quince casillas en lugar de trece. Pareja y Doble pareja se suman al bloque inferior, el bonus del bloque superior es de 50 con 63 o más, la Escalera corta es exactamente 1-2-3-4-5 por 15 y la Escalera larga exactamente 2-3-4-5-6 por 20, y el Trío, el Póker, el Full y la Suerte puntúan los dados usados. Un Yatzy vale 50, y no hay bonus de Yatzy extra ni regla del comodín.
+
+Braggster ofrece un solo marcador que cubre toda la familia, con el Yatzy escandinavo como variante propia, en los once idiomas de la app.
 
 ## El marcador, a medida de tu mesa
 

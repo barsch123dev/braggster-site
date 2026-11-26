@@ -129,6 +129,6 @@ serve nessun account.
 
 ---
 
-**Continua:** scopri tutti e diciotto i [puzzle di logica](/blog/puzzle-games/), leggi della
+**Continua:** scopri tutti e diciannove i [puzzle di logica](/blog/puzzle-games/), leggi della
 [difficoltà di Sudoku](/blog/how-to-play-sudoku/), oppure sfoglia il catalogo su
 [braggster.com/games](/games/).

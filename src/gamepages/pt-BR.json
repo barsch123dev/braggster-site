@@ -290,5 +290,29 @@
   "freestyle": {
     "lead": "Freestyle é uma mesa gratuita de cartas e dados para jogos que vocês mesmos inventam: distribua cartas e lance dados na tela, e marque os seus próprios pontos.",
     "scoring": "Escolha quantas cartas e dados distribuir, por jogador ou para uma mesa compartilhada, e joguem com as regras que a sua mesa combinar. Digite os pontos de cada rodada e escolha se o maior ou o menor total vence. O Freestyle é sempre gratuito."
+  },
+  "memory": {
+    "lead": "Memory, o jogo dos pares para 2 a 6 jogadores: vire duas cartas, fique com o par e jogue de novo. Vence quem tiver mais pares no fim.",
+    "scoring": "O tabuleiro é a ficha de pontuação. Passe um celular de mão em mão, com o tabuleiro coberto entre as vezes, jogue contra o computador no Fácil, Médio ou Difícil, ou dê um celular a cada pessoa em uma Live Table, em que só o celular do anfitrião guarda a posição das cartas. Cada par vale um ponto, os pontos se somam de partida em partida e vence quem tiver mais pares na disputa. Cinco tamanhos de tabuleiro vão de 6 a 18 pares."
+  },
+  "amerikaner": {
+    "lead": "Amerikaner é o jogo norueguês de vazas para quatro: quem faz o maior lance escolhe o trunfo e chama uma carta para escolher um parceiro na mão.",
+    "scoring": "Digite quem fez o lance, o parceiro chamado, o lance e as vazas de cada lado, e a ficha confere se a conta fecha. Quem fez o lance e o parceiro ganham ou perdem o lance, cada adversário marca um ponto por vaza, e o Amerikaner solitário vale 52 nos dois casos. Quem chegar primeiro a 52 encerra o jogo. A variante Kani joga treze vazas e nunca fica abaixo de zero."
+  },
+  "capture": {
+    "lead": "Capture é o jogo de cartas nórdico de pescaria: recolha cartas da mesa combinando valor ou soma, e limpe a mesa para ganhar um ponto extra.",
+    "scoring": "Depois de cada rodada, toque em quem pegou mais cartas, mais espadas, cada ás, o dez de ouros, o dois de espadas, a última captura e cada mesa limpa. A ficha soma os pontos e quem chegar primeiro a 16 vence, ou a 21 na variante mais longa. Uma variante de contagem finlandesa tira o ponto da última captura."
+  },
+  "molkky": {
+    "lead": "Mölkky é o jogo finlandês de arremesso de pinos: derrube pinos numerados, marque exatamente 50 para vencer, e quem passar de 50 volta para 25.",
+    "scoring": "Um toque por arremesso em um teclado com Errou e os doze pinos. Um pino derrubado vale o seu número, vários valem quantos caíram, e a ficha mantém o total corrente. Passar de 50 leva você a 25, ou a 0 na variante de zerar, e três erros seguidos eliminam o jogador."
+  },
+  "kubb": {
+    "lead": "Kubb é o jogo sueco de gramado, chamado de Kongespil na Dinamarca: derrube os kubbs do outro lado e depois o rei para vencer a partida.",
+    "scoring": "Não há pontos dentro de uma partida, só um vencedor, então cada partida é um toque no lado que a venceu. Jogue uma melhor de 3, uma melhor de 5 ou uma partida única. Uma equipe joga sob um nome, então cada lado é uma linha."
+  },
+  "memorysolo": {
+    "lead": "Memory solo, o jogo dos pares contra o relógio: encontre todos os pares em um tabuleiro de 6 a 18 pares, e só os erros evitáveis custam tempo.",
+    "scoring": "Sua pontuação é o seu tempo mais 10 segundos por cada erro conhecido, um erro em que você já tinha visto a outra carta. Virar uma carta que você nunca tinha visto não custa nada. Vence o menor total. As cartas pintadas vêm em quatro temas, e um tabuleiro em andamento continua de onde você parou."
   }
 }

@@ -115,7 +115,7 @@ O Dudo é um jogo genuinamente internacional, com um nome diferente em quase tod
 | Brasil | Dado mentiroso |
 | Reino Unido, EUA | Perudo, liar's dice |
 
-O Braggster tem um único jogo que cobre toda a família, disponível nos sete idiomas do app.
+O Braggster tem um único jogo que cobre toda a família, disponível nos onze idiomas do app.
 
 ## Perguntas frequentes
 

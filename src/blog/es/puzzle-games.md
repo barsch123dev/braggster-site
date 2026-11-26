@@ -1,11 +1,11 @@
 ---
-title: "18 Puzles de Lógica en una App, Todos Generados y Todos Resolubles"
+title: "19 Puzles de Lógica y Memoria en una App, Todos Generados"
 slug: puzzle-games
 locale: es
 type: pillar
 category: puzzle
-meta_title: "18 Puzles de Lógica, Generados y Resolubles"
-meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo y más. Cada puzle se genera al momento y se verifica que tenga una sola solución."
+meta_title: "19 Puzles de Lógica y Memoria, Sin Fin"
+meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Memory y más. Cada puzle se genera al momento y cada puzle de lógica se verifica con una sola solución."
 primary_keyword: "app de puzzles offline"
 secondary_keywords:
   - "app de logica sin conexion"
@@ -15,7 +15,7 @@ secondary_keywords:
   - "juegos de logica sin anuncios"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -26,20 +26,21 @@ internal_links:
   - /blog/how-to-play-killer-sudoku/
   - /blog/how-to-play-minesweeper/
   - /blog/how-to-play-murder-sudoku/
+  - /blog/how-to-play-memory/
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
 trademark_note: null
 ---
 
-# 18 Puzles de Lógica en una App, Todos Generados y Todos Resolubles
+# 19 Puzles de Lógica y Memoria en una App, Todos Generados
 
 La mayoría de apps de puzles vienen con un banco fijo que acaba agotándose. Braggster genera cada
 puzle al momento y luego demuestra que tiene exactamente una solución antes de mostrártelo. Esa
 segunda parte es la que casi nadie hace, y es la diferencia entre un puzle que puedes resolver
 razonando y uno donde al final tienes que adivinar.
 
-Aquí están los dieciocho, qué te pide cada uno de verdad, y cómo se puntúan. En la app tienen una
+Aquí están los diecinueve, qué te pide cada uno de verdad, y cómo se puntúan. En la app tienen una
 pestaña propia, Puzles, junto a los juegos.
 
 ## La familia de colocación numérica
@@ -134,6 +135,18 @@ columna marcada, y esa columna forma una palabra solución oculta de arriba abaj
 complete la figura. Una pista muestra primero la descripción de la palabra, y después una letra, y
 tres niveles de longitud van de 4 hasta 15 letras.
 
+## El de memoria
+
+**[Memory solo](/games/memorysolo/).** El juego de parejas contra el reloj. Da la vuelta a dos cartas
+cada vez; una pareja se queda boca arriba, un fallo se vuelve a tapar. Los tableros van desde 3 por 4
+con 6 parejas hasta 6 por 6 con 18, en cuatro temas de dibujos pintados. Es el único puzle de aquí que
+pone a prueba el recuerdo en lugar de la deducción, así que su penalización es distinta: solo un
+**fallo conocido** cuesta 10 segundos, un fallo en el que ya habías visto la otra carta. Dar la vuelta
+a una carta que nunca habías visto es gratis. El mismo tablero también se juega como juego para varios
+jugadores, contra la computadora o en una Live Table.
+
+Más a fondo: [Cómo jugar a Memory](/blog/how-to-play-memory/).
+
 ## Cómo se puntúan los puzles
 
 Todos los puzles se puntúan igual, y es lo contrario del resto de la app: **gana el total más
@@ -181,9 +194,9 @@ No hay anuncios en ningún lugar de la app. El cronómetro alimenta tu puntuaci�
 nada interrumpe.
 
 **¿Qué puzles están disponibles en mi idioma?**
-Los dieciocho están en los siete idiomas de la app. Los puzles numéricos y de lógica no dependen del
+Los diecinueve están en los once idiomas de la app. Los puzles numéricos y de lógica no dependen del
 idioma, y los puzles de palabras son específicos de cada idioma por naturaleza: sus palabras y pistas
-siguen el idioma de la app, con listas propias en los siete.
+siguen el idioma de la app, con listas propias en los once.
 
 **¿Puedo jugar con notas a lápiz?**
 Sí, en los puzles de cuadrícula numérica. Binairo y Nonogram usan en su lugar una gramática de celda

@@ -15,7 +15,7 @@ lib/games/<dir>/<dir>_game_definition.dart:
     (l10n) => l10n.gameChessBrandName;
 
 This script pairs every definition's gameId with that key, reads the key from
-the seven ARBs, and writes {locale: {site id: name}} for every games.json id.
+the site locales' ARBs, and writes {locale: {site id: name}} for every games.json id.
 A locale whose ARB lacks the key keeps the games.json (English) name. It never
 takes the Dutch the app itself would fall back to, since nl is the app's
 gen-l10n template and a Dutch name on a French page would be wrong twice.
@@ -44,6 +44,10 @@ ARB_SUFFIX = {
     "fr": "fr",
     "it": "it",
     "pt-BR": "pt_BR",
+    "da": "da",
+    "sv": "sv",
+    "nb": "nb",
+    "fi": "fi",
 }
 
 # Site ids that differ from the app's gameId. The site's URLs were set before
@@ -51,9 +55,13 @@ ARB_SUFFIX = {
 SITE_TO_APP_ID = {
     "generic": "generic_board",
     "unoflip": "unoFlip",
+    "memorysolo": "memory_solo",
 }
 
 GAME_ID = re.compile(r"""\bgameId\s*=\s*['"]([^'"]+)['"]""")
+# A definition that names its id through a shared constant (Memory solo's
+# kMemorySoloGameId, which its engine also needs) instead of a literal.
+GAME_ID_CONST = re.compile(r"""\bgameId\s*=\s*(k\w+)\s*;""")
 BRAND_KEY = re.compile(r"\bl10n\.(game\w*BrandName)\b")
 
 
@@ -61,11 +69,14 @@ def app_brand_keys(app: Path) -> dict[str, str]:
     """App gameId -> its BrandName ARB key, one pair per game definition."""
     keys: dict[str, str] = {}
     files = sorted(app.glob("lib/games/*/*_game_definition.dart"))
+    sources = "\n".join(p.read_text("utf-8") for p in app.glob("lib/games/**/*.dart"))
     if not files:
         sys.exit(f"no game definitions under {app / 'lib' / 'games'}; is --app the app/ folder?")
     for path in files:
         text = path.read_text("utf-8")
         ids = set(GAME_ID.findall(text))
+        for const in GAME_ID_CONST.findall(text):
+            ids |= set(re.findall(rf"""\bconst\s+String\s+{const}\s*=\s*['"]([^'"]+)['"]""", sources))
         brands = set(BRAND_KEY.findall(text))
         if len(ids) != 1 or len(brands) != 1:
             sys.exit(f"{path}: expected one gameId and one BrandName key, found {ids} and {brands}")

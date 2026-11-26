@@ -1,11 +1,11 @@
 ---
-title: "18 puzzles logiques dans une seule app, tous générés et tous solubles"
+title: "19 puzzles de logique et de mémoire dans une seule app, tous générés"
 slug: puzzle-games
 locale: fr
 type: pillar
 category: puzzle
-meta_title: "18 puzzles logiques dans une app, générés et solubles"
-meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo et bien d'autres. Chaque puzzle est généré à la volée avec une seule solution."
+meta_title: "19 puzzles de logique et de mémoire dans une app"
+meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Memory et plus. Chaque puzzle est généré à la volée, chaque puzzle de logique a une seule solution."
 primary_keyword: "application jeux de logique"
 secondary_keywords:
   - "sudoku gratuit sans pub"
@@ -15,7 +15,7 @@ secondary_keywords:
   - "jeux de reflexion hors ligne"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -26,20 +26,21 @@ internal_links:
   - /blog/how-to-play-killer-sudoku/
   - /blog/how-to-play-minesweeper/
   - /blog/how-to-play-murder-sudoku/
+  - /blog/how-to-play-memory/
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
 trademark_note: null
 ---
 
-# 18 puzzles logiques dans une seule app, tous générés et tous solubles
+# 19 puzzles de logique et de mémoire dans une seule app, tous générés
 
 La plupart des apps de puzzles embarquent une banque de puzzles qui finit par s'épuiser. Braggster
 génère chaque puzzle à la volée, à la demande, puis prouve qu'il n'a qu'une seule solution avant de
 te le montrer. Cette seconde partie, presque personne ne la fait, et c'est ce qui distingue un
 puzzle que tu peux résoudre par la logique d'un puzzle où tu finis par devoir deviner.
 
-Voici les dix-huit puzzles, ce que chacun te demande vraiment, et comment ils sont notés. Dans l'app,
+Voici les dix-neuf puzzles, ce que chacun te demande vraiment, et comment ils sont notés. Dans l'app,
 ils ont leur propre onglet, Puzzles, à côté des jeux.
 
 ## La famille du placement de chiffres
@@ -139,6 +140,17 @@ une colonne marquée, et cette colonne épelle de haut en bas un mot solution ca
 complète la figure. Un indice montre d'abord la description du mot, puis une lettre, et trois niveaux
 de longueur de mot vont de 4 jusqu'à 15 lettres.
 
+## Celui de la mémoire
+
+**[Memory solo](/games/memorysolo/).** Le jeu de paires contre la montre. Retourne deux cartes à la
+fois ; une paire reste face visible, un raté se retourne. Les plateaux vont de 3 par 4 avec 6 paires à
+6 par 6 avec 18, dans quatre thèmes d'images peintes. C'est le seul puzzle ici qui teste le souvenir
+plutôt que la déduction, donc sa pénalité est différente : seul un **raté connu** coûte 10 secondes,
+un raté où tu avais déjà vu l'autre carte. Retourner une carte que tu n'avais jamais vue est gratuit.
+Le même plateau se joue aussi en multijoueur, contre l'ordinateur ou à une Live Table.
+
+Pour aller plus loin : [Comment jouer au Memory](/blog/how-to-play-memory/).
+
 ## Comment les puzzles sont notés
 
 Tous les puzzles se notent de la même façon, à l'inverse du reste de l'app : **le total le plus bas
@@ -190,9 +202,9 @@ Aucune publicité dans l'app. Le chronomètre alimente ton score, mais rien n'ex
 t'interrompt.
 
 **Quels puzzles sont disponibles dans ma langue ?**
-Les dix-huit sont disponibles dans les sept langues de l'app. Les puzzles de chiffres et de logique ne
+Les dix-neuf sont disponibles dans les onze langues de l'app. Les puzzles de chiffres et de logique ne
 dépendent pas de la langue, et les puzzles de mots sont par nature spécifiques à une langue : leurs
-mots et leurs indices suivent la langue de l'app, avec leurs propres listes dans les sept.
+mots et leurs indices suivent la langue de l'app, avec leurs propres listes dans les onze.
 
 **Puis-je jouer avec des notes au crayon ?**
 Oui, sur les puzzles à grille de chiffres. Binairo et Nonogram utilisent à la place une grammaire

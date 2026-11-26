@@ -1,12 +1,12 @@
 # The blog
 
-Nineteen articles, seven languages, 133 markdown files. They exist to give the site something to
+Twenty articles, eleven languages, 220 markdown files. They exist to give the site something to
 rank for besides the home page: before this, `/games/` was the only URL that could answer any game
 query, and it is one list page carrying the whole catalogue.
 
 ## Structure
 
-Four **category pillars**, one **feature guide** (Play together) and fourteen **per-game
+Four **category pillars**, one **feature guide** (Play together) and fifteen **per-game
 articles**, hub and spoke. Each spoke links up to
 its pillar and out to `/games/`; each pillar links down to its spokes and across to the other three.
 
@@ -14,13 +14,13 @@ its pillar and out to `/games/`; each pillar links down to its spokes and across
 |---|---|
 | `card-game-score-sheets` | Klaverjassen, Hearts, Bridge, Solitaire, Pesten |
 | `board-game-score-sheets` | Dominoes, Backgammon, Rummikub |
-| `play-games-together-on-multiple-phones` | Links to Yahtzee and Backgammon, and to `/play-together/` |
+| `play-games-together-on-multiple-phones` | Links to Yahtzee, Backgammon and Memory, and to `/play-together/` |
 | `dice-game-score-sheets` | Yahtzee, Dudo |
-| `puzzle-games` | Sudoku, Killer Sudoku, Minesweeper, Murder Sudoku |
+| `puzzle-games` | Sudoku, Killer Sudoku, Minesweeper, Murder Sudoku, Memory |
 
 Per-game articles were picked on search demand against how much the app actually does, not one per
 game. A game that only gets a plain scorecard has nothing to say that would outrank the established
-rules sites. Every one of the fourteen either has a genuinely fiddly scoring system worth explaining
+rules sites. Every one of the fifteen either has a genuinely fiddly scoring system worth explaining
 (the boompje, the Joker rule, All Fives, bridge vulnerability) or a real in-app feature to talk about
 (Hearts against the computer, the Klondike board, the no-guess Minesweeper generator).
 
@@ -29,11 +29,11 @@ rules sites. Every one of the fourteen either has a genuinely fiddly scoring sys
 `src/blog/<locale>/<slug>.md` renders to `/<locale>/blog/<slug>/`. The index is `/<locale>/blog/`.
 
 Slugs are **English in every locale**, and the `slug:` field must match the filename. One slug per
-article across all seven languages keeps hreflang, the renderer and the cross-links simple, and the
+article across all eleven languages keeps hreflang, the renderer and the cross-links simple, and the
 slug is a minor ranking factor next to the title and the body.
 
 `tools/build.py` holds the renderer. It is a small closed subset of markdown rather than a library,
-because this repo has no dependencies and adding one for eighteen articles would be the largest
+because this repo has no dependencies and adding one for twenty articles would be the largest
 thing in it. It handles ATX headings, paragraphs, bold, inline code, links, pipe tables, both list
 kinds, rules and app screenshots, and raises on anything it does not recognise so an unsupported construct fails the
 build instead of rendering as literal text.
@@ -82,7 +82,7 @@ article links to `/games/<game_id>/` by itself, and that game page links back to
 Every article closes with an FAQ section. That is not decoration: `faq_pairs()` in `build.py` lifts
 those question and answer pairs into `FAQPage` JSON-LD, which is what wins the "People also ask"
 style result for a rules or scoring query. A question is recognised by shape, a fully bold line
-ending in a question mark, so it works in all seven languages without a per-locale marker. Every
+ending in a question mark, so it works in all eleven languages without a per-locale marker. Every
 article also emits `Article` and `BreadcrumbList`; the index emits `ItemList`.
 
 ## Rules
@@ -130,6 +130,6 @@ several games.
 ## Per-game pages
 
 The old known gap (no per-game anchors on `/games/`) is closed: every game has its own page at
-`/games/<id>/` in all seven languages. Link to it from article prose as `/games/<id>/`, using the
+`/games/<id>/` in all eleven languages. Link to it from article prose as `/games/<id>/`, using the
 ids in `src/games.json` (Othello is `reversi`, International draughts is `dammen`, Murder Sudoku is
 `murdoku`).

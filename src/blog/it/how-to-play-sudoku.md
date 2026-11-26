@@ -102,7 +102,7 @@ completamente offline.
 
 Braggster non farà mai lampeggiare in rosso una cifra piazzata male.
 
-È una scelta di design deliberata, e vale per tutti e diciotto i puzzle dell'app. Il riscontro
+È una scelta di design deliberata, e vale per tutti e diciannove i puzzle dell'app. Il riscontro
 immediato sugli errori trasforma un puzzle di logica in un gioco da validatore: smetti di dedurre e
 cominci a sondare, perché l'app ti dirà se hai sbagliato. Togli quella rete e devi essere davvero
 sicuro.
@@ -146,6 +146,6 @@ il contrario della maggior parte dei giochi dell'app.
 
 ---
 
-**Continua:** scopri tutti e diciotto i [puzzle di logica](/blog/puzzle-games/), prova
+**Continua:** scopri tutti e diciannove i [puzzle di logica](/blog/puzzle-games/), prova
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), oppure sfoglia il catalogo su
 [braggster.com/games](/games/).

@@ -132,7 +132,7 @@ No. Each case is generated on demand and verified to have exactly one solution, 
 unlimited.
 
 **What languages is it available in?**
-All seven app languages. The story text is written per language rather than machine translated, so
+All eleven app languages. The story text is written per language rather than machine translated, so
 the mystery reads naturally in each one.
 
 **Is it related to any existing board game?**
@@ -140,6 +140,6 @@ No. Every suspect, room and object name is original to the game.
 
 ---
 
-**More:** see all eighteen [logic puzzles](/blog/puzzle-games/), read about
+**More:** see all nineteen [logic puzzles](/blog/puzzle-games/), read about
 [Sudoku difficulty](/blog/how-to-play-sudoku/), or browse the catalogue at
 [braggster.com/games](/games/).

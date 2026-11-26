@@ -290,5 +290,29 @@
   "freestyle": {
     "lead": "Freestyle es una mesa gratuita de cartas y dados para los juegos que os inventéis: reparte cartas y tira dados en pantalla, y lleva vuestra propia puntuación.",
     "scoring": "Elige cuántas cartas y dados repartir, por jugador o para una mesa compartida, y jugad con las reglas que acordéis. Anota los puntos de cada ronda y elige si gana el total más alto o el más bajo. Freestyle siempre es gratis."
+  },
+  "memory": {
+    "lead": "Memory, el juego de parejas para 2 a 6 jugadores: da la vuelta a dos cartas, quédate la pareja y repite turno. Gana quien tenga más parejas.",
+    "scoring": "El tablero es la hoja de puntuación. Pasad un solo teléfono, con el tablero tapado entre turnos, juega contra la computadora en Fácil, Medio o Difícil, o dad un teléfono a cada uno en una Live Table, donde solo el teléfono del anfitrión conoce la disposición. Cada pareja es un punto, los puntos se suman de partida en partida y gana quien más parejas reúna en el total. Hay cinco tamaños de tablero, de 6 a 18 parejas."
+  },
+  "amerikaner": {
+    "lead": "Amerikaner es el juego noruego de bazas para cuatro en el que quien más puja elige el triunfo y llama a una carta para escoger compañero en esa mano.",
+    "scoring": "Anota quién pujó, el compañero llamado, la puja y las bazas de cada bando, y la hoja comprueba que cuadren. Pujador y compañero ganan o pierden la puja, cada rival suma un punto por baza, y el Amerikaner en solitario vale 52 en cualquier caso. Gana quien llegue primero a 52. La variante Kani juega trece bazas y nunca baja de cero."
+  },
+  "capture": {
+    "lead": "Capture es el juego nórdico de pesca con cartas: llévate cartas de la mesa por su valor o por su suma, y limpia la mesa para ganar un punto extra.",
+    "scoring": "Al acabar cada ronda, toca quién se llevó más cartas, más picas, cada as, el diez de diamantes, el dos de picas, la última captura y cada barrida. La hoja suma los puntos y gana quien llegue primero a 16, o a 21 en la variante larga. Una variante finlandesa de recuento quita el punto de la última captura."
+  },
+  "molkky": {
+    "lead": "Mölkky es el juego finlandés de lanzar palos: derriba bolos numerados, suma exactamente 50 para ganar, y si te pasas de 50 vuelves a 25.",
+    "scoring": "Un toque por lanzamiento en un teclado con Fallo y los doce bolos. Si cae un bolo, suma su número; si caen varios, suma cuántos cayeron, y la hoja lleva el total acumulado. Pasarte de 50 te baja a 25, o a 0 en la variante de reinicio, y tres fallos seguidos eliminan al jugador."
+  },
+  "kubb": {
+    "lead": "Kubb es el juego sueco de césped, llamado Kongespil en Dinamarca: derriba los kubbs del otro bando y luego al rey para ganar la partida.",
+    "scoring": "Dentro de una partida no hay puntos, solo un ganador, así que cada partida es un toque para el bando que la ganó. Juega al mejor de 3, al mejor de 5 o una sola partida. Un equipo juega con un solo nombre, así que cada bando es una línea."
+  },
+  "memorysolo": {
+    "lead": "Memory solo, el juego de parejas contra el reloj: encuentra todas las parejas de un tablero de 6 a 18 y solo cuestan tiempo los fallos evitables.",
+    "scoring": "Tu puntuación es tu tiempo más 10 segundos por cada fallo en el que ya habías visto la otra carta. Dar la vuelta a una carta que nunca habías visto es gratis. Gana el total más bajo. Las cartas ilustradas vienen en cuatro temas, y un tablero a medias se retoma al volver."
   }
 }

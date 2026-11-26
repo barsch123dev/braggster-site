@@ -103,7 +103,7 @@ Omdat generatie op je toestel draait, is de voorraad onbeperkt en werkt hij voll
 
 Braggster laat een cijfer niet rood oplichten als je het fout plaatst.
 
-Dat is een bewuste ontwerpkeuze, en hij geldt voor alle achttien puzzels in de app. Directe foutmelding
+Dat is een bewuste ontwerpkeuze, en hij geldt voor alle negentien puzzels in de app. Directe foutmelding
 verandert een logicapuzzel in een validatiespel: je stopt met deduceren en begint te sonderen, omdat
 de app je toch wel vertelt of je fout zit. Neem dat weg en je moet echt zeker zijn.
 
@@ -147,6 +147,6 @@ van de meeste spellen in de app.
 
 ---
 
-**Meer:** bekijk alle achttien [logicapuzzels](/blog/puzzle-games/), probeer
+**Meer:** bekijk alle negentien [logicapuzzels](/blog/puzzle-games/), probeer
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), of blader door de catalogus op
 [braggster.com/games](/games/).

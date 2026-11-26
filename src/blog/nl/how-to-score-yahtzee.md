@@ -17,7 +17,7 @@ secondary_keywords:
   - "yahtzee online met vrienden"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -114,8 +114,11 @@ Het spel reist onder verschillende namen, en de score is in elke versie in essen
 - **Kniffel** in Duitsland
 - **Yams** in Frankrijk
 - **Generala** in Argentinië, met enkele regelverschillen rond de straten
+- **Yatzy** in Denemarken, Zweden, Noorwegen en Finland, een ander formulier en niet zomaar een andere naam voor hetzelfde
 
-Braggster heeft één scoreformulier dat de hele familie dekt, in alle zeven talen van de app.
+Scandinavische Yatzy heeft vijftien vakken in plaats van dertien. Eén paar en Twee paren komen erbij in het onderste blok, de bonus in het bovenste blok is 50 bij 63 of meer, de Kleine straat is precies 1-2-3-4-5 voor 15 en de Grote straat precies 2-3-4-5-6 voor 20, en Drie gelijk, Vier gelijk, Full house en Kans tellen de gebruikte dobbelstenen. Een Yatzy is 50 waard, en er zijn geen extra Yatzybonussen en geen jokerregel.
+
+Braggster heeft één scoreformulier dat de hele familie dekt, met Scandinavische Yatzy als aparte variant, in alle elf talen van de app.
 
 ## Het scoreformulier, op maat van jouw tafel
 

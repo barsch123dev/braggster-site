@@ -290,5 +290,29 @@
   "freestyle": {
     "lead": "Freestyle è un tavolo gratuito di carte e dadi per i giochi che inventate voi: distribuisci carte e tira dadi sullo schermo, e tieni il tuo punteggio.",
     "scoring": "Scegli quante carte e dadi distribuire, per giocatore o su un tavolo condiviso, e giocate con le regole su cui il vostro tavolo si accorda. Inserisci i punti di ogni mano e scegli se vince il totale più alto o il più basso. Freestyle è sempre gratis."
+  },
+  "memory": {
+    "lead": "Memory, il gioco delle coppie per 2-6 giocatori: gira due carte, tieni la coppia e rigioca. Vince chi ha più coppie a tabellone svuotato.",
+    "scoring": "Il tabellone è il segnapunti. Passa un telefono di mano in mano, con il tabellone coperto tra un turno e l'altro, gioca contro il computer a Facile, Medio o Difficile, oppure dai un telefono a ciascuno a una Live Table, dove solo il telefono dell'host conosce la disposizione. Ogni coppia vale un punto, i punti si sommano di partita in partita e vince chi ha più coppie nel match. Cinque dimensioni vanno da 6 a 18 coppie."
+  },
+  "amerikaner": {
+    "lead": "Amerikaner è il gioco di prese norvegese per quattro: chi fa l'offerta più alta sceglie la briscola e chiama una carta per trovarsi un compagno.",
+    "scoring": "Inserisci chi ha offerto, il compagno chiamato, l'offerta e le prese di ogni lato, e il segnapunti controlla che i conti tornino. Chi ha offerto e il compagno vincono o perdono l'offerta, ogni avversario segna un punto a presa, e l'Amerikaner in solitaria vale 52 in entrambi i casi. Chi arriva per primo a 52 chiude la partita. La variante Kani gioca tredici prese e non scende mai sotto zero."
+  },
+  "capture": {
+    "lead": "Capture è il gioco di carte nordico della pesca: prendi dal tavolo le carte che corrispondono per valore o per somma, e ripulisci il tavolo per un punto extra.",
+    "scoring": "Dopo ogni mano, tocca chi ha preso più carte, più picche, ogni asso, il dieci di quadri, il due di picche, l'ultima presa e ogni tavolo ripulito. Il segnapunti somma i punti e il primo ad arrivare a 16 vince, o a 21 nella variante più lunga. Una variante di conteggio finlandese toglie il punto dell'ultima presa."
+  },
+  "molkky": {
+    "lead": "Mölkky è il gioco finlandese di lancio dei birilli: abbatti birilli numerati, segna esattamente 50 per vincere, e se superi 50 torni a 25.",
+    "scoring": "Un tocco a lancio su una tastiera con Mancato e i dodici birilli. Un birillo caduto vale il suo numero, più birilli valgono quanti ne sono caduti, e il segnapunti tiene il totale parziale. Superare 50 ti riporta a 25, o a 0 nella variante con azzeramento, e tre lanci mancati di fila eliminano il giocatore."
+  },
+  "kubb": {
+    "lead": "Kubb è il gioco svedese da prato, in Danimarca detto Kongespil: abbatti i kubb degli avversari, poi il re, per vincere la partita.",
+    "scoring": "Dentro una partita non ci sono punti, solo un vincitore, quindi ogni partita è un tocco per la squadra che l'ha vinta. Gioca al meglio di 3, al meglio di 5 o una partita singola. Una squadra gioca sotto un solo nome, quindi ogni lato è una riga."
+  },
+  "memorysolo": {
+    "lead": "Memory solo, il gioco delle coppie contro il tempo: trova tutte le coppie su un tabellone da 6 a 18 coppie, e costano tempo solo gli errori evitabili.",
+    "scoring": "Il tuo punteggio è il tuo tempo più 10 secondi per ogni errore noto, un errore in cui avevi già visto l'altra carta. Girare una carta mai vista non costa nulla. Vince il totale più basso. Le carte dipinte sono in quattro temi, e un tabellone in corso riprende quando torni."
   }
 }

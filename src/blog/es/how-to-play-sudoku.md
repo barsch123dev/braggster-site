@@ -104,7 +104,7 @@ conexión.
 
 Braggster no va a poner en rojo una cifra cuando la coloques mal.
 
-Es una decisión de diseño deliberada, y se aplica a los dieciocho puzles de la app. La indicación de
+Es una decisión de diseño deliberada, y se aplica a los diecinueve puzles de la app. La indicación de
 errores en vivo convierte un puzle de lógica en un juego validador: dejas de deducir y empiezas a
 probar, porque la app te avisará si te equivocas. Quítale eso y tienes que estar de verdad seguro.
 
@@ -149,6 +149,6 @@ contrario de la mayoría de juegos de la app.
 
 ---
 
-**Más:** consulta los dieciocho [puzles de lógica](/blog/puzzle-games/), prueba
+**Más:** consulta los diecinueve [puzles de lógica](/blog/puzzle-games/), prueba
 [Killer Sudoku](/blog/how-to-play-killer-sudoku/), o explora el catálogo en
 [braggster.com/games](/games/).

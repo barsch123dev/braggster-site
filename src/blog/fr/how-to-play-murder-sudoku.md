@@ -139,7 +139,7 @@ Non. Chaque affaire est générée à la demande et vérifiée pour n'avoir qu'u
 réserve est illimitée.
 
 **Dans quelles langues est-il disponible ?**
-Les sept langues de l'application. Le texte de l'histoire est rédigé pour chaque langue plutôt que
+Les onze langues de l'application. Le texte de l'histoire est rédigé pour chaque langue plutôt que
 traduit automatiquement, de sorte que l'énigme se lit naturellement dans chacune.
 
 **Est-ce lié à un jeu de société existant ?**
@@ -147,6 +147,6 @@ Non. Chaque suspect, chaque pièce et chaque objet est original au jeu.
 
 ---
 
-**En savoir plus :** découvre les dix-huit [casse-têtes de logique](/blog/puzzle-games/), lis notre
+**En savoir plus :** découvre les dix-neuf [casse-têtes de logique](/blog/puzzle-games/), lis notre
 article sur [la difficulté au Sudoku](/blog/how-to-play-sudoku/), ou parcours le catalogue sur
 [braggster.com/games](/games/).

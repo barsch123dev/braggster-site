@@ -145,7 +145,7 @@ No. Practice games against the computer are deliberately never recorded.
 No. There is no doubling cube and nothing is staked anywhere in the app.
 
 **Why is Sudoku listed as a board game on some pages?**
-It should not be. Sudoku belongs with the puzzles, along with the seventeen other single player
+It should not be. Sudoku belongs with the puzzles, along with the eighteen other single player
 puzzles Braggster now ships on their own Puzzles tab. See the [puzzle guide](/blog/puzzle-games/).
 
 ---

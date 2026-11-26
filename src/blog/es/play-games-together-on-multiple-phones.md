@@ -17,7 +17,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -31,11 +31,13 @@ internal_links:
   - /games/dammen/
   - /games/backgammon/
   - /games/reversi/
+  - /games/memory/
   - /blog/how-to-score-yahtzee/
+  - /blog/how-to-play-memory/
   - /blog/how-to-score-backgammon/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
-trademark_note: "Yahtzee y Othello son marcas de sus respectivos propietarios. Braggster no está afiliada a ellos ni cuenta con su respaldo, y cada nombre se usa únicamente con fines descriptivos."
+trademark_note: "Yahtzee, Othello y Memory son marcas de sus respectivos propietarios. Braggster no está afiliada a ellos ni cuenta con su respaldo, y cada nombre se usa únicamente con fines descriptivos."
 ---
 
 # Cómo jugar juntos a juegos de mesa en varios móviles, por wifi u online
@@ -97,7 +99,7 @@ En ambos casos no hay ninguna cuenta que crear, ni nombre de usuario ni lista de
    su propio puesto en su propio móvil. Al terminar, la mesa sigue abierta: toca **Otra partida**, y
    todos los que digan que sí juegan la siguiente en los mismos puestos.
 
-![La pantalla de Jugar juntos del anfitrión: un código QR para que los demás lo escaneen, Alex y Sam sentados a la mesa, y Mia pidiendo unirse, con los botones Aceptar y Rechazar](shot:play-together "El móvil del anfitrión muestra el código para escanear y quién quiere unirse.")
+![La pantalla de Jugar juntos del anfitrión: Mia pidiendo unirse, con los botones Aceptar y Rechazar, un código QR y un código para escribir para los demás, un botón Enviar una invitación, y Alex y Sam ya sentados a la mesa](shot:play-together "El móvil del anfitrión muestra los códigos para unirse y quién quiere entrar.")
 
 ## Qué juegos puedes jugar juntos
 
@@ -111,6 +113,9 @@ En ambos casos no hay ninguna cuenta que crear, ni nombre de usuario ni lista de
 - **[Backgammon](/games/backgammon/)**, con victorias simples, gammons y backgammons puntuados como
   siempre. Consulta la [guía de puntuación de Backgammon](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, donde cada volteo se refleja en ambas pantallas.
+- **[Memory](/games/memory/)**, hasta seis jugadores. Solo el teléfono del anfitrión guarda la
+  disposición; los demás teléfonos ven las cartas que están boca arriba y nada más, así que nadie
+  puede mirar. Consulta [cómo jugar a Memory](/blog/how-to-play-memory/).
 
 ![Una hoja de Yahtzee para Alex, Sam, Mia y Lee, con la tirada de dados digital de Alex debajo y lo que puntuaría esa tirada en cada categoría](shot:yahtzee "Yahtzee, con dados digitales para toda la mesa.")
 ![Un tablero de ajedrez en la posición inicial, turno de Alex contra Sam, con un caballo blanco seleccionado y sus dos movimientos posibles marcados](shot:chess "Ajedrez, con cada movimiento legal validado.")
@@ -170,7 +175,7 @@ enlace de invitación. Ambos jugadores ven el tablero en directo y cada uno muev
 
 **¿Podemos jugar en línea con amigos que no están en la misma sala?**
 Sí. Abre una mesa, toca **Enviar una invitación** y manda el enlace por WhatsApp o cualquier otra app,
-o dicta el código de 8 caracteres. Funciona con Yahtzee, Chess, Checkers, International draughts,
+o dicta el código de 8 caracteres. Funciona con Yahtzee, Memory, Chess, Checkers, International draughts,
 Backgammon y Othello. No hay ninguna cuenta que crear, unirse es gratis y la partida va cifrada de
 extremo a extremo, así que el servidor solo la retransmite y no puede leerla.
 
@@ -184,7 +189,7 @@ Sí. Una mesa puede mezclar iPhone y Android sin ningún problema, y quienes est
 quienes juegan en línea pueden compartir una mesa.
 
 **¿Cuántos jugadores pueden unirse a una mesa?**
-Yahtzee admite hasta seis jugadores, un móvil cada uno. Chess, Checkers, International draughts,
+Yahtzee y Memory admiten hasta seis jugadores, un móvil cada uno. Chess, Checkers, International draughts,
 Backgammon y Othello son juegos para dos, así que dos móviles.
 
 **¿Todos tienen que comprar el juego?**

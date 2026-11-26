@@ -17,7 +17,7 @@ secondary_keywords:
 search_intent: informational
 priority: 1
 published: 2026-09-28
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -31,11 +31,13 @@ internal_links:
   - /games/dammen/
   - /games/backgammon/
   - /games/reversi/
+  - /games/memory/
   - /blog/how-to-score-yahtzee/
+  - /blog/how-to-play-memory/
   - /blog/how-to-score-backgammon/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
-trademark_note: "Yahtzee e Othello são marcas registradas de seus respectivos donos. O Braggster não tem vínculo com eles nem apoio deles, e cada nome é usado apenas como referência."
+trademark_note: "Yahtzee, Othello e Memory são marcas registradas de seus respectivos donos. O Braggster não tem vínculo com eles nem apoio deles, e cada nome é usado apenas como referência."
 ---
 
 # Como Jogar Jogos de Tabuleiro Juntos em Vários Celulares, na Wi-Fi ou Online
@@ -97,7 +99,7 @@ Nos dois casos não há conta para criar, nem nome de usuário, nem lista de ami
    própria posição no próprio celular. Ao terminar, a mesa continua aberta: toque em **Mais uma
    partida**, e quem disser sim joga a próxima nas mesmas posições.
 
-![A tela Jogar juntos do anfitrião: um código QR para os outros escanearem, Alex e Sam sentados à mesa e Mia pedindo para entrar, com os botões Aceitar e Recusar](shot:play-together "O celular do anfitrião mostra o código para escanear e quem quer entrar.")
+![A tela Jogar juntos do anfitrião: Mia pedindo para entrar, com os botões Aceitar e Recusar, um código QR e um código para digitar para os outros, um botão Enviar um convite, e Alex e Sam já sentados à mesa](shot:play-together "O celular do anfitrião mostra os códigos para entrar e quem quer entrar.")
 
 ## Quais jogos dá para jogar juntos
 
@@ -111,6 +113,9 @@ Nos dois casos não há conta para criar, nem nome de usuário, nem lista de ami
 - **[Backgammon](/games/backgammon/)**, com vitória simples, gamão e gamão duplo pontuados como de
   costume. Veja o [guia de pontuação do Backgammon](/blog/how-to-score-backgammon/).
 - **[Othello](/games/reversi/)**, em que cada virada aparece nas duas telas.
+- **[Memory](/games/memory/)**, para até seis jogadores. Só o celular do anfitrião guarda a posição das
+  cartas; todos os outros celulares veem as cartas viradas para cima e mais nada, então ninguém
+  consegue espiar. Veja [como jogar Memory](/blog/how-to-play-memory/).
 
 ![Uma planilha de Yahtzee para Alex, Sam, Mia e Lee, com a rolagem de dados digital de Alex embaixo e quanto essa rolagem valeria em cada categoria](shot:yahtzee "Yahtzee, com dados digitais para a mesa toda.")
 ![Um tabuleiro de xadrez na posição inicial, vez de Alex contra Sam, com um cavalo branco selecionado e seus dois lances possíveis marcados](shot:chess "Xadrez, com todo lance legal garantido.")
@@ -169,8 +174,8 @@ um link de convite. Os dois jogadores veem o tabuleiro ao vivo e cada um joga do
 
 **Dá para jogar online com amigos que não estão no mesmo lugar?**
 Dá. Abra uma mesa, toque em **Enviar um convite** e mande o link por WhatsApp ou outro app, ou fale o
-código de 8 caracteres em voz alta. Funciona com Yahtzee, Chess, Checkers, International draughts,
-Backgammon e Othello. Não há conta para criar, entrar é grátis e a partida é criptografada de ponta a
+código de 8 caracteres em voz alta. Funciona com Yahtzee, Memory, Chess, Checkers, International
+draughts, Backgammon e Othello. Não há conta para criar, entrar é grátis e a partida é criptografada de ponta a
 ponta, então o servidor só repassa e não consegue ler.
 
 **Precisamos de conexão com a internet?**
@@ -183,7 +188,7 @@ Sim. Uma mesa pode misturar iPhones e celulares Android livremente, e quem está
 joga online podem dividir a mesma mesa.
 
 **Quantos jogadores podem entrar em uma mesa?**
-O Yahtzee aceita até seis jogadores, um celular para cada um. Chess, Checkers, International
+O Yahtzee e o Memory aceitam até seis jogadores, um celular para cada um. Chess, Checkers, International
 draughts, Backgammon e Othello são jogos para dois jogadores, então dois celulares.
 
 **Todo mundo precisa comprar o jogo?**

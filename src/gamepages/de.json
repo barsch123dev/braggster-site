@@ -290,5 +290,29 @@
   "freestyle": {
     "lead": "Freestyle ist ein kostenloser Karten- und Würfeltisch für selbst ausgedachte Spiele: teil Karten aus, würfel am Bildschirm, und führt eure eigene Wertung.",
     "scoring": "Wähl, wie viele Karten und Würfel ausgeteilt werden, pro Spieler oder an einen gemeinsamen Tisch, und spielt, welche Regeln euer Tisch vereinbart. Trage die Punkte jeder Runde ein und wähl, ob die höchste oder niedrigste Summe gewinnt. Freestyle ist immer kostenlos."
+  },
+  "memory": {
+    "lead": "Memory, das Paarespiel für 2 bis 6 Spieler: zwei Karten aufdecken, ein Paar behalten und nochmal dran sein. Die meisten Paare gewinnen.",
+    "scoring": "Das Spielfeld ist der Punktezettel. Gib ein Handy herum, mit verdecktem Spielfeld zwischen den Zügen, spiel gegen den Computer auf Leicht, Mittel oder Schwer, oder gib an einem Live Table jedem ein Handy, wobei nur das Handy des Gastgebers die Anordnung kennt. Jedes Paar ist ein Punkt, die Punkte addieren sich von Spiel zu Spiel, und wer über das Match die meisten Paare hat, gewinnt. Fünf Spielfeldgrößen reichen von 6 bis 18 Paaren."
+  },
+  "amerikaner": {
+    "lead": "Amerikaner ist das norwegische Stichspiel für vier: Wer am höchsten reizt, bestimmt Trumpf und ruft eine Karte, um sich für die Runde einen Partner zu holen.",
+    "scoring": "Trag Reizer, gerufenen Partner, Gebot und die Stiche beider Seiten ein, und der Zettel prüft, ob alles aufgeht. Reizer und Partner gewinnen oder verlieren das Gebot, jeder Gegner bekommt einen Punkt pro Stich, und der einsame Amerikaner zählt in beiden Fällen 52. Wer zuerst 52 erreicht, beendet das Spiel. Die Kani-Variante spielt dreizehn Stiche und geht nie unter null."
+  },
+  "capture": {
+    "lead": "Capture ist das nordische Fischspiel mit Karten: Nimm Karten vom Tisch, die zu Wert oder Summe passen, und räum den Tisch für einen Extrapunkt leer.",
+    "scoring": "Tipp nach jeder Runde an, wer die meisten Karten, die meisten Pik, jedes Ass, die Karo Zehn, die Pik Zwei, den letzten Fang und jeden Tischräumer hatte. Der Zettel addiert die Punkte, und wer zuerst 16 erreicht, gewinnt, in der längeren Variante 21. Eine finnische Zählvariante lässt den Punkt für den letzten Fang weg."
+  },
+  "molkky": {
+    "lead": "Mölkky ist das finnische Wurfspiel mit Kegeln: Wirf nummerierte Kegel um, erreiche genau 50 Punkte zum Sieg, und wer über 50 kommt, fällt auf 25 zurück.",
+    "scoring": "Ein Tipp pro Wurf auf einem Tastenfeld mit Daneben und den zwölf Kegeln. Ein umgefallener Kegel zählt seine Nummer, mehrere zählen, wie viele gefallen sind, und der Zettel führt die laufende Summe. Über 50 geht es zurück auf 25, in der Reset-Variante auf 0, und wer dreimal hintereinander danebenwirft, scheidet aus."
+  },
+  "kubb": {
+    "lead": "Kubb ist das schwedische Rasenspiel, in Dänemark Kongespil genannt: Wirf die Kubbs der Gegenseite um, dann den König, und gewinne das Spiel.",
+    "scoring": "Innerhalb eines Spiels gibt es keine Punkte, nur einen Sieger, also reicht pro Spiel ein Tipp für die Seite, die es gewonnen hat. Spielt Best of 3, Best of 5 oder ein einzelnes Spiel. Ein Team spielt unter einem Namen, jede Seite ist also eine Zeile."
+  },
+  "memorysolo": {
+    "lead": "Memory solo, das Paarespiel gegen die Uhr: Finde alle Paare auf einem Spielfeld mit 6 bis 18 Paaren, und nur vermeidbare Fehlgriffe kosten Zeit.",
+    "scoring": "Dein Ergebnis ist deine Zeit plus 10 Sekunden für jeden bekannten Fehlgriff, einen Fehlgriff, bei dem du die andere Karte schon gesehen hattest. Eine nie gesehene Karte aufzudecken kostet nichts. Die niedrigste Summe gewinnt. Die gemalten Karten gibt es in vier Themen, und ein begonnenes Spielfeld wird nach dem Verlassen fortgesetzt."
   }
 }

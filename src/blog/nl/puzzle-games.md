@@ -1,11 +1,11 @@
 ---
-title: "18 Logicapuzzels in Één App, Allemaal Gegenereerd en Allemaal Oplosbaar"
+title: "19 Logica- en Geheugenpuzzels in Één App, Allemaal Gegenereerd"
 slug: puzzle-games
 locale: nl
 type: pillar
 category: puzzle
-meta_title: "18 Logicapuzzels in Één App, Eindeloos en Oplosbaar"
-meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Futoshiki, Binairo en meer. Elke puzzel vers gegenereerd en geverifieerd op precies één oplossing."
+meta_title: "19 Logica- en Geheugenpuzzels in Één App, Eindeloos"
+meta_description: "Sudoku, Killer Sudoku, Kakuro, Nonogram, Minesweeper, Memory en meer. Elke puzzel vers gegenereerd, en elke logicapuzzel geverifieerd op precies één oplossing."
 primary_keyword: "puzzelspel app"
 secondary_keywords:
   - "offline puzzelspellen app"
@@ -15,7 +15,7 @@ secondary_keywords:
   - "puzzelspellen zonder advertenties"
 search_intent: informational
 priority: 1
-updated: 2026-10-21
+updated: 2026-11-26
 schema:
   - Article
   - FAQPage
@@ -26,20 +26,21 @@ internal_links:
   - /blog/how-to-play-killer-sudoku/
   - /blog/how-to-play-minesweeper/
   - /blog/how-to-play-murder-sudoku/
+  - /blog/how-to-play-memory/
   - /blog/card-game-score-sheets/
   - /blog/board-game-score-sheets/
   - /blog/dice-game-score-sheets/
 trademark_note: null
 ---
 
-# 18 Logicapuzzels in Één App, Allemaal Gegenereerd en Allemaal Oplosbaar
+# 19 Logica- en Geheugenpuzzels in Één App, Allemaal Gegenereerd
 
 De meeste puzzelapps leveren een voorraad puzzels en die raakt op een dag op. Braggster genereert
 elke puzzel vers op aanvraag en bewijst daarna dat hij precies één oplossing heeft voordat hij je
 getoond wordt. Dat tweede deel doet bijna niemand, en dat is het verschil tussen een puzzel waar je
 je logisch doorheen kunt redeneren en eentje waar je uiteindelijk moet gokken.
 
-Hier zijn de achttien, wat elk ervan van je vraagt, en hoe ze gescoord worden. In de app hebben ze een
+Hier zijn de negentien, wat elk ervan van je vraagt, en hoe ze gescoord worden. In de app hebben ze een
 eigen tabblad, Puzzels, naast de spellen.
 
 ## De cijferplaatsingsfamilie
@@ -133,6 +134,17 @@ gemarkeerde kolom uitlijnen, en die kolom spelt van boven naar beneden een verbo
 compleet maakt. Een hint toont eerst de omschrijving van het woord, dan een letter, en drie niveaus
 van woordlengte lopen van 4 tot 15 letters.
 
+## De geheugenpuzzel
+
+**[Memory solo](/games/memorysolo/).** Paren zoeken tegen de klok. Draai steeds twee kaarten om;
+een paar blijft open liggen, een misser draait terug. De borden lopen van 3 bij 4 met 6 paren tot 6 bij 6
+met 18, in vier getekende plaatjesthema's. Het is de enige puzzel hier die onthouden test in plaats van
+deduceren, dus de straf is anders opgezet: alleen een **bekende misser** kost 10 seconden, een misser
+waarbij je de andere kaart al had gezien. Een kaart omdraaien die je nog nooit had gezien is gratis.
+Hetzelfde bord speel je ook als spel voor meer spelers, tegen de computer of aan een Live Table.
+
+Verdieping: [Memory spelen](/blog/how-to-play-memory/).
+
 ## Hoe puzzels gescoord worden
 
 Elke puzzel wordt op dezelfde manier gescoord, en dat is het omgekeerde van de rest van de app: **het
@@ -181,9 +193,9 @@ Geen advertenties nergens in de app. De timer voedt je score, maar er verloopt n
 onderbreekt niets.
 
 **Welke puzzels zijn beschikbaar in mijn taal?**
-Alle achttien zijn er in alle zeven talen van de app. De cijfer- en logicapuzzels zijn onafhankelijk
+Alle negentien zijn er in alle elf talen van de app. De cijfer- en logicapuzzels zijn onafhankelijk
 van taal, de woordpuzzels zijn van nature taalspecifiek: hun woorden en aanwijzingen volgen de taal
-van de app, met eigen lijsten in alle zeven.
+van de app, met eigen lijsten in alle elf.
 
 **Kan ik met potloodnotities spelen?**
 Ja, bij de cijferroosterpuzzels. Binairo en Nonogram gebruiken in plaats daarvan een grammatica met

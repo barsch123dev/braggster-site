@@ -150,7 +150,7 @@ No. Le partite di allenamento contro il computer non vengono mai registrate, di 
 No. Non c'è nessun dado raddoppiante e in nessuna parte dell'app viene messo in gioco qualcosa.
 
 **Perché Sudoku compare tra i giochi da tavolo in alcune pagine?**
-Non dovrebbe. Sudoku appartiene ai puzzle, insieme agli altri diciassette puzzle in solitaria che
+Non dovrebbe. Sudoku appartiene ai puzzle, insieme agli altri diciotto puzzle in solitaria che
 Braggster offre ora nella loro scheda Puzzle. Vedi la [guida ai puzzle](/blog/puzzle-games/).
 
 ---

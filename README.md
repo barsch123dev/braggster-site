@@ -37,8 +37,9 @@ tools/check_copy.py    no em dashes, locale key parity, no unrendered tokens, ga
 tools/check_contrast.py WCAG AA contrast gate for the palette
 ```
 
-English is canonical and served from `/`. The other six languages live under `/nl/`, `/es/`,
-`/fr/`, `/de/`, `/pt-br/` and `/it/`, matching the app's seven launch languages. Links between
+English is canonical and served from `/`. The other ten languages live under `/nl/`, `/es/`,
+`/fr/`, `/de/`, `/pt-br/`, `/it/`, `/da/`, `/sv/`, `/nb/` and `/fi/`, matching the app's eleven languages
+(the four Nordic ones arrived with app 4.0). Links between
 pages are relative, so the output works from a subpath as well as from the apex domain.
 
 ## The games catalogue
@@ -69,7 +70,7 @@ no hand-written selector to keep in sync.
 
 ## Per-game pages and Play together
 
-Every game has its own page at `/games/<id>/` in all seven languages, 511 pages in all. The prose
+Every game has its own page at `/games/<id>/` in all eleven languages, 869 pages in all. The prose
 is two fields per game in `src/gamepages/<locale>.json`: `lead` (what the game is, also the meta
 description, so at most 160 characters) and `scoring` (what braggster's sheet or board does).
 Everything else on the page is generated from the `games.json` flags and shared `game_*` locale
@@ -89,8 +90,8 @@ the only way.
 
 ## The blog
 
-`/blog/` and `/blog/<slug>/`, in all seven languages, from markdown under `src/blog/<locale>/`.
-Nineteen articles: four category pillars, the Play together guide and fourteen per-game guides, written to give the site
+`/blog/` and `/blog/<slug>/`, in all eleven languages, from markdown under `src/blog/<locale>/`.
+Twenty articles: four category pillars, the Play together guide and fifteen per-game guides, written to give the site
 something to rank for besides the home page and `/games/`.
 
 `build.py` renders the markdown itself, in a deliberately small closed subset rather than through a
@@ -126,7 +127,7 @@ every push to `main` and deploys it to Pages. Pull requests run the build and bo
    counts come from `sideStructure`. Use the app's English display names.
 2. **Local names.** Run `python3 tools/sync_game_names.py --app <app repo>/app` (default
    `~/GitHub/Spelletjesapp/app`). It rewrites `src/gamenames.json` from each definition's `BrandName`
-   key in the seven ARBs; a locale that lacks the key keeps the English name, never the Dutch
+   key in the site locales' ARBs; a locale that lacks the key keeps the English name, never the Dutch
    fallback. It fails on any site id it cannot map (add an alias in `SITE_TO_APP_ID` when an id
    differs) and prints English names that differ from `games.json`, which should match.
 3. **Per-game prose.** Add a `lead` and `scoring` for every new id to `src/gamepages/en.json`, from
@@ -170,7 +171,7 @@ call is the one that lives in version control, ships with the page, and is revie
 Keep both.
 
 Clarity is still a third party receiving visitor IP addresses and interaction data, so it is
-disclosed in `privacy_website_p` in all seven locales. **If you remove the `consentv2` call, add a
+disclosed in `privacy_website_p` in every locale. **If you remove the `consentv2` call, add a
 consent banner, or point the tag at a different project, the privacy copy has to change with it.**
 
 ## Live Table invite links
@@ -229,7 +230,7 @@ user-text rule.
 ## Screenshots
 
 The phone screenshots are real captures of the app, one set per language. They are not made here:
-the app repo has a harness that renders the listing screens in all seven languages on a 6.9"
+the app repo has a harness that renders the listing screens in every language on a 6.9"
 simulator, the same captures the App Store listing draws from. The site serves the six named in
 `SHOTS` in `tools/build.py` (home, play-together, chess, games, murdoku, yahtzee).
 `tools/build_screenshots.py` maps capture file names to those site names and accepts two source

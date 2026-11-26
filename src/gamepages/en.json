@@ -290,5 +290,29 @@
   "freestyle": {
     "lead": "Freestyle is a free card and dice table for games you make up yourselves: deal cards and roll dice on screen, and keep your own score.",
     "scoring": "Pick how many cards and dice to deal, per player or to a shared table, and play whatever rules your table agrees. You enter each round's points and choose whether the highest or lowest total wins. Freestyle is always free."
+  },
+  "memory": {
+    "lead": "Memory, the pairs game for 2 to 6 players: turn over two cards, keep a pair and go again, and hold the most pairs when the board is cleared.",
+    "scoring": "The board is the scorecard. Pass one phone around, with the board covered between turns, play the computer at Easy, Medium or Hard, or give everyone a phone at a Live Table where only the host's phone holds the layout. Each pair is a point, the points add up game by game, and the most pairs over the match wins. Five board sizes run from 6 to 18 pairs."
+  },
+  "amerikaner": {
+    "lead": "Amerikaner is the Norwegian trick game for four where the highest bidder names trump and calls a card to pick a partner for that hand.",
+    "scoring": "Enter the bidder, the called partner, the bid and the tricks each side took, and the sheet checks they add up. Bidder and partner win or lose the bid, each opponent scores a point per trick, and the lone Amerikaner is worth 52 either way. The first to 52 ends the game. The Kani variant plays thirteen tricks and never goes below zero."
+  },
+  "capture": {
+    "lead": "Capture is the Nordic fishing card game: take cards from the table by matching their value or their sum, and sweep the table for an extra point.",
+    "scoring": "After each round, tap who took the most cards, the most spades, each ace, the ten of diamonds, the two of spades, the last capture and every sweep. The sheet adds the points and the first to 16 wins, or 21 in the longer variant. A Finnish count variant drops the point for the last capture."
+  },
+  "molkky": {
+    "lead": "Mölkky is the Finnish pin throwing game: knock down numbered pins, score exactly 50 to win, and go over 50 to drop back to 25.",
+    "scoring": "One tap per throw on a keypad of Miss and the twelve pins. One pin down scores its number, several score how many fell, and the sheet keeps the running total. Over 50 drops you to 25, or to 0 in the reset variant, and three misses in a row put a player out."
+  },
+  "kubb": {
+    "lead": "Kubb is the Swedish lawn game, called Kongespil in Denmark: knock over the other side's kubbs, then the king, to win the game.",
+    "scoring": "There are no points inside a game, only a winner, so each game is one tap for the side that won it. Play a best of 3, a best of 5 or a single game. A team plays under one name, so each side is one line."
+  },
+  "memorysolo": {
+    "lead": "Memory solo, the pairs game against the clock: find every pair on a board of 6 to 18 pairs, and only misses you could have avoided cost time.",
+    "scoring": "Your score is your time plus 10 seconds for every known miss, a miss where you had already seen the other card. Turning a card you had never seen is free. Lowest total wins. The painted cards come in four scenes, and a board in progress resumes after you leave."
   }
 }

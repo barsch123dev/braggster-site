@@ -132,6 +132,6 @@ kein Konto.
 
 ---
 
-**Mehr:** sieh dir alle achtzehn [Logikrätsel](/blog/puzzle-games/) an, lies über
+**Mehr:** sieh dir alle neunzehn [Logikrätsel](/blog/puzzle-games/) an, lies über
 [Sudoku Schwierigkeitsgrade](/blog/how-to-play-sudoku/), oder durchstöbere den Katalog auf
 [braggster.com/games](/games/).
